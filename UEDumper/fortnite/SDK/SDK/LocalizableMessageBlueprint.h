@@ -18,10 +18,10 @@ public:
 
 	/// Functions
 	// Function /Script/LocalizableMessageBlueprint.LocalizableMessageLibrary.Reset_LocalizableMessage
-	// void Reset_LocalizableMessage(FLocalizableMessage& Message);                                                          // [0xa7e7594] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void Reset_LocalizableMessage(FLocalizableMessage& Message);                                                          // [0xa7d991c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocalizableMessageBlueprint.LocalizableMessageLibrary.IsEmpty_LocalizableMessage
-	// bool IsEmpty_LocalizableMessage(FLocalizableMessage& Message);                                                        // [0xa7e74d4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsEmpty_LocalizableMessage(FLocalizableMessage& Message);                                                        // [0xa7d985c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/LocalizableMessageBlueprint.LocalizableMessageLibrary.Conv_LocalizableMessageToText
-	// FText Conv_LocalizableMessageToText(class UObject* WorldContextObject, FLocalizableMessage& Message);                 // [0xa7e7338] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_LocalizableMessageToText(class UObject* WorldContextObject, FLocalizableMessage& Message);                 // [0xa7d9700] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 

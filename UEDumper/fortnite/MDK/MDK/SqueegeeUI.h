@@ -26,7 +26,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateDetailsWidget.OnShowGamemodeDescription
-	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentGateRatingWidget
@@ -41,9 +41,9 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnStyleUpdated
-	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnLabelUpdated
-	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                           // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                           // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementDetails
@@ -59,11 +59,11 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowWeaponData
-	// void OnShowWeaponData();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowWeaponData();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowActivityData
-	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnPreviewImageChanged
-	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementButton
@@ -78,11 +78,11 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowGameActivity
-	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowError
-	// void OnShowError(FText& ErrorText);                                                                                      // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnShowError(FText& ErrorText);                                                                                      // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnChangeManagementState
-	// void OnChangeManagementState(EFortContentManagementState NewState);                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnChangeManagementState(EFortContentManagementState NewState);                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementLabelWidget
@@ -97,7 +97,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementLabelWidget.OnSetLabel
-	// void OnSetLabel(FText& InText);                                                                                          // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetLabel(FText& InText);                                                                                          // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementEntryLabelObject
@@ -147,13 +147,13 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementList.ResetUnlockList
-	// void ResetUnlockList();                                                                                                  // [0xb692cd0] Final|Native|Protected|BlueprintCallable 
+	// void ResetUnlockList();                                                                                                  // [0xb7a0050] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.RequestNextUnlockPage
-	// void RequestNextUnlockPage();                                                                                            // [0xb692cbc] Final|Native|Protected|BlueprintCallable 
+	// void RequestNextUnlockPage();                                                                                            // [0xb7a003c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.OnNextUnlockPageRequestCompleted
-	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementList.CanRequestNextUnlockPage
-	// bool CanRequestNextUnlockPage();                                                                                         // [0xb692c84] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanRequestNextUnlockPage();                                                                                         // [0xb7a0004] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementScreen
@@ -171,7 +171,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementScreen.ExitScreen
-	// void ExitScreen();                                                                                                       // [0xb692ca8] Final|Native|Protected|BlueprintCallable 
+	// void ExitScreen();                                                                                                       // [0xb7a0028] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SqueegeeUI.SqueegeeUIGameFeatureAction

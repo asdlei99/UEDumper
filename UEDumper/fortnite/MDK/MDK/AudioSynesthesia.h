@@ -74,9 +74,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioSynesthesia.ConstantQNRT.GetNormalizedChannelConstantQAtTime
-	// void GetNormalizedChannelConstantQAtTime(float InSeconds, int32_t InChannel, TArray<float>& OutConstantQ);               // [0xa9c5a78] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalizedChannelConstantQAtTime(float InSeconds, int32_t InChannel, TArray<float>& OutConstantQ);               // [0xacdda34] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.ConstantQNRT.GetChannelConstantQAtTime
-	// void GetChannelConstantQAtTime(float InSeconds, int32_t InChannel, TArray<float>& OutConstantQ);                         // [0xa9c5310] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetChannelConstantQAtTime(float InSeconds, int32_t InChannel, TArray<float>& OutConstantQ);                         // [0xacdd4ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AudioSynesthesia.LoudnessSettings
@@ -138,13 +138,13 @@ public:
 
 	/// Functions
 	// Function /Script/AudioSynesthesia.LoudnessNRT.GetNormalizedLoudnessAtTime
-	// void GetNormalizedLoudnessAtTime(float InSeconds, float& OutLoudness);                                                   // [0xa9c60d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalizedLoudnessAtTime(float InSeconds, float& OutLoudness);                                                   // [0xacddee8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.LoudnessNRT.GetNormalizedChannelLoudnessAtTime
-	// void GetNormalizedChannelLoudnessAtTime(float InSeconds, int32_t InChannel, float& OutLoudness);                         // [0xa9c5c50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalizedChannelLoudnessAtTime(float InSeconds, int32_t InChannel, float& OutLoudness);                         // [0xacddb98] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.LoudnessNRT.GetLoudnessAtTime
-	// void GetLoudnessAtTime(float InSeconds, float& OutLoudness);                                                             // [0xa9c596c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetLoudnessAtTime(float InSeconds, float& OutLoudness);                                                             // [0xacdd960] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.LoudnessNRT.GetChannelLoudnessAtTime
-	// void GetChannelLoudnessAtTime(float InSeconds, int32_t InChannel, float& OutLoudness);                                   // [0xa9c54e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetChannelLoudnessAtTime(float InSeconds, int32_t InChannel, float& OutLoudness);                                   // [0xacdd610] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AudioSynesthesia.MeterSettings
@@ -206,9 +206,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes
-	// void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int32_t InChannel, TArray<float>& OutOnsetTimestamps, TArray<float>& OutOnsetStrengths); // [0xa9c5dd8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int32_t InChannel, TArray<float>& OutOnsetTimestamps, TArray<float>& OutOnsetStrengths); // [0xacddc9c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes
-	// void GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int32_t InChannel, TArray<float>& OutOnsetTimestamps, TArray<float>& OutOnsetStrengths); // [0xa9c5670] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int32_t InChannel, TArray<float>& OutOnsetTimestamps, TArray<float>& OutOnsetStrengths); // [0xacdd714] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AudioSynesthesia.SynesthesiaSpectrumAnalysisSettings
@@ -241,9 +241,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioSynesthesia.SynesthesiaSpectrumAnalyzer.GetNumCenterFrequencies
-	// int32_t GetNumCenterFrequencies();                                                                                       // [0xa9c61e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumCenterFrequencies();                                                                                       // [0xacddfbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioSynesthesia.SynesthesiaSpectrumAnalyzer.GetCenterFrequencies
-	// void GetCenterFrequencies(float InSampleRate, TArray<float>& OutCenterFrequencies);                                      // [0xa9c51a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetCenterFrequencies(float InSampleRate, TArray<float>& OutCenterFrequencies);                                      // [0xacdd388] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/AudioSynesthesia.LoudnessResults

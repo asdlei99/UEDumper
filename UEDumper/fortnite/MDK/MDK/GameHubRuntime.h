@@ -34,14 +34,14 @@ public:
 };
 
 /// Class /Script/GameHubRuntime.GameHubPlayspace
-/// Size: 0x0028 (0x0006C0 - 0x0006E8)
+/// Size: 0x0028 (0x0006E8 - 0x000710)
 class AGameHubPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1768;
+	static inline constexpr uint64_t __MDKClassSize = 1808;
 
 public:
-	DMember(bool)                                      bSimulatePlayerDamage                                       OFFSET(get<bool>, {0x6C0, 1, 0, 0})
-	SMember(FGameplayTagContainer)                     PlayerStartRequirements                                     OFFSET(getStruct<T>, {0x6C8, 32, 0, 0})
+	DMember(bool)                                      bSimulatePlayerDamage                                       OFFSET(get<bool>, {0x6E8, 1, 0, 0})
+	SMember(FGameplayTagContainer)                     PlayerStartRequirements                                     OFFSET(getStruct<T>, {0x6F0, 32, 0, 0})
 };
 

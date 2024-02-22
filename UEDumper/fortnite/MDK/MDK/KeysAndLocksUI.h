@@ -24,8 +24,8 @@ public:
 
 	/// Functions
 	// Function /Script/KeysAndLocksUI.KeyPlayerInfoWidget.OnKeyStatusActivated
-	// void OnKeyStatusActivated(class AFortPlayerStateAthena* InPlayerState, bool bActivated);                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnKeyStatusActivated(class AFortPlayerStateAthena* InPlayerState, bool bActivated);                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KeysAndLocksUI.KeyPlayerInfoWidget.HandleGameplayTagEvent
-	// void HandleGameplayTagEvent(FGameplayTag UpdatedTag, int32_t TagCount);                                                  // [0xac1c550] Final|Native|Protected 
+	// void HandleGameplayTagEvent(FGameplayTag UpdatedTag, int32_t TagCount);                                                  // [0xaf19e30] Final|Native|Protected 
 };
 

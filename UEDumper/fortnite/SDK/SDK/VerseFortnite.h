@@ -65,15 +65,15 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.GameplayAbility_PlayAnim.OnInterrupted
-	// void OnInterrupted();                                                                                                 // [0xa80eb28] Final|Native|Public  
+	// void OnInterrupted();                                                                                                 // [0xa805304] Final|Native|Public  
 	// Function /Script/VerseFortnite.GameplayAbility_PlayAnim.OnCompleted
-	// void OnCompleted();                                                                                                   // [0xa80eb14] Final|Native|Public  
+	// void OnCompleted();                                                                                                   // [0xa8052f0] Final|Native|Public  
 	// Function /Script/VerseFortnite.GameplayAbility_PlayAnim.OnCancelled
-	// void OnCancelled();                                                                                                   // [0xa80eb00] Final|Native|Public  
+	// void OnCancelled();                                                                                                   // [0xa8052dc] Final|Native|Public  
 	// Function /Script/VerseFortnite.GameplayAbility_PlayAnim.OnBlendOut
-	// void OnBlendOut();                                                                                                    // [0xa80eaec] Final|Native|Public  
+	// void OnBlendOut();                                                                                                    // [0xa8052c8] Final|Native|Public  
 	// Function /Script/VerseFortnite.GameplayAbility_PlayAnim.OnBlendIn
-	// void OnBlendIn();                                                                                                     // [0xa80ead8] Final|Native|Public  
+	// void OnBlendIn();                                                                                                     // [0xa8052b4] Final|Native|Public  
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier
@@ -85,17 +85,17 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterModifier.GetCharacterDefinition
-	// class UNPCCharacterDefinition* GetCharacterDefinition();                                                              // [0xa80cb40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UNPCCharacterDefinition* GetCharacterDefinition();                                                              // [0xa803310] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterModifier.BP_OnSpawned
-	// void BP_OnSpawned(class AFortPawn* Pawn);                                                                             // [0xa80b1fc] Native|Event|Public|BlueprintEvent 
+	// void BP_OnSpawned(class AFortPawn* Pawn);                                                                             // [0xa801a8c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/VerseFortnite.NPCCharacterModifier.BP_OnPreSpawned
-	// void BP_OnPreSpawned(class AFortPawn* Pawn);                                                                          // [0x6f4ff34] Native|Event|Public|BlueprintEvent 
+	// void BP_OnPreSpawned(class AFortPawn* Pawn);                                                                          // [0xa801a08] Native|Event|Public|BlueprintEvent 
 	// Function /Script/VerseFortnite.NPCCharacterModifier.BP_ModifySpawnComponentList
-	// void BP_ModifySpawnComponentList(class UFortAthenaAISpawnerDataComponentList* OutList, class UObject* ComponentOuter); // [0xa80b0b8] Native|Event|Public|BlueprintEvent 
+	// void BP_ModifySpawnComponentList(class UFortAthenaAISpawnerDataComponentList* OutList, class UObject* ComponentOuter); // [0xa801940] Native|Event|Public|BlueprintEvent 
 	// Function /Script/VerseFortnite.NPCCharacterModifier.BP_IsNeededForPreview
-	// bool BP_IsNeededForPreview();                                                                                         // [0x6093de8] Native|Event|Public|BlueprintEvent|Const 
+	// bool BP_IsNeededForPreview();                                                                                         // [0x60f7298] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/VerseFortnite.NPCCharacterModifier.BP_IsDataValid
-	// EDataValidationResult BP_IsDataValid(TArray<FText>& OutErrorMessages);                                                // [0xa80b008] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// EDataValidationResult BP_IsDataValid(TArray<FText>& OutErrorMessages);                                                // [0xa801890] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier_Verse
@@ -166,7 +166,7 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.VerseFortniteBRTeamCollection.OnActiveTeamArrayBuilt
-	// void OnActiveTeamArrayBuilt();                                                                                        // [0xa80ea04] Final|Native|Private 
+	// void OnActiveTeamArrayBuilt();                                                                                        // [0xa805220] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortnite.VerseFortniteMinigameTeamCollection
@@ -179,9 +179,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.VerseFortniteMinigameTeamCollection.OnMinigameSetup
-	// void OnMinigameSetup(class AFortMinigame* InMinigame);                                                                // [0xa80ed94] Final|Native|Private 
+	// void OnMinigameSetup(class AFortMinigame* InMinigame);                                                                // [0xa805618] Final|Native|Private 
 	// Function /Script/VerseFortnite.VerseFortniteMinigameTeamCollection.OnMinigameDestroyed
-	// void OnMinigameDestroyed(class AActor* DestroyedMinigame);                                                            // [0xa80eb3c] Final|Native|Private 
+	// void OnMinigameDestroyed(class AActor* DestroyedMinigame);                                                            // [0xa805318] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortnite.AIActionsHandlerComponent
@@ -200,14 +200,14 @@ public:
 	TArray<class UClass*>                              EntityComponents;                                           // 0x0030   (0x0010)  
 	TArray<class UAIComponent*>                        AIComponents;                                               // 0x0040   (0x0010)  
 	class UNPCBehaviorScript*                          NPCBehaviorScriptInstance;                                  // 0x0050   (0x0008)  
-	SDK_UNDEFINED(8,9195) /* TWeakObjectPtr<UNPCBehaviorScript*> */ __um(NPCBehaviorScript);                       // 0x0058   (0x0008)  
+	SDK_UNDEFINED(8,9231) /* TWeakObjectPtr<UNPCBehaviorScript*> */ __um(NPCBehaviorScript);                       // 0x0058   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.FortAthenaAISpawnerDataComponent_Verse.SetNPCBehaviorScript
-	// void SetNPCBehaviorScript(class UNPCBehaviorScript* InAIBehaviorScript);                                              // [0xa80ef84] Final|Native|Public|BlueprintCallable 
+	// void SetNPCBehaviorScript(class UNPCBehaviorScript* InAIBehaviorScript);                                              // [0xa805788] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortnite.FortAthenaAISpawnerDataComponent_Verse.AddUniqueEntityComponent
-	// void AddUniqueEntityComponent(class UClass* EntityComponent);                                                         // [0xa80ae90] Final|Native|Public|BlueprintCallable 
+	// void AddUniqueEntityComponent(class UClass* EntityComponent);                                                         // [0xa80175c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/VerseFortnite.NPCBehaviorScript
@@ -222,10 +222,10 @@ public:
 class ULoadNPCCharacterDefinitionAsyncBase : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(8,9196) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(LoadedCharacterDefinition);          // 0x0030   (0x0008)  
-	SDK_UNDEFINED(8,9197) /* TWeakObjectPtr<UObject*> */ __um(ContextObject);                                      // 0x0038   (0x0008)  
+	SDK_UNDEFINED(8,9232) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(LoadedCharacterDefinition);          // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,9233) /* TWeakObjectPtr<UObject*> */ __um(ContextObject);                                      // 0x0038   (0x0008)  
 	TArray<class UNPCCharacterModifier*>               StoredAdditionalModifiers;                                  // 0x0040   (0x0010)  
-	SDK_UNDEFINED(32,9198) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(StoredCharacterDefinition);         // 0x0050   (0x0020)  
+	SDK_UNDEFINED(32,9234) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(StoredCharacterDefinition);         // 0x0050   (0x0020)  
 };
 
 /// Class /Script/VerseFortnite.LoadNPCCharacterDefinitionAsync
@@ -233,12 +233,12 @@ public:
 class ULoadNPCCharacterDefinitionAsync : public ULoadNPCCharacterDefinitionAsyncBase
 { 
 public:
-	SDK_UNDEFINED(16,9199) /* FMulticastInlineDelegate */ __um(OnLoaded);                                          // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,9235) /* FMulticastInlineDelegate */ __um(OnLoaded);                                          // 0x0070   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.LoadNPCCharacterDefinitionAsync.LoadCharacterDefinitionAsync
-	// class ULoadNPCCharacterDefinitionAsync* LoadCharacterDefinitionAsync(class UObject* ContextObj, TWeakObjectPtr<UNPCCharacterDefinition*> CharacterDefinition, TArray<UNPCCharacterModifier*>& AdditionalModifiers); // [0xa80e10c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class ULoadNPCCharacterDefinitionAsync* LoadCharacterDefinitionAsync(class UObject* ContextObj, TWeakObjectPtr<UNPCCharacterDefinition*> CharacterDefinition, TArray<UNPCCharacterModifier*>& AdditionalModifiers); // [0xa8049ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/VerseFortnite.LoadAndCreateComponentListAsync
@@ -246,15 +246,15 @@ public:
 class ULoadAndCreateComponentListAsync : public ULoadNPCCharacterDefinitionAsyncBase
 { 
 public:
-	SDK_UNDEFINED(16,9200) /* FMulticastInlineDelegate */ __um(OnFinished);                                        // 0x0070   (0x0010)  
-	SDK_UNDEFINED(8,9201) /* TWeakObjectPtr<UFortAthenaAISpawnerDataComponentList*> */ __um(ComponentsList);       // 0x0080   (0x0008)  
+	SDK_UNDEFINED(16,9236) /* FMulticastInlineDelegate */ __um(OnFinished);                                        // 0x0070   (0x0010)  
+	SDK_UNDEFINED(8,9237) /* TWeakObjectPtr<UFortAthenaAISpawnerDataComponentList*> */ __um(ComponentsList);       // 0x0080   (0x0008)  
 	bool                                               bStoredForPreview;                                          // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0089   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.LoadAndCreateComponentListAsync.LoadAndCreateComponentListAsync
-	// class ULoadAndCreateComponentListAsync* LoadAndCreateComponentListAsync(class UObject* ContextObj, TWeakObjectPtr<UNPCCharacterDefinition*> CharacterDefinition, TArray<UNPCCharacterModifier*>& AdditionalModifiers, bool bForPreview); // [0xa80d70c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class ULoadAndCreateComponentListAsync* LoadAndCreateComponentListAsync(class UObject* ContextObj, TWeakObjectPtr<UNPCCharacterDefinition*> CharacterDefinition, TArray<UNPCCharacterModifier*>& AdditionalModifiers, bool bForPreview); // [0xa804030] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterDefinition
@@ -262,8 +262,8 @@ public:
 class UNPCCharacterDefinition : public UFortAIPawnCustomizationDefinition
 { 
 public:
-	SDK_UNDEFINED(16,9202) /* FMulticastInlineDelegate */ __um(OnCharacterModifierModified);                       // 0x0138   (0x0010)  
-	SDK_UNDEFINED(16,9203) /* FMulticastInlineDelegate */ __um(OnCharacterTypeModified);                           // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,9238) /* FMulticastInlineDelegate */ __um(OnCharacterModifierModified);                       // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,9239) /* FMulticastInlineDelegate */ __um(OnCharacterTypeModified);                           // 0x0148   (0x0010)  
 	class UNPCCharacterType*                           Type;                                                       // 0x0158   (0x0008)  
 	class UNPCCharacterModifier_Behavior*              Behavior;                                                   // 0x0160   (0x0008)  
 	TArray<class UNPCCharacterModifier*>               Modifiers;                                                  // 0x0168   (0x0010)  
@@ -271,15 +271,15 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterDefinition.GetRequiredAssets
-	// void GetRequiredAssets(TArray<FSoftObjectPath>& OutAssets);                                                           // [0xa80d39c] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetRequiredAssets(TArray<FSoftObjectPath>& OutAssets);                                                           // [0xa803b20] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterDefinition.GetPreviewMesh
-	// void GetPreviewMesh(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers, TArray<FCharacterPreviewMesh>& OutCharacterPreviewMeshes, class APawn*& OutDefaultPawn); // [0xa80cbc4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPreviewMesh(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers, TArray<FCharacterPreviewMesh>& OutCharacterPreviewMeshes, class APawn*& OutDefaultPawn); // [0xa803394] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterDefinition.GetCharacterCID
-	// class UAthenaCharacterItemDefinition* GetCharacterCID(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers); // [0xa80c220] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UAthenaCharacterItemDefinition* GetCharacterCID(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers); // [0xa802a34] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterDefinition.GetCharacterBlueprint
-	// class UClass* GetCharacterBlueprint(TArray<UNPCCharacterModifier*>& AdditionalModifiers);                             // [0xa80bb70] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetCharacterBlueprint(TArray<UNPCCharacterModifier*>& AdditionalModifiers);                             // [0xa802384] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterDefinition.CreateComponentList
-	// class UFortAthenaAISpawnerDataComponentList* CreateComponentList(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers, bool bForPreview); // [0xa80b2c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAthenaAISpawnerDataComponentList* CreateComponentList(class UObject* Outer, TArray<UNPCCharacterModifier*>& AdditionalModifiers, bool bForPreview); // [0xa801b10] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterDefinitionComponent
@@ -287,19 +287,19 @@ public:
 class UNPCCharacterDefinitionComponent : public UFortUserOptionContainerComponent
 { 
 public:
-	SDK_UNDEFINED(32,9204) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(NPCCharacterDefinition);            // 0x0120   (0x0020)  
+	SDK_UNDEFINED(32,9240) /* TWeakObjectPtr<UNPCCharacterDefinition*> */ __um(NPCCharacterDefinition);            // 0x0120   (0x0020)  
 	TArray<class UNPCCharacterModifier*>               NPCCharacterModifiers;                                      // 0x0140   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterDefinitionComponent.SetNPCCharacterDefinition
-	// void SetNPCCharacterDefinition(TWeakObjectPtr<UNPCCharacterDefinition*> Definition);                                  // [0xa80f0bc] Final|Native|Public|BlueprintCallable 
+	// void SetNPCCharacterDefinition(TWeakObjectPtr<UNPCCharacterDefinition*> Definition);                                  // [0xa80587c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortnite.NPCCharacterDefinitionComponent.OnNPCCharacterTypeChanged
-	// void OnNPCCharacterTypeChanged();                                                                                     // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void OnNPCCharacterTypeChanged();                                                                                     // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortnite.NPCCharacterDefinitionComponent.GetNPCCharacterModifiers
-	// TArray<UNPCCharacterModifier*> GetNPCCharacterModifiers();                                                            // [0xa80cba8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNPCCharacterModifier*> GetNPCCharacterModifiers();                                                            // [0xa803378] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortnite.NPCCharacterDefinitionComponent.GetNPCCharacterDefinition
-	// TWeakObjectPtr<UNPCCharacterDefinition*> GetNPCCharacterDefinition();                                                 // [0xa80cb64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UNPCCharacterDefinition*> GetNPCCharacterDefinition();                                                 // [0xa803334] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier_Behavior
@@ -316,14 +316,14 @@ class UNPCCharacterModifier_CosmeticSpawn : public UNPCCharacterModifier
 public:
 	ECharacterLook                                     CharacterLook;                                              // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0029   (0x0007)  MISSED
-	SDK_UNDEFINED(32,9205) /* TWeakObjectPtr<UAthenaCharacterItemDefinition*> */ __um(CharacterCosmetic);          // 0x0030   (0x0020)  
-	SDK_UNDEFINED(16,9206) /* FString */               __um(CharacterCosmeticAssetId);                             // 0x0050   (0x0010)  
-	SDK_UNDEFINED(32,9207) /* TWeakObjectPtr<UClass*> */ __um(CharacterBlueprint);                                 // 0x0060   (0x0020)  
+	SDK_UNDEFINED(32,9241) /* TWeakObjectPtr<UAthenaCharacterItemDefinition*> */ __um(CharacterCosmetic);          // 0x0030   (0x0020)  
+	SDK_UNDEFINED(16,9242) /* FString */               __um(CharacterCosmeticAssetId);                             // 0x0050   (0x0010)  
+	SDK_UNDEFINED(32,9243) /* TWeakObjectPtr<UClass*> */ __um(CharacterBlueprint);                                 // 0x0060   (0x0020)  
 	ENPCCharacterMovement                              CharacterMovement;                                          // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0081   (0x0007)  MISSED
-	SDK_UNDEFINED(32,9208) /* TWeakObjectPtr<UClass*> */ __um(AnimPreset);                                         // 0x0088   (0x0020)  
+	SDK_UNDEFINED(32,9244) /* TWeakObjectPtr<UClass*> */ __um(AnimPreset);                                         // 0x0088   (0x0020)  
 	FAnimPresetRetargetData                            Retargeter;                                                 // 0x00A8   (0x0040)  
-	SDK_UNDEFINED(32,9209) /* TWeakObjectPtr<UIKRetargeter*> */ __um(IKRetargeter);                                // 0x00E8   (0x0020)  
+	SDK_UNDEFINED(32,9245) /* TWeakObjectPtr<UIKRetargeter*> */ __um(IKRetargeter);                                // 0x00E8   (0x0020)  
 	bool                                               bSupportAnimPreset : 1;                                     // 0x0108:0 (0x0001)  
 	bool                                               bSupportCharacterMovement : 1;                              // 0x0108:1 (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0109   (0x0007)  MISSED
@@ -331,14 +331,26 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterModifier_CosmeticSpawn.GetCharacterCosmetic
-	// TWeakObjectPtr<UAthenaCharacterItemDefinition*> GetCharacterCosmetic();                                               // [0xa80cafc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UAthenaCharacterItemDefinition*> GetCharacterCosmetic();                                               // [0xa8032cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+};
+
+/// Class /Script/VerseFortnite.NPCCharacterModifier_Effects
+/// Size: 0x0000 (0x000028 - 0x000028)
+class UNPCCharacterModifier_Effects : public UNPCCharacterModifier
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/VerseFortnite.NPCCharacterModifier_Effects.GetCustomEffects
+	// TArray<FNPCCustomEffect> GetCustomEffects();                                                                          // [0x3d1d968] Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/VerseFortnite.CharacterModifierEmote
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FCharacterModifierEmote
 { 
-	SDK_UNDEFINED(32,9210) /* TWeakObjectPtr<UAthenaDanceItemDefinition*> */ __um(EmoteDefinition);                // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9246) /* TWeakObjectPtr<UAthenaDanceItemDefinition*> */ __um(EmoteDefinition);                // 0x0000   (0x0020)  
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier_Emotes
@@ -353,7 +365,7 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FCharacterModifierInventoryItem
 { 
-	SDK_UNDEFINED(32,9211) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ItemDefinition);                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9247) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ItemDefinition);                        // 0x0000   (0x0020)  
 	int32_t                                            ItemQuantity;                                               // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0024   (0x0004)  MISSED
 };
@@ -367,6 +379,17 @@ public:
 	FGameplayTagContainer                              SupportedItemTags;                                          // 0x0038   (0x0020)  
 };
 
+/// Class /Script/VerseFortnite.NPCCharacterModifier_Movement
+/// Size: 0x0010 (0x000028 - 0x000038)
+class UNPCCharacterModifier_Movement : public UNPCCharacterModifier
+{ 
+public:
+	float                                              WalkSpeed;                                                  // 0x0028   (0x0004)  
+	float                                              RunSpeed;                                                   // 0x002C   (0x0004)  
+	float                                              Acceleration;                                               // 0x0030   (0x0004)  
+	float                                              Deceleration;                                               // 0x0034   (0x0004)  
+};
+
 /// Class /Script/VerseFortnite.NPCCharacterModifier_PatrolPath
 /// Size: 0x0008 (0x000028 - 0x000030)
 class UNPCCharacterModifier_PatrolPath : public UNPCCharacterModifier
@@ -378,7 +401,7 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterModifier_PatrolPath.GetPatrolPathToAssign
-	// class AFortAthenaPatrolPath* GetPatrolPathToAssign(class AActor* ModifierOwner);                                      // [0x130d900] Event|Public|BlueprintEvent 
+	// class AFortAthenaPatrolPath* GetPatrolPathToAssign(class AActor* ModifierOwner);                                      // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier_Team
@@ -396,7 +419,7 @@ public:
 class UNPCCharacterModifier_UI : public UNPCCharacterModifier
 { 
 public:
-	SDK_UNDEFINED(24,9212) /* FText */                 __um(DisplayName);                                          // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,9248) /* FText */                 __um(DisplayName);                                          // 0x0028   (0x0018)  
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterModifier_VerseBehavior
@@ -415,14 +438,14 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	FGameplayTag                                       CharacterDefinitionTag;                                     // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,9213) /* TArray<TWeakObjectPtr<UClass*>> */ __um(SupportedModifiers);                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,9214) /* TArray<TWeakObjectPtr<UClass*>> */ __um(UnsupportedAdditionalModifiers);             // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,9215) /* TArray<TWeakObjectPtr<UClass*>> */ __um(DefaultModifiers);                           // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,9249) /* TArray<TWeakObjectPtr<UClass*>> */ __um(SupportedModifiers);                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,9250) /* TArray<TWeakObjectPtr<UClass*>> */ __um(UnsupportedAdditionalModifiers);             // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,9251) /* TArray<TWeakObjectPtr<UClass*>> */ __um(DefaultModifiers);                           // 0x0050   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterType.IsPlayerCharacterRequired
-	// bool IsPlayerCharacterRequired(ECharacterLook CharacterLook);                                                         // [0xa80d638] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsPlayerCharacterRequired(ECharacterLook CharacterLook);                                                         // [0xa803f9c] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterType_Custom
@@ -430,17 +453,17 @@ public:
 class UNPCCharacterType_Custom : public UNPCCharacterType
 { 
 public:
-	SDK_UNDEFINED(32,9216) /* TWeakObjectPtr<UFortAIPawnCustomizationDefinition*> */ __um(DefaultCosmetics);       // 0x0060   (0x0020)  
-	SDK_UNDEFINED(32,9217) /* TWeakObjectPtr<UClass*> */ __um(AISpawnerData);                                      // 0x0080   (0x0020)  
-	SDK_UNDEFINED(32,9218) /* TWeakObjectPtr<UClass*> */ __um(PlayerSpawnerData);                                  // 0x00A0   (0x0020)  
+	SDK_UNDEFINED(32,9252) /* TWeakObjectPtr<UFortAIPawnCustomizationDefinition*> */ __um(DefaultCosmetics);       // 0x0060   (0x0020)  
+	SDK_UNDEFINED(32,9253) /* TWeakObjectPtr<UClass*> */ __um(AISpawnerData);                                      // 0x0080   (0x0020)  
+	SDK_UNDEFINED(32,9254) /* TWeakObjectPtr<UClass*> */ __um(PlayerSpawnerData);                                  // 0x00A0   (0x0020)  
 };
 
 /// Struct /Script/VerseFortnite.CharacterTypePreset
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FCharacterTypePreset
 { 
-	SDK_UNDEFINED(32,9219) /* TWeakObjectPtr<UClass*> */ __um(SpawnerData);                                        // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,9220) /* TWeakObjectPtr<UClass*> */ __um(AdditionalData);                                     // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,9255) /* TWeakObjectPtr<UClass*> */ __um(SpawnerData);                                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9256) /* TWeakObjectPtr<UClass*> */ __um(AdditionalData);                                     // 0x0020   (0x0020)  
 };
 
 /// Class /Script/VerseFortnite.NPCCharacterType_FromPreset
@@ -448,16 +471,16 @@ struct FCharacterTypePreset
 class UNPCCharacterType_FromPreset : public UNPCCharacterType
 { 
 public:
-	SDK_UNDEFINED(16,9221) /* FString */               __um(SelectedAI);                                           // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,9257) /* FString */               __um(SelectedAI);                                           // 0x0060   (0x0010)  
 	FCharacterTypePreset                               SelectedPreset;                                             // 0x0070   (0x0040)  
 	TArray<FCharacterTypePreset>                       Presets;                                                    // 0x00B0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/VerseFortnite.NPCCharacterType_FromPreset.GetAvailableAIs
-	// TArray<FString> GetAvailableAIs();                                                                                    // [0xa80bb34] Final|Native|Protected|Const 
+	// TArray<FString> GetAvailableAIs();                                                                                    // [0xa802348] Final|Native|Protected|Const 
 	// Function /Script/VerseFortnite.NPCCharacterType_FromPreset.GetAIToSpawn
-	// TWeakObjectPtr<UClass*> GetAIToSpawn();                                                                               // [0xa80baf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UClass*> GetAIToSpawn();                                                                               // [0xa802304] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VerseFortnite.VerseFortniteActorWrapper
@@ -470,7 +493,7 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.VerseFortniteActorWrapper.OnActorDestroyed
-	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0xa80ea18] Final|Native|Private 
+	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0xa805234] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortnite.VerseFortniteCharacter
@@ -483,9 +506,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.VerseFortniteCharacter.HandlePossessedPawnChanged
-	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xa80d45c] Final|Native|Private 
+	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xa803e38] Final|Native|Private 
 	// Function /Script/VerseFortnite.VerseFortniteCharacter.HandlePawnEliminated
-	// void HandlePawnEliminated(class AFortPlayerPawnAthena* EliminatedPawn);                                               // [0x6f4ff34] Native|Protected     
+	// void HandlePawnEliminated(class AFortPlayerPawnAthena* EliminatedPawn);                                               // [0xa801a08] Native|Protected     
 };
 
 /// Class /Script/VerseFortnite.TaggedObjectQueryWorldSubsystem
@@ -507,9 +530,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortnite.VerseFortnitePlayspace.OnMinigameSetup
-	// void OnMinigameSetup(class AFortMinigame* Minigame);                                                                  // [0xa80ee54] Final|Native|Private 
+	// void OnMinigameSetup(class AFortMinigame* Minigame);                                                                  // [0xa805698] Final|Native|Private 
 	// Function /Script/VerseFortnite.VerseFortnitePlayspace.OnMinigamePlayerAdded
-	// void OnMinigamePlayerAdded(FUniqueNetIdRepl UniqueNetId, bool bIsLocalPlayer);                                        // [0xa80ebf8] Final|Native|Private 
+	// void OnMinigamePlayerAdded(FUniqueNetIdRepl UniqueNetId, bool bIsLocalPlayer);                                        // [0xa805394] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortnite.VerseFortnitePlayspaceExtensionBase
@@ -520,18 +543,24 @@ public:
 };
 
 /// Class /Script/VerseFortnite.VerseFortniteSubsystem
-/// Size: 0x0050 (0x000030 - 0x000080)
+/// Size: 0x00A0 (0x000030 - 0x0000D0)
 class UVerseFortniteSubsystem : public UWorldSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,9222) /* TMap<TWeakObjectPtr<AActor*>, UVerseFortniteActorWrapper*> */ __um(ActorToWrapperMap); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,9258) /* TMap<TWeakObjectPtr<AActor*>, UVerseFortniteActorWrapper*> */ __um(ActorToWrapperMap); // 0x0030   (0x0050)  
+	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0080   (0x0050)  MISSED
+
+
+	/// Functions
+	// Function /Script/VerseFortnite.VerseFortniteSubsystem.HandleMinigameStateChanged
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                  // [0xa803be0] Final|Native|Private 
 };
 
 /// Struct /Script/VerseFortnite.CharacterPreviewMesh
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FCharacterPreviewMesh
 { 
-	SDK_UNDEFINED(32,9223) /* TWeakObjectPtr<USkeletalMesh*> */ __um(SkeletalMesh);                                // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9259) /* TWeakObjectPtr<USkeletalMesh*> */ __um(SkeletalMesh);                                // 0x0000   (0x0020)  
 	FGameplayTagContainer                              MeshDescriptor;                                             // 0x0020   (0x0020)  
 };
 

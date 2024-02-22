@@ -54,9 +54,9 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetLightningRadius
-	// float GetLightningRadius();                                                                                              // [0xb6b4b0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLightningRadius();                                                                                              // [0xb7c1ef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetCloudHeight
-	// float GetCloudHeight();                                                                                                  // [0xb6b4ad8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloudHeight();                                                                                                  // [0xb7c1ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TempestTornadoForcesComponent
@@ -92,9 +92,9 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.OnVehicleInTornadoPlayerExit
-	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb6b4c10] Final|Native|Private 
+	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb7c1fb8] Final|Native|Private 
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.IsActorInTornado
-	// bool IsActorInTornado(class AActor* Actor);                                                                              // [0xb6b4b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActorInTornado(class AActor* Actor);                                                                              // [0xb7c1f28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TornadoRadialForce
@@ -181,22 +181,22 @@ class FTornadoConfigEntry : public FTableRowBase
 public:
 	DMember(float)                                     EyeBufferDistance                                           OFFSET(get<float>, {0x8, 4, 0, 0})
 	CMember(class UCurveFloat*)                        TargetOrbitRadiusCurve                                      OFFSET(get<T>, {0x10, 8, 0, 0})
-	DMember(float)                                     TargetOrbitRadius                                           OFFSET(get<float>, {0x18, 4, 0, 0})
-	DMember(float)                                     OrbitStrength                                               OFFSET(get<float>, {0x1C, 4, 0, 0})
-	DMember(float)                                     TargetTangentVelocity                                       OFFSET(get<float>, {0x20, 4, 0, 0})
-	DMember(float)                                     TangentVelocityVariance                                     OFFSET(get<float>, {0x24, 4, 0, 0})
-	DMember(float)                                     TangentAcceleration                                         OFFSET(get<float>, {0x28, 4, 0, 0})
-	DMember(float)                                     TangentAccelerationVariance                                 OFFSET(get<float>, {0x2C, 4, 0, 0})
-	DMember(float)                                     TangentAngleOffset                                          OFFSET(get<float>, {0x30, 4, 0, 0})
-	DMember(float)                                     TargetHeightVelocity                                        OFFSET(get<float>, {0x34, 4, 0, 0})
-	DMember(float)                                     HeightVelocityVariance                                      OFFSET(get<float>, {0x38, 4, 0, 0})
-	DMember(float)                                     HeightAcceleration                                          OFFSET(get<float>, {0x3C, 4, 0, 0})
-	DMember(float)                                     HeightAccelerationVariance                                  OFFSET(get<float>, {0x40, 4, 0, 0})
-	DMember(float)                                     TorqueStrength                                              OFFSET(get<float>, {0x44, 4, 0, 0})
-	DMember(float)                                     TorqueVariance                                              OFFSET(get<float>, {0x48, 4, 0, 0})
-	DMember(float)                                     TimeToForceEject                                            OFFSET(get<float>, {0x4C, 4, 0, 0})
-	DMember(float)                                     HeightToForceEject                                          OFFSET(get<float>, {0x50, 4, 0, 0})
-	DMember(float)                                     DepthToForceEject                                           OFFSET(get<float>, {0x54, 4, 0, 0})
+	DMember(float)                                     OrbitStrength                                               OFFSET(get<float>, {0x18, 4, 0, 0})
+	DMember(float)                                     TargetTangentVelocity                                       OFFSET(get<float>, {0x1C, 4, 0, 0})
+	DMember(float)                                     TangentVelocityVariance                                     OFFSET(get<float>, {0x20, 4, 0, 0})
+	DMember(float)                                     TangentAcceleration                                         OFFSET(get<float>, {0x24, 4, 0, 0})
+	DMember(float)                                     TangentAccelerationVariance                                 OFFSET(get<float>, {0x28, 4, 0, 0})
+	DMember(float)                                     TangentAngleOffset                                          OFFSET(get<float>, {0x2C, 4, 0, 0})
+	DMember(float)                                     TargetHeightVelocity                                        OFFSET(get<float>, {0x30, 4, 0, 0})
+	DMember(float)                                     HeightVelocityVariance                                      OFFSET(get<float>, {0x34, 4, 0, 0})
+	DMember(float)                                     HeightAcceleration                                          OFFSET(get<float>, {0x38, 4, 0, 0})
+	DMember(float)                                     HeightAccelerationVariance                                  OFFSET(get<float>, {0x3C, 4, 0, 0})
+	DMember(float)                                     TorqueStrength                                              OFFSET(get<float>, {0x40, 4, 0, 0})
+	DMember(float)                                     TorqueVariance                                              OFFSET(get<float>, {0x44, 4, 0, 0})
+	DMember(float)                                     TimeToForceEject                                            OFFSET(get<float>, {0x48, 4, 0, 0})
+	DMember(float)                                     HeightToForceEject                                          OFFSET(get<float>, {0x4C, 4, 0, 0})
+	DMember(float)                                     DepthToForceEject                                           OFFSET(get<float>, {0x50, 4, 0, 0})
+	DMember(bool)                                      bOrbitRadiusExtendsDistanceToForceEject                     OFFSET(get<bool>, {0x54, 1, 0, 0})
 	DMember(float)                                     DistanceToForceEject                                        OFFSET(get<float>, {0x58, 4, 0, 0})
 	DMember(float)                                     EjectionBoost                                               OFFSET(get<float>, {0x5C, 4, 0, 0})
 	DMember(float)                                     MaxDragVelocity                                             OFFSET(get<float>, {0x60, 4, 0, 0})

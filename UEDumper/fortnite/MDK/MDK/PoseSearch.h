@@ -23,19 +23,19 @@ public:
 
 	/// Functions
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.SetInterruptMode
-	// void SetInterruptMode(FMotionMatchingAnimNodeReference& MotionMatchingNode, EPoseSearchInterruptMode InterruptMode);     // [0x7c6110c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetInterruptMode(FMotionMatchingAnimNodeReference& MotionMatchingNode, EPoseSearchInterruptMode InterruptMode);     // [0x7cb6cc8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.SetDatabaseToSearch
-	// void SetDatabaseToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, class UPoseSearchDatabase* Database, EPoseSearchInterruptMode InterruptMode); // [0x7c60ca0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDatabaseToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, class UPoseSearchDatabase* Database, EPoseSearchInterruptMode InterruptMode); // [0x7cb685c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.SetDatabasesToSearch
-	// void SetDatabasesToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, TArray<UPoseSearchDatabase*>& Databases, EPoseSearchInterruptMode InterruptMode); // [0x7c60f1c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDatabasesToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, TArray<UPoseSearchDatabase*>& Databases, EPoseSearchInterruptMode InterruptMode); // [0x7cb6ad8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.ResetDatabasesToSearch
-	// void ResetDatabasesToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, EPoseSearchInterruptMode InterruptMode); // [0x7c60b10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ResetDatabasesToSearch(FMotionMatchingAnimNodeReference& MotionMatchingNode, EPoseSearchInterruptMode InterruptMode); // [0x7cb66cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.GetMotionMatchingSearchResult
-	// void GetMotionMatchingSearchResult(FMotionMatchingAnimNodeReference& MotionMatchingNode, FPoseSearchBlueprintResult& Result, bool& bIsResultValid); // [0x7c60940] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetMotionMatchingSearchResult(FMotionMatchingAnimNodeReference& MotionMatchingNode, FPoseSearchBlueprintResult& Result, bool& bIsResultValid); // [0x7cb6570] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.ConvertToMotionMatchingNodePure
-	// void ConvertToMotionMatchingNodePure(FAnimNodeReference& Node, FMotionMatchingAnimNodeReference& MotionMatchingNode, bool& Result); // [0x7c60750] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToMotionMatchingNodePure(FAnimNodeReference& Node, FMotionMatchingAnimNodeReference& MotionMatchingNode, bool& Result); // [0x7cb63f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PoseSearch.MotionMatchingAnimNodeLibrary.ConvertToMotionMatchingNode
-	// FMotionMatchingAnimNodeReference ConvertToMotionMatchingNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x7c60624] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FMotionMatchingAnimNodeReference ConvertToMotionMatchingNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x7cb62cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PoseSearch.PoseSearchDatabase
@@ -135,7 +135,7 @@ public:
 
 	/// Functions
 	// Function /Script/PoseSearch.PoseSearchFeatureChannel_Heading.BP_GetWorldRotation
-	// FQuat BP_GetWorldRotation(class UAnimInstance* AnimInstance);                                                            // [0x130d900] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FQuat BP_GetWorldRotation(class UAnimInstance* AnimInstance);                                                            // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/PoseSearch.PoseSearchFeatureChannel_Padding
@@ -209,7 +209,7 @@ public:
 
 	/// Functions
 	// Function /Script/PoseSearch.PoseSearchFeatureChannel_Position.BP_GetWorldPosition
-	// FVector BP_GetWorldPosition(class UAnimInstance* AnimInstance);                                                          // [0x130d900] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FVector BP_GetWorldPosition(class UAnimInstance* AnimInstance);                                                          // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/PoseSearch.PoseSearchFeatureChannel_SamplingTime
@@ -260,7 +260,7 @@ public:
 
 	/// Functions
 	// Function /Script/PoseSearch.PoseSearchFeatureChannel_Velocity.BP_GetWorldVelocity
-	// FVector BP_GetWorldVelocity(class UAnimInstance* AnimInstance);                                                          // [0x130d900] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FVector BP_GetWorldVelocity(class UAnimInstance* AnimInstance);                                                          // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/PoseSearch.PoseSearchNormalizationSet
@@ -379,7 +379,7 @@ public:
 
 	/// Functions
 	// Function /Script/PoseSearch.PoseSearchLibrary.MotionMatch
-	// void MotionMatch(class UAnimInstance* AnimInstance, class UPoseSearchDatabase* Database, FName PoseHistoryName, FPoseSearchBlueprintResult& Result, class UAnimationAsset* FutureAnimation, float FutureAnimationStartTime, float TimeToFutureAnimationStart, int32_t DebugSessionUniqueIdentifier); // [0x7c68938] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void MotionMatch(class UAnimInstance* AnimInstance, class UPoseSearchDatabase* Database, FName PoseHistoryName, FPoseSearchBlueprintResult& Result, class UAnimationAsset* FutureAnimation, float FutureAnimationStartTime, float TimeToFutureAnimationStart, int32_t DebugSessionUniqueIdentifier); // [0x7cbfd0c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/PoseSearch.MotionMatchingAnimNodeReference

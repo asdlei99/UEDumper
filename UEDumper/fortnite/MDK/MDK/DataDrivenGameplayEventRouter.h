@@ -32,7 +32,7 @@ public:
 
 	/// Functions
 	// Function /Script/DataDrivenGameplayEventRouter.GameplayEventDescriptorLibrary.BroadcastEvent
-	// bool BroadcastEvent(FGameplayEventDescriptor& EventDescriptor, class UObject* EventContext, int32_t& Event, class UClass* EventRouterScope, class AActor* RouterContextActor); // [0x199c978] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// bool BroadcastEvent(FGameplayEventDescriptor& EventDescriptor, class UObject* EventContext, int32_t& Event, class UClass* EventRouterScope, class AActor* RouterContextActor); // [0x1f2ee7c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/DataDrivenGameplayEventRouter.GameplayEventDefinition

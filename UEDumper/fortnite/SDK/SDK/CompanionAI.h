@@ -22,8 +22,8 @@ public:
 
 	/// Functions
 	// Function /Script/CompanionAI.PingComponentBase.HandleOnNPCUnconvertedEvent
-	// void HandleOnNPCUnconvertedEvent(class AFortPawn* UnconvertedFortPawn, EUnconvertReason UnconvertReason);             // [0xab61b74] Final|Native|Private 
+	// void HandleOnNPCUnconvertedEvent(class AFortPawn* UnconvertedFortPawn, EUnconvertReason UnconvertReason);             // [0xae5fc50] Final|Native|Private 
 	// Function /Script/CompanionAI.PingComponentBase.HandleOnNPCConvertedEvent
-	// void HandleOnNPCConvertedEvent(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                      // [0xab61a38] Final|Native|Private 
+	// void HandleOnNPCConvertedEvent(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                      // [0xae5fb90] Final|Native|Private 
 };
 

@@ -28,14 +28,14 @@ class UBattleRoyaleFrontendExperienceFlow : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x48];                                      // 0x0000   (0x0048)  MISSED
-	SDK_UNDEFINED(16,11795) /* TArray<FString> */      __um(DefaultFlowStepArray);                                 // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,11796) /* TArray<FString> */      __um(FirstTimeSeasonFlowStepArray);                         // 0x0058   (0x0010)  
-	SDK_UNDEFINED(80,11797) /* TMap<FString, FString> */ __um(BRVideoRating);                                      // 0x0068   (0x0050)  
+	SDK_UNDEFINED(16,11857) /* TArray<FString> */      __um(DefaultFlowStepArray);                                 // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,11858) /* TArray<FString> */      __um(FirstTimeSeasonFlowStepArray);                         // 0x0058   (0x0010)  
+	SDK_UNDEFINED(80,11859) /* TMap<FString, FString> */ __um(BRVideoRating);                                      // 0x0068   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(32,11798) /* TWeakObjectPtr<UClass*> */ __um(VideoPlayerClass);                                  // 0x00C0   (0x0020)  
+	SDK_UNDEFINED(32,11860) /* TWeakObjectPtr<UClass*> */ __um(VideoPlayerClass);                                  // 0x00C0   (0x0020)  
 	class UFortStreamMediaSource*                      VideoStream_Source;                                         // 0x00E0   (0x0008)  
 	class UClass*                                      HabaneroIntroModalClass;                                    // 0x00E8   (0x0008)  
-	SDK_UNDEFINED(32,11799) /* TWeakObjectPtr<UClass*> */ __um(FireModeSelectionReminderModalClass);               // 0x00F0   (0x0020)  
-	SDK_UNDEFINED(32,11800) /* TWeakObjectPtr<UClass*> */ __um(FireModeSelectionScreenClass);                      // 0x0110   (0x0020)  
+	SDK_UNDEFINED(32,11861) /* TWeakObjectPtr<UClass*> */ __um(FireModeSelectionReminderModalClass);               // 0x00F0   (0x0020)  
+	SDK_UNDEFINED(32,11862) /* TWeakObjectPtr<UClass*> */ __um(FireModeSelectionScreenClass);                      // 0x0110   (0x0020)  
 };
 

@@ -177,7 +177,7 @@ class UNetReplicationGraphConnection : public UReplicationConnectionDriver
 public:
 	class UNetConnection*                              NetConnection;                                              // 0x0028   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x144];                                     // 0x0030   (0x0144)  MISSED
-	SDK_UNDEFINED(8,2584) /* TWeakObjectPtr<AReplicationGraphDebugActor*> */ __um(DebugActor);                     // 0x0174   (0x0008)  
+	SDK_UNDEFINED(8,2593) /* TWeakObjectPtr<AReplicationGraphDebugActor*> */ __um(DebugActor);                     // 0x0174   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x017C   (0x0004)  MISSED
 	TArray<FLastLocationGatherInfo>                    LastGatherLocations;                                        // 0x0180   (0x0010)  
 	unsigned char                                      UnknownData02_5[0xB0];                                      // 0x0190   (0x00B0)  MISSED
@@ -197,23 +197,23 @@ public:
 
 	/// Functions
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging
-	// void ServerStopDebugging();                                                                                           // [0x36f7b08] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerStopDebugging();                                                                                           // [0x1f9c7fc] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging
-	// void ServerStartDebugging();                                                                                          // [0x7bcfb24] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerStartDebugging();                                                                                          // [0x7be61dc] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass
-	// void ServerSetPeriodFrameForClass(class UClass* Class, int32_t PeriodFrame);                                          // [0x7bcf9e0] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSetPeriodFrameForClass(class UClass* Class, int32_t PeriodFrame);                                          // [0x7be6114] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass
-	// void ServerSetCullDistanceForClass(class UClass* Class, float CullDistance);                                          // [0x7bcf89c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSetCullDistanceForClass(class UClass* Class, float CullDistance);                                          // [0x7be604c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerSetConditionalActorBreakpoint
-	// void ServerSetConditionalActorBreakpoint(class AActor* Actor);                                                        // [0x6526488] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSetConditionalActorBreakpoint(class AActor* Actor);                                                        // [0x659771c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerPrintCullDistances
-	// void ServerPrintCullDistances();                                                                                      // [0x1cf2a00] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerPrintCullDistances();                                                                                      // [0x18017a4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo
-	// void ServerPrintAllActorInfo(FString Str);                                                                            // [0x7bcf1a8] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerPrintAllActorInfo(FString Str);                                                                            // [0x7be599c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo
-	// void ServerCellInfo();                                                                                                // [0x2f560f0] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerCellInfo();                                                                                                // [0x304ed28] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo
-	// void ClientCellInfo(FVector CellLocation, FVector CellExtent, TArray<AActor*> Actors);                                // [0x7bcef98] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
+	// void ClientCellInfo(FVector CellLocation, FVector CellExtent, TArray<AActor*> Actors);                                // [0x7be5640] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
 };
 
 /// Struct /Script/ReplicationGraph.ClassReplicationInfo

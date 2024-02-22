@@ -44,7 +44,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FSpatialMetricProperties
 { 
-	SDK_UNDEFINED(24,11868) /* FText */                __um(Label);                                                // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11930) /* FText */                __um(Label);                                                // 0x0000   (0x0018)  
 	int32_t                                            MinValue;                                                   // 0x0018   (0x0004)  
 	int32_t                                            MaxValue;                                                   // 0x001C   (0x0004)  
 	int32_t                                            ThresholdValue;                                             // 0x0020   (0x0004)  
@@ -53,13 +53,21 @@ struct FSpatialMetricProperties
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
 
-/// Class /Script/SpatialMetricsCore.SpatialMetric
+/// Class /Script/SpatialMetricsCore.SpatialMetricInterface
 /// Size: 0x0030 (0x000028 - 0x000058)
-class USpatialMetric : public UObject
+class USpatialMetricInterface : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	FSpatialMetricProperties                           Properties;                                                 // 0x0028   (0x0030)  
+};
+
+/// Class /Script/SpatialMetricsCore.SpatialMetricBase
+/// Size: 0x0058 (0x000058 - 0x0000B0)
+class USpatialMetricBase : public USpatialMetricInterface
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x58];                                      // 0x0058   (0x0058)  MISSED
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsActorIndexer
@@ -80,20 +88,21 @@ public:
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsSubsystem
-/// Size: 0x0038 (0x000030 - 0x000068)
+/// Size: 0x0040 (0x000030 - 0x000070)
 class USpatialMetricsSubsystem : public UWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x10];                                      // 0x0030   (0x0010)  MISSED
-	TArray<class USpatialMetric*>                      Metrics;                                                    // 0x0040   (0x0010)  
+	TArray<class USpatialMetricInterface*>             Metrics;                                                    // 0x0040   (0x0010)  
 	TArray<class USpatialMetricsSubsystemExtension*>   Extensions;                                                 // 0x0050   (0x0010)  
 	float                                              UpdateRateInSeconds;                                        // 0x0060   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0064   (0x0004)  MISSED
+	int32_t                                            WarmUpFrames;                                               // 0x0064   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0068   (0x0008)  MISSED
 };
 
 /// Class /Script/SpatialMetricsCore.TestMetric
 /// Size: 0x0080 (0x000058 - 0x0000D8)
-class UTestMetric : public USpatialMetric
+class UTestMetric : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x74];                                      // 0x0058   (0x0074)  MISSED

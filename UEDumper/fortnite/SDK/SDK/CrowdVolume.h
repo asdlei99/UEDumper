@@ -21,8 +21,8 @@ public:
 
 	/// Functions
 	// Function /Script/CrowdVolume.CrowdSpawner.SpawnCrowd
-	// void SpawnCrowd(int32_t Width, int32_t Depth, int32_t Height, int32_t Precision, int32_t CharacterScaleRandomness, int32_t CharacterAngleRandomness, int32_t Density); // [0xb74cadc] Final|Native|Public|BlueprintCallable 
+	// void SpawnCrowd(int32_t Width, int32_t Depth, int32_t Height, int32_t Precision, int32_t CharacterScaleRandomness, int32_t CharacterAngleRandomness, int32_t Density); // [0xb863468] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CrowdVolume.CrowdSpawner.RefreshTrackedActors
-	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);   // [0xb6f8f44] Final|Native|Public|BlueprintCallable 
+	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);   // [0xb810838] Final|Native|Public|BlueprintCallable 
 };
 

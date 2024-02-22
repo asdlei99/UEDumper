@@ -98,7 +98,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityCore.EntityEnableableComponent.OnRep_Enabled
-	// void OnRep_Enabled();                                                                                                 // [0x703719c] Final|Native|Private 
+	// void OnRep_Enabled();                                                                                                 // [0x705b140] Final|Native|Private 
 };
 
 /// Class /Script/EntityCore.EntityTickableComponent

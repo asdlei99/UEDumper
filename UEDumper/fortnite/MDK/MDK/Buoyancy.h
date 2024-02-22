@@ -21,11 +21,11 @@ public:
 
 	/// Functions
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouching
-	// void OnSurfaceTouching(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouching(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouchEnd
-	// void OnSurfaceTouchEnd(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouchEnd(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouchBegin
-	// void OnSurfaceTouchBegin(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouchBegin(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/Buoyancy.BuoyancyRuntimeSettings
@@ -62,7 +62,7 @@ public:
 
 	/// Functions
 	// Function /Script/Buoyancy.BuoyancySubsystem.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0x7d1398c] Final|Native|Public|Const 
+	// bool IsEnabled();                                                                                                        // [0x7d25dec] Final|Native|Public|Const 
 };
 
 /// Enum /Script/Buoyancy.EBuoyancyEventFlags

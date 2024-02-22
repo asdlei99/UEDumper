@@ -21,8 +21,8 @@ public:
 
 	/// Functions
 	// Function /Script/EpicMediaCDNHostnames.EpicMediaCDNHostnames.GetSelectedHostName
-	// FString GetSelectedHostName();                                                                                        // [0x7b71a04] Final|Native|Public|BlueprintCallable 
+	// FString GetSelectedHostName();                                                                                        // [0x7b87f1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicMediaCDNHostnames.EpicMediaCDNHostnames.GetHostnames
-	// TArray<FString> GetHostnames();                                                                                       // [0x7b719c8] Final|Native|Public|BlueprintCallable 
+	// TArray<FString> GetHostnames();                                                                                       // [0x7b87ee0] Final|Native|Public|BlueprintCallable 
 };
 

@@ -34,15 +34,15 @@ public:
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryConfig
-/// Size: 0x0018 (0x000128 - 0x000140)
+/// Size: 0x0018 (0x000130 - 0x000148)
 class UDelMarLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 320;
+	static inline constexpr uint64_t __MDKClassSize = 328;
 
 public:
-	CMember(class UCosmeticLoadoutSchema*)             VehicleLoadoutSchema                                        OFFSET(get<T>, {0x128, 8, 0, 0})
-	CMember(TArray<FPrimaryAssetType>)                 AllowedAssetTypes                                           OFFSET(get<T>, {0x130, 16, 0, 0})
+	CMember(class UCosmeticLoadoutSchema*)             VehicleLoadoutSchema                                        OFFSET(get<T>, {0x130, 8, 0, 0})
+	CMember(TArray<FPrimaryAssetType>)                 AllowedAssetTypes                                           OFFSET(get<T>, {0x138, 16, 0, 0})
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryVM

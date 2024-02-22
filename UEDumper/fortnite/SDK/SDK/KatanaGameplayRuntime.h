@@ -141,24 +141,24 @@ public:
 	FScalableFloat                                     PropRemainingHealthToDestroy;                               // 0x0150   (0x0028)  
 	FScalableFloat                                     BuildingRemainingHealthToDestroy;                           // 0x0178   (0x0028)  
 	FGameplayTagContainer                              DashBlockingBuildingTags;                                   // 0x01A0   (0x0020)  
-	SDK_UNDEFINED(80,14592) /* TSet<UClass*> */        __um(DashBlockingBuildingClasses);                          // 0x01C0   (0x0050)  
+	SDK_UNDEFINED(80,14724) /* TSet<UClass*> */        __um(DashBlockingBuildingClasses);                          // 0x01C0   (0x0050)  
 	FFortAbilityTargetSelectionList                    PawnTargetSelectionList;                                    // 0x0210   (0x0048)  
-	SDK_UNDEFINED(1,14593) /* TEnumAsByte<ECollisionChannel> */ __um(DashTraceChannel);                            // 0x0258   (0x0001)  
+	SDK_UNDEFINED(1,14725) /* TEnumAsByte<ECollisionChannel> */ __um(DashTraceChannel);                            // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0259   (0x0003)  MISSED
 	float                                              ObstructionOverlapBoxHalfSize;                              // 0x025C   (0x0004)  
 	FFortTargetFilter                                  ObstructionTargetFilter;                                    // 0x0260   (0x0038)  
 	FGameplayTagContainer                              DashBlockIgnoreTags;                                        // 0x0298   (0x0020)  
-	SDK_UNDEFINED(80,14594) /* TMap<EFortKatanaPrimaryAttackVariation, FFortKatanaPrimaryAttackVariationInfo> */ __um(PrimaryAttackVariationInfos); // 0x02B8   (0x0050)  
+	SDK_UNDEFINED(80,14726) /* TMap<EFortKatanaPrimaryAttackVariation, FFortKatanaPrimaryAttackVariationInfo> */ __um(PrimaryAttackVariationInfos); // 0x02B8   (0x0050)  
 	float                                              PrimaryAttackMinForwardMovement;                            // 0x0308   (0x0004)  
-	SDK_UNDEFINED(1,14595) /* TEnumAsByte<ECollisionChannel> */ __um(PrimaryAttackObstructionTraceChannel);        // 0x030C   (0x0001)  
+	SDK_UNDEFINED(1,14727) /* TEnumAsByte<ECollisionChannel> */ __um(PrimaryAttackObstructionTraceChannel);        // 0x030C   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x030D   (0x0003)  MISSED
 
 
 	/// Functions
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformPrimaryAttackTargeting
-	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xabb5484] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xaeb30bc] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformDashTargeting
-	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xabb53a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xaeb2fdc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/KatanaGameplayRuntime.FortKatanaPrimaryAttackVariationInfo
@@ -176,7 +176,7 @@ struct FFortKatanaDashTargetingInfo
 { 
 	FVector                                            DashDirection;                                              // 0x0000   (0x0018)  
 	float                                              DashDistance;                                               // 0x0018   (0x0004)  
-	SDK_UNDEFINED(8,14596) /* TWeakObjectPtr<AActor*> */ __um(DashBlockingActor);                                  // 0x001C   (0x0008)  
+	SDK_UNDEFINED(8,14728) /* TWeakObjectPtr<AActor*> */ __um(DashBlockingActor);                                  // 0x001C   (0x0008)  
 	bool                                               bWasDashDirectionAdjusted;                                  // 0x0024   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0025   (0x0003)  MISSED
 	TArray<class AActor*>                              DamagedActors;                                              // 0x0028   (0x0010)  

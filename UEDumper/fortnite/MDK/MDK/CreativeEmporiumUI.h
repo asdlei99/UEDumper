@@ -34,15 +34,15 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFilterEntry.UpdateItemCount
-	// void UpdateItemCount(int32_t ItemCount);                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void UpdateItemCount(int32_t ItemCount);                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFilterEntry.UpdateCheckMarkState
-	// void UpdateCheckMarkState(bool bIsChecked);                                                                              // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateCheckMarkState(bool bIsChecked);                                                                              // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFilterEntry.UpdateButtonText
-	// void UpdateButtonText();                                                                                                 // [0xb892990] Final|Native|Public|BlueprintCallable 
+	// void UpdateButtonText();                                                                                                 // [0xb9ab7b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFilterEntry.SetIsFilterActive
-	// void SetIsFilterActive(bool bInFilterActive);                                                                            // [0xb89226c] Final|Native|Public|BlueprintCallable 
+	// void SetIsFilterActive(bool bInFilterActive);                                                                            // [0xb9ab2e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFilterEntry.IsFilterActive
-	// bool IsFilterActive();                                                                                                   // [0xb890724] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFilterActive();                                                                                                   // [0xb9a9974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CreativeEmporiumUI.EmporiumBrowserTag
@@ -57,11 +57,11 @@ public:
 };
 
 /// Class /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel
-/// Size: 0x0210 (0x0002E8 - 0x0004F8)
+/// Size: 0x0220 (0x0002E8 - 0x000508)
 class UEmporiumBrowserFiltersPanel : public UCommonUserWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1272;
+	static inline constexpr uint64_t __MDKClassSize = 1288;
 
 public:
 	SMember(FMulticastInlineDelegate)                  OnFilterChanged                                             OFFSET(getStruct<T>, {0x2E8, 16, 0, 0})
@@ -70,89 +70,97 @@ public:
 	SMember(FMulticastInlineDelegate)                  OnFocusChanged                                              OFFSET(getStruct<T>, {0x318, 16, 0, 0})
 	SMember(FMulticastInlineDelegate)                  OnCategoryActivated                                         OFFSET(getStruct<T>, {0x328, 16, 0, 0})
 	SMember(FMulticastInlineDelegate)                  OnCategoryFocused                                           OFFSET(getStruct<T>, {0x338, 16, 0, 0})
-	CMember(class UClass*)                             FilterSectionHeaderWidgetClass                              OFFSET(get<T>, {0x348, 8, 0, 0})
-	CMember(class UClass*)                             FilterCategoryHeaderWidgetClass                             OFFSET(get<T>, {0x350, 8, 0, 0})
-	CMember(class UClass*)                             FilterHomeHeaderWidgetClass                                 OFFSET(get<T>, {0x358, 8, 0, 0})
-	CMember(class UClass*)                             FilterEntryWidgetClass                                      OFFSET(get<T>, {0x360, 8, 0, 0})
-	CMember(TArray<FFortEmporiumSortEntry>)            SortEntries                                                 OFFSET(get<T>, {0x368, 16, 0, 0})
-	CMember(TArray<FFortEmporiumFilterEntry>)          FilterEntries                                               OFFSET(get<T>, {0x378, 16, 0, 0})
-	CMember(TArray<FFortEmporiumPriceFilterEntry>)     PriceFilterEntries                                          OFFSET(get<T>, {0x388, 16, 0, 0})
-	CMember(TArray<FName>)                             LicenseFilterEntries                                        OFFSET(get<T>, {0x398, 16, 0, 0})
-	SMember(FName)                                     DefaultCategoryFilter                                       OFFSET(getStruct<T>, {0x3A8, 4, 0, 0})
-	CMember(class UScrollBox*)                         ScrollBox_FilterScroll                                      OFFSET(get<T>, {0x400, 8, 0, 0})
-	CMember(class UEmporiumBrowserFilterEntry*)        Button_All                                                  OFFSET(get<T>, {0x408, 8, 0, 0})
-	CMember(class UCommonButtonBase*)                  Button_SortAndFilter                                        OFFSET(get<T>, {0x410, 8, 0, 0})
-	SMember(FDataTableRowHandle)                       FocusSearchInputActionRow                                   OFFSET(getStruct<T>, {0x4D0, 16, 0, 0})
-	SMember(FDataTableRowHandle)                       ClearSearchInputActionRow                                   OFFSET(getStruct<T>, {0x4E0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnUpdateCategoryCounts                                      OFFSET(getStruct<T>, {0x348, 16, 0, 0})
+	CMember(class UClass*)                             FilterSectionHeaderWidgetClass                              OFFSET(get<T>, {0x358, 8, 0, 0})
+	CMember(class UClass*)                             FilterCategoryHeaderWidgetClass                             OFFSET(get<T>, {0x360, 8, 0, 0})
+	CMember(class UClass*)                             FilterHomeHeaderWidgetClass                                 OFFSET(get<T>, {0x368, 8, 0, 0})
+	CMember(class UClass*)                             FilterEntryWidgetClass                                      OFFSET(get<T>, {0x370, 8, 0, 0})
+	CMember(TArray<FFortEmporiumSortEntry>)            SortEntries                                                 OFFSET(get<T>, {0x378, 16, 0, 0})
+	CMember(TArray<FFortEmporiumFilterEntry>)          FilterEntries                                               OFFSET(get<T>, {0x388, 16, 0, 0})
+	CMember(TArray<FFortEmporiumPriceFilterEntry>)     PriceFilterEntries                                          OFFSET(get<T>, {0x398, 16, 0, 0})
+	CMember(TArray<FName>)                             LicenseFilterEntries                                        OFFSET(get<T>, {0x3A8, 16, 0, 0})
+	SMember(FName)                                     DefaultCategoryFilter                                       OFFSET(getStruct<T>, {0x3B8, 4, 0, 0})
+	CMember(class UScrollBox*)                         ScrollBox_FilterScroll                                      OFFSET(get<T>, {0x410, 8, 0, 0})
+	CMember(class UEmporiumBrowserFilterEntry*)        Button_All                                                  OFFSET(get<T>, {0x418, 8, 0, 0})
+	CMember(class UCommonButtonBase*)                  Button_SortAndFilter                                        OFFSET(get<T>, {0x420, 8, 0, 0})
+	SMember(FDataTableRowHandle)                       FocusSearchInputActionRow                                   OFFSET(getStruct<T>, {0x4E0, 16, 0, 0})
+	SMember(FDataTableRowHandle)                       ClearSearchInputActionRow                                   OFFSET(getStruct<T>, {0x4F0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.SetItemDetailTags
-	// void SetItemDetailTags(TArray<FName>& TagIDs);                                                                           // [0xb8923f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetItemDetailTags(TArray<FName>& TagIDs);                                                                           // [0xb9ab3e4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.OnSetSearchVisible
-	// void OnSetSearchVisible(bool bVisible);                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetSearchVisible(bool bVisible);                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.OnSetSearchText
-	// void OnSetSearchText(FText& NewSearchText);                                                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetSearchText(FText& NewSearchText);                                                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.OnSetSearchFocused
-	// void OnSetSearchFocused();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetSearchFocused();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.NavigateToNextSection
+	// class UWidget* NavigateToNextSection(bool bReverse);                                                                     // [0xb9a9a1c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.IncludeItemDetailTag
-	// void IncludeItemDetailTag(FName& TagID);                                                                                 // [0xb890654] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void IncludeItemDetailTag(FName& TagID);                                                                                 // [0xb9a98a4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleSortAndFilterClicked
-	// void HandleSortAndFilterClicked();                                                                                       // [0xb890310] Final|Native|Private 
+	// void HandleSortAndFilterClicked();                                                                                       // [0xb9a9640] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleShowAllEnabled
-	// void HandleShowAllEnabled(bool bShowAllItems, class UObject* ListItemObject);                                            // [0xb8901c0] Final|Native|Private 
+	// void HandleShowAllEnabled(bool bShowAllItems, class UObject* ListItemObject);                                            // [0xb9a957c] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleSearchTextChanged
-	// void HandleSearchTextChanged(FText& Text);                                                                               // [0xb890064] Final|Native|Private|HasOutParms|BlueprintCallable 
+	// void HandleSearchTextChanged(FText& Text);                                                                               // [0xb9a9460] Final|Native|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleFilterSelected
-	// void HandleFilterSelected(bool bIsFilterEnabled, class UEmporiumBrowserFilterEntry* Entry);                              // [0xb88f7f8] Final|Native|Private 
+	// void HandleFilterSelected(bool bIsFilterEnabled, class UEmporiumBrowserFilterEntry* Entry);                              // [0xb9a8dbc] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleFilterEnabled
-	// void HandleFilterEnabled(bool bIsFilterEnabled, class UObject* ListItemObject);                                          // [0xb88f3e8] Final|Native|Private 
+	// void HandleFilterEnabled(bool bIsFilterEnabled, class UObject* ListItemObject);                                          // [0xb9a8a74] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleCategoryWidgetDestroyed
-	// void HandleCategoryWidgetDestroyed(class UObject* ListItemObject);                                                       // [0xb88f038] Final|Native|Private 
+	// void HandleCategoryWidgetDestroyed(class UObject* ListItemObject);                                                       // [0xb9a87c0] Final|Native|Private 
+	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleCategoryExpansion
+	// void HandleCategoryExpansion(class UObject* ListItemObject);                                                             // [0xb9a86a8] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.HandleCategoryActivated
-	// void HandleCategoryActivated(bool bIsExpanded, class UObject* ListItemObject);                                           // [0xb88ed5c] Final|Native|Private 
+	// void HandleCategoryActivated(bool bIsExpanded, class UObject* ListItemObject);                                           // [0xb9a8554] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.GetFilterCount
-	// int32_t GetFilterCount();                                                                                                // [0xb88eba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFilterCount();                                                                                                // [0xb9a83d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.EmporiumBrowserFiltersPanel.ExcludeItemDetailTag
-	// void ExcludeItemDetailTag(FName& TagID);                                                                                 // [0xb88e794] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ExcludeItemDetailTag(FName& TagID);                                                                                 // [0xb9a7ff0] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader
-/// Size: 0x0028 (0x0002C0 - 0x0002E8)
+/// Size: 0x0038 (0x0002C0 - 0x0002F8)
 class UFortEmporiumFilterCategoryHeader : public UUserWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 744;
+	static inline constexpr uint64_t __MDKClassSize = 760;
 
 public:
 	SMember(FMulticastInlineDelegate)                  OnCategoryActivated                                         OFFSET(getStruct<T>, {0x2C0, 16, 0, 0})
 	SMember(FMulticastInlineDelegate)                  OnWidgetDestroyed                                           OFFSET(getStruct<T>, {0x2D0, 16, 0, 0})
-	CMember(class UEmporiumBrowserTag*)                tag                                                         OFFSET(get<T>, {0x2E0, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnExpandCategory                                            OFFSET(getStruct<T>, {0x2E0, 16, 0, 0})
+	CMember(class UEmporiumBrowserTag*)                tag                                                         OFFSET(get<T>, {0x2F0, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.UpdateCategoryCount
-	// void UpdateCategoryCount(int32_t NewCount, bool bHideIfEmpty);                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void UpdateCategoryCount(int32_t NewCount, bool bHideIfEmpty);                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.ShowCategoryActive
-	// void ShowCategoryActive(bool bIsActive);                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void ShowCategoryActive(bool bIsActive);                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.SetSubcategoryCount
-	// void SetSubcategoryCount(int32_t NewCount);                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetSubcategoryCount(int32_t NewCount);                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.SetCategoryText
-	// void SetCategoryText(FText& NewButtonText);                                                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetCategoryText(FText& NewButtonText);                                                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.GetSubcategoryWidgets
-	// TArray<UWidget*> GetSubcategoryWidgets();                                                                                // [0x878ed90] Native|Event|Public|BlueprintEvent|Const 
+	// TArray<UWidget*> GetSubcategoryWidgets();                                                                                // [0x879148c] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.GetCategoryButton
-	// class UCommonButtonBase* GetCategoryButton();                                                                            // [0x130d900] Event|Public|BlueprintEvent|Const 
+	// class UCommonButtonBase* GetCategoryButton();                                                                            // [0x3d1d968] Event|Public|BlueprintEvent|Const 
+	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.ExpandSection
+	// void ExpandSection();                                                                                                    // [0xb9a807c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.ExpandCategory
-	// void ExpandCategory(bool bExpanded);                                                                                     // [0x130d900] Event|Public|BlueprintEvent 
+	// void ExpandCategory(bool bExpanded);                                                                                     // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.EnableCategoryExpansion
-	// void EnableCategoryExpansion(bool bShow);                                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void EnableCategoryExpansion(bool bShow);                                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.ClearSubcategoryWidgets
-	// void ClearSubcategoryWidgets();                                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void ClearSubcategoryWidgets();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.AddSubcategoryWidget
-	// void AddSubcategoryWidget(class UWidget* SubcategoryWidget);                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void AddSubcategoryWidget(class UWidget* SubcategoryWidget);                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumFilterCategoryHeader.ActivateCategory
-	// void ActivateCategory(bool bExpanded);                                                                                   // [0xb88e038] Final|Native|Protected|BlueprintCallable 
+	// void ActivateCategory(bool bExpanded);                                                                                   // [0xb9a78d4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumFiltersSubPanel
@@ -177,11 +185,11 @@ public:
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumHomeListEntry
-/// Size: 0x0208 (0x0002C0 - 0x0004C8)
+/// Size: 0x0200 (0x0002C0 - 0x0004C0)
 class UFortEmporiumHomeListEntry : public UUserWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1224;
+	static inline constexpr uint64_t __MDKClassSize = 1216;
 
 public:
 	CMember(class UFortEmporiumHomeListView*)          ParentView                                                  OFFSET(get<T>, {0x2C8, 8, 0, 0})
@@ -193,27 +201,27 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumHomeListEntry.UpdateWarningMessage
-	// void UpdateWarningMessage(bool bShowMessage);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateWarningMessage(bool bShowMessage);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumHomeListEntry.GetCollapseBorderPadFlagForCategory
-	// bool GetCollapseBorderPadFlagForCategory();                                                                              // [0xb88e8ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCollapseBorderPadFlagForCategory();                                                                              // [0xb9a817c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumHomeListEntry.GetCardSizeForCategory
-	// EFortItemCardSize GetCardSizeForCategory();                                                                              // [0xb88e820] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EFortItemCardSize GetCardSizeForCategory();                                                                              // [0xb9a80b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumHomeListView
-/// Size: 0x0250 (0x000BD0 - 0x000E20)
+/// Size: 0x0260 (0x000BD0 - 0x000E30)
 class UFortEmporiumHomeListView : public UCommonListView
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3616;
+	static inline constexpr uint64_t __MDKClassSize = 3632;
 
 public:
-	CMember(TArray<class UFortEmporiumItemListTabPanel*>) TabPanelList                                             OFFSET(get<T>, {0xC58, 16, 0, 0})
+	CMember(TArray<class UFortEmporiumItemListTabPanel*>) TabPanelList                                             OFFSET(get<T>, {0xC70, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumHomeListView.GetFocusWidget
-	// class UWidget* GetFocusWidget();                                                                                         // [0xb88ebb8] Native|Public|BlueprintCallable 
+	// class UWidget* GetFocusWidget();                                                                                         // [0xb9a83f0] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumHomeTabPanel
@@ -240,20 +248,20 @@ public:
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumItemDefinition
-/// Size: 0x0110 (0x000338 - 0x000448)
+/// Size: 0x0110 (0x000328 - 0x000438)
 class UFortEmporiumItemDefinition : public UFortItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1096;
+	static inline constexpr uint64_t __MDKClassSize = 1080;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnItemThumbnailDownloaded                                   OFFSET(getStruct<T>, {0x340, 16, 0, 0})
-	CMember(class UTexture2D*)                         ThumbnailTexture                                            OFFSET(get<T>, {0x438, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnItemThumbnailDownloaded                                   OFFSET(getStruct<T>, {0x330, 16, 0, 0})
+	CMember(class UTexture2D*)                         ThumbnailTexture                                            OFFSET(get<T>, {0x428, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDefinition.GetEmporiumItemData
-	// FFortEmporiumItemData GetEmporiumItemData();                                                                             // [0xb88eb84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortEmporiumItemData GetEmporiumItemData();                                                                             // [0xb9a83bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel
@@ -273,33 +281,33 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.UpdateItemDetailsDisplay
-	// void UpdateItemDetailsDisplay(bool bShowItemDetails);                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateItemDetailsDisplay(bool bShowItemDetails);                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.ToggleItemDetailsPanel
-	// void ToggleItemDetailsPanel();                                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void ToggleItemDetailsPanel();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.ShowExtendedDataPanel
-	// void ShowExtendedDataPanel();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ShowExtendedDataPanel();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.SetSpecialItemTagVisibility
-	// void SetSpecialItemTagVisibility(FName& SpecialItemTag);                                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSpecialItemTagVisibility(FName& SpecialItemTag);                                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.SetItemToDetail
-	// void SetItemToDetail(class UFortItem* InItemToDetail, bool bUseLargeThumbnail, bool bAllowInteractiveTags);              // [0xb89248c] Final|Native|Public|BlueprintCallable 
+	// void SetItemToDetail(class UFortItem* InItemToDetail, bool bUseLargeThumbnail, bool bAllowInteractiveTags);              // [0xb9ab480] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.SetItemDetails
-	// void SetItemDetails(class UFortItem* FortItem, bool bUseLargeThumbnail, bool bAllowInteractiveTags);                     // [0x130d900] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void SetItemDetails(class UFortItem* FortItem, bool bUseLargeThumbnail, bool bAllowInteractiveTags);                     // [0x3d1d968] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.SetActiveItemDetailTags
-	// void SetActiveItemDetailTags(TArray<FName>& ActiveTags);                                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void SetActiveItemDetailTags(TArray<FName>& ActiveTags);                                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.IsShowingExtendedDataPanel
-	// bool IsShowingExtendedDataPanel();                                                                                       // [0x2bf8390] Native|Event|Protected|BlueprintEvent|Const 
+	// bool IsShowingExtendedDataPanel();                                                                                       // [0x2c9e4a0] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.IsShowingAdditionalButtons
-	// bool IsShowingAdditionalButtons();                                                                                       // [0x2bf8390] Native|Event|Protected|BlueprintEvent 
+	// bool IsShowingAdditionalButtons();                                                                                       // [0x2c9e4a0] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.HideExtendedDataPanel
-	// void HideExtendedDataPanel();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HideExtendedDataPanel();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.HideAdditionalButtons
-	// void HideAdditionalButtons();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HideAdditionalButtons();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.HasLegacyItemDetailsPanel
-	// bool HasLegacyItemDetailsPanel();                                                                                        // [0x2bf8390] Native|Event|Public|BlueprintEvent|Const 
+	// bool HasLegacyItemDetailsPanel();                                                                                        // [0x2c9e4a0] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.HandleItemTagSelected
-	// void HandleItemTagSelected(FName TagID, bool bSelected);                                                                 // [0xb88fb88] Final|Native|Protected|BlueprintCallable 
+	// void HandleItemTagSelected(FName TagID, bool bSelected);                                                                 // [0xb9a90d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemDetailsPanel.BP_GetSpecialItemTags
-	// TArray<FName> BP_GetSpecialItemTags();                                                                                   // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// TArray<FName> BP_GetSpecialItemTags();                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumItemInfo
@@ -315,17 +323,17 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.UpdateWithFortItem
-	// void UpdateWithFortItem(class UFortItem* Item, bool bAllowInteractiveTags);                                              // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateWithFortItem(class UFortItem* Item, bool bAllowInteractiveTags);                                              // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.ShowSelectItemTagsPrompt
-	// void ShowSelectItemTagsPrompt(bool bShowPrompt);                                                                         // [0x130d900] Event|Public|BlueprintEvent 
+	// void ShowSelectItemTagsPrompt(bool bShowPrompt);                                                                         // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.SetTagFocus
-	// void SetTagFocus();                                                                                                      // [0x130d900] Event|Public|BlueprintEvent 
+	// void SetTagFocus();                                                                                                      // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.SetSelectItemTagsPrompt
-	// void SetSelectItemTagsPrompt(FText& Prompt);                                                                             // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void SetSelectItemTagsPrompt(FText& Prompt);                                                                             // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.SetSelectItemTagsIcon
-	// void SetSelectItemTagsIcon(FSlateBrush SelectItemTagsIcon);                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void SetSelectItemTagsIcon(FSlateBrush SelectItemTagsIcon);                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemInfo.HasFocusableTags
-	// bool HasFocusableTags();                                                                                                 // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool HasFocusableTags();                                                                                                 // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumCategoryEntry
@@ -408,141 +416,143 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.UpdatePermissionsDisplay
-	// void UpdatePermissionsDisplay();                                                                                         // [0xb8929b8] Final|Native|Private 
+	// void UpdatePermissionsDisplay();                                                                                         // [0xb9ab7e0] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.UpdateDetailsPanel
-	// void UpdateDetailsPanel();                                                                                               // [0xb8929a4] Final|Native|Public|BlueprintCallable 
+	// void UpdateDetailsPanel();                                                                                               // [0xb9ab7cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.UpdateBackButtonText
-	// void UpdateBackButtonText(bool bFilterFocus);                                                                            // [0xb8928cc] Final|Native|Protected|BlueprintCallable 
+	// void UpdateBackButtonText(bool bFilterFocus);                                                                            // [0xb9ab738] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.SwitchItemDetailsPanel
-	// void SwitchItemDetailsPanel(bool bUseLegacy);                                                                            // [0xb892808] Final|Native|Public|BlueprintCallable 
+	// void SwitchItemDetailsPanel(bool bUseLegacy);                                                                            // [0xb9ab6b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.SpawnContainer
-	// void SpawnContainer(class UClass* SupplyDropClass);                                                                      // [0xb892730] Final|Native|Public|BlueprintCallable 
+	// void SpawnContainer(class UClass* SupplyDropClass);                                                                      // [0xb9ab624] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.SetSubTabOpened
-	// void SetSubTabOpened(class UFortItemDefinition* ItemDefinition);                                                         // [0xb892658] Final|Native|Public|BlueprintCallable 
+	// void SetSubTabOpened(class UItemDefinitionBase* ItemDefinition);                                                         // [0xb9ab58c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.SetIsItemCommandsEnabled
-	// void SetIsItemCommandsEnabled(bool bInIsItemCommandEnabled);                                                             // [0xb892330] Final|Native|Public|BlueprintCallable 
+	// void SetIsItemCommandsEnabled(bool bInIsItemCommandEnabled);                                                             // [0xb9ab364] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.RefreshTabWarningState
-	// void RefreshTabWarningState();                                                                                           // [0xb8918d8] Final|Native|Public|BlueprintCallable 
+	// void RefreshTabWarningState();                                                                                           // [0xb9aa9f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.PlaceSelectionInMoveTool
-	// bool PlaceSelectionInMoveTool();                                                                                         // [0xb8918b4] Final|Native|Public|BlueprintCallable 
+	// bool PlaceSelectionInMoveTool();                                                                                         // [0xb9aa9cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OpenSelection
-	// bool OpenSelection();                                                                                                    // [0xb891890] Final|Native|Public|BlueprintCallable 
+	// bool OpenSelection();                                                                                                    // [0xb9aa9a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnUpdateCommandBarVisibility
-	// void OnUpdateCommandBarVisibility(bool bShowBar);                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnUpdateCommandBarVisibility(bool bShowBar);                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnShowCategoryModal
-	// void OnShowCategoryModal(bool bShowModal);                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowCategoryModal(bool bShowModal);                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnSelectionOpened
-	// void OnSelectionOpened(class UFortItemDefinition* SelectedItemDefinition);                                               // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnSelectionOpened(class UItemDefinitionBase* SelectedItemDefinition);                                               // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnSearchFiltersVisibilityChanged
-	// void OnSearchFiltersVisibilityChanged(bool bIsVisible);                                                                  // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnSearchFiltersVisibilityChanged(bool bIsVisible);                                                                  // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnQuickbarStateChanged
-	// void OnQuickbarStateChanged(EFortContentBrowserQuickbarState State);                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnQuickbarStateChanged(EFortContentBrowserQuickbarState State);                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnItemsLoaded
-	// void OnItemsLoaded();                                                                                                    // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnItemsLoaded();                                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnItemEquipped
-	// void OnItemEquipped(FFortItemEntry& EquippedItemEntry);                                                                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnItemEquipped(FFortItemEntry& EquippedItemEntry);                                                                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnFabItemQueryComplete
-	// void OnFabItemQueryComplete(bool bSuccess, FString JsonString);                                                          // [0xb891114] Final|Native|Private 
+	// void OnFabItemQueryComplete(bool bSuccess, FString JsonString);                                                          // [0xb9aa2b0] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnFabCategoryListLoaded
-	// void OnFabCategoryListLoaded(bool bSuccess, FString JsonString);                                                         // [0xb890998] Final|Native|Private 
+	// void OnFabCategoryListLoaded(bool bSuccess, FString JsonString);                                                         // [0xb9a9bb8] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnExitSubTab
-	// void OnExitSubTab();                                                                                                     // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnExitSubTab();                                                                                                     // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnCursorModeChanged
-	// void OnCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);         // [0xb8907cc] Final|Native|Private 
+	// void OnCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);         // [0xb9a9aac] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnCreativeQuickbarComponentLoaded
-	// void OnCreativeQuickbarComponentLoaded();                                                                                // [0xa39a414] Final|Native|Public  
+	// void OnCreativeQuickbarComponentLoaded();                                                                                // [0xa393c10] Final|Native|Public  
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnContentRatingFilterChanged
-	// void OnContentRatingFilterChanged();                                                                                     // [0xb890460] Final|Native|Private 
+	// void OnContentRatingFilterChanged();                                                                                     // [0xb9a9718] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.OnBuiltInItemsLoaded
-	// void OnBuiltInItemsLoaded();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnBuiltInItemsLoaded();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.NativeOnItemsRefreshed
-	// void NativeOnItemsRefreshed();                                                                                           // [0xb8907b8] Final|Native|Public  
+	// void NativeOnItemsRefreshed();                                                                                           // [0xb9a9a08] Final|Native|Public  
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.NativeOnItemsLoaded
-	// void NativeOnItemsLoaded();                                                                                              // [0xb8907a4] Final|Native|Public  
+	// void NativeOnItemsLoaded();                                                                                              // [0xb9a99f4] Final|Native|Public  
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.NativeOnBuiltInItemsLoaded
-	// void NativeOnBuiltInItemsLoaded();                                                                                       // [0xb890790] Final|Native|Public  
+	// void NativeOnBuiltInItemsLoaded();                                                                                       // [0xb9a99e0] Final|Native|Public  
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.LoadFabItems
-	// void LoadFabItems();                                                                                                     // [0xb89077c] Final|Native|Public|BlueprintCallable 
+	// void LoadFabItems();                                                                                                     // [0xb9a99cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.IsSubTabOpened
-	// bool IsSubTabOpened();                                                                                                   // [0xb89073c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSubTabOpened();                                                                                                   // [0xb9a998c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.InitializeTabs
-	// void InitializeTabs();                                                                                                   // [0xb8906f4] Final|Native|Public|BlueprintCallable 
+	// void InitializeTabs();                                                                                                   // [0xb9a9944] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.InitializeFabTab
-	// void InitializeFabTab();                                                                                                 // [0xb8906e0] Final|Native|Public|BlueprintCallable 
+	// void InitializeFabTab();                                                                                                 // [0xb9a9930] Final|Native|Public|BlueprintCallable 
+	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleUpdateCategoryCounts
+	// void HandleUpdateCategoryCounts();                                                                                       // [0xb9a9890] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleTabSortButtonClicked
-	// void HandleTabSortButtonClicked();                                                                                       // [0xb890640] Final|Native|Private 
+	// void HandleTabSortButtonClicked();                                                                                       // [0xb9a987c] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleTabSelected
-	// void HandleTabSelected(FName TabID, bool bCaptureFocus);                                                                 // [0xb890500] Final|Native|Private|BlueprintCallable 
+	// void HandleTabSelected(FName TabID, bool bCaptureFocus);                                                                 // [0xb9a97b8] Final|Native|Private|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleTabItemDetailClicked
-	// void HandleTabItemDetailClicked(FName& TagID);                                                                           // [0xb890474] Final|Native|Private|HasOutParms 
+	// void HandleTabItemDetailClicked(FName& TagID);                                                                           // [0xb9a972c] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleSortChanged
-	// void HandleSortChanged();                                                                                                // [0xb890460] Final|Native|Private 
+	// void HandleSortChanged();                                                                                                // [0xb9a9718] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleSortButtonClicked
-	// void HandleSortButtonClicked(FName SortNameId, class UCommonButtonBase* NewButton);                                      // [0xb890324] Final|Native|Private 
+	// void HandleSortButtonClicked(FName SortNameId, class UCommonButtonBase* NewButton);                                      // [0xb9a9654] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleSelectionChanged
-	// void HandleSelectionChanged(class UFortCreativeContentBrowserTabPanelBase* Tab);                                         // [0xb890100] Final|Native|Private 
+	// void HandleSelectionChanged(class UFortCreativeContentBrowserTabPanelBase* Tab);                                         // [0xb9a94fc] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleQuickbarStateChanged
-	// void HandleQuickbarStateChanged(EFortContentBrowserQuickbarState State);                                                 // [0xb88ffa4] Final|Native|Private 
+	// void HandleQuickbarStateChanged(EFortContentBrowserQuickbarState State);                                                 // [0xb9a93e0] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleQuickbarPanelIsFocused
-	// void HandleQuickbarPanelIsFocused(bool bIsFocused);                                                                      // [0xb88fee0] Final|Native|Private 
+	// void HandleQuickbarPanelIsFocused(bool bIsFocused);                                                                      // [0xb9a9360] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleModalHitBlockerClicked
-	// void HandleModalHitBlockerClicked();                                                                                     // [0xb88fea4] Final|Native|Private|BlueprintCallable 
+	// void HandleModalHitBlockerClicked();                                                                                     // [0xb9a9324] Final|Native|Private|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleItemThumbnailDownloaded
-	// void HandleItemThumbnailDownloaded(class UFortEmporiumItemDefinition* ItemDefinition);                                   // [0xb88fde4] Final|Native|Private 
+	// void HandleItemThumbnailDownloaded(class UFortEmporiumItemDefinition* ItemDefinition);                                   // [0xb9a92a4] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleItemTagSelected
-	// void HandleItemTagSelected(FName& TagID, bool bSelected);                                                                // [0xb88fcd4] Final|Native|Private|HasOutParms 
+	// void HandleItemTagSelected(FName& TagID, bool bSelected);                                                                // [0xb9a9194] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleItemDoubleClicked
-	// void HandleItemDoubleClicked(FFortItemEntry& ItemEntry);                                                                 // [0xb88fad0] Final|Native|Private|HasOutParms 
+	// void HandleItemDoubleClicked(FFortItemEntry& ItemEntry);                                                                 // [0xb9a9018] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleItemClicked
-	// void HandleItemClicked(FFortItemEntry& ItemEntry);                                                                       // [0xb88f97c] Final|Native|Private|HasOutParms 
+	// void HandleItemClicked(FFortItemEntry& ItemEntry);                                                                       // [0xb9a8ec4] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleGlobalSortPanelToggle
-	// void HandleGlobalSortPanelToggle();                                                                                      // [0xb88f968] Final|Native|Private 
+	// void HandleGlobalSortPanelToggle();                                                                                      // [0xb9a8eb0] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleFilterPanelIsFocused
-	// void HandleFilterPanelIsFocused(bool bIsFocused);                                                                        // [0xb88f734] Final|Native|Private 
+	// void HandleFilterPanelIsFocused(bool bIsFocused);                                                                        // [0xb9a8d3c] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleFilterChanged
-	// void HandleFilterChanged();                                                                                              // [0xb88f3d4] Final|Native|Private 
+	// void HandleFilterChanged();                                                                                              // [0xb9a8a60] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleFilterButtonClicked
-	// void HandleFilterButtonClicked(FName FilterNameId, class UCommonButtonBase* NewButton);                                  // [0xb88f298] Final|Native|Private 
+	// void HandleFilterButtonClicked(FName FilterNameId, class UCommonButtonBase* NewButton);                                  // [0xb9a899c] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleEquipItem
-	// void HandleEquipItem(FFortItemEntry& ItemEntry);                                                                         // [0xb88f1d4] Final|Native|Private|HasOutParms 
+	// void HandleEquipItem(FFortItemEntry& ItemEntry);                                                                         // [0xb9a88d8] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleChestItemCountChanged
-	// void HandleChestItemCountChanged(int32_t Count);                                                                         // [0xb88f114] Final|Native|Private 
+	// void HandleChestItemCountChanged(int32_t Count);                                                                         // [0xb9a8858] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleCategoryFocused
-	// void HandleCategoryFocused(FName CategoryID);                                                                            // [0xb88ef78] Final|Native|Private 
+	// void HandleCategoryFocused(FName CategoryID);                                                                            // [0xb9a8740] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleCategoryActivated
-	// void HandleCategoryActivated(FName CategoryID);                                                                          // [0xb88eeb8] Final|Native|Private 
+	// void HandleCategoryActivated(FName CategoryID);                                                                          // [0xb9a8628] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.HandleAddSelectionToMoveToolComplete
-	// void HandleAddSelectionToMoveToolComplete();                                                                             // [0xb88ed48] Final|Native|Private 
+	// void HandleAddSelectionToMoveToolComplete();                                                                             // [0xb9a8540] Final|Native|Private 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.GetSubTabSelectedItemDefinition
-	// class UFortItemDefinition* GetSubTabSelectedItemDefinition();                                                            // [0xb88ec1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UItemDefinitionBase* GetSubTabSelectedItemDefinition();                                                            // [0xb9a8454] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.GetLastSelectedTabName
-	// FName GetLastSelectedTabName();                                                                                          // [0xb88ebe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetLastSelectedTabName();                                                                                          // [0xb9a8418] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.GetCurrentTab
-	// class UFortCreativeContentBrowserTabPanelBase* GetCurrentTab();                                                          // [0xb88eb60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortCreativeContentBrowserTabPanelBase* GetCurrentTab();                                                          // [0xb9a8398] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.GetCurrentSelection
-	// FFortItemEntry GetCurrentSelection();                                                                                    // [0xb88eafc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortItemEntry GetCurrentSelection();                                                                                    // [0xb9a8334] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.EquipSelection
-	// bool EquipSelection();                                                                                                   // [0xb88e770] Final|Native|Public|BlueprintCallable 
+	// bool EquipSelection();                                                                                                   // [0xb9a7fcc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.EquipItem
-	// bool EquipItem(FFortItemEntry& ItemEntry);                                                                               // [0xb88e6a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool EquipItem(FFortItemEntry& ItemEntry);                                                                               // [0xb9a7f04] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.DropItem
-	// bool DropItem(FFortItemEntry& SelectedItem);                                                                             // [0xb88e5c0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool DropItem(FFortItemEntry& SelectedItem);                                                                             // [0xb9a7e1c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.CanEquip
-	// bool CanEquip(FFortItemEntry& SelectedItem);                                                                             // [0xb88e498] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool CanEquip(FFortItemEntry& SelectedItem);                                                                             // [0xb9a7cf4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.CanDropItem
-	// bool CanDropItem(FFortItemEntry& SelectedItem);                                                                          // [0xb88e3d0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool CanDropItem(FFortItemEntry& SelectedItem);                                                                          // [0xb9a7c2c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.CanAddToChest
-	// bool CanAddToChest(FFortItemEntry& SelectedItem);                                                                        // [0xb88e308] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool CanAddToChest(FFortItemEntry& SelectedItem);                                                                        // [0xb9a7b64] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListMenu.AddSelectionToQuickBar
-	// bool AddSelectionToQuickBar();                                                                                           // [0xb88e2dc] Final|Native|Public|BlueprintCallable 
+	// bool AddSelectionToQuickBar();                                                                                           // [0xb9a7b38] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel
-/// Size: 0x0418 (0x000448 - 0x000860)
+/// Size: 0x0408 (0x000448 - 0x000850)
 class UFortEmporiumItemListTabPanel : public UFortCreativeContentBrowserTabPanelBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2144;
+	static inline constexpr uint64_t __MDKClassSize = 2128;
 
 public:
 	SMember(FMulticastInlineDelegate)                  OnSourceItemCountChanged                                    OFFSET(getStruct<T>, {0x450, 16, 0, 0})
@@ -550,54 +560,54 @@ public:
 	SMember(FMulticastInlineDelegate)                  OnItemDoubleClickedDelegate                                 OFFSET(getStruct<T>, {0x470, 16, 0, 0})
 	CMember(class UAthenaCreativeItemTileView*)        CreativeTileView_ItemOptions                                OFFSET(get<T>, {0x4B0, 8, 0, 0})
 	CMember(class UCommonButtonBase*)                  Button_Sort                                                 OFFSET(get<T>, {0x4B8, 8, 0, 0})
-	SMember(FFortItemEntry)                            CurrentItemEntry                                            OFFSET(getStruct<T>, {0x4C0, 424, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnItemCountChanged                                          OFFSET(getStruct<T>, {0x668, 16, 0, 0})
-	CMember(TArray<FFortItemEntry>)                    Items                                                       OFFSET(get<T>, {0x678, 16, 0, 0})
-	CMember(TArray<FFortItemEntry>)                    SourceItems                                                 OFFSET(get<T>, {0x688, 16, 0, 0})
-	CMember(class UFortEmporiumItemListMenu*)          EmporiumItemListMenuParent                                  OFFSET(get<T>, {0x848, 8, 0, 0})
+	SMember(FFortItemEntry)                            CurrentItemEntry                                            OFFSET(getStruct<T>, {0x4C0, 416, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnItemCountChanged                                          OFFSET(getStruct<T>, {0x660, 16, 0, 0})
+	CMember(TArray<FFortItemEntry>)                    Items                                                       OFFSET(get<T>, {0x670, 16, 0, 0})
+	CMember(TArray<FFortItemEntry>)                    SourceItems                                                 OFFSET(get<T>, {0x680, 16, 0, 0})
+	CMember(class UFortEmporiumItemListMenu*)          EmporiumItemListMenuParent                                  OFFSET(get<T>, {0x838, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.UpdateTabHeader
-	// void UpdateTabHeader();                                                                                                  // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateTabHeader();                                                                                                  // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.UpdateSortButton
-	// void UpdateSortButton(FText& SortType);                                                                                  // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void UpdateSortButton(FText& SortType);                                                                                  // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.ShowTopButtonBar
-	// void ShowTopButtonBar(bool bShow);                                                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void ShowTopButtonBar(bool bShow);                                                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.ShowLegacyItemDetailsPanel
-	// bool ShowLegacyItemDetailsPanel();                                                                                       // [0xb892718] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShowLegacyItemDetailsPanel();                                                                                       // [0xb9ab60c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.SetActiveItemDetailTags
-	// void SetActiveItemDetailTags(TArray<FName>& TagIDs);                                                                     // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetActiveItemDetailTags(TArray<FName>& TagIDs);                                                                     // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.RestoreLastSelection
-	// void RestoreLastSelection();                                                                                             // [0xb892258] Final|Native|Public|BlueprintCallable 
+	// void RestoreLastSelection();                                                                                             // [0xb9ab2d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.RemoveSelectedItem
-	// void RemoveSelectedItem();                                                                                               // [0xb8918ec] Final|Native|Public|BlueprintCallable 
+	// void RemoveSelectedItem();                                                                                               // [0xb9aaa04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.ItemEquipped
-	// void ItemEquipped(FFortItemEntry& Item);                                                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ItemEquipped(FFortItemEntry& Item);                                                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.IsSubTabOpened
-	// bool IsSubTabOpened();                                                                                                   // [0xb890754] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSubTabOpened();                                                                                                   // [0xb9a99a4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.IsEmpty
-	// bool IsEmpty();                                                                                                          // [0xb890708] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsEmpty();                                                                                                          // [0xb9a9958] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.HandleItemDetailTagSelected
-	// void HandleItemDetailTagSelected(FName& TagID);                                                                          // [0xb88fa40] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleItemDetailTagSelected(FName& TagID);                                                                          // [0xb9a8f88] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.GetSubTabSelectedItemDefinition
-	// class UFortItemDefinition* GetSubTabSelectedItemDefinition();                                                            // [0xb88ec44] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UItemDefinitionBase* GetSubTabSelectedItemDefinition();                                                            // [0xb9a847c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.GetCollapseBorderPadFlagForCategory
-	// bool GetCollapseBorderPadFlagForCategory();                                                                              // [0xb88e914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCollapseBorderPadFlagForCategory();                                                                              // [0xb8ec020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.GetCardSizeForCategory
-	// EFortItemCardSize GetCardSizeForCategory();                                                                              // [0xb88e840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFortItemCardSize GetCardSizeForCategory();                                                                              // [0xb9a80d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.FocusCurrentSelection
-	// void FocusCurrentSelection();                                                                                            // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void FocusCurrentSelection();                                                                                            // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.ClearFilteredItems
-	// void ClearFilteredItems();                                                                                               // [0xb88e5ac] Final|Native|Public|BlueprintCallable 
+	// void ClearFilteredItems();                                                                                               // [0xb9a7e08] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.ClearAllItems
-	// void ClearAllItems();                                                                                                    // [0xb88e598] Final|Native|Public|BlueprintCallable 
+	// void ClearAllItems();                                                                                                    // [0xb9a7df4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.CanPlayerCreateInVolume
-	// bool CanPlayerCreateInVolume();                                                                                          // [0xb88e560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayerCreateInVolume();                                                                                          // [0xb9a7dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.AddItemToSource
-	// void AddItemToSource(FFortItemEntry& ItemToAdd);                                                                         // [0xb88e1d8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddItemToSource(FFortItemEntry& ItemToAdd);                                                                         // [0xb9a7a34] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumItemListTabPanel.AddItem
-	// void AddItem(FFortItemEntry& ItemToAdd);                                                                                 // [0xb88e114] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddItem(FFortItemEntry& ItemToAdd);                                                                                 // [0xb9a7970] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CreativeEmporiumUI.FortEmporiumUtilities
@@ -612,17 +622,17 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.RequestLicenseText
-	// void RequestLicenseText(EFortEmporiumItemLicense License, FDelegateProperty& Callback);                                  // [0xb892138] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RequestLicenseText(EFortEmporiumItemLicense License, FDelegateProperty& Callback);                                  // [0xb9ab1f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.RequestJSON
-	// void RequestJSON(class UObject* WorldContextObject, FUniqueNetIdRepl& UniqueNetId, FString JSONURL, FDelegateProperty& Callback); // [0xb891900] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RequestJSON(class UObject* WorldContextObject, FUniqueNetIdRepl& UniqueNetId, FString JSONURL, FDelegateProperty& Callback); // [0xb9aaa18] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.GetTextFromEmporiumLicense
-	// FText GetTextFromEmporiumLicense(EFortEmporiumItemLicense License);                                                      // [0xb88ec80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FText GetTextFromEmporiumLicense(EFortEmporiumItemLicense License);                                                      // [0xb9a84b8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.GetCreativeTagLabel
-	// FText GetCreativeTagLabel(FName& TagID, bool& bOutIsBeta);                                                               // [0xb88ea00] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText GetCreativeTagLabel(FName& TagID, bool& bOutIsBeta);                                                               // [0xb9a8238] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.GetCreativeTagIDs
-	// TArray<FName> GetCreativeTagIDs(class UFortItemDefinition* ItemDefinition);                                              // [0xb88e92c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FName> GetCreativeTagIDs(class UItemDefinitionBase* ItemDefinition);                                              // [0xb9a81a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CreativeEmporiumUI.FortEmporiumUtilities.GetCategoryDisplayName
-	// FText GetCategoryDisplayName(FName& CategoryID);                                                                         // [0xb88e858] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText GetCategoryDisplayName(FName& CategoryID);                                                                         // [0xb9a80e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/CreativeEmporiumUI.FortEmporiumItemData

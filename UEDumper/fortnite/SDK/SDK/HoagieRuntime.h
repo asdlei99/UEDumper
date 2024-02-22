@@ -140,7 +140,7 @@ public:
 	bool                                               bIsRotorWashActiveNative;                                   // 0x0294   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0295   (0x0003)  MISSED
 	float                                              RotorWashRelativeZOffset;                                   // 0x0298   (0x0004)  
-	SDK_UNDEFINED(8,14018) /* TWeakObjectPtr<AFortHoagieVehicle*> */ __um(Vehicle);                                // 0x029C   (0x0008)  
+	SDK_UNDEFINED(8,14115) /* TWeakObjectPtr<AFortHoagieVehicle*> */ __um(Vehicle);                                // 0x029C   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x02A4   (0x0004)  MISSED
 	class UFortLayeredAudioComponent*                  EngineAudio;                                                // 0x02A8   (0x0008)  
 	class UFortLayeredAudioComponent*                  RotorAudio;                                                 // 0x02B0   (0x0008)  
@@ -149,11 +149,11 @@ public:
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.Update
-	// void Update();                                                                                                        // [0xab10970] Final|Native|Public|BlueprintCallable 
+	// void Update();                                                                                                        // [0xae0b0b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheHoagieVehicle
-	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                         // [0xab10180] Final|Native|Public|BlueprintCallable 
+	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                         // [0xae0a894] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheAudioComponents
-	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);     // [0xab10004] Final|Native|Public|BlueprintCallable 
+	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);     // [0xae0a798] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/HoagieRuntime.FortHeliFlightModel
@@ -204,311 +204,312 @@ struct FHoagieDeathEffectInfo
 };
 
 /// Class /Script/HoagieRuntime.FortHoagieVehicle
-/// Size: 0x0630 (0x001EF0 - 0x002520)
+/// Size: 0x0630 (0x001F20 - 0x002550)
 class AFortHoagieVehicle : public AFortAthenaSKVehicle
 { 
 public:
-	FName                                              PassengerCollision;                                         // 0x1EF0   (0x0004)  
-	float                                              CameraBoomDistance;                                         // 0x1EF4   (0x0004)  
-	float                                              CameraBoomHeight;                                           // 0x1EF8   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x1EFC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14019) /* FMulticastInlineDelegate */ __um(OnBoostStateChanged);                              // 0x1F00   (0x0010)  
-	SDK_UNDEFINED(16,14020) /* FMulticastInlineDelegate */ __um(OnAltimeterTraceUpdated);                          // 0x1F10   (0x0010)  
-	SDK_UNDEFINED(16,14021) /* FMulticastInlineDelegate */ __um(OnCrashingStateEntered);                           // 0x1F20   (0x0010)  
-	bool                                               bEngineAudioDisabled;                                       // 0x1F30   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1F31   (0x0003)  MISSED
-	float                                              LiftRumbleTimer;                                            // 0x1F34   (0x0004)  
-	bool                                               bLiftUp;                                                    // 0x1F38   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x1F39   (0x0007)  MISSED
-	uint64_t                                           LiftForceFeedbackHandle;                                    // 0x1F40   (0x0008)  
-	uint64_t                                           PassiveForceFeedbackHandle;                                 // 0x1F48   (0x0008)  
-	float                                              Theta_Native;                                               // 0x1F50   (0x0004)  
-	float                                              WashAltAlpha_Native;                                        // 0x1F54   (0x0004)  
-	float                                              RotorWashTickTimer;                                         // 0x1F58   (0x0004)  
-	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1F5C   (0x0004)  MISSED
-	TArray<FVector>                                    RotorTraceArray;                                            // 0x1F60   (0x0010)  
-	SDK_UNDEFINED(16,14022) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(RotorWashObjectsTypes);               // 0x1F70   (0x0010)  
-	class UFortHoagieVehicleConfigs*                   FortHoagieVehicleConfigs;                                   // 0x1F80   (0x0008)  
-	class UCurveFloat*                                 RumbleIntensity;                                            // 0x1F88   (0x0008)  
-	FFortHeliFlightModel                               FlightModel;                                                // 0x1F90   (0x01E8)  
-	bool                                               bClearPitchInput;                                           // 0x2178   (0x0001)  
-	unsigned char                                      UnknownData04_5[0x3];                                       // 0x2179   (0x0003)  MISSED
-	float                                              BoostTimeLeft;                                              // 0x217C   (0x0004)  
-	float                                              BoostBrakingTimeLeft;                                       // 0x2180   (0x0004)  
-	float                                              BoostCooldown;                                              // 0x2184   (0x0004)  
-	float                                              ShutdownTimer;                                              // 0x2188   (0x0004)  
-	float                                              FoliageDestructionTimer;                                    // 0x218C   (0x0004)  
-	float                                              CrashingScrapingTimer;                                      // 0x2190   (0x0004)  
-	float                                              CrashingNotMovingTimer;                                     // 0x2194   (0x0004)  
-	bool                                               bCanSleep;                                                  // 0x2198   (0x0001)  
-	bool                                               bHasAppliedCrashDamage;                                     // 0x2199   (0x0001)  
-	bool                                               bOrientedForLanding;                                        // 0x219A   (0x0001)  
-	bool                                               bForceNegativeLift;                                         // 0x219B   (0x0001)  
-	float                                              AltimeterTraceTimer;                                        // 0x219C   (0x0004)  
-	float                                              LastRotorImpulseTime;                                       // 0x21A0   (0x0004)  
-	float                                              CriticalExplodeTimer;                                       // 0x21A4   (0x0004)  
-	bool                                               bCriticalExplosionPlayed;                                   // 0x21A8   (0x0001)  
-	unsigned char                                      UnknownData05_5[0x3];                                       // 0x21A9   (0x0003)  MISSED
-	float                                              TimeWhileCritical;                                          // 0x21AC   (0x0004)  
-	float                                              TimeWhileLanding;                                           // 0x21B0   (0x0004)  
-	float                                              LiftFromOverrideButton;                                     // 0x21B4   (0x0004)  
-	FVector                                            BoostDirection;                                             // 0x21B8   (0x0018)  
-	FVector                                            LastRotorSweepDirection;                                    // 0x21D0   (0x0018)  
-	FHitResult                                         AltimeterTraceResult;                                       // 0x21E8   (0x00E8)  
-	int32_t                                            HoagieStateRep;                                             // 0x22D0   (0x0004)  
-	EHoagieState                                       CurrentHoagieState;                                         // 0x22D4   (0x0004)  
-	float                                              CurrentRotorSpeed;                                          // 0x22D8   (0x0004)  
-	float                                              CurrentRotorAngle;                                          // 0x22DC   (0x0004)  
-	float                                              RotorImpactTraceAngle;                                      // 0x22E0   (0x0004)  
-	FVehicleGamepadLiftInputs                          LiftInputs;                                                 // 0x22E4   (0x0008)  
-	unsigned char                                      UnknownData06_5[0x4];                                       // 0x22EC   (0x0004)  MISSED
-	TArray<FRotorHit>                                  RotorHits;                                                  // 0x22F0   (0x0010)  
-	TArray<FCachedSeatCollision>                       CachedSeatCollision;                                        // 0x2300   (0x0010)  
-	FVector                                            RotorHitLinearImpulse;                                      // 0x2310   (0x0018)  
-	FVector                                            RotorHitAngularImpulse;                                     // 0x2328   (0x0018)  
-	class UNiagaraComponent*                           HoagieIdleFX_Native;                                        // 0x2340   (0x0008)  
-	class UNiagaraComponent*                           DamageFX_Native;                                            // 0x2348   (0x0008)  
-	class UNiagaraComponent*                           RotorWashFX_Native;                                         // 0x2350   (0x0008)  
-	class UFortHoagieVehicleAnimInstance*              HoagieAnimBP_Native;                                        // 0x2358   (0x0008)  
-	FName                                              AltimeterTraceSocketName;                                   // 0x2360   (0x0004)  
-	FName                                              RotorDamageTraceSocketName;                                 // 0x2364   (0x0004)  
-	FName                                              MainRotorCritSocketName;                                    // 0x2368   (0x0004)  
-	FName                                              TailRotorCritSocketName;                                    // 0x236C   (0x0004)  
-	class UAnimMontage*                                SeatTransition_ToDriver;                                    // 0x2370   (0x0008)  
-	class UAnimMontage*                                SeatTransition_ToPassenger;                                 // 0x2378   (0x0008)  
-	FName                                              RotorTraceProfile;                                          // 0x2380   (0x0004)  
-	FName                                              FoliageOverlapsBoxTag;                                      // 0x2384   (0x0004)  
-	FReplicatedHeliControlState                        ControlState;                                               // 0x2388   (0x0030)  
-	float                                              CurrentViewDistanceScale;                                   // 0x23B8   (0x0004)  
-	float                                              CurrentHLODDistanceOverrideScale;                           // 0x23BC   (0x0004)  
-	float                                              CurrentHLODMaxDrawDistanceScale;                            // 0x23C0   (0x0004)  
-	unsigned char                                      UnknownData07_5[0xC];                                       // 0x23C4   (0x000C)  MISSED
-	FHoagieDeathEffectInfo                             CachedDeathEffectInfo;                                      // 0x23D0   (0x0150)  
+	FName                                              PassengerCollision;                                         // 0x1F18   (0x0004)  
+	float                                              CameraBoomDistance;                                         // 0x1F1C   (0x0004)  
+	float                                              CameraBoomHeight;                                           // 0x1F20   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x1F24   (0x0004)  MISSED
+	SDK_UNDEFINED(16,14116) /* FMulticastInlineDelegate */ __um(OnBoostStateChanged);                              // 0x1F28   (0x0010)  
+	SDK_UNDEFINED(16,14117) /* FMulticastInlineDelegate */ __um(OnAltimeterTraceUpdated);                          // 0x1F38   (0x0010)  
+	SDK_UNDEFINED(16,14118) /* FMulticastInlineDelegate */ __um(OnCrashingStateEntered);                           // 0x1F48   (0x0010)  
+	bool                                               bEngineAudioDisabled;                                       // 0x1F58   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1F59   (0x0003)  MISSED
+	float                                              LiftRumbleTimer;                                            // 0x1F5C   (0x0004)  
+	bool                                               bLiftUp;                                                    // 0x1F60   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x1F61   (0x0007)  MISSED
+	uint64_t                                           LiftForceFeedbackHandle;                                    // 0x1F68   (0x0008)  
+	uint64_t                                           PassiveForceFeedbackHandle;                                 // 0x1F70   (0x0008)  
+	float                                              Theta_Native;                                               // 0x1F78   (0x0004)  
+	float                                              WashAltAlpha_Native;                                        // 0x1F7C   (0x0004)  
+	float                                              RotorWashTickTimer;                                         // 0x1F80   (0x0004)  
+	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1F84   (0x0004)  MISSED
+	TArray<FVector>                                    RotorTraceArray;                                            // 0x1F88   (0x0010)  
+	SDK_UNDEFINED(16,14119) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(RotorWashObjectsTypes);               // 0x1F98   (0x0010)  
+	class UFortHoagieVehicleConfigs*                   FortHoagieVehicleConfigs;                                   // 0x1FA8   (0x0008)  
+	class UCurveFloat*                                 RumbleIntensity;                                            // 0x1FB0   (0x0008)  
+	FFortHeliFlightModel                               FlightModel;                                                // 0x1FB8   (0x01E8)  
+	bool                                               bClearPitchInput;                                           // 0x21A0   (0x0001)  
+	unsigned char                                      UnknownData04_5[0x3];                                       // 0x21A1   (0x0003)  MISSED
+	float                                              BoostTimeLeft;                                              // 0x21A4   (0x0004)  
+	float                                              BoostBrakingTimeLeft;                                       // 0x21A8   (0x0004)  
+	float                                              BoostCooldown;                                              // 0x21AC   (0x0004)  
+	float                                              ShutdownTimer;                                              // 0x21B0   (0x0004)  
+	float                                              FoliageDestructionTimer;                                    // 0x21B4   (0x0004)  
+	float                                              CrashingScrapingTimer;                                      // 0x21B8   (0x0004)  
+	float                                              CrashingNotMovingTimer;                                     // 0x21BC   (0x0004)  
+	bool                                               bCanSleep;                                                  // 0x21C0   (0x0001)  
+	bool                                               bHasAppliedCrashDamage;                                     // 0x21C1   (0x0001)  
+	bool                                               bOrientedForLanding;                                        // 0x21C2   (0x0001)  
+	bool                                               bForceNegativeLift;                                         // 0x21C3   (0x0001)  
+	float                                              AltimeterTraceTimer;                                        // 0x21C4   (0x0004)  
+	float                                              LastRotorImpulseTime;                                       // 0x21C8   (0x0004)  
+	float                                              CriticalExplodeTimer;                                       // 0x21CC   (0x0004)  
+	bool                                               bCriticalExplosionPlayed;                                   // 0x21D0   (0x0001)  
+	unsigned char                                      UnknownData05_5[0x3];                                       // 0x21D1   (0x0003)  MISSED
+	float                                              TimeWhileCritical;                                          // 0x21D4   (0x0004)  
+	float                                              TimeWhileLanding;                                           // 0x21D8   (0x0004)  
+	float                                              LiftFromOverrideButton;                                     // 0x21DC   (0x0004)  
+	FVector                                            BoostDirection;                                             // 0x21E0   (0x0018)  
+	FVector                                            LastRotorSweepDirection;                                    // 0x21F8   (0x0018)  
+	FHitResult                                         AltimeterTraceResult;                                       // 0x2210   (0x00E8)  
+	int32_t                                            HoagieStateRep;                                             // 0x22F8   (0x0004)  
+	EHoagieState                                       CurrentHoagieState;                                         // 0x22FC   (0x0004)  
+	float                                              CurrentRotorSpeed;                                          // 0x2300   (0x0004)  
+	float                                              CurrentRotorAngle;                                          // 0x2304   (0x0004)  
+	float                                              RotorImpactTraceAngle;                                      // 0x2308   (0x0004)  
+	FVehicleGamepadLiftInputs                          LiftInputs;                                                 // 0x230C   (0x0008)  
+	unsigned char                                      UnknownData06_5[0x4];                                       // 0x2314   (0x0004)  MISSED
+	TArray<FRotorHit>                                  RotorHits;                                                  // 0x2318   (0x0010)  
+	TArray<FCachedSeatCollision>                       CachedSeatCollision;                                        // 0x2328   (0x0010)  
+	FVector                                            RotorHitLinearImpulse;                                      // 0x2338   (0x0018)  
+	FVector                                            RotorHitAngularImpulse;                                     // 0x2350   (0x0018)  
+	class UNiagaraComponent*                           HoagieIdleFX_Native;                                        // 0x2368   (0x0008)  
+	class UNiagaraComponent*                           DamageFX_Native;                                            // 0x2370   (0x0008)  
+	class UNiagaraComponent*                           RotorWashFX_Native;                                         // 0x2378   (0x0008)  
+	class UFortHoagieVehicleAnimInstance*              HoagieAnimBP_Native;                                        // 0x2380   (0x0008)  
+	FName                                              AltimeterTraceSocketName;                                   // 0x2388   (0x0004)  
+	FName                                              RotorDamageTraceSocketName;                                 // 0x238C   (0x0004)  
+	FName                                              MainRotorCritSocketName;                                    // 0x2390   (0x0004)  
+	FName                                              TailRotorCritSocketName;                                    // 0x2394   (0x0004)  
+	class UAnimMontage*                                SeatTransition_ToDriver;                                    // 0x2398   (0x0008)  
+	class UAnimMontage*                                SeatTransition_ToPassenger;                                 // 0x23A0   (0x0008)  
+	FName                                              RotorTraceProfile;                                          // 0x23A8   (0x0004)  
+	FName                                              FoliageOverlapsBoxTag;                                      // 0x23AC   (0x0004)  
+	FReplicatedHeliControlState                        ControlState;                                               // 0x23B0   (0x0030)  
+	float                                              CurrentViewDistanceScale;                                   // 0x23E0   (0x0004)  
+	float                                              CurrentHLODDistanceOverrideScale;                           // 0x23E4   (0x0004)  
+	float                                              CurrentHLODMaxDrawDistanceScale;                            // 0x23E8   (0x0004)  
+	unsigned char                                      UnknownData07_5[0xC];                                       // 0x23EC   (0x000C)  MISSED
+	FHoagieDeathEffectInfo                             CachedDeathEffectInfo;                                      // 0x23F8   (0x0150)  
+	unsigned char                                      UnknownData08_6[0x8];                                       // 0x2548   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateHoagieAnimBP
-	// void UpdateHoagieAnimBP();                                                                                            // [0x843c454] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateHoagieAnimBP();                                                                                            // [0x843fdb4] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateDamageStateNative
-	// void UpdateDamageStateNative(float Damage);                                                                           // [0xab109e4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateDamageStateNative(float Damage);                                                                           // [0xae0b12c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ShowCooldownCue
-	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetTailRotorRotation
-	// void SetTailRotorRotation(float Degrees);                                                                             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetTailRotorRotation(float Degrees);                                                                             // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetRotorWashActive
-	// void SetRotorWashActive(bool bActive);                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetRotorWashActive(bool bActive);                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetMainRotorRotation
-	// void SetMainRotorRotation(float Degrees);                                                                             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetMainRotorRotation(float Degrees);                                                                             // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ServerUpdateControlState
-	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                            // [0xab10888] Final|Net|Native|Event|Private|NetServer 
+	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                            // [0xae0af54] Final|Net|Native|Event|Private|NetServer 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnTickRotors
-	// void OnTickRotors(float RotorAngleDegrees);                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTickRotors(float RotorAngleDegrees);                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupEnd
-	// void OnStartupEnd();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStartupEnd();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupBegin
-	// void OnStartupBegin();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStartupBegin();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorsStop
-	// void OnRotorsStop();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRotorsStop();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamagePlayer
-	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                         // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                         // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtOuter
-	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtInner
-	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealt
-	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                             // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                             // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_HoagieState
-	// void OnRep_HoagieState();                                                                                             // [0xab10808] Final|Native|Protected 
+	// void OnRep_HoagieState();                                                                                             // [0xae0aed4] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_ControlState
-	// void OnRep_ControlState();                                                                                            // [0x3047908] Final|Native|Private 
+	// void OnRep_ControlState();                                                                                            // [0x3097b14] Final|Native|Private 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRefueledFromEmpty
-	// void OnRefueledFromEmpty();                                                                                           // [0xab107f4] Final|Native|Protected 
+	// void OnRefueledFromEmpty();                                                                                           // [0xae0aec0] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactWhileCritical
-	// void OnImpactWhileCritical();                                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnImpactWhileCritical();                                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactOtherHoagie
-	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                               // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                               // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnCritRotor
-	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostFinished();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.MulticastRotorImpulse
-	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                      // [0xab10720] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
+	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                      // [0xae0ad70] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsStartingUp
-	// bool IsStartingUp();                                                                                                  // [0xab10704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStartingUp();                                                                                                  // [0xae0ad54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsShuttingDown
-	// bool IsShuttingDown();                                                                                                // [0xab106e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsShuttingDown();                                                                                                // [0xae0ad34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsScrapingBottom
-	// bool IsScrapingBottom();                                                                                              // [0xab106c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScrapingBottom();                                                                                              // [0xae0ad10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.HoagieOnDisabledChanged
-	// void HoagieOnDisabledChanged(bool bDisabled);                                                                         // [0xab105fc] Final|Native|Protected 
+	// void HoagieOnDisabledChanged(bool bDisabled);                                                                         // [0xae0ac90] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetVerticalSpeedKmh
-	// float GetVerticalSpeedKmh();                                                                                          // [0xab105d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVerticalSpeedKmh();                                                                                          // [0xae0ac68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetThrustDirection
-	// FVector GetThrustDirection(bool bWorldSpace);                                                                         // [0xab104f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetThrustDirection(bool bWorldSpace);                                                                         // [0xae0abc4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetStrafeAlpha
-	// float GetStrafeAlpha();                                                                                               // [0xab10370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStrafeAlpha();                                                                                               // [0xae0aa44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetSteerAlpha
-	// float GetSteerAlpha();                                                                                                // [0xab104c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteerAlpha();                                                                                                // [0xae0ab9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetShutdownTimeLeft
-	// float GetShutdownTimeLeft();                                                                                          // [0xab104b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetShutdownTimeLeft();                                                                                          // [0xae0ab84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeedPercent
-	// float GetRotorSpeedPercent();                                                                                         // [0xab10490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeedPercent();                                                                                         // [0xae0ab64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeed
-	// float GetRotorSpeed();                                                                                                // [0xab10478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeed();                                                                                                // [0xae0ab4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorCenterPosition
-	// FVector GetRotorCenterPosition();                                                                                     // [0xab10440] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRotorCenterPosition();                                                                                     // [0xae0ab14] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorAngleDegrees
-	// float GetRotorAngleDegrees();                                                                                         // [0xab10428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorAngleDegrees();                                                                                         // [0xae0aafc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxBoostCooldown
-	// float GetMaxBoostCooldown();                                                                                          // [0xab10408] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxBoostCooldown();                                                                                          // [0xae0aadc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxAltitude
-	// float GetMaxAltitude();                                                                                               // [0xab103e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxAltitude();                                                                                               // [0xae0aabc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetLiftAlpha
-	// float GetLiftAlpha();                                                                                                 // [0xab103c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLiftAlpha();                                                                                                 // [0xae0aa94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetIsEngineOn
-	// bool GetIsEngineOn();                                                                                                 // [0xab103a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsEngineOn();                                                                                                 // [0xae0aa74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetForwardAlpha
-	// float GetForwardAlpha();                                                                                              // [0xab10370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardAlpha();                                                                                              // [0xae0aa44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetDistanceToGround
-	// float GetDistanceToGround();                                                                                          // [0xab10358] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceToGround();                                                                                          // [0xae0aa2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostTimeLeft
-	// float GetBoostTimeLeft();                                                                                             // [0xab10340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostTimeLeft();                                                                                             // [0xae0aa14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDuration
-	// float GetBoostDuration();                                                                                             // [0xab10320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostDuration();                                                                                             // [0xae0a9f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDirection
-	// FVector GetBoostDirection();                                                                                          // [0xab102f8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetBoostDirection();                                                                                          // [0xae0a9cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostCooldown
-	// float GetBoostCooldown();                                                                                             // [0xab102e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostCooldown();                                                                                             // [0xae0a9b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetAltitude
-	// float GetAltitude();                                                                                                  // [0xab102c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAltitude();                                                                                                  // [0xae0a994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/HoagieRuntime.FortHoagieVehicleConfigs
-/// Size: 0x0238 (0x000950 - 0x000B88)
+/// Size: 0x0238 (0x000948 - 0x000B80)
 class UFortHoagieVehicleConfigs : public UFortPhysicsVehicleConfigs
 { 
 public:
-	float                                              StrafeForce;                                                // 0x0950   (0x0004)  
-	float                                              StrafeForceMin;                                             // 0x0954   (0x0004)  
-	float                                              MaxStrafeSpeedKmh;                                          // 0x0958   (0x0004)  
-	float                                              StrafeTooFastBrakeForce;                                    // 0x095C   (0x0004)  
-	float                                              LandedBrakeForce;                                           // 0x0960   (0x0004)  
-	float                                              LiftForce;                                                  // 0x0964   (0x0004)  
-	float                                              MaxLiftSpeedKmh;                                            // 0x0968   (0x0004)  
-	float                                              LiftTooFastBrakeForce;                                      // 0x096C   (0x0004)  
-	float                                              LateralDragCoefficient;                                     // 0x0970   (0x0004)  
-	float                                              LateralDragCoefficient2;                                    // 0x0974   (0x0004)  
-	float                                              LiftDragCoefficient;                                        // 0x0978   (0x0004)  
-	float                                              LiftDragCoefficient2;                                       // 0x097C   (0x0004)  
-	float                                              MaxPitchForCameraYaw;                                       // 0x0980   (0x0004)  
-	float                                              MaxCameraYawAngle;                                          // 0x0984   (0x0004)  
-	float                                              CameraYawStiff;                                             // 0x0988   (0x0004)  
-	float                                              CameraYawDamp;                                              // 0x098C   (0x0004)  
-	float                                              CameraYawStrength;                                          // 0x0990   (0x0004)  
-	float                                              UprightStiff;                                               // 0x0994   (0x0004)  
-	float                                              UprightDamp;                                                // 0x0998   (0x0004)  
-	bool                                               bUseVehiclePivotForCameraPitch;                             // 0x099C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x099D   (0x0003)  MISSED
-	float                                              ThrustTorqueAnglePercent;                                   // 0x09A0   (0x0004)  
-	float                                              BoostThrustTorqueAnglePercent;                              // 0x09A4   (0x0004)  
-	float                                              ThrustTorqueStiff;                                          // 0x09A8   (0x0004)  
-	float                                              ThrustTorqueDamp;                                           // 0x09AC   (0x0004)  
-	float                                              ThrustTorqueMaxAccel;                                       // 0x09B0   (0x0004)  
-	float                                              ThrustTorque;                                               // 0x09B4   (0x0004)  
-	float                                              YawTorque;                                                  // 0x09B8   (0x0004)  
-	float                                              YawTorqueDampingSpeed;                                      // 0x09BC   (0x0004)  
-	float                                              BoostForce;                                                 // 0x09C0   (0x0004)  
-	float                                              BoostMaxSpeedKmh;                                           // 0x09C4   (0x0004)  
-	float                                              BoostDuration;                                              // 0x09C8   (0x0004)  
-	float                                              BoostCooldown;                                              // 0x09CC   (0x0004)  
-	float                                              BoostTorqueStiff;                                           // 0x09D0   (0x0004)  
-	float                                              BoostTorqueDamp;                                            // 0x09D4   (0x0004)  
-	float                                              AfterBoostBrakingForce;                                     // 0x09D8   (0x0004)  
-	float                                              AfterBoostBrakingDuration;                                  // 0x09DC   (0x0004)  
-	float                                              AfterBoostBrakingMinSpeed;                                  // 0x09E0   (0x0004)  
-	float                                              PitchAngleRequiredForFullThrust;                            // 0x09E4   (0x0004)  
-	float                                              DistanceToGroundForLanding;                                 // 0x09E8   (0x0004)  
-	float                                              StartupDelay;                                               // 0x09EC   (0x0004)  
-	float                                              LandingSequenceDelay;                                       // 0x09F0   (0x0004)  
-	float                                              RotorsRadius;                                               // 0x09F4   (0x0004)  
-	float                                              RotorsRadiusInner;                                          // 0x09F8   (0x0004)  
-	float                                              NoDriverBrakeForce;                                         // 0x09FC   (0x0004)  
-	float                                              TimeBetweenRotorDamageTicks;                                // 0x0A00   (0x0004)  
-	float                                              AutoLandingForce;                                           // 0x0A04   (0x0004)  
-	float                                              RotorDamageBoxSweepLength;                                  // 0x0A08   (0x0004)  
-	float                                              CriticalStateLiftForce;                                     // 0x0A0C   (0x0004)  
-	float                                              IdleRotationMultiplier;                                     // 0x0A10   (0x0004)  
-	float                                              LiftPitchDegrees;                                           // 0x0A14   (0x0004)  
-	float                                              MinAltitudeForIdleNoise;                                    // 0x0A18   (0x0004)  
-	float                                              DefaultLinearDamp;                                          // 0x0A1C   (0x0004)  
-	float                                              DefaultAngularDamp;                                         // 0x0A20   (0x0004)  
-	float                                              LandingLinearDamp;                                          // 0x0A24   (0x0004)  
-	float                                              LandingAngularDamp;                                         // 0x0A28   (0x0004)  
-	float                                              LandingLiftAlpha;                                           // 0x0A2C   (0x0004)  
-	float                                              CriticalStateThrustMultiplier;                              // 0x0A30   (0x0004)  
-	float                                              BodyUpDotThresholdForLanding;                               // 0x0A34   (0x0004)  
-	int32_t                                            CriticalHealthThreshold;                                    // 0x0A38   (0x0004)  
-	float                                              DamagePerImpulseWhileCritical;                              // 0x0A3C   (0x0004)  
-	float                                              RotorImpulseLinear;                                         // 0x0A40   (0x0004)  
-	float                                              RotorImpulseAngular;                                        // 0x0A44   (0x0004)  
-	float                                              RotorImpulseCooldown;                                       // 0x0A48   (0x0004)  
-	float                                              StartupLift;                                                // 0x0A4C   (0x0004)  
-	float                                              StartupLiftTime;                                            // 0x0A50   (0x0004)  
-	float                                              MaxAltitude;                                                // 0x0A54   (0x0004)  
-	float                                              AltitudeForSpinning;                                        // 0x0A58   (0x0004)  
-	float                                              RotorMaxSpeed;                                              // 0x0A5C   (0x0004)  
-	float                                              RotorAccel;                                                 // 0x0A60   (0x0004)  
-	float                                              RotorDecel;                                                 // 0x0A64   (0x0004)  
-	float                                              ExplodeRotorDecel;                                          // 0x0A68   (0x0004)  
-	float                                              MinRotorSpeedForSkippingStartup;                            // 0x0A6C   (0x0004)  
-	float                                              RotorSpeedForStartupLift;                                   // 0x0A70   (0x0004)  
-	float                                              CriticalLiftForceDecay;                                     // 0x0A74   (0x0004)  
-	float                                              CriticalYawTorqueMin;                                       // 0x0A78   (0x0004)  
-	float                                              CriticalYawTorqueMax;                                       // 0x0A7C   (0x0004)  
-	float                                              CriticalYawTorqueRampDuration;                              // 0x0A80   (0x0004)  
-	float                                              RotorTraceRotationSpeed;                                    // 0x0A84   (0x0004)  
-	float                                              RotorTraceBoxSize;                                          // 0x0A88   (0x0004)  
-	float                                              RotorTraceBoxHeight;                                        // 0x0A8C   (0x0004)  
-	float                                              MaxCriticalFallForce;                                       // 0x0A90   (0x0004)  
-	float                                              BoostFOV;                                                   // 0x0A94   (0x0004)  
-	float                                              GentleCrashTimeToExplode;                                   // 0x0A98   (0x0004)  
-	float                                              CriticalTimeForGentleCrash;                                 // 0x0A9C   (0x0004)  
-	float                                              AutoLandingYawTorque;                                       // 0x0AA0   (0x0004)  
-	float                                              MinHeightForAutoLandingYawTorque;                           // 0x0AA4   (0x0004)  
-	float                                              MinSpeedForScrapingBottom;                                  // 0x0AA8   (0x0004)  
-	float                                              FallDamageHeightBuffer;                                     // 0x0AAC   (0x0004)  
-	float                                              TimeBetweenRotorPlayerDamage;                               // 0x0AB0   (0x0004)  
-	float                                              RotorMoveSpeedRequiredToUpdateTraceDirSqr;                  // 0x0AB4   (0x0004)  
-	float                                              FoliageTraceRate;                                           // 0x0AB8   (0x0004)  
-	float                                              RotorWashTicksPerFrame;                                     // 0x0ABC   (0x0004)  
-	float                                              CriticalHitRadius;                                          // 0x0AC0   (0x0004)  
-	float                                              AngleNormalUpForLockMovement;                               // 0x0AC4   (0x0004)  
-	float                                              MaxAutoLandingTime;                                         // 0x0AC8   (0x0004)  
-	float                                              SpeedThresholdForCrashed;                                   // 0x0ACC   (0x0004)  
-	float                                              CritMultiplier;                                             // 0x0AD0   (0x0004)  
-	float                                              AltitudeForSprings;                                         // 0x0AD4   (0x0004)  
-	float                                              MaxCrashingTime;                                            // 0x0AD8   (0x0004)  
-	float                                              MaxCrashingScrapingTime;                                    // 0x0ADC   (0x0004)  
-	float                                              MaxCrashingTimeSpentNotMoving;                              // 0x0AE0   (0x0004)  
-	float                                              LandscapeRotorImpulseMag;                                   // 0x0AE4   (0x0004)  
-	float                                              HealthThresholdForLandscapeRotorImpulse;                    // 0x0AE8   (0x0004)  
-	float                                              MaxHeightBuffer;                                            // 0x0AEC   (0x0004)  
-	bool                                               bImpulseOnOuterRotorHitLandscape;                           // 0x0AF0   (0x0001)  
-	bool                                               bSkipRotorImpulses;                                         // 0x0AF1   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0AF2   (0x0006)  MISSED
-	FVector                                            FoliageTraceBoxSize;                                        // 0x0AF8   (0x0018)  
-	FVector                                            WaterBoxSize;                                               // 0x0B10   (0x0018)  
-	FVector                                            WaterBoxOffset;                                             // 0x0B28   (0x0018)  
-	FVector                                            RotorOffsetFromActorLocationOnServer;                       // 0x0B40   (0x0018)  
-	bool                                               bSkipContactRotations;                                      // 0x0B58   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0B59   (0x0007)  MISSED
-	FScalableFloat                                     MaxAutoLandHeightWhenOutOfFuel;                             // 0x0B60   (0x0028)  
+	float                                              StrafeForce;                                                // 0x0948   (0x0004)  
+	float                                              StrafeForceMin;                                             // 0x094C   (0x0004)  
+	float                                              MaxStrafeSpeedKmh;                                          // 0x0950   (0x0004)  
+	float                                              StrafeTooFastBrakeForce;                                    // 0x0954   (0x0004)  
+	float                                              LandedBrakeForce;                                           // 0x0958   (0x0004)  
+	float                                              LiftForce;                                                  // 0x095C   (0x0004)  
+	float                                              MaxLiftSpeedKmh;                                            // 0x0960   (0x0004)  
+	float                                              LiftTooFastBrakeForce;                                      // 0x0964   (0x0004)  
+	float                                              LateralDragCoefficient;                                     // 0x0968   (0x0004)  
+	float                                              LateralDragCoefficient2;                                    // 0x096C   (0x0004)  
+	float                                              LiftDragCoefficient;                                        // 0x0970   (0x0004)  
+	float                                              LiftDragCoefficient2;                                       // 0x0974   (0x0004)  
+	float                                              MaxPitchForCameraYaw;                                       // 0x0978   (0x0004)  
+	float                                              MaxCameraYawAngle;                                          // 0x097C   (0x0004)  
+	float                                              CameraYawStiff;                                             // 0x0980   (0x0004)  
+	float                                              CameraYawDamp;                                              // 0x0984   (0x0004)  
+	float                                              CameraYawStrength;                                          // 0x0988   (0x0004)  
+	float                                              UprightStiff;                                               // 0x098C   (0x0004)  
+	float                                              UprightDamp;                                                // 0x0990   (0x0004)  
+	bool                                               bUseVehiclePivotForCameraPitch;                             // 0x0994   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0995   (0x0003)  MISSED
+	float                                              ThrustTorqueAnglePercent;                                   // 0x0998   (0x0004)  
+	float                                              BoostThrustTorqueAnglePercent;                              // 0x099C   (0x0004)  
+	float                                              ThrustTorqueStiff;                                          // 0x09A0   (0x0004)  
+	float                                              ThrustTorqueDamp;                                           // 0x09A4   (0x0004)  
+	float                                              ThrustTorqueMaxAccel;                                       // 0x09A8   (0x0004)  
+	float                                              ThrustTorque;                                               // 0x09AC   (0x0004)  
+	float                                              YawTorque;                                                  // 0x09B0   (0x0004)  
+	float                                              YawTorqueDampingSpeed;                                      // 0x09B4   (0x0004)  
+	float                                              BoostForce;                                                 // 0x09B8   (0x0004)  
+	float                                              BoostMaxSpeedKmh;                                           // 0x09BC   (0x0004)  
+	float                                              BoostDuration;                                              // 0x09C0   (0x0004)  
+	float                                              BoostCooldown;                                              // 0x09C4   (0x0004)  
+	float                                              BoostTorqueStiff;                                           // 0x09C8   (0x0004)  
+	float                                              BoostTorqueDamp;                                            // 0x09CC   (0x0004)  
+	float                                              AfterBoostBrakingForce;                                     // 0x09D0   (0x0004)  
+	float                                              AfterBoostBrakingDuration;                                  // 0x09D4   (0x0004)  
+	float                                              AfterBoostBrakingMinSpeed;                                  // 0x09D8   (0x0004)  
+	float                                              PitchAngleRequiredForFullThrust;                            // 0x09DC   (0x0004)  
+	float                                              DistanceToGroundForLanding;                                 // 0x09E0   (0x0004)  
+	float                                              StartupDelay;                                               // 0x09E4   (0x0004)  
+	float                                              LandingSequenceDelay;                                       // 0x09E8   (0x0004)  
+	float                                              RotorsRadius;                                               // 0x09EC   (0x0004)  
+	float                                              RotorsRadiusInner;                                          // 0x09F0   (0x0004)  
+	float                                              NoDriverBrakeForce;                                         // 0x09F4   (0x0004)  
+	float                                              TimeBetweenRotorDamageTicks;                                // 0x09F8   (0x0004)  
+	float                                              AutoLandingForce;                                           // 0x09FC   (0x0004)  
+	float                                              RotorDamageBoxSweepLength;                                  // 0x0A00   (0x0004)  
+	float                                              CriticalStateLiftForce;                                     // 0x0A04   (0x0004)  
+	float                                              IdleRotationMultiplier;                                     // 0x0A08   (0x0004)  
+	float                                              LiftPitchDegrees;                                           // 0x0A0C   (0x0004)  
+	float                                              MinAltitudeForIdleNoise;                                    // 0x0A10   (0x0004)  
+	float                                              DefaultLinearDamp;                                          // 0x0A14   (0x0004)  
+	float                                              DefaultAngularDamp;                                         // 0x0A18   (0x0004)  
+	float                                              LandingLinearDamp;                                          // 0x0A1C   (0x0004)  
+	float                                              LandingAngularDamp;                                         // 0x0A20   (0x0004)  
+	float                                              LandingLiftAlpha;                                           // 0x0A24   (0x0004)  
+	float                                              CriticalStateThrustMultiplier;                              // 0x0A28   (0x0004)  
+	float                                              BodyUpDotThresholdForLanding;                               // 0x0A2C   (0x0004)  
+	int32_t                                            CriticalHealthThreshold;                                    // 0x0A30   (0x0004)  
+	float                                              DamagePerImpulseWhileCritical;                              // 0x0A34   (0x0004)  
+	float                                              RotorImpulseLinear;                                         // 0x0A38   (0x0004)  
+	float                                              RotorImpulseAngular;                                        // 0x0A3C   (0x0004)  
+	float                                              RotorImpulseCooldown;                                       // 0x0A40   (0x0004)  
+	float                                              StartupLift;                                                // 0x0A44   (0x0004)  
+	float                                              StartupLiftTime;                                            // 0x0A48   (0x0004)  
+	float                                              MaxAltitude;                                                // 0x0A4C   (0x0004)  
+	float                                              AltitudeForSpinning;                                        // 0x0A50   (0x0004)  
+	float                                              RotorMaxSpeed;                                              // 0x0A54   (0x0004)  
+	float                                              RotorAccel;                                                 // 0x0A58   (0x0004)  
+	float                                              RotorDecel;                                                 // 0x0A5C   (0x0004)  
+	float                                              ExplodeRotorDecel;                                          // 0x0A60   (0x0004)  
+	float                                              MinRotorSpeedForSkippingStartup;                            // 0x0A64   (0x0004)  
+	float                                              RotorSpeedForStartupLift;                                   // 0x0A68   (0x0004)  
+	float                                              CriticalLiftForceDecay;                                     // 0x0A6C   (0x0004)  
+	float                                              CriticalYawTorqueMin;                                       // 0x0A70   (0x0004)  
+	float                                              CriticalYawTorqueMax;                                       // 0x0A74   (0x0004)  
+	float                                              CriticalYawTorqueRampDuration;                              // 0x0A78   (0x0004)  
+	float                                              RotorTraceRotationSpeed;                                    // 0x0A7C   (0x0004)  
+	float                                              RotorTraceBoxSize;                                          // 0x0A80   (0x0004)  
+	float                                              RotorTraceBoxHeight;                                        // 0x0A84   (0x0004)  
+	float                                              MaxCriticalFallForce;                                       // 0x0A88   (0x0004)  
+	float                                              BoostFOV;                                                   // 0x0A8C   (0x0004)  
+	float                                              GentleCrashTimeToExplode;                                   // 0x0A90   (0x0004)  
+	float                                              CriticalTimeForGentleCrash;                                 // 0x0A94   (0x0004)  
+	float                                              AutoLandingYawTorque;                                       // 0x0A98   (0x0004)  
+	float                                              MinHeightForAutoLandingYawTorque;                           // 0x0A9C   (0x0004)  
+	float                                              MinSpeedForScrapingBottom;                                  // 0x0AA0   (0x0004)  
+	float                                              FallDamageHeightBuffer;                                     // 0x0AA4   (0x0004)  
+	float                                              TimeBetweenRotorPlayerDamage;                               // 0x0AA8   (0x0004)  
+	float                                              RotorMoveSpeedRequiredToUpdateTraceDirSqr;                  // 0x0AAC   (0x0004)  
+	float                                              FoliageTraceRate;                                           // 0x0AB0   (0x0004)  
+	float                                              RotorWashTicksPerFrame;                                     // 0x0AB4   (0x0004)  
+	float                                              CriticalHitRadius;                                          // 0x0AB8   (0x0004)  
+	float                                              AngleNormalUpForLockMovement;                               // 0x0ABC   (0x0004)  
+	float                                              MaxAutoLandingTime;                                         // 0x0AC0   (0x0004)  
+	float                                              SpeedThresholdForCrashed;                                   // 0x0AC4   (0x0004)  
+	float                                              CritMultiplier;                                             // 0x0AC8   (0x0004)  
+	float                                              AltitudeForSprings;                                         // 0x0ACC   (0x0004)  
+	float                                              MaxCrashingTime;                                            // 0x0AD0   (0x0004)  
+	float                                              MaxCrashingScrapingTime;                                    // 0x0AD4   (0x0004)  
+	float                                              MaxCrashingTimeSpentNotMoving;                              // 0x0AD8   (0x0004)  
+	float                                              LandscapeRotorImpulseMag;                                   // 0x0ADC   (0x0004)  
+	float                                              HealthThresholdForLandscapeRotorImpulse;                    // 0x0AE0   (0x0004)  
+	float                                              MaxHeightBuffer;                                            // 0x0AE4   (0x0004)  
+	bool                                               bImpulseOnOuterRotorHitLandscape;                           // 0x0AE8   (0x0001)  
+	bool                                               bSkipRotorImpulses;                                         // 0x0AE9   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0AEA   (0x0006)  MISSED
+	FVector                                            FoliageTraceBoxSize;                                        // 0x0AF0   (0x0018)  
+	FVector                                            WaterBoxSize;                                               // 0x0B08   (0x0018)  
+	FVector                                            WaterBoxOffset;                                             // 0x0B20   (0x0018)  
+	FVector                                            RotorOffsetFromActorLocationOnServer;                       // 0x0B38   (0x0018)  
+	bool                                               bSkipContactRotations;                                      // 0x0B50   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0B51   (0x0007)  MISSED
+	FScalableFloat                                     MaxAutoLandHeightWhenOutOfFuel;                             // 0x0B58   (0x0028)  
 };
 
 /// Struct /Script/HoagieRuntime.HoagieCmd

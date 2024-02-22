@@ -42,11 +42,11 @@ public:
 };
 
 /// Class /Script/MassEntity.MassEntitySettings
-/// Size: 0x00F0 (0x000028 - 0x000118)
+/// Size: 0x0108 (0x000028 - 0x000130)
 class UMassEntitySettings : public UMassModuleSettings
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 304;
 
 public:
 	DMember(int32_t)                                   ChunkMemorySize                                             OFFSET(get<int32_t>, {0x28, 4, 0, 0})
@@ -105,15 +105,15 @@ public:
 };
 
 /// Class /Script/MassEntity.MassCompositeProcessor
-/// Size: 0x0038 (0x0000C0 - 0x0000F8)
+/// Size: 0x0040 (0x0000C0 - 0x000100)
 class UMassCompositeProcessor : public UMassProcessor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 248;
+	static inline constexpr uint64_t __MDKClassSize = 256;
 
 public:
-	SMember(FMassRuntimePipeline)                      ChildPipeline                                               OFFSET(getStruct<T>, {0xC0, 16, 0, 0})
-	SMember(FName)                                     GroupName                                                   OFFSET(getStruct<T>, {0xD0, 4, 0, 0})
+	SMember(FMassRuntimePipeline)                      ChildPipeline                                               OFFSET(getStruct<T>, {0xC0, 24, 0, 0})
+	SMember(FName)                                     GroupName                                                   OFFSET(getStruct<T>, {0xD8, 4, 0, 0})
 };
 
 /// Class /Script/MassEntity.MassSettings
@@ -230,12 +230,12 @@ public:
 };
 
 /// Struct /Script/MassEntity.MassRuntimePipeline
-/// Size: 0x0010 (0x000000 - 0x000010)
+/// Size: 0x0018 (0x000000 - 0x000018)
 class FMassRuntimePipeline : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
+	static inline constexpr uint64_t __MDKClassSize = 24;
 
 public:
 	CMember(TArray<class UMassProcessor*>)             Processors                                                  OFFSET(get<T>, {0x0, 16, 0, 0})

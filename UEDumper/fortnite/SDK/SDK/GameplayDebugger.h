@@ -46,7 +46,7 @@ enum class EGameplayDebuggerShape : uint8_t
 struct FGameplayDebuggerShape
 { 
 	TArray<FVector>                                    ShapeData;                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13899) /* FString */              __um(Description);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13997) /* FString */              __um(Description);                                          // 0x0010   (0x0010)  
 	FColor                                             Color;                                                      // 0x0020   (0x0004)  
 	EGameplayDebuggerShape                             Type;                                                       // 0x0024   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0025   (0x0003)  MISSED
@@ -70,7 +70,7 @@ struct FGameplayDebuggerCategoryData
 { 
 	FName                                              CategoryName;                                               // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13900) /* TArray<FString> */      __um(TextLines);                                            // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13998) /* TArray<FString> */      __um(TextLines);                                            // 0x0008   (0x0010)  
 	TArray<FGameplayDebuggerShape>                     Shapes;                                                     // 0x0018   (0x0010)  
 	TArray<FGameplayDebuggerDataPackHeader>            DataPacks;                                                  // 0x0028   (0x0010)  
 	bool                                               bIsEnabled;                                                 // 0x0038   (0x0001)  
@@ -89,7 +89,7 @@ struct FGameplayDebuggerNetPack
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FGameplayDebuggerDebugActor
 { 
-	SDK_UNDEFINED(8,13901) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,13999) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
 	FName                                              ActorName;                                                  // 0x0008   (0x0004)  
 	int16_t                                            SyncCounter;                                                // 0x000C   (0x0002)  
 	unsigned char                                      UnknownData00_6[0x2];                                       // 0x000E   (0x0002)  MISSED
@@ -99,7 +99,7 @@ struct FGameplayDebuggerDebugActor
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FGameplayDebuggerVisLogSync
 { 
-	SDK_UNDEFINED(16,13902) /* FString */              __um(DeviceIDs);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14000) /* FString */              __um(DeviceIDs);                                            // 0x0000   (0x0010)  
 };
 
 /// Class /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator
@@ -119,30 +119,30 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSetViewPoint
-	// void ServerSetViewPoint(FVector InViewLocation, FVector InViewDirection);                                             // [0x6c36444] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate 
+	// void ServerSetViewPoint(FVector InViewLocation, FVector InViewDirection);                                             // [0x6ca4510] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSetEnabled
-	// void ServerSetEnabled(bool bEnable);                                                                                  // [0x6c36354] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSetEnabled(bool bEnable);                                                                                  // [0x6ca4460] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSetDebugActor
-	// void ServerSetDebugActor(class AActor* Actor, bool bSelectInEditor);                                                  // [0x6c361d8] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSetDebugActor(class AActor* Actor, bool bSelectInEditor);                                                  // [0x6ca4368] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSetCategoryEnabled
-	// void ServerSetCategoryEnabled(int32_t CategoryID, bool bEnable);                                                      // [0x6c36060] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSetCategoryEnabled(int32_t CategoryID, bool bEnable);                                                      // [0x6ca4270] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSendExtensionInputEvent
-	// void ServerSendExtensionInputEvent(int32_t ExtensionId, int32_t HandlerId);                                           // [0x6c35eec] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSendExtensionInputEvent(int32_t ExtensionId, int32_t HandlerId);                                           // [0x6ca4188] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerSendCategoryInputEvent
-	// void ServerSendCategoryInputEvent(int32_t CategoryID, int32_t HandlerId);                                             // [0x6c35d78] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSendCategoryInputEvent(int32_t CategoryID, int32_t HandlerId);                                             // [0x6ca40a0] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ServerResetViewPoint
-	// void ServerResetViewPoint();                                                                                          // [0x6c35d2c] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerResetViewPoint();                                                                                          // [0x6ca4054] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.OnRep_ReplicatedData
-	// void OnRep_ReplicatedData();                                                                                          // [0x6c35cf8] Final|RequiredAPI|Native|Protected 
+	// void OnRep_ReplicatedData();                                                                                          // [0x6ca4020] Final|RequiredAPI|Native|Protected 
 	// Function /Script/GameplayDebugger.GameplayDebuggerCategoryReplicator.ClientDataPackPacket
-	// void ClientDataPackPacket(FGameplayDebuggerDataPackRPCParams Params);                                                 // [0x6c35c08] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientDataPackPacket(FGameplayDebuggerDataPackRPCParams Params);                                                 // [0x6ca3eb0] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Struct /Script/GameplayDebugger.GameplayDebuggerInputConfig
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FGameplayDebuggerInputConfig
 { 
-	SDK_UNDEFINED(16,13903) /* FString */              __um(ConfigName);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14001) /* FString */              __um(ConfigName);                                           // 0x0000   (0x0010)  
 	FKey                                               Key;                                                        // 0x0010   (0x0018)  
 	bool                                               bModShift : 1;                                              // 0x0028:0 (0x0001)  
 	bool                                               bModCtrl : 1;                                               // 0x0028:1 (0x0001)  
@@ -155,7 +155,7 @@ struct FGameplayDebuggerInputConfig
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FGameplayDebuggerCategoryConfig
 { 
-	SDK_UNDEFINED(16,13904) /* FString */              __um(CategoryName);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14002) /* FString */              __um(CategoryName);                                         // 0x0000   (0x0010)  
 	int32_t                                            SlotIdx;                                                    // 0x0010   (0x0004)  
 	EGameplayDebuggerOverrideMode                      ActiveInGame;                                               // 0x0014   (0x0001)  
 	EGameplayDebuggerOverrideMode                      ActiveInSimulate;                                           // 0x0015   (0x0001)  
@@ -170,7 +170,7 @@ struct FGameplayDebuggerCategoryConfig
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FGameplayDebuggerExtensionConfig
 { 
-	SDK_UNDEFINED(16,13905) /* FString */              __um(ExtensionName);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14003) /* FString */              __um(ExtensionName);                                        // 0x0000   (0x0010)  
 	EGameplayDebuggerOverrideMode                      UseExtension;                                               // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
 	TArray<FGameplayDebuggerInputConfig>               InputHandlers;                                              // 0x0018   (0x0010)  

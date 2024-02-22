@@ -275,7 +275,7 @@ struct FTimeStretchConfig
 	bool                                               bMaintainTime;                                              // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FPitchShifterName                                  PitchShifter;                                               // 0x0004   (0x0004)  
-	SDK_UNDEFINED(80,13463) /* TMap<FName, FTypedParameter> */ __um(PitchShifterOptions);                          // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,13557) /* TMap<FName, FTypedParameter> */ __um(PitchShifterOptions);                          // 0x0008   (0x0050)  
 	bool                                               bSyncTempo;                                                 // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0059   (0x0003)  MISSED
 	float                                              OriginalTempo;                                              // 0x005C   (0x0004)  
@@ -299,7 +299,7 @@ struct FTrackChannelInfo
 	FName                                              Routing;                                                    // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
 	TArray<FStreamingChannelParams>                    Channels;                                                   // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,13464) /* TMap<FName, FStreamingChannelParamsArray> */ __um(PresetChannels);                  // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,13558) /* TMap<FName, FStreamingChannelParamsArray> */ __um(PresetChannels);                  // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/HarmonixDsp.KeyzoneSettings

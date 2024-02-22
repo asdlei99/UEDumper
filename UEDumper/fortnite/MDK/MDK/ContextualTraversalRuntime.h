@@ -12,20 +12,20 @@
 /// dependency: GameplayTags
 
 /// Class /Script/ContextualTraversalRuntime.FortMovementMode_ExtLogicTraversalBase
-/// Size: 0x0058 (0x000118 - 0x000170)
+/// Size: 0x0058 (0x000120 - 0x000178)
 class UFortMovementMode_ExtLogicTraversalBase : public UFortMovementMode_BaseExtLogic
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 368;
+	static inline constexpr uint64_t __MDKClassSize = 376;
 
 public:
-	SMember(FGameplayTag)                              SynchedActionTag                                            OFFSET(getStruct<T>, {0x148, 4, 0, 0})
-	CMember(class UClass*)                             CameraMode                                                  OFFSET(get<T>, {0x150, 8, 0, 0})
-	SMember(FGameplayTag)                              CameraModeTag                                               OFFSET(getStruct<T>, {0x158, 4, 0, 0})
-	SMember(FName)                                     MontageStartSectionName                                     OFFSET(getStruct<T>, {0x15C, 4, 0, 0})
-	DMember(bool)                                      bUseNextSectionAnimName                                     OFFSET(get<bool>, {0x160, 1, 0, 0})
-	DMember(float)                                     OverrideServerAllowablePositionError                        OFFSET(get<float>, {0x164, 4, 0, 0})
-	DMember(float)                                     OverrideAnimBlendOutTimeWhenLanding                         OFFSET(get<float>, {0x168, 4, 0, 0})
+	SMember(FGameplayTag)                              SynchedActionTag                                            OFFSET(getStruct<T>, {0x150, 4, 0, 0})
+	CMember(class UClass*)                             CameraMode                                                  OFFSET(get<T>, {0x158, 8, 0, 0})
+	SMember(FGameplayTag)                              CameraModeTag                                               OFFSET(getStruct<T>, {0x160, 4, 0, 0})
+	SMember(FName)                                     MontageStartSectionName                                     OFFSET(getStruct<T>, {0x164, 4, 0, 0})
+	DMember(bool)                                      bUseNextSectionAnimName                                     OFFSET(get<bool>, {0x168, 1, 0, 0})
+	DMember(float)                                     OverrideServerAllowablePositionError                        OFFSET(get<float>, {0x16C, 4, 0, 0})
+	DMember(float)                                     OverrideAnimBlendOutTimeWhenLanding                         OFFSET(get<float>, {0x170, 4, 0, 0})
 };
 
 /// Struct /Script/ContextualTraversalRuntime.FortMovementMode_TraversalBaseRuntimeData

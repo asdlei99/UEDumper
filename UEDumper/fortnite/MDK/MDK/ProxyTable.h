@@ -60,13 +60,13 @@ public:
 
 	/// Functions
 	// Function /Script/ProxyTable.ProxyTableFunctionLibrary.MakeLookupProxyWithOverrideTable
-	// FInstancedStruct MakeLookupProxyWithOverrideTable(class UProxyAsset* proxy, class UProxyTable* ProxyTable);              // [0x7a48878] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FInstancedStruct MakeLookupProxyWithOverrideTable(class UProxyAsset* proxy, class UProxyTable* ProxyTable);              // [0x7a67ec0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ProxyTable.ProxyTableFunctionLibrary.MakeLookupProxy
-	// FInstancedStruct MakeLookupProxy(class UProxyAsset* proxy);                                                              // [0x7a48768] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FInstancedStruct MakeLookupProxy(class UProxyAsset* proxy);                                                              // [0x7a67df4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ProxyTable.ProxyTableFunctionLibrary.EvaluateProxyTable
-	// class UObject* EvaluateProxyTable(class UObject* ContextObject, class UProxyTable* ProxyTable, FName Key);               // [0x7a4851c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UObject* EvaluateProxyTable(class UObject* ContextObject, class UProxyTable* ProxyTable, FName Key);               // [0x7a67c60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ProxyTable.ProxyTableFunctionLibrary.EvaluateProxyAsset
-	// class UObject* EvaluateProxyAsset(class UObject* ContextObject, class UProxyAsset* proxy, class UClass* ObjectClass);    // [0x7a48288] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UObject* EvaluateProxyAsset(class UObject* ContextObject, class UProxyAsset* proxy, class UClass* ObjectClass);    // [0x7a67a90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/ProxyTable.ChooserParameterProxyTableBase

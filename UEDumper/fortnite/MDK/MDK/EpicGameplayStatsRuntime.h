@@ -22,9 +22,9 @@ public:
 
 	/// Functions
 	// Function /Script/EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.NotEqual_GameplayStatTagGameplayStatTag
-	// bool NotEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                    // [0x7ffb35c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                    // [0x8009b00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.EqualEqual_GameplayStatTagGameplayStatTag
-	// bool EqualEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                  // [0x7ffb220] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                  // [0x80098d8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EpicGameplayStatsRuntime.GameplayTagTableManager

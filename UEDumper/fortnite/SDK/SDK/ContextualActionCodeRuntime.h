@@ -44,54 +44,54 @@ enum class ESwingingState : uint8_t
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicBaseSwinging
-/// Size: 0x0038 (0x000118 - 0x000150)
+/// Size: 0x0038 (0x000120 - 0x000158)
 class UFortMovementMode_ExtLogicBaseSwinging : public UFortMovementMode_BaseExtLogic
 { 
 public:
-	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0118   (0x0008)  MISSED
-	class UClass*                                      SwingingAnimationLayer;                                     // 0x0120   (0x0008)  
-	float                                              GravitationalAcceleration;                                  // 0x0128   (0x0004)  
-	float                                              MinimumInitialSpeed;                                        // 0x012C   (0x0004)  
-	float                                              AccelerationMultiplier;                                     // 0x0130   (0x0004)  
-	float                                              DefaultAcceleration;                                        // 0x0134   (0x0004)  
-	float                                              NonBrakingFriction;                                         // 0x0138   (0x0004)  
-	float                                              BrakingFriction;                                            // 0x013C   (0x0004)  
-	float                                              BrakingDeceleration;                                        // 0x0140   (0x0004)  
-	float                                              MaxSpeed;                                                   // 0x0144   (0x0004)  
-	FGameplayTag                                       SwingingTag;                                                // 0x0148   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x014C   (0x0004)  MISSED
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0120   (0x0008)  MISSED
+	class UClass*                                      SwingingAnimationLayer;                                     // 0x0128   (0x0008)  
+	float                                              GravitationalAcceleration;                                  // 0x0130   (0x0004)  
+	float                                              MinimumInitialSpeed;                                        // 0x0134   (0x0004)  
+	float                                              AccelerationMultiplier;                                     // 0x0138   (0x0004)  
+	float                                              DefaultAcceleration;                                        // 0x013C   (0x0004)  
+	float                                              NonBrakingFriction;                                         // 0x0140   (0x0004)  
+	float                                              BrakingFriction;                                            // 0x0144   (0x0004)  
+	float                                              BrakingDeceleration;                                        // 0x0148   (0x0004)  
+	float                                              MaxSpeed;                                                   // 0x014C   (0x0004)  
+	FGameplayTag                                       SwingingTag;                                                // 0x0150   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0154   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicBaseSwinging.OnOwnerDBNO
-	// void OnOwnerDBNO();                                                                                                   // [0xb3cb73c] Final|Native|Protected 
+	// void OnOwnerDBNO();                                                                                                   // [0xb4de968] Final|Native|Protected 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicSwingingObject
-/// Size: 0x0038 (0x000150 - 0x000188)
+/// Size: 0x0038 (0x000158 - 0x000190)
 class UFortMovementMode_ExtLogicSwingingObject : public UFortMovementMode_ExtLogicBaseSwinging
 { 
 public:
-	FVector                                            AttachOffset;                                               // 0x0150   (0x0018)  
-	FVector                                            HandIKOffset;                                               // 0x0168   (0x0018)  
-	bool                                               bAlignCharacterToObject;                                    // 0x0180   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0181   (0x0007)  MISSED
+	FVector                                            AttachOffset;                                               // 0x0158   (0x0018)  
+	FVector                                            HandIKOffset;                                               // 0x0170   (0x0018)  
+	bool                                               bAlignCharacterToObject;                                    // 0x0188   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0189   (0x0007)  MISSED
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicSwingingRope
-/// Size: 0x0038 (0x000150 - 0x000188)
+/// Size: 0x0038 (0x000158 - 0x000190)
 class UFortMovementMode_ExtLogicSwingingRope : public UFortMovementMode_ExtLogicBaseSwinging
 { 
 public:
-	class UFortInputMappingContext*                    InputMappingContext;                                        // 0x0150   (0x0008)  
-	class UInputAction*                                SwingingAscendAction;                                       // 0x0158   (0x0008)  
-	class UInputAction*                                SwingingAscendActionRelease;                                // 0x0160   (0x0008)  
-	float                                              MinimumAscendRange;                                         // 0x0168   (0x0004)  
-	float                                              AscendMaxSpeed;                                             // 0x016C   (0x0004)  
-	float                                              DescendMaxSpeed;                                            // 0x0170   (0x0004)  
-	float                                              AscendingSettleInterpSpeed;                                 // 0x0174   (0x0004)  
-	float                                              AscendingSettleAngleThreshold;                              // 0x0178   (0x0004)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x017C   (0x000C)  MISSED
+	class UFortInputMappingContext*                    InputMappingContext;                                        // 0x0158   (0x0008)  
+	class UInputAction*                                SwingingAscendAction;                                       // 0x0160   (0x0008)  
+	class UInputAction*                                SwingingAscendActionRelease;                                // 0x0168   (0x0008)  
+	float                                              MinimumAscendRange;                                         // 0x0170   (0x0004)  
+	float                                              AscendMaxSpeed;                                             // 0x0174   (0x0004)  
+	float                                              DescendMaxSpeed;                                            // 0x0178   (0x0004)  
+	float                                              AscendingSettleInterpSpeed;                                 // 0x017C   (0x0004)  
+	float                                              AscendingSettleAngleThreshold;                              // 0x0180   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0184   (0x000C)  MISSED
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortPlayerAnimInstance_Hijacker
@@ -136,9 +136,9 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.FortSwingingObject.OnStartSwing_BP
-	// void OnStartSwing_BP(class AFortPlayerPawn* AttachedActor);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStartSwing_BP(class AFortPlayerPawn* AttachedActor);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.FortSwingingObject.OnEndSwing_BP
-	// void OnEndSwing_BP(class AFortPlayerPawn* AttachedActor);                                                             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnEndSwing_BP(class AFortPlayerPawn* AttachedActor);                                                             // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortSwingingRope
@@ -159,10 +159,10 @@ class UHijackerComponent : public UFortPawnComponent
 { 
 public:
 	FVector                                            HijackOffset;                                               // 0x00A8   (0x0018)  
-	SDK_UNDEFINED(24,12357) /* FText */                __um(StartHijackInteractText);                              // 0x00C0   (0x0018)  
-	SDK_UNDEFINED(24,12358) /* FText */                __um(StartHijackInteractSubText);                           // 0x00D8   (0x0018)  
-	SDK_UNDEFINED(24,12359) /* FText */                __um(CompleteHijackInteractText);                           // 0x00F0   (0x0018)  
-	SDK_UNDEFINED(24,12360) /* FText */                __um(CompleteHijackInteractSubText);                        // 0x0108   (0x0018)  
+	SDK_UNDEFINED(24,12444) /* FText */                __um(StartHijackInteractText);                              // 0x00C0   (0x0018)  
+	SDK_UNDEFINED(24,12445) /* FText */                __um(StartHijackInteractSubText);                           // 0x00D8   (0x0018)  
+	SDK_UNDEFINED(24,12446) /* FText */                __um(CompleteHijackInteractText);                           // 0x00F0   (0x0018)  
+	SDK_UNDEFINED(24,12447) /* FText */                __um(CompleteHijackInteractSubText);                        // 0x0108   (0x0018)  
 	class UClass*                                      HijackerAnimInstanceClass;                                  // 0x0120   (0x0008)  
 	float                                              RequiredInteractionDuration;                                // 0x0128   (0x0004)  
 	float                                              HijackCooldown;                                             // 0x012C   (0x0004)  
@@ -175,35 +175,35 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.TryHijack
-	// bool TryHijack(class AActor* VehicleTarget, FInteractionType& InteractionType);                                       // [0xb3cbb68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool TryHijack(class AActor* VehicleTarget, FInteractionType& InteractionType);                                       // [0xb4dee1c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.OnStartHijack
-	// void OnStartHijack(class AActor* VehicleTarget);                                                                      // [0x90d0824] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void OnStartHijack(class AActor* VehicleTarget);                                                                      // [0x90d37d8] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.OnCompleteHijack
-	// void OnCompleteHijack();                                                                                              // [0x25a3d14] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void OnCompleteHijack();                                                                                              // [0x1f2db84] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xb3cb2b0] Final|Native|Private 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xb4de594] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.EjectHijacker
-	// void EjectHijacker(class AActor* DamageCauser, float Damage, FVector EventLocation);                                  // [0xb3caf90] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void EjectHijacker(class AActor* DamageCauser, float Damage, FVector EventLocation);                                  // [0xb4de288] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.CancelHijack_Server
-	// void CancelHijack_Server();                                                                                           // [0x2eb4140] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void CancelHijack_Server();                                                                                           // [0x2e6c604] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.CancelHijack_NetMulticast
-	// void CancelHijack_NetMulticast();                                                                                     // [0x28146bc] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void CancelHijack_NetMulticast();                                                                                     // [0x3841600] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnStartHijack
-	// void BP_OnStartHijack();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnStartHijack();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnHijackInterrupted
-	// void BP_OnHijackInterrupted();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnHijackInterrupted();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnHijackCancelled
-	// void BP_OnHijackCancelled();                                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnHijackCancelled();                                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnCompleteHijack
-	// void BP_OnCompleteHijack();                                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnCompleteHijack();                                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnCleanup
-	// void BP_OnCleanup();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnCleanup();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_GetThrownVelocity
-	// void BP_GetThrownVelocity(class AActor* DamageCauser, float Damage, FVector& EventLocation, FVector& OutVelocity);    // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// void BP_GetThrownVelocity(class AActor* DamageCauser, float Damage, FVector& EventLocation, FVector& OutVelocity);    // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_CanStartHijack
-	// void BP_CanStartHijack(bool& OutCanStartHijack);                                                                      // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartHijack(bool& OutCanStartHijack);                                                                      // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_CanCompleteHijack
-	// void BP_CanCompleteHijack(bool& OutCanCompleteHijack);                                                                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanCompleteHijack(bool& OutCanCompleteHijack);                                                                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.Hijack_InteractionOverrideComponent
@@ -248,37 +248,37 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.TestToggleGravity_Server
-	// void TestToggleGravity_Server();                                                                                      // [0x9ae1fe0] Net|NetReliableNative|Event|Protected|NetServer 
+	// void TestToggleGravity_Server();                                                                                      // [0x9aefd20] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.TestToggleGravity
-	// void TestToggleGravity();                                                                                             // [0xb3cbb18] Final|Native|Public|BlueprintCallable 
+	// void TestToggleGravity();                                                                                             // [0xb4dedcc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappellingSwing_Server
-	// void StartRappellingSwing_Server();                                                                                   // [0x6d4279c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void StartRappellingSwing_Server();                                                                                   // [0x6db0d14] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappelling_Server
-	// void StartRappelling_Server(FVector NewGravityDirection, FVector ClientRappellingEdge, FVector ClientRappellingNormal); // [0xb3cb94c] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
+	// void StartRappelling_Server(FVector NewGravityDirection, FVector ClientRappellingEdge, FVector ClientRappellingNormal); // [0xb4deab8] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappelling
-	// void StartRappelling();                                                                                               // [0xb3cb938] Final|Native|Public|BlueprintCallable 
+	// void StartRappelling();                                                                                               // [0xb4deaa4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.RappellingCorrectFallingRotation_Client
-	// void RappellingCorrectFallingRotation_Client();                                                                       // [0x28146bc] Net|NetReliableNative|Event|Protected|NetClient 
+	// void RappellingCorrectFallingRotation_Client();                                                                       // [0x3841600] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnValidTargeting
-	// void OnValidTargeting();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnValidTargeting();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnStartRappelling
-	// void OnStartRappelling();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnStartRappelling();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnRep_RappellingState
-	// void OnRep_RappellingState();                                                                                         // [0xb3cb90c] Final|Native|Protected 
+	// void OnRep_RappellingState();                                                                                         // [0xb4dea78] Final|Native|Protected 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnOwnerMovementModeChanged
-	// void OnOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb3cb750] Final|Native|Protected 
+	// void OnOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb4de97c] Final|Native|Protected 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnInvalidTargeting
-	// void OnInvalidTargeting();                                                                                            // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnInvalidTargeting();                                                                                            // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnEndRappelling
-	// void OnEndRappelling();                                                                                               // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnEndRappelling();                                                                                               // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnCapsuleHit
-	// void OnCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xb3cb438] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void OnCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xb4de694] Final|Native|Protected|HasOutParms|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappellingSwing_Server
-	// void EndRappellingSwing_Server();                                                                                     // [0x2eb4140] Net|NetReliableNative|Event|Protected|NetServer 
+	// void EndRappellingSwing_Server();                                                                                     // [0x2e6c604] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappelling_Server
-	// void EndRappelling_Server();                                                                                          // [0x25a3d14] Net|NetReliableNative|Event|Protected|NetServer 
+	// void EndRappelling_Server();                                                                                          // [0x1f2db84] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappelling
-	// void EndRappelling();                                                                                                 // [0xb3cb158] Final|Native|Public|BlueprintCallable 
+	// void EndRappelling();                                                                                                 // [0xb4de43c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.RappellingSwingMovementControls
@@ -317,29 +317,29 @@ public:
 	class UClass*                                      SwingingObjectMovementModeExtension;                        // 0x00D8   (0x0008)  
 	ESwingingState                                     SwingingState;                                              // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00E1   (0x0003)  MISSED
-	SDK_UNDEFINED(8,12361) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(ReplicatedSwingingObject);              // 0x00E4   (0x0008)  
+	SDK_UNDEFINED(8,12448) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(ReplicatedSwingingObject);              // 0x00E4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x3C];                                      // 0x00EC   (0x003C)  MISSED
 
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.OnRep_SwingingObject
-	// void OnRep_SwingingObject();                                                                                          // [0xb3cb924] Final|Native|Private 
+	// void OnRep_SwingingObject();                                                                                          // [0xb4dea90] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xb3cb374] Final|Native|Private 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xb4de614] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.GetSwingDeltaAngle
-	// void GetSwingDeltaAngle(FRotator& OutSwingRotation, FRotator& OutDeltaRotation);                                      // [0xb3cb1d0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetSwingDeltaAngle(FRotator& OutSwingRotation, FRotator& OutDeltaRotation);                                      // [0xb4de4b4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.GetAimRotation
-	// FRotator GetAimRotation();                                                                                            // [0xb3cb16c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetAimRotation();                                                                                            // [0xb4de450] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.DetachFromObject_Server
-	// void DetachFromObject_Server(bool bJumpExit);                                                                         // [0x80ef090] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void DetachFromObject_Server(bool bJumpExit);                                                                         // [0x80ff6b4] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_OnStartSwing
-	// void BP_OnStartSwing();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnStartSwing();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_OnEndSwing
-	// void BP_OnEndSwing();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnEndSwing();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_CanStartSwing
-	// void BP_CanStartSwing(class AFortSwingingObject* SwingTarget, bool& bCanStartSwing);                                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartSwing(class AFortSwingingObject* SwingTarget, bool& bCanStartSwing);                                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.AttachToObject_Server
-	// void AttachToObject_Server(class AFortSwingingObject* Object);                                                        // [0x674182c] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void AttachToObject_Server(class AFortSwingingObject* Object);                                                        // [0x67ae178] Final|Net|NetReliableNative|Event|Private|NetServer 
 };
 
 /// Struct /Script/ContextualActionCodeRuntime.FortMovementMode_SwingingObjectRuntimeData
@@ -354,7 +354,7 @@ struct FFortMovementMode_SwingingObjectRuntimeData : FFortMovementMode_BaseExtRu
 struct FFortMovementMode_SwingingObjectCreationData : FFortMovementMode_BaseExtCreationData
 { 
 	FVector                                            AttachLocation;                                             // 0x0008   (0x0018)  
-	SDK_UNDEFINED(8,12362) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(TargetSwingingObject);                  // 0x0020   (0x0008)  
+	SDK_UNDEFINED(8,12449) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(TargetSwingingObject);                  // 0x0020   (0x0008)  
 };
 
 /// Struct /Script/ContextualActionCodeRuntime.FortMovementMode_SwingingRopeRuntimeData
@@ -369,7 +369,7 @@ struct FFortMovementMode_SwingingRopeRuntimeData : FFortMovementMode_BaseExtRunt
 struct FFortMovementMode_SwingingRopeCreationData : FFortMovementMode_BaseExtCreationData
 { 
 	FVector                                            AttachLocation;                                             // 0x0008   (0x0018)  
-	SDK_UNDEFINED(8,12363) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(TargetSwingingRope);                    // 0x0020   (0x0008)  
+	SDK_UNDEFINED(8,12450) /* TWeakObjectPtr<AFortSwingingObject*> */ __um(TargetSwingingRope);                    // 0x0020   (0x0008)  
 };
 
 /// Struct /Script/ContextualActionCodeRuntime.FortSwingingObjectClassData

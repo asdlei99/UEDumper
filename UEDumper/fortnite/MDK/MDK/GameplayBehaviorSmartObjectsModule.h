@@ -41,11 +41,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f94484] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7fa1928] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseGameplayBehaviorSmartObject
-	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f94044] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7fa1670] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.MoveToAndUseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f93de4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7fa1300] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayBehaviorSmartObjectsModule.BTTask_FindAndUseGameplayBehaviorSmartObject
@@ -74,6 +74,6 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.GameplayBehaviorSmartObjectsBlueprintFunctionLibrary.UseGameplayBehaviorSmartObject
-	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7f942d4] Final|Native|Static|Public|BlueprintCallable 
+	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7fa17fc] Final|Native|Static|Public|BlueprintCallable 
 };
 

@@ -13,11 +13,11 @@
 /// dependency: ModularGameplay
 
 /// Class /Script/EnergyRuntime.FortComponent_Energy
-/// Size: 0x0248 (0x0000A0 - 0x0002E8)
+/// Size: 0x0250 (0x0000A0 - 0x0002F0)
 class UFortComponent_Energy : public UPawnComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 744;
+	static inline constexpr uint64_t __MDKClassSize = 752;
 
 public:
 	SMember(FMulticastInlineDelegate)                  OnEnergyCompletelyDrained                                   OFFSET(getStruct<T>, {0xA0, 16, 0, 0})
@@ -33,52 +33,53 @@ public:
 	SMember(FScalableFloat)                            RechargeAmountPerSecond                                     OFFSET(getStruct<T>, {0x1E8, 40, 0, 0})
 	SMember(FScalableFloat)                            RechargeDelayInSeconds                                      OFFSET(getStruct<T>, {0x210, 40, 0, 0})
 	SMember(FScalableFloat)                            RechargePercentageLimit                                     OFFSET(getStruct<T>, {0x238, 40, 0, 0})
-	CMember(TArray<FEnergyChannelingData>)             ActiveEnergyChannels                                        OFFSET(get<T>, {0x260, 16, 0, 0})
-	CMember(TArray<FEnergyChannelingData>)             NewActiveEnergyChannels                                     OFFSET(get<T>, {0x270, 16, 0, 0})
-	CMember(TArray<FEnergyRegenOverrideData>)          EnergyRegenOverrides                                        OFFSET(get<T>, {0x280, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnCurrentEnergyChanged                                      OFFSET(getStruct<T>, {0x290, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEnergyRechargeBegun                                       OFFSET(getStruct<T>, {0x2A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEnergyRechargeInterrupted                                 OFFSET(getStruct<T>, {0x2B0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEnergyReachedMax                                          OFFSET(getStruct<T>, {0x2C0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEnergyReachedMinForUsing                                  OFFSET(getStruct<T>, {0x2D0, 16, 0, 0})
-	DMember(bool)                                      bRechargingEnabled                                          OFFSET(get<bool>, {0x2E0, 1, 1, 0})
-	DMember(bool)                                      bIsRecharging                                               OFFSET(get<bool>, {0x2E0, 1, 1, 1})
-	DMember(bool)                                      bIsUsingEnergy                                              OFFSET(get<bool>, {0x2E0, 1, 1, 2})
+	DMember(bool)                                      bRemoveEnergyUsersWhenEmpty                                 OFFSET(get<bool>, {0x260, 1, 0, 0})
+	CMember(TArray<FEnergyChannelingData>)             ActiveEnergyChannels                                        OFFSET(get<T>, {0x268, 16, 0, 0})
+	CMember(TArray<FEnergyChannelingData>)             NewActiveEnergyChannels                                     OFFSET(get<T>, {0x278, 16, 0, 0})
+	CMember(TArray<FEnergyRegenOverrideData>)          EnergyRegenOverrides                                        OFFSET(get<T>, {0x288, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnCurrentEnergyChanged                                      OFFSET(getStruct<T>, {0x298, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEnergyRechargeBegun                                       OFFSET(getStruct<T>, {0x2A8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEnergyRechargeInterrupted                                 OFFSET(getStruct<T>, {0x2B8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEnergyReachedMax                                          OFFSET(getStruct<T>, {0x2C8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEnergyReachedMinForUsing                                  OFFSET(getStruct<T>, {0x2D8, 16, 0, 0})
+	DMember(bool)                                      bRechargingEnabled                                          OFFSET(get<bool>, {0x2E8, 1, 1, 0})
+	DMember(bool)                                      bIsRecharging                                               OFFSET(get<bool>, {0x2E8, 1, 1, 1})
+	DMember(bool)                                      bIsUsingEnergy                                              OFFSET(get<bool>, {0x2E8, 1, 1, 2})
 
 
 	/// Functions
 	// Function /Script/EnergyRuntime.FortComponent_Energy.UseEnergy
-	// bool UseEnergy(float& OutAmountOfEnergyUsed, float AmountOfEnergyToUse, bool bUseEnergyEvenOnFailure, class UObject* OptionalEnergyUser, bool bBroadcastEnergyPercentChanged); // [0xaa9f7f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool UseEnergy(float& OutAmountOfEnergyUsed, float AmountOfEnergyToUse, bool bUseEnergyEvenOnFailure, class UObject* OptionalEnergyUser, bool bBroadcastEnergyPercentChanged); // [0xad9b094] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StopUsingEnergy
-	// bool StopUsingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser);                              // [0xaa9f6a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StopUsingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser);                              // [0xad9af44] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StopAddingEnergy
-	// bool StopAddingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergySource);                           // [0xaa9f4cc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StopAddingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergySource);                           // [0xad9ad70] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StartUsingEnergy
-	// bool StartUsingEnergy(float EnergyToUseToStart, float EnergyToUsePerSecond, FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser); // [0xaa9f278] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartUsingEnergy(float EnergyToUseToStart, float EnergyToUsePerSecond, FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser); // [0xad9ab98] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StartAddingEnergy
-	// bool StartAddingEnergy(float EnergyToAddPerSecond, FGameplayTag& EnergySourceIdentifier, class UObject* OptionalEnergySource); // [0xaa9f0a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartAddingEnergy(float EnergyToAddPerSecond, FGameplayTag& EnergySourceIdentifier, class UObject* OptionalEnergySource); // [0xad9aa04] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.SetAllEnergyUsageFree
-	// bool SetAllEnergyUsageFree(bool bShouldEnergyUsageBeFree);                                                               // [0xaa9efc4] Final|Native|Public|BlueprintCallable 
+	// bool SetAllEnergyUsageFree(bool bShouldEnergyUsageBeFree);                                                               // [0xad9a964] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.RemoveRegenDataOverride
-	// bool RemoveRegenDataOverride(FGameplayTag& RegenOverrideIdentifier);                                                     // [0xaa9eee0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveRegenDataOverride(FGameplayTag& RegenOverrideIdentifier);                                                     // [0xad9a880] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                          // [0xaa9ec9c] Final|Native|Private 
+	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                          // [0xad9a6b0] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0x2f3277c] Final|Native|Private 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0x2f6bec4] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0x1b03864] Final|Native|Private 
+	// void OnMutatorUpdated();                                                                                                 // [0x2532f70] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HasSufficientEnergy
-	// bool HasSufficientEnergy(float EnergyAmountToTest);                                                                      // [0xaa9ebcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSufficientEnergy(float EnergyAmountToTest);                                                                      // [0xad9a620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HandleAbilitySystemComponentInvalidated
-	// void HandleAbilitySystemComponentInvalidated();                                                                          // [0x37c44e0] Final|Native|Private 
+	// void HandleAbilitySystemComponentInvalidated();                                                                          // [0x367f828] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HandleAbilitySystemComponentInitialized
-	// void HandleAbilitySystemComponentInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* PlayerPawn); // [0x2b4fa60] Final|Native|Private 
+	// void HandleAbilitySystemComponentInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* PlayerPawn); // [0x2a8bd30] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.GetCurrentEnergyPercentage
-	// float GetCurrentEnergyPercentage();                                                                                      // [0x1e08770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentEnergyPercentage();                                                                                      // [0x1e42614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.ApplyRegenDataOverride
-	// void ApplyRegenDataOverride(FGameplayTag& RegenOverrideIdentifier, float NewRechargeAmountPerSecond, float NewRechargeDelayInSeconds, float NewRechargePercentageLimit); // [0xaa9e97c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ApplyRegenDataOverride(FGameplayTag& RegenOverrideIdentifier, float NewRechargeAmountPerSecond, float NewRechargeDelayInSeconds, float NewRechargePercentageLimit); // [0xad9a3d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.AddEnergy
-	// bool AddEnergy(float& OutAmountOfEnergyAdded, float AmountOfEnergyToAdd, class UObject* OptionalEnergySource, bool bBroadcastEnergyPercentChanged); // [0xaa9e764] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool AddEnergy(float& OutAmountOfEnergyAdded, float AmountOfEnergyToAdd, class UObject* OptionalEnergySource, bool bBroadcastEnergyPercentChanged); // [0xad9a1b8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/EnergyRuntime.EnergyChannelingData

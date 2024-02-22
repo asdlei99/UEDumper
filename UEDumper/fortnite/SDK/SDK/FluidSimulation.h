@@ -92,7 +92,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0309   (0x0007)  MISSED
 	double                                             Fluid_Size;                                                 // 0x0310   (0x0008)  
 	int32_t                                            Resolution;                                                 // 0x0318   (0x0004)  
-	SDK_UNDEFINED(1,11199) /* TEnumAsByte<FluidBoundary> */ __um(Boundary_Condition);                              // 0x031C   (0x0001)  
+	SDK_UNDEFINED(1,11249) /* TEnumAsByte<FluidBoundary> */ __um(Boundary_Condition);                              // 0x031C   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x031D   (0x0003)  MISSED
 	double                                             Travel_Speed;                                               // 0x0320   (0x0008)  
 	double                                             Damping;                                                    // 0x0328   (0x0008)  
@@ -113,8 +113,8 @@ public:
 	unsigned char                                      UnknownData03_5[0x2];                                       // 0x03EE   (0x0002)  MISSED
 	class UTextureRenderTarget2D*                      PerfRT;                                                     // 0x03F0   (0x0008)  
 	TArray<FFluidForceImpulsePerInstanceData>          ImpulseForces;                                              // 0x03F8   (0x0010)  
-	SDK_UNDEFINED(80,11200) /* TMap<UActorComponent*, FFluidForceDynamicPerInstanceData> */ __um(DynamicForces);   // 0x0408   (0x0050)  
-	SDK_UNDEFINED(80,11201) /* TMap<UMaterialInterface*, UMaterialInstanceDynamic*> */ __um(ForceParentAndMIDMap); // 0x0458   (0x0050)  
+	SDK_UNDEFINED(80,11250) /* TMap<UActorComponent*, FFluidForceDynamicPerInstanceData> */ __um(DynamicForces);   // 0x0408   (0x0050)  
+	SDK_UNDEFINED(80,11251) /* TMap<UMaterialInterface*, UMaterialInstanceDynamic*> */ __um(ForceParentAndMIDMap); // 0x0458   (0x0050)  
 	bool                                               Show_Simulation_Mesh;                                       // 0x04A8   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x7];                                       // 0x04A9   (0x0007)  MISSED
 	class UStaticMeshComponent*                        Fluid_Display_Mesh;                                         // 0x04B0   (0x0008)  
@@ -124,7 +124,7 @@ public:
 	bool                                               Debug_Text;                                                 // 0x04C9   (0x0001)  
 	unsigned char                                      UnknownData05_5[0x2];                                       // 0x04CA   (0x0002)  MISSED
 	int32_t                                            Pawn_Check_Every_N_Frames;                                  // 0x04CC   (0x0004)  
-	SDK_UNDEFINED(80,11202) /* TMap<UActorComponent*, FFluidForceDynamicPerInstanceData> */ __um(ProjectileForces); // 0x04D0   (0x0050)  
+	SDK_UNDEFINED(80,11252) /* TMap<UActorComponent*, FFluidForceDynamicPerInstanceData> */ __um(ProjectileForces); // 0x04D0   (0x0050)  
 	bool                                               Follow_Player_;                                             // 0x0520   (0x0001)  
 	unsigned char                                      UnknownData06_5[0x3];                                       // 0x0521   (0x0003)  MISSED
 	int32_t                                            Frames_Since_Last_Active_Force;                             // 0x0524   (0x0004)  
@@ -134,7 +134,7 @@ public:
 	bool                                               Add_Physics_Forces;                                         // 0x0538   (0x0001)  
 	unsigned char                                      UnknownData08_5[0x7];                                       // 0x0539   (0x0007)  MISSED
 	class UTexture*                                    WaterVelocityTexture;                                       // 0x0540   (0x0008)  
-	SDK_UNDEFINED(32,11203) /* TWeakObjectPtr<AWaterZone*> */ __um(WaterZone);                                     // 0x0548   (0x0020)  
+	SDK_UNDEFINED(32,11253) /* TWeakObjectPtr<AWaterZone*> */ __um(WaterZone);                                     // 0x0548   (0x0020)  
 	bool                                               UpdateForcesInFixedTimeStep;                                // 0x0568   (0x0001)  
 	bool                                               UpdateSimInFixedTimeStep;                                   // 0x0569   (0x0001)  
 	bool                                               UpdateNormalInFixedTimeStep;                                // 0x056A   (0x0001)  
@@ -154,107 +154,107 @@ public:
 
 	/// Functions
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetSingleWaterBodyMIDTexture
-	// void SetSingleWaterBodyMIDTexture(class AWaterBody* WaterBody);                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void SetSingleWaterBodyMIDTexture(class AWaterBody* WaterBody);                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.CycleDebugRenderTargets
-	// void CycleDebugRenderTargets();                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void CycleDebugRenderTargets();                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Get Frames Since Last Active Forces
-	// void Get Frames Since Last Active Forces();                                                                           // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Get Frames Since Last Active Forces();                                                                           // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Clear Sim from Waterbody MIDs
-	// void Clear Sim from Waterbody MIDs();                                                                                 // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Clear Sim from Waterbody MIDs();                                                                                 // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Remove Projectile Force
-	// void Remove Projectile Force(class UActorComponent* Component);                                                       // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Remove Projectile Force(class UActorComponent* Component);                                                       // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Register Projectile Force
-	// void Register Projectile Force(FFluidForceDynamic Dynamic Fluid Force, class USceneComponent* Tracked Component);     // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Register Projectile Force(FFluidForceDynamic Dynamic Fluid Force, class USceneComponent* Tracked Component);     // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.GetPlayerPawnForces
-	// void GetPlayerPawnForces();                                                                                           // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void GetPlayerPawnForces();                                                                                           // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Validate RTs
-	// void Validate RTs(bool& RTs All Valid);                                                                               // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Validate RTs(bool& RTs All Valid);                                                                               // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Set Waterbody MID Params
-	// void Set Waterbody MID Params();                                                                                      // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Set Waterbody MID Params();                                                                                      // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.GetLocalPawn
-	// void GetLocalPawn(class APawn*& Pawn);                                                                                // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void GetLocalPawn(class APawn*& Pawn);                                                                                // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Draw Dynamic Force
-	// void Draw Dynamic Force(class UCanvas*& Canvas, FVector2D& Canvas Size, FFluidForceDynamicPerInstanceData& Dynamic Force Settings); // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Draw Dynamic Force(class UCanvas*& Canvas, FVector2D& Canvas Size, FFluidForceDynamicPerInstanceData& Dynamic Force Settings); // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Remove Dynamic Force
-	// void Remove Dynamic Force(class UActorComponent* Component);                                                          // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Remove Dynamic Force(class UActorComponent* Component);                                                          // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Register Dynamic Force
-	// void Register Dynamic Force(FFluidForceDynamic Dynamic Fluid Force, class USceneComponent* Tracked Component, double WaterLevel); // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Register Dynamic Force(FFluidForceDynamic Dynamic Fluid Force, class USceneComponent* Tracked Component, double WaterLevel); // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Update Dynamic Forces
-	// void Update Dynamic Forces();                                                                                         // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Update Dynamic Forces();                                                                                         // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Draw Impulse Force
-	// void Draw Impulse Force(class UCanvas* Canvas, FVector2D Canvas Size, FFluidForceImpulsePerInstanceData Impulse Settings); // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void Draw Impulse Force(class UCanvas* Canvas, FVector2D Canvas Size, FFluidForceImpulsePerInstanceData Impulse Settings); // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Update Impulse Lifetimes
-	// void Update Impulse Lifetimes();                                                                                      // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Update Impulse Lifetimes();                                                                                      // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Apply Fluid Force Impulse
-	// void Apply Fluid Force Impulse(FFluidForceImpulse Impulse Settings);                                                  // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Apply Fluid Force Impulse(FFluidForceImpulse Impulse Settings);                                                  // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Get LandscapeWaterInfo
-	// void Get LandscapeWaterInfo(class AWaterZone* WaterZone);                                                             // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Get LandscapeWaterInfo(class AWaterZone* WaterZone);                                                             // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Get Force MID
-	// void Get Force MID(class UMaterialInterface*& Parent, class UMaterialInstanceDynamic*& Mid);                          // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Get Force MID(class UMaterialInterface*& Parent, class UMaterialInstanceDynamic*& Mid);                          // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.GridMovement
-	// void GridMovement();                                                                                                  // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void GridMovement();                                                                                                  // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetupSimMIDs
-	// void SetupSimMIDs();                                                                                                  // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetupSimMIDs();                                                                                                  // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetupDisplayMIDs
-	// void SetupDisplayMIDs();                                                                                              // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void SetupDisplayMIDs();                                                                                              // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Convert Force Position
-	// void Convert Force Position(FVector Force Location, double Sine Bob, FVector& UV Location);                           // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Convert Force Position(FVector Force Location, double Sine Bob, FVector& UV Location);                           // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Cycle Render Targets
-	// void Cycle Render Targets(class UTextureRenderTarget2D*& Current Target);                                             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Cycle Render Targets(class UTextureRenderTarget2D*& Current Target);                                             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x130d900] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Clear RTs
-	// void Clear RTs();                                                                                                     // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Clear RTs();                                                                                                     // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Allocate RTs
-	// void Allocate RTs();                                                                                                  // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Allocate RTs();                                                                                                  // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.ReCheckScalability
-	// void ReCheckScalability();                                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ReCheckScalability();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.Release RTs
-	// void Release RTs();                                                                                                   // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Release RTs();                                                                                                   // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.FluidGridDebug
-	// void FluidGridDebug();                                                                                                // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void FluidGridDebug();                                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetShowDebugWaterPlane
-	// void SetShowDebugWaterPlane(bool IsVisible);                                                                          // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetShowDebugWaterPlane(bool IsVisible);                                                                          // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetDebugNormalRT
-	// void SetDebugNormalRT();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetDebugNormalRT();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetDebugForcesRT
-	// void SetDebugForcesRT();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetDebugForcesRT();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetDebugRippleRT1
-	// void SetDebugRippleRT1();                                                                                             // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetDebugRippleRT1();                                                                                             // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetDebugRippleRT2
-	// void SetDebugRippleRT2();                                                                                             // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetDebugRippleRT2();                                                                                             // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetDebugRippleRTCurrent
-	// void SetDebugRippleRTCurrent();                                                                                       // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetDebugRippleRTCurrent();                                                                                       // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetUpdateForcesInFixedTimeStep
-	// void SetUpdateForcesInFixedTimeStep(bool bool);                                                                       // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetUpdateForcesInFixedTimeStep(bool bool);                                                                       // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetNormalInFixedTimeStep
-	// void SetNormalInFixedTimeStep(bool bool);                                                                             // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetNormalInFixedTimeStep(bool bool);                                                                             // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetSimInFixedTimeStep
-	// void SetSimInFixedTimeStep(bool bool);                                                                                // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetSimInFixedTimeStep(bool bool);                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.SetAllSimParamsInFixedTimeStep
-	// void SetAllSimParamsInFixedTimeStep(bool bool);                                                                       // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetAllSimParamsInFixedTimeStep(bool bool);                                                                       // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.WaterZoneTextureCreated
-	// void WaterZoneTextureCreated(class UTextureRenderTarget2D* WaterInfoTexture);                                         // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void WaterZoneTextureCreated(class UTextureRenderTarget2D* WaterInfoTexture);                                         // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/FluidSimulation/Blueprints/BP_FluidSim_01.BP_FluidSim_01_C.ExecuteUbergraph_BP_FluidSim_01
-	// void ExecuteUbergraph_BP_FluidSim_01(int32_t EntryPoint);                                                             // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_BP_FluidSim_01(int32_t EntryPoint);                                                             // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Struct /FortWater/FluidSimulation/Blueprints/Structs/FluidForceSocketInfo.FluidForceSocketInfo
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FFluidForceSocketInfo
 { 
-	SDK_UNDEFINED(80,11204) /* TMap<FName, FName> */   __um(SocketsandEndpoints_6_B3EDD8FC43A7C681151F46BE0AA158C5); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11254) /* TMap<FName, FName> */   __um(SocketsandEndpoints_6_B3EDD8FC43A7C681151F46BE0AA158C5); // 0x0000   (0x0050)  
 };
 
 /// Struct /FortWater/FluidSimulation/Blueprints/Structs/FluidForceDynamic.FluidForceDynamic
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FFluidForceDynamic
 { 
-	SDK_UNDEFINED(1,11205) /* TEnumAsByte<FluidDynamicForceMeshType> */ __um(ForceType_28_DDC16EE543D2DFD3BA29C49D32198C9C); // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,11255) /* TEnumAsByte<FluidDynamicForceMeshType> */ __um(ForceType_28_DDC16EE543D2DFD3BA29C49D32198C9C); // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              ForceRadius_32_C31B527C4C367A5CA5E1DF8E49E76234;            // 0x0004   (0x0004)  
 	float                                              ForceStrength_33_2CAA30794D1EFF60AE1C3491D011CECF;          // 0x0008   (0x0004)  
@@ -273,7 +273,7 @@ struct FFluidForceDynamicPerInstanceData
 	FVector                                            ComponentVelocity_5_4F6589474918826DF8A6468CF0F2C361;       // 0x0088   (0x0018)  
 	float                                              BoundsRadius_30_ADFF818743BE39AC4A481D995CB50D03;           // 0x00A0   (0x0004)  
 	float                                              WaterLevel_34_A4E505D148073B883CA7B1B09A3E34A8;             // 0x00A4   (0x0004)  
-	SDK_UNDEFINED(80,11206) /* TMap<FName, FVector> */ __um(SocketLocationMap_21_ABF6AA244A5F84728A5E83BE2328C7FA); // 0x00A8   (0x0050)  
-	SDK_UNDEFINED(80,11207) /* TMap<FName, FVector> */ __um(SocketVelocityMap_26_82B0E24B45935A12E1949F918A59A537); // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,11256) /* TMap<FName, FVector> */ __um(SocketLocationMap_21_ABF6AA244A5F84728A5E83BE2328C7FA); // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,11257) /* TMap<FName, FVector> */ __um(SocketVelocityMap_26_82B0E24B45935A12E1949F918A59A537); // 0x00F8   (0x0050)  
 };
 

@@ -24,12 +24,12 @@ public:
 
 	/// Functions
 	// Function /Script/WheelGrenadeRuntime.WheelGrenadeWheel.HandleOutOfHealth
-	// void HandleOutOfHealth(float InDamage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& InEffectContext, class AController* InEventInstigator, class AActor* InDamageCauser); // [0xb6d3058] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleOutOfHealth(float InDamage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& InEffectContext, class AController* InEventInstigator, class AActor* InDamageCauser); // [0xb7df3fc] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/WheelGrenadeRuntime.WheelGrenadeWheel.HandleDamaged
-	// void HandleDamaged(float Damage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleDamaged(float Damage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/WheelGrenadeRuntime.WheelGrenadeWheel.GetMaxHealth
-	// float GetMaxHealth();                                                                                                    // [0xb6d3018] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxHealth();                                                                                                    // [0xb7df3bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WheelGrenadeRuntime.WheelGrenadeWheel.GetHealth
-	// float GetHealth();                                                                                                       // [0xb6d2fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealth();                                                                                                       // [0xb7df37c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

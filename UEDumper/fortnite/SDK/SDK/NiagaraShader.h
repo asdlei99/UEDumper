@@ -122,8 +122,8 @@ struct FNiagaraCompileEvent
 { 
 	FNiagaraCompileEventSeverity                       Severity;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2052) /* FString */               __um(Message);                                              // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,2053) /* FString */               __um(ShortDescription);                                     // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2056) /* FString */               __um(Message);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2057) /* FString */               __um(ShortDescription);                                     // 0x0018   (0x0010)  
 	FGuid                                              NodeGUID;                                                   // 0x0028   (0x0010)  
 	FGuid                                              PinGuid;                                                    // 0x0038   (0x0010)  
 	TArray<FGuid>                                      StackGuids;                                                 // 0x0048   (0x0010)  
@@ -143,8 +143,8 @@ struct FNiagaraDataInterfaceGeneratedFunction
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FNiagaraDataInterfaceGPUParamInfo
 { 
-	SDK_UNDEFINED(16,2054) /* FString */               __um(DataInterfaceHLSLSymbol);                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2055) /* FString */               __um(DIClassName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2058) /* FString */               __um(DataInterfaceHLSLSymbol);                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2059) /* FString */               __um(DIClassName);                                          // 0x0010   (0x0010)  
 	uint32_t                                           ShaderParametersOffset;                                     // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	TArray<FNiagaraDataInterfaceGeneratedFunction>     GeneratedFunctions;                                         // 0x0028   (0x0010)  
@@ -156,7 +156,7 @@ struct FNiagaraShaderScriptExternalConstant
 { 
 	FName                                              Type;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2056) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2060) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/NiagaraShader.NiagaraShaderScriptParametersMetadata
@@ -164,7 +164,7 @@ struct FNiagaraShaderScriptExternalConstant
 struct FNiagaraShaderScriptParametersMetadata
 { 
 	TArray<FNiagaraDataInterfaceGPUParamInfo>          DataInterfaceParamInfo;                                     // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2057) /* TArray<FString> */       __um(LooseMetadataNames);                                   // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2061) /* TArray<FString> */       __um(LooseMetadataNames);                                   // 0x0010   (0x0010)  
 	bool                                               bExternalConstantsInterpolated;                             // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	TArray<FNiagaraShaderScriptExternalConstant>       ExternalConstants;                                          // 0x0028   (0x0010)  

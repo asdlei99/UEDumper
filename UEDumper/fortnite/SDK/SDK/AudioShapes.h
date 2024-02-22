@@ -31,19 +31,19 @@ public:
 	float                                              SmoothingDistance;                                          // 0x00B4   (0x0004)  
 	float                                              FadeInTime;                                                 // 0x00B8   (0x0004)  
 	float                                              FadeOutTime;                                                // 0x00BC   (0x0004)  
-	SDK_UNDEFINED(16,1753) /* FMulticastInlineDelegate */ __um(OnAudibleStateChanged);                             // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(80,1754) /* TMap<FName, UAudioComponent*> */ __um(AudioComponents);                              // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(16,1756) /* FMulticastInlineDelegate */ __um(OnAudibleStateChanged);                             // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(80,1757) /* TMap<FName, UAudioComponent*> */ __um(AudioComponents);                              // 0x00D0   (0x0050)  
 	TArray<class APlayerController*>                   LocalControllers;                                           // 0x0120   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0130   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeComponent.UpdateAudioShape
-	// void UpdateAudioShape(TArray<APlayerController*>& InLocalControllers);                                                // [0x7a86dd0] Final|Native|Public|HasOutParms 
+	// void UpdateAudioShape(TArray<APlayerController*>& InLocalControllers);                                                // [0x7a9d9f0] Final|Native|Public|HasOutParms 
 	// Function /Script/AudioShapes.AudioShapeComponent.Enable
-	// void Enable();                                                                                                        // [0x2eb4140] Native|Protected|BlueprintCallable 
+	// void Enable();                                                                                                        // [0x2e6c604] Native|Protected|BlueprintCallable 
 	// Function /Script/AudioShapes.AudioShapeComponent.Disable
-	// void Disable();                                                                                                       // [0x6d4279c] Native|Protected|BlueprintCallable 
+	// void Disable();                                                                                                       // [0x6db0d14] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapePrimitiveComponent
@@ -55,7 +55,7 @@ UAudioShapePrimitiveComponent : public UAudioShapeComponent
 public:
 	class USoundBase*                                  SoundOnEdge;                                                // 0x0140   (0x0008)  
 	class USoundBase*                                  SoundOnInside;                                              // 0x0148   (0x0008)  
-	SDK_UNDEFINED(16,1755) /* FMulticastInlineDelegate */ __um(OnInsideStateChanged);                              // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,1758) /* FMulticastInlineDelegate */ __um(OnInsideStateChanged);                              // 0x0150   (0x0010)  
 	bool                                               bUseOwningActorTransform;                                   // 0x0160   (0x0001)  
 	bool                                               bAutoRefreshShape;                                          // 0x0161   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0162   (0x0006)  MISSED
@@ -65,11 +65,11 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapePrimitiveComponent.GetIsPlayerInside
-	// bool GetIsPlayerInside();                                                                                             // [0x7a867b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsPlayerInside();                                                                                             // [0x7a9d498] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioShapes.AudioShapePrimitiveComponent.GetInsideAudioComponent
-	// class UAudioComponent* GetInsideAudioComponent();                                                                     // [0x7a86764] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAudioComponent* GetInsideAudioComponent();                                                                     // [0x7a9d444] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioShapes.AudioShapePrimitiveComponent.GetEdgeAudioComponent
-	// class UAudioComponent* GetEdgeAudioComponent();                                                                       // [0x7a86710] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAudioComponent* GetEdgeAudioComponent();                                                                       // [0x7a9d3f0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 #pragma pack(pop)
 
@@ -84,7 +84,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeBoxComponent.SetBoxTransform
-	// void SetBoxTransform(FTransform& InTransform);                                                                        // [0x7a86958] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetBoxTransform(FTransform& InTransform);                                                                        // [0x7a9d5f8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapeCylinderComponent
@@ -96,9 +96,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeCylinderComponent.SetRadius
-	// void SetRadius(float InRadius);                                                                                       // [0x7a86c30] Final|Native|Public|BlueprintCallable 
+	// void SetRadius(float InRadius);                                                                                       // [0x7a9d890] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioShapes.AudioShapeCylinderComponent.SetHalfHeight
-	// void SetHalfHeight(float InHalfHeight);                                                                               // [0x7a86b64] Final|Native|Public|BlueprintCallable 
+	// void SetHalfHeight(float InHalfHeight);                                                                               // [0x7a9d804] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapeLineComponent
@@ -113,9 +113,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeLineComponent.SetStartPoint
-	// void SetStartPoint(FVector& InStartPoint);                                                                            // [0x7a86cfc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetStartPoint(FVector& InStartPoint);                                                                            // [0x7a9d91c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AudioShapes.AudioShapeLineComponent.SetEndPoint
-	// void SetEndPoint(FVector& InEndPoint);                                                                                // [0x7a86a90] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetEndPoint(FVector& InEndPoint);                                                                                // [0x7a9d730] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapeLineListComponent
@@ -130,13 +130,13 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeLineListComponent.UpdatePoint
-	// bool UpdatePoint(int32_t InIndex, FVector& InPoint);                                                                  // [0x7a86e6c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool UpdatePoint(int32_t InIndex, FVector& InPoint);                                                                  // [0x7a9da8c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AudioShapes.AudioShapeLineListComponent.RemovePoint
-	// bool RemovePoint(int32_t InIndex);                                                                                    // [0x7a86874] Final|Native|Public|BlueprintCallable 
+	// bool RemovePoint(int32_t InIndex);                                                                                    // [0x7a9d554] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioShapes.AudioShapeLineListComponent.GetPoints
-	// void GetPoints(TArray<FVector>& OutPoints);                                                                           // [0x7a867d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPoints(TArray<FVector>& OutPoints);                                                                           // [0x7a9d4b4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioShapes.AudioShapeLineListComponent.AddPoint
-	// int32_t AddPoint(FVector& InPoint);                                                                                   // [0x7a86600] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// int32_t AddPoint(FVector& InPoint);                                                                                   // [0x7a9d2e0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapeSphereComponent
@@ -148,7 +148,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioShapes.AudioShapeSphereComponent.SetRadius
-	// void SetRadius(float InRadius);                                                                                       // [0x7a86b64] Final|Native|Public|BlueprintCallable 
+	// void SetRadius(float InRadius);                                                                                       // [0x7a9d804] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioShapes.AudioShapeSubsystem

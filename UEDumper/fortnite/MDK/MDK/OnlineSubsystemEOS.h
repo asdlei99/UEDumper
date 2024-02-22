@@ -12,11 +12,11 @@
 /// dependency: SocketSubsystemEOS
 
 /// Class /Script/OnlineSubsystemEOS.NetDriverEOS
-/// Size: 0x0000 (0x000888 - 0x000888)
+/// Size: 0x0000 (0x000890 - 0x000890)
 class UNetDriverEOS : public UNetDriverEOSBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2184;
+	static inline constexpr uint64_t __MDKClassSize = 2192;
 
 public:
 };

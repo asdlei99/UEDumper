@@ -94,7 +94,7 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicleAnimInstance.CollectConditionsFromDriver
-	// void CollectConditionsFromDriver();                                                                                   // [0xb303b88] Final|Native|Public|BlueprintCallable 
+	// void CollectConditionsFromDriver();                                                                                   // [0xb41aaa8] Final|Native|Public|BlueprintCallable 
 };
 #pragma pack(pop)
 
@@ -237,31 +237,31 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartWheelie
-	// void HandleStartWheelie();                                                                                            // [0xb303ee0] Final|Native|Public  
+	// void HandleStartWheelie();                                                                                            // [0xb41ad34] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartStoppie
-	// void HandleStartStoppie();                                                                                            // [0xb303ec8] Final|Native|Public  
+	// void HandleStartStoppie();                                                                                            // [0xb41ad1c] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartChargingJump
-	// void HandleStartChargingJump();                                                                                       // [0xb303eb0] Final|Native|Public  
+	// void HandleStartChargingJump();                                                                                       // [0xb41ad04] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartAirTrick
-	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb303df0] Final|Native|Public  
+	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb41ac88] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseWheelie
-	// void HandleReleaseWheelie();                                                                                          // [0xb303dd8] Final|Native|Public  
+	// void HandleReleaseWheelie();                                                                                          // [0xb41ac70] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseStoppie
-	// void HandleReleaseStoppie();                                                                                          // [0xb303dc0] Final|Native|Public  
+	// void HandleReleaseStoppie();                                                                                          // [0xb41ac58] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleJump
-	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb303cf8] Final|Native|Public  
+	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb41abd4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleFinishAirTrick
-	// void HandleFinishAirTrick();                                                                                          // [0xb303ce0] Final|Native|Public  
+	// void HandleFinishAirTrick();                                                                                          // [0xb41abbc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleChargingJump
-	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb303c1c] Final|Native|Public  
+	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb41ab3c] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleCancelChargingJump
-	// void HandleCancelChargingJump();                                                                                      // [0xb303c04] Final|Native|Public  
+	// void HandleCancelChargingJump();                                                                                      // [0xb41ab24] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CollapsedAimYawSmoothed
-	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb303ac4] Final|Native|Public|BlueprintCallable 
+	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb41aa28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CalculateNoiseAlpha
-	// void CalculateNoiseAlpha();                                                                                           // [0xb3039c4] Final|Native|Public|BlueprintCallable 
+	// void CalculateNoiseAlpha();                                                                                           // [0xb41a96c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.AnimNotify_JumpEntered
-	// void AnimNotify_JumpEntered();                                                                                        // [0xb3039a4] Final|Native|Public  
+	// void AnimNotify_JumpEntered();                                                                                        // [0xb41a94c] Final|Native|Public  
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleDriver
@@ -386,149 +386,149 @@ public:
 };
 
 /// Class /Script/MotorcycleRuntime.FortMotorcycleVehicle
-/// Size: 0x0450 (0x001F70 - 0x0023C0)
+/// Size: 0x0460 (0x001F90 - 0x0023F0)
 class AFortMotorcycleVehicle : public AFortAthenaSKMotorVehicle
 { 
 public:
-	SDK_UNDEFINED(16,13154) /* FMulticastInlineDelegate */ __um(OnStartChargingJumpDelegate);                      // 0x1F68   (0x0010)  
-	SDK_UNDEFINED(16,13155) /* FMulticastInlineDelegate */ __um(OnCancelChargingJumpDelegate);                     // 0x1F78   (0x0010)  
-	SDK_UNDEFINED(16,13156) /* FMulticastInlineDelegate */ __um(OnJumpDelegate);                                   // 0x1F88   (0x0010)  
-	SDK_UNDEFINED(16,13157) /* FMulticastInlineDelegate */ __um(OnChargingJumpDelegate);                           // 0x1F98   (0x0010)  
-	SDK_UNDEFINED(16,13158) /* FMulticastInlineDelegate */ __um(OnStartAirTrickDelegate);                          // 0x1FA8   (0x0010)  
-	SDK_UNDEFINED(16,13159) /* FMulticastInlineDelegate */ __um(OnFinishAirTrickDelegate);                         // 0x1FB8   (0x0010)  
-	SDK_UNDEFINED(16,13160) /* FMulticastInlineDelegate */ __um(OnStartWheelieDelegate);                           // 0x1FC8   (0x0010)  
-	SDK_UNDEFINED(16,13161) /* FMulticastInlineDelegate */ __um(OnReleaseWheelieDelegate);                         // 0x1FD8   (0x0010)  
-	SDK_UNDEFINED(16,13162) /* FMulticastInlineDelegate */ __um(OnLandWheelieDelegate);                            // 0x1FE8   (0x0010)  
-	SDK_UNDEFINED(16,13163) /* FMulticastInlineDelegate */ __um(OnFailWheelieDelegate);                            // 0x1FF8   (0x0010)  
-	SDK_UNDEFINED(16,13164) /* FMulticastInlineDelegate */ __um(OnStartStoppieDelegate);                           // 0x2008   (0x0010)  
-	SDK_UNDEFINED(16,13165) /* FMulticastInlineDelegate */ __um(OnReleaseStoppieDelegate);                         // 0x2018   (0x0010)  
-	SDK_UNDEFINED(16,13166) /* FMulticastInlineDelegate */ __um(OnLandStoppieDelegate);                            // 0x2028   (0x0010)  
-	SDK_UNDEFINED(16,13167) /* FMulticastInlineDelegate */ __um(OnInventoryModeChangedDelegate);                   // 0x2038   (0x0010)  
-	SDK_UNDEFINED(16,13168) /* FMulticastInlineDelegate */ __um(OnSuperSlidingChangedDelegate);                    // 0x2048   (0x0010)  
-	class UClass*                                      InventoryCameraModeClass;                                   // 0x2058   (0x0008)  
-	class UClass*                                      InventoryCameraModeClassADS;                                // 0x2060   (0x0008)  
-	class UClass*                                      PassengerCameraModeClass;                                   // 0x2068   (0x0008)  
-	class UClass*                                      PassengerCameraModeClassADS;                                // 0x2070   (0x0008)  
-	class UFortMotorcycleVehicleConfigs*               FortMotorcycleVehicleConfigs;                               // 0x2078   (0x0008)  
-	FName                                              RearAxleSocket;                                             // 0x2080   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x2084   (0x0004)  MISSED
-	TArray<FActionDefForUI>                            ActionDefForUI;                                             // 0x2088   (0x0010)  
-	float                                              SwingArmRotation;                                           // 0x2098   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x7C];                                      // 0x209C   (0x007C)  MISSED
-	TArray<int32_t>                                    BoostShapeIndices;                                          // 0x2118   (0x0010)  
-	bool                                               bIsBoostAttacking;                                          // 0x2128   (0x0001)  
-	unsigned char                                      UnknownData02_5[0xF];                                       // 0x2129   (0x000F)  MISSED
-	EFortMotorcycleAirTrickType                        CachedTrickType;                                            // 0x2138   (0x0001)  
-	bool                                               bHadPassengerAtTrickStart;                                  // 0x2139   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x36];                                      // 0x213A   (0x0036)  MISSED
-	TArray<FName>                                      PassengerADSSockets;                                        // 0x2170   (0x0010)  
-	TArray<FVector>                                    PassengerADSRelativeOffsets;                                // 0x2180   (0x0010)  
-	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x2190   (0x0008)  
-	SDK_UNDEFINED(16,13169) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x2198   (0x0010)  
-	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x21A8   (0x0004)  
-	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x21AC   (0x0004)  
-	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x21B0   (0x0004)  
-	FName                                              RoadAndExhaustDustRearName;                                 // 0x21B4   (0x0004)  
-	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x21B8   (0x0004)  
-	float                                              RoadAndExhaustDustColorLerp;                                // 0x21BC   (0x0004)  
-	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x21C0   (0x0004)  
-	float                                              RoadAndExhaustDustAlphaMultiplier;                          // 0x21C4   (0x0004)  
-	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x21C8   (0x0004)  
-	FName                                              RoadAndExhaustPeelOutRearName;                              // 0x21CC   (0x0004)  
-	FName                                              RoadAndExhaustIsPeelOutOnRoadName;                          // 0x21D0   (0x0004)  
-	FName                                              RoadAndExhaustIsPeelOutOnRoadRewindName;                    // 0x21D4   (0x0004)  
-	FName                                              RoadAndExhaustIsInAirName;                                  // 0x21D8   (0x0004)  
-	FGameplayTag                                       RoadAndExhaustCameraDirtGameplayCueTag;                     // 0x21DC   (0x0004)  
-	FGameplayTag                                       RoadAndExhaustCameraWaterGameplayCueTag;                    // 0x21E0   (0x0004)  
-	unsigned char                                      UnknownData04_5[0x4];                                       // 0x21E4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13170) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x21E8   (0x0010)  
-	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x21F8   (0x0008)  
-	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x2200   (0x0008)  
-	unsigned char                                      UnknownData05_5[0x8];                                       // 0x2208   (0x0008)  MISSED
-	FName                                              RoadAndExhaustHeadlightsName;                               // 0x2210   (0x0004)  
-	FName                                              RoadAndExhaustBrakelightsName;                              // 0x2214   (0x0004)  
-	FScalableFloat                                     DoorBashMinSpeed;                                           // 0x2218   (0x0028)  
-	FScalableFloat                                     DoorBashMaxSpeed;                                           // 0x2240   (0x0028)  
-	FScalableFloat                                     DoorBashForwardDistanceMin;                                 // 0x2268   (0x0028)  
-	FScalableFloat                                     DoorBashForwardDistanceMax;                                 // 0x2290   (0x0028)  
-	FGameplayTag                                       DoorBashGameplayCueTag;                                     // 0x22B8   (0x0004)  
-	unsigned char                                      UnknownData06_5[0x4];                                       // 0x22BC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13171) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForDoor);       // 0x22C0   (0x0010)  
-	SDK_UNDEFINED(16,13172) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForPawn);       // 0x22D0   (0x0010)  
-	FScalableFloat                                     DoorBashSphereRadiusForPawnLaunch;                          // 0x22E0   (0x0028)  
-	FScalableFloat                                     DoorBashScalarForPawnLaunch;                                // 0x2308   (0x0028)  
-	FGameplayTag                                       DoorBashPawnLaunchGameplayCueTag;                           // 0x2330   (0x0004)  
-	unsigned char                                      UnknownData07_5[0x4];                                       // 0x2334   (0x0004)  MISSED
-	FGameplayTagQuery                                  InventoryModeTagQuery;                                      // 0x2338   (0x0048)  
-	FGameplayTagContainer                              InputContextBlockedTags;                                    // 0x2380   (0x0020)  
-	unsigned char                                      UnknownData08_5[0x18];                                      // 0x23A0   (0x0018)  MISSED
-	FGameplayTag                                       MobileHUDTag;                                               // 0x23B8   (0x0004)  
-	unsigned char                                      UnknownData09_6[0x4];                                       // 0x23BC   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13251) /* FMulticastInlineDelegate */ __um(OnStartChargingJumpDelegate);                      // 0x1F90   (0x0010)  
+	SDK_UNDEFINED(16,13252) /* FMulticastInlineDelegate */ __um(OnCancelChargingJumpDelegate);                     // 0x1FA0   (0x0010)  
+	SDK_UNDEFINED(16,13253) /* FMulticastInlineDelegate */ __um(OnJumpDelegate);                                   // 0x1FB0   (0x0010)  
+	SDK_UNDEFINED(16,13254) /* FMulticastInlineDelegate */ __um(OnChargingJumpDelegate);                           // 0x1FC0   (0x0010)  
+	SDK_UNDEFINED(16,13255) /* FMulticastInlineDelegate */ __um(OnStartAirTrickDelegate);                          // 0x1FD0   (0x0010)  
+	SDK_UNDEFINED(16,13256) /* FMulticastInlineDelegate */ __um(OnFinishAirTrickDelegate);                         // 0x1FE0   (0x0010)  
+	SDK_UNDEFINED(16,13257) /* FMulticastInlineDelegate */ __um(OnStartWheelieDelegate);                           // 0x1FF0   (0x0010)  
+	SDK_UNDEFINED(16,13258) /* FMulticastInlineDelegate */ __um(OnReleaseWheelieDelegate);                         // 0x2000   (0x0010)  
+	SDK_UNDEFINED(16,13259) /* FMulticastInlineDelegate */ __um(OnLandWheelieDelegate);                            // 0x2010   (0x0010)  
+	SDK_UNDEFINED(16,13260) /* FMulticastInlineDelegate */ __um(OnFailWheelieDelegate);                            // 0x2020   (0x0010)  
+	SDK_UNDEFINED(16,13261) /* FMulticastInlineDelegate */ __um(OnStartStoppieDelegate);                           // 0x2030   (0x0010)  
+	SDK_UNDEFINED(16,13262) /* FMulticastInlineDelegate */ __um(OnReleaseStoppieDelegate);                         // 0x2040   (0x0010)  
+	SDK_UNDEFINED(16,13263) /* FMulticastInlineDelegate */ __um(OnLandStoppieDelegate);                            // 0x2050   (0x0010)  
+	SDK_UNDEFINED(16,13264) /* FMulticastInlineDelegate */ __um(OnInventoryModeChangedDelegate);                   // 0x2060   (0x0010)  
+	SDK_UNDEFINED(16,13265) /* FMulticastInlineDelegate */ __um(OnSuperSlidingChangedDelegate);                    // 0x2070   (0x0010)  
+	class UClass*                                      InventoryCameraModeClass;                                   // 0x2080   (0x0008)  
+	class UClass*                                      InventoryCameraModeClassADS;                                // 0x2088   (0x0008)  
+	class UClass*                                      PassengerCameraModeClass;                                   // 0x2090   (0x0008)  
+	class UClass*                                      PassengerCameraModeClassADS;                                // 0x2098   (0x0008)  
+	class UFortMotorcycleVehicleConfigs*               FortMotorcycleVehicleConfigs;                               // 0x20A0   (0x0008)  
+	FName                                              RearAxleSocket;                                             // 0x20A8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x20AC   (0x0004)  MISSED
+	TArray<FActionDefForUI>                            ActionDefForUI;                                             // 0x20B0   (0x0010)  
+	float                                              SwingArmRotation;                                           // 0x20C0   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x7C];                                      // 0x20C4   (0x007C)  MISSED
+	TArray<int32_t>                                    BoostShapeIndices;                                          // 0x2140   (0x0010)  
+	bool                                               bIsBoostAttacking;                                          // 0x2150   (0x0001)  
+	unsigned char                                      UnknownData02_5[0xF];                                       // 0x2151   (0x000F)  MISSED
+	EFortMotorcycleAirTrickType                        CachedTrickType;                                            // 0x2160   (0x0001)  
+	bool                                               bHadPassengerAtTrickStart;                                  // 0x2161   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x36];                                      // 0x2162   (0x0036)  MISSED
+	TArray<FName>                                      PassengerADSSockets;                                        // 0x2198   (0x0010)  
+	TArray<FVector>                                    PassengerADSRelativeOffsets;                                // 0x21A8   (0x0010)  
+	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x21B8   (0x0008)  
+	SDK_UNDEFINED(16,13266) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x21C0   (0x0010)  
+	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x21D0   (0x0004)  
+	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x21D4   (0x0004)  
+	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x21D8   (0x0004)  
+	FName                                              RoadAndExhaustDustRearName;                                 // 0x21DC   (0x0004)  
+	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x21E0   (0x0004)  
+	float                                              RoadAndExhaustDustColorLerp;                                // 0x21E4   (0x0004)  
+	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x21E8   (0x0004)  
+	float                                              RoadAndExhaustDustAlphaMultiplier;                          // 0x21EC   (0x0004)  
+	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x21F0   (0x0004)  
+	FName                                              RoadAndExhaustPeelOutRearName;                              // 0x21F4   (0x0004)  
+	FName                                              RoadAndExhaustIsPeelOutOnRoadName;                          // 0x21F8   (0x0004)  
+	FName                                              RoadAndExhaustIsPeelOutOnRoadRewindName;                    // 0x21FC   (0x0004)  
+	FName                                              RoadAndExhaustIsInAirName;                                  // 0x2200   (0x0004)  
+	FGameplayTag                                       RoadAndExhaustCameraDirtGameplayCueTag;                     // 0x2204   (0x0004)  
+	FGameplayTag                                       RoadAndExhaustCameraWaterGameplayCueTag;                    // 0x2208   (0x0004)  
+	unsigned char                                      UnknownData04_5[0x4];                                       // 0x220C   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13267) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x2210   (0x0010)  
+	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x2220   (0x0008)  
+	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x2228   (0x0008)  
+	unsigned char                                      UnknownData05_5[0x8];                                       // 0x2230   (0x0008)  MISSED
+	FName                                              RoadAndExhaustHeadlightsName;                               // 0x2238   (0x0004)  
+	FName                                              RoadAndExhaustBrakelightsName;                              // 0x223C   (0x0004)  
+	FScalableFloat                                     DoorBashMinSpeed;                                           // 0x2240   (0x0028)  
+	FScalableFloat                                     DoorBashMaxSpeed;                                           // 0x2268   (0x0028)  
+	FScalableFloat                                     DoorBashForwardDistanceMin;                                 // 0x2290   (0x0028)  
+	FScalableFloat                                     DoorBashForwardDistanceMax;                                 // 0x22B8   (0x0028)  
+	FGameplayTag                                       DoorBashGameplayCueTag;                                     // 0x22E0   (0x0004)  
+	unsigned char                                      UnknownData06_5[0x4];                                       // 0x22E4   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13268) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForDoor);       // 0x22E8   (0x0010)  
+	SDK_UNDEFINED(16,13269) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForPawn);       // 0x22F8   (0x0010)  
+	FScalableFloat                                     DoorBashSphereRadiusForPawnLaunch;                          // 0x2308   (0x0028)  
+	FScalableFloat                                     DoorBashScalarForPawnLaunch;                                // 0x2330   (0x0028)  
+	FGameplayTag                                       DoorBashPawnLaunchGameplayCueTag;                           // 0x2358   (0x0004)  
+	unsigned char                                      UnknownData07_5[0x4];                                       // 0x235C   (0x0004)  MISSED
+	FGameplayTagQuery                                  InventoryModeTagQuery;                                      // 0x2360   (0x0048)  
+	FGameplayTagContainer                              InputContextBlockedTags;                                    // 0x23A8   (0x0020)  
+	unsigned char                                      UnknownData08_5[0x18];                                      // 0x23C8   (0x0018)  MISSED
+	FGameplayTag                                       MobileHUDTag;                                               // 0x23E0   (0x0004)  
+	unsigned char                                      UnknownData09_6[0xC];                                       // 0x23E4   (0x000C)  MISSED
 
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ServerEjectAllPlayers
-	// void ServerEjectAllPlayers();                                                                                         // [0x95b2ed8] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerEjectAllPlayers();                                                                                         // [0x95c9bf4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnRep_IsBoostAttacking
-	// void OnRep_IsBoostAttacking();                                                                                        // [0xb3040e0] Final|Native|Protected 
+	// void OnRep_IsBoostAttacking();                                                                                        // [0xb41aeac] Final|Native|Protected 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnPlayerWeaponChanged
-	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0xb303f64] Final|Native|Public  
+	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0xb41adb8] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleWheelie__DelegateSignature
-	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleSuperSlidingChanged__DelegateSignature
-	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStoppie__DelegateSignature
-	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStartAirTrick__DelegateSignature
-	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleJump__DelegateSignature
-	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleInventoryMode__DelegateSignature
-	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleChargingJump__DelegateSignature
-	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleAirTrick__DelegateSignature
-	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsSuperSliding
-	// bool IsSuperSliding();                                                                                                // [0xb303f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSuperSliding();                                                                                                // [0xb41ad94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsPowerSliding
-	// bool IsPowerSliding();                                                                                                // [0xb303f1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPowerSliding();                                                                                                // [0xb41ad70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsInInventoryMode
-	// bool IsInInventoryMode();                                                                                             // [0xb303ef8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInInventoryMode();                                                                                             // [0xb41ad4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetSurfaceTypeVehicleOn
-	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb303bec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb41ab0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetLeanAngleDegrees
-	// float GetLeanAngleDegrees();                                                                                          // [0xb303bc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLeanAngleDegrees();                                                                                          // [0xb41aae4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetAverageSpringNormal
-	// FVector GetAverageSpringNormal();                                                                                     // [0xb303b9c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetAverageSpringNormal();                                                                                     // [0xb41aabc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ChangeBoostAttackState
-	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb3039d8] Final|Native|Public|BlueprintCallable 
+	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb41a980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartWheelie
-	// void BP_OnStartWheelie();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartWheelie();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartStoppie
-	// void BP_OnStartStoppie();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartStoppie();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartChargingJump
-	// void BP_OnStartChargingJump();                                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartChargingJump();                                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartAirTrick
-	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseWheelie
-	// void BP_OnReleaseWheelie();                                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseWheelie();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseStoppie
-	// void BP_OnReleaseStoppie();                                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseStoppie();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandWheelie
-	// void BP_OnLandWheelie();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnLandWheelie();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandStoppie
-	// void BP_OnLandStoppie();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnLandStoppie();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnJump
-	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFinishAirTrick
-	// void BP_OnFinishAirTrick();                                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnFinishAirTrick();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFailWheelie
-	// void BP_OnFailWheelie();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnFailWheelie();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnChargingJump
-	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnCancelChargingJump
-	// void BP_OnCancelChargingJump();                                                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnCancelChargingJump();                                                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/MotorcycleRuntime.MotorcycleWheel
@@ -554,139 +554,139 @@ struct FMotorcycleWheel
 };
 
 /// Class /Script/MotorcycleRuntime.FortMotorcycleVehicleConfigs
-/// Size: 0x02D0 (0x000950 - 0x000C20)
+/// Size: 0x02D0 (0x000948 - 0x000C18)
 class UFortMotorcycleVehicleConfigs : public UFortPhysicsVehicleConfigs
 { 
 public:
-	TArray<FMotorcycleWheel>                           Wheels;                                                     // 0x0950   (0x0010)  
-	float                                              SpringInterpDamp;                                           // 0x0960   (0x0004)  
-	float                                              WheelieSpringInterpDamp;                                    // 0x0964   (0x0004)  
-	float                                              WallPushStiff;                                              // 0x0968   (0x0004)  
-	float                                              WallPushDamp;                                               // 0x096C   (0x0004)  
-	FVector                                            WallPushXTraceOffset;                                       // 0x0970   (0x0018)  
-	float                                              WallPushForwardTraceLengthScale;                            // 0x0988   (0x0004)  
-	float                                              WallPushBackTraceLengthScale;                               // 0x098C   (0x0004)  
-	float                                              WallPushRightTraceLength;                                   // 0x0990   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0994   (0x0004)  MISSED
-	FVector                                            WallPushRightTraceOffset;                                   // 0x0998   (0x0018)  
-	FVector                                            WallPushRearRightTraceOffset;                               // 0x09B0   (0x0018)  
-	float                                              WallPushAngle;                                              // 0x09C8   (0x0004)  
-	bool                                               bUseWallPushTracesForWalls;                                 // 0x09CC   (0x0001)  
-	bool                                               bUseWallPushRearSideTracesForWalls;                         // 0x09CD   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x09CE   (0x0002)  MISSED
-	float                                              MaxJumpChargeTime;                                          // 0x09D0   (0x0004)  
-	float                                              MinChargeJumpForce;                                         // 0x09D4   (0x0004)  
-	float                                              MaxChargeJumpForce;                                         // 0x09D8   (0x0004)  
-	float                                              MinJumpForwardAngle;                                        // 0x09DC   (0x0004)  
-	float                                              MaxJumpForwardAngle;                                        // 0x09E0   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x09E4   (0x0004)  MISSED
-	FVector                                            JumpForceMinCOMOffset;                                      // 0x09E8   (0x0018)  
-	FVector                                            JumpForceMaxCOMOffset;                                      // 0x0A00   (0x0018)  
-	float                                              JumpChargeGraceTimeSeconds;                                 // 0x0A18   (0x0004)  
-	float                                              JumpGraceTimeSeconds;                                       // 0x0A1C   (0x0004)  
-	float                                              LeanAngleScale;                                             // 0x0A20   (0x0004)  
-	float                                              LeanStiff;                                                  // 0x0A24   (0x0004)  
-	float                                              LeanDamp;                                                   // 0x0A28   (0x0004)  
-	float                                              LeanStrength;                                               // 0x0A2C   (0x0004)  
-	float                                              SlideCatchupForceTime;                                      // 0x0A30   (0x0004)  
-	float                                              SlideCatchupSpeed;                                          // 0x0A34   (0x0004)  
-	float                                              SlideCatchupPushForce;                                      // 0x0A38   (0x0004)  
-	float                                              AutoAirPitchAngle;                                          // 0x0A3C   (0x0004)  
-	float                                              MinSteeringAngleForModifiedFriction;                        // 0x0A40   (0x0004)  
-	float                                              MinSpeedForModifiedFriction;                                // 0x0A44   (0x0004)  
-	float                                              MinSteeringAngleToConsiderTractionLost;                     // 0x0A48   (0x0004)  
-	float                                              FrictionRatioToConsiderTractionLost;                        // 0x0A4C   (0x0004)  
-	float                                              WheeliePitchStiffMin;                                       // 0x0A50   (0x0004)  
-	float                                              WheeliePitchStiffMax;                                       // 0x0A54   (0x0004)  
-	float                                              WheeliePitchDampMin;                                        // 0x0A58   (0x0004)  
-	float                                              WheeliePitchDampMax;                                        // 0x0A5C   (0x0004)  
-	float                                              WheeliePitchAngleMin;                                       // 0x0A60   (0x0004)  
-	float                                              WheeliePitchAngleMax;                                       // 0x0A64   (0x0004)  
-	float                                              StoppiePitchAngle;                                          // 0x0A68   (0x0004)  
-	float                                              StoppiePitchStiff;                                          // 0x0A6C   (0x0004)  
-	float                                              StoppiePitchDamp;                                           // 0x0A70   (0x0004)  
-	float                                              WheelieRampSeconds;                                         // 0x0A74   (0x0004)  
-	float                                              WheelieFailPitchAngle;                                      // 0x0A78   (0x0004)  
-	float                                              WheelieRecoveryRate;                                        // 0x0A7C   (0x0004)  
-	float                                              WheelieFailRecoveryRate;                                    // 0x0A80   (0x0004)  
-	float                                              WheelieMinStartSpeed;                                       // 0x0A84   (0x0004)  
-	float                                              StoppieMinStopSpeed;                                        // 0x0A88   (0x0004)  
-	float                                              WheelieSteerFactor;                                         // 0x0A8C   (0x0004)  
-	float                                              StoppieSteerFactor;                                         // 0x0A90   (0x0004)  
-	float                                              WheelieSteerAlphaThreshold;                                 // 0x0A94   (0x0004)  
-	float                                              WheelieStoppieMaxLeanAllowedToInitiate;                     // 0x0A98   (0x0004)  
-	float                                              WheelieGroundBufferTime;                                    // 0x0A9C   (0x0004)  
-	float                                              StoppieGroundBufferTime;                                    // 0x0AA0   (0x0004)  
-	float                                              WheelieSpringLengthExponent;                                // 0x0AA4   (0x0004)  
-	float                                              WheelieWheelOffsetLerpMultiplier;                           // 0x0AA8   (0x0004)  
-	float                                              WheelieBrakeFactor;                                         // 0x0AAC   (0x0004)  
-	float                                              StoppieTurnInPlaceSpeed;                                    // 0x0AB0   (0x0004)  
-	float                                              StoppieTurnInPlaceSpeedIce;                                 // 0x0AB4   (0x0004)  
-	float                                              StoppieTurnInPlaceSpeedMud;                                 // 0x0AB8   (0x0004)  
-	float                                              MinSpeedKmhForMaxStoppie;                                   // 0x0ABC   (0x0004)  
-	float                                              StoppieTurnAngleExponent;                                   // 0x0AC0   (0x0004)  
-	float                                              StoppieMaxTurnAngle;                                        // 0x0AC4   (0x0004)  
-	float                                              WheelieTireTractionMultiplier_Min;                          // 0x0AC8   (0x0004)  
-	float                                              WheelieCameraMinStraightFactor;                             // 0x0ACC   (0x0004)  
-	float                                              MaxLeanAccel;                                               // 0x0AD0   (0x0004)  
-	float                                              CruiseControlForwardAlpha;                                  // 0x0AD4   (0x0004)  
-	float                                              InventoryModeSpeedKmh;                                      // 0x0AD8   (0x0004)  
-	float                                              CruiseControlDisengageSpeedKmh;                             // 0x0ADC   (0x0004)  
-	bool                                               bPowerSlideIsSuperSlide;                                    // 0x0AE0   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0AE1   (0x0003)  MISSED
-	float                                              PowerSlideFrontFrictionMultiplier;                          // 0x0AE4   (0x0004)  
-	float                                              PowerSlideRearFrictionMultiplier;                           // 0x0AE8   (0x0004)  
-	float                                              PowerSlideRoadFrontFrictionMultiplier;                      // 0x0AEC   (0x0004)  
-	float                                              PowerSlideRoadRearFrictionMultiplier;                       // 0x0AF0   (0x0004)  
-	float                                              PowerSlideDirtFrontFrictionMultiplier;                      // 0x0AF4   (0x0004)  
-	float                                              PowerSlideDirtRearFrictionMultiplier;                       // 0x0AF8   (0x0004)  
-	float                                              PowerSlideGrassFrontFrictionMultiplier;                     // 0x0AFC   (0x0004)  
-	float                                              PowerSlideGrassRearFrictionMultiplier;                      // 0x0B00   (0x0004)  
-	float                                              PowerSlideSnowFrontFrictionMultiplier;                      // 0x0B04   (0x0004)  
-	float                                              PowerSlideSnowRearFrictionMultiplier;                       // 0x0B08   (0x0004)  
-	float                                              PowerSlideIceFrontFrictionMultiplier;                       // 0x0B0C   (0x0004)  
-	float                                              PowerSlideIceRearFrictionMultiplier;                        // 0x0B10   (0x0004)  
-	float                                              PowerSlideMudFrontFrictionMultiplier;                       // 0x0B14   (0x0004)  
-	float                                              PowerSlideMudRearFrictionMultiplier;                        // 0x0B18   (0x0004)  
-	float                                              PowerSlideFactor;                                           // 0x0B1C   (0x0004)  
-	float                                              PowerSlideDampFactor;                                       // 0x0B20   (0x0004)  
-	float                                              FrictionDampFactor;                                         // 0x0B24   (0x0004)  
-	float                                              PowerSlideLeanAngleScale;                                   // 0x0B28   (0x0004)  
-	float                                              SuperSlideLeanAngle;                                        // 0x0B2C   (0x0004)  
-	float                                              SuperSlideMinStartYawSpeedDegrees;                          // 0x0B30   (0x0004)  
-	float                                              SuperSlideMinStartSpeedKmh;                                 // 0x0B34   (0x0004)  
-	float                                              SuperSlideMaxEndSpeedKmh;                                   // 0x0B38   (0x0004)  
-	float                                              PowerslideInputWindow;                                      // 0x0B3C   (0x0004)  
-	float                                              ShootingMinSpeedSteeringAngle;                              // 0x0B40   (0x0004)  
-	float                                              ShootingMaxSpeedSteeringAngle;                              // 0x0B44   (0x0004)  
-	float                                              InventoryModeCameraYawConstraint;                           // 0x0B48   (0x0004)  
-	float                                              BoostTopSpeedMultiplier;                                    // 0x0B4C   (0x0004)  
-	float                                              BoostPushForceMultiplier;                                   // 0x0B50   (0x0004)  
-	float                                              BoostMinPushForce;                                          // 0x0B54   (0x0004)  
-	float                                              BoostSteeringMultiplier;                                    // 0x0B58   (0x0004)  
-	bool                                               bPlayHolsterAnimsOnClient;                                  // 0x0B5C   (0x0001)  
-	unsigned char                                      UnknownData04_5[0x3];                                       // 0x0B5D   (0x0003)  MISSED
-	float                                              FrontWheelSteeringFactor;                                   // 0x0B60   (0x0004)  
-	float                                              FrontWheelRotationAcceleration;                             // 0x0B64   (0x0004)  
-	float                                              PassengerInventoryCooldown;                                 // 0x0B68   (0x0004)  
-	float                                              DriverInventoryCooldown;                                    // 0x0B6C   (0x0004)  
-	SDK_UNDEFINED(80,13173) /* TSet<FName> */          __um(BoostAttackShapes);                                    // 0x0B70   (0x0050)  
-	float                                              CameraAssistStrengthMax;                                    // 0x0BC0   (0x0004)  
-	float                                              CameraAssistStrengthMin;                                    // 0x0BC4   (0x0004)  
-	float                                              CameraAssistStrengthRecovery;                               // 0x0BC8   (0x0004)  
-	float                                              CameraAssistInterpSpeed;                                    // 0x0BCC   (0x0004)  
-	float                                              AirTrickIncrementInterval;                                  // 0x0BD0   (0x0004)  
-	float                                              AirTrickFeedStartTime;                                      // 0x0BD4   (0x0004)  
-	float                                              AirTrickPitchMultiplier;                                    // 0x0BD8   (0x0004)  
-	float                                              AirTrickYawMultiplier;                                      // 0x0BDC   (0x0004)  
-	bool                                               bAllowAirTrickNeutral;                                      // 0x0BE0   (0x0001)  
-	bool                                               bAllowAirTrickRight;                                        // 0x0BE1   (0x0001)  
-	bool                                               bAllowAirTrickLeft;                                         // 0x0BE2   (0x0001)  
-	unsigned char                                      UnknownData05_5[0x1];                                       // 0x0BE3   (0x0001)  MISSED
-	float                                              PoppedTireTractionScalar_Front;                             // 0x0BE4   (0x0004)  
-	float                                              PoppedTireTractionScalar_Rear;                              // 0x0BE8   (0x0004)  
-	float                                              PoppedTireTractionScalar_Both;                              // 0x0BEC   (0x0004)  
-	FScalableFloat                                     TopSpeedKmh;                                                // 0x0BF0   (0x0028)  
-	unsigned char                                      UnknownData06_6[0x8];                                       // 0x0C18   (0x0008)  MISSED
+	TArray<FMotorcycleWheel>                           Wheels;                                                     // 0x0948   (0x0010)  
+	float                                              SpringInterpDamp;                                           // 0x0958   (0x0004)  
+	float                                              WheelieSpringInterpDamp;                                    // 0x095C   (0x0004)  
+	float                                              WallPushStiff;                                              // 0x0960   (0x0004)  
+	float                                              WallPushDamp;                                               // 0x0964   (0x0004)  
+	FVector                                            WallPushXTraceOffset;                                       // 0x0968   (0x0018)  
+	float                                              WallPushForwardTraceLengthScale;                            // 0x0980   (0x0004)  
+	float                                              WallPushBackTraceLengthScale;                               // 0x0984   (0x0004)  
+	float                                              WallPushRightTraceLength;                                   // 0x0988   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x098C   (0x0004)  MISSED
+	FVector                                            WallPushRightTraceOffset;                                   // 0x0990   (0x0018)  
+	FVector                                            WallPushRearRightTraceOffset;                               // 0x09A8   (0x0018)  
+	float                                              WallPushAngle;                                              // 0x09C0   (0x0004)  
+	bool                                               bUseWallPushTracesForWalls;                                 // 0x09C4   (0x0001)  
+	bool                                               bUseWallPushRearSideTracesForWalls;                         // 0x09C5   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x09C6   (0x0002)  MISSED
+	float                                              MaxJumpChargeTime;                                          // 0x09C8   (0x0004)  
+	float                                              MinChargeJumpForce;                                         // 0x09CC   (0x0004)  
+	float                                              MaxChargeJumpForce;                                         // 0x09D0   (0x0004)  
+	float                                              MinJumpForwardAngle;                                        // 0x09D4   (0x0004)  
+	float                                              MaxJumpForwardAngle;                                        // 0x09D8   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x09DC   (0x0004)  MISSED
+	FVector                                            JumpForceMinCOMOffset;                                      // 0x09E0   (0x0018)  
+	FVector                                            JumpForceMaxCOMOffset;                                      // 0x09F8   (0x0018)  
+	float                                              JumpChargeGraceTimeSeconds;                                 // 0x0A10   (0x0004)  
+	float                                              JumpGraceTimeSeconds;                                       // 0x0A14   (0x0004)  
+	float                                              LeanAngleScale;                                             // 0x0A18   (0x0004)  
+	float                                              LeanStiff;                                                  // 0x0A1C   (0x0004)  
+	float                                              LeanDamp;                                                   // 0x0A20   (0x0004)  
+	float                                              LeanStrength;                                               // 0x0A24   (0x0004)  
+	float                                              SlideCatchupForceTime;                                      // 0x0A28   (0x0004)  
+	float                                              SlideCatchupSpeed;                                          // 0x0A2C   (0x0004)  
+	float                                              SlideCatchupPushForce;                                      // 0x0A30   (0x0004)  
+	float                                              AutoAirPitchAngle;                                          // 0x0A34   (0x0004)  
+	float                                              MinSteeringAngleForModifiedFriction;                        // 0x0A38   (0x0004)  
+	float                                              MinSpeedForModifiedFriction;                                // 0x0A3C   (0x0004)  
+	float                                              MinSteeringAngleToConsiderTractionLost;                     // 0x0A40   (0x0004)  
+	float                                              FrictionRatioToConsiderTractionLost;                        // 0x0A44   (0x0004)  
+	float                                              WheeliePitchStiffMin;                                       // 0x0A48   (0x0004)  
+	float                                              WheeliePitchStiffMax;                                       // 0x0A4C   (0x0004)  
+	float                                              WheeliePitchDampMin;                                        // 0x0A50   (0x0004)  
+	float                                              WheeliePitchDampMax;                                        // 0x0A54   (0x0004)  
+	float                                              WheeliePitchAngleMin;                                       // 0x0A58   (0x0004)  
+	float                                              WheeliePitchAngleMax;                                       // 0x0A5C   (0x0004)  
+	float                                              StoppiePitchAngle;                                          // 0x0A60   (0x0004)  
+	float                                              StoppiePitchStiff;                                          // 0x0A64   (0x0004)  
+	float                                              StoppiePitchDamp;                                           // 0x0A68   (0x0004)  
+	float                                              WheelieRampSeconds;                                         // 0x0A6C   (0x0004)  
+	float                                              WheelieFailPitchAngle;                                      // 0x0A70   (0x0004)  
+	float                                              WheelieRecoveryRate;                                        // 0x0A74   (0x0004)  
+	float                                              WheelieFailRecoveryRate;                                    // 0x0A78   (0x0004)  
+	float                                              WheelieMinStartSpeed;                                       // 0x0A7C   (0x0004)  
+	float                                              StoppieMinStopSpeed;                                        // 0x0A80   (0x0004)  
+	float                                              WheelieSteerFactor;                                         // 0x0A84   (0x0004)  
+	float                                              StoppieSteerFactor;                                         // 0x0A88   (0x0004)  
+	float                                              WheelieSteerAlphaThreshold;                                 // 0x0A8C   (0x0004)  
+	float                                              WheelieStoppieMaxLeanAllowedToInitiate;                     // 0x0A90   (0x0004)  
+	float                                              WheelieGroundBufferTime;                                    // 0x0A94   (0x0004)  
+	float                                              StoppieGroundBufferTime;                                    // 0x0A98   (0x0004)  
+	float                                              WheelieSpringLengthExponent;                                // 0x0A9C   (0x0004)  
+	float                                              WheelieWheelOffsetLerpMultiplier;                           // 0x0AA0   (0x0004)  
+	float                                              WheelieBrakeFactor;                                         // 0x0AA4   (0x0004)  
+	float                                              StoppieTurnInPlaceSpeed;                                    // 0x0AA8   (0x0004)  
+	float                                              StoppieTurnInPlaceSpeedIce;                                 // 0x0AAC   (0x0004)  
+	float                                              StoppieTurnInPlaceSpeedMud;                                 // 0x0AB0   (0x0004)  
+	float                                              MinSpeedKmhForMaxStoppie;                                   // 0x0AB4   (0x0004)  
+	float                                              StoppieTurnAngleExponent;                                   // 0x0AB8   (0x0004)  
+	float                                              StoppieMaxTurnAngle;                                        // 0x0ABC   (0x0004)  
+	float                                              WheelieTireTractionMultiplier_Min;                          // 0x0AC0   (0x0004)  
+	float                                              WheelieCameraMinStraightFactor;                             // 0x0AC4   (0x0004)  
+	float                                              MaxLeanAccel;                                               // 0x0AC8   (0x0004)  
+	float                                              CruiseControlForwardAlpha;                                  // 0x0ACC   (0x0004)  
+	float                                              InventoryModeSpeedKmh;                                      // 0x0AD0   (0x0004)  
+	float                                              CruiseControlDisengageSpeedKmh;                             // 0x0AD4   (0x0004)  
+	bool                                               bPowerSlideIsSuperSlide;                                    // 0x0AD8   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0AD9   (0x0003)  MISSED
+	float                                              PowerSlideFrontFrictionMultiplier;                          // 0x0ADC   (0x0004)  
+	float                                              PowerSlideRearFrictionMultiplier;                           // 0x0AE0   (0x0004)  
+	float                                              PowerSlideRoadFrontFrictionMultiplier;                      // 0x0AE4   (0x0004)  
+	float                                              PowerSlideRoadRearFrictionMultiplier;                       // 0x0AE8   (0x0004)  
+	float                                              PowerSlideDirtFrontFrictionMultiplier;                      // 0x0AEC   (0x0004)  
+	float                                              PowerSlideDirtRearFrictionMultiplier;                       // 0x0AF0   (0x0004)  
+	float                                              PowerSlideGrassFrontFrictionMultiplier;                     // 0x0AF4   (0x0004)  
+	float                                              PowerSlideGrassRearFrictionMultiplier;                      // 0x0AF8   (0x0004)  
+	float                                              PowerSlideSnowFrontFrictionMultiplier;                      // 0x0AFC   (0x0004)  
+	float                                              PowerSlideSnowRearFrictionMultiplier;                       // 0x0B00   (0x0004)  
+	float                                              PowerSlideIceFrontFrictionMultiplier;                       // 0x0B04   (0x0004)  
+	float                                              PowerSlideIceRearFrictionMultiplier;                        // 0x0B08   (0x0004)  
+	float                                              PowerSlideMudFrontFrictionMultiplier;                       // 0x0B0C   (0x0004)  
+	float                                              PowerSlideMudRearFrictionMultiplier;                        // 0x0B10   (0x0004)  
+	float                                              PowerSlideFactor;                                           // 0x0B14   (0x0004)  
+	float                                              PowerSlideDampFactor;                                       // 0x0B18   (0x0004)  
+	float                                              FrictionDampFactor;                                         // 0x0B1C   (0x0004)  
+	float                                              PowerSlideLeanAngleScale;                                   // 0x0B20   (0x0004)  
+	float                                              SuperSlideLeanAngle;                                        // 0x0B24   (0x0004)  
+	float                                              SuperSlideMinStartYawSpeedDegrees;                          // 0x0B28   (0x0004)  
+	float                                              SuperSlideMinStartSpeedKmh;                                 // 0x0B2C   (0x0004)  
+	float                                              SuperSlideMaxEndSpeedKmh;                                   // 0x0B30   (0x0004)  
+	float                                              PowerslideInputWindow;                                      // 0x0B34   (0x0004)  
+	float                                              ShootingMinSpeedSteeringAngle;                              // 0x0B38   (0x0004)  
+	float                                              ShootingMaxSpeedSteeringAngle;                              // 0x0B3C   (0x0004)  
+	float                                              InventoryModeCameraYawConstraint;                           // 0x0B40   (0x0004)  
+	float                                              BoostTopSpeedMultiplier;                                    // 0x0B44   (0x0004)  
+	float                                              BoostPushForceMultiplier;                                   // 0x0B48   (0x0004)  
+	float                                              BoostMinPushForce;                                          // 0x0B4C   (0x0004)  
+	float                                              BoostSteeringMultiplier;                                    // 0x0B50   (0x0004)  
+	bool                                               bPlayHolsterAnimsOnClient;                                  // 0x0B54   (0x0001)  
+	unsigned char                                      UnknownData04_5[0x3];                                       // 0x0B55   (0x0003)  MISSED
+	float                                              FrontWheelSteeringFactor;                                   // 0x0B58   (0x0004)  
+	float                                              FrontWheelRotationAcceleration;                             // 0x0B5C   (0x0004)  
+	float                                              PassengerInventoryCooldown;                                 // 0x0B60   (0x0004)  
+	float                                              DriverInventoryCooldown;                                    // 0x0B64   (0x0004)  
+	SDK_UNDEFINED(80,13270) /* TSet<FName> */          __um(BoostAttackShapes);                                    // 0x0B68   (0x0050)  
+	float                                              CameraAssistStrengthMax;                                    // 0x0BB8   (0x0004)  
+	float                                              CameraAssistStrengthMin;                                    // 0x0BBC   (0x0004)  
+	float                                              CameraAssistStrengthRecovery;                               // 0x0BC0   (0x0004)  
+	float                                              CameraAssistInterpSpeed;                                    // 0x0BC4   (0x0004)  
+	float                                              AirTrickIncrementInterval;                                  // 0x0BC8   (0x0004)  
+	float                                              AirTrickFeedStartTime;                                      // 0x0BCC   (0x0004)  
+	float                                              AirTrickPitchMultiplier;                                    // 0x0BD0   (0x0004)  
+	float                                              AirTrickYawMultiplier;                                      // 0x0BD4   (0x0004)  
+	bool                                               bAllowAirTrickNeutral;                                      // 0x0BD8   (0x0001)  
+	bool                                               bAllowAirTrickRight;                                        // 0x0BD9   (0x0001)  
+	bool                                               bAllowAirTrickLeft;                                         // 0x0BDA   (0x0001)  
+	unsigned char                                      UnknownData05_5[0x1];                                       // 0x0BDB   (0x0001)  MISSED
+	float                                              PoppedTireTractionScalar_Front;                             // 0x0BDC   (0x0004)  
+	float                                              PoppedTireTractionScalar_Rear;                              // 0x0BE0   (0x0004)  
+	float                                              PoppedTireTractionScalar_Both;                              // 0x0BE4   (0x0004)  
+	FScalableFloat                                     TopSpeedKmh;                                                // 0x0BE8   (0x0028)  
+	unsigned char                                      UnknownData06_6[0x8];                                       // 0x0C10   (0x0008)  MISSED
 };
 

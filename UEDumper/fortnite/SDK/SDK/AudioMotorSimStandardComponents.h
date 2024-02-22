@@ -54,7 +54,7 @@ public:
 	float                                              ThrottleInterpolationTime;                                  // 0x00FC   (0x0004)  
 	float                                              RpmInterpSpeed;                                             // 0x0100   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0104   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11698) /* FMulticastInlineDelegate */ __um(OnGearChangedEvent);                               // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,11760) /* FMulticastInlineDelegate */ __um(OnGearChangedEvent);                               // 0x0108   (0x0010)  
 };
 
 /// Class /Script/AudioMotorSimStandardComponents.ResistanceMotorSimComponent
@@ -87,8 +87,8 @@ public:
 	float                                              SideSpeedThreshold;                                         // 0x00BC   (0x0004)  
 	float                                              LimiterMaxRpm;                                              // 0x00C0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00C4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11699) /* FMulticastInlineDelegate */ __um(OnRevLimiterHit);                                  // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,11700) /* FMulticastInlineDelegate */ __um(OnRevLimiterStateChanged);                         // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,11761) /* FMulticastInlineDelegate */ __um(OnRevLimiterHit);                                  // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,11762) /* FMulticastInlineDelegate */ __um(OnRevLimiterStateChanged);                         // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x00E8   (0x0010)  MISSED
 };
 
@@ -109,8 +109,8 @@ public:
 	TArray<FMotorSimGearCurve>                         Gears;                                                      // 0x00B0   (0x0010)  
 	float                                              InterpSpeed;                                                // 0x00C0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00C4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11701) /* FMulticastInlineDelegate */ __um(OnUpShift);                                        // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,11702) /* FMulticastInlineDelegate */ __um(OnDownShift);                                      // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,11763) /* FMulticastInlineDelegate */ __um(OnUpShift);                                        // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,11764) /* FMulticastInlineDelegate */ __um(OnDownShift);                                      // 0x00D8   (0x0010)  
 };
 
 /// Class /Script/AudioMotorSimStandardComponents.ThrottleStateMotorSimComponent
@@ -118,9 +118,9 @@ public:
 class UThrottleStateMotorSimComponent : public UAudioMotorSimComponent
 { 
 public:
-	SDK_UNDEFINED(16,11703) /* FMulticastInlineDelegate */ __um(OnThrottleEngaged);                                // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,11704) /* FMulticastInlineDelegate */ __um(OnThrottleReleased);                               // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,11705) /* FMulticastInlineDelegate */ __um(OnEngineBlowoff);                                  // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,11765) /* FMulticastInlineDelegate */ __um(OnThrottleEngaged);                                // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11766) /* FMulticastInlineDelegate */ __um(OnThrottleReleased);                               // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,11767) /* FMulticastInlineDelegate */ __um(OnEngineBlowoff);                                  // 0x00D0   (0x0010)  
 	float                                              BlowoffMinThrottleTime;                                     // 0x00E0   (0x0004)  
 	unsigned char                                      UnknownData00_6[0xC];                                       // 0x00E4   (0x000C)  MISSED
 };

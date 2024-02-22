@@ -24,6 +24,6 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchObjectivesGameplayRuntime.FortGameStateComponent_MidMatchObjectiveParent.SetObjectiveCompletedStat
-	// void SetObjectiveCompletedStat(char SquadId);                                                                            // [0x95fa494] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetObjectiveCompletedStat(char SquadId);                                                                            // [0x96115c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 

@@ -37,7 +37,7 @@ public:
 	float                                              AnimationFrame;                                             // 0x050C   (0x0004)  
 	float                                              FrameRate;                                                  // 0x0510   (0x0004)  
 	float                                              AnimationTime;                                              // 0x0514   (0x0004)  
-	SDK_UNDEFINED(1,15094) /* TEnumAsByte<ESparseVolumeTexturePreviewAttribute> */ __um(PreviewAttribute);         // 0x0518   (0x0001)  
+	SDK_UNDEFINED(1,15240) /* TEnumAsByte<ESparseVolumeTexturePreviewAttribute> */ __um(PreviewAttribute);         // 0x0518   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0519   (0x0003)  MISSED
 	int32_t                                            MipLevel;                                                   // 0x051C   (0x0004)  
 	float                                              Extinction;                                                 // 0x0520   (0x0004)  

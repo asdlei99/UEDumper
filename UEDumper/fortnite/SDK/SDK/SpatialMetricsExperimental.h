@@ -35,7 +35,7 @@ enum class EIoDispatcherChunkTypeFlags : uint32_t
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyARDiskSizeMetric_Archive
 /// Size: 0x02D8 (0x000058 - 0x000330)
-class UActorPackageDependencyARDiskSizeMetric_Archive : public USpatialMetric
+class UActorPackageDependencyARDiskSizeMetric_Archive : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_1[0x2D8];                                     // 0x0058   (0x02D8)  MISSED
@@ -43,7 +43,7 @@ public:
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyCountMetric_Archive
 /// Size: 0x02D0 (0x000058 - 0x000328)
-class UActorPackageDependencyCountMetric_Archive : public USpatialMetric
+class UActorPackageDependencyCountMetric_Archive : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_1[0x2D0];                                     // 0x0058   (0x02D0)  MISSED
@@ -51,7 +51,7 @@ public:
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyIoDispatcherSizeMetric_Archive
 /// Size: 0x02E0 (0x000058 - 0x000338)
-class UActorPackageDependencyIoDispatcherSizeMetric_Archive : public USpatialMetric
+class UActorPackageDependencyIoDispatcherSizeMetric_Archive : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x2D8];                                     // 0x0058   (0x02D8)  MISSED
@@ -61,7 +61,7 @@ public:
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyResourceSizeMetric_Archive
 /// Size: 0x02E0 (0x000058 - 0x000338)
-class UActorPackageDependencyResourceSizeMetric_Archive : public USpatialMetric
+class UActorPackageDependencyResourceSizeMetric_Archive : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x2D8];                                     // 0x0058   (0x02D8)  MISSED
@@ -71,7 +71,7 @@ public:
 
 /// Class /Script/SpatialMetricsExperimental.LevelPackageDependencyIoDispatcherSizeMetric_IoStore
 /// Size: 0x0360 (0x000058 - 0x0003B8)
-class ULevelPackageDependencyIoDispatcherSizeMetric_IoStore : public USpatialMetric
+class ULevelPackageDependencyIoDispatcherSizeMetric_IoStore : public USpatialMetricInterface
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x358];                                     // 0x0058   (0x0358)  MISSED

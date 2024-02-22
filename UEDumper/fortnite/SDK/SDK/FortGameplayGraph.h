@@ -21,7 +21,7 @@ public:
 class UFortConnectivityGraphIsland : public UGraphIsland
 { 
 public:
-	SDK_UNDEFINED(80,11852) /* TSet<FGraphVertexHandle> */ __um(SupportNodes);                                     // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,11914) /* TSet<FGraphVertexHandle> */ __um(SupportNodes);                                     // 0x0100   (0x0050)  
 };
 
 /// Class /Script/FortGameplayGraph.FortConnectivityGraphVertex
@@ -37,7 +37,7 @@ public:
 /// Size: 0x0050 (0x0000B8 - 0x000108)
 struct FSerializableConnectivityGraph : FSerializableGraph
 { 
-	SDK_UNDEFINED(80,11853) /* TMap<FGraphVertexHandle, FSerializableConnectivityGraphVertex> */ __um(ConnectivityVertexData); // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(80,11915) /* TMap<FGraphVertexHandle, FSerializableConnectivityGraphVertex> */ __um(ConnectivityVertexData); // 0x00B8   (0x0050)  
 };
 
 /// Struct /Script/FortGameplayGraph.SerializableConnectivityGraphVertex

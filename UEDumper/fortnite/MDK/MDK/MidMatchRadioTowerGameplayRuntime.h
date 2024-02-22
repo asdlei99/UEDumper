@@ -44,6 +44,6 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchRadioTowerGameplayRuntime.BuildingGameplayActorRadioTower.GetLinkedRadioTowerTerminal
-	// class ARadioTowerTerminal* GetLinkedRadioTowerTerminal();                                                                // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// class ARadioTowerTerminal* GetLinkedRadioTowerTerminal();                                                                // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 };
 

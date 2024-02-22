@@ -51,7 +51,7 @@ public:
 
 	/// Functions
 	// Function /Script/MassLOD.MassLODSubsystem.OnPlayerControllerEndPlay
-	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xa8e3b10] Final|Native|Protected 
+	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xa8dff30] Final|Native|Protected 
 };
 
 /// Class /Script/MassLOD.MassLODCollectorTrait

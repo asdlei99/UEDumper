@@ -23,6 +23,6 @@ public:
 
 	/// Functions
 	// Function /Lager/Requirements/BP_ControllerRequirement_CheckLivingWorldManagerBudget.BP_ControllerRequirement_CheckLivingWorldManagerBudget_C.IsRequirementMetInternal
-	// bool IsRequirementMetInternal(FControllerRequirementTestContext& RequestContext);                                        // [0x130d900] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool IsRequirementMetInternal(FControllerRequirementTestContext& RequestContext);                                        // [0x3d1d968] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 

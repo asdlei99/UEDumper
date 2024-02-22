@@ -53,6 +53,6 @@ public:
 
 	/// Functions
 	// Function /Script/SilkWalkerRuntime.FortSilkwalkerComponent_Telemetry.OnGiftThrown
-	// void OnGiftThrown(class AFortPawn* TargetPawn, bool bGood);                                                              // [0xc1fb574] Final|Native|Private|BlueprintCallable 
+	// void OnGiftThrown(class AFortPawn* TargetPawn, bool bGood);                                                              // [0xc1a3f4c] Final|Native|Private|BlueprintCallable 
 };
 

@@ -22,9 +22,9 @@ public:
 
 	/// Functions
 	// Function /Script/LiveLinkAnimationCore.LiveLinkInstance.SetSubject
-	// void SetSubject(FLiveLinkSubjectName SubjectName);                                                                       // [0xc329d18] Final|Native|Public|BlueprintCallable 
+	// void SetSubject(FLiveLinkSubjectName SubjectName);                                                                       // [0xc2d1c04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LiveLinkAnimationCore.LiveLinkInstance.SetRetargetAsset
-	// void SetRetargetAsset(class UClass* RetargetAsset);                                                                      // [0xc329c00] Final|Native|Public|BlueprintCallable 
+	// void SetRetargetAsset(class UClass* RetargetAsset);                                                                      // [0xc2d1b2c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/LiveLinkAnimationCore.LiveLinkRetargetAsset
@@ -49,11 +49,11 @@ public:
 
 	/// Functions
 	// Function /Script/LiveLinkAnimationCore.LiveLinkRemapAsset.RemapCurveElements
-	// void RemapCurveElements(TMap<FName, float>& CurveItems);                                                                 // [0xc329b18] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void RemapCurveElements(TMap<FName, float>& CurveItems);                                                                 // [0xc2d1a44] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/LiveLinkAnimationCore.LiveLinkRemapAsset.GetRemappedCurveName
-	// FName GetRemappedCurveName(FName CurveName);                                                                             // [0xc329a4c] RequiredAPI|Native|Event|Public|BlueprintEvent|Const 
+	// FName GetRemappedCurveName(FName CurveName);                                                                             // [0xc2d19b8] RequiredAPI|Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/LiveLinkAnimationCore.LiveLinkRemapAsset.GetRemappedBoneName
-	// FName GetRemappedBoneName(FName BoneName);                                                                               // [0xc329980] RequiredAPI|Native|Event|Public|BlueprintEvent|Const 
+	// FName GetRemappedBoneName(FName BoneName);                                                                               // [0xc2d192c] RequiredAPI|Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/LiveLinkAnimationCore.AnimNode_LiveLinkPose

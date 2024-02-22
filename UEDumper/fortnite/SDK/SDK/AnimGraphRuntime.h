@@ -377,11 +377,11 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.AnimNodeRigidBodyLibrary.SetOverridePhysicsAsset
-	// FRigidBodyAnimNodeReference SetOverridePhysicsAsset(FRigidBodyAnimNodeReference& Node, class UPhysicsAsset* PhysicsAsset); // [0x5e612e8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FRigidBodyAnimNodeReference SetOverridePhysicsAsset(FRigidBodyAnimNodeReference& Node, class UPhysicsAsset* PhysicsAsset); // [0x5ec4c60] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimNodeRigidBodyLibrary.ConvertToRigidBodyAnimNodePure
-	// void ConvertToRigidBodyAnimNodePure(FAnimNodeReference& Node, FRigidBodyAnimNodeReference& RigidBodyAnimNode, bool& Result); // [0x5e60348] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToRigidBodyAnimNodePure(FAnimNodeReference& Node, FRigidBodyAnimNodeReference& RigidBodyAnimNode, bool& Result); // [0x5ec3da8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimNodeRigidBodyLibrary.ConvertToRigidBodyAnimNode
-	// FRigidBodyAnimNodeReference ConvertToRigidBodyAnimNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e6021c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FRigidBodyAnimNodeReference ConvertToRigidBodyAnimNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5ec3c7c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.BlendSpaceLibrary
@@ -393,15 +393,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.BlendSpaceLibrary.SnapToPosition
-	// void SnapToPosition(FBlendSpaceReference& BlendSpace, FVector NewPosition);                                           // [0x5e61b90] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SnapToPosition(FBlendSpaceReference& BlendSpace, FVector NewPosition);                                           // [0x5ec5508] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpaceLibrary.GetPosition
-	// FVector GetPosition(FBlendSpaceReference& BlendSpace);                                                                // [0x5e60b38] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetPosition(FBlendSpaceReference& BlendSpace);                                                                // [0x5ec44b0] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpaceLibrary.GetFilteredPosition
-	// FVector GetFilteredPosition(FBlendSpaceReference& BlendSpace);                                                        // [0x5e60a50] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetFilteredPosition(FBlendSpaceReference& BlendSpace);                                                        // [0x5ec43c8] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpaceLibrary.ConvertToBlendSpacePure
-	// void ConvertToBlendSpacePure(FAnimNodeReference& Node, FBlendSpaceReference& BlendSpace, bool& Result);               // [0x5e5fca8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToBlendSpacePure(FAnimNodeReference& Node, FBlendSpaceReference& BlendSpace, bool& Result);               // [0x5ec3780] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpaceLibrary.ConvertToBlendSpace
-	// FBlendSpaceReference ConvertToBlendSpace(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result);       // [0x5e5fb7c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpaceReference ConvertToBlendSpace(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result);       // [0x5ec3654] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.SequencerAnimationOverride
@@ -413,9 +413,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.SequencerAnimationOverride.GetSequencerAnimSlotNames
-	// TArray<FName> GetSequencerAnimSlotNames();                                                                            // [0x5e60d78] Native|Event|Public|BlueprintEvent|Const 
+	// TArray<FName> GetSequencerAnimSlotNames();                                                                            // [0x5ec46f0] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/AnimGraphRuntime.SequencerAnimationOverride.AllowsCinematicOverride
-	// bool AllowsCinematicOverride();                                                                                       // [0x2379ffc] Native|Event|Public|BlueprintEvent|Const 
+	// bool AllowsCinematicOverride();                                                                                       // [0x23bb8dc] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/AnimGraphRuntime.AnimationStateMachineLibrary
@@ -427,25 +427,25 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.SetState
-	// void SetState(FAnimUpdateContext& UpdateContext, FAnimationStateMachineReference& Node, FName TargetState, float duration, TEnumAsByte<ETransitionLogicType> BlendType, class UBlendProfile* BlendProfile, EAlphaBlendOption AlphaBlendOption, class UCurveFloat* CustomBlendCurve); // [0x5e6148c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetState(FAnimUpdateContext& UpdateContext, FAnimationStateMachineReference& Node, FName TargetState, float duration, TEnumAsByte<ETransitionLogicType> BlendType, class UBlendProfile* BlendProfile, EAlphaBlendOption AlphaBlendOption, class UCurveFloat* CustomBlendCurve); // [0x5ec4e04] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.IsStateBlendingOut
-	// bool IsStateBlendingOut(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);                     // [0x5e61168] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsStateBlendingOut(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);                     // [0x5ec4ae0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.IsStateBlendingIn
-	// bool IsStateBlendingIn(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);                      // [0x5e60fe8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsStateBlendingIn(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);                      // [0x5ec4960] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.GetState
-	// FName GetState(FAnimUpdateContext& UpdateContext, FAnimationStateMachineReference& Node);                             // [0x5e60db8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FName GetState(FAnimUpdateContext& UpdateContext, FAnimationStateMachineReference& Node);                             // [0x5ec4730] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.GetRelevantAnimTimeRemainingFraction
-	// float GetRelevantAnimTimeRemainingFraction(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);  // [0x5e60c20] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetRelevantAnimTimeRemainingFraction(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);  // [0x5ec4598] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.GetRelevantAnimTimeRemaining
-	// float GetRelevantAnimTimeRemaining(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);          // [0x11f7210] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetRelevantAnimTimeRemaining(FAnimUpdateContext& UpdateContext, FAnimationStateResultReference& Node);          // [0x243b328] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.ConvertToAnimationStateResultPure
-	// void ConvertToAnimationStateResultPure(FAnimNodeReference& Node, FAnimationStateResultReference& AnimationState, bool& Result); // [0x5e5fa10] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToAnimationStateResultPure(FAnimNodeReference& Node, FAnimationStateResultReference& AnimationState, bool& Result); // [0x5ec34e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.ConvertToAnimationStateResult
-	// void ConvertToAnimationStateResult(FAnimNodeReference& Node, FAnimationStateResultReference& AnimationState, EAnimNodeReferenceConversionResult& Result); // [0x11f70ac] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ConvertToAnimationStateResult(FAnimNodeReference& Node, FAnimationStateResultReference& AnimationState, EAnimNodeReferenceConversionResult& Result); // [0x243b1c4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.ConvertToAnimationStateMachinePure
-	// void ConvertToAnimationStateMachinePure(FAnimNodeReference& Node, FAnimationStateMachineReference& AnimationState, bool& Result); // [0x5e5f82c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToAnimationStateMachinePure(FAnimNodeReference& Node, FAnimationStateMachineReference& AnimationState, bool& Result); // [0x5ec337c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimationStateMachineLibrary.ConvertToAnimationStateMachine
-	// void ConvertToAnimationStateMachine(FAnimNodeReference& Node, FAnimationStateMachineReference& AnimationState, EAnimNodeReferenceConversionResult& Result); // [0x5e5f6bc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ConvertToAnimationStateMachine(FAnimNodeReference& Node, FAnimationStateMachineReference& AnimationState, EAnimNodeReferenceConversionResult& Result); // [0x5ec320c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.AnimExecutionContextLibrary
@@ -457,23 +457,23 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.IsActive
-	// bool IsActive(FAnimExecutionContext& Context);                                                                        // [0x5e60f38] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsActive(FAnimExecutionContext& Context);                                                                        // [0x5ec48b0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.GetDeltaTime
-	// float GetDeltaTime(FAnimUpdateContext& Context);                                                                      // [0x5e60954] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetDeltaTime(FAnimUpdateContext& Context);                                                                      // [0x5ec42cc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.GetCurrentWeight
-	// float GetCurrentWeight(FAnimUpdateContext& Context);                                                                  // [0x5e60858] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetCurrentWeight(FAnimUpdateContext& Context);                                                                  // [0x5ec41d0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.GetAnimNodeReference
-	// FAnimNodeReference GetAnimNodeReference(class UAnimInstance* Instance, int32_t Index);                                // [0x5e60710] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FAnimNodeReference GetAnimNodeReference(class UAnimInstance* Instance, int32_t Index);                                // [0x5ec4104] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.GetAnimInstance
-	// class UAnimInstance* GetAnimInstance(FAnimExecutionContext& Context);                                                 // [0x5e60658] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UAnimInstance* GetAnimInstance(FAnimExecutionContext& Context);                                                 // [0x5ec404c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.ConvertToUpdateContext
-	// FAnimUpdateContext ConvertToUpdateContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5e6052c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAnimUpdateContext ConvertToUpdateContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5ec3f20] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.ConvertToPoseContext
-	// FAnimPoseContext ConvertToPoseContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5e600f0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAnimPoseContext ConvertToPoseContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5ec3b50] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.ConvertToInitializationContext
-	// FAnimInitializationContext ConvertToInitializationContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5e5ffc4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAnimInitializationContext ConvertToInitializationContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5ec3a24] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.AnimExecutionContextLibrary.ConvertToComponentSpacePoseContext
-	// FAnimComponentSpacePoseContext ConvertToComponentSpacePoseContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5e5fe98] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAnimComponentSpacePoseContext ConvertToComponentSpacePoseContext(FAnimExecutionContext& Context, EAnimExecutionContextConversionResult& Result); // [0x5ec38f8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.AnimNotify_PlayMontageNotify
@@ -510,9 +510,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.BlendListBaseLibrary.ResetNode
-	// void ResetNode(FBlendListBaseReference& BlendListBase);                                                               // [0x11f74e8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ResetNode(FBlendListBaseReference& BlendListBase);                                                               // [0x22f36a8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendListBaseLibrary.ConvertToBlendListBase
-	// FBlendListBaseReference ConvertToBlendListBase(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x11f6f7c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendListBaseReference ConvertToBlendListBase(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x243b094] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.BlendSpacePlayerLibrary
@@ -524,33 +524,33 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SnapToPosition
-	// void SnapToPosition(FBlendSpacePlayerReference& BlendSpacePlayer, FVector NewPosition);                               // [0x5e89a28] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SnapToPosition(FBlendSpacePlayerReference& BlendSpacePlayer, FVector NewPosition);                               // [0x5ef1230] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.ShouldResetPlayTimeWhenBlendSpaceChanges
-	// bool ShouldResetPlayTimeWhenBlendSpaceChanges(FBlendSpacePlayerReference& BlendSpacePlayer);                          // [0x5e89968] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool ShouldResetPlayTimeWhenBlendSpaceChanges(FBlendSpacePlayerReference& BlendSpacePlayer);                          // [0x5ef1170] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SetResetPlayTimeWhenBlendSpaceChanges
-	// FBlendSpacePlayerReference SetResetPlayTimeWhenBlendSpaceChanges(FBlendSpacePlayerReference& BlendSpacePlayer, bool bReset); // [0x5e897c0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference SetResetPlayTimeWhenBlendSpaceChanges(FBlendSpacePlayerReference& BlendSpacePlayer, bool bReset); // [0x5ef0fc8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SetPlayRate
-	// FBlendSpacePlayerReference SetPlayRate(FBlendSpacePlayerReference& BlendSpacePlayer, float PlayRate);                 // [0x5e89624] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference SetPlayRate(FBlendSpacePlayerReference& BlendSpacePlayer, float PlayRate);                 // [0x5ef0e2c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SetLoop
-	// FBlendSpacePlayerReference SetLoop(FBlendSpacePlayerReference& BlendSpacePlayer, bool bLoop);                         // [0x5e89138] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference SetLoop(FBlendSpacePlayerReference& BlendSpacePlayer, bool bLoop);                         // [0x5ef0940] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SetBlendSpaceWithInertialBlending
-	// FBlendSpacePlayerReference SetBlendSpaceWithInertialBlending(FAnimUpdateContext& UpdateContext, FBlendSpacePlayerReference& BlendSpacePlayer, class UBlendSpace* BlendSpace, float BlendTime); // [0x5e88c88] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference SetBlendSpaceWithInertialBlending(FAnimUpdateContext& UpdateContext, FBlendSpacePlayerReference& BlendSpacePlayer, class UBlendSpace* BlendSpace, float BlendTime); // [0x5ef0490] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.SetBlendSpace
-	// FBlendSpacePlayerReference SetBlendSpace(FBlendSpacePlayerReference& BlendSpacePlayer, class UBlendSpace* BlendSpace); // [0x5e88ae4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference SetBlendSpace(FBlendSpacePlayerReference& BlendSpacePlayer, class UBlendSpace* BlendSpace); // [0x5ef02ec] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.GetStartPosition
-	// float GetStartPosition(FBlendSpacePlayerReference& BlendSpacePlayer);                                                 // [0x5e85968] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetStartPosition(FBlendSpacePlayerReference& BlendSpacePlayer);                                                 // [0x5eed33c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.GetPosition
-	// FVector GetPosition(FBlendSpacePlayerReference& BlendSpacePlayer);                                                    // [0x5e85880] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetPosition(FBlendSpacePlayerReference& BlendSpacePlayer);                                                    // [0x5eed254] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.GetPlayRate
-	// float GetPlayRate(FBlendSpacePlayerReference& BlendSpacePlayer);                                                      // [0x5e857f0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetPlayRate(FBlendSpacePlayerReference& BlendSpacePlayer);                                                      // [0x5eed1c4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.GetLoop
-	// bool GetLoop(FBlendSpacePlayerReference& BlendSpacePlayer);                                                           // [0x5e85460] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool GetLoop(FBlendSpacePlayerReference& BlendSpacePlayer);                                                           // [0x5eece34] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.GetBlendSpace
-	// class UBlendSpace* GetBlendSpace(FBlendSpacePlayerReference& BlendSpacePlayer);                                       // [0x5e852e0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UBlendSpace* GetBlendSpace(FBlendSpacePlayerReference& BlendSpacePlayer);                                       // [0x5eeccb4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.ConvertToBlendSpacePlayerPure
-	// void ConvertToBlendSpacePlayerPure(FAnimNodeReference& Node, FBlendSpacePlayerReference& BlendSpacePlayer, bool& Result); // [0x5e8433c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToBlendSpacePlayerPure(FAnimNodeReference& Node, FBlendSpacePlayerReference& BlendSpacePlayer, bool& Result); // [0x5eebdec] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.BlendSpacePlayerLibrary.ConvertToBlendSpacePlayer
-	// FBlendSpacePlayerReference ConvertToBlendSpacePlayer(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e84210] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendSpacePlayerReference ConvertToBlendSpacePlayer(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5eebcc0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.KismetAnimationLibrary
@@ -562,27 +562,27 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK
-	// void K2_TwoBoneIK(FVector& RootPos, FVector& JointPos, FVector& EndPos, FVector& JointTarget, FVector& Effector, FVector& OutJointPos, FVector& OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale); // [0x5e87a08] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void K2_TwoBoneIK(FVector& RootPos, FVector& JointPos, FVector& EndPos, FVector& JointTarget, FVector& Effector, FVector& OutJointPos, FVector& OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale); // [0x5eef390] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_StartProfilingTimer
-	// void K2_StartProfilingTimer();                                                                                        // [0x5e879f4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void K2_StartProfilingTimer();                                                                                        // [0x5eef37c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap
-	// FVector K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ); // [0x5e87524] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ); // [0x5eef0c4] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap
-	// float K2_MakePerlinNoiseAndRemap(float Value, float RangeOutMin, float RangeOutMax);                                  // [0x2f35210] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float K2_MakePerlinNoiseAndRemap(float Value, float RangeOutMin, float RangeOutMax);                                  // [0x5eeefa0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt
-	// FTransform K2_LookAt(FTransform& CurrentTransform, FVector& TargetPosition, FVector LookAtVector, bool bUseUpVector, FVector UpVector, float ClampConeInDegree); // [0x5e87110] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform K2_LookAt(FTransform& CurrentTransform, FVector& TargetPosition, FVector LookAtVector, bool bUseUpVector, FVector UpVector, float ClampConeInDegree); // [0x5eee9c8] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_EndProfilingTimer
-	// float K2_EndProfilingTimer(bool bLog, FString LogPrefix);                                                             // [0x5e869b4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// float K2_EndProfilingTimer(bool bLog, FString LogPrefix);                                                             // [0x5eee2f0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange
-	// float K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, FName SocketOrBoneNameA, TEnumAsByte<ERelativeTransformSpace> SocketSpaceA, FName SocketOrBoneNameB, TEnumAsByte<ERelativeTransformSpace> SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax); // [0x1c82204] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, FName SocketOrBoneNameA, TEnumAsByte<ERelativeTransformSpace> SocketSpaceA, FName SocketOrBoneNameB, TEnumAsByte<ERelativeTransformSpace> SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax); // [0x1ffa880] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets
-	// FVector K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, FName SocketOrBoneNameFrom, FName SocketOrBoneNameTo); // [0x2e7112c] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, FName SocketOrBoneNameFrom, FName SocketOrBoneNameTo); // [0x3306424] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromSockets
-	// float K2_CalculateVelocityFromSockets(float DeltaSeconds, class USkeletalMeshComponent* Component, FName SocketOrBoneName, FName ReferenceSocketOrBone, TEnumAsByte<ERelativeTransformSpace> SocketSpace, FVector OffsetInBoneSpace, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax, EEasingFuncType EasingType, FRuntimeFloatCurve& CustomCurve); // [0x5e85f50] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float K2_CalculateVelocityFromSockets(float DeltaSeconds, class USkeletalMeshComponent* Component, FName SocketOrBoneName, FName ReferenceSocketOrBone, TEnumAsByte<ERelativeTransformSpace> SocketSpace, FVector OffsetInBoneSpace, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax, EEasingFuncType EasingType, FRuntimeFloatCurve& CustomCurve); // [0x5eed96c] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromPositionHistory
-	// float K2_CalculateVelocityFromPositionHistory(float DeltaSeconds, FVector Position, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax); // [0x5e85ab8] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float K2_CalculateVelocityFromPositionHistory(float DeltaSeconds, FVector Position, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax); // [0x5eed48c] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.CalculateDirection
-	// float CalculateDirection(FVector& Velocity, FRotator& BaseRotation);                                                  // [0x5e840e8] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// float CalculateDirection(FVector& Velocity, FRotator& BaseRotation);                                                  // [0x5eebb98] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AnimGraphRuntime.LayeredBoneBlendLibrary
@@ -594,13 +594,13 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.LayeredBoneBlendLibrary.SetBlendMask
-	// FLayeredBoneBlendReference SetBlendMask(FAnimUpdateContext& UpdateContext, FLayeredBoneBlendReference& LayeredBoneBlend, int32_t PoseIndex, FName BlendMaskName); // [0x5e887a0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FLayeredBoneBlendReference SetBlendMask(FAnimUpdateContext& UpdateContext, FLayeredBoneBlendReference& LayeredBoneBlend, int32_t PoseIndex, FName BlendMaskName); // [0x5eeffa8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.LayeredBoneBlendLibrary.GetNumPoses
-	// int32_t GetNumPoses(FLayeredBoneBlendReference& LayeredBoneBlend);                                                    // [0x5e85730] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumPoses(FLayeredBoneBlendReference& LayeredBoneBlend);                                                    // [0x5eed104] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.LayeredBoneBlendLibrary.ConvertToLayeredBoneBlend
-	// FLayeredBoneBlendReference ConvertToLayeredBoneBlend(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e8471c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FLayeredBoneBlendReference ConvertToLayeredBoneBlend(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5eec0dc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.LayeredBoneBlendLibrary.ConvertToLayeredBlendPerBonePure
-	// void ConvertToLayeredBlendPerBonePure(FAnimNodeReference& Node, FLayeredBoneBlendReference& LayeredBoneBlend, bool& Result); // [0x5e8452c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToLayeredBlendPerBonePure(FAnimNodeReference& Node, FLayeredBoneBlendReference& LayeredBoneBlend, bool& Result); // [0x5eebf64] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AnimGraphRuntime.LinkedAnimGraphLibrary
@@ -612,13 +612,13 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.LinkedAnimGraphLibrary.HasLinkedAnimInstance
-	// bool HasLinkedAnimInstance(FLinkedAnimGraphReference& Node);                                                          // [0x5e859f8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool HasLinkedAnimInstance(FLinkedAnimGraphReference& Node);                                                          // [0x5eed3cc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.LinkedAnimGraphLibrary.GetLinkedAnimInstance
-	// class UAnimInstance* GetLinkedAnimInstance(FLinkedAnimGraphReference& Node);                                          // [0x5e853a0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UAnimInstance* GetLinkedAnimInstance(FLinkedAnimGraphReference& Node);                                          // [0x5eecd74] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.LinkedAnimGraphLibrary.ConvertToLinkedAnimGraphPure
-	// void ConvertToLinkedAnimGraphPure(FAnimNodeReference& Node, FLinkedAnimGraphReference& LinkedAnimGraph, bool& Result); // [0x5e84974] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToLinkedAnimGraphPure(FAnimNodeReference& Node, FLinkedAnimGraphReference& LinkedAnimGraph, bool& Result); // [0x5eec334] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.LinkedAnimGraphLibrary.ConvertToLinkedAnimGraph
-	// FLinkedAnimGraphReference ConvertToLinkedAnimGraph(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e84848] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FLinkedAnimGraphReference ConvertToLinkedAnimGraph(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5eec208] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.MirrorAnimLibrary
@@ -630,19 +630,19 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.SetMirrorTransitionBlendTime
-	// FMirrorAnimNodeReference SetMirrorTransitionBlendTime(FMirrorAnimNodeReference& MirrorNode, float InBlendTime);       // [0x5e89488] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FMirrorAnimNodeReference SetMirrorTransitionBlendTime(FMirrorAnimNodeReference& MirrorNode, float InBlendTime);       // [0x5ef0c90] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.SetMirror
-	// FMirrorAnimNodeReference SetMirror(FMirrorAnimNodeReference& MirrorNode, bool bInMirror);                             // [0x5e892e0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FMirrorAnimNodeReference SetMirror(FMirrorAnimNodeReference& MirrorNode, bool bInMirror);                             // [0x5ef0ae8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.GetMirrorTransitionBlendTime
-	// float GetMirrorTransitionBlendTime(FMirrorAnimNodeReference& MirrorNode);                                             // [0x5e856a0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetMirrorTransitionBlendTime(FMirrorAnimNodeReference& MirrorNode);                                             // [0x5eed074] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.GetMirrorDataTable
-	// class UMirrorDataTable* GetMirrorDataTable(FMirrorAnimNodeReference& MirrorNode);                                     // [0x5e855e0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UMirrorDataTable* GetMirrorDataTable(FMirrorAnimNodeReference& MirrorNode);                                     // [0x5eecfb4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.GetMirror
-	// bool GetMirror(FMirrorAnimNodeReference& MirrorNode);                                                                 // [0x5e85520] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool GetMirror(FMirrorAnimNodeReference& MirrorNode);                                                                 // [0x5eecef4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.ConvertToMirrorNodePure
-	// void ConvertToMirrorNodePure(FAnimNodeReference& Node, FMirrorAnimNodeReference& MirrorNode, bool& Result);           // [0x5e84c90] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToMirrorNodePure(FAnimNodeReference& Node, FMirrorAnimNodeReference& MirrorNode, bool& Result);           // [0x5eec5d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.MirrorAnimLibrary.ConvertToMirrorNode
-	// FMirrorAnimNodeReference ConvertToMirrorNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result);   // [0x5e84b64] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FMirrorAnimNodeReference ConvertToMirrorNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result);   // [0x5eec4ac] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.ModifyCurveAnimLibrary
@@ -654,19 +654,19 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.SetCurveMap
-	// FModifyCurveAnimNodeReference SetCurveMap(FModifyCurveAnimNodeReference& ModifyCurveNode, TMap<FName, float>& InCurveMap); // [0x5e88fc8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FModifyCurveAnimNodeReference SetCurveMap(FModifyCurveAnimNodeReference& ModifyCurveNode, TMap<FName, float>& InCurveMap); // [0x5ef07d0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.SetApplyMode
-	// FModifyCurveAnimNodeReference SetApplyMode(FModifyCurveAnimNodeReference& ModifyCurveNode, EModifyCurveApplyMode InMode); // [0x5e885fc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FModifyCurveAnimNodeReference SetApplyMode(FModifyCurveAnimNodeReference& ModifyCurveNode, EModifyCurveApplyMode InMode); // [0x5eefe04] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.SetAlpha
-	// FModifyCurveAnimNodeReference SetAlpha(FModifyCurveAnimNodeReference& ModifyCurveNode, float InAlpha);                // [0x5e88460] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FModifyCurveAnimNodeReference SetAlpha(FModifyCurveAnimNodeReference& ModifyCurveNode, float InAlpha);                // [0x5eefc68] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.GetApplyMode
-	// EModifyCurveApplyMode GetApplyMode(FModifyCurveAnimNodeReference& ModifyCurveNode);                                   // [0x5e8522c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// EModifyCurveApplyMode GetApplyMode(FModifyCurveAnimNodeReference& ModifyCurveNode);                                   // [0x5eecc00] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.GetAlpha
-	// float GetAlpha(FModifyCurveAnimNodeReference& ModifyCurveNode);                                                       // [0x5e8519c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float GetAlpha(FModifyCurveAnimNodeReference& ModifyCurveNode);                                                       // [0x5eecb70] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.ConvertToModifyCurveNodePure
-	// void ConvertToModifyCurveNodePure(FAnimNodeReference& Node, FModifyCurveAnimNodeReference& ModifyCurveNode, bool& Result); // [0x5e84fac] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToModifyCurveNodePure(FAnimNodeReference& Node, FModifyCurveAnimNodeReference& ModifyCurveNode, bool& Result); // [0x5eec87c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.ModifyCurveAnimLibrary.ConvertToModifyCurveNode
-	// FModifyCurveAnimNodeReference ConvertToModifyCurveNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e84e80] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FModifyCurveAnimNodeReference ConvertToModifyCurveNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5eec750] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.PlayMontageCallbackProxy
@@ -685,15 +685,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived
-	// void OnNotifyEndReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                // [0x5e88338] Final|RequiredAPI|Native|Protected|HasOutParms 
+	// void OnNotifyEndReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                // [0x5eefb88] Final|RequiredAPI|Native|Protected|HasOutParms 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x5e88210] Final|RequiredAPI|Native|Protected|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x5eefaa8] Final|RequiredAPI|Native|Protected|HasOutParms 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x5e880d0] Final|RequiredAPI|Native|Protected 
+	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x5eef9e0] Final|RequiredAPI|Native|Protected 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut
-	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x5e87f90] Final|RequiredAPI|Native|Protected 
+	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x5eef918] Final|RequiredAPI|Native|Protected 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage
-	// class UPlayMontageCallbackProxy* CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x129cddc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UPlayMontageCallbackProxy* CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x5eec9f4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.SequenceEvaluatorLibrary
@@ -705,23 +705,23 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.SetSequenceWithInertialBlending
-	// FSequenceEvaluatorReference SetSequenceWithInertialBlending(FAnimUpdateContext& UpdateContext, FSequenceEvaluatorReference& SequenceEvaluator, class UAnimSequenceBase* Sequence, float BlendTime); // [0x5e8f534] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference SetSequenceWithInertialBlending(FAnimUpdateContext& UpdateContext, FSequenceEvaluatorReference& SequenceEvaluator, class UAnimSequenceBase* Sequence, float BlendTime); // [0x5ef6bd4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.SetSequence
-	// FSequenceEvaluatorReference SetSequence(FSequenceEvaluatorReference& SequenceEvaluator, class UAnimSequenceBase* Sequence); // [0x5e8f1ec] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference SetSequence(FSequenceEvaluatorReference& SequenceEvaluator, class UAnimSequenceBase* Sequence); // [0x5ef688c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.SetExplicitTime
-	// FSequenceEvaluatorReference SetExplicitTime(FSequenceEvaluatorReference& SequenceEvaluator, float Time);              // [0x5e8eeb4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference SetExplicitTime(FSequenceEvaluatorReference& SequenceEvaluator, float Time);              // [0x5ef6554] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.SetExplicitFrame
-	// FSequenceEvaluatorReference SetExplicitFrame(FSequenceEvaluatorReference& SequenceEvaluator, int32_t Frame);          // [0x5e8ed10] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference SetExplicitFrame(FSequenceEvaluatorReference& SequenceEvaluator, int32_t Frame);          // [0x5ef63b0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.GetSequence
-	// class UAnimSequenceBase* GetSequence(FSequenceEvaluatorReference& SequenceEvaluator);                                 // [0x5e8e6bc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UAnimSequenceBase* GetSequence(FSequenceEvaluatorReference& SequenceEvaluator);                                 // [0x5ef5d5c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.GetAccumulatedTime
-	// float GetAccumulatedTime(FSequenceEvaluatorReference& SequenceEvaluator);                                             // [0x5e8e3bc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetAccumulatedTime(FSequenceEvaluatorReference& SequenceEvaluator);                                             // [0x5ef5a5c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.ConvertToSequenceEvaluatorPure
-	// void ConvertToSequenceEvaluatorPure(FAnimNodeReference& Node, FSequenceEvaluatorReference& SequenceEvaluator, bool& Result); // [0x5e8db94] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToSequenceEvaluatorPure(FAnimNodeReference& Node, FSequenceEvaluatorReference& SequenceEvaluator, bool& Result); // [0x5ef539c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.ConvertToSequenceEvaluator
-	// FSequenceEvaluatorReference ConvertToSequenceEvaluator(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e8da68] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference ConvertToSequenceEvaluator(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5ef5270] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequenceEvaluatorLibrary.AdvanceTime
-	// FSequenceEvaluatorReference AdvanceTime(FAnimUpdateContext& UpdateContext, FSequenceEvaluatorReference& SequenceEvaluator, float PlayRate); // [0x5e8d680] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequenceEvaluatorReference AdvanceTime(FAnimUpdateContext& UpdateContext, FSequenceEvaluatorReference& SequenceEvaluator, float PlayRate); // [0x5ef4e88] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.SequencePlayerLibrary
@@ -733,33 +733,33 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.SetStartPosition
-	// FSequencePlayerReference SetStartPosition(FSequencePlayerReference& SequencePlayer, float StartPosition);             // [0x5e8fbb4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference SetStartPosition(FSequencePlayerReference& SequencePlayer, float StartPosition);             // [0x5ef7254] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.SetSequenceWithInertialBlending
-	// FSequencePlayerReference SetSequenceWithInertialBlending(FAnimUpdateContext& UpdateContext, FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase* Sequence, float BlendTime); // [0x5e8f874] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference SetSequenceWithInertialBlending(FAnimUpdateContext& UpdateContext, FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase* Sequence, float BlendTime); // [0x5ef6f14] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.SetSequence
-	// FSequencePlayerReference SetSequence(FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase* Sequence);    // [0x5e8f390] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference SetSequence(FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase* Sequence);    // [0x5ef6a30] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.SetPlayRate
-	// FSequencePlayerReference SetPlayRate(FSequencePlayerReference& SequencePlayer, float PlayRate);                       // [0x5e8f050] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference SetPlayRate(FSequencePlayerReference& SequencePlayer, float PlayRate);                       // [0x5ef66f0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.SetAccumulatedTime
-	// FSequencePlayerReference SetAccumulatedTime(FSequencePlayerReference& SequencePlayer, float Time);                    // [0x5e8e9d8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference SetAccumulatedTime(FSequencePlayerReference& SequencePlayer, float Time);                    // [0x5ef6078] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetStartPosition
-	// float GetStartPosition(FSequencePlayerReference& SequencePlayer);                                                     // [0x5e8e948] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetStartPosition(FSequencePlayerReference& SequencePlayer);                                                     // [0x5ef5fe8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetSequencePure
-	// class UAnimSequenceBase* GetSequencePure(FSequencePlayerReference& SequencePlayer);                                   // [0x5e8e888] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UAnimSequenceBase* GetSequencePure(FSequencePlayerReference& SequencePlayer);                                   // [0x5ef5f28] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetSequence
-	// FSequencePlayerReference GetSequence(FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase*& SequenceBase); // [0x5e8e77c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference GetSequence(FSequencePlayerReference& SequencePlayer, class UAnimSequenceBase*& SequenceBase); // [0x5ef5e1c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetPlayRate
-	// float GetPlayRate(FSequencePlayerReference& SequencePlayer);                                                          // [0x5e8e62c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetPlayRate(FSequencePlayerReference& SequencePlayer);                                                          // [0x5ef5ccc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetLoopAnimation
-	// bool GetLoopAnimation(FSequencePlayerReference& SequencePlayer);                                                      // [0x5e8e56c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool GetLoopAnimation(FSequencePlayerReference& SequencePlayer);                                                      // [0x5ef5c0c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.GetAccumulatedTime
-	// float GetAccumulatedTime(FSequencePlayerReference& SequencePlayer);                                                   // [0x5e8e44c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetAccumulatedTime(FSequencePlayerReference& SequencePlayer);                                                   // [0x5ef5aec] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.ConvertToSequencePlayerPure
-	// void ConvertToSequencePlayerPure(FAnimNodeReference& Node, FSequencePlayerReference& SequencePlayer, bool& Result);   // [0x5e8deb0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToSequencePlayerPure(FAnimNodeReference& Node, FSequencePlayerReference& SequencePlayer, bool& Result);   // [0x5ef5640] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.ConvertToSequencePlayer
-	// FSequencePlayerReference ConvertToSequencePlayer(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e8dd84] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSequencePlayerReference ConvertToSequencePlayer(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5ef5514] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SequencePlayerLibrary.ComputePlayRateFromDuration
-	// float ComputePlayRateFromDuration(FSequencePlayerReference& SequencePlayer, float duration);                          // [0x5e8d8d4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float ComputePlayRateFromDuration(FSequencePlayerReference& SequencePlayer, float duration);                          // [0x5ef50dc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AnimGraphRuntime.SequencerAnimationSupport
@@ -778,13 +778,13 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.SkeletalControlLibrary.SetAlpha
-	// FSkeletalControlReference SetAlpha(FSkeletalControlReference& SkeletalControl, float Alpha);                          // [0x5e8eb74] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSkeletalControlReference SetAlpha(FSkeletalControlReference& SkeletalControl, float Alpha);                          // [0x5ef6214] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.SkeletalControlLibrary.GetAlpha
-	// float GetAlpha(FSkeletalControlReference& SkeletalControl);                                                           // [0x5e8e4dc] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetAlpha(FSkeletalControlReference& SkeletalControl);                                                           // [0x5ef5b7c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SkeletalControlLibrary.ConvertToSkeletalControlPure
-	// void ConvertToSkeletalControlPure(FAnimNodeReference& Node, FSkeletalControlReference& SkeletalControl, bool& Result); // [0x5e8e1cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToSkeletalControlPure(FAnimNodeReference& Node, FSkeletalControlReference& SkeletalControl, bool& Result); // [0x5ef58e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.SkeletalControlLibrary.ConvertToSkeletalControl
-	// FSkeletalControlReference ConvertToSkeletalControl(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5e8e0a0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSkeletalControlReference ConvertToSkeletalControl(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x5ef57b8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/AnimGraphRuntime.AnimNode_BlendSpaceGraphBase
@@ -1748,13 +1748,15 @@ struct FAnimLegIKData
 };
 
 /// Struct /Script/AnimGraphRuntime.AnimNode_LegIK
-/// Size: 0x0030 (0x0000C8 - 0x0000F8)
+/// Size: 0x0038 (0x0000C8 - 0x000100)
 struct FAnimNode_LegIK : FAnimNode_SkeletalControlBase
 { 
 	float                                              ReachPrecision;                                             // 0x00C8   (0x0004)  
 	int32_t                                            MaxIterations;                                              // 0x00CC   (0x0004)  
-	TArray<FAnimLegIKDefinition>                       LegsDefinition;                                             // 0x00D0   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00E0   (0x0018)  MISSED
+	float                                              SoftPercentLength;                                          // 0x00D0   (0x0004)  
+	float                                              SoftAlpha;                                                  // 0x00D4   (0x0004)  
+	TArray<FAnimLegIKDefinition>                       LegsDefinition;                                             // 0x00D8   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00E8   (0x0018)  MISSED
 };
 
 /// Struct /Script/AnimGraphRuntime.AnimNode_LookAt

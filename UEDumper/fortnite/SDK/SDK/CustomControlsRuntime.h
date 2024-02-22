@@ -112,11 +112,11 @@ public:
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.GetOwningComponent
-	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                  // [0xb756104] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                  // [0xb86c550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnDeactivate
-	// void BP_OnDeactivate();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnDeactivate();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnActivate
-	// void BP_OnActivate();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnActivate();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/CustomControlsRuntime.FortMovementMode_ExtBaseCustomControlsCreationData
@@ -173,13 +173,13 @@ public:
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRetentionTargetingPreset
-	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRangedTargetingPreset
-	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitMeleeTargetingPreset
-	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitAimingTargetingPreset
-	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/CustomControlsRuntime.CustomControlsState
@@ -210,38 +210,38 @@ public:
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.WeaponGetAimRotOverride
-	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb756510] Final|Native|Private|HasOutParms|HasDefaults 
+	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb86c820] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.SetOptionsEnabled
-	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                  // [0xb7563d0] Final|Native|Public|BlueprintCallable 
+	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                  // [0xb86c758] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetOptionsQueueBlocked
-	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                   // [0x8764e60] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                   // [0x876751c] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetFocusTarget
-	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                              // [0x83c9450] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                              // [0x83cf1c0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.RemoveOptions
-	// void RemoveOptions(class UObject* ContextObject);                                                                     // [0xb756310] Final|Native|Public|BlueprintCallable 
+	// void RemoveOptions(class UObject* ContextObject);                                                                     // [0xb86c6d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_NotifyActiveOptionsUpdated
-	// void OnRep_NotifyActiveOptionsUpdated();                                                                              // [0xb7562fc] Final|Native|Private 
+	// void OnRep_NotifyActiveOptionsUpdated();                                                                              // [0xb86c6c4] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_ActiveOptions
-	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                               // [0xb75623c] Final|Native|Private 
+	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                               // [0xb86c644] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.NotifyOptionsUpdated
-	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                 // [0xb756160] Final|Native|Public|BlueprintCallable 
+	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                 // [0xb86c5ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.GetOptions
-	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                           // [0xb755fe0] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                           // [0xb86c470] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.CreateOptionsWithPriority
-	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb755c40] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb86c1d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ClientRegisterTagsQueries
-	// void ClientRegisterTagsQueries();                                                                                     // [0x81b6d68] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientRegisterTagsQueries();                                                                                     // [0x81c4bcc] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/CustomControlsRuntime.FortMovementMode_ExtLogicBaseCustomControls
-/// Size: 0x0000 (0x000118 - 0x000118)
+/// Size: 0x0000 (0x000120 - 0x000120)
 class UFortMovementMode_ExtLogicBaseCustomControls : public UFortMovementMode_BaseExtLogic
 { 
 public:
 };
 
 /// Class /Script/CustomControlsRuntime.FortMovementMode_ExtLogicCCThirdPerson
-/// Size: 0x0000 (0x000118 - 0x000118)
+/// Size: 0x0000 (0x000120 - 0x000120)
 class UFortMovementMode_ExtLogicCCThirdPerson : public UFortMovementMode_ExtLogicBaseCustomControls
 { 
 public:

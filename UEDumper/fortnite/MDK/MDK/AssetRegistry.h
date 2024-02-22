@@ -20,35 +20,35 @@ public:
 
 	/// Functions
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath
-	// FSoftObjectPath ToSoftObjectPath(FAssetData& InAssetData);                                                               // [0x58f9698] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FSoftObjectPath ToSoftObjectPath(FAssetData& InAssetData);                                                               // [0x596a140] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.SetFilterTagsAndValues
-	// FARFilter SetFilterTagsAndValues(FARFilter& InFilter, TArray<FTagAndValue>& InTagsAndValues);                            // [0x58f9548] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FARFilter SetFilterTagsAndValues(FARFilter& InFilter, TArray<FTagAndValue>& InTagsAndValues);                            // [0x5969ff0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.IsValid
-	// bool IsValid(FAssetData& InAssetData);                                                                                   // [0x58f80c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool IsValid(FAssetData& InAssetData);                                                                                   // [0x5968c78] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.IsUAsset
-	// bool IsUAsset(FAssetData& InAssetData);                                                                                  // [0x58f8008] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool IsUAsset(FAssetData& InAssetData);                                                                                  // [0x5968bc0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.IsRedirector
-	// bool IsRedirector(FAssetData& InAssetData);                                                                              // [0x58f7efc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool IsRedirector(FAssetData& InAssetData);                                                                              // [0x5968ab4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.IsAssetLoaded
-	// bool IsAssetLoaded(FAssetData& InAssetData);                                                                             // [0x58f7e1c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool IsAssetLoaded(FAssetData& InAssetData);                                                                             // [0x59689d4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetTagValue
-	// bool GetTagValue(FAssetData& InAssetData, FName& InTagName, FString& OutTagValue);                                       // [0x58f7560] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool GetTagValue(FAssetData& InAssetData, FName& InTagName, FString& OutTagValue);                                       // [0x59681a4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetFullName
-	// FString GetFullName(FAssetData& InAssetData);                                                                            // [0x58f6644] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FString GetFullName(FAssetData& InAssetData);                                                                            // [0x59672c8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetExportTextName
-	// FString GetExportTextName(FAssetData& InAssetData);                                                                      // [0x58f5f68] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FString GetExportTextName(FAssetData& InAssetData);                                                                      // [0x5966bec] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetClass
-	// class UClass* GetClass(FAssetData& InAssetData);                                                                         // [0x58f5cc4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class UClass* GetClass(FAssetData& InAssetData);                                                                         // [0x5966948] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetBlueprintAssets
-	// void GetBlueprintAssets(FARFilter& InFilter, TArray<FAssetData>& OutAssetData);                                          // [0x58f5b6c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void GetBlueprintAssets(FARFilter& InFilter, TArray<FAssetData>& OutAssetData);                                          // [0x59667f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetAssetRegistry
-	// TScriptInterface<Class> GetAssetRegistry();                                                                              // [0x58f4c60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TScriptInterface<Class> GetAssetRegistry();                                                                              // [0x5965930] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.GetAsset
-	// class UObject* GetAsset(FAssetData& InAssetData);                                                                        // [0x58f49f8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class UObject* GetAsset(FAssetData& InAssetData);                                                                        // [0x5965750] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.FindAssetNativeClass
-	// class UClass* FindAssetNativeClass(FAssetData& AssetData);                                                               // [0x58f458c] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class UClass* FindAssetNativeClass(FAssetData& AssetData);                                                               // [0x596526c] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AssetRegistry.AssetRegistryHelpers.CreateAssetData
-	// FAssetData CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass);                                           // [0x58f43e8] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FAssetData CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass);                                           // [0x5965148] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AssetRegistry.AssetRegistry
@@ -63,59 +63,59 @@ public:
 
 	/// Functions
 	// Function /Script/AssetRegistry.AssetRegistry.WaitForPackage
-	// void WaitForPackage(FString PackageName);                                                                                // [0x58f98e0] Native|Public|BlueprintCallable 
+	// void WaitForPackage(FString PackageName);                                                                                // [0x596a388] Native|Public|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.WaitForCompletion
-	// void WaitForCompletion();                                                                                                // [0x58f98c8] Native|Public|BlueprintCallable 
+	// void WaitForCompletion();                                                                                                // [0x596a370] Native|Public|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.UseFilterToExcludeAssets
-	// void UseFilterToExcludeAssets(TArray<FAssetData>& AssetDataList, FARFilter& Filter);                                     // [0x58f9768] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void UseFilterToExcludeAssets(TArray<FAssetData>& AssetDataList, FARFilter& Filter);                                     // [0x596a210] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.SearchAllAssets
-	// void SearchAllAssets(bool bSynchronousSearch);                                                                           // [0x58f9480] Native|Public|BlueprintCallable 
+	// void SearchAllAssets(bool bSynchronousSearch);                                                                           // [0x5969f6c] Native|Public|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.ScanPathsSynchronous
-	// void ScanPathsSynchronous(TArray<FString>& InPaths, bool bForceRescan, bool bIgnoreDenyListScanFilters);                 // [0x58f91e4] Native|Public|HasOutParms|BlueprintCallable 
+	// void ScanPathsSynchronous(TArray<FString>& InPaths, bool bForceRescan, bool bIgnoreDenyListScanFilters);                 // [0x5969cd0] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.ScanModifiedAssetFiles
-	// void ScanModifiedAssetFiles(TArray<FString>& InFilePaths);                                                               // [0x58f9148] Native|Public|HasOutParms|BlueprintCallable 
+	// void ScanModifiedAssetFiles(TArray<FString>& InFilePaths);                                                               // [0x5969c34] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.ScanFilesSynchronous
-	// void ScanFilesSynchronous(TArray<FString>& InFilePaths, bool bForceRescan);                                              // [0x58f8fa0] Native|Public|HasOutParms|BlueprintCallable 
+	// void ScanFilesSynchronous(TArray<FString>& InFilePaths, bool bForceRescan);                                              // [0x5969a8c] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.RunAssetsThroughFilter
-	// void RunAssetsThroughFilter(TArray<FAssetData>& AssetDataList, FARFilter& Filter);                                       // [0x58f8e40] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void RunAssetsThroughFilter(TArray<FAssetData>& AssetDataList, FARFilter& Filter);                                       // [0x596992c] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.PrioritizeSearchPath
-	// void PrioritizeSearchPath(FString PathToPrioritize);                                                                     // [0x58f874c] Native|Public|BlueprintCallable 
+	// void PrioritizeSearchPath(FString PathToPrioritize);                                                                     // [0x596927c] Native|Public|BlueprintCallable 
 	// Function /Script/AssetRegistry.AssetRegistry.K2_GetReferencers
-	// bool K2_GetReferencers(FName PackageName, FAssetRegistryDependencyOptions& ReferenceOptions, TArray<FName>& OutReferencers); // [0x58f85c8] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool K2_GetReferencers(FName PackageName, FAssetRegistryDependencyOptions& ReferenceOptions, TArray<FName>& OutReferencers); // [0x596913c] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.K2_GetDependencies
-	// bool K2_GetDependencies(FName PackageName, FAssetRegistryDependencyOptions& DependencyOptions, TArray<FName>& OutDependencies); // [0x58f8444] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool K2_GetDependencies(FName PackageName, FAssetRegistryDependencyOptions& DependencyOptions, TArray<FName>& OutDependencies); // [0x5968ffc] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.K2_GetAssetByObjectPath
-	// FAssetData K2_GetAssetByObjectPath(FSoftObjectPath& ObjectPath, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets); // [0x58f8180] RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// FAssetData K2_GetAssetByObjectPath(FSoftObjectPath& ObjectPath, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets); // [0x5968d38] RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.IsSearchAsync
-	// bool IsSearchAsync();                                                                                                    // [0x58f7fe0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSearchAsync();                                                                                                    // [0x5968b98] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.IsSearchAllAssets
-	// bool IsSearchAllAssets();                                                                                                // [0x58f7fb8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSearchAllAssets();                                                                                                // [0x5968b70] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.IsLoadingAssets
-	// bool IsLoadingAssets();                                                                                                  // [0x58f7ed4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoadingAssets();                                                                                                  // [0x5968a8c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.HasAssets
-	// bool HasAssets(FName PackagePath, bool bRecursive);                                                                      // [0x58f7cc8] Native|Public|BlueprintCallable|Const 
+	// bool HasAssets(FName PackagePath, bool bRecursive);                                                                      // [0x596890c] Native|Public|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetSubPaths
-	// void GetSubPaths(FString InBasePath, TArray<FString>& OutPathList, bool bInRecurse);                                     // [0x58f6d20] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void GetSubPaths(FString InBasePath, TArray<FString>& OutPathList, bool bInRecurse);                                     // [0x59679a4] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetDerivedClassNames
-	// void GetDerivedClassNames(TArray<FTopLevelAssetPath>& ClassNames, TSet<FTopLevelAssetPath>& ExcludedClassNames, TSet<FTopLevelAssetPath>& OutDerivedClassNames); // [0x58f5d7c] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void GetDerivedClassNames(TArray<FTopLevelAssetPath>& ClassNames, TSet<FTopLevelAssetPath>& ExcludedClassNames, TSet<FTopLevelAssetPath>& OutDerivedClassNames); // [0x5966a00] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssetsByPaths
-	// bool GetAssetsByPaths(TArray<FName> PackagePaths, TArray<FAssetData>& OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets); // [0x58f57d0] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAssetsByPaths(TArray<FName> PackagePaths, TArray<FAssetData>& OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets); // [0x5966494] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssetsByPath
-	// bool GetAssetsByPath(FName PackagePath, TArray<FAssetData>& OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets); // [0x58f548c] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAssetsByPath(FName PackagePath, TArray<FAssetData>& OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets); // [0x5966190] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssetsByPackageName
-	// bool GetAssetsByPackageName(FName PackageName, TArray<FAssetData>& OutAssetData, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets); // [0x58f5148] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAssetsByPackageName(FName PackageName, TArray<FAssetData>& OutAssetData, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets); // [0x5965e8c] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssetsByClass
-	// bool GetAssetsByClass(FTopLevelAssetPath ClassPathName, TArray<FAssetData>& OutAssetData, bool bSearchSubClasses);       // [0x58f4efc] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAssetsByClass(FTopLevelAssetPath ClassPathName, TArray<FAssetData>& OutAssetData, bool bSearchSubClasses);       // [0x5965bcc] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssets
-	// bool GetAssets(FARFilter& Filter, TArray<FAssetData>& OutAssetData, bool bSkipARFilteredAssets);                         // [0x58f4c94] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetAssets(FARFilter& Filter, TArray<FAssetData>& OutAssetData, bool bSkipARFilteredAssets);                         // [0x5965964] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAssetByObjectPath
-	// FAssetData GetAssetByObjectPath(FName ObjectPath, bool bIncludeOnlyOnDiskAssets);                                        // [0x58f4ae0] Native|Public|HasDefaults|BlueprintCallable|Const 
+	// FAssetData GetAssetByObjectPath(FName ObjectPath, bool bIncludeOnlyOnDiskAssets);                                        // [0x5965838] Native|Public|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAncestorClassNames
-	// bool GetAncestorClassNames(FTopLevelAssetPath ClassPathName, TArray<FTopLevelAssetPath>& OutAncestorClassNames);         // [0x58f48bc] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAncestorClassNames(FTopLevelAssetPath ClassPathName, TArray<FTopLevelAssetPath>& OutAncestorClassNames);         // [0x596559c] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAllCachedPaths
-	// void GetAllCachedPaths(TArray<FString>& OutPathList);                                                                    // [0x58f4820] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void GetAllCachedPaths(TArray<FString>& OutPathList);                                                                    // [0x5965500] Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/AssetRegistry.AssetRegistry.GetAllAssets
-	// bool GetAllAssets(TArray<FAssetData>& OutAssetData, bool bIncludeOnlyOnDiskAssets);                                      // [0x58f4644] Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetAllAssets(TArray<FAssetData>& OutAssetData, bool bIncludeOnlyOnDiskAssets);                                      // [0x5965324] Native|Public|HasOutParms|BlueprintCallable|Const 
 };
 
 /// Class /Script/AssetRegistry.AssetRegistryImpl

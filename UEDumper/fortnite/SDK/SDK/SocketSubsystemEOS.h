@@ -19,12 +19,12 @@ public:
 };
 
 /// Class /Script/SocketSubsystemEOS.NetDriverEOSBase
-/// Size: 0x0008 (0x000880 - 0x000888)
+/// Size: 0x0008 (0x000888 - 0x000890)
 class UNetDriverEOSBase : public UIpNetDriver
 { 
 public:
-	bool                                               bIsPassthrough;                                             // 0x0880   (0x0001)  
-	bool                                               bIsUsingP2PSockets;                                         // 0x0881   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0882   (0x0006)  MISSED
+	bool                                               bIsPassthrough;                                             // 0x0888   (0x0001)  
+	bool                                               bIsUsingP2PSockets;                                         // 0x0889   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x6];                                       // 0x088A   (0x0006)  MISSED
 };
 

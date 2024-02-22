@@ -30,12 +30,12 @@ class UMovieSceneTakeSettings : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,15410) /* FString */              __um(HoursName);                                            // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,15411) /* FString */              __um(MinutesName);                                          // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,15412) /* FString */              __um(SecondsName);                                          // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,15413) /* FString */              __um(FramesName);                                           // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,15414) /* FString */              __um(SubFramesName);                                        // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,15415) /* FString */              __um(SlateName);                                            // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,15553) /* FString */              __um(HoursName);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,15554) /* FString */              __um(MinutesName);                                          // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,15555) /* FString */              __um(SecondsName);                                          // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,15556) /* FString */              __um(FramesName);                                           // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,15557) /* FString */              __um(SubFramesName);                                        // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,15558) /* FString */              __um(SlateName);                                            // 0x0078   (0x0010)  
 };
 
 /// Class /Script/TakeMovieScene.MovieSceneTakeTrack

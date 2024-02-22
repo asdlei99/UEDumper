@@ -25,7 +25,7 @@ struct FFloatOverrideDataflowNode : FDataflowNode
 /// Size: 0x0020 (0x0000E8 - 0x000108)
 struct FSelectionSetDataflowNode : FDataflowNode
 { 
-	SDK_UNDEFINED(16,12649) /* FString */              __um(Indices);                                              // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,12744) /* FString */              __um(Indices);                                              // 0x00E8   (0x0010)  
 	TArray<int32_t>                                    IndicesOut;                                                 // 0x00F8   (0x0010)  
 };
 

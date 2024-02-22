@@ -49,15 +49,25 @@ class UTestExtension : public USpatialMetricsSubsystemExtension
 public:
 };
 
-/// Class /Script/SpatialMetricsCore.SpatialMetric
+/// Class /Script/SpatialMetricsCore.SpatialMetricInterface
 /// Size: 0x0030 (0x000028 - 0x000058)
-class USpatialMetric : public UObject
+class USpatialMetricInterface : public UObject
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 88;
 
 public:
 	SMember(FSpatialMetricProperties)                  Properties                                                  OFFSET(getStruct<T>, {0x28, 48, 0, 0})
+};
+
+/// Class /Script/SpatialMetricsCore.SpatialMetricBase
+/// Size: 0x0058 (0x000058 - 0x0000B0)
+class USpatialMetricBase : public USpatialMetricInterface
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 176;
+
+public:
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsActorIndexer
@@ -82,21 +92,22 @@ public:
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsSubsystem
-/// Size: 0x0038 (0x000030 - 0x000068)
+/// Size: 0x0040 (0x000030 - 0x000070)
 class USpatialMetricsSubsystem : public UWorldSubsystem
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 104;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
-	CMember(TArray<class USpatialMetric*>)             Metrics                                                     OFFSET(get<T>, {0x40, 16, 0, 0})
+	CMember(TArray<class USpatialMetricInterface*>)    Metrics                                                     OFFSET(get<T>, {0x40, 16, 0, 0})
 	CMember(TArray<class USpatialMetricsSubsystemExtension*>) Extensions                                           OFFSET(get<T>, {0x50, 16, 0, 0})
 	DMember(float)                                     UpdateRateInSeconds                                         OFFSET(get<float>, {0x60, 4, 0, 0})
+	DMember(int32_t)                                   WarmUpFrames                                                OFFSET(get<int32_t>, {0x64, 4, 0, 0})
 };
 
 /// Class /Script/SpatialMetricsCore.TestMetric
 /// Size: 0x0080 (0x000058 - 0x0000D8)
-class UTestMetric : public USpatialMetric
+class UTestMetric : public USpatialMetricInterface
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 216;

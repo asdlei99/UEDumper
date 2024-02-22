@@ -75,7 +75,7 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
-	// FTransform BP_GetTransformOrigin();                                                                                   // [0x130d900] RequiredAPI|Event|Protected|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FTransform BP_GetTransformOrigin();                                                                                   // [0x3d1d968] RequiredAPI|Event|Protected|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneConsoleVariableTrackInterface
@@ -176,9 +176,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
-	// void SetConstraintBindingID(FMovieSceneObjectBindingID& InConstraintBindingID);                                       // [0x5f0e3dc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetConstraintBindingID(FMovieSceneObjectBindingID& InConstraintBindingID);                                       // [0x5f7716c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID
-	// FMovieSceneObjectBindingID GetConstraintBindingID();                                                                  // [0x5f0e040] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMovieSceneObjectBindingID GetConstraintBindingID();                                                                  // [0x5f76e14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieScene3DAttachSection
@@ -310,29 +310,29 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetSuppressSubtitles
-	// void SetSuppressSubtitles(bool bInSuppressSubtitles);                                                                 // [0x5f0ee84] Final|Native|Public|BlueprintCallable 
+	// void SetSuppressSubtitles(bool bInSuppressSubtitles);                                                                 // [0x5f77b90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
-	// void SetStartOffset(FFrameNumber InStartOffset);                                                                      // [0x5f0edc8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetStartOffset(FFrameNumber InStartOffset);                                                                      // [0x5f77a54] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetSound
-	// void SetSound(class USoundBase* InSound);                                                                             // [0x5f0ed08] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSound(class USoundBase* InSound);                                                                             // [0x5f779d4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetOverrideAttenuation
-	// void SetOverrideAttenuation(bool bInOverrideAttenuation);                                                             // [0x5f0e548] Final|Native|Public|BlueprintCallable 
+	// void SetOverrideAttenuation(bool bInOverrideAttenuation);                                                             // [0x5f77298] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetLooping
-	// void SetLooping(bool bInLooping);                                                                                     // [0x5f0e488] Final|Native|Public|BlueprintCallable 
+	// void SetLooping(bool bInLooping);                                                                                     // [0x5f77218] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.SetAttenuationSettings
-	// void SetAttenuationSettings(class USoundAttenuation* InAttenuationSettings);                                          // [0x5f0e260] Final|Native|Public|BlueprintCallable 
+	// void SetAttenuationSettings(class USoundAttenuation* InAttenuationSettings);                                          // [0x5f77034] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetSuppressSubtitles
-	// bool GetSuppressSubtitles();                                                                                          // [0x5f0e108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSuppressSubtitles();                                                                                          // [0x5f76edc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
-	// FFrameNumber GetStartOffset();                                                                                        // [0x5f0e0f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FFrameNumber GetStartOffset();                                                                                        // [0x5f76ec4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetSound
-	// class USoundBase* GetSound();                                                                                         // [0x5f0e0d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USoundBase* GetSound();                                                                                         // [0x5f76eac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetOverrideAttenuation
-	// bool GetOverrideAttenuation();                                                                                        // [0x5f0e080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetOverrideAttenuation();                                                                                        // [0x5f76e54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetLooping
-	// bool GetLooping();                                                                                                    // [0x5f0e068] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetLooping();                                                                                                    // [0x5f76e3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneAudioSection.GetAttenuationSettings
-	// class USoundAttenuation* GetAttenuationSettings();                                                                    // [0x5f0e000] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USoundAttenuation* GetAttenuationSettings();                                                                    // [0x5f76dd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneBaseCacheSection
@@ -370,9 +370,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
-	// void SetCameraBindingID(FMovieSceneObjectBindingID& InCameraBindingID);                                               // [0x5f0e330] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCameraBindingID(FMovieSceneObjectBindingID& InCameraBindingID);                                               // [0x5f770c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID
-	// FMovieSceneObjectBindingID GetCameraBindingID();                                                                      // [0x5f0e018] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMovieSceneObjectBindingID GetCameraBindingID();                                                                      // [0x5f76dec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MovieSceneTracks.MovieSceneCameraShakeSectionData
@@ -449,9 +449,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
-	// void SetShotDisplayName(FString InShotDisplayName);                                                                   // [0x5f0e608] Final|Native|Public|BlueprintCallable 
+	// void SetShotDisplayName(FString InShotDisplayName);                                                                   // [0x5f77318] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
-	// FString GetShotDisplayName();                                                                                         // [0x5f0e098] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetShotDisplayName();                                                                                         // [0x5f76e6c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneColorSection
@@ -499,13 +499,13 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneComponentMaterialParameterSection.RemoveScalarParameter
-	// bool RemoveScalarParameter(FMaterialParameterInfo& InParameterInfo);                                                  // [0x5f0e1c0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveScalarParameter(FMaterialParameterInfo& InParameterInfo);                                                  // [0x5f76f94] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneComponentMaterialParameterSection.RemoveColorParameter
-	// bool RemoveColorParameter(FMaterialParameterInfo& InParameterInfo);                                                   // [0x5f0e120] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveColorParameter(FMaterialParameterInfo& InParameterInfo);                                                   // [0x5f76ef4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneComponentMaterialParameterSection.AddScalarParameterKey
-	// void AddScalarParameterKey(FMaterialParameterInfo& InParameterInfo, FFrameNumber InTime, float InValue, FString InLayerName, FString InAssetName); // [0x5f0d548] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddScalarParameterKey(FMaterialParameterInfo& InParameterInfo, FFrameNumber InTime, float InValue, FString InLayerName, FString InAssetName); // [0x5f7631c] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneComponentMaterialParameterSection.AddColorParameterKey
-	// void AddColorParameterKey(FMaterialParameterInfo& InParameterInfo, FFrameNumber InTime, FLinearColor InValue, FString InLayerName, FString InAssetName); // [0x5f0ca8c] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddColorParameterKey(FMaterialParameterInfo& InParameterInfo, FFrameNumber InTime, FLinearColor InValue, FString InLayerName, FString InAssetName); // [0x5f75860] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneConstrainedSection
@@ -593,31 +593,31 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveVectorParameter
-	// bool RemoveVectorParameter(FName InParameterName);                                                                    // [0x5f5047c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveVectorParameter(FName InParameterName);                                                                    // [0x5fb92b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveVector2DParameter
-	// bool RemoveVector2DParameter(FName InParameterName);                                                                  // [0x5f503b0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveVector2DParameter(FName InParameterName);                                                                  // [0x5fb922c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveTransformParameter
-	// bool RemoveTransformParameter(FName InParameterName);                                                                 // [0x5f502e4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveTransformParameter(FName InParameterName);                                                                 // [0x5fb91a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveScalarParameter
-	// bool RemoveScalarParameter(FName InParameterName);                                                                    // [0x5f50218] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveScalarParameter(FName InParameterName);                                                                    // [0x5fb9114] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveColorParameter
-	// bool RemoveColorParameter(FName InParameterName);                                                                     // [0x5f5014c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveColorParameter(FName InParameterName);                                                                     // [0x5fb9088] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.RemoveBoolParameter
-	// bool RemoveBoolParameter(FName InParameterName);                                                                      // [0x5f50080] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool RemoveBoolParameter(FName InParameterName);                                                                      // [0x5fb8ffc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.GetParameterNames
-	// void GetParameterNames(TSet<FName>& ParameterNames);                                                                  // [0x5f4fef8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetParameterNames(TSet<FName>& ParameterNames);                                                                  // [0x5fb8e74] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddVectorParameterKey
-	// void AddVectorParameterKey(FName InParameterName, FFrameNumber InTime, FVector InValue);                              // [0x5f4fc50] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddVectorParameterKey(FName InParameterName, FFrameNumber InTime, FVector InValue);                              // [0x5fb8b18] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddVector2DParameterKey
-	// void AddVector2DParameterKey(FName InParameterName, FFrameNumber InTime, FVector2D InValue);                          // [0x5f4fa94] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddVector2DParameterKey(FName InParameterName, FFrameNumber InTime, FVector2D InValue);                          // [0x5fb88a8] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddTransformParameterKey
-	// void AddTransformParameterKey(FName InParameterName, FFrameNumber InTime, FTransform& InValue);                       // [0x5f4f8a4] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddTransformParameterKey(FName InParameterName, FFrameNumber InTime, FTransform& InValue);                       // [0x5fb861c] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddScalarParameterKey
-	// void AddScalarParameterKey(FName InParameterName, FFrameNumber InTime, float InValue);                                // [0x5f4f6ec] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddScalarParameterKey(FName InParameterName, FFrameNumber InTime, float InValue);                                // [0x5fb83bc] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddColorParameterKey
-	// void AddColorParameterKey(FName InParameterName, FFrameNumber InTime, FLinearColor InValue);                          // [0x5f4f530] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddColorParameterKey(FName InParameterName, FFrameNumber InTime, FLinearColor InValue);                          // [0x5fb814c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneParameterSection.AddBoolParameterKey
-	// void AddBoolParameterKey(FName InParameterName, FFrameNumber InTime, bool InValue);                                   // [0x5f4f378] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddBoolParameterKey(FName InParameterName, FFrameNumber InTime, bool InValue);                                   // [0x5fb7ee0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneCustomPrimitiveDataSection
@@ -655,9 +655,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneCVarSection.SetFromString
-	// void SetFromString(FString InString);                                                                                 // [0x5f51498] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetFromString(FString InString);                                                                                 // [0x5fba210] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneCVarSection.GetString
-	// FString GetString();                                                                                                  // [0x5f50040] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetString();                                                                                                  // [0x5fb8fbc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneDataLayerSection
@@ -676,25 +676,25 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.SetPrerollState
-	// void SetPrerollState(EDataLayerRuntimeState InPrerollState);                                                          // [0x5f51c2c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetPrerollState(EDataLayerRuntimeState InPrerollState);                                                          // [0x5fba960] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.SetFlushOnUnload
-	// void SetFlushOnUnload(bool bFlushOnUnload);                                                                           // [0x5f513d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetFlushOnUnload(bool bFlushOnUnload);                                                                           // [0x5fba190] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.SetDesiredState
-	// void SetDesiredState(EDataLayerRuntimeState InDesiredState);                                                          // [0x5f51318] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetDesiredState(EDataLayerRuntimeState InDesiredState);                                                          // [0x5fba114] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.SetDataLayers
-	// void SetDataLayers(TArray<FActorDataLayer>& InDataLayers);                                                            // [0x5f50c5c] Final|Native|Private|HasOutParms|BlueprintCallable 
+	// void SetDataLayers(TArray<FActorDataLayer>& InDataLayers);                                                            // [0x5fb9a58] Final|Native|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.SetDataLayerAssets
-	// void SetDataLayerAssets(TArray<UDataLayerAsset*>& InDataLayerAssets);                                                 // [0x5f50548] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDataLayerAssets(TArray<UDataLayerAsset*>& InDataLayerAssets);                                                 // [0x5fb9344] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.GetPrerollState
-	// EDataLayerRuntimeState GetPrerollState();                                                                             // [0x5f50028] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDataLayerRuntimeState GetPrerollState();                                                                             // [0x5fb8fa4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.GetFlushOnUnload
-	// bool GetFlushOnUnload();                                                                                              // [0x5f4fec4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetFlushOnUnload();                                                                                              // [0x5fb8e40] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.GetDesiredState
-	// EDataLayerRuntimeState GetDesiredState();                                                                             // [0x5f4feac] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDataLayerRuntimeState GetDesiredState();                                                                             // [0x5fb8e28] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.GetDataLayers
-	// TArray<FActorDataLayer> GetDataLayers();                                                                              // [0x5f4fe90] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FActorDataLayer> GetDataLayers();                                                                              // [0x5fb8e0c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneDataLayerSection.GetDataLayerAssets
-	// TArray<UDataLayerAsset*> GetDataLayerAssets();                                                                        // [0x5f4fe18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UDataLayerAsset*> GetDataLayerAssets();                                                                        // [0x5fb8d94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneDoubleSection
@@ -842,13 +842,13 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
-	// void SetVisibility(ELevelVisibility InVisibility);                                                                    // [0x5f51cec] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetVisibility(ELevelVisibility InVisibility);                                                                    // [0x5fba9dc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
-	// void SetLevelNames(TArray<FName>& InLevelNames);                                                                      // [0x5f51b8c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetLevelNames(TArray<FName>& InLevelNames);                                                                      // [0x5fba8c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
-	// ELevelVisibility GetVisibility();                                                                                     // [0x302125c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ELevelVisibility GetVisibility();                                                                                     // [0x300079c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
-	// TArray<FName> GetLevelNames();                                                                                        // [0x5f4fedc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetLevelNames();                                                                                        // [0x5fb8e58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneObjectPropertySection
@@ -1380,13 +1380,13 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtTime
-	// class UMovieSceneAsyncAction_SequencePrediction* PredictWorldTransformAtTime(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, float TimeInSeconds); // [0x5f88858] Final|Native|Static|Public|BlueprintCallable 
+	// class UMovieSceneAsyncAction_SequencePrediction* PredictWorldTransformAtTime(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, float TimeInSeconds); // [0x5ff2c60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtFrame
-	// class UMovieSceneAsyncAction_SequencePrediction* PredictWorldTransformAtFrame(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, FFrameTime FrameTime); // [0x5f88624] Final|Native|Static|Public|BlueprintCallable 
+	// class UMovieSceneAsyncAction_SequencePrediction* PredictWorldTransformAtFrame(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, FFrameTime FrameTime); // [0x5ff2a38] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtTime
-	// class UMovieSceneAsyncAction_SequencePrediction* PredictLocalTransformAtTime(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, float TimeInSeconds); // [0x5f88408] Final|Native|Static|Public|BlueprintCallable 
+	// class UMovieSceneAsyncAction_SequencePrediction* PredictLocalTransformAtTime(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, float TimeInSeconds); // [0x5ff28d4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtFrame
-	// class UMovieSceneAsyncAction_SequencePrediction* PredictLocalTransformAtFrame(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, FFrameTime FrameTime); // [0x5f881d4] Final|Native|Static|Public|BlueprintCallable 
+	// class UMovieSceneAsyncAction_SequencePrediction* PredictLocalTransformAtFrame(class UMovieSceneSequencePlayer* Player, class USceneComponent* TargetComponent, FFrameTime FrameTime); // [0x5ff26ac] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/MovieSceneTracks.MovieScenePredictionSystem
@@ -1851,9 +1851,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieSceneTracks.MovieSceneSkeletalAnimationTrack.SetSwapRootBone
-	// void SetSwapRootBone(ESwapRootBone InValue);                                                                          // [0x5f9b630] Final|RequiredAPI|Native|Public 
+	// void SetSwapRootBone(ESwapRootBone InValue);                                                                          // [0x6005980] Final|RequiredAPI|Native|Public 
 	// Function /Script/MovieSceneTracks.MovieSceneSkeletalAnimationTrack.GetSwapRootBone
-	// ESwapRootBone GetSwapRootBone();                                                                                      // [0x5f9b618] Final|RequiredAPI|Native|Public|Const 
+	// ESwapRootBone GetSwapRootBone();                                                                                      // [0x6005968] Final|RequiredAPI|Native|Public|Const 
 };
 
 /// Class /Script/MovieSceneTracks.MovieSceneSlomoTrack

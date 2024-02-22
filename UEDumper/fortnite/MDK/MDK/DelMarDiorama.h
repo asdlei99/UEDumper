@@ -30,7 +30,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarCockpitActor.BP_OnBoundVehicleChanged
-	// void BP_OnBoundVehicleChanged(class ADelMarVehicle* NewVehicle);                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnBoundVehicleChanged(class ADelMarVehicle* NewVehicle);                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarDiorama.DelMarDioramaActor
@@ -62,7 +62,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDioramaActor.HandleSequenceFinished
-	// void HandleSequenceFinished();                                                                                           // [0xbae03d4] Final|Native|Protected 
+	// void HandleSequenceFinished();                                                                                           // [0xbe97340] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarDiorama.DelMarDioramaConfigData
@@ -103,21 +103,21 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarIntercomPlayInteraction
-	// void DelMarIntercomPlayInteraction(FString InteractionTag);                                                              // [0x65e4080] Final|Exec|Native|Protected 
+	// void DelMarIntercomPlayInteraction(FString InteractionTag);                                                              // [0x6650f60] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarIntercomBroadcastEmote
-	// void DelMarIntercomBroadcastEmote(FString EmoteTag);                                                                     // [0x65e4080] Final|Exec|Native|Protected 
+	// void DelMarIntercomBroadcastEmote(FString EmoteTag);                                                                     // [0x6650f60] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaSetVisibleInSceneCaptureOnly
-	// void DelMarDioramaSetVisibleInSceneCaptureOnly(bool bOnly);                                                              // [0x5d6b308] Final|Exec|Native|Protected 
+	// void DelMarDioramaSetVisibleInSceneCaptureOnly(bool bOnly);                                                              // [0x5dd0bf8] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaSetLocation
-	// void DelMarDioramaSetLocation(float X, float Y, float Z);                                                                // [0x8c50b28] Final|Exec|Native|Protected 
+	// void DelMarDioramaSetLocation(float X, float Y, float Z);                                                                // [0x8c38d50] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaSetLightingChannel
-	// void DelMarDioramaSetLightingChannel(bool bMainChannel);                                                                 // [0x5d6b308] Final|Exec|Native|Protected 
+	// void DelMarDioramaSetLightingChannel(bool bMainChannel);                                                                 // [0x5dd0bf8] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaSetEnabled
-	// void DelMarDioramaSetEnabled(bool bEnabled);                                                                             // [0x5d6b308] Final|Exec|Native|Protected 
+	// void DelMarDioramaSetEnabled(bool bEnabled);                                                                             // [0x5dd0bf8] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaSetDriverReaction
-	// void DelMarDioramaSetDriverReaction(FString ReactionTag);                                                                // [0x65e4080] Final|Exec|Native|Protected 
+	// void DelMarDioramaSetDriverReaction(FString ReactionTag);                                                                // [0x6650f60] Final|Exec|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverCheatManager.DelMarDioramaOpenChannel
-	// void DelMarDioramaOpenChannel(bool bOpened);                                                                             // [0x5d6b308] Final|Exec|Native|Protected 
+	// void DelMarDioramaOpenChannel(bool bOpened);                                                                             // [0x5dd0bf8] Final|Exec|Native|Protected 
 };
 
 /// Class /Script/DelMarDiorama.DelMarDriverSequenceData
@@ -190,7 +190,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDriverAnimInstance.IsDrivingSpeed
-	// bool IsDrivingSpeed();                                                                                                   // [0xbae0e64] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDrivingSpeed();                                                                                                   // [0xbe97bdc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarDiorama.DelMarCockpitAnimInstance
@@ -232,7 +232,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDioramaControllerComponent.HandleViewTargetChanged
-	// void HandleViewTargetChanged(class AFortPlayerController* PC, class AActor* Old, class AActor* NewViewTarget);           // [0xbae0aa0] Final|Native|Protected 
+	// void HandleViewTargetChanged(class AFortPlayerController* PC, class AActor* Old, class AActor* NewViewTarget);           // [0xbe979a4] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarDiorama.DelMarDriverChannelBase
@@ -253,7 +253,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDriverChannelBase.HandleSequenceFinished
-	// void HandleSequenceFinished();                                                                                           // [0x156e344] Native|Protected     
+	// void HandleSequenceFinished();                                                                                           // [0x1e2bc88] Native|Protected     
 };
 
 /// Class /Script/DelMarDiorama.DelMarDriverChannel
@@ -278,25 +278,25 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleVehicleSpawned
-	// void HandleVehicleSpawned(bool bFirstCar, bool bPrevCarDemolished);                                                      // [0xbae0950] Final|Native|Protected 
+	// void HandleVehicleSpawned(bool bFirstCar, bool bPrevCarDemolished);                                                      // [0xbe978e0] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleVehicleLanded
-	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                      // [0xbae0810] Final|Native|Protected 
+	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                      // [0xbe97818] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleVehicleHitWall
-	// void HandleVehicleHitWall(float ImpactMagnitude, FVector WorldLocation, float ForwardRotationDegrees);                   // [0xbae0644] Final|Native|Protected|HasDefaults 
+	// void HandleVehicleHitWall(float ImpactMagnitude, FVector WorldLocation, float ForwardRotationDegrees);                   // [0xbe975a4] Final|Native|Protected|HasDefaults 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xbae0584] Final|Native|Protected 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xbe97468] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleTurboActivated
-	// void HandleTurboActivated();                                                                                             // [0xbae0570] Final|Native|Protected 
+	// void HandleTurboActivated();                                                                                             // [0xbe97454] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleStartlineBoostActivated
-	// void HandleStartlineBoostActivated(float PercentageSpeedEarned);                                                         // [0xbae04ac] Final|Native|Protected 
+	// void HandleStartlineBoostActivated(float PercentageSpeedEarned);                                                         // [0xbe973d4] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleSpeedChanged
-	// void HandleSpeedChanged(float NewSpeed);                                                                                 // [0xbae03e8] Final|Native|Protected 
+	// void HandleSpeedChanged(float NewSpeed);                                                                                 // [0xbe97354] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleHazardSpeedLost
-	// void HandleHazardSpeedLost();                                                                                            // [0xbae03c0] Final|Native|Protected 
+	// void HandleHazardSpeedLost();                                                                                            // [0xbe9732c] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleDriftBoostActivated
-	// void HandleDriftBoostActivated(float PercentageMaxBoostGained);                                                          // [0xbae02fc] Final|Native|Protected 
+	// void HandleDriftBoostActivated(float PercentageMaxBoostGained);                                                          // [0xbe972ac] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarDriverChannel.HandleDraftStateChanged
-	// void HandleDraftStateChanged(EDelmarDraftingState DraftState);                                                           // [0xbae023c] Final|Native|Protected 
+	// void HandleDraftStateChanged(EDelmarDraftingState DraftState);                                                           // [0xbe9722c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarDiorama.DelMarDriverMannequin
@@ -331,15 +331,15 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarDiorama.DelMarIntercomComponent.ServerReceiveInteraction
-	// void ServerReceiveInteraction(FGameplayTag EmoteTag, class APlayerState* Receiver);                                      // [0xbae0f4c] Net|Native|Event|Public|NetServer 
+	// void ServerReceiveInteraction(FGameplayTag EmoteTag, class APlayerState* Receiver);                                      // [0xbe97d44] Net|Native|Event|Public|NetServer 
 	// Function /Script/DelMarDiorama.DelMarIntercomComponent.ServerReceiveEmote
-	// void ServerReceiveEmote(FGameplayTag EmoteTag);                                                                          // [0xbae0e88] Net|Native|Event|Protected|NetServer 
+	// void ServerReceiveEmote(FGameplayTag EmoteTag);                                                                          // [0xbe97c00] Net|Native|Event|Protected|NetServer 
 	// Function /Script/DelMarDiorama.DelMarIntercomComponent.HandleViewTargetChanged
-	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xbae0ca8] Final|Native|Protected 
+	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xbe97ae4] Final|Native|Protected 
 	// Function /Script/DelMarDiorama.DelMarIntercomComponent.ClientReceiveInteraction
-	// void ClientReceiveInteraction(FGameplayTag InteractionTag, class APlayerState* Instigator, class APlayerState* Receiver); // [0xbae0080] Net|Native|Event|Protected|NetClient 
+	// void ClientReceiveInteraction(FGameplayTag InteractionTag, class APlayerState* Instigator, class APlayerState* Receiver); // [0xbe96f1c] Net|Native|Event|Protected|NetClient 
 	// Function /Script/DelMarDiorama.DelMarIntercomComponent.ClientReceiveEmote
-	// void ClientReceiveEmote(FGameplayTag EmoteTag, class APlayerState* Instigator);                                          // [0xbadff3c] Net|Native|Event|Protected|NetClient 
+	// void ClientReceiveEmote(FGameplayTag EmoteTag, class APlayerState* Instigator);                                          // [0xbe96cec] Net|Native|Event|Protected|NetClient 
 };
 
 /// Struct /Script/DelMarDiorama.DelMarDriverSequenceDataList

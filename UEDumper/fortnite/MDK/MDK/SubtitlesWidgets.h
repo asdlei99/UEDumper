@@ -46,7 +46,7 @@ public:
 
 	/// Functions
 	// Function /Script/SubtitlesWidgets.SubtitleDisplay.HasSubtitles
-	// bool HasSubtitles();                                                                                                     // [0x7c6da68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSubtitles();                                                                                                     // [0x7cc4e6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SubtitlesWidgets.SubtitleDisplayNative
@@ -75,13 +75,13 @@ public:
 
 	/// Functions
 	// Function /Script/SubtitlesWidgets.FortMediaSubtitlesPlayer.Stop
-	// void Stop();                                                                                                             // [0x7c6db98] Final|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                             // [0x7cc4f58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SubtitlesWidgets.FortMediaSubtitlesPlayer.SetSubtitles
-	// void SetSubtitles(class UOverlays* Subtitles);                                                                           // [0x7c6dacc] Final|Native|Public|BlueprintCallable 
+	// void SetSubtitles(class UOverlays* Subtitles);                                                                           // [0x7cc4ed0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SubtitlesWidgets.FortMediaSubtitlesPlayer.Play
-	// void Play();                                                                                                             // [0x7c6dab8] Final|Native|Public|BlueprintCallable 
+	// void Play();                                                                                                             // [0x7cc4ebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SubtitlesWidgets.FortMediaSubtitlesPlayer.BindToMediaPlayer
-	// void BindToMediaPlayer(class UMediaPlayer* InMediaPlayer);                                                               // [0x7c6d930] Final|Native|Public|BlueprintCallable 
+	// void BindToMediaPlayer(class UMediaPlayer* InMediaPlayer);                                                               // [0x7cc4d78] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SubtitlesWidgets.SubtitleDisplaySubsystem

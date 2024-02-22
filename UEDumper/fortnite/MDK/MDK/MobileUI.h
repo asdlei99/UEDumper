@@ -13,26 +13,6 @@
 /// dependency: UI
 /// dependency: UMG
 
-/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_HideIfAugmentsOpen.BBE_HideIfAugmentsOpen_C
-/// Size: 0x0000 (0x000090 - 0x000090)
-class UBBE_HideIfAugmentsOpen_C : public UFortMobileActionBBE_AugmentShoot
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 144;
-
-public:
-};
-
-/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_AugmentRotate.BBE_AugmentRotate_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_AugmentRotate_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
-
-public:
-};
-
 /// Class /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_Selection_Proxy.WBP_Mobile_Augment_Selection_Proxy_C
 /// Size: 0x0008 (0x0003D0 - 0x0003D8)
 class UWBP_Mobile_Augment_Selection_Proxy_C : public UFortMobileHUDElementProxy
@@ -46,7 +26,17 @@ public:
 
 	/// Functions
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_Selection_Proxy.WBP_Mobile_Augment_Selection_Proxy_C.ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy
-	// void ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy(int32_t EntryPoint);                                            // [0x130d900] Final                
+	// void ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy(int32_t EntryPoint);                                            // [0x3d1d968] Final                
+};
+
+/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_HideIfAugmentsOpen.BBE_HideIfAugmentsOpen_C
+/// Size: 0x0000 (0x000090 - 0x000090)
+class UBBE_HideIfAugmentsOpen_C : public UFortMobileActionBBE_AugmentShoot
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 144;
+
+public:
 };
 
 /// Class /PlayerAugmentsUI/MobileUI/HLT/BB_AugmentsList.BB_AugmentsList_C
@@ -59,12 +49,12 @@ class UBB_AugmentsList_C : public UFortMobileActionButtonBehavior
 public:
 };
 
-/// Class /PlayerAugmentsUI/MobileUI/HLT/BB_ExitAugment.BB_ExitAugment_C
-/// Size: 0x0000 (0x000138 - 0x000138)
-class UBB_ExitAugment_C : public UFortMobileActionButtonBehavior
+/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_AugmentRotate.BBE_AugmentRotate_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_AugmentRotate_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 128;
 
 public:
 };
@@ -95,6 +85,16 @@ class UBB_RerollAugment_C : public UFortMobileActionButtonBehavior_RerollAugment
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+};
+
+/// Class /PlayerAugmentsUI/MobileUI/HLT/BB_ExitAugment.BB_ExitAugment_C
+/// Size: 0x0000 (0x000138 - 0x000138)
+class UBB_ExitAugment_C : public UFortMobileActionButtonBehavior
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 };
@@ -133,8 +133,8 @@ public:
 
 	/// Functions
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_SelectionTimer.WBP_Mobile_Augment_SelectionTimer_C.BP_OnHUDElementVisibilityChanged
-	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_SelectionTimer.WBP_Mobile_Augment_SelectionTimer_C.ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer
-	// void ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer(int32_t EntryPoint);                                             // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer(int32_t EntryPoint);                                             // [0x3d1d968] Final|HasDefaults    
 };
 

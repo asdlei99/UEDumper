@@ -124,7 +124,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortSoundCueTemplates.FortSoundCueTemplateDefaultSettings.GetSettingsForTemplateType
-	// class UFortSoundCueTemplateDefaults* GetSettingsForTemplateType(class UClass* TemplateType);                             // [0xc55a820] Final|Native|Public  
+	// class UFortSoundCueTemplateDefaults* GetSettingsForTemplateType(class UClass* TemplateType);                             // [0xc4ff7b4] Final|Native|Public  
 };
 
 /// Class /Script/FortSoundCueTemplates.FortSoundCueTemplateSettings
@@ -140,7 +140,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortSoundCueTemplates.FortSoundCueTemplateSettings.GetDefaultSettingsForTemplateType
-	// class UFortSoundCueTemplateDefaults* GetDefaultSettingsForTemplateType(class UClass* TemplateType);                      // [0xc55a71c] Final|Native|Public|Const 
+	// class UFortSoundCueTemplateDefaults* GetDefaultSettingsForTemplateType(class UClass* TemplateType);                      // [0xc4ff6f4] Final|Native|Public|Const 
 };
 
 /// Class /Script/FortSoundCueTemplates.FortSoundCueTemplateSimple

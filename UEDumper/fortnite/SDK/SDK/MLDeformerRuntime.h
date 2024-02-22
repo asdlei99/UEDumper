@@ -39,13 +39,13 @@ public:
 class UMLDeformerAssetMapping : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,14812) /* TArray<TWeakObjectPtr<UAthenaCharacterItemDefinition*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMappingKeys); // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,14813) /* TArray<TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMappingValues); // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,14814) /* TArray<TWeakObjectPtr<UCustomCharacterPart*>> */ __um(CharacterPartToMLDeformerAssetMappingKeys); // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,14815) /* TArray<TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterPartToMLDeformerAssetMappingValues); // 0x0060   (0x0010)  
-	SDK_UNDEFINED(80,14816) /* TMap<TWeakObjectPtr<UMLDeformerAsset*>, TWeakObjectPtr<UMeshDeformer*>> */ __um(MLDeformerToMeshDeformerAssetMap); // 0x0070   (0x0050)  
-	SDK_UNDEFINED(80,14817) /* TMap<TWeakObjectPtr<UAthenaCharacterItemDefinition*>, TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMap); // 0x00C0   (0x0050)  
-	SDK_UNDEFINED(80,14818) /* TMap<TWeakObjectPtr<UCustomCharacterPart*>, TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterPartToMLDeformerAssetMap); // 0x0110   (0x0050)  
+	SDK_UNDEFINED(16,14952) /* TArray<TWeakObjectPtr<UAthenaCharacterItemDefinition*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMappingKeys); // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,14953) /* TArray<TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMappingValues); // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,14954) /* TArray<TWeakObjectPtr<UCustomCharacterPart*>> */ __um(CharacterPartToMLDeformerAssetMappingKeys); // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,14955) /* TArray<TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterPartToMLDeformerAssetMappingValues); // 0x0060   (0x0010)  
+	SDK_UNDEFINED(80,14956) /* TMap<TWeakObjectPtr<UMLDeformerAsset*>, TWeakObjectPtr<UMeshDeformer*>> */ __um(MLDeformerToMeshDeformerAssetMap); // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,14957) /* TMap<TWeakObjectPtr<UAthenaCharacterItemDefinition*>, TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterItemDefinitionToMLDeformerAssetMap); // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,14958) /* TMap<TWeakObjectPtr<UCustomCharacterPart*>, TWeakObjectPtr<UMLDeformerAsset*>> */ __um(CharacterPartToMLDeformerAssetMap); // 0x0110   (0x0050)  
 };
 
 /// Class /Script/MLDeformerRuntime.MLDeformerComponentManager

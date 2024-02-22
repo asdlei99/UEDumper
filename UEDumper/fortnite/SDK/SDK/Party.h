@@ -217,7 +217,7 @@ class UChatroom : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,2647) /* FString */               __um(CurrentChatRoomId);                                    // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,2657) /* FString */               __um(CurrentChatRoomId);                                    // 0x0028   (0x0010)  
 	int32_t                                            MaxChatRoomRetries;                                         // 0x0038   (0x0004)  
 	int32_t                                            NumChatRoomRetries;                                         // 0x003C   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0040   (0x0018)  MISSED
@@ -245,7 +245,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x0080   (0x0050)  MISSED
 	bool                                               bRemoveInvalidatedUserFromMaps;                             // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x00D1   (0x0003)  MISSED
-	SDK_UNDEFINED(8,2648) /* TWeakObjectPtr<ULocalPlayer*> */ __um(LocalPlayerOwner);                              // 0x00D4   (0x0008)  
+	SDK_UNDEFINED(8,2658) /* TWeakObjectPtr<ULocalPlayer*> */ __um(LocalPlayerOwner);                              // 0x00D4   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x00DC   (0x0004)  MISSED
 	class USocialChatManager*                          SocialChatManager;                                          // 0x00E0   (0x0008)  
 	unsigned char                                      UnknownData04_6[0x1C8];                                     // 0x00E8   (0x01C8)  MISSED
@@ -257,12 +257,12 @@ class USocialChatManager : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x78];                                      // 0x0000   (0x0078)  MISSED
-	SDK_UNDEFINED(80,2649) /* TMap<TWeakObjectPtr<USocialUser*>, USocialPrivateMessageChannel*> */ __um(DirectChannelsByTargetUser); // 0x0078   (0x0050)  
-	SDK_UNDEFINED(80,2650) /* TMap<FString, USocialChatRoom*> */ __um(ChatRoomsById);                              // 0x00C8   (0x0050)  
-	SDK_UNDEFINED(80,2651) /* TMap<FString, USocialReadOnlyChatChannel*> */ __um(ReadOnlyChannelsByDisplayName);   // 0x0118   (0x0050)  
+	SDK_UNDEFINED(80,2659) /* TMap<TWeakObjectPtr<USocialUser*>, USocialPrivateMessageChannel*> */ __um(DirectChannelsByTargetUser); // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,2660) /* TMap<FString, USocialChatRoom*> */ __um(ChatRoomsById);                              // 0x00C8   (0x0050)  
+	SDK_UNDEFINED(80,2661) /* TMap<FString, USocialReadOnlyChatChannel*> */ __um(ReadOnlyChannelsByDisplayName);   // 0x0118   (0x0050)  
 	bool                                               bEnableChatSlashCommands;                                   // 0x0168   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0169   (0x0007)  MISSED
-	SDK_UNDEFINED(80,2652) /* TMap<FUniqueNetIdRepl, USocialGroupChannel*> */ __um(GroupChannels);                 // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,2662) /* TMap<FUniqueNetIdRepl, USocialGroupChannel*> */ __um(GroupChannels);                 // 0x0170   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x60];                                      // 0x01C0   (0x0060)  MISSED
 };
 
@@ -290,7 +290,7 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	class USocialUser*                                 SocialUser;                                                 // 0x0028   (0x0008)  
 	FUniqueNetIdRepl                                   GroupId;                                                    // 0x0030   (0x0030)  
-	SDK_UNDEFINED(24,2653) /* FText */                 __um(DisplayName);                                          // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,2663) /* FText */                 __um(DisplayName);                                          // 0x0060   (0x0018)  
 	TArray<class USocialUser*>                         Members;                                                    // 0x0078   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0088   (0x0010)  MISSED
 };
@@ -328,15 +328,15 @@ public:
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0070   (0x0010)  MISSED
 	FUniqueNetIdRepl                                   OwningLocalUserId;                                          // 0x0080   (0x0030)  
 	FUniqueNetIdRepl                                   CurrentLeaderId;                                            // 0x00B0   (0x0030)  
-	SDK_UNDEFINED(80,2654) /* TMap<FUniqueNetIdRepl, UPartyMember*> */ __um(PartyMembersById);                     // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,2664) /* TMap<FUniqueNetIdRepl, UPartyMember*> */ __um(PartyMembersById);                     // 0x00E0   (0x0050)  
 	bool                                               bEnableAutomaticPartyRejoin;                                // 0x0130   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x57];                                      // 0x0131   (0x0057)  MISSED
 	double                                             PlatformUserInviteCooldown;                                 // 0x0188   (0x0008)  
 	double                                             PrimaryUserInviteCooldown;                                  // 0x0190   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x70];                                      // 0x0198   (0x0070)  MISSED
-	SDK_UNDEFINED(8,2655) /* TWeakObjectPtr<APartyBeaconClient*> */ __um(ReservationBeaconClient);                 // 0x0208   (0x0008)  
+	SDK_UNDEFINED(8,2665) /* TWeakObjectPtr<APartyBeaconClient*> */ __um(ReservationBeaconClient);                 // 0x0208   (0x0008)  
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x0210   (0x0004)  MISSED
-	SDK_UNDEFINED(8,2656) /* TWeakObjectPtr<ASpectatorBeaconClient*> */ __um(SpectatorBeaconClient);               // 0x0214   (0x0008)  
+	SDK_UNDEFINED(8,2666) /* TWeakObjectPtr<ASpectatorBeaconClient*> */ __um(SpectatorBeaconClient);               // 0x0214   (0x0008)  
 	unsigned char                                      UnknownData05_5[0x2C];                                      // 0x021C   (0x002C)  MISSED
 	float                                              JoinInProgressTimerRate;                                    // 0x0248   (0x0004)  
 	int32_t                                            JoinInProgressRequestTimeout;                               // 0x024C   (0x0004)  
@@ -366,13 +366,13 @@ public:
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FSocialPlatformDescription
 { 
-	SDK_UNDEFINED(16,2657) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2658) /* FString */               __um(PlatformType);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2667) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2668) /* FString */               __um(PlatformType);                                         // 0x0010   (0x0010)  
 	FName                                              OnlineSubsystem;                                            // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2659) /* FString */               __um(SessionType);                                          // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,2660) /* FString */               __um(ExternalAccountType);                                  // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,2661) /* FString */               __um(CrossplayPool);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,2669) /* FString */               __um(SessionType);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,2670) /* FString */               __um(ExternalAccountType);                                  // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,2671) /* FString */               __um(CrossplayPool);                                        // 0x0048   (0x0010)  
 };
 
 /// Class /Script/Party.SocialSettings
@@ -416,7 +416,7 @@ struct FPartyMemberPlatformData
 { 
 	FUserPlatform                                      Platform;                                                   // 0x0000   (0x0058)  
 	FUniqueNetIdRepl                                   UniqueID;                                                   // 0x0058   (0x0030)  
-	SDK_UNDEFINED(16,2662) /* FString */               __um(SessionId);                                            // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,2672) /* FString */               __um(SessionId);                                            // 0x0088   (0x0010)  
 };
 
 /// Struct /Script/Party.PartyMemberJoinInProgressRequest
@@ -462,7 +462,7 @@ struct FPartyMemberRepData : FOnlinePartyRepDataBase
 	unsigned char                                      UnknownData01_5[0x90];                                      // 0x00C0   (0x0090)  MISSED
 	ECrossplayPreference                               CrossplayPreference;                                        // 0x0150   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x37];                                      // 0x0151   (0x0037)  MISSED
-	SDK_UNDEFINED(16,2663) /* FString */               __um(JoinMethod);                                           // 0x0188   (0x0010)  
+	SDK_UNDEFINED(16,2673) /* FString */               __um(JoinMethod);                                           // 0x0188   (0x0010)  
 	unsigned char                                      UnknownData03_5[0x30];                                      // 0x0198   (0x0030)  MISSED
 	FPartyMemberJoinInProgressData                     JoinInProgressData;                                         // 0x01C8   (0x0048)  
 	unsigned char                                      UnknownData04_6[0x60];                                      // 0x0210   (0x0060)  MISSED
@@ -472,8 +472,8 @@ struct FPartyMemberRepData : FOnlinePartyRepDataBase
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FPartyPlatformSessionInfo
 { 
-	SDK_UNDEFINED(16,2664) /* FString */               __um(SessionType);                                          // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2665) /* FString */               __um(SessionId);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2674) /* FString */               __um(SessionType);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2675) /* FString */               __um(SessionId);                                            // 0x0010   (0x0010)  
 	FUniqueNetIdRepl                                   OwnerPrimaryId;                                             // 0x0020   (0x0030)  
 };
 

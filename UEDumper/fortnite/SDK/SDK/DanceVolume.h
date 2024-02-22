@@ -48,23 +48,23 @@ public:
 
 	/// Functions
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.StopOwnerEmoteAudio
-	// void StopOwnerEmoteAudio();                                                                                           // [0xb757f74] Final|Native|Public|BlueprintCallable 
+	// void StopOwnerEmoteAudio();                                                                                           // [0xb86e0d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.SetTempo
-	// void SetTempo(float NewTempo);                                                                                        // [0xb757eb0] Final|Native|Public|BlueprintCallable 
+	// void SetTempo(float NewTempo);                                                                                        // [0xb86e050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.SetDanceBeatInfo
-	// void SetDanceBeatInfo(FDanceBeatInfo& NewDanceBeatInfo);                                                              // [0xb757e1c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDanceBeatInfo(FDanceBeatInfo& NewDanceBeatInfo);                                                              // [0xb86dfbc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.SetBeatSyncMode
-	// void SetBeatSyncMode(EDanceBeatSyncMode NewMode);                                                                     // [0xb757d5c] Final|Native|Public|BlueprintCallable 
+	// void SetBeatSyncMode(EDanceBeatSyncMode NewMode);                                                                     // [0xb86df40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.OnRep_SyncMode
-	// void OnRep_SyncMode();                                                                                                // [0xb757cfc] Final|Native|Private 
+	// void OnRep_SyncMode();                                                                                                // [0xb86dee0] Final|Native|Private 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.IsTempoSyncEnabled
-	// bool IsTempoSyncEnabled();                                                                                            // [0xb757ce0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsTempoSyncEnabled();                                                                                            // [0xb86dec4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.GetOwnerSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetOwnerSkeletalMeshComponent();                                                        // [0x658126c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class USkeletalMeshComponent* GetOwnerSkeletalMeshComponent();                                                        // [0x65f0b14] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.GetOwnerFortPlayerPawn
-	// class AFortPlayerPawn* GetOwnerFortPlayerPawn();                                                                      // [0x8fca840] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AFortPlayerPawn* GetOwnerFortPlayerPawn();                                                                      // [0x7a5f454] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DanceVolume.DanceSynchronizerComponent.CalculateDanceMontagePlayRate
-	// float CalculateDanceMontagePlayRate(float CurrentTempo, class UAnimMontage* Montage, FDanceBeatInfo& DanceBeatInfo);  // [0xb7579e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float CalculateDanceMontagePlayRate(float CurrentTempo, class UAnimMontage* Montage, FDanceBeatInfo& DanceBeatInfo);  // [0xb86dc88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DanceVolume.DanceVolumeLibrary
@@ -76,8 +76,8 @@ public:
 
 	/// Functions
 	// Function /Script/DanceVolume.DanceVolumeLibrary.GetLastEmoteExecuted
-	// class UFortItemDefinition* GetLastEmoteExecuted(class AController* Controller);                                       // [0xad7b658] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UFortItemDefinition* GetLastEmoteExecuted(class AController* Controller);                                       // [0xb0aa9a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DanceVolume.DanceVolumeLibrary.ForceStopMontage
-	// void ForceStopMontage(class AFortPawn* FortPawn);                                                                     // [0xb757bdc] Final|Native|Static|Public|BlueprintCallable 
+	// void ForceStopMontage(class AFortPawn* FortPawn);                                                                     // [0xb86de04] Final|Native|Static|Public|BlueprintCallable 
 };
 

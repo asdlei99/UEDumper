@@ -72,9 +72,9 @@ public:
 
 	/// Functions
 	// Function /Script/LiveLinkComponents.LiveLinkComponentController.SetSubjectRepresentation
-	// void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation);                                   // [0xc46e788] Final|Native|Public|BlueprintCallable 
+	// void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation);                                   // [0xc413a94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LiveLinkComponents.LiveLinkComponentController.GetSubjectRepresentation
-	// FLiveLinkSubjectRepresentation GetSubjectRepresentation();                                                               // [0xc46e744] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FLiveLinkSubjectRepresentation GetSubjectRepresentation();                                                               // [0xc413a50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/LiveLinkComponents.LiveLinkTransformControllerData

@@ -17,6 +17,7 @@ class UBeatSyncedAnimMetaData : public UAnimMetaData
 
 public:
 	DMember(bool)                                      bAllowBeatsyncing                                           OFFSET(get<bool>, {0x28, 1, 0, 0})
+	DMember(bool)                                      bIsForEmote                                                 OFFSET(get<bool>, {0x29, 1, 0, 0})
 };
 
 /// Class /Script/BeatSyncedAnimMetaData.PreciseBeatSyncedAnimMetaData

@@ -17,17 +17,17 @@ struct FStruct_VehicleCosmetics_Painted
 	FLinearColor                                       Metallic_41_F57CE68E419E301DD160BEB5D0E32BFC;               // 0x0020   (0x0010)  
 };
 
-/// Struct /VehicleCosmetics/DataTables/Struct_VEH_Windows.Struct_VEH_Windows
-/// Size: 0x0020 (0x000000 - 0x000020)
-struct FStruct_VEH_Windows
-{ 
-	SDK_UNDEFINED(32,12650) /* TWeakObjectPtr<UMaterialInstanceConstant*> */ __um(Window_23_9242D84D446944DD0D7D739136E38C28); // 0x0000   (0x0020)  
-};
-
 /// Struct /VehicleCosmetics/DataTables/Struct_VEH_Skins.Struct_VEH_Skins
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FStruct_VEH_Skins
 { 
-	SDK_UNDEFINED(32,12651) /* TWeakObjectPtr<UMaterialInstanceConstant*> */ __um(SkinMIC_19_9242D84D446944DD0D7D739136E38C28); // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12745) /* TWeakObjectPtr<UMaterialInstanceConstant*> */ __um(SkinMIC_19_9242D84D446944DD0D7D739136E38C28); // 0x0000   (0x0020)  
+};
+
+/// Struct /VehicleCosmetics/DataTables/Struct_VEH_Windows.Struct_VEH_Windows
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FStruct_VEH_Windows
+{ 
+	SDK_UNDEFINED(32,12746) /* TWeakObjectPtr<UMaterialInstanceConstant*> */ __um(Window_23_9242D84D446944DD0D7D739136E38C28); // 0x0000   (0x0020)  
 };
 

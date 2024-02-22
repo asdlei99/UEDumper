@@ -49,6 +49,6 @@ class UMaterialShaderQualitySettings : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,14668) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);            // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14806) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);            // 0x0028   (0x0050)  
 };
 

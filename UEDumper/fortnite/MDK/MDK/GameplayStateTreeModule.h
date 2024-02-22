@@ -26,11 +26,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.SetStartLogicAutomatically
-	// void SetStartLogicAutomatically(bool bInStartLogicAutomatically);                                                        // [0xb3fbf00] Final|Native|Public|BlueprintCallable 
+	// void SetStartLogicAutomatically(bool bInStartLogicAutomatically);                                                        // [0xb50dd90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.SendStateTreeEvent
-	// void SendStateTreeEvent(FStateTreeEvent& Event);                                                                         // [0xb3fbe14] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SendStateTreeEvent(FStateTreeEvent& Event);                                                                         // [0xb50dca4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.GetStateTreeRunStatus
-	// EStateTreeRunStatus GetStateTreeRunStatus();                                                                             // [0xb3fbddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EStateTreeRunStatus GetStateTreeRunStatus();                                                                             // [0xb50dc6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayStateTreeModule.StateTreeComponentSchema

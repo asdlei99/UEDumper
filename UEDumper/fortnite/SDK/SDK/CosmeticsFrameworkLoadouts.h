@@ -50,7 +50,7 @@ public:
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSchema.GetTemplateId
-	// FString GetTemplateId();                                                                                              // [0x7a3db9c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetTemplateId();                                                                                              // [0x7a5f4c0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotRequirements
@@ -63,7 +63,7 @@ struct FCosmeticLoadoutSlotRequirements
 };
 
 /// Class /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate
-/// Size: 0x0088 (0x000030 - 0x0000B8)
+/// Size: 0x0098 (0x000030 - 0x0000C8)
 class UCosmeticLoadoutSlotTemplate : public UPrimaryDataAsset
 { 
 public:
@@ -71,22 +71,25 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
 	FGameplayTagContainer                              MetaTags;                                                   // 0x0038   (0x0020)  
 	FCosmeticLoadoutSlotRequirements                   Requirements;                                               // 0x0058   (0x0050)  
-	FPrimaryAssetId                                    DefaultCosmeticItemId;                                      // 0x00A8   (0x0008)  
-	bool                                               bAlwaysUseDefaultCosmeticItemId;                            // 0x00B0   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00B1   (0x0007)  MISSED
+	SDK_UNDEFINED(16,1953) /* FString */               __um(ShortName);                                            // 0x00A8   (0x0010)  
+	FPrimaryAssetId                                    DefaultCosmeticItemId;                                      // 0x00B8   (0x0008)  
+	bool                                               bAlwaysUseDefaultCosmeticItemId;                            // 0x00C0   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00C1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetSlotTag
-	// FGameplayTag GetSlotTag();                                                                                            // [0x608fc68] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetSlotTag();                                                                                            // [0x60f3a48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetShortName
+	// FString GetShortName();                                                                                               // [0x7a5f4a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetRequirements
-	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                   // [0x7a3db80] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                   // [0x7a5f488] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetMetaTags
-	// FGameplayTagContainer GetMetaTags();                                                                                  // [0x7a3db64] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetMetaTags();                                                                                  // [0x7a5f46c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetDefaultCosmeticItemId
-	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                           // [0x608cba0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                           // [0x7a5f454] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetAlwaysUseDefaultCosmeticItemId
-	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                             // [0x7a3db4c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                             // [0x7a5f43c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CosmeticsFrameworkLoadouts.CosmeticCustomizationInfo
@@ -95,7 +98,7 @@ struct FCosmeticCustomizationInfo
 { 
 	FGameplayTag                                       ChannelTag;                                                 // 0x0000   (0x0004)  
 	FGameplayTag                                       VariantTag;                                                 // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,1950) /* FString */               __um(AdditionalData);                                       // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1954) /* FString */               __um(AdditionalData);                                       // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlot
@@ -129,6 +132,6 @@ struct FCosmeticBackendLoadout
 { 
 	TArray<FCosmeticBackendLoadoutSlot>                Slots;                                                      // 0x0000   (0x0010)  
 	FGameplayTagContainer                              UserTags;                                                   // 0x0010   (0x0020)  
-	SDK_UNDEFINED(16,1951) /* FString */               __um(DisplayName);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1955) /* FString */               __um(DisplayName);                                          // 0x0030   (0x0010)  
 };
 

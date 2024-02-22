@@ -543,7 +543,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARActor.AddARComponent
-	// class UARComponent* AddARComponent(class UClass* InComponentClass, FGuid& NativeID);                                  // [0xc34f044] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UARComponent* AddARComponent(class UClass* InComponentClass, FGuid& NativeID);                                  // [0xc2f6fe8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARBlueprintLibrary
@@ -555,109 +555,109 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.UnpinComponent
-	// void UnpinComponent(class USceneComponent* ComponentToUnpin);                                                         // [0xc35a078] Final|Native|Static|Public|BlueprintCallable 
+	// void UnpinComponent(class USceneComponent* ComponentToUnpin);                                                         // [0xc301cdc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.ToggleARCapture
-	// bool ToggleARCapture(bool bOnOff, EARCaptureType CaptureType);                                                        // [0xc359f28] Final|Native|Static|Public|BlueprintCallable 
+	// bool ToggleARCapture(bool bOnOff, EARCaptureType CaptureType);                                                        // [0xc301c18] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.StopARSession
-	// void StopARSession();                                                                                                 // [0xc359f14] Final|Native|Static|Public|BlueprintCallable 
+	// void StopARSession();                                                                                                 // [0xc301c04] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.StartARSession
-	// void StartARSession(class UARSessionConfig* SessionConfig);                                                           // [0xc359be4] Final|Native|Static|Public|BlueprintCallable 
+	// void StartARSession(class UARSessionConfig* SessionConfig);                                                           // [0xc301920] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.SetEnabledXRCamera
-	// void SetEnabledXRCamera(bool bOnOff);                                                                                 // [0xc358628] Final|Native|Static|Public|BlueprintCallable 
+	// void SetEnabledXRCamera(bool bOnOff);                                                                                 // [0xc300740] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.SetARWorldScale
-	// void SetARWorldScale(float InWorldScale);                                                                             // [0xc357a50] Final|Native|Static|Public|BlueprintCallable 
+	// void SetARWorldScale(float InWorldScale);                                                                             // [0xc2ffb70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.SetARWorldOriginLocationAndRotation
-	// void SetARWorldOriginLocationAndRotation(FVector OriginLocation, FRotator OriginRotation, bool bIsTransformInWorldSpace, bool bMaintainUpDirection); // [0xc3577f4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetARWorldOriginLocationAndRotation(FVector OriginLocation, FRotator OriginRotation, bool bIsTransformInWorldSpace, bool bMaintainUpDirection); // [0xc2ff768] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.SetAlignmentTransform
-	// void SetAlignmentTransform(FTransform& InAlignmentTransform);                                                         // [0xc357b5c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetAlignmentTransform(FTransform& InAlignmentTransform);                                                         // [0xc2ffc38] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.SaveARPinToLocalStore
-	// bool SaveARPinToLocalStore(FName InSaveName, class UARPin* InPin);                                                    // [0xc356878] Final|Native|Static|Public|BlueprintCallable 
+	// bool SaveARPinToLocalStore(FName InSaveName, class UARPin* InPin);                                                    // [0xc2fe450] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.ResizeXRCamera
-	// FIntPoint ResizeXRCamera(FIntPoint& InSize);                                                                          // [0xc3567e8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FIntPoint ResizeXRCamera(FIntPoint& InSize);                                                                          // [0xc2fe3c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.RemovePin
-	// void RemovePin(class UARPin* PinToRemove);                                                                            // [0xc356514] Final|Native|Static|Public|BlueprintCallable 
+	// void RemovePin(class UARPin* PinToRemove);                                                                            // [0xc2fe128] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.RemoveARPinFromLocalStore
-	// void RemoveARPinFromLocalStore(FName InSaveName);                                                                     // [0xc356264] Final|Native|Static|Public|BlueprintCallable 
+	// void RemoveARPinFromLocalStore(FName InSaveName);                                                                     // [0xc2fdf3c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.RemoveAllARPinsFromLocalStore
-	// void RemoveAllARPinsFromLocalStore();                                                                                 // [0xc356314] Final|Native|Static|Public|BlueprintCallable 
+	// void RemoveAllARPinsFromLocalStore();                                                                                 // [0xc2fdfac] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.PinComponentToTraceResult
-	// class UARPin* PinComponentToTraceResult(class USceneComponent* ComponentToPin, FARTraceResult& TraceResult, FName DebugName); // [0xc356030] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UARPin* PinComponentToTraceResult(class USceneComponent* ComponentToPin, FARTraceResult& TraceResult, FName DebugName); // [0xc2fdd40] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.PinComponentToARPin
-	// bool PinComponentToARPin(class USceneComponent* ComponentToPin, class UARPin* Pin);                                   // [0xc355ef0] Final|Native|Static|Public|BlueprintCallable 
+	// bool PinComponentToARPin(class USceneComponent* ComponentToPin, class UARPin* Pin);                                   // [0xc2fdc7c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.PinComponent
-	// class UARPin* PinComponent(class USceneComponent* ComponentToPin, FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, FName DebugName); // [0xc355c7c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UARPin* PinComponent(class USceneComponent* ComponentToPin, FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, FName DebugName); // [0xc2fda40] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.PauseARSession
-	// void PauseARSession();                                                                                                // [0xc355c68] Final|Native|Static|Public|BlueprintCallable 
+	// void PauseARSession();                                                                                                // [0xc2fda2c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.LoadARPinsFromLocalStore
-	// TMap<FName, UARPin*> LoadARPinsFromLocalStore();                                                                      // [0xc355bc4] Final|Native|Static|Public|BlueprintCallable 
+	// TMap<FName, UARPin*> LoadARPinsFromLocalStore();                                                                      // [0xc2fd988] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects3D
-	// TArray<FARTraceResult> LineTraceTrackedObjects3D(FVector Start, FVector End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon); // [0xc35555c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// TArray<FARTraceResult> LineTraceTrackedObjects3D(FVector Start, FVector End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon); // [0xc2fce34] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects
-	// TArray<FARTraceResult> LineTraceTrackedObjects(FVector2D ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon); // [0xc3558dc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// TArray<FARTraceResult> LineTraceTrackedObjects(FVector2D ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon); // [0xc2fd460] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsSessionTypeSupported
-	// bool IsSessionTypeSupported(EARSessionType SessionType);                                                              // [0xc355480] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSessionTypeSupported(EARSessionType SessionType);                                                              // [0xc2fcd98] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsSessionTrackingFeatureSupported
-	// bool IsSessionTrackingFeatureSupported(EARSessionType SessionType, EARSessionTrackingFeature SessionTrackingFeature); // [0xc355340] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSessionTrackingFeatureSupported(EARSessionType SessionType, EARSessionTrackingFeature SessionTrackingFeature); // [0xc2fccd8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsSceneReconstructionSupported
-	// bool IsSceneReconstructionSupported(EARSessionType SessionType, EARSceneReconstruction SceneReconstructionMethod);    // [0xc355200] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSceneReconstructionSupported(EARSessionType SessionType, EARSceneReconstruction SceneReconstructionMethod);    // [0xc2fcc18] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsARSupported
-	// bool IsARSupported();                                                                                                 // [0xc3551dc] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsARSupported();                                                                                                 // [0xc2fcbf4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreSupported
-	// bool IsARPinLocalStoreSupported();                                                                                    // [0xc3551b8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsARPinLocalStoreSupported();                                                                                    // [0xc2fcbd0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.IsARPinLocalStoreReady
-	// bool IsARPinLocalStoreReady();                                                                                        // [0xc355194] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsARPinLocalStoreReady();                                                                                        // [0xc2fcbac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetWorldMappingStatus
-	// EARWorldMappingState GetWorldMappingStatus();                                                                         // [0xc354dd8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EARWorldMappingState GetWorldMappingStatus();                                                                         // [0xc2fc828] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetTrackingQualityReason
-	// EARTrackingQualityReason GetTrackingQualityReason();                                                                  // [0xc354d84] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EARTrackingQualityReason GetTrackingQualityReason();                                                                  // [0xc2fc7d4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetTrackingQuality
-	// EARTrackingQuality GetTrackingQuality();                                                                              // [0xc354d60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EARTrackingQuality GetTrackingQuality();                                                                              // [0xc2fc7b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetSupportedVideoFormats
-	// TArray<FARVideoFormat> GetSupportedVideoFormats(EARSessionType SessionType);                                          // [0xc354ac0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FARVideoFormat> GetSupportedVideoFormats(EARSessionType SessionType);                                          // [0xc2fc554] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetSessionConfig
-	// class UARSessionConfig* GetSessionConfig();                                                                           // [0xc354a70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UARSessionConfig* GetSessionConfig();                                                                           // [0xc2fc504] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetPointCloud
-	// TArray<FVector> GetPointCloud();                                                                                      // [0xc354a30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FVector> GetPointCloud();                                                                                      // [0xc2fc4c4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetObjectClassificationAtLocation
-	// bool GetObjectClassificationAtLocation(FVector& InWorldLocation, EARObjectClassification& OutClassification, FVector& OutClassificationLocation, float MaxLocationDiff); // [0xc3543bc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetObjectClassificationAtLocation(FVector& InWorldLocation, EARObjectClassification& OutClassification, FVector& OutClassificationLocation, float MaxLocationDiff); // [0xc2fbe50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetNumberOfTrackedFacesSupported
-	// int32_t GetNumberOfTrackedFacesSupported();                                                                           // [0xc354398] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetNumberOfTrackedFacesSupported();                                                                           // [0xc2fbe2c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetCurrentLightEstimate
-	// class UARLightEstimate* GetCurrentLightEstimate();                                                                    // [0xc353a58] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UARLightEstimate* GetCurrentLightEstimate();                                                                    // [0xc2fb554] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetCameraIntrinsics
-	// bool GetCameraIntrinsics(FARCameraIntrinsics& OutCameraIntrinsics);                                                   // [0xc3538f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetCameraIntrinsics(FARCameraIntrinsics& OutCameraIntrinsics);                                                   // [0xc2fb3f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetARWorldScale
-	// float GetARWorldScale();                                                                                              // [0xc353330] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetARWorldScale();                                                                                              // [0xc2faeac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetARTexture
-	// class UARTexture* GetARTexture(EARTextureType TextureType);                                                           // [0xc353270] Final|Native|Static|Public|BlueprintCallable 
+	// class UARTexture* GetARTexture(EARTextureType TextureType);                                                           // [0xc2fae2c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetARSessionStatus
-	// FARSessionStatus GetARSessionStatus();                                                                                // [0xc353220] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FARSessionStatus GetARSessionStatus();                                                                                // [0xc2faddc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetAllTracked2DPoses
-	// TArray<FARPose2D> GetAllTracked2DPoses();                                                                             // [0xc35360c] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FARPose2D> GetAllTracked2DPoses();                                                                             // [0xc2fb148] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetAllPins
-	// TArray<UARPin*> GetAllPins();                                                                                         // [0xc3535d0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UARPin*> GetAllPins();                                                                                         // [0xc2fb10c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetAllGeometriesByClass
-	// TArray<UARTrackedGeometry*> GetAllGeometriesByClass(class UClass* GeometryClass);                                     // [0xc3533f0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UARTrackedGeometry*> GetAllGeometriesByClass(class UClass* GeometryClass);                                     // [0xc2faf6c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetAllGeometries
-	// TArray<UARTrackedGeometry*> GetAllGeometries();                                                                       // [0xc3533b4] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UARTrackedGeometry*> GetAllGeometries();                                                                       // [0xc2faf30] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.GetAlignmentTransform
-	// FTransform GetAlignmentTransform();                                                                                   // [0xc353358] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetAlignmentTransform();                                                                                   // [0xc2faed4] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.FindTrackedPointsByName
-	// TArray<UARTrackedPoint*> FindTrackedPointsByName(FString PointName);                                                  // [0xc352af0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UARTrackedPoint*> FindTrackedPointsByName(FString PointName);                                                  // [0xc2fa6f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.DebugDrawTrackedGeometry
-	// void DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, FLinearColor Color, float OutlineThickness, float PersistForSeconds); // [0xc3527fc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, FLinearColor Color, float OutlineThickness, float PersistForSeconds); // [0xc2fa334] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.DebugDrawPin
-	// void DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, FLinearColor Color, float Scale, float PersistForSeconds); // [0xc352508] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, FLinearColor Color, float Scale, float PersistForSeconds); // [0xc2f9f78] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.CalculateClosestIntersection
-	// void CalculateClosestIntersection(TArray<FVector>& StartPoints, TArray<FVector>& EndPoints, FVector& ClosestIntersection); // [0xc3517fc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CalculateClosestIntersection(TArray<FVector>& StartPoints, TArray<FVector>& EndPoints, FVector& ClosestIntersection); // [0xc2f9504] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.CalculateAlignmentTransform
-	// void CalculateAlignmentTransform(FTransform& TransformInFirstCoordinateSystem, FTransform& TransformInSecondCoordinateSystem, FTransform& AlignmentTransform); // [0xc3515d8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CalculateAlignmentTransform(FTransform& TransformInFirstCoordinateSystem, FTransform& TransformInSecondCoordinateSystem, FTransform& AlignmentTransform); // [0xc2f92e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.AddTrackedPointWithName
-	// bool AddTrackedPointWithName(FTransform& WorldTransform, FString PointName, bool bDeletePointsWithSameName);          // [0xc350dc0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool AddTrackedPointWithName(FTransform& WorldTransform, FString PointName, bool bDeletePointsWithSameName);          // [0xc2f8ac8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.AddRuntimeCandidateImage
-	// class UARCandidateImage* AddRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, FString FriendlyName, float PhysicalWidth); // [0xc350560] Final|Native|Static|Public|BlueprintCallable 
+	// class UARCandidateImage* AddRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, FString FriendlyName, float PhysicalWidth); // [0xc2f8360] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARBlueprintLibrary.AddManualEnvironmentCaptureProbe
-	// bool AddManualEnvironmentCaptureProbe(FVector Location, FVector Extent);                                              // [0xc3503ec] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// bool AddManualEnvironmentCaptureProbe(FVector Location, FVector Extent);                                              // [0xc2f8104] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARTraceResultLibrary
@@ -669,17 +669,17 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetTrackedGeometry
-	// class UARTrackedGeometry* GetTrackedGeometry(FARTraceResult& TraceResult);                                            // [0xc354c7c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UARTrackedGeometry* GetTrackedGeometry(FARTraceResult& TraceResult);                                            // [0xc2fc6cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetTraceChannel
-	// EARLineTraceChannels GetTraceChannel(FARTraceResult& TraceResult);                                                    // [0xc354bb8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// EARLineTraceChannels GetTraceChannel(FARTraceResult& TraceResult);                                                    // [0xc2fc608] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetLocalTransform
-	// FTransform GetLocalTransform(FARTraceResult& TraceResult);                                                            // [0xc354274] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetLocalTransform(FARTraceResult& TraceResult);                                                            // [0xc2fbd08] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
-	// FTransform GetLocalToWorldTransform(FARTraceResult& TraceResult);                                                     // [0xc354108] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetLocalToWorldTransform(FARTraceResult& TraceResult);                                                     // [0xc2fbb9c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetLocalToTrackingTransform
-	// FTransform GetLocalToTrackingTransform(FARTraceResult& TraceResult);                                                  // [0xc353f9c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetLocalToTrackingTransform(FARTraceResult& TraceResult);                                                  // [0xc2fba30] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTraceResultLibrary.GetDistanceFromCamera
-	// float GetDistanceFromCamera(FARTraceResult& TraceResult);                                                             // [0xc353abc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetDistanceFromCamera(FARTraceResult& TraceResult);                                                             // [0xc2fb5d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AugmentedReality.ARBaseAsyncTaskBlueprintProxy
@@ -695,14 +695,14 @@ public:
 class UARSaveWorldAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProxy
 { 
 public:
-	SDK_UNDEFINED(16,11734) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11735) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11796) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11797) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0070   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
-	// class UARSaveWorldAsyncTaskBlueprintProxy* ARSaveWorld(class UObject* WorldContextObject);                            // [0xc34ef68] Final|Native|Static|Public|BlueprintCallable 
+	// class UARSaveWorldAsyncTaskBlueprintProxy* ARSaveWorld(class UObject* WorldContextObject);                            // [0xc2f6f4c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy
@@ -710,14 +710,14 @@ public:
 class UARGetCandidateObjectAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProxy
 { 
 public:
-	SDK_UNDEFINED(16,11736) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11737) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11798) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11799) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x0070   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
-	// class UARGetCandidateObjectAsyncTaskBlueprintProxy* ARGetCandidateObject(class UObject* WorldContextObject, FVector Location, FVector Extent); // [0xc34ed48] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UARGetCandidateObjectAsyncTaskBlueprintProxy* ARGetCandidateObject(class UObject* WorldContextObject, FVector Location, FVector Extent); // [0xc2f6cb8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARComponent
@@ -738,15 +738,15 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARComponent.UpdateVisualization
-	// void UpdateVisualization();                                                                                           // [0x65df5e8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateVisualization();                                                                                           // [0x664c8dc] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARComponent.SetNativeID
-	// void SetNativeID(FGuid NativeID);                                                                                     // [0xc359294] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetNativeID(FGuid NativeID);                                                                                     // [0xc301198] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARComponent.ReceiveRemove
-	// void ReceiveRemove();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveRemove();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARComponent.OnRep_Payload
-	// void OnRep_Payload();                                                                                                 // [0x9617c20] Native|Protected     
+	// void OnRep_Payload();                                                                                                 // [0x962b644] Native|Protected     
 	// Function /Script/AugmentedReality.ARComponent.GetMRMesh
-	// class UMRMeshComponent* GetMRMesh();                                                                                  // [0xc354364] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UMRMeshComponent* GetMRMesh();                                                                                  // [0xc2fbdf8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AugmentedReality.ARSessionPayload
@@ -783,17 +783,17 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARPlaneComponent.SetPlaneComponentDebugMode
-	// void SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode);                                               // [0xc359430] Final|Native|Static|Public|BlueprintCallable 
+	// void SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode);                                               // [0xc3013b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARPlaneComponent.SetObjectClassificationDebugColors
-	// void SetObjectClassificationDebugColors(TMap<EARObjectClassification, FLinearColor>& InColors);                       // [0xc359358] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetObjectClassificationDebugColors(TMap<EARObjectClassification, FLinearColor>& InColors);                       // [0xc3012e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARPlaneComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARPlaneUpdatePayload NewPayload);                                                           // [0xc357248] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARPlaneUpdatePayload NewPayload);                                                           // [0xc2ff004] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARPlaneComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARPlaneUpdatePayload& Payload);                                                                   // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARPlaneUpdatePayload& Payload);                                                                   // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARPlaneComponent.ReceiveAdd
-	// void ReceiveAdd(FARPlaneUpdatePayload& Payload);                                                                      // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARPlaneUpdatePayload& Payload);                                                                      // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARPlaneComponent.GetObjectClassificationDebugColors
-	// TMap<EARObjectClassification, FLinearColor> GetObjectClassificationDebugColors();                                     // [0xc3549d8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TMap<EARObjectClassification, FLinearColor> GetObjectClassificationDebugColors();                                     // [0xc2fc46c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AugmentedReality.ARPointUpdatePayload
@@ -814,11 +814,11 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARPointComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARPointUpdatePayload NewPayload);                                                           // [0xc357364] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARPointUpdatePayload NewPayload);                                                           // [0xc2ff1a0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARPointComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARPointUpdatePayload& Payload);                                                                   // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARPointUpdatePayload& Payload);                                                                   // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARPointComponent.ReceiveAdd
-	// void ReceiveAdd(FARPointUpdatePayload& Payload);                                                                      // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARPointUpdatePayload& Payload);                                                                      // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARFaceUpdatePayload
@@ -846,13 +846,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARFaceComponent.SetFaceComponentDebugMode
-	// void SetFaceComponentDebugMode(EFaceComponentDebugMode NewDebugMode);                                                 // [0xc3587fc] Final|Native|Static|Public|BlueprintCallable 
+	// void SetFaceComponentDebugMode(EFaceComponentDebugMode NewDebugMode);                                                 // [0xc30088c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARFaceComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARFaceUpdatePayload NewPayload);                                                            // [0xc356dd0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARFaceUpdatePayload NewPayload);                                                            // [0xc2fe98c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARFaceComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARFaceUpdatePayload& Payload);                                                                    // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARFaceUpdatePayload& Payload);                                                                    // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARFaceComponent.ReceiveAdd
-	// void ReceiveAdd(FARFaceUpdatePayload& Payload);                                                                       // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARFaceUpdatePayload& Payload);                                                                       // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARImageUpdatePayload
@@ -877,13 +877,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARImageComponent.SetImageComponentDebugMode
-	// void SetImageComponentDebugMode(EImageComponentDebugMode NewDebugMode);                                               // [0xc3591dc] Final|Native|Static|Public|BlueprintCallable 
+	// void SetImageComponentDebugMode(EImageComponentDebugMode NewDebugMode);                                               // [0xc301120] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARImageComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARImageUpdatePayload NewPayload);                                                           // [0xc356fdc] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARImageUpdatePayload NewPayload);                                                           // [0xc2fec94] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARImageComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARImageUpdatePayload& Payload);                                                                   // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARImageUpdatePayload& Payload);                                                                   // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARImageComponent.ReceiveAdd
-	// void ReceiveAdd(FARImageUpdatePayload& Payload);                                                                      // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARImageUpdatePayload& Payload);                                                                      // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARQRCodeUpdatePayload
@@ -894,7 +894,7 @@ struct FARQRCodeUpdatePayload
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0018   (0x0008)  MISSED
 	FTransform                                         WorldTransform;                                             // 0x0020   (0x0060)  
 	FVector                                            Extents;                                                    // 0x0080   (0x0018)  
-	SDK_UNDEFINED(16,11738) /* FString */              __um(QRCode);                                               // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,11800) /* FString */              __um(QRCode);                                               // 0x0098   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00A8   (0x0008)  MISSED
 };
 
@@ -908,13 +908,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARQRCodeComponent.SetQRCodeComponentDebugMode
-	// void SetQRCodeComponentDebugMode(EQRCodeComponentDebugMode NewDebugMode);                                             // [0xc3596d0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetQRCodeComponentDebugMode(EQRCodeComponentDebugMode NewDebugMode);                                             // [0xc301598] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARQRCodeComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARQRCodeUpdatePayload NewPayload);                                                          // [0xc3575a8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARQRCodeUpdatePayload NewPayload);                                                          // [0xc2ff4dc] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARQRCodeComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARQRCodeUpdatePayload& Payload);                                                                  // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARQRCodeUpdatePayload& Payload);                                                                  // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARQRCodeComponent.ReceiveAdd
-	// void ReceiveAdd(FARQRCodeUpdatePayload& Payload);                                                                     // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARQRCodeUpdatePayload& Payload);                                                                     // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARPoseUpdatePayload
@@ -935,13 +935,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARPoseComponent.SetPoseComponentDebugMode
-	// void SetPoseComponentDebugMode(EPoseComponentDebugMode NewDebugMode);                                                 // [0xc3594e8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetPoseComponentDebugMode(EPoseComponentDebugMode NewDebugMode);                                                 // [0xc301430] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARPoseComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARPoseUpdatePayload NewPayload);                                                            // [0xc357440] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARPoseUpdatePayload NewPayload);                                                            // [0xc2ff2f8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARPoseComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARPoseUpdatePayload& Payload);                                                                    // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARPoseUpdatePayload& Payload);                                                                    // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARPoseComponent.ReceiveAdd
-	// void ReceiveAdd(FARPoseUpdatePayload& Payload);                                                                       // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARPoseUpdatePayload& Payload);                                                                       // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.AREnvironmentProbeUpdatePayload
@@ -961,11 +961,11 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.AREnvironmentProbeComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FAREnvironmentProbeUpdatePayload NewPayload);                                                // [0xc356c80] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FAREnvironmentProbeUpdatePayload NewPayload);                                                // [0xc2fe7c4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.AREnvironmentProbeComponent.ReceiveUpdate
-	// void ReceiveUpdate(FAREnvironmentProbeUpdatePayload& Payload);                                                        // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FAREnvironmentProbeUpdatePayload& Payload);                                                        // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.AREnvironmentProbeComponent.ReceiveAdd
-	// void ReceiveAdd(FAREnvironmentProbeUpdatePayload& Payload);                                                           // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FAREnvironmentProbeUpdatePayload& Payload);                                                           // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARObjectUpdatePayload
@@ -985,11 +985,11 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARObjectComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARObjectUpdatePayload NewPayload);                                                          // [0xc356c80] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARObjectUpdatePayload NewPayload);                                                          // [0xc2fe7c4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARObjectComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARObjectUpdatePayload& Payload);                                                                  // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARObjectUpdatePayload& Payload);                                                                  // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARObjectComponent.ReceiveAdd
-	// void ReceiveAdd(FARObjectUpdatePayload& Payload);                                                                     // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARObjectUpdatePayload& Payload);                                                                     // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARMeshUpdatePayload
@@ -1013,11 +1013,11 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARMeshComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARMeshUpdatePayload NewPayload);                                                            // [0xc3570ec] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARMeshUpdatePayload NewPayload);                                                            // [0xc2fee28] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARMeshComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARMeshUpdatePayload& Payload);                                                                    // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARMeshUpdatePayload& Payload);                                                                    // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARMeshComponent.ReceiveAdd
-	// void ReceiveAdd(FARMeshUpdatePayload& Payload);                                                                       // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARMeshUpdatePayload& Payload);                                                                       // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AugmentedReality.ARGeoAnchorUpdatePayload
@@ -1032,7 +1032,7 @@ struct FARGeoAnchorUpdatePayload
 	float                                              AltitudeMeters;                                             // 0x0088   (0x0004)  
 	EARAltitudeSource                                  AltitudeSource;                                             // 0x008C   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x008D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,11739) /* FString */              __um(AnchorName);                                           // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,11801) /* FString */              __um(AnchorName);                                           // 0x0090   (0x0010)  
 };
 
 /// Class /Script/AugmentedReality.ARGeoAnchorComponent
@@ -1045,13 +1045,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARGeoAnchorComponent.SetGeoAnchorComponentDebugMode
-	// void SetGeoAnchorComponentDebugMode(EGeoAnchorComponentDebugMode NewDebugMode);                                       // [0xc359124] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGeoAnchorComponentDebugMode(EGeoAnchorComponentDebugMode NewDebugMode);                                       // [0xc3010a8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARGeoAnchorComponent.ServerUpdatePayload
-	// void ServerUpdatePayload(FARGeoAnchorUpdatePayload NewPayload);                                                       // [0xc356ec0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdatePayload(FARGeoAnchorUpdatePayload NewPayload);                                                       // [0xc2feaf8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARGeoAnchorComponent.ReceiveUpdate
-	// void ReceiveUpdate(FARGeoAnchorUpdatePayload& Payload);                                                               // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdate(FARGeoAnchorUpdatePayload& Payload);                                                               // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AugmentedReality.ARGeoAnchorComponent.ReceiveAdd
-	// void ReceiveAdd(FARGeoAnchorUpdatePayload& Payload);                                                                  // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveAdd(FARGeoAnchorUpdatePayload& Payload);                                                                  // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/AugmentedReality.ARDependencyHandler
@@ -1063,15 +1063,15 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARDependencyHandler.StartARSessionLatent
-	// void StartARSessionLatent(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, FLatentActionInfo LatentInfo); // [0xc359d38] Native|Public|BlueprintCallable 
+	// void StartARSessionLatent(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, FLatentActionInfo LatentInfo); // [0xc301a30] Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARDependencyHandler.RequestARSessionPermission
-	// void RequestARSessionPermission(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, FLatentActionInfo LatentInfo, EARServicePermissionRequestResult& OutPermissionResult); // [0xc3565c4] Native|Public|HasOutParms|BlueprintCallable 
+	// void RequestARSessionPermission(class UObject* WorldContextObject, class UARSessionConfig* SessionConfig, FLatentActionInfo LatentInfo, EARServicePermissionRequestResult& OutPermissionResult); // [0xc2fe198] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARDependencyHandler.InstallARService
-	// void InstallARService(class UObject* WorldContextObject, FLatentActionInfo LatentInfo, EARServiceInstallRequestResult& OutInstallResult); // [0xc354fe8] Native|Public|HasOutParms|BlueprintCallable 
+	// void InstallARService(class UObject* WorldContextObject, FLatentActionInfo LatentInfo, EARServiceInstallRequestResult& OutInstallResult); // [0xc2fc9b8] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARDependencyHandler.GetARDependencyHandler
-	// class UARDependencyHandler* GetARDependencyHandler();                                                                 // [0xc3531fc] Final|Native|Static|Public|BlueprintCallable 
+	// class UARDependencyHandler* GetARDependencyHandler();                                                                 // [0xc2fadb8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARDependencyHandler.CheckARServiceAvailability
-	// void CheckARServiceAvailability(class UObject* WorldContextObject, FLatentActionInfo LatentInfo, EARServiceAvailability& OutAvailability); // [0xc351a04] Native|Public|HasOutParms|BlueprintCallable 
+	// void CheckARServiceAvailability(class UObject* WorldContextObject, FLatentActionInfo LatentInfo, EARServiceAvailability& OutAvailability); // [0xc2f970c] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARGeoTrackingSupport
@@ -1083,17 +1083,17 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingSupport
-	// class UARGeoTrackingSupport* GetGeoTrackingSupport();                                                                 // [0xc353de0] Final|Native|Static|Public|BlueprintCallable 
+	// class UARGeoTrackingSupport* GetGeoTrackingSupport();                                                                 // [0xc2fb8b4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingStateReason
-	// EARGeoTrackingStateReason GetGeoTrackingStateReason();                                                                // [0x60aadb8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARGeoTrackingStateReason GetGeoTrackingStateReason();                                                                // [0x610da68] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingState
-	// EARGeoTrackingState GetGeoTrackingState();                                                                            // [0x3463ba4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARGeoTrackingState GetGeoTrackingState();                                                                            // [0x3519bc8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.GetGeoTrackingAccuracy
-	// EARGeoTrackingAccuracy GetGeoTrackingAccuracy();                                                                      // [0x611898c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARGeoTrackingAccuracy GetGeoTrackingAccuracy();                                                                      // [0x617a350] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocationWithAltitude
-	// bool AddGeoAnchorAtLocationWithAltitude(float Longitude, float Latitude, float AltitudeMeters, FString OptionalAnchorName); // [0xc34fb84] Native|Public|BlueprintCallable 
+	// bool AddGeoAnchorAtLocationWithAltitude(float Longitude, float Latitude, float AltitudeMeters, FString OptionalAnchorName); // [0xc2f79a0] Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARGeoTrackingSupport.AddGeoAnchorAtLocation
-	// bool AddGeoAnchorAtLocation(float Longitude, float Latitude, FString OptionalAnchorName);                             // [0xc34f3a0] Native|Public|BlueprintCallable 
+	// bool AddGeoAnchorAtLocation(float Longitude, float Latitude, FString OptionalAnchorName);                             // [0xc2f727c] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy
@@ -1101,18 +1101,18 @@ public:
 class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProxy
 { 
 public:
-	SDK_UNDEFINED(16,11740) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11741) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11802) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11803) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0070   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.GeoTrackingAvailabilityDelegate__DelegateSignature
-	// void GeoTrackingAvailabilityDelegate__DelegateSignature(bool bIsAvailable, FString Error);                            // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void GeoTrackingAvailabilityDelegate__DelegateSignature(bool bIsAvailable, FString Error);                            // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailabilityAtLocation
-	// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude); // [0xc351c8c] Final|Native|Static|Public|BlueprintCallable 
+	// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude); // [0xc2f999c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailability
-	// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailability(class UObject* WorldContextObject); // [0xc351bb0] Final|Native|Static|Public|BlueprintCallable 
+	// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailability(class UObject* WorldContextObject); // [0xc2f9900] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy
@@ -1120,16 +1120,16 @@ public:
 class UGetGeoLocationAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProxy
 { 
 public:
-	SDK_UNDEFINED(16,11742) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11743) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11804) /* FMulticastInlineDelegate */ __um(OnSuccess);                                        // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11805) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0060   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0070   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationDelegate__DelegateSignature
-	// void GetGeoLocationDelegate__DelegateSignature(float Longitude, float Latitude, float Altitude, FString Error);       // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void GetGeoLocationDelegate__DelegateSignature(float Longitude, float Latitude, float Altitude, FString Error);       // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
-	// class UGetGeoLocationAsyncTaskBlueprintProxy* GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, FVector& WorldPosition); // [0xc353c60] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UGetGeoLocationAsyncTaskBlueprintProxy* GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, FVector& WorldPosition); // [0xc2fb774] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARLifeCycleComponent
@@ -1137,20 +1137,20 @@ public:
 class UARLifeCycleComponent : public USceneComponent
 { 
 public:
-	SDK_UNDEFINED(16,11744) /* FMulticastInlineDelegate */ __um(OnARActorSpawnedDelegate);                         // 0x0220   (0x0010)  
-	SDK_UNDEFINED(16,11745) /* FMulticastInlineDelegate */ __um(OnARActorToBeDestroyedDelegate);                   // 0x0230   (0x0010)  
+	SDK_UNDEFINED(16,11806) /* FMulticastInlineDelegate */ __um(OnARActorSpawnedDelegate);                         // 0x0220   (0x0010)  
+	SDK_UNDEFINED(16,11807) /* FMulticastInlineDelegate */ __um(OnARActorToBeDestroyedDelegate);                   // 0x0230   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0240   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
-	// void ServerSpawnARActor(class UClass* ComponentClass, FGuid NativeID);                                                // [0xc356ae8] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults|NetValidate 
+	// void ServerSpawnARActor(class UClass* ComponentClass, FGuid NativeID);                                                // [0xc2fe5fc] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults|NetValidate 
 	// Function /Script/AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
-	// void ServerDestroyARActor(class AARActor* Actor);                                                                     // [0xc3569b8] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerDestroyARActor(class AARActor* Actor);                                                                     // [0xc2fe510] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARLifeCycleComponent.InstanceARActorToBeDestroyedDelegate__DelegateSignature
-	// void InstanceARActorToBeDestroyedDelegate__DelegateSignature(class AARActor* Actor);                                  // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void InstanceARActorToBeDestroyedDelegate__DelegateSignature(class AARActor* Actor);                                  // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/AugmentedReality.ARLifeCycleComponent.InstanceARActorSpawnedDelegate__DelegateSignature
-	// void InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, FGuid NativeID, class AARActor* SpawnedActor); // [0x130d900] MulticastDelegate|Public|Delegate|HasDefaults 
+	// void InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, FGuid NativeID, class AARActor* SpawnedActor); // [0x3d1d968] MulticastDelegate|Public|Delegate|HasDefaults 
 };
 
 /// Class /Script/AugmentedReality.ARLightEstimate
@@ -1172,11 +1172,11 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens
-	// float GetAmbientIntensityLumens();                                                                                    // [0x67786ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAmbientIntensityLumens();                                                                                    // [0x67ed834] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin
-	// float GetAmbientColorTemperatureKelvin();                                                                             // [0x6778874] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAmbientColorTemperatureKelvin();                                                                             // [0x67ed9bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARBasicLightEstimate.GetAmbientColor
-	// FLinearColor GetAmbientColor();                                                                                       // [0xc3536a8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetAmbientColor();                                                                                       // [0xc2fb1e4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.AROriginActor
@@ -1199,26 +1199,26 @@ public:
 	FTransform                                         LocalToAlignedTrackingTransform;                            // 0x00A0   (0x0060)  
 	EARTrackingState                                   TrackingState;                                              // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x1F];                                      // 0x0101   (0x001F)  MISSED
-	SDK_UNDEFINED(16,11746) /* FMulticastInlineDelegate */ __um(OnARTrackingStateChanged);                         // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,11747) /* FMulticastInlineDelegate */ __um(OnARTransformUpdated);                             // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,11808) /* FMulticastInlineDelegate */ __um(OnARTrackingStateChanged);                         // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,11809) /* FMulticastInlineDelegate */ __um(OnARTransformUpdated);                             // 0x0130   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0140   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARPin.GetTrackingState
-	// EARTrackingState GetTrackingState();                                                                                  // [0xa8784a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARTrackingState GetTrackingState();                                                                                  // [0xa87417c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.GetTrackedGeometry
-	// class UARTrackedGeometry* GetTrackedGeometry();                                                                       // [0x7a62828] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UARTrackedGeometry* GetTrackedGeometry();                                                                       // [0x7a78994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.GetPinnedComponent
-	// class USceneComponent* GetPinnedComponent();                                                                          // [0x6200cfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USceneComponent* GetPinnedComponent();                                                                          // [0x625fab4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.GetLocalToWorldTransform
-	// FTransform GetLocalToWorldTransform();                                                                                // [0xc35408c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalToWorldTransform();                                                                                // [0xc2fbb20] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.GetLocalToTrackingTransform
-	// FTransform GetLocalToTrackingTransform();                                                                             // [0xc353f44] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalToTrackingTransform();                                                                             // [0xc2fb9d8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.GetDebugName
-	// FName GetDebugName();                                                                                                 // [0xc353a7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetDebugName();                                                                                                 // [0xc2fb578] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPin.DebugDraw
-	// void DebugDraw(class UWorld* World, FLinearColor& Color, float Scale, float PersistForSeconds);                       // [0xc352304] Native|Public|HasOutParms|HasDefaults|Const 
+	// void DebugDraw(class UWorld* World, FLinearColor& Color, float Scale, float PersistForSeconds);                       // [0xc2f9dac] Native|Public|HasOutParms|HasDefaults|Const 
 };
 
 /// Struct /Script/AugmentedReality.ARVideoFormat
@@ -1291,75 +1291,75 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects
-	// bool ShouldResetTrackedObjects();                                                                                     // [0xc359bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldResetTrackedObjects();                                                                                     // [0xc30190c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.ShouldResetCameraTracking
-	// bool ShouldResetCameraTracking();                                                                                     // [0xbb600e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldResetCameraTracking();                                                                                     // [0xa9e412c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.ShouldRenderCameraOverlay
-	// bool ShouldRenderCameraOverlay();                                                                                     // [0xbb05ad4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldRenderCameraOverlay();                                                                                     // [0xbeb8b80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.ShouldEnableCameraTracking
-	// bool ShouldEnableCameraTracking();                                                                                    // [0xc359bbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldEnableCameraTracking();                                                                                    // [0xc3018f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.ShouldEnableAutoFocus
-	// bool ShouldEnableAutoFocus();                                                                                         // [0xc359ba8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldEnableAutoFocus();                                                                                         // [0xc3018e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetWorldMapData
-	// void SetWorldMapData(TArray<char> WorldMapData);                                                                      // [0xc359a80] Final|Native|Public|BlueprintCallable 
+	// void SetWorldMapData(TArray<char> WorldMapData);                                                                      // [0xc301800] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable
-	// void SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature);                           // [0xc3599c0] Final|Native|Public|BlueprintCallable 
+	// void SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature);                           // [0xc301784] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetSceneReconstructionMethod
-	// void SetSceneReconstructionMethod(EARSceneReconstruction InSceneReconstructionMethod);                                // [0xc359900] Final|Native|Public|BlueprintCallable 
+	// void SetSceneReconstructionMethod(EARSceneReconstruction InSceneReconstructionMethod);                                // [0xc301708] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetResetTrackedObjects
-	// void SetResetTrackedObjects(bool bNewValue);                                                                          // [0xc359844] Final|Native|Public|BlueprintCallable 
+	// void SetResetTrackedObjects(bool bNewValue);                                                                          // [0xc30168c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetResetCameraTracking
-	// void SetResetCameraTracking(bool bNewValue);                                                                          // [0xc359788] Final|Native|Public|BlueprintCallable 
+	// void SetResetCameraTracking(bool bNewValue);                                                                          // [0xc301610] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate
-	// void SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate);                                                           // [0xc358974] Final|Native|Public|BlueprintCallable 
+	// void SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate);                                                           // [0xc300980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetFaceTrackingDirection
-	// void SetFaceTrackingDirection(EARFaceTrackingDirection InDirection);                                                  // [0xc3588b4] Final|Native|Public|BlueprintCallable 
+	// void SetFaceTrackingDirection(EARFaceTrackingDirection InDirection);                                                  // [0xc300904] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetEnableAutoFocus
-	// void SetEnableAutoFocus(bool bNewValue);                                                                              // [0xc35856c] Final|Native|Public|BlueprintCallable 
+	// void SetEnableAutoFocus(bool bNewValue);                                                                              // [0xc3006c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetDesiredVideoFormat
-	// void SetDesiredVideoFormat(FARVideoFormat NewFormat);                                                                 // [0xc35849c] Final|Native|Public|BlueprintCallable 
+	// void SetDesiredVideoFormat(FARVideoFormat NewFormat);                                                                 // [0xc300578] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.SetCandidateObjectList
-	// void SetCandidateObjectList(TArray<UARCandidateObject*>& InCandidateObjects);                                         // [0xc357d94] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCandidateObjectList(TArray<UARCandidateObject*>& InCandidateObjects);                                         // [0xc2ffe70] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.RemoveCandidateImageAtIndex
-	// void RemoveCandidateImageAtIndex(int32_t Index);                                                                      // [0xc356408] Final|Native|Public|BlueprintCallable 
+	// void RemoveCandidateImageAtIndex(int32_t Index);                                                                      // [0xc2fe060] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.RemoveCandidateImage
-	// void RemoveCandidateImage(class UARCandidateImage* CandidateImage);                                                   // [0xc356328] Final|Native|Public|BlueprintCallable 
+	// void RemoveCandidateImage(class UARCandidateImage* CandidateImage);                                                   // [0xc2fdfc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetWorldMapData
-	// TArray<char> GetWorldMapData();                                                                                       // [0xc354dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<char> GetWorldMapData();                                                                                       // [0xc2fc80c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetWorldAlignment
-	// EARWorldAlignment GetWorldAlignment();                                                                                // [0xc354da8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARWorldAlignment GetWorldAlignment();                                                                                // [0xc2fc7f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetSessionType
-	// EARSessionType GetSessionType();                                                                                      // [0xc354a94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARSessionType GetSessionType();                                                                                      // [0xc2fc528] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetSceneReconstructionMethod
-	// EARSceneReconstruction GetSceneReconstructionMethod();                                                                // [0xadb030c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARSceneReconstruction GetSceneReconstructionMethod();                                                                // [0xb2df8b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetPlaneDetectionMode
-	// EARPlaneDetectionMode GetPlaneDetectionMode();                                                                        // [0xc354a0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARPlaneDetectionMode GetPlaneDetectionMode();                                                                        // [0xc2fc4a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTracked
-	// int32_t GetMaxNumSimultaneousImagesTracked();                                                                         // [0x63a5160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxNumSimultaneousImagesTracked();                                                                         // [0x6404914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetLightEstimationMode
-	// EARLightEstimationMode GetLightEstimationMode();                                                                      // [0x8f3aadc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARLightEstimationMode GetLightEstimationMode();                                                                      // [0x8f31524] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetFrameSyncMode
-	// EARFrameSyncMode GetFrameSyncMode();                                                                                  // [0xc353c30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARFrameSyncMode GetFrameSyncMode();                                                                                  // [0xc2fb744] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate
-	// EARFaceTrackingUpdate GetFaceTrackingUpdate();                                                                        // [0xc353c18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARFaceTrackingUpdate GetFaceTrackingUpdate();                                                                        // [0xc2fb72c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetFaceTrackingDirection
-	// EARFaceTrackingDirection GetFaceTrackingDirection();                                                                  // [0xc353c00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARFaceTrackingDirection GetFaceTrackingDirection();                                                                  // [0xc2fb714] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType
-	// EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType();                                                      // [0xc353b80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType();                                                      // [0xc2fb694] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature
-	// EARSessionTrackingFeature GetEnabledSessionTrackingFeature();                                                         // [0xadb080c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARSessionTrackingFeature GetEnabledSessionTrackingFeature();                                                         // [0xb2dfbe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetDesiredVideoFormat
-	// FARVideoFormat GetDesiredVideoFormat();                                                                               // [0xc353a94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FARVideoFormat GetDesiredVideoFormat();                                                                               // [0xc2fb5a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetCandidateObjectList
-	// TArray<UARCandidateObject*> GetCandidateObjectList();                                                                 // [0xc3539b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UARCandidateObject*> GetCandidateObjectList();                                                                 // [0xc2fb4b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.GetCandidateImageList
-	// TArray<UARCandidateImage*> GetCandidateImageList();                                                                   // [0xb5a1d30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UARCandidateImage*> GetCandidateImageList();                                                                   // [0xb6b2bbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARSessionConfig.ClearCandidateImages
-	// void ClearCandidateImages();                                                                                          // [0xc351e48] Final|Native|Public|BlueprintCallable 
+	// void ClearCandidateImages();                                                                                          // [0xc2f9a94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.AddCandidateObject
-	// void AddCandidateObject(class UARCandidateObject* CandidateObject);                                                   // [0xc34f2a8] Final|Native|Public|BlueprintCallable 
+	// void AddCandidateObject(class UARCandidateObject* CandidateObject);                                                   // [0xc2f71c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSessionConfig.AddCandidateImage
-	// void AddCandidateImage(class UARCandidateImage* NewCandidateImage);                                                   // [0xc34f1e8] Final|Native|Public|BlueprintCallable 
+	// void AddCandidateImage(class UARCandidateImage* NewCandidateImage);                                                   // [0xc2f7148] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARSharedWorldGameMode
@@ -1373,13 +1373,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
-	// void SetPreviewImageData(TArray<char> ImageData);                                                                     // [0xc3595a0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetPreviewImageData(TArray<char> ImageData);                                                                     // [0xc3014a8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
-	// void SetARWorldSharingIsReady();                                                                                      // [0xc357b04] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetARWorldSharingIsReady();                                                                                      // [0xc2ffbe0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
-	// void SetARSharedWorldData(TArray<char> ARWorldData);                                                                  // [0xc3576c4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetARSharedWorldData(TArray<char> ARWorldData);                                                                  // [0xc2ff678] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
-	// class AARSharedWorldGameState* GetARSharedWorldGameState();                                                           // [0xa70db68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// class AARSharedWorldGameState* GetARSharedWorldGameState();                                                           // [0xa702950] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARSharedWorldGameState
@@ -1398,7 +1398,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
-	// void K2_OnARWorldMapIsReady();                                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void K2_OnARWorldMapIsReady();                                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/AugmentedReality.ARSharedWorldPlayerController
@@ -1411,13 +1411,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSharedWorldPlayerController.ServerMarkReadyForReceiving
-	// void ServerMarkReadyForReceiving();                                                                                   // [0xc356a9c] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerMarkReadyForReceiving();                                                                                   // [0xc2fe5b0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/AugmentedReality.ARSharedWorldPlayerController.ClientUpdatePreviewImageData
-	// void ClientUpdatePreviewImageData(int32_t Offset, TArray<char> Buffer);                                               // [0xc352178] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
+	// void ClientUpdatePreviewImageData(int32_t Offset, TArray<char> Buffer);                                               // [0xc2f9cac] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
 	// Function /Script/AugmentedReality.ARSharedWorldPlayerController.ClientUpdateARWorldData
-	// void ClientUpdateARWorldData(int32_t Offset, TArray<char> Buffer);                                                    // [0xc351fec] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
+	// void ClientUpdateARWorldData(int32_t Offset, TArray<char> Buffer);                                                    // [0xc2f9bac] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
 	// Function /Script/AugmentedReality.ARSharedWorldPlayerController.ClientInitSharedWorld
-	// void ClientInitSharedWorld(int32_t PreviewImageSize, int32_t ARWorldDataSize);                                        // [0xc351e78] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
+	// void ClientInitSharedWorld(int32_t PreviewImageSize, int32_t ARWorldDataSize);                                        // [0xc2f9ac4] Net|NetReliableNative|Event|Public|NetClient|NetValidate 
 };
 
 /// Class /Script/AugmentedReality.ARSkyLight
@@ -1431,7 +1431,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
-	// void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);                                    // [0xc3586dc] Final|Native|Public|BlueprintCallable 
+	// void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);                                    // [0xc3007b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARTexture
@@ -1509,27 +1509,27 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARTrackedGeometry.IsTracked
-	// bool IsTracked();                                                                                                     // [0xc355540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTracked();                                                                                                     // [0xc2fce18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.HasSpatialMeshUsageFlag
-	// bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag);                                                        // [0xc354f18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag);                                                        // [0xc2fc928] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
-	// class UMRMeshComponent* GetUnderlyingMesh();                                                                          // [0xac2fdc4] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UMRMeshComponent* GetUnderlyingMesh();                                                                          // [0xaf29998] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetTrackingState
-	// EARTrackingState GetTrackingState();                                                                                  // [0xa8784a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARTrackingState GetTrackingState();                                                                                  // [0xa87417c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetObjectClassification
-	// EARObjectClassification GetObjectClassification();                                                                    // [0x5f4feac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARObjectClassification GetObjectClassification();                                                                    // [0x5fb8e28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetName
-	// FString GetName();                                                                                                    // [0xc35437c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetName();                                                                                                    // [0xc2fbe10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform
-	// FTransform GetLocalToWorldTransform();                                                                                // [0xc3541f8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalToWorldTransform();                                                                                // [0xc2fbc8c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform
-	// FTransform GetLocalToTrackingTransform();                                                                             // [0xc353f44] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalToTrackingTransform();                                                                             // [0xc2fb9d8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetLastUpdateTimestamp
-	// float GetLastUpdateTimestamp();                                                                                       // [0xc353e04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLastUpdateTimestamp();                                                                                       // [0xc2fb8d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber
-	// int32_t GetLastUpdateFrameNumber();                                                                                   // [0x95e97c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetLastUpdateFrameNumber();                                                                                   // [0x9600160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARTrackedGeometry.GetDebugName
-	// FName GetDebugName();                                                                                                 // [0x6f1f3b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetDebugName();                                                                                                 // [0xc2fb590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 #pragma pack(pop)
 
@@ -1549,15 +1549,15 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARPlaneGeometry.GetSubsumedBy
-	// class UARPlaneGeometry* GetSubsumedBy();                                                                              // [0xc354aa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UARPlaneGeometry* GetSubsumedBy();                                                                              // [0xc2fc53c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPlaneGeometry.GetOrientation
-	// EARPlaneOrientation GetOrientation();                                                                                 // [0xc3549f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARPlaneOrientation GetOrientation();                                                                                 // [0xc2fc488] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPlaneGeometry.GetExtent
-	// FVector GetExtent();                                                                                                  // [0xc353bd8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetExtent();                                                                                                  // [0xc2fb6ec] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPlaneGeometry.GetCenter
-	// FVector GetCenter();                                                                                                  // [0xc353a30] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetCenter();                                                                                                  // [0xc2fb52c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace
-	// TArray<FVector> GetBoundaryPolygonInLocalSpace();                                                                     // [0xc35382c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FVector> GetBoundaryPolygonInLocalSpace();                                                                     // [0xc2fb328] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.ARTrackedPoint
@@ -1578,9 +1578,9 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARTrackedImage.GetEstimateSize
-	// FVector2D GetEstimateSize();                                                                                          // [0xc353b94] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector2D GetEstimateSize();                                                                                          // [0xc2fb6a8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AugmentedReality.ARTrackedImage.GetDetectedImage
-	// class UARCandidateImage* GetDetectedImage();                                                                          // [0x33cdaa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UARCandidateImage* GetDetectedImage();                                                                          // [0x339b298] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.ARTrackedQRCode
@@ -1588,7 +1588,7 @@ public:
 class UARTrackedQRCode : public UARTrackedImage
 { 
 public:
-	SDK_UNDEFINED(16,11748) /* FString */              __um(QRCode);                                               // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,11810) /* FString */              __um(QRCode);                                               // 0x0170   (0x0010)  
 	int32_t                                            Version;                                                    // 0x0180   (0x0004)  
 	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0184   (0x000C)  MISSED
 };
@@ -1601,7 +1601,7 @@ public:
 	FVector                                            LookAtTarget;                                               // 0x0158   (0x0018)  
 	bool                                               bIsTracked;                                                 // 0x0170   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0171   (0x0007)  MISSED
-	SDK_UNDEFINED(80,11749) /* TMap<EARFaceBlendShape, float> */ __um(BlendShapes);                                // 0x0178   (0x0050)  
+	SDK_UNDEFINED(80,11811) /* TMap<EARFaceBlendShape, float> */ __um(BlendShapes);                                // 0x0178   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x38];                                      // 0x01C8   (0x0038)  MISSED
 	FTransform                                         LeftEyeTransform;                                           // 0x0200   (0x0060)  
 	FTransform                                         RightEyeTransform;                                          // 0x0260   (0x0060)  
@@ -1609,13 +1609,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
-	// FTransform GetWorldSpaceEyeTransform(EAREye Eye);                                                                     // [0xc354dfc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetWorldSpaceEyeTransform(EAREye Eye);                                                                     // [0xc2fc84c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
-	// FTransform GetLocalSpaceEyeTransform(EAREye Eye);                                                                     // [0xc353e3c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalSpaceEyeTransform(EAREye Eye);                                                                     // [0xc2fb910] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARFaceGeometry.GetBlendShapeValue
-	// float GetBlendShapeValue(EARFaceBlendShape BlendShape);                                                               // [0xc3536c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBlendShapeValue(EARFaceBlendShape BlendShape);                                                               // [0xc2fb1fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARFaceGeometry.GetBlendShapes
-	// TMap<EARFaceBlendShape, float> GetBlendShapes();                                                                      // [0xc353790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TMap<EARFaceBlendShape, float> GetBlendShapes();                                                                      // [0xc2fb28c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.AREnvironmentCaptureProbe
@@ -1630,9 +1630,9 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.AREnvironmentCaptureProbe.GetExtent
-	// FVector GetExtent();                                                                                                  // [0xc353bb0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetExtent();                                                                                                  // [0xc2fb6c4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
-	// class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();                                              // [0x91590c8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();                                              // [0x915ad40] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AugmentedReality.ARTrackedObject
@@ -1644,7 +1644,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARTrackedObject.GetDetectedObject
-	// class UARCandidateObject* GetDetectedObject();                                                                        // [0x33cdaa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UARCandidateObject* GetDetectedObject();                                                                        // [0x339b298] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/AugmentedReality.ARSkeletonDefinition
@@ -1679,7 +1679,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARTrackedPose.GetTrackedPoseData
-	// FARPose3D GetTrackedPoseData();                                                                                       // [0xc354d44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FARPose3D GetTrackedPoseData();                                                                                       // [0xc2fc794] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.ARMeshGeometry
@@ -1691,7 +1691,7 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARMeshGeometry.GetObjectClassificationAtLocation
-	// bool GetObjectClassificationAtLocation(FVector& InWorldLocation, EARObjectClassification& OutClassification, FVector& OutClassificationLocation, float MaxLocationDiff); // [0xc3546c0] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetObjectClassificationAtLocation(FVector& InWorldLocation, EARObjectClassification& OutClassification, FVector& OutClassificationLocation, float MaxLocationDiff); // [0xc2fc154] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AugmentedReality.ARGeoAnchor
@@ -1704,13 +1704,13 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARGeoAnchor.GetLongitude
-	// float GetLongitude();                                                                                                 // [0x618eb70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLongitude();                                                                                                 // [0x61ebdd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoAnchor.GetLatitude
-	// float GetLatitude();                                                                                                  // [0xc353e24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLatitude();                                                                                                  // [0xc2fb8f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoAnchor.GetAltitudeSource
-	// EARAltitudeSource GetAltitudeSource();                                                                                // [0xb44c438] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARAltitudeSource GetAltitudeSource();                                                                                // [0xb55d42c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARGeoAnchor.GetAltitudeMeters
-	// float GetAltitudeMeters();                                                                                            // [0x98b38f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAltitudeMeters();                                                                                            // [0x98c537c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.ARTrackableNotifyComponent
@@ -1718,27 +1718,27 @@ public:
 class UARTrackableNotifyComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,11750) /* FMulticastInlineDelegate */ __um(OnAddTrackedGeometry);                             // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11751) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedGeometry);                          // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,11752) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedGeometry);                          // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,11753) /* FMulticastInlineDelegate */ __um(OnAddTrackedPlane);                                // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,11754) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedPlane);                             // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,11755) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedPlane);                             // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(16,11756) /* FMulticastInlineDelegate */ __um(OnAddTrackedPoint);                                // 0x0100   (0x0010)  
-	SDK_UNDEFINED(16,11757) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedPoint);                             // 0x0110   (0x0010)  
-	SDK_UNDEFINED(16,11758) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedPoint);                             // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,11759) /* FMulticastInlineDelegate */ __um(OnAddTrackedImage);                                // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,11760) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedImage);                             // 0x0140   (0x0010)  
-	SDK_UNDEFINED(16,11761) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedImage);                             // 0x0150   (0x0010)  
-	SDK_UNDEFINED(16,11762) /* FMulticastInlineDelegate */ __um(OnAddTrackedFace);                                 // 0x0160   (0x0010)  
-	SDK_UNDEFINED(16,11763) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedFace);                              // 0x0170   (0x0010)  
-	SDK_UNDEFINED(16,11764) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedFace);                              // 0x0180   (0x0010)  
-	SDK_UNDEFINED(16,11765) /* FMulticastInlineDelegate */ __um(OnAddTrackedEnvProbe);                             // 0x0190   (0x0010)  
-	SDK_UNDEFINED(16,11766) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedEnvProbe);                          // 0x01A0   (0x0010)  
-	SDK_UNDEFINED(16,11767) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedEnvProbe);                          // 0x01B0   (0x0010)  
-	SDK_UNDEFINED(16,11768) /* FMulticastInlineDelegate */ __um(OnAddTrackedObject);                               // 0x01C0   (0x0010)  
-	SDK_UNDEFINED(16,11769) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedObject);                            // 0x01D0   (0x0010)  
-	SDK_UNDEFINED(16,11770) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedObject);                            // 0x01E0   (0x0010)  
+	SDK_UNDEFINED(16,11812) /* FMulticastInlineDelegate */ __um(OnAddTrackedGeometry);                             // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11813) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedGeometry);                          // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11814) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedGeometry);                          // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,11815) /* FMulticastInlineDelegate */ __um(OnAddTrackedPlane);                                // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,11816) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedPlane);                             // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,11817) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedPlane);                             // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,11818) /* FMulticastInlineDelegate */ __um(OnAddTrackedPoint);                                // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,11819) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedPoint);                             // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,11820) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedPoint);                             // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,11821) /* FMulticastInlineDelegate */ __um(OnAddTrackedImage);                                // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,11822) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedImage);                             // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,11823) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedImage);                             // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,11824) /* FMulticastInlineDelegate */ __um(OnAddTrackedFace);                                 // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,11825) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedFace);                              // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,11826) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedFace);                              // 0x0180   (0x0010)  
+	SDK_UNDEFINED(16,11827) /* FMulticastInlineDelegate */ __um(OnAddTrackedEnvProbe);                             // 0x0190   (0x0010)  
+	SDK_UNDEFINED(16,11828) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedEnvProbe);                          // 0x01A0   (0x0010)  
+	SDK_UNDEFINED(16,11829) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedEnvProbe);                          // 0x01B0   (0x0010)  
+	SDK_UNDEFINED(16,11830) /* FMulticastInlineDelegate */ __um(OnAddTrackedObject);                               // 0x01C0   (0x0010)  
+	SDK_UNDEFINED(16,11831) /* FMulticastInlineDelegate */ __um(OnUpdateTrackedObject);                            // 0x01D0   (0x0010)  
+	SDK_UNDEFINED(16,11832) /* FMulticastInlineDelegate */ __um(OnRemoveTrackedObject);                            // 0x01E0   (0x0010)  
 };
 
 /// Class /Script/AugmentedReality.ARTypesDummyClass
@@ -1754,7 +1754,7 @@ class UARCandidateImage : public UDataAsset
 { 
 public:
 	class UTexture2D*                                  CandidateTexture;                                           // 0x0030   (0x0008)  
-	SDK_UNDEFINED(16,11771) /* FString */              __um(FriendlyName);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,11833) /* FString */              __um(FriendlyName);                                         // 0x0038   (0x0010)  
 	float                                              Width;                                                      // 0x0048   (0x0004)  
 	float                                              Height;                                                     // 0x004C   (0x0004)  
 	EARCandidateImageOrientation                       orientation;                                                // 0x0050   (0x0001)  
@@ -1763,15 +1763,15 @@ public:
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARCandidateImage.GetPhysicalWidth
-	// float GetPhysicalWidth();                                                                                             // [0x388cc68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPhysicalWidth();                                                                                             // [0x38e62d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateImage.GetPhysicalHeight
-	// float GetPhysicalHeight();                                                                                            // [0x388c99c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPhysicalHeight();                                                                                            // [0x38e6004] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateImage.GetOrientation
-	// EARCandidateImageOrientation GetOrientation();                                                                        // [0x6070e74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EARCandidateImageOrientation GetOrientation();                                                                        // [0x60d5610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateImage.GetFriendlyName
-	// FString GetFriendlyName();                                                                                            // [0xa14ce6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetFriendlyName();                                                                                            // [0xa1422ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateImage.GetCandidateTexture
-	// class UTexture2D* GetCandidateTexture();                                                                              // [0x6200cfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTexture2D* GetCandidateTexture();                                                                              // [0x625fab4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AugmentedReality.ARCandidateObject
@@ -1780,23 +1780,23 @@ class UARCandidateObject : public UDataAsset
 { 
 public:
 	TArray<char>                                       CandidateObjectData;                                        // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,11772) /* FString */              __um(FriendlyName);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,11834) /* FString */              __um(FriendlyName);                                         // 0x0040   (0x0010)  
 	FBox                                               BoundingBox;                                                // 0x0050   (0x0038)  
 
 
 	/// Functions
 	// Function /Script/AugmentedReality.ARCandidateObject.SetFriendlyName
-	// void SetFriendlyName(FString NewName);                                                                                // [0xc358a34] Final|Native|Public|BlueprintCallable 
+	// void SetFriendlyName(FString NewName);                                                                                // [0xc3009fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARCandidateObject.SetCandidateObjectData
-	// void SetCandidateObjectData(TArray<char>& InCandidateObject);                                                         // [0xc357cf4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCandidateObjectData(TArray<char>& InCandidateObject);                                                         // [0xc2ffdd0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARCandidateObject.SetBoundingBox
-	// void SetBoundingBox(FBox& InBoundingBox);                                                                             // [0xc357c4c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetBoundingBox(FBox& InBoundingBox);                                                                             // [0xc2ffd28] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AugmentedReality.ARCandidateObject.GetFriendlyName
-	// FString GetFriendlyName();                                                                                            // [0xc353c44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetFriendlyName();                                                                                            // [0xc2fb758] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateObject.GetCandidateObjectData
-	// TArray<char> GetCandidateObjectData();                                                                                // [0xc35399c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<char> GetCandidateObjectData();                                                                                // [0xc2fb498] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AugmentedReality.ARCandidateObject.GetBoundingBox
-	// FBox GetBoundingBox();                                                                                                // [0xc3538c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetBoundingBox();                                                                                                // [0xc2fb3bc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/AugmentedReality.TrackedGeometryGroup
@@ -1832,7 +1832,7 @@ struct FARTraceResult
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FARSessionStatus
 { 
-	SDK_UNDEFINED(16,11773) /* FString */              __um(AdditionalInfo);                                       // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11835) /* FString */              __um(AdditionalInfo);                                       // 0x0000   (0x0010)  
 	EARSessionStatus                                   Status;                                                     // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };

@@ -58,9 +58,9 @@ public:
 
 	/// Functions
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnEndDance
-	// void OnEndDance();                                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnEndDance();                                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnBeginDance
-	// void OnBeginDance();                                                                                                     // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnBeginDance();                                                                                                     // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/AI/NavAreas/FortNavArea_JumpDown.FortNavArea_JumpDown_C
@@ -85,9 +85,9 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C
@@ -178,16 +178,16 @@ public:
 	SMember(FAnimNode_ConvertLocalToComponentSpace)    AnimGraphNode_LocalToComponentSpace                         OFFSET(getStruct<T>, {0x1C38, 32, 0, 0})
 	SMember(FAnimNode_ConvertComponentToLocalSpace)    AnimGraphNode_ComponentToLocalSpace                         OFFSET(getStruct<T>, {0x1C58, 32, 0, 0})
 	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot1                                         OFFSET(getStruct<T>, {0x1C78, 72, 0, 0})
-	SMember(FAnimNode_LegIK)                           AnimGraphNode_LegIK                                         OFFSET(getStruct<T>, {0x1CC0, 248, 0, 0})
-	SMember(FAnimNode_ApplyAdditive)                   AnimGraphNode_ApplyAdditive4                                OFFSET(getStruct<T>, {0x1DB8, 200, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult24                            OFFSET(getStruct<T>, {0x1E80, 40, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult25                            OFFSET(getStruct<T>, {0x1EA8, 40, 0, 0})
-	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer14                              OFFSET(getStruct<T>, {0x1ED0, 72, 0, 0})
-	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult11                                 OFFSET(getStruct<T>, {0x1F18, 32, 0, 0})
-	SMember(FAnimNode_RefPose)                         AnimGraphNode_IdentityPose1                                 OFFSET(getStruct<T>, {0x1F38, 16, 0, 0})
-	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult12                                 OFFSET(getStruct<T>, {0x1F48, 32, 0, 0})
-	SMember(FAnimNode_StateMachine)                    AnimGraphNode_StateMachine2                                 OFFSET(getStruct<T>, {0x1F68, 200, 0, 0})
-	SMember(FFortAnimNode_QuadrupedSlopeWarping)       FortAnimGraphNode_QuadrupedSlopeWarping                     OFFSET(getStruct<T>, {0x2030, 1480, 0, 0})
+	SMember(FAnimNode_LegIK)                           AnimGraphNode_LegIK                                         OFFSET(getStruct<T>, {0x1CC0, 256, 0, 0})
+	SMember(FAnimNode_ApplyAdditive)                   AnimGraphNode_ApplyAdditive4                                OFFSET(getStruct<T>, {0x1DC0, 200, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult24                            OFFSET(getStruct<T>, {0x1E88, 40, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult25                            OFFSET(getStruct<T>, {0x1EB0, 40, 0, 0})
+	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer14                              OFFSET(getStruct<T>, {0x1ED8, 72, 0, 0})
+	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult11                                 OFFSET(getStruct<T>, {0x1F20, 32, 0, 0})
+	SMember(FAnimNode_RefPose)                         AnimGraphNode_IdentityPose1                                 OFFSET(getStruct<T>, {0x1F40, 16, 0, 0})
+	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult12                                 OFFSET(getStruct<T>, {0x1F50, 32, 0, 0})
+	SMember(FAnimNode_StateMachine)                    AnimGraphNode_StateMachine2                                 OFFSET(getStruct<T>, {0x1F70, 200, 0, 0})
+	SMember(FFortAnimNode_QuadrupedSlopeWarping)       FortAnimGraphNode_QuadrupedSlopeWarping                     OFFSET(getStruct<T>, {0x2038, 1480, 0, 0})
 	SMember(FFortAnimNode_WeightedLookAt)              FortAnimGraphNode_WeightedLookAt                            OFFSET(getStruct<T>, {0x2600, 592, 0, 0})
 	SMember(FAnimNode_Inertialization)                 AnimGraphNode_Inertialization                               OFFSET(getStruct<T>, {0x2850, 280, 0, 0})
 	SMember(FAnimNode_LinkedAnimLayer)                 AnimGraphNode_LinkedAnimLayer                               OFFSET(getStruct<T>, {0x2968, 200, 0, 0})
@@ -303,21 +303,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x3d1d968] BlueprintEvent       
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                           // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                             // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                             // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.ExecuteUbergraph_Burt_AnimBP
-	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                   // [0x130d900] Final                
+	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                   // [0x3d1d968] Final                
 };
 
 /// Class /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C
@@ -332,7 +332,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C
@@ -438,31 +438,31 @@ public:
 	SMember(FAnimNode_ConvertLocalToComponentSpace)    AnimGraphNode_LocalToComponentSpace                         OFFSET(getStruct<T>, {0x1FB8, 32, 0, 0})
 	SMember(FAnimNode_ConvertComponentToLocalSpace)    AnimGraphNode_ComponentToLocalSpace                         OFFSET(getStruct<T>, {0x1FD8, 32, 0, 0})
 	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot1                                         OFFSET(getStruct<T>, {0x1FF8, 72, 0, 0})
-	SMember(FAnimNode_LegIK)                           AnimGraphNode_LegIK                                         OFFSET(getStruct<T>, {0x2040, 248, 0, 0})
-	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot2                                         OFFSET(getStruct<T>, {0x2138, 72, 0, 0})
-	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot3                                         OFFSET(getStruct<T>, {0x2180, 72, 0, 0})
-	SMember(FAnimNode_SaveCachedPose)                  AnimGraphNode_SaveCachedPose                                OFFSET(getStruct<T>, {0x21C8, 120, 0, 0})
-	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose2                                OFFSET(getStruct<T>, {0x2240, 40, 0, 0})
-	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose3                                OFFSET(getStruct<T>, {0x2268, 40, 0, 0})
-	SMember(FAnimNode_BlendListByBool)                 AnimGraphNode_BlendListByBool4                              OFFSET(getStruct<T>, {0x2290, 72, 0, 0})
-	SMember(FAnimNode_LayeredBoneBlend)                AnimGraphNode_LayeredBoneBlend1                             OFFSET(getStruct<T>, {0x22D8, 240, 0, 0})
-	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose4                                OFFSET(getStruct<T>, {0x23C8, 40, 0, 0})
-	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot4                                         OFFSET(getStruct<T>, {0x23F0, 72, 0, 0})
-	SMember(FAnimNode_ApplyAdditive)                   AnimGraphNode_ApplyAdditive4                                OFFSET(getStruct<T>, {0x2438, 200, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult29                            OFFSET(getStruct<T>, {0x2500, 40, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult30                            OFFSET(getStruct<T>, {0x2528, 40, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult31                            OFFSET(getStruct<T>, {0x2550, 40, 0, 0})
-	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult32                            OFFSET(getStruct<T>, {0x2578, 40, 0, 0})
-	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer18                              OFFSET(getStruct<T>, {0x25A0, 72, 0, 0})
-	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult15                                 OFFSET(getStruct<T>, {0x25E8, 32, 0, 0})
-	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer19                              OFFSET(getStruct<T>, {0x2608, 72, 0, 0})
-	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult16                                 OFFSET(getStruct<T>, {0x2650, 32, 0, 0})
-	SMember(FAnimNode_RefPose)                         AnimGraphNode_IdentityPose1                                 OFFSET(getStruct<T>, {0x2670, 16, 0, 0})
-	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult17                                 OFFSET(getStruct<T>, {0x2680, 32, 0, 0})
-	SMember(FAnimNode_StateMachine)                    AnimGraphNode_StateMachine3                                 OFFSET(getStruct<T>, {0x26A0, 200, 0, 0})
-	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer20                              OFFSET(getStruct<T>, {0x2768, 72, 0, 0})
-	SMember(FAnimNode_LayeredBoneBlend)                AnimGraphNode_LayeredBoneBlend2                             OFFSET(getStruct<T>, {0x27B0, 240, 0, 0})
-	SMember(FFortAnimNode_QuadrupedSlopeWarping)       FortAnimGraphNode_QuadrupedSlopeWarping                     OFFSET(getStruct<T>, {0x28A0, 1480, 0, 0})
+	SMember(FAnimNode_LegIK)                           AnimGraphNode_LegIK                                         OFFSET(getStruct<T>, {0x2040, 256, 0, 0})
+	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot2                                         OFFSET(getStruct<T>, {0x2140, 72, 0, 0})
+	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot3                                         OFFSET(getStruct<T>, {0x2188, 72, 0, 0})
+	SMember(FAnimNode_SaveCachedPose)                  AnimGraphNode_SaveCachedPose                                OFFSET(getStruct<T>, {0x21D0, 120, 0, 0})
+	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose2                                OFFSET(getStruct<T>, {0x2248, 40, 0, 0})
+	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose3                                OFFSET(getStruct<T>, {0x2270, 40, 0, 0})
+	SMember(FAnimNode_BlendListByBool)                 AnimGraphNode_BlendListByBool4                              OFFSET(getStruct<T>, {0x2298, 72, 0, 0})
+	SMember(FAnimNode_LayeredBoneBlend)                AnimGraphNode_LayeredBoneBlend1                             OFFSET(getStruct<T>, {0x22E0, 240, 0, 0})
+	SMember(FAnimNode_UseCachedPose)                   AnimGraphNode_UseCachedPose4                                OFFSET(getStruct<T>, {0x23D0, 40, 0, 0})
+	SMember(FAnimNode_Slot)                            AnimGraphNode_Slot4                                         OFFSET(getStruct<T>, {0x23F8, 72, 0, 0})
+	SMember(FAnimNode_ApplyAdditive)                   AnimGraphNode_ApplyAdditive4                                OFFSET(getStruct<T>, {0x2440, 200, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult29                            OFFSET(getStruct<T>, {0x2508, 40, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult30                            OFFSET(getStruct<T>, {0x2530, 40, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult31                            OFFSET(getStruct<T>, {0x2558, 40, 0, 0})
+	SMember(FAnimNode_TransitionResult)                AnimGraphNode_TransitionResult32                            OFFSET(getStruct<T>, {0x2580, 40, 0, 0})
+	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer18                              OFFSET(getStruct<T>, {0x25A8, 72, 0, 0})
+	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult15                                 OFFSET(getStruct<T>, {0x25F0, 32, 0, 0})
+	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer19                              OFFSET(getStruct<T>, {0x2610, 72, 0, 0})
+	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult16                                 OFFSET(getStruct<T>, {0x2658, 32, 0, 0})
+	SMember(FAnimNode_RefPose)                         AnimGraphNode_IdentityPose1                                 OFFSET(getStruct<T>, {0x2678, 16, 0, 0})
+	SMember(FAnimNode_StateResult)                     AnimGraphNode_StateResult17                                 OFFSET(getStruct<T>, {0x2688, 32, 0, 0})
+	SMember(FAnimNode_StateMachine)                    AnimGraphNode_StateMachine3                                 OFFSET(getStruct<T>, {0x26A8, 200, 0, 0})
+	SMember(FAnimNode_SequencePlayer)                  AnimGraphNode_SequencePlayer20                              OFFSET(getStruct<T>, {0x2770, 72, 0, 0})
+	SMember(FAnimNode_LayeredBoneBlend)                AnimGraphNode_LayeredBoneBlend2                             OFFSET(getStruct<T>, {0x27B8, 240, 0, 0})
+	SMember(FFortAnimNode_QuadrupedSlopeWarping)       FortAnimGraphNode_QuadrupedSlopeWarping                     OFFSET(getStruct<T>, {0x28A8, 1480, 0, 0})
 	SMember(FFortAnimNode_WeightedLookAt)              FortAnimGraphNode_WeightedLookAt                            OFFSET(getStruct<T>, {0x2E70, 592, 0, 0})
 	SMember(FAnimNode_Inertialization)                 AnimGraphNode_Inertialization                               OFFSET(getStruct<T>, {0x30C0, 280, 0, 0})
 	SMember(FAnimNode_LinkedAnimLayer)                 AnimGraphNode_LinkedAnimLayer                               OFFSET(getStruct<T>, {0x31D8, 200, 0, 0})
@@ -578,21 +578,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                           // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                             // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                             // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.ExecuteUbergraph_Grandma_AnimBP
-	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                                // [0x130d900] Final                
+	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                                // [0x3d1d968] Final                
 };
 
 /// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_PawnDmg.GE_RidingSprint_PawnDmg_C
@@ -605,9 +605,9 @@ class UGE_RidingSprint_PawnDmg_C : public UGET_DirectPhysicalDamage_C
 public:
 };
 
-/// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_VehicleDmg.GE_RidingSprint_VehicleDmg_C
+/// Class /Irwin/AI/Prey/Burt/Abilities/GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown.GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_RidingSprint_VehicleDmg_C : public UGET_DirectPhysicalDamage_C
+class UGE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C : public UGameplayEffect
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2664;
@@ -615,9 +615,9 @@ class UGE_RidingSprint_VehicleDmg_C : public UGET_DirectPhysicalDamage_C
 public:
 };
 
-/// Class /Irwin/AI/Prey/Burt/Abilities/GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown.GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C
+/// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_VehicleDmg.GE_RidingSprint_VehicleDmg_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C : public UGameplayEffect
+class UGE_RidingSprint_VehicleDmg_C : public UGET_DirectPhysicalDamage_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2664;
@@ -941,7 +941,7 @@ public:
 
 /// Struct /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x2CE7 (0x000001 - 0x002CE8)
-class FAnimBlueprintGeneratedConstantDatadup_113 : public FAnimBlueprintConstantData
+class FAnimBlueprintGeneratedConstantDatadup_121 : public FAnimBlueprintConstantData
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -1250,7 +1250,7 @@ public:
 
 /// Struct /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x0070 (0x000001 - 0x000071)
-class FAnimBlueprintGeneratedMutableDatadup_114 : public FAnimBlueprintMutableData
+class FAnimBlueprintGeneratedMutableDatadup_122 : public FAnimBlueprintMutableData
 { 
 	friend MDKHandler;
 	friend MDKBase;

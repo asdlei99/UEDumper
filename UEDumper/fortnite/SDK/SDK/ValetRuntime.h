@@ -92,7 +92,7 @@ class UFortValetPassengerAnimInstance : public UFortVehicleOccupantAnimInstance
 public:
 	FCachedAnimRelevancyData                           IntoVehicleCachedData;                                      // 0x0830   (0x0014)  
 	FCachedAnimRelevancyData                           OutOfVehicleCachedData;                                     // 0x0844   (0x0014)  
-	SDK_UNDEFINED(32,11609) /* TWeakObjectPtr<AFortDagwoodVehicle*> */ __um(DagwoodVehicleInstance);               // 0x0858   (0x0020)  
+	SDK_UNDEFINED(32,11672) /* TWeakObjectPtr<AFortDagwoodVehicle*> */ __um(DagwoodVehicleInstance);               // 0x0858   (0x0020)  
 	float                                              TurnYaw;                                                    // 0x0878   (0x0004)  
 	float                                              InTime;                                                     // 0x087C   (0x0004)  
 	float                                              OutTime;                                                    // 0x0880   (0x0004)  
@@ -270,7 +270,7 @@ class UDagwoodNetworkPhysicsComponent : public UActorComponent
 { 
 public:
 	FNetworkPhysicsState                               NetworkPhysicsState;                                        // 0x00A0   (0x0090)  
-	SDK_UNDEFINED(16,11610) /* FMulticastInlineDelegate */ __um(OnGeneratedLocalInputCmd);                         // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,11673) /* FMulticastInlineDelegate */ __um(OnGeneratedLocalInputCmd);                         // 0x0130   (0x0010)  
 	FDagwoodManagedState                               ReplicatedManagedState;                                     // 0x0140   (0x04E8)  
 	FDagwoodManagedState                               InManagedState;                                             // 0x0628   (0x04E8)  
 	FDagwoodManagedState                               OutManagedState;                                            // 0x0B10   (0x04E8)  
@@ -279,17 +279,17 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.SetState_GT
-	// void SetState_GT(FDagwoodInPersistent& In);                                                                           // [0xaa07910] Final|Native|Public|HasOutParms 
+	// void SetState_GT(FDagwoodInPersistent& In);                                                                           // [0xad08458] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.SetPendingInputCmd
-	// void SetPendingInputCmd(FFortDagwoodCmd& In);                                                                         // [0xaa07440] Final|Native|Public|HasOutParms 
+	// void SetPendingInputCmd(FFortDagwoodCmd& In);                                                                         // [0xad08044] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.OnGeneratedLocalInputCmd__DelegateSignature
-	// void OnGeneratedLocalInputCmd__DelegateSignature();                                                                   // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnGeneratedLocalInputCmd__DelegateSignature();                                                                   // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetState_PT
-	// FDagwoodState_PT GetState_PT();                                                                                       // [0xaa05f4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDagwoodState_PT GetState_PT();                                                                                       // [0xad06f74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetState_GT
-	// FDagwoodInPersistent GetState_GT();                                                                                   // [0xaa05ee0] Final|Native|Public|Const 
+	// FDagwoodInPersistent GetState_GT();                                                                                   // [0xad06f08] Final|Native|Public|Const 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetPendingInputCmd
-	// FFortDagwoodCmd GetPendingInputCmd();                                                                                 // [0xaa05eac] Final|Native|Public|Const 
+	// FFortDagwoodCmd GetPendingInputCmd();                                                                                 // [0xad06ed4] Final|Native|Public|Const 
 };
 
 /// Class /Script/ValetRuntime.NetworkPhysicsManager
@@ -311,7 +311,7 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortAthenaMutator_OverrideValetVehicleParameters.OnPlaylistLoaded
-	// void OnPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContainerTags);                              // [0x80dae54] Final|Native|Public|HasOutParms 
+	// void OnPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContainerTags);                              // [0x80eaf10] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/ValetRuntime.FortCameraMode_Dagwood
@@ -347,9 +347,9 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortContextualTutorial_VehicleValetLowFuel.HandleVehicleStateChanged
-	// void HandleVehicleStateChanged(class AFortPlayerPawn* PlayerPawn, class AActor* NewVehicle, class AActor* OldVehicle); // [0xaa061b0] Final|Native|Private 
+	// void HandleVehicleStateChanged(class AFortPlayerPawn* PlayerPawn, class AActor* NewVehicle, class AActor* OldVehicle); // [0xad07150] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortContextualTutorial_VehicleValetLowFuel.HandleStartSkydivingForActivation
-	// void HandleStartSkydivingForActivation();                                                                             // [0xaa0619c] Final|Native|Private 
+	// void HandleStartSkydivingForActivation();                                                                             // [0xad0713c] Final|Native|Private 
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodModsConfigs
@@ -360,233 +360,233 @@ public:
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodVehicle
-/// Size: 0x0670 (0x001F70 - 0x0025E0)
+/// Size: 0x0690 (0x001F90 - 0x002620)
 class AFortDagwoodVehicle : public AFortAthenaSKMotorVehicle
 { 
 public:
-	unsigned char                                      UnknownData00_3[0x28];                                      // 0x1F68   (0x0028)  MISSED
-	SDK_UNDEFINED(16,11611) /* FMulticastInlineDelegate */ __um(OnStartHandbrakeDelegate);                         // 0x1F90   (0x0010)  
-	SDK_UNDEFINED(16,11612) /* FMulticastInlineDelegate */ __um(OnStopHandbrakeDelegate);                          // 0x1FA0   (0x0010)  
-	SDK_UNDEFINED(16,11613) /* FMulticastInlineDelegate */ __um(OnStartHandBrakeCatchupForceDelegate);             // 0x1FB0   (0x0010)  
-	class UClass*                                      HardLandingCameraShake;                                     // 0x1FC0   (0x0008)  
-	class UClass*                                      DriverCamShakeClass;                                        // 0x1FC8   (0x0008)  
-	class UClass*                                      HandBrakeCamShakeClass;                                     // 0x1FD0   (0x0008)  
-	EVehicleClass                                      VehicleClass;                                               // 0x1FD8   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1FD9   (0x0003)  MISSED
-	float                                              FadeDelay;                                                  // 0x1FDC   (0x0004)  
-	float                                              FadeDuration;                                               // 0x1FE0   (0x0004)  
-	float                                              MinBrakeForceForSkid;                                       // 0x1FE4   (0x0004)  
-	float                                              MinForwardSpeedForSkid;                                     // 0x1FE8   (0x0004)  
-	FGameplayTag                                       SpeedLinesCueTag;                                           // 0x1FEC   (0x0004)  
-	float                                              FadeStartTime;                                              // 0x1FF0   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x1FF4   (0x0004)  MISSED
-	class UDagwoodNetworkPhysicsComponent*             NetworkPhysicsComponent;                                    // 0x1FF8   (0x0008)  
-	unsigned char                                      UnknownData03_5[0x78];                                      // 0x2000   (0x0078)  MISSED
-	SDK_UNDEFINED(16,11614) /* FMulticastInlineDelegate */ __um(OnTireModHealthChanged);                           // 0x2078   (0x0010)  
-	float                                              RechargeableBoostPercent;                                   // 0x2088   (0x0004)  
-	unsigned char                                      UnknownData04_5[0x4];                                       // 0x208C   (0x0004)  MISSED
-	class UFortSplatterSourceComponent*                SplatterSourceComp;                                         // 0x2090   (0x0008)  
-	bool                                               bEnableNativizedTick;                                       // 0x2098   (0x0001)  
-	unsigned char                                      UnknownData05_5[0x7];                                       // 0x2099   (0x0007)  MISSED
-	TArray<FName>                                      PassengerLeanSockets;                                       // 0x20A0   (0x0010)  
-	TArray<FVector>                                    PassngerLeanRelativeOffsets;                                // 0x20B0   (0x0010)  
-	class UClass*                                      PassengerCameraModeClass;                                   // 0x20C0   (0x0008)  
-	class UClass*                                      PassengerCameraModeClass_ADS;                               // 0x20C8   (0x0008)  
-	TArray<FName>                                      WheelSocketNames;                                           // 0x20D0   (0x0010)  
-	class UFortDagwoodVehicleConfigs*                  FortDagwoodVehicleConfigs;                                  // 0x20E0   (0x0008)  
-	TArray<int32_t>                                    RearShocks;                                                 // 0x20E8   (0x0010)  
-	FGameplayTagContainer                              OffroadEnvironmentDamageTags;                               // 0x20F8   (0x0020)  
-	FGameplayTagContainer                              FireDamageTags;                                             // 0x2118   (0x0020)  
-	FVector                                            NativeWheelScaleRear;                                       // 0x2138   (0x0018)  
-	FVector                                            NativeWheelScaleFront;                                      // 0x2150   (0x0018)  
-	FVector                                            NativeTireScaleRear;                                        // 0x2168   (0x0018)  
-	FVector                                            NativeTireScaleFront;                                       // 0x2180   (0x0018)  
-	bool                                               bTireSmokeActive;                                           // 0x2198   (0x0001)  
-	bool                                               bBoostFailed;                                               // 0x2199   (0x0001)  
-	bool                                               bCanBoostPitch;                                             // 0x219A   (0x0001)  
-	unsigned char                                      UnknownData06_5[0x5];                                       // 0x219B   (0x0005)  MISSED
-	uint64_t                                           AccelForceFeedbackHandle;                                   // 0x21A0   (0x0008)  
-	uint64_t                                           SkidForceFeedbackHandle;                                    // 0x21A8   (0x0008)  
-	uint64_t                                           BrakeForceFeedbackHandle;                                   // 0x21B0   (0x0008)  
-	uint64_t                                           HandBrakeForceFeedbackHandle;                               // 0x21B8   (0x0008)  
-	bool                                               bSpeedLinesActive;                                          // 0x21C0   (0x0001)  
-	unsigned char                                      UnknownData07_5[0x1F];                                      // 0x21C1   (0x001F)  MISSED
-	FDagwoodRuntimeModifiers                           DagwoodRuntimeModifiedProperties;                           // 0x21E0   (0x0070)  
-	TArray<FAttachedWheel>                             ServerRepWheelData;                                         // 0x2250   (0x0010)  
-	unsigned char                                      UnknownData08_5[0x50];                                      // 0x2260   (0x0050)  MISSED
-	FVector                                            FlipYawForwardTargetDirection;                              // 0x22B0   (0x0018)  
-	FVector                                            FlipYawOriginalForward;                                     // 0x22C8   (0x0018)  
-	EVehicleWheelLocations                             LastPoppedTire;                                             // 0x22E0   (0x0001)  
-	unsigned char                                      UnknownData09_5[0x3];                                       // 0x22E1   (0x0003)  MISSED
-	float                                              RoadTopSpeedMultiplier;                                     // 0x22E4   (0x0004)  
-	float                                              CurrentBumpiness;                                           // 0x22E8   (0x0004)  
-	float                                              CurrentForwardAcceleration;                                 // 0x22EC   (0x0004)  
-	float                                              PreviousTurnAlpha;                                          // 0x22F0   (0x0004)  
-	float                                              CurrentCameraAssistStrength;                                // 0x22F4   (0x0004)  
-	float                                              LostGripTime;                                               // 0x22F8   (0x0004)  
-	float                                              LostGripRightAlpha;                                         // 0x22FC   (0x0004)  
-	float                                              HandbrakeTime;                                              // 0x2300   (0x0004)  
-	float                                              HandbrakeStartTime;                                         // 0x2304   (0x0004)  
-	float                                              HandbrakeEndTime;                                           // 0x2308   (0x0004)  
-	float                                              FlipYawMult;                                                // 0x230C   (0x0004)  
-	float                                              FlipTimer;                                                  // 0x2310   (0x0004)  
-	float                                              FlipExplodeTimer;                                           // 0x2314   (0x0004)  
-	float                                              FlipPushForceTimer;                                         // 0x2318   (0x0004)  
-	float                                              FlipAirTimer;                                               // 0x231C   (0x0004)  
-	float                                              FlipLanding;                                                // 0x2320   (0x0004)  
-	float                                              FlipStartTime;                                              // 0x2324   (0x0004)  
-	float                                              LastFlipDamageTime;                                         // 0x2328   (0x0004)  
-	float                                              PreFlipControlLossTimer;                                    // 0x232C   (0x0004)  
-	bool                                               bDidCinematicFlip;                                          // 0x2330   (0x0001)  
-	bool                                               bCanCinematicFlip;                                          // 0x2331   (0x0001)  
-	bool                                               bInPopTireVeer;                                             // 0x2332   (0x0001)  
-	bool                                               bInFlipRecovery;                                            // 0x2333   (0x0001)  
-	bool                                               bExplodeAfterFlip;                                          // 0x2334   (0x0001)  
-	bool                                               bLostGrip;                                                  // 0x2335   (0x0001)  
-	bool                                               bApplyHandbrakeCatchupForce;                                // 0x2336   (0x0001)  
-	bool                                               bDidHandbrakeCatchup;                                       // 0x2337   (0x0001)  
-	bool                                               bInFlipRoll;                                                // 0x2338   (0x0001)  
-	bool                                               bInFlipYaw;                                                 // 0x2339   (0x0001)  
-	bool                                               bInFlipPitch;                                               // 0x233A   (0x0001)  
-	bool                                               bFlipDidLeaveGround;                                        // 0x233B   (0x0001)  
-	bool                                               bBreakBuildingsIfBlockingLeaningPassenger;                  // 0x233C   (0x0001)  
-	unsigned char                                      UnknownData10_5[0x3];                                       // 0x233D   (0x0003)  MISSED
-	float                                              LeanBreakTimeAccumulator;                                   // 0x2340   (0x0004)  
-	float                                              LeanBreakCheckInterval;                                     // 0x2344   (0x0004)  
-	TArray<FName>                                      SeatToWindowShapeNames;                                     // 0x2348   (0x0010)  
-	class ULegacyCameraShake*                          OffroadCameraShakeInstance;                                 // 0x2358   (0x0008)  
-	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x2360   (0x0008)  
-	class ULegacyCameraShake*                          AccelCameraShakeInstance;                                   // 0x2368   (0x0008)  
-	class ULegacyCameraShake*                          HandBrakeCameraShakeInstance;                               // 0x2370   (0x0008)  
-	class UNiagaraComponent*                           NativeComp_RoadAndExhaust;                                  // 0x2378   (0x0008)  
-	class UNiagaraComponent*                           NativeComp_TireSkid;                                        // 0x2380   (0x0008)  
-	class UNiagaraComponent*                           NativeComp_Damage;                                          // 0x2388   (0x0008)  
-	class UNiagaraComponent*                           NativeComp_SpeedLines;                                      // 0x2390   (0x0008)  
-	class UNiagaraSystem*                              NativeSys_TireExhaust;                                      // 0x2398   (0x0008)  
-	class UNiagaraSystem*                              NativeSys_SpeedLines;                                       // 0x23A0   (0x0008)  
-	class UNiagaraSystem*                              NativeSys_TireSkid;                                         // 0x23A8   (0x0008)  
-	SDK_UNDEFINED(16,11615) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x23B0   (0x0010)  
-	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x23C0   (0x0004)  
-	FName                                              BrakeLightsName;                                            // 0x23C4   (0x0004)  
-	unsigned char                                      UnknownData11_5[0x18];                                      // 0x23C8   (0x0018)  MISSED
-	TArray<ETireStates>                                FakeTireStates;                                             // 0x23E0   (0x0010)  
-	EPoppedTireReactionStates                          ActivePoppedTireReaction;                                   // 0x23F0   (0x0001)  
-	EPoppedTireReactionStates                          ReplicatedPoppedTireReaction;                               // 0x23F1   (0x0001)  
-	unsigned char                                      UnknownData12_5[0x2];                                       // 0x23F2   (0x0002)  MISSED
-	SDK_UNDEFINED(8,11616) /* TWeakObjectPtr<AFortValetAudioController*> */ __um(ValetAudio);                      // 0x23F4   (0x0008)  
-	unsigned char                                      UnknownData13_5[0x4];                                       // 0x23FC   (0x0004)  MISSED
-	TArray<class USkeletalMeshComponent*>              TireMeshes;                                                 // 0x2400   (0x0010)  
-	TArray<class USkeletalMeshComponent*>              FakeTireMeshes;                                             // 0x2410   (0x0010)  
-	unsigned char                                      UnknownData14_5[0x4];                                       // 0x2420   (0x0004)  MISSED
-	bool                                               bIsInoperable;                                              // 0x2424   (0x0001)  
-	unsigned char                                      UnknownData15_5[0x3];                                       // 0x2425   (0x0003)  MISSED
-	int32_t                                            RandomSeed;                                                 // 0x2428   (0x0004)  
-	FRandomStream                                      RandStream;                                                 // 0x242C   (0x0008)  
-	bool                                               bHasTraction;                                               // 0x2434   (0x0001)  
-	bool                                               bStartHandBrakeCatchupForce;                                // 0x2435   (0x0001)  
-	unsigned char                                      UnknownData16_5[0x10A];                                     // 0x2436   (0x010A)  MISSED
-	bool                                               bSelfDestructEnabled : 1;                                   // 0x2540:0 (0x0001)  
-	bool                                               bClientUsesSelfDestructTimer : 1;                           // 0x2540:1 (0x0001)  
-	unsigned char                                      UnknownData17_4[0x7];                                       // 0x2541   (0x0007)  MISSED
-	class UStaticMesh*                                 TireBootMesh;                                               // 0x2548   (0x0008)  
-	SDK_UNDEFINED(80,11617) /* TMap<int32_t, FDagwoodActionDefForUI> */ __um(MapSelfDestructActionDefForUI);       // 0x2550   (0x0050)  
-	float                                              MinimumTimeBetweenSelfDestructPromptChanges;                // 0x25A0   (0x0004)  
-	unsigned char                                      UnknownData18_6[0x3C];                                      // 0x25A4   (0x003C)  MISSED
+	unsigned char                                      UnknownData00_3[0x48];                                      // 0x1F90   (0x0048)  MISSED
+	SDK_UNDEFINED(16,11674) /* FMulticastInlineDelegate */ __um(OnStartHandbrakeDelegate);                         // 0x1FD8   (0x0010)  
+	SDK_UNDEFINED(16,11675) /* FMulticastInlineDelegate */ __um(OnStopHandbrakeDelegate);                          // 0x1FE8   (0x0010)  
+	SDK_UNDEFINED(16,11676) /* FMulticastInlineDelegate */ __um(OnStartHandBrakeCatchupForceDelegate);             // 0x1FF8   (0x0010)  
+	class UClass*                                      HardLandingCameraShake;                                     // 0x2008   (0x0008)  
+	class UClass*                                      DriverCamShakeClass;                                        // 0x2010   (0x0008)  
+	class UClass*                                      HandBrakeCamShakeClass;                                     // 0x2018   (0x0008)  
+	EVehicleClass                                      VehicleClass;                                               // 0x2020   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x2021   (0x0003)  MISSED
+	float                                              FadeDelay;                                                  // 0x2024   (0x0004)  
+	float                                              FadeDuration;                                               // 0x2028   (0x0004)  
+	float                                              MinBrakeForceForSkid;                                       // 0x202C   (0x0004)  
+	float                                              MinForwardSpeedForSkid;                                     // 0x2030   (0x0004)  
+	FGameplayTag                                       SpeedLinesCueTag;                                           // 0x2034   (0x0004)  
+	float                                              FadeStartTime;                                              // 0x2038   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x203C   (0x0004)  MISSED
+	class UDagwoodNetworkPhysicsComponent*             NetworkPhysicsComponent;                                    // 0x2040   (0x0008)  
+	unsigned char                                      UnknownData03_5[0x78];                                      // 0x2048   (0x0078)  MISSED
+	SDK_UNDEFINED(16,11677) /* FMulticastInlineDelegate */ __um(OnTireModHealthChanged);                           // 0x20C0   (0x0010)  
+	float                                              RechargeableBoostPercent;                                   // 0x20D0   (0x0004)  
+	unsigned char                                      UnknownData04_5[0x4];                                       // 0x20D4   (0x0004)  MISSED
+	class UFortSplatterSourceComponent*                SplatterSourceComp;                                         // 0x20D8   (0x0008)  
+	bool                                               bEnableNativizedTick;                                       // 0x20E0   (0x0001)  
+	unsigned char                                      UnknownData05_5[0x7];                                       // 0x20E1   (0x0007)  MISSED
+	TArray<FName>                                      PassengerLeanSockets;                                       // 0x20E8   (0x0010)  
+	TArray<FVector>                                    PassngerLeanRelativeOffsets;                                // 0x20F8   (0x0010)  
+	class UClass*                                      PassengerCameraModeClass;                                   // 0x2108   (0x0008)  
+	class UClass*                                      PassengerCameraModeClass_ADS;                               // 0x2110   (0x0008)  
+	TArray<FName>                                      WheelSocketNames;                                           // 0x2118   (0x0010)  
+	class UFortDagwoodVehicleConfigs*                  FortDagwoodVehicleConfigs;                                  // 0x2128   (0x0008)  
+	TArray<int32_t>                                    RearShocks;                                                 // 0x2130   (0x0010)  
+	FGameplayTagContainer                              OffroadEnvironmentDamageTags;                               // 0x2140   (0x0020)  
+	FGameplayTagContainer                              FireDamageTags;                                             // 0x2160   (0x0020)  
+	FVector                                            NativeWheelScaleRear;                                       // 0x2180   (0x0018)  
+	FVector                                            NativeWheelScaleFront;                                      // 0x2198   (0x0018)  
+	FVector                                            NativeTireScaleRear;                                        // 0x21B0   (0x0018)  
+	FVector                                            NativeTireScaleFront;                                       // 0x21C8   (0x0018)  
+	bool                                               bTireSmokeActive;                                           // 0x21E0   (0x0001)  
+	bool                                               bBoostFailed;                                               // 0x21E1   (0x0001)  
+	bool                                               bCanBoostPitch;                                             // 0x21E2   (0x0001)  
+	unsigned char                                      UnknownData06_5[0x5];                                       // 0x21E3   (0x0005)  MISSED
+	uint64_t                                           AccelForceFeedbackHandle;                                   // 0x21E8   (0x0008)  
+	uint64_t                                           SkidForceFeedbackHandle;                                    // 0x21F0   (0x0008)  
+	uint64_t                                           BrakeForceFeedbackHandle;                                   // 0x21F8   (0x0008)  
+	uint64_t                                           HandBrakeForceFeedbackHandle;                               // 0x2200   (0x0008)  
+	bool                                               bSpeedLinesActive;                                          // 0x2208   (0x0001)  
+	unsigned char                                      UnknownData07_5[0x1F];                                      // 0x2209   (0x001F)  MISSED
+	FDagwoodRuntimeModifiers                           DagwoodRuntimeModifiedProperties;                           // 0x2228   (0x0070)  
+	TArray<FAttachedWheel>                             ServerRepWheelData;                                         // 0x2298   (0x0010)  
+	unsigned char                                      UnknownData08_5[0x50];                                      // 0x22A8   (0x0050)  MISSED
+	FVector                                            FlipYawForwardTargetDirection;                              // 0x22F8   (0x0018)  
+	FVector                                            FlipYawOriginalForward;                                     // 0x2310   (0x0018)  
+	EVehicleWheelLocations                             LastPoppedTire;                                             // 0x2328   (0x0001)  
+	unsigned char                                      UnknownData09_5[0x3];                                       // 0x2329   (0x0003)  MISSED
+	float                                              RoadTopSpeedMultiplier;                                     // 0x232C   (0x0004)  
+	float                                              CurrentBumpiness;                                           // 0x2330   (0x0004)  
+	float                                              CurrentForwardAcceleration;                                 // 0x2334   (0x0004)  
+	float                                              PreviousTurnAlpha;                                          // 0x2338   (0x0004)  
+	float                                              CurrentCameraAssistStrength;                                // 0x233C   (0x0004)  
+	float                                              LostGripTime;                                               // 0x2340   (0x0004)  
+	float                                              LostGripRightAlpha;                                         // 0x2344   (0x0004)  
+	float                                              HandbrakeTime;                                              // 0x2348   (0x0004)  
+	float                                              HandbrakeStartTime;                                         // 0x234C   (0x0004)  
+	float                                              HandbrakeEndTime;                                           // 0x2350   (0x0004)  
+	float                                              FlipYawMult;                                                // 0x2354   (0x0004)  
+	float                                              FlipTimer;                                                  // 0x2358   (0x0004)  
+	float                                              FlipExplodeTimer;                                           // 0x235C   (0x0004)  
+	float                                              FlipPushForceTimer;                                         // 0x2360   (0x0004)  
+	float                                              FlipAirTimer;                                               // 0x2364   (0x0004)  
+	float                                              FlipLanding;                                                // 0x2368   (0x0004)  
+	float                                              FlipStartTime;                                              // 0x236C   (0x0004)  
+	float                                              LastFlipDamageTime;                                         // 0x2370   (0x0004)  
+	float                                              PreFlipControlLossTimer;                                    // 0x2374   (0x0004)  
+	bool                                               bDidCinematicFlip;                                          // 0x2378   (0x0001)  
+	bool                                               bCanCinematicFlip;                                          // 0x2379   (0x0001)  
+	bool                                               bInPopTireVeer;                                             // 0x237A   (0x0001)  
+	bool                                               bInFlipRecovery;                                            // 0x237B   (0x0001)  
+	bool                                               bExplodeAfterFlip;                                          // 0x237C   (0x0001)  
+	bool                                               bLostGrip;                                                  // 0x237D   (0x0001)  
+	bool                                               bApplyHandbrakeCatchupForce;                                // 0x237E   (0x0001)  
+	bool                                               bDidHandbrakeCatchup;                                       // 0x237F   (0x0001)  
+	bool                                               bInFlipRoll;                                                // 0x2380   (0x0001)  
+	bool                                               bInFlipYaw;                                                 // 0x2381   (0x0001)  
+	bool                                               bInFlipPitch;                                               // 0x2382   (0x0001)  
+	bool                                               bFlipDidLeaveGround;                                        // 0x2383   (0x0001)  
+	bool                                               bBreakBuildingsIfBlockingLeaningPassenger;                  // 0x2384   (0x0001)  
+	unsigned char                                      UnknownData10_5[0x3];                                       // 0x2385   (0x0003)  MISSED
+	float                                              LeanBreakTimeAccumulator;                                   // 0x2388   (0x0004)  
+	float                                              LeanBreakCheckInterval;                                     // 0x238C   (0x0004)  
+	TArray<FName>                                      SeatToWindowShapeNames;                                     // 0x2390   (0x0010)  
+	class ULegacyCameraShake*                          OffroadCameraShakeInstance;                                 // 0x23A0   (0x0008)  
+	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x23A8   (0x0008)  
+	class ULegacyCameraShake*                          AccelCameraShakeInstance;                                   // 0x23B0   (0x0008)  
+	class ULegacyCameraShake*                          HandBrakeCameraShakeInstance;                               // 0x23B8   (0x0008)  
+	class UNiagaraComponent*                           NativeComp_RoadAndExhaust;                                  // 0x23C0   (0x0008)  
+	class UNiagaraComponent*                           NativeComp_TireSkid;                                        // 0x23C8   (0x0008)  
+	class UNiagaraComponent*                           NativeComp_Damage;                                          // 0x23D0   (0x0008)  
+	class UNiagaraComponent*                           NativeComp_SpeedLines;                                      // 0x23D8   (0x0008)  
+	class UNiagaraSystem*                              NativeSys_TireExhaust;                                      // 0x23E0   (0x0008)  
+	class UNiagaraSystem*                              NativeSys_SpeedLines;                                       // 0x23E8   (0x0008)  
+	class UNiagaraSystem*                              NativeSys_TireSkid;                                         // 0x23F0   (0x0008)  
+	SDK_UNDEFINED(16,11678) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x23F8   (0x0010)  
+	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x2408   (0x0004)  
+	FName                                              BrakeLightsName;                                            // 0x240C   (0x0004)  
+	unsigned char                                      UnknownData11_5[0x18];                                      // 0x2410   (0x0018)  MISSED
+	TArray<ETireStates>                                FakeTireStates;                                             // 0x2428   (0x0010)  
+	EPoppedTireReactionStates                          ActivePoppedTireReaction;                                   // 0x2438   (0x0001)  
+	EPoppedTireReactionStates                          ReplicatedPoppedTireReaction;                               // 0x2439   (0x0001)  
+	unsigned char                                      UnknownData12_5[0x2];                                       // 0x243A   (0x0002)  MISSED
+	SDK_UNDEFINED(8,11679) /* TWeakObjectPtr<AFortValetAudioController*> */ __um(ValetAudio);                      // 0x243C   (0x0008)  
+	unsigned char                                      UnknownData13_5[0x4];                                       // 0x2444   (0x0004)  MISSED
+	TArray<class USkeletalMeshComponent*>              TireMeshes;                                                 // 0x2448   (0x0010)  
+	TArray<class USkeletalMeshComponent*>              FakeTireMeshes;                                             // 0x2458   (0x0010)  
+	unsigned char                                      UnknownData14_5[0x4];                                       // 0x2468   (0x0004)  MISSED
+	bool                                               bIsInoperable;                                              // 0x246C   (0x0001)  
+	unsigned char                                      UnknownData15_5[0x3];                                       // 0x246D   (0x0003)  MISSED
+	int32_t                                            RandomSeed;                                                 // 0x2470   (0x0004)  
+	FRandomStream                                      RandStream;                                                 // 0x2474   (0x0008)  
+	bool                                               bHasTraction;                                               // 0x247C   (0x0001)  
+	bool                                               bStartHandBrakeCatchupForce;                                // 0x247D   (0x0001)  
+	unsigned char                                      UnknownData16_5[0x102];                                     // 0x247E   (0x0102)  MISSED
+	bool                                               bSelfDestructEnabled : 1;                                   // 0x2580:0 (0x0001)  
+	bool                                               bClientUsesSelfDestructTimer : 1;                           // 0x2580:1 (0x0001)  
+	unsigned char                                      UnknownData17_4[0x7];                                       // 0x2581   (0x0007)  MISSED
+	class UStaticMesh*                                 TireBootMesh;                                               // 0x2588   (0x0008)  
+	SDK_UNDEFINED(80,11680) /* TMap<int32_t, FDagwoodActionDefForUI> */ __um(MapSelfDestructActionDefForUI);       // 0x2590   (0x0050)  
+	float                                              MinimumTimeBetweenSelfDestructPromptChanges;                // 0x25E0   (0x0004)  
+	unsigned char                                      UnknownData18_6[0x3C];                                      // 0x25E4   (0x003C)  MISSED
 
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.StartFade
-	// void StartFade();                                                                                                     // [0xaa07b18] Final|Native|Public|BlueprintCallable 
+	// void StartFade();                                                                                                     // [0xad08620] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetValetAudioController
-	// void SetValetAudioController(class AFortValetAudioController* ValetAudio);                                            // [0xaa079d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetValetAudioController(class AFortValetAudioController* ValetAudio);                                            // [0xad08520] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeSpringsInfoOnServer
-	// void SetRuntimeSpringsInfoOnServer(FRuntimeSpringsInfo& SpringsInfo);                                                 // [0xaa07874] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeSpringsInfoOnServer(FRuntimeSpringsInfo& SpringsInfo);                                                 // [0xad083bc] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeGravityOnServer
-	// void SetRuntimeGravityOnServer(float GravMult);                                                                       // [0xaa077a4] Final|Native|Protected|BlueprintCallable 
+	// void SetRuntimeGravityOnServer(float GravMult);                                                                       // [0xad0832c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeFuelInfoOnServer
-	// void SetRuntimeFuelInfoOnServer(FRuntimeFuelInfo& FuelInfo);                                                          // [0xaa076f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeFuelInfoOnServer(FRuntimeFuelInfo& FuelInfo);                                                          // [0xad0827c] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeDriveInfoOnServer
-	// void SetRuntimeDriveInfoOnServer(float MaxIncline, float MaxTilt);                                                    // [0xaa0759c] Final|Native|Protected|BlueprintCallable 
+	// void SetRuntimeDriveInfoOnServer(float MaxIncline, float MaxTilt);                                                    // [0xad081a0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeBoostInfoOnServer
-	// void SetRuntimeBoostInfoOnServer(FRuntimeBoostInfo& BoostInfo);                                                       // [0xaa074e8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeBoostInfoOnServer(FRuntimeBoostInfo& BoostInfo);                                                       // [0xad080ec] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetDamageInfoOnServer
-	// void SetDamageInfoOnServer(bool bInDamageFriendlyVehicles, bool bInDamageOtherVehicles, bool bInDamageOwnVehicle, bool bInDamageAllowedFromOtherVehicle); // [0xaa071d8] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void SetDamageInfoOnServer(bool bInDamageFriendlyVehicles, bool bInDamageOtherVehicles, bool bInDamageOwnVehicle, bool bInDamageAllowedFromOtherVehicle); // [0xad07edc] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ServerSetFadeDuration
-	// void ServerSetFadeDuration(float NewFadeDuration);                                                                    // [0x61bf3ac] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ServerSetFadeDuration(float NewFadeDuration);                                                                    // [0x621acf8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ServerSelfDestructActivated
-	// void ServerSelfDestructActivated();                                                                                   // [0x95b2ed8] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSelfDestructActivated();                                                                                   // [0x95c9bf4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SelfDestructCleanup
-	// void SelfDestructCleanup();                                                                                           // [0xaa071c4] Final|Native|Public  
+	// void SelfDestructCleanup();                                                                                           // [0xad07ec8] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnTickAudioFade
-	// void OnTickAudioFade(float FadeParam);                                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnTickAudioFade(float FadeParam);                                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnTickAudioController
-	// void OnTickAudioController(float DeltaTime);                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnTickAudioController(float DeltaTime);                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnStopHandbrake
-	// void OnStopHandbrake();                                                                                               // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnStopHandbrake();                                                                                               // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnStartHandbrake
-	// void OnStartHandbrake();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnStartHandbrake();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnServerAltInteract
-	// void OnServerAltInteract(class AFortPawn* Pawn);                                                                      // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnServerAltInteract(class AFortPawn* Pawn);                                                                      // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_ServerRepWheelData
-	// void OnRep_ServerRepWheelData(TArray<FAttachedWheel>& PrevWheelData);                                                 // [0xaa06778] Final|Native|Private|HasOutParms 
+	// void OnRep_ServerRepWheelData(TArray<FAttachedWheel>& PrevWheelData);                                                 // [0xad07500] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_RandSeed
-	// void OnRep_RandSeed();                                                                                                // [0x303f26c] Final|Native|Private 
+	// void OnRep_RandSeed();                                                                                                // [0x2f01e3c] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_PoppedTireReaction
-	// void OnRep_PoppedTireReaction();                                                                                      // [0xaa0675c] Final|Native|Private 
+	// void OnRep_PoppedTireReaction();                                                                                      // [0x3cc81b0] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_IsInoperable
-	// void OnRep_IsInoperable();                                                                                            // [0xaa06748] Final|Native|Private 
+	// void OnRep_IsInoperable();                                                                                            // [0xad074ec] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_FakeTires
-	// void OnRep_FakeTires(TArray<ETireStates>& PrevTireStates);                                                            // [0xaa066ac] Final|Native|Private|HasOutParms 
+	// void OnRep_FakeTires(TArray<ETireStates>& PrevTireStates);                                                            // [0xad07450] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_DagwoodRuntimeModifiers
-	// void OnRep_DagwoodRuntimeModifiers(FDagwoodRuntimeModifiers& PrevMods);                                               // [0x2e02c28] Final|Native|Private|HasOutParms 
+	// void OnRep_DagwoodRuntimeModifiers(FDagwoodRuntimeModifiers& PrevMods);                                               // [0x2ccb500] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnInoperableChanged
-	// void OnInoperableChanged(bool bInoperable);                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnInoperableChanged(bool bInoperable);                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnHoldSelfDestructStopped
-	// void OnHoldSelfDestructStopped(class AFortPawn* DriverPawn);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnHoldSelfDestructStopped(class AFortPawn* DriverPawn);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnHoldSelfDestructStarted
-	// void OnHoldSelfDestructStarted(class AFortPawn* DriverPawn, float ExitDuration);                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnHoldSelfDestructStarted(class AFortPawn* DriverPawn, float ExitDuration);                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnFlipImpactDamage
-	// void OnFlipImpactDamage();                                                                                            // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnFlipImpactDamage();                                                                                            // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnDestroyedPropFromCollision
-	// void OnDestroyedPropFromCollision(class ABuildingActor* BuildingHitActor);                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDestroyedPropFromCollision(class ABuildingActor* BuildingHitActor);                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnClientBeginAltInteract
-	// void OnClientBeginAltInteract(class AFortPawn* Pawn);                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnClientBeginAltInteract(class AFortPawn* Pawn);                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.NativeCalculateAccelRumbleIntensity
-	// float NativeCalculateAccelRumbleIntensity(float MaxIntensity);                                                        // [0xaa065e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float NativeCalculateAccelRumbleIntensity(float MaxIntensity);                                                        // [0xad073c4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.MakeOperable
-	// void MakeOperable(bool bAddGas);                                                                                      // [0x5d6b308] Final|Native|Public|BlueprintCallable 
+	// void MakeOperable(bool bAddGas);                                                                                      // [0x5dd0bf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.MakeInoperable
-	// void MakeInoperable();                                                                                                // [0xaa065c0] Native|Public|BlueprintCallable 
+	// void MakeInoperable();                                                                                                // [0xad073a4] Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsTireSkidding
-	// bool IsTireSkidding(float MinSpeedForSkid, float AngleForSkid, float SpeedForPeelout, float SpeedForBraking);         // [0xaa06384] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTireSkidding(float MinSpeedForSkid, float AngleForSkid, float SpeedForPeelout, float SpeedForBraking);         // [0xad07260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsOnLandscape
-	// bool IsOnLandscape();                                                                                                 // [0xaa0636c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOnLandscape();                                                                                                 // [0xad07248] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsNativeBPTickEnabled
-	// bool IsNativeBPTickEnabled();                                                                                         // [0x2e65248] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsNativeBPTickEnabled();                                                                                         // [0x2d64ed4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.HandleCurrentPlaylistLoaded
-	// void HandleCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                     // [0x33361dc] Final|Native|Protected|HasOutParms 
+	// void HandleCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                     // [0x33dbc74] Final|Native|Protected|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetTireSurface
-	// ETireSurfaces GetTireSurface(EVehicleWheelLocations TireIndex);                                                       // [0xaa060cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ETireSurfaces GetTireSurface(EVehicleWheelLocations TireIndex);                                                       // [0xad070b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetTireHealthPercent
-	// float GetTireHealthPercent(EVehicleWheelLocations TireIndex);                                                         // [0xaa05ff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTireHealthPercent(EVehicleWheelLocations TireIndex);                                                         // [0xad07018] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetMiddleAxleForwardAdjust
-	// float GetMiddleAxleForwardAdjust();                                                                                   // [0xaa05e84] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetMiddleAxleForwardAdjust();                                                                                   // [0xad06eac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetCurrentDagwoodRuntimeProperties
-	// FDagwoodRuntimeModifiers GetCurrentDagwoodRuntimeProperties();                                                        // [0xaa05e68] Final|Native|Public|BlueprintCallable 
+	// FDagwoodRuntimeModifiers GetCurrentDagwoodRuntimeProperties();                                                        // [0xad06e90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetBumpiness
-	// float GetBumpiness();                                                                                                 // [0xaa05e50] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetBumpiness();                                                                                                 // [0xad06e78] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ForwardOrReverseInputPressed
-	// bool ForwardOrReverseInputPressed();                                                                                  // [0xaa05e2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ForwardOrReverseInputPressed();                                                                                  // [0xad06e54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.CleanupLoopingPooledFX
-	// void CleanupLoopingPooledFX();                                                                                        // [0xaa05e14] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CleanupLoopingPooledFX();                                                                                        // [0xad06e3c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ApplyRuntimeModifiers
-	// void ApplyRuntimeModifiers();                                                                                         // [0xaa05cc0] Final|Native|Private 
+	// void ApplyRuntimeModifiers();                                                                                         // [0xad06d28] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.AddRuntimeGearsInfoOnServer
-	// void AddRuntimeGearsInfoOnServer(FRuntimeGearInfo& GearInfo);                                                         // [0xaa05c2c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddRuntimeGearsInfoOnServer(FRuntimeGearInfo& GearInfo);                                                         // [0xad06c94] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodVehicleAnimInstance
@@ -602,140 +602,140 @@ public:
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodVehicleConfigs
-/// Size: 0x0240 (0x000950 - 0x000B90)
+/// Size: 0x0240 (0x000948 - 0x000B88)
 class UFortDagwoodVehicleConfigs : public UFortPhysicsVehicleConfigs
 { 
 public:
-	float                                              BoostMinPushForce;                                          // 0x0950   (0x0004)  
-	float                                              BoostTopSpeedForceMultiplier;                               // 0x0954   (0x0004)  
-	float                                              BoostTopSpeedMultiplier;                                    // 0x0958   (0x0004)  
-	float                                              BoostWaterMultiplier;                                       // 0x095C   (0x0004)  
-	float                                              VehiclePowerSlideFrontMultiplier;                           // 0x0960   (0x0004)  
-	float                                              VehiclePowerSlideRearMultiplier;                            // 0x0964   (0x0004)  
-	float                                              IceVehiclePowerSlideFrontMultiplier;                        // 0x0968   (0x0004)  
-	float                                              IceVehiclePowerSlideRearMultiplier;                         // 0x096C   (0x0004)  
-	float                                              MudVehiclePowerSlideFrontMultiplier;                        // 0x0970   (0x0004)  
-	float                                              MudVehiclePowerSlideRearMultiplier;                         // 0x0974   (0x0004)  
-	bool                                               bUseAccelerationLean;                                       // 0x0978   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0979   (0x0003)  MISSED
-	float                                              HandbrakeGripAngle;                                         // 0x097C   (0x0004)  
-	float                                              HandbrakeGripAngleRecovery;                                 // 0x0980   (0x0004)  
-	float                                              HandbrakeSpeedForGripLoss;                                  // 0x0984   (0x0004)  
-	float                                              MinSlipDuration;                                            // 0x0988   (0x0004)  
-	float                                              HandbrakeLateralFriction;                                   // 0x098C   (0x0004)  
-	float                                              HandbrakeSteeringMultiplier;                                // 0x0990   (0x0004)  
-	float                                              HandbrakeFrictionDampFactor;                                // 0x0994   (0x0004)  
-	float                                              RestoreTractionDampFactor;                                  // 0x0998   (0x0004)  
-	float                                              HandBrakeForce;                                             // 0x099C   (0x0004)  
-	float                                              HandbrakeForceNoAccel;                                      // 0x09A0   (0x0004)  
-	bool                                               bUseHandbrakeToDrift;                                       // 0x09A4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x09A5   (0x0003)  MISSED
-	float                                              DriftMinSpeedSteeringAngle;                                 // 0x09A8   (0x0004)  
-	float                                              DriftMaxSpeedSteeringAngle;                                 // 0x09AC   (0x0004)  
-	float                                              DriftFrontLateralFrictionMultiplier;                        // 0x09B0   (0x0004)  
-	float                                              DriftRearLateralFrictionMultiplier;                         // 0x09B4   (0x0004)  
-	float                                              BoostSteeringMultiplier;                                    // 0x09B8   (0x0004)  
-	float                                              DirtRoadTopSpeedMultiplier;                                 // 0x09BC   (0x0004)  
-	float                                              DirtRoadFrontLateralFriction;                               // 0x09C0   (0x0004)  
-	float                                              DirtRoadRearLateralFriction;                                // 0x09C4   (0x0004)  
-	float                                              DirtRoadAccelForceMultiplier;                               // 0x09C8   (0x0004)  
-	float                                              OffRoadTopSpeedMultiplier;                                  // 0x09CC   (0x0004)  
-	float                                              OffRoadFrontLateralFriction;                                // 0x09D0   (0x0004)  
-	float                                              OffRoadRearLateralFriction;                                 // 0x09D4   (0x0004)  
-	float                                              OffRoadPushForceMultiplier;                                 // 0x09D8   (0x0004)  
-	float                                              OffroadDamageImpactForceMin;                                // 0x09DC   (0x0004)  
-	float                                              OffroadDamageImpactForceMax;                                // 0x09E0   (0x0004)  
-	float                                              OffroadImpactDamageMin;                                     // 0x09E4   (0x0004)  
-	float                                              OffroadImpactDamageMax;                                     // 0x09E8   (0x0004)  
-	float                                              MinSpeedForOffroadHandling;                                 // 0x09EC   (0x0004)  
-	float                                              SnowFrontLateralFriction;                                   // 0x09F0   (0x0004)  
-	float                                              SnowRearLateralFriction;                                    // 0x09F4   (0x0004)  
-	float                                              IceFrontLateralFriction;                                    // 0x09F8   (0x0004)  
-	float                                              IceRearLateralFriction;                                     // 0x09FC   (0x0004)  
-	float                                              MudFrontLateralFriction;                                    // 0x0A00   (0x0004)  
-	float                                              MudRearLateralFriction;                                     // 0x0A04   (0x0004)  
-	float                                              IcePushForceMultiplier;                                     // 0x0A08   (0x0004)  
-	float                                              IceBrakeForceMultiplier;                                    // 0x0A0C   (0x0004)  
-	float                                              FireHealthPercentThreshold;                                 // 0x0A10   (0x0004)  
-	float                                              OffroadRumbleIntensity;                                     // 0x0A14   (0x0004)  
-	float                                              DirtRoadRumbleIntensity;                                    // 0x0A18   (0x0004)  
-	float                                              OffroadDamageScaleExponent;                                 // 0x0A1C   (0x0004)  
-	float                                              HardLandingThresholdMin;                                    // 0x0A20   (0x0004)  
-	float                                              HardLandingThresholdMax;                                    // 0x0A24   (0x0004)  
-	float                                              HardLandingShakeZAmplitudeMin;                              // 0x0A28   (0x0004)  
-	float                                              HardLandingShakeZAmplitudeMax;                              // 0x0A2C   (0x0004)  
-	float                                              SpeedLinesThreshold;                                        // 0x0A30   (0x0004)  
-	float                                              PropDestructionImpulse;                                     // 0x0A34   (0x0004)  
-	float                                              DestructionAngle;                                           // 0x0A38   (0x0004)  
-	float                                              UpNormalMinProtected;                                       // 0x0A3C   (0x0004)  
-	float                                              UpForwardMinProtected;                                      // 0x0A40   (0x0004)  
-	float                                              NonCameraSteeringAngleMultiplier;                           // 0x0A44   (0x0004)  
-	float                                              CameraAssistStrengthMax;                                    // 0x0A48   (0x0004)  
-	float                                              CameraAssistStrengthMin;                                    // 0x0A4C   (0x0004)  
-	float                                              CameraAssistStrengthRecovery;                               // 0x0A50   (0x0004)  
-	float                                              CameraAssistInterpSpeed;                                    // 0x0A54   (0x0004)  
-	float                                              ReverseChangeDirectionBrakeForceMultiplier;                 // 0x0A58   (0x0004)  
-	float                                              ReverseChangeDirectionSpeedThreshold;                       // 0x0A5C   (0x0004)  
-	float                                              DriftExitPushForce;                                         // 0x0A60   (0x0004)  
-	float                                              DriftExitCatchupSpeed;                                      // 0x0A64   (0x0004)  
-	float                                              HandbrakeDurationRequiredForCatchup;                        // 0x0A68   (0x0004)  
-	float                                              ImpactMagnitudeToEndCatchup;                                // 0x0A6C   (0x0004)  
-	float                                              PoppedTireSpringLength;                                     // 0x0A70   (0x0004)  
-	float                                              PoppedTireSpringStiff;                                      // 0x0A74   (0x0004)  
-	float                                              PoppedTireSpringDamp;                                       // 0x0A78   (0x0004)  
-	float                                              PoppedTireScrapeFrictionMultiplier;                         // 0x0A7C   (0x0004)  
-	float                                              RimScrapeFlipRollMagnitude;                                 // 0x0A80   (0x0004)  
-	float                                              RimScrapeFlipPitchMagnitude;                                // 0x0A84   (0x0004)  
-	float                                              SpeedForRimFlip;                                            // 0x0A88   (0x0004)  
-	float                                              HealthPercentForFlip;                                       // 0x0A8C   (0x0004)  
-	float                                              FlipYawDuration;                                            // 0x0A90   (0x0004)  
-	float                                              FlipRollDuration;                                           // 0x0A94   (0x0004)  
-	float                                              FlipPitchDuration;                                          // 0x0A98   (0x0004)  
-	float                                              FlipExplodeDuration_Yaw;                                    // 0x0A9C   (0x0004)  
-	float                                              FlipExplodeDuration_Pitch;                                  // 0x0AA0   (0x0004)  
-	float                                              FlipPushForceDuration_Yaw;                                  // 0x0AA4   (0x0004)  
-	float                                              FlipPushForceDuration_Pitch;                                // 0x0AA8   (0x0004)  
-	float                                              FlipPushForcMultiplier;                                     // 0x0AAC   (0x0004)  
-	float                                              FlipPushForce_UpComponentPitch;                             // 0x0AB0   (0x0004)  
-	float                                              FlipPushForce_UpComponentRoll;                              // 0x0AB4   (0x0004)  
-	float                                              MinTimeInAirRequiredForExplodeLanding;                      // 0x0AB8   (0x0004)  
-	float                                              FlipYawSpringStiff;                                         // 0x0ABC   (0x0004)  
-	float                                              FlipYawSpringDamp;                                          // 0x0AC0   (0x0004)  
-	float                                              FlipYawSpringMaxAccel;                                      // 0x0AC4   (0x0004)  
-	float                                              HealthPercentForExplode;                                    // 0x0AC8   (0x0004)  
-	float                                              FlipRecoveryTime;                                           // 0x0ACC   (0x0004)  
-	float                                              FlipMaxDuration;                                            // 0x0AD0   (0x0004)  
-	float                                              FlipWiggleDuration;                                         // 0x0AD4   (0x0004)  
-	float                                              PoppedTireVeerDuration;                                     // 0x0AD8   (0x0004)  
-	float                                              PoppedTireVeerSteeringAngle;                                // 0x0ADC   (0x0004)  
-	float                                              FlipWiggleFrequency;                                        // 0x0AE0   (0x0004)  
-	float                                              FlipWiggleSteeringAngle;                                    // 0x0AE4   (0x0004)  
-	float                                              FlipYawAngleThreshold;                                      // 0x0AE8   (0x0004)  
-	bool                                               bUsesBoost;                                                 // 0x0AEC   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0AED   (0x0003)  MISSED
-	float                                              RechargeableBoostRateOfUse;                                 // 0x0AF0   (0x0004)  
-	float                                              RechargeableBoostRateOfRegen;                               // 0x0AF4   (0x0004)  
-	float                                              BoostRateOfRegenMinMultiplier;                              // 0x0AF8   (0x0004)  
-	float                                              BoostRateOfRegenMaxMultiplier;                              // 0x0AFC   (0x0004)  
-	float                                              BoostRegenMaxMultiplyTime;                                  // 0x0B00   (0x0004)  
-	float                                              RechargeableBoostRequiredPercentToActivate;                 // 0x0B04   (0x0004)  
-	float                                              RechargeableBoostMaxPercent;                                // 0x0B08   (0x0004)  
-	float                                              RechargeableBoostMinPercent;                                // 0x0B0C   (0x0004)  
-	float                                              AnalogDriftStickThreshold;                                  // 0x0B10   (0x0004)  
-	FName                                              TireBootRightSocketName;                                    // 0x0B14   (0x0004)  
-	FName                                              TireBootLeftSocketName;                                     // 0x0B18   (0x0004)  
-	float                                              TireBootRelativeDistance;                                   // 0x0B1C   (0x0004)  
-	float                                              BoostForceInAir;                                            // 0x0B20   (0x0004)  
-	float                                              BoostAirMaxSpeed;                                           // 0x0B24   (0x0004)  
-	TArray<FName>                                      TireSocketNames;                                            // 0x0B28   (0x0010)  
-	TArray<FName>                                      TireBoneNames;                                              // 0x0B38   (0x0010)  
-	TArray<int32_t>                                    RearTireIndices;                                            // 0x0B48   (0x0010)  
-	TArray<int32_t>                                    RightSideTires;                                             // 0x0B58   (0x0010)  
-	TArray<int32_t>                                    FakeTireIndices;                                            // 0x0B68   (0x0010)  
-	bool                                               bNoWheels;                                                  // 0x0B78   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0B79   (0x0003)  MISSED
-	float                                              NoWheelsSpringLenMult;                                      // 0x0B7C   (0x0004)  
-	TArray<FName>                                      NoWheelsBonesToHide;                                        // 0x0B80   (0x0010)  
+	float                                              BoostMinPushForce;                                          // 0x0948   (0x0004)  
+	float                                              BoostTopSpeedForceMultiplier;                               // 0x094C   (0x0004)  
+	float                                              BoostTopSpeedMultiplier;                                    // 0x0950   (0x0004)  
+	float                                              BoostWaterMultiplier;                                       // 0x0954   (0x0004)  
+	float                                              VehiclePowerSlideFrontMultiplier;                           // 0x0958   (0x0004)  
+	float                                              VehiclePowerSlideRearMultiplier;                            // 0x095C   (0x0004)  
+	float                                              IceVehiclePowerSlideFrontMultiplier;                        // 0x0960   (0x0004)  
+	float                                              IceVehiclePowerSlideRearMultiplier;                         // 0x0964   (0x0004)  
+	float                                              MudVehiclePowerSlideFrontMultiplier;                        // 0x0968   (0x0004)  
+	float                                              MudVehiclePowerSlideRearMultiplier;                         // 0x096C   (0x0004)  
+	bool                                               bUseAccelerationLean;                                       // 0x0970   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0971   (0x0003)  MISSED
+	float                                              HandbrakeGripAngle;                                         // 0x0974   (0x0004)  
+	float                                              HandbrakeGripAngleRecovery;                                 // 0x0978   (0x0004)  
+	float                                              HandbrakeSpeedForGripLoss;                                  // 0x097C   (0x0004)  
+	float                                              MinSlipDuration;                                            // 0x0980   (0x0004)  
+	float                                              HandbrakeLateralFriction;                                   // 0x0984   (0x0004)  
+	float                                              HandbrakeSteeringMultiplier;                                // 0x0988   (0x0004)  
+	float                                              HandbrakeFrictionDampFactor;                                // 0x098C   (0x0004)  
+	float                                              RestoreTractionDampFactor;                                  // 0x0990   (0x0004)  
+	float                                              HandBrakeForce;                                             // 0x0994   (0x0004)  
+	float                                              HandbrakeForceNoAccel;                                      // 0x0998   (0x0004)  
+	bool                                               bUseHandbrakeToDrift;                                       // 0x099C   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x099D   (0x0003)  MISSED
+	float                                              DriftMinSpeedSteeringAngle;                                 // 0x09A0   (0x0004)  
+	float                                              DriftMaxSpeedSteeringAngle;                                 // 0x09A4   (0x0004)  
+	float                                              DriftFrontLateralFrictionMultiplier;                        // 0x09A8   (0x0004)  
+	float                                              DriftRearLateralFrictionMultiplier;                         // 0x09AC   (0x0004)  
+	float                                              BoostSteeringMultiplier;                                    // 0x09B0   (0x0004)  
+	float                                              DirtRoadTopSpeedMultiplier;                                 // 0x09B4   (0x0004)  
+	float                                              DirtRoadFrontLateralFriction;                               // 0x09B8   (0x0004)  
+	float                                              DirtRoadRearLateralFriction;                                // 0x09BC   (0x0004)  
+	float                                              DirtRoadAccelForceMultiplier;                               // 0x09C0   (0x0004)  
+	float                                              OffRoadTopSpeedMultiplier;                                  // 0x09C4   (0x0004)  
+	float                                              OffRoadFrontLateralFriction;                                // 0x09C8   (0x0004)  
+	float                                              OffRoadRearLateralFriction;                                 // 0x09CC   (0x0004)  
+	float                                              OffRoadPushForceMultiplier;                                 // 0x09D0   (0x0004)  
+	float                                              OffroadDamageImpactForceMin;                                // 0x09D4   (0x0004)  
+	float                                              OffroadDamageImpactForceMax;                                // 0x09D8   (0x0004)  
+	float                                              OffroadImpactDamageMin;                                     // 0x09DC   (0x0004)  
+	float                                              OffroadImpactDamageMax;                                     // 0x09E0   (0x0004)  
+	float                                              MinSpeedForOffroadHandling;                                 // 0x09E4   (0x0004)  
+	float                                              SnowFrontLateralFriction;                                   // 0x09E8   (0x0004)  
+	float                                              SnowRearLateralFriction;                                    // 0x09EC   (0x0004)  
+	float                                              IceFrontLateralFriction;                                    // 0x09F0   (0x0004)  
+	float                                              IceRearLateralFriction;                                     // 0x09F4   (0x0004)  
+	float                                              MudFrontLateralFriction;                                    // 0x09F8   (0x0004)  
+	float                                              MudRearLateralFriction;                                     // 0x09FC   (0x0004)  
+	float                                              IcePushForceMultiplier;                                     // 0x0A00   (0x0004)  
+	float                                              IceBrakeForceMultiplier;                                    // 0x0A04   (0x0004)  
+	float                                              FireHealthPercentThreshold;                                 // 0x0A08   (0x0004)  
+	float                                              OffroadRumbleIntensity;                                     // 0x0A0C   (0x0004)  
+	float                                              DirtRoadRumbleIntensity;                                    // 0x0A10   (0x0004)  
+	float                                              OffroadDamageScaleExponent;                                 // 0x0A14   (0x0004)  
+	float                                              HardLandingThresholdMin;                                    // 0x0A18   (0x0004)  
+	float                                              HardLandingThresholdMax;                                    // 0x0A1C   (0x0004)  
+	float                                              HardLandingShakeZAmplitudeMin;                              // 0x0A20   (0x0004)  
+	float                                              HardLandingShakeZAmplitudeMax;                              // 0x0A24   (0x0004)  
+	float                                              SpeedLinesThreshold;                                        // 0x0A28   (0x0004)  
+	float                                              PropDestructionImpulse;                                     // 0x0A2C   (0x0004)  
+	float                                              DestructionAngle;                                           // 0x0A30   (0x0004)  
+	float                                              UpNormalMinProtected;                                       // 0x0A34   (0x0004)  
+	float                                              UpForwardMinProtected;                                      // 0x0A38   (0x0004)  
+	float                                              NonCameraSteeringAngleMultiplier;                           // 0x0A3C   (0x0004)  
+	float                                              CameraAssistStrengthMax;                                    // 0x0A40   (0x0004)  
+	float                                              CameraAssistStrengthMin;                                    // 0x0A44   (0x0004)  
+	float                                              CameraAssistStrengthRecovery;                               // 0x0A48   (0x0004)  
+	float                                              CameraAssistInterpSpeed;                                    // 0x0A4C   (0x0004)  
+	float                                              ReverseChangeDirectionBrakeForceMultiplier;                 // 0x0A50   (0x0004)  
+	float                                              ReverseChangeDirectionSpeedThreshold;                       // 0x0A54   (0x0004)  
+	float                                              DriftExitPushForce;                                         // 0x0A58   (0x0004)  
+	float                                              DriftExitCatchupSpeed;                                      // 0x0A5C   (0x0004)  
+	float                                              HandbrakeDurationRequiredForCatchup;                        // 0x0A60   (0x0004)  
+	float                                              ImpactMagnitudeToEndCatchup;                                // 0x0A64   (0x0004)  
+	float                                              PoppedTireSpringLength;                                     // 0x0A68   (0x0004)  
+	float                                              PoppedTireSpringStiff;                                      // 0x0A6C   (0x0004)  
+	float                                              PoppedTireSpringDamp;                                       // 0x0A70   (0x0004)  
+	float                                              PoppedTireScrapeFrictionMultiplier;                         // 0x0A74   (0x0004)  
+	float                                              RimScrapeFlipRollMagnitude;                                 // 0x0A78   (0x0004)  
+	float                                              RimScrapeFlipPitchMagnitude;                                // 0x0A7C   (0x0004)  
+	float                                              SpeedForRimFlip;                                            // 0x0A80   (0x0004)  
+	float                                              HealthPercentForFlip;                                       // 0x0A84   (0x0004)  
+	float                                              FlipYawDuration;                                            // 0x0A88   (0x0004)  
+	float                                              FlipRollDuration;                                           // 0x0A8C   (0x0004)  
+	float                                              FlipPitchDuration;                                          // 0x0A90   (0x0004)  
+	float                                              FlipExplodeDuration_Yaw;                                    // 0x0A94   (0x0004)  
+	float                                              FlipExplodeDuration_Pitch;                                  // 0x0A98   (0x0004)  
+	float                                              FlipPushForceDuration_Yaw;                                  // 0x0A9C   (0x0004)  
+	float                                              FlipPushForceDuration_Pitch;                                // 0x0AA0   (0x0004)  
+	float                                              FlipPushForcMultiplier;                                     // 0x0AA4   (0x0004)  
+	float                                              FlipPushForce_UpComponentPitch;                             // 0x0AA8   (0x0004)  
+	float                                              FlipPushForce_UpComponentRoll;                              // 0x0AAC   (0x0004)  
+	float                                              MinTimeInAirRequiredForExplodeLanding;                      // 0x0AB0   (0x0004)  
+	float                                              FlipYawSpringStiff;                                         // 0x0AB4   (0x0004)  
+	float                                              FlipYawSpringDamp;                                          // 0x0AB8   (0x0004)  
+	float                                              FlipYawSpringMaxAccel;                                      // 0x0ABC   (0x0004)  
+	float                                              HealthPercentForExplode;                                    // 0x0AC0   (0x0004)  
+	float                                              FlipRecoveryTime;                                           // 0x0AC4   (0x0004)  
+	float                                              FlipMaxDuration;                                            // 0x0AC8   (0x0004)  
+	float                                              FlipWiggleDuration;                                         // 0x0ACC   (0x0004)  
+	float                                              PoppedTireVeerDuration;                                     // 0x0AD0   (0x0004)  
+	float                                              PoppedTireVeerSteeringAngle;                                // 0x0AD4   (0x0004)  
+	float                                              FlipWiggleFrequency;                                        // 0x0AD8   (0x0004)  
+	float                                              FlipWiggleSteeringAngle;                                    // 0x0ADC   (0x0004)  
+	float                                              FlipYawAngleThreshold;                                      // 0x0AE0   (0x0004)  
+	bool                                               bUsesBoost;                                                 // 0x0AE4   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0AE5   (0x0003)  MISSED
+	float                                              RechargeableBoostRateOfUse;                                 // 0x0AE8   (0x0004)  
+	float                                              RechargeableBoostRateOfRegen;                               // 0x0AEC   (0x0004)  
+	float                                              BoostRateOfRegenMinMultiplier;                              // 0x0AF0   (0x0004)  
+	float                                              BoostRateOfRegenMaxMultiplier;                              // 0x0AF4   (0x0004)  
+	float                                              BoostRegenMaxMultiplyTime;                                  // 0x0AF8   (0x0004)  
+	float                                              RechargeableBoostRequiredPercentToActivate;                 // 0x0AFC   (0x0004)  
+	float                                              RechargeableBoostMaxPercent;                                // 0x0B00   (0x0004)  
+	float                                              RechargeableBoostMinPercent;                                // 0x0B04   (0x0004)  
+	float                                              AnalogDriftStickThreshold;                                  // 0x0B08   (0x0004)  
+	FName                                              TireBootRightSocketName;                                    // 0x0B0C   (0x0004)  
+	FName                                              TireBootLeftSocketName;                                     // 0x0B10   (0x0004)  
+	float                                              TireBootRelativeDistance;                                   // 0x0B14   (0x0004)  
+	float                                              BoostForceInAir;                                            // 0x0B18   (0x0004)  
+	float                                              BoostAirMaxSpeed;                                           // 0x0B1C   (0x0004)  
+	TArray<FName>                                      TireSocketNames;                                            // 0x0B20   (0x0010)  
+	TArray<FName>                                      TireBoneNames;                                              // 0x0B30   (0x0010)  
+	TArray<int32_t>                                    RearTireIndices;                                            // 0x0B40   (0x0010)  
+	TArray<int32_t>                                    RightSideTires;                                             // 0x0B50   (0x0010)  
+	TArray<int32_t>                                    FakeTireIndices;                                            // 0x0B60   (0x0010)  
+	bool                                               bNoWheels;                                                  // 0x0B70   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0B71   (0x0003)  MISSED
+	float                                              NoWheelsSpringLenMult;                                      // 0x0B74   (0x0004)  
+	TArray<FName>                                      NoWheelsBonesToHide;                                        // 0x0B78   (0x0010)  
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodVehicleManager
@@ -751,13 +751,13 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.UpdatePropReplacement
-	// void UpdatePropReplacement();                                                                                         // [0x3047908] Final|Native|Public  
+	// void UpdatePropReplacement();                                                                                         // [0x3097b14] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.OnVehicleSpawnsUpdated
-	// void OnVehicleSpawnsUpdated(class UFortVehicleItemDefinition* VehicleItemDef, TArray<AActor*>& SpawnedVehicles, int32_t NewVehicleCount); // [0xaa06fdc] Final|Native|Public|HasOutParms 
+	// void OnVehicleSpawnsUpdated(class UFortVehicleItemDefinition* VehicleItemDef, TArray<AActor*>& SpawnedVehicles, int32_t NewVehicleCount); // [0xad07d20] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.OnVehicleSpawned
-	// void OnVehicleSpawned(class AFortAthenaVehicle* Vehicle);                                                             // [0xaa06f1c] Final|Native|Public  
+	// void OnVehicleSpawned(class AFortAthenaVehicle* Vehicle);                                                             // [0xad07ca4] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.CustomHandleActorStreamedInEditor
-	// void CustomHandleActorStreamedInEditor(class AActor* SourceActor);                                                    // [0x5d87858] Final|Native|Public  
+	// void CustomHandleActorStreamedInEditor(class AActor* SourceActor);                                                    // [0x5decebc] Final|Native|Public  
 };
 
 /// Class /Script/ValetRuntime.FortValetAudioController
@@ -765,9 +765,9 @@ public:
 class AFortValetAudioController : public AActor
 { 
 public:
-	SDK_UNDEFINED(16,11618) /* FMulticastInlineDelegate */ __um(OnEngineLoadChanged);                              // 0x0290   (0x0010)  
-	SDK_UNDEFINED(16,11619) /* FMulticastInlineDelegate */ __um(OnShiftGearCompleted);                             // 0x02A0   (0x0010)  
-	SDK_UNDEFINED(16,11620) /* FMulticastInlineDelegate */ __um(OnShiftGearDelegate);                              // 0x02B0   (0x0010)  
+	SDK_UNDEFINED(16,11681) /* FMulticastInlineDelegate */ __um(OnEngineLoadChanged);                              // 0x0290   (0x0010)  
+	SDK_UNDEFINED(16,11682) /* FMulticastInlineDelegate */ __um(OnShiftGearCompleted);                             // 0x02A0   (0x0010)  
+	SDK_UNDEFINED(16,11683) /* FMulticastInlineDelegate */ __um(OnShiftGearDelegate);                              // 0x02B0   (0x0010)  
 	float                                              RPMResetTime_Native;                                        // 0x02C0   (0x0004)  
 	float                                              JitterAmount_Native;                                        // 0x02C4   (0x0004)  
 	float                                              ShiftTimeThreshold_Native;                                  // 0x02C8   (0x0004)  
@@ -827,7 +827,7 @@ public:
 	unsigned char                                      UnknownData07_5[0x4];                                       // 0x0384   (0x0004)  MISSED
 	FVector2D                                          MotoSynthTimeInVehicleTimeRange;                            // 0x0388   (0x0010)  
 	FVector2D                                          MotoSynthTimeInVehicleVolumeRange;                          // 0x0398   (0x0010)  
-	SDK_UNDEFINED(8,11621) /* TWeakObjectPtr<AFortDagwoodVehicle*> */ __um(ValetVehicle);                          // 0x03A8   (0x0008)  
+	SDK_UNDEFINED(8,11684) /* TWeakObjectPtr<AFortDagwoodVehicle*> */ __um(ValetVehicle);                          // 0x03A8   (0x0008)  
 	class UFortLayeredAudioComponent*                  Engine_Native;                                              // 0x03B0   (0x0008)  
 	class UAudioComponent*                             BoostAudioComponent_Native;                                 // 0x03B8   (0x0008)  
 	class USynthComponentMoto*                         SynthComponentMoto_Native;                                  // 0x03C0   (0x0008)  
@@ -837,13 +837,13 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortValetAudioController.Update_Native
-	// void Update_Native();                                                                                                 // [0xaa07b48] Final|Native|Public|BlueprintCallable 
+	// void Update_Native();                                                                                                 // [0xad08650] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortValetAudioController.OnTireModApplied
-	// void OnTireModApplied(FTireInfo& AppliedTireMod);                                                                     // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnTireModApplied(FTireInfo& AppliedTireMod);                                                                     // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortValetAudioController.OnSuspensionCollision_Native
-	// void OnSuspensionCollision_Native(bool& OutResult, float& OutMagnitude);                                              // [0xaa06e44] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSuspensionCollision_Native(bool& OutResult, float& OutMagnitude);                                              // [0xad07bcc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortValetAudioController.CacheValetVehicle
-	// void CacheValetVehicle(class AFortDagwoodVehicle* InVehicle);                                                         // [0xaa05cd4] Final|Native|Public|BlueprintCallable 
+	// void CacheValetVehicle(class AFortDagwoodVehicle* InVehicle);                                                         // [0xad06d3c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ValetRuntime.FortValetGameFeatureData
@@ -851,8 +851,8 @@ public:
 class UFortValetGameFeatureData : public UFortGameFeatureData
 { 
 public:
-	SDK_UNDEFINED(80,11622) /* TMap<TWeakObjectPtr<UClass*>, FVehiclePropReplacementData> */ __um(PropReplacements); // 0x0530   (0x0050)  
-	SDK_UNDEFINED(32,11623) /* TWeakObjectPtr<UClass*> */ __um(VehicleSpawnerClass);                               // 0x0580   (0x0020)  
+	SDK_UNDEFINED(80,11685) /* TMap<TWeakObjectPtr<UClass*>, FVehiclePropReplacementData> */ __um(PropReplacements); // 0x0530   (0x0050)  
+	SDK_UNDEFINED(32,11686) /* TWeakObjectPtr<UClass*> */ __um(VehicleSpawnerClass);                               // 0x0580   (0x0020)  
 	ESpawnActorCollisionHandlingMethod                 SpawnActorCollisionHandlingMethod;                          // 0x05A0   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x05A1   (0x0007)  MISSED
 };
@@ -932,7 +932,7 @@ struct FValetUpdateContext
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FVehiclePropReplacementData
 { 
-	SDK_UNDEFINED(32,11624) /* TWeakObjectPtr<UFortVehicleItemDefinition*> */ __um(FortVehicleItemDefinition);     // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,11687) /* TWeakObjectPtr<UFortVehicleItemDefinition*> */ __um(FortVehicleItemDefinition);     // 0x0000   (0x0020)  
 	FVector                                            TransOffset;                                                // 0x0020   (0x0018)  
 	FRotator                                           RotOffset;                                                  // 0x0038   (0x0018)  
 };

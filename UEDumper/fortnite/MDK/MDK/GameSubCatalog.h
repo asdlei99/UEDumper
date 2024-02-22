@@ -38,44 +38,19 @@ public:
 	DMember(int32_t)                                   ReceiptRefactorVersionOverride                              OFFSET(get<int32_t>, {0x44, 4, 0, 0})
 };
 
-/// Struct /Script/GameSubCatalog.CatalogCheckoutOptions
+/// Struct /Script/GameSubCatalog.CatalogItemSalePrice
 /// Size: 0x0018 (0x000000 - 0x000018)
-class FCatalogCheckoutOptions : public MDKBase
+class FCatalogItemSalePrice : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
 	static inline constexpr uint64_t __MDKClassSize = 24;
 
 public:
-	CMember(TArray<FAdditionalCheckoutProperty>)       AdditionalCheckoutProperties                                OFFSET(get<T>, {0x0, 16, 0, 0})
-	DMember(bool)                                      bSkipCheckingEntitlementCount                               OFFSET(get<bool>, {0x10, 1, 0, 0})
-};
-
-/// Struct /Script/GameSubCatalog.AdditionalCheckoutProperty
-/// Size: 0x0020 (0x000000 - 0x000020)
-class FAdditionalCheckoutProperty : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 32;
-
-public:
-	SMember(FString)                                   Key                                                         OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	SMember(FString)                                   Value                                                       OFFSET(getStruct<T>, {0x10, 16, 0, 0})
-};
-
-/// Struct /Script/GameSubCatalog.StoreOfferInfo
-/// Size: 0x0030 (0x000000 - 0x000030)
-class FStoreOfferInfo : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 48;
-
-public:
-	SMember(FString)                                   Storefront                                                  OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	SMember(FString)                                   StoreId                                                     OFFSET(getStruct<T>, {0x10, 16, 0, 0})
-	SMember(FString)                                   GroupId                                                     OFFSET(getStruct<T>, {0x20, 16, 0, 0})
+	DMember(int32_t)                                   SalePrice                                                   OFFSET(get<int32_t>, {0x0, 4, 0, 0})
+	CMember(TEnumAsByte<ECatalogSaleType>)             SaleType                                                    OFFSET(get<T>, {0x4, 1, 0, 0})
+	SMember(FDateTime)                                 StartTime                                                   OFFSET(getStruct<T>, {0x8, 8, 0, 0})
+	SMember(FDateTime)                                 EndTime                                                     OFFSET(getStruct<T>, {0x10, 8, 0, 0})
 };
 
 /// Struct /Script/GameSubCatalog.CatalogItemPrice
@@ -97,21 +72,6 @@ public:
 	CMember(EAppStore)                                 AppStoreId                                                  OFFSET(get<T>, {0x48, 1, 0, 0})
 };
 
-/// Struct /Script/GameSubCatalog.CatalogItemSalePrice
-/// Size: 0x0018 (0x000000 - 0x000018)
-class FCatalogItemSalePrice : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 24;
-
-public:
-	DMember(int32_t)                                   SalePrice                                                   OFFSET(get<int32_t>, {0x0, 4, 0, 0})
-	CMember(TEnumAsByte<ECatalogSaleType>)             SaleType                                                    OFFSET(get<T>, {0x4, 1, 0, 0})
-	SMember(FDateTime)                                 StartTime                                                   OFFSET(getStruct<T>, {0x8, 8, 0, 0})
-	SMember(FDateTime)                                 EndTime                                                     OFFSET(getStruct<T>, {0x10, 8, 0, 0})
-};
-
 /// Struct /Script/GameSubCatalog.AppStoreCheckoutConfig
 /// Size: 0x0002 (0x000000 - 0x000002)
 class FAppStoreCheckoutConfig : public MDKBase
@@ -123,6 +83,20 @@ class FAppStoreCheckoutConfig : public MDKBase
 public:
 	CMember(EAppStore)                                 AppStore                                                    OFFSET(get<T>, {0x0, 1, 0, 0})
 	CMember(ECheckoutType)                             CheckoutType                                                OFFSET(get<T>, {0x1, 1, 0, 0})
+};
+
+/// Struct /Script/GameSubCatalog.StoreOfferInfo
+/// Size: 0x0030 (0x000000 - 0x000030)
+class FStoreOfferInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 48;
+
+public:
+	SMember(FString)                                   Storefront                                                  OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FString)                                   StoreId                                                     OFFSET(getStruct<T>, {0x10, 16, 0, 0})
+	SMember(FString)                                   GroupId                                                     OFFSET(getStruct<T>, {0x20, 16, 0, 0})
 };
 
 /// Struct /Script/GameSubCatalog.CatalogPurchaseAdditionalData
@@ -139,6 +113,32 @@ public:
 	SMember(FString)                                   ProductTag                                                  OFFSET(getStruct<T>, {0x50, 16, 0, 0})
 	SMember(FString)                                   StoreContext                                                OFFSET(getStruct<T>, {0x60, 16, 0, 0})
 	CMember(TMap<FString, FString>)                    CheckoutProperties                                          OFFSET(get<T>, {0x70, 80, 0, 0})
+};
+
+/// Struct /Script/GameSubCatalog.AdditionalCheckoutProperty
+/// Size: 0x0020 (0x000000 - 0x000020)
+class FAdditionalCheckoutProperty : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 32;
+
+public:
+	SMember(FString)                                   Key                                                         OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FString)                                   Value                                                       OFFSET(getStruct<T>, {0x10, 16, 0, 0})
+};
+
+/// Struct /Script/GameSubCatalog.CatalogCheckoutOptions
+/// Size: 0x0018 (0x000000 - 0x000018)
+class FCatalogCheckoutOptions : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 24;
+
+public:
+	CMember(TArray<FAdditionalCheckoutProperty>)       AdditionalCheckoutProperties                                OFFSET(get<T>, {0x0, 16, 0, 0})
+	DMember(bool)                                      bSkipCheckingEntitlementCount                               OFFSET(get<bool>, {0x10, 1, 0, 0})
 };
 
 /// Struct /Script/GameSubCatalog.CatalogRedeemRealMoneyPurchasesInfo
@@ -394,6 +394,17 @@ public:
 	SMember(FMcpLootResult)                            LootResult                                                  OFFSET(getStruct<T>, {0x0, 32, 0, 0})
 };
 
+/// Struct /Script/GameSubCatalog.CatalogRefundNotification
+/// Size: 0x0001 (0x000000 - 0x000001)
+class FCatalogRefundNotification : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 1;
+
+public:
+};
+
 /// Struct /Script/GameSubCatalog.McpEntitlementRefreshTimerInfo
 /// Size: 0x0018 (0x000000 - 0x000018)
 class FMcpEntitlementRefreshTimerInfo : public MDKBase
@@ -418,7 +429,7 @@ class FMcpProcessedConsumables : public MDKBase
 
 public:
 	CMember(EAppStore)                                 AppStore                                                    OFFSET(get<T>, {0x0, 1, 0, 0})
-	CMember(TArray<FString>)                           Ids                                                         OFFSET(get<T>, {0x8, 16, 0, 0})
+	CMember(TArray<FString>)                           IDs                                                         OFFSET(get<T>, {0x8, 16, 0, 0})
 };
 
 /// Struct /Script/GameSubCatalog.McpInAppPurchases

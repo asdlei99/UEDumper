@@ -66,7 +66,7 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosSolverEngine.ChaosSolverEngineBlueprintLibrary.ConvertPhysicsCollisionToHitResult
-	// FHitResult ConvertPhysicsCollisionToHitResult(FChaosPhysicsCollisionInfo& PhysicsCollision);                             // [0x5df47c0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FHitResult ConvertPhysicsCollisionToHitResult(FChaosPhysicsCollisionInfo& PhysicsCollision);                             // [0x5e5a1f8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/ChaosSolverEngine.ChaosSolver
@@ -110,9 +110,9 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosSolverEngine.ChaosSolverActor.SetSolverActive
-	// void SetSolverActive(bool bActive);                                                                                      // [0x5df48f0] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSolverActive(bool bActive);                                                                                      // [0x5e5a328] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
-	// void SetAsCurrentWorldSolver();                                                                                          // [0x5df48dc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAsCurrentWorldSolver();                                                                                          // [0x5e5a314] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ChaosSolverEngine.ChaosSolverSettings

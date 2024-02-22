@@ -6,10 +6,11 @@
 ********************************************************/
 
 #pragma once
+/// dependency: BasicType
 /// dependency: CommonUI
 /// dependency: CoreUObject
 /// dependency: Engine
-/// dependency: FMJamCatalogRuntime
+/// dependency: FMJamCoreRuntime
 /// dependency: FortniteGame
 /// dependency: GameplayAbilities
 /// dependency: GameplayEventRouter
@@ -29,9 +30,44 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamControllerComponent.UpdateJamUI
-	// void UpdateJamUI();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateJamUI();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMJamSystemRuntime.JamControllerComponent.GetControllerOfClass
-	// class AController* GetControllerOfClass(class UClass* ControllerType, bool bMatchChildTypes);                         // [0xb8c2aa0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AController* GetControllerOfClass(class UClass* ControllerType, bool bMatchChildTypes);                         // [0xb0a29d0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+};
+
+/// Class /Script/FMJamSystemRuntime.JamControllerComponent_LoopOptions
+/// Size: 0x0058 (0x0000A0 - 0x0000F8)
+class UJamControllerComponent_LoopOptions : public UControllerComponent
+{ 
+public:
+	FName                                              CategoryNameLocker;                                         // 0x00A0   (0x0004)  
+	FName                                              CategoryNameAll;                                            // 0x00A4   (0x0004)  
+	SDK_UNDEFINED(24,13865) /* FText */                __um(CategoryTitleLocker);                                  // 0x00A8   (0x0018)  
+	SDK_UNDEFINED(24,13866) /* FText */                __um(CategoryTitleAll);                                     // 0x00C0   (0x0018)  
+	SDK_UNDEFINED(32,13867) /* TWeakObjectPtr<UClass*> */ __um(EmoteWheelOverlay);                                 // 0x00D8   (0x0020)  
+
+
+	/// Functions
+	// Function /Script/FMJamSystemRuntime.JamControllerComponent_LoopOptions.AddJamCategories
+	// void AddJamCategories(bool bPostLockerCategory);                                                                      // [0xb0a2950] Final|Native|Public|BlueprintCallable 
+};
+
+/// Class /Script/FMJamSystemRuntime.JamControllerComponent_LoopPreloader
+/// Size: 0x0058 (0x0000A0 - 0x0000F8)
+class UJamControllerComponent_LoopPreloader : public UControllerComponent
+{ 
+public:
+	bool                                               bHaveRegisteredForOnLoadoutFilled;                          // 0x00A0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x57];                                      // 0x00A1   (0x0057)  MISSED
+
+
+	/// Functions
+	// Function /Script/FMJamSystemRuntime.JamControllerComponent_LoopPreloader.OnSongCatalogRetrieved
+	// void OnSongCatalogRetrieved(bool bSuccess);                                                                           // [0x367e060] Final|Native|Protected 
+	// Function /Script/FMJamSystemRuntime.JamControllerComponent_LoopPreloader.OnPawnSet
+	// void OnPawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                               // [0xb0a32ac] Final|Native|Protected 
+	// Function /Script/FMJamSystemRuntime.JamControllerComponent_LoopPreloader.OnLoadoutFilled
+	// void OnLoadoutFilled();                                                                                               // [0xb0a3284] Final|Native|Protected 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamGlobalControlsWidget
@@ -44,7 +80,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamGlobalControlsWidget.Close
-	// void Close();                                                                                                         // [0x6fa9afc] Final|Native|Protected|BlueprintCallable 
+	// void Close();                                                                                                         // [0x3cebe90] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamOnOffSwitchComponent
@@ -64,11 +100,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.ShouldApplyJamOnSplitscreenLogic
-	// bool ShouldApplyJamOnSplitscreenLogic(class UObject* WorldContextObject, class APlayerController* ReferenceController); // [0xb8c2f48] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool ShouldApplyJamOnSplitscreenLogic(class UObject* WorldContextObject, class APlayerController* ReferenceController); // [0x33aee84] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0xb8c2d8c] Final|Native|Protected 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0xb0a33a4] Final|Native|Protected 
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                              // [0xb8c2d78] Final|Native|Protected 
+	// void OnMutatorUpdated();                                                                                              // [0xb0a3298] Final|Native|Protected 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamPlayerPawnComponent
@@ -82,7 +118,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamPlayerPawnComponent.GetPawnOfClass
-	// class APawn* GetPawnOfClass(class UClass* PawnType, bool bMatchChildTypes);                                           // [0xb8c2c0c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class APawn* GetPawnOfClass(class UClass* PawnType, bool bMatchChildTypes);                                           // [0x22c5954] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamQuestComponent
@@ -101,8 +137,10 @@ public:
 
 
 	/// Functions
+	// Function /Script/FMJamSystemRuntime.JamSystemEmoteBPFL.IsJamDebugDisplayEnabled
+	// bool IsJamDebugDisplayEnabled();                                                                                      // [0xb0a3268] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMJamSystemRuntime.JamSystemEmoteBPFL.GetEmoteActionBinding
-	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                            // [0xae4e550] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                            // [0xb0a2abc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamVerbProcessor_Jam

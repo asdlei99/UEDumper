@@ -64,7 +64,7 @@ class UFortLabradorComponent_Telemetry : public UFortAIComponent_Telemetry
 public:
 	bool                                               bWasAwake;                                                  // 0x0108   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0109   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14601) /* FString */              __um(InstigatorAwakeNetIDString);                           // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,14733) /* FString */              __um(InstigatorAwakeNetIDString);                           // 0x0110   (0x0010)  
 	ELabradorDespawnReason                             DespawnReason;                                              // 0x0120   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0121   (0x0003)  MISSED
 	float                                              DamageReceivedFromPlayers;                                  // 0x0124   (0x0004)  
@@ -72,10 +72,10 @@ public:
 
 	/// Functions
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnWakeUp
-	// void OnWakeUp(class AActor* GoalActor);                                                                               // [0xb3b1c50] Final|Native|Public|BlueprintCallable 
+	// void OnWakeUp(class AActor* GoalActor);                                                                               // [0xb4c4d50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnTeleport
-	// void OnTeleport();                                                                                                    // [0xb3b1c38] Final|Native|Public|BlueprintCallable 
+	// void OnTeleport();                                                                                                    // [0xb4c4d38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnDamaged
-	// void OnDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb3b181c] Final|Native|Private|HasDefaults 
+	// void OnDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb4c4868] Final|Native|Private|HasDefaults 
 };
 

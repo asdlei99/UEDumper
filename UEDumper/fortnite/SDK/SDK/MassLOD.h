@@ -69,14 +69,14 @@ public:
 	bool                                               bUsePlayerPawnLocationInsteadOfCamera : 1;                  // 0x0038:3 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0039   (0x0007)  MISSED
 	TArray<FViewerInfo>                                Viewers;                                                    // 0x0040   (0x0010)  
-	SDK_UNDEFINED(80,14311) /* TMap<uint32_t, FMassViewerHandle> */ __um(ViewerMap);                               // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,14429) /* TMap<uint32_t, FMassViewerHandle> */ __um(ViewerMap);                               // 0x0050   (0x0050)  
 	TArray<class AActor*>                              RegisteredActorViewers;                                     // 0x00A0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x50];                                      // 0x00B0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/MassLOD.MassLODSubsystem.OnPlayerControllerEndPlay
-	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                       // [0xa8e3b10] Final|Native|Protected 
+	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                       // [0xa8dff30] Final|Native|Protected 
 };
 
 /// Class /Script/MassLOD.MassLODCollectorTrait
@@ -171,7 +171,7 @@ struct FMassViewerInfoFragment : FMassFragment
 struct FMassVariableTickChunkFragment : FMassChunkFragment
 { 
 	bool                                               bShouldTickThisFrame;                                       // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,14312) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,14430) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0002   (0x0002)  MISSED
 	float                                              TimeUntilNextTick;                                          // 0x0004   (0x0004)  
 	int32_t                                            LastChunkSerialModificationNumber;                          // 0x0008   (0x0004)  

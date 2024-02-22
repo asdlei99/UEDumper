@@ -69,7 +69,7 @@ struct FFOscillator
 { 
 	float                                              Amplitude;                                                  // 0x0000   (0x0004)  
 	float                                              Frequency;                                                  // 0x0004   (0x0004)  
-	SDK_UNDEFINED(1,2284) /* TEnumAsByte<EInitialOscillatorOffset> */ __um(InitialOffset);                         // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,2288) /* TEnumAsByte<EInitialOscillatorOffset> */ __um(InitialOffset);                         // 0x0008   (0x0001)  
 	EOscillatorWaveform                                Waveform;                                                   // 0x0009   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x2];                                       // 0x000A   (0x0002)  MISSED
 };
@@ -120,17 +120,17 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.LegacyCameraShake.StartLegacyCameraShakeFromSource
-	// class ULegacyCameraShake* StartLegacyCameraShakeFromSource(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, class UCameraShakeSourceComponent* SourceComponent, float Scale, ECameraShakePlaySpace Playspace, FRotator UserPlaySpaceRot); // [0x789d72c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class ULegacyCameraShake* StartLegacyCameraShakeFromSource(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, class UCameraShakeSourceComponent* SourceComponent, float Scale, ECameraShakePlaySpace Playspace, FRotator UserPlaySpaceRot); // [0x78c232c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayCameras.LegacyCameraShake.StartLegacyCameraShake
-	// class ULegacyCameraShake* StartLegacyCameraShake(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, float Scale, ECameraShakePlaySpace Playspace, FRotator UserPlaySpaceRot); // [0x789d3e8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class ULegacyCameraShake* StartLegacyCameraShake(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, float Scale, ECameraShakePlaySpace Playspace, FRotator UserPlaySpaceRot); // [0x78c2078] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayCameras.LegacyCameraShake.ReceiveStopShake
-	// void ReceiveStopShake(bool bImmediately);                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveStopShake(bool bImmediately);                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayCameras.LegacyCameraShake.ReceivePlayShake
-	// void ReceivePlayShake(float Scale);                                                                                   // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceivePlayShake(float Scale);                                                                                   // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayCameras.LegacyCameraShake.ReceiveIsFinished
-	// bool ReceiveIsFinished();                                                                                             // [0x2ef8cdc] Native|Event|Public|BlueprintEvent|Const 
+	// bool ReceiveIsFinished();                                                                                             // [0x30babb0] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/GameplayCameras.LegacyCameraShake.BlueprintUpdateCameraShake
-	// void BlueprintUpdateCameraShake(float DeltaTime, float Alpha, FMinimalViewInfo& POV, FMinimalViewInfo& ModifiedPOV);  // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void BlueprintUpdateCameraShake(float DeltaTime, float Alpha, FMinimalViewInfo& POV, FMinimalViewInfo& ModifiedPOV);  // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GameplayCameras.LegacyCameraShakePattern
@@ -149,7 +149,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.LegacyCameraShakeFunctionLibrary.Conv_LegacyCameraShake
-	// class ULegacyCameraShake* Conv_LegacyCameraShake(class UCameraShakeBase* CameraShake);                                // [0x2e3c084] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ULegacyCameraShake* Conv_LegacyCameraShake(class UCameraShakeBase* CameraShake);                                // [0x3060450] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GameplayCameras.CameraAnimationParams
@@ -211,21 +211,21 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.StopCameraAnimation
-	// void StopCameraAnimation(FCameraAnimationHandle& Handle, bool bImmediate);                                            // [0x789e030] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void StopCameraAnimation(FCameraAnimationHandle& Handle, bool bImmediate);                                            // [0x78c2970] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.StopAllCameraAnimationsOf
-	// void StopAllCameraAnimationsOf(class UCameraAnimationSequence* Sequence, bool bImmediate);                            // [0x789dd14] Final|Native|Public|BlueprintCallable 
+	// void StopAllCameraAnimationsOf(class UCameraAnimationSequence* Sequence, bool bImmediate);                            // [0x78c2784] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.StopAllCameraAnimations
-	// void StopAllCameraAnimations(bool bImmediate);                                                                        // [0x789daec] Native|Public|BlueprintCallable 
+	// void StopAllCameraAnimations(bool bImmediate);                                                                        // [0x78c2624] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.PlayCameraAnimation
-	// FCameraAnimationHandle PlayCameraAnimation(class UCameraAnimationSequence* Sequence, FCameraAnimationParams Params);  // [0x789ce98] Final|Native|Public|BlueprintCallable 
+	// FCameraAnimationHandle PlayCameraAnimation(class UCameraAnimationSequence* Sequence, FCameraAnimationParams Params);  // [0x78c1b40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.IsCameraAnimationActive
-	// bool IsCameraAnimationActive(FCameraAnimationHandle& Handle);                                                         // [0x789ccd8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCameraAnimationActive(FCameraAnimationHandle& Handle);                                                         // [0x78c19c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.GetCameraAnimationCameraModifierFromPlayerController
-	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifierFromPlayerController(class APlayerController* PlayerController); // [0x789cc18] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifierFromPlayerController(class APlayerController* PlayerController); // [0x78c1940] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.GetCameraAnimationCameraModifierFromID
-	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifierFromID(class UObject* WorldContextObject, int32_t ControllerId); // [0x789cad0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifierFromID(class UObject* WorldContextObject, int32_t ControllerId); // [0x78c1874] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayCameras.CameraAnimationCameraModifier.GetCameraAnimationCameraModifier
-	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifier(class UObject* WorldContextObject, int32_t PlayerIndex); // [0x789c988] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCameraAnimationCameraModifier* GetCameraAnimationCameraModifier(class UObject* WorldContextObject, int32_t PlayerIndex); // [0x78c17a8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/GameplayCameras.GameplayCamerasFunctionLibrary
@@ -237,11 +237,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.GameplayCamerasFunctionLibrary.Conv_CameraShakePlaySpace
-	// ECameraShakePlaySpace Conv_CameraShakePlaySpace(ECameraAnimationPlaySpace CameraAnimationPlaySpace);                  // [0x789c8bc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECameraShakePlaySpace Conv_CameraShakePlaySpace(ECameraAnimationPlaySpace CameraAnimationPlaySpace);                  // [0x78c171c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayCameras.GameplayCamerasFunctionLibrary.Conv_CameraAnimationPlaySpace
-	// ECameraAnimationPlaySpace Conv_CameraAnimationPlaySpace(ECameraShakePlaySpace CameraShakePlaySpace);                  // [0x789c8bc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECameraAnimationPlaySpace Conv_CameraAnimationPlaySpace(ECameraShakePlaySpace CameraShakePlaySpace);                  // [0x78c171c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayCameras.GameplayCamerasFunctionLibrary.Conv_CameraAnimationCameraModifier
-	// class UCameraAnimationCameraModifier* Conv_CameraAnimationCameraModifier(class APlayerCameraManager* PlayerCameraManager); // [0x789c7a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCameraAnimationCameraModifier* Conv_CameraAnimationCameraModifier(class APlayerCameraManager* PlayerCameraManager); // [0x78c1648] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/GameplayCameras.CompositeCameraShakePattern
@@ -268,15 +268,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.GameplayCamerasSubsystem.StopCameraAnimation
-	// void StopCameraAnimation(class APlayerController* PlayerController, FCameraAnimationHandle& Handle, bool bImmediate); // [0x789e1c8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void StopCameraAnimation(class APlayerController* PlayerController, FCameraAnimationHandle& Handle, bool bImmediate); // [0x78c2b08] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayCameras.GameplayCamerasSubsystem.StopAllCameraAnimationsOf
-	// void StopAllCameraAnimationsOf(class APlayerController* PlayerController, class UCameraAnimationSequence* Sequence, bool bImmediate); // [0x789de54] Final|Native|Public|BlueprintCallable 
+	// void StopAllCameraAnimationsOf(class APlayerController* PlayerController, class UCameraAnimationSequence* Sequence, bool bImmediate); // [0x78c284c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.GameplayCamerasSubsystem.StopAllCameraAnimations
-	// void StopAllCameraAnimations(class APlayerController* PlayerController, bool bImmediate);                             // [0x789dbb4] Final|Native|Public|BlueprintCallable 
+	// void StopAllCameraAnimations(class APlayerController* PlayerController, bool bImmediate);                             // [0x78c26a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.GameplayCamerasSubsystem.PlayCameraAnimation
-	// FCameraAnimationHandle PlayCameraAnimation(class APlayerController* PlayerController, class UCameraAnimationSequence* Sequence, FCameraAnimationParams Params); // [0x789d1e8] Final|Native|Public|BlueprintCallable 
+	// FCameraAnimationHandle PlayCameraAnimation(class APlayerController* PlayerController, class UCameraAnimationSequence* Sequence, FCameraAnimationParams Params); // [0x78c1e84] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayCameras.GameplayCamerasSubsystem.IsCameraAnimationActive
-	// bool IsCameraAnimationActive(class APlayerController* PlayerController, FCameraAnimationHandle& Handle);              // [0x789cd74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCameraAnimationActive(class APlayerController* PlayerController, FCameraAnimationHandle& Handle);              // [0x78c1a5c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayCameras.SimpleCameraShakePattern

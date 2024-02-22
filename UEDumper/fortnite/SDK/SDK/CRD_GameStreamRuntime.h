@@ -17,25 +17,25 @@
 class UCreativeGameStreamDeviceComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(1,12457) /* FMulticastSparseDelegate */ __um(OnTriggered);                                       // 0x00A0   (0x0001)  
+	SDK_UNDEFINED(1,12544) /* FMulticastSparseDelegate */ __um(OnTriggered);                                       // 0x00A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A1   (0x0003)  MISSED
-	SDK_UNDEFINED(8,12458) /* TWeakObjectPtr<UFortMinigameLogicComponent*> */ __um(MinigameLogicComponent);        // 0x00A4   (0x0008)  
+	SDK_UNDEFINED(8,12545) /* TWeakObjectPtr<UFortMinigameLogicComponent*> */ __um(MinigameLogicComponent);        // 0x00A4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00AC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.RemoveFromEndGameQueue
-	// void RemoveFromEndGameQueue();                                                                                        // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void RemoveFromEndGameQueue();                                                                                        // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                      // [0x865af48] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                      // [0x8660a0c] Final|Native|Private 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.IsWithinPublishedPlayspace
-	// bool IsWithinPublishedPlayspace();                                                                                    // [0x2bf8390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWithinPublishedPlayspace();                                                                                    // [0x2c9e4a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.Init
-	// void Init(class UFortMinigameLogicComponent* InMinigameLogicComponent);                                               // [0x5d87858] Final|Native|Public|BlueprintCallable 
+	// void Init(class UFortMinigameLogicComponent* InMinigameLogicComponent);                                               // [0x5decebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.CreativeGameStreamDeviceComponentSignature__DelegateSignature
-	// void CreativeGameStreamDeviceComponentSignature__DelegateSignature(class UCreativeGameStreamDeviceComponent* CreativeGameStreamDeviceComponent); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void CreativeGameStreamDeviceComponentSignature__DelegateSignature(class UCreativeGameStreamDeviceComponent* CreativeGameStreamDeviceComponent); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.AddToEndGameQueue
-	// void AddToEndGameQueue();                                                                                             // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void AddToEndGameQueue();                                                                                             // [0x3097b14] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceCoordinatorComponent
@@ -43,12 +43,12 @@ public:
 class UCreativeGameStreamDeviceCoordinatorComponent : public UPlayspaceComponent
 { 
 public:
-	SDK_UNDEFINED(16,12459) /* TArray<TWeakObjectPtr<UCreativeGameStreamDeviceComponent*>> */ __um(EndGameCreativeGameStreamDeviceComponentQueue); // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(8,12460) /* TWeakObjectPtr<AFortMinigame*> */ __um(Minigame);                                    // 0x00B0   (0x0008)  
+	SDK_UNDEFINED(16,12546) /* TArray<TWeakObjectPtr<UCreativeGameStreamDeviceComponent*>> */ __um(EndGameCreativeGameStreamDeviceComponentQueue); // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(8,12547) /* TWeakObjectPtr<AFortMinigame*> */ __um(Minigame);                                    // 0x00B0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceCoordinatorComponent.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* InMinigame, EFortMinigameState NewMinigameState);                    // [0x865af48] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* InMinigame, EFortMinigameState NewMinigameState);                    // [0x8660a0c] Final|Native|Private 
 };
 

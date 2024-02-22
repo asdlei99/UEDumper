@@ -133,7 +133,7 @@ class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties : public UI
 public:
 	bool                                               bImportOnlyAnimations;                                      // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00F9   (0x0003)  MISSED
-	SDK_UNDEFINED(8,14127) /* TWeakObjectPtr<USkeleton*> */ __um(Skeleton);                                        // 0x00FC   (0x0008)  
+	SDK_UNDEFINED(8,14224) /* TWeakObjectPtr<USkeleton*> */ __um(Skeleton);                                        // 0x00FC   (0x0008)  
 	bool                                               bImportMeshesInBoneHierarchy;                               // 0x0104   (0x0001)  
 	bool                                               bUseT0AsRefPose;                                            // 0x0105   (0x0001)  
 	bool                                               bConvertStaticsWithMorphTargetsToSkeletals;                 // 0x0106   (0x0001)  
@@ -145,7 +145,7 @@ public:
 class UGLTFPipelineSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(80,14128) /* TMap<FString, FSoftObjectPath> */ __um(MaterialParents);                            // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14225) /* TMap<FString, FSoftObjectPath> */ __um(MaterialParents);                            // 0x0030   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0080   (0x0008)  MISSED
 };
 
@@ -164,10 +164,10 @@ public:
 class UMaterialXPipelineSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(80,14129) /* TMap<EInterchangeMaterialXShaders, FSoftObjectPath> */ __um(PredefinedSurfaceShaders); // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,14130) /* TMap<EInterchangeMaterialXBSDF, FSoftObjectPath> */ __um(PredefinedBSDF);           // 0x0080   (0x0050)  
-	SDK_UNDEFINED(80,14131) /* TMap<EInterchangeMaterialXEDF, FSoftObjectPath> */ __um(PredefinedEDF);             // 0x00D0   (0x0050)  
-	SDK_UNDEFINED(80,14132) /* TMap<EInterchangeMaterialXVDF, FSoftObjectPath> */ __um(PredefinedVDF);             // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,14226) /* TMap<EInterchangeMaterialXShaders, FSoftObjectPath> */ __um(PredefinedSurfaceShaders); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14227) /* TMap<EInterchangeMaterialXBSDF, FSoftObjectPath> */ __um(PredefinedBSDF);           // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,14228) /* TMap<EInterchangeMaterialXEDF, FSoftObjectPath> */ __um(PredefinedEDF);             // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,14229) /* TMap<EInterchangeMaterialXVDF, FSoftObjectPath> */ __um(PredefinedVDF);             // 0x0120   (0x0050)  
 };
 
 /// Class /Script/InterchangePipelines.InterchangeMaterialXPipeline
@@ -183,8 +183,8 @@ public:
 class UInterchangeGenericAnimationPipeline : public UInterchangePipelineBase
 { 
 public:
-	SDK_UNDEFINED(8,14133) /* TWeakObjectPtr<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties*> */ __um(CommonSkeletalMeshesAndAnimationsProperties); // 0x00F8   (0x0008)  
-	SDK_UNDEFINED(8,14134) /* TWeakObjectPtr<UInterchangeGenericCommonMeshesProperties*> */ __um(CommonMeshesProperties); // 0x0100   (0x0008)  
+	SDK_UNDEFINED(8,14230) /* TWeakObjectPtr<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties*> */ __um(CommonSkeletalMeshesAndAnimationsProperties); // 0x00F8   (0x0008)  
+	SDK_UNDEFINED(8,14231) /* TWeakObjectPtr<UInterchangeGenericCommonMeshesProperties*> */ __um(CommonMeshesProperties); // 0x0100   (0x0008)  
 	bool                                               bImportAnimations;                                          // 0x0108   (0x0001)  
 	bool                                               bImportBoneTracks;                                          // 0x0109   (0x0001)  
 	EInterchangeAnimationRange                         AnimationRange;                                             // 0x010A   (0x0001)  
@@ -197,14 +197,14 @@ public:
 	bool                                               bImportCustomAttribute;                                     // 0x011D   (0x0001)  
 	bool                                               bAddCurveMetadataToSkeleton;                                // 0x011E   (0x0001)  
 	bool                                               bSetMaterialDriveParameterOnCustomAttribute;                // 0x011F   (0x0001)  
-	SDK_UNDEFINED(16,14135) /* TArray<FString> */      __um(MaterialCurveSuffixes);                                // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,14232) /* TArray<FString> */      __um(MaterialCurveSuffixes);                                // 0x0120   (0x0010)  
 	bool                                               bRemoveCurveRedundantKeys;                                  // 0x0130   (0x0001)  
 	bool                                               bDoNotImportCurveWithZero;                                  // 0x0131   (0x0001)  
 	bool                                               bDeleteExistingNonCurveCustomAttributes;                    // 0x0132   (0x0001)  
 	bool                                               bDeleteExistingCustomAttributeCurves;                       // 0x0133   (0x0001)  
 	bool                                               bDeleteExistingMorphTargetCurves;                           // 0x0134   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0135   (0x0003)  MISSED
-	SDK_UNDEFINED(16,14136) /* FString */              __um(SourceAnimationName);                                  // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,14233) /* FString */              __um(SourceAnimationName);                                  // 0x0138   (0x0010)  
 	bool                                               bSceneImport;                                               // 0x0148   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x1F];                                      // 0x0149   (0x001F)  MISSED
 };
@@ -217,7 +217,7 @@ public:
 	EReimportStrategyFlags                             ReimportStrategy;                                           // 0x00F8   (0x0001)  
 	bool                                               bUseSourceNameForAsset;                                     // 0x00F9   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x00FA   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14137) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,14234) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
 	FVector                                            ImportOffsetTranslation;                                    // 0x0110   (0x0018)  
 	FRotator                                           ImportOffsetRotation;                                       // 0x0128   (0x0018)  
 	float                                              ImportOffsetUniformScale;                                   // 0x0140   (0x0004)  
@@ -237,7 +237,7 @@ class UInterchangeGenericMaterialPipeline : public UInterchangePipelineBase
 public:
 	bool                                               bImportMaterials;                                           // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00F9   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14138) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,14235) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
 	EInterchangeMaterialImportOption                   MaterialImport;                                             // 0x0110   (0x0001)  
 	bool                                               bIdentifyDuplicateMaterials;                                // 0x0111   (0x0001)  
 	bool                                               bCreateMaterialInstanceForParent;                           // 0x0112   (0x0001)  
@@ -253,8 +253,8 @@ public:
 class UInterchangeGenericMeshPipeline : public UInterchangePipelineBase
 { 
 public:
-	SDK_UNDEFINED(8,14139) /* TWeakObjectPtr<UInterchangeGenericCommonMeshesProperties*> */ __um(CommonMeshesProperties); // 0x00F8   (0x0008)  
-	SDK_UNDEFINED(8,14140) /* TWeakObjectPtr<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties*> */ __um(CommonSkeletalMeshesAndAnimationsProperties); // 0x0100   (0x0008)  
+	SDK_UNDEFINED(8,14236) /* TWeakObjectPtr<UInterchangeGenericCommonMeshesProperties*> */ __um(CommonMeshesProperties); // 0x00F8   (0x0008)  
+	SDK_UNDEFINED(8,14237) /* TWeakObjectPtr<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties*> */ __um(CommonSkeletalMeshesAndAnimationsProperties); // 0x0100   (0x0008)  
 	bool                                               bImportStaticMeshes;                                        // 0x0108   (0x0001)  
 	bool                                               bCombineStaticMeshes;                                       // 0x0109   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x010A   (0x0002)  MISSED
@@ -273,7 +273,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0124   (0x0004)  MISSED
 	FVector                                            BuildScale3D;                                               // 0x0128   (0x0018)  
 	float                                              DistanceFieldResolutionScale;                               // 0x0140   (0x0004)  
-	SDK_UNDEFINED(8,14141) /* TWeakObjectPtr<UStaticMesh*> */ __um(DistanceFieldReplacementMesh);                  // 0x0144   (0x0008)  
+	SDK_UNDEFINED(8,14238) /* TWeakObjectPtr<UStaticMesh*> */ __um(DistanceFieldReplacementMesh);                  // 0x0144   (0x0008)  
 	int32_t                                            MaxLumenMeshCards;                                          // 0x014C   (0x0004)  
 	bool                                               bImportSkeletalMeshes;                                      // 0x0150   (0x0001)  
 	EInterchangeSkeletalMeshContentType                SkeletalMeshImportContentType;                              // 0x0151   (0x0001)  
@@ -283,7 +283,7 @@ public:
 	bool                                               bImportVertexAttributes;                                    // 0x0155   (0x0001)  
 	bool                                               bUpdateSkeletonReferencePose;                               // 0x0156   (0x0001)  
 	bool                                               bCreatePhysicsAsset;                                        // 0x0157   (0x0001)  
-	SDK_UNDEFINED(8,14142) /* TWeakObjectPtr<UPhysicsAsset*> */ __um(PhysicsAsset);                                // 0x0158   (0x0008)  
+	SDK_UNDEFINED(8,14239) /* TWeakObjectPtr<UPhysicsAsset*> */ __um(PhysicsAsset);                                // 0x0158   (0x0008)  
 	bool                                               bUseHighPrecisionSkinWeights;                               // 0x0160   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0161   (0x0003)  MISSED
 	float                                              ThresholdPosition;                                          // 0x0164   (0x0004)  
@@ -315,7 +315,7 @@ class UInterchangeGenericTexturePipeline : public UInterchangePipelineBase
 public:
 	bool                                               bImportTextures;                                            // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00F9   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14143) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,14240) /* FString */              __um(AssetName);                                            // 0x0100   (0x0010)  
 	bool                                               bAllowNonPowerOfTwo;                                        // 0x0110   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0111   (0x0007)  MISSED
 	class UInterchangeBaseNodeContainer*               BaseNodeContainer;                                          // 0x0118   (0x0008)  
@@ -332,37 +332,37 @@ public:
 
 	/// Functions
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.SetContext
-	// void SetContext(FInterchangePipelineMeshesUtilitiesContext& Context);                                                 // [0xc959254] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void SetContext(FInterchangePipelineMeshesUtilitiesContext& Context);                                                 // [0xc8e7fc8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.IsValidMeshInstanceUid
-	// bool IsValidMeshInstanceUid(FString MeshInstanceUid);                                                                 // [0xc958b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidMeshInstanceUid(FString MeshInstanceUid);                                                                 // [0xc8e7918] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.IsValidMeshGeometryUid
-	// bool IsValidMeshGeometryUid(FString MeshGeometryUid);                                                                 // [0xc95846c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidMeshGeometryUid(FString MeshGeometryUid);                                                                 // [0xc8e7268] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetMeshInstanceSkeletonRootUid
-	// FString GetMeshInstanceSkeletonRootUid(FString MeshInstanceUid);                                                      // [0xc957d78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetMeshInstanceSkeletonRootUid(FString MeshInstanceUid);                                                      // [0xc8e6bb8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetMeshInstanceByUid
-	// FInterchangeMeshInstance GetMeshInstanceByUid(FString MeshInstanceUid);                                               // [0xc957670] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FInterchangeMeshInstance GetMeshInstanceByUid(FString MeshInstanceUid);                                               // [0xc8e64f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetMeshGeometrySkeletonRootUid
-	// FString GetMeshGeometrySkeletonRootUid(FString MeshGeometryUid);                                                      // [0xc956f7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetMeshGeometrySkeletonRootUid(FString MeshGeometryUid);                                                      // [0xc8e5e44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetMeshGeometryByUid
-	// FInterchangeMeshGeometry GetMeshGeometryByUid(FString MeshGeometryUid);                                               // [0xc956874] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FInterchangeMeshGeometry GetMeshGeometryByUid(FString MeshGeometryUid);                                               // [0xc8e5780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllStaticMeshInstance
-	// void GetAllStaticMeshInstance(TArray<FString>& MeshInstanceUids);                                                     // [0xc9567dc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllStaticMeshInstance(TArray<FString>& MeshInstanceUids);                                                     // [0xc8e56e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllStaticMeshGeometry
-	// void GetAllStaticMeshGeometry(TArray<FString>& MeshGeometryUids);                                                     // [0xc956744] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllStaticMeshGeometry(TArray<FString>& MeshGeometryUids);                                                     // [0xc8e5650] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllSkinnedMeshInstance
-	// void GetAllSkinnedMeshInstance(TArray<FString>& MeshInstanceUids);                                                    // [0xc9566ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllSkinnedMeshInstance(TArray<FString>& MeshInstanceUids);                                                    // [0xc8e55b8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllSkinnedMeshGeometry
-	// void GetAllSkinnedMeshGeometry(TArray<FString>& MeshGeometryUids);                                                    // [0xc956614] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllSkinnedMeshGeometry(TArray<FString>& MeshGeometryUids);                                                    // [0xc8e5520] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllMeshInstanceUidsUsingMeshGeometryUid
-	// void GetAllMeshInstanceUidsUsingMeshGeometryUid(FString MeshGeometryUid, TArray<FString>& MeshInstanceUids);          // [0xc955ed8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllMeshInstanceUidsUsingMeshGeometryUid(FString MeshGeometryUid, TArray<FString>& MeshInstanceUids);          // [0xc8e4e20] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllMeshInstanceUids
-	// void GetAllMeshInstanceUids(TArray<FString>& MeshInstanceUids);                                                       // [0xc955e3c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllMeshInstanceUids(TArray<FString>& MeshInstanceUids);                                                       // [0xc8e4d84] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllMeshGeometryNotInstanced
-	// void GetAllMeshGeometryNotInstanced(TArray<FString>& MeshGeometryUids);                                               // [0xc955da4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllMeshGeometryNotInstanced(TArray<FString>& MeshGeometryUids);                                               // [0xc8e4cec] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.GetAllMeshGeometry
-	// void GetAllMeshGeometry(TArray<FString>& MeshGeometryUids);                                                           // [0xc955d08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAllMeshGeometry(TArray<FString>& MeshGeometryUids);                                                           // [0xc8e4c50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/InterchangePipelines.InterchangePipelineMeshesUtilities.CreateInterchangePipelineMeshesUtilities
-	// class UInterchangePipelineMeshesUtilities* CreateInterchangePipelineMeshesUtilities(class UInterchangeBaseNodeContainer* BaseNodeContainer); // [0xc955c48] Final|Native|Static|Public|BlueprintCallable 
+	// class UInterchangePipelineMeshesUtilities* CreateInterchangePipelineMeshesUtilities(class UInterchangeBaseNodeContainer* BaseNodeContainer); // [0xc8e4bd0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/InterchangePipelines.InterchangeLodSceneNodeContainer
@@ -376,24 +376,24 @@ struct FInterchangeLodSceneNodeContainer
 /// Size: 0x0080 (0x000000 - 0x000080)
 struct FInterchangeMeshInstance
 { 
-	SDK_UNDEFINED(16,14144) /* FString */              __um(MeshInstanceUid);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14241) /* FString */              __um(MeshInstanceUid);                                      // 0x0000   (0x0010)  
 	class UInterchangeSceneNode*                       LodGroupNode;                                               // 0x0010   (0x0008)  
 	bool                                               bReferenceSkinnedMesh;                                      // 0x0018   (0x0001)  
 	bool                                               bReferenceMorphTarget;                                      // 0x0019   (0x0001)  
 	bool                                               bHasMorphTargets;                                           // 0x001A   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x5];                                       // 0x001B   (0x0005)  MISSED
-	SDK_UNDEFINED(80,14145) /* TMap<int32_t, FInterchangeLodSceneNodeContainer> */ __um(SceneNodePerLodIndex);     // 0x0020   (0x0050)  
-	SDK_UNDEFINED(16,14146) /* TArray<FString> */      __um(ReferencingMeshGeometryUids);                          // 0x0070   (0x0010)  
+	SDK_UNDEFINED(80,14242) /* TMap<int32_t, FInterchangeLodSceneNodeContainer> */ __um(SceneNodePerLodIndex);     // 0x0020   (0x0050)  
+	SDK_UNDEFINED(16,14243) /* TArray<FString> */      __um(ReferencingMeshGeometryUids);                          // 0x0070   (0x0010)  
 };
 
 /// Struct /Script/InterchangePipelines.InterchangeMeshGeometry
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FInterchangeMeshGeometry
 { 
-	SDK_UNDEFINED(16,14147) /* FString */              __um(MeshUid);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14244) /* FString */              __um(MeshUid);                                              // 0x0000   (0x0010)  
 	class UInterchangeMeshNode*                        MeshNode;                                                   // 0x0010   (0x0008)  
-	SDK_UNDEFINED(16,14148) /* TArray<FString> */      __um(ReferencingMeshInstanceUids);                          // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,14149) /* TArray<FString> */      __um(AttachedSocketUids);                                   // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14245) /* TArray<FString> */      __um(ReferencingMeshInstanceUids);                          // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,14246) /* TArray<FString> */      __um(AttachedSocketUids);                                   // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/InterchangePipelines.InterchangePipelineMeshesUtilitiesContext

@@ -24,15 +24,15 @@ public:
 
 	/// Functions
 	// Function /Script/MatchQuestsRuntime.ControllerComponent_MatchQuests.TryToRollOffer
-	// void TryToRollOffer(FFortGamePhaseUpdatedEvent& Event);                                                                  // [0x86af3b8] Final|Native|Protected|HasOutParms 
+	// void TryToRollOffer(FFortGamePhaseUpdatedEvent& Event);                                                                  // [0x86b34b4] Final|Native|Protected|HasOutParms 
 	// Function /Script/MatchQuestsRuntime.ControllerComponent_MatchQuests.TryToGrantSelectedQuest
-	// void TryToGrantSelectedQuest(FFortGamePhaseUpdatedEvent& Event);                                                         // [0x86af3b8] Final|Native|Protected|HasOutParms 
+	// void TryToGrantSelectedQuest(FFortGamePhaseUpdatedEvent& Event);                                                         // [0x86b34b4] Final|Native|Protected|HasOutParms 
 	// Function /Script/MatchQuestsRuntime.ControllerComponent_MatchQuests.Server_SetSelectedQuest
-	// void Server_SetSelectedQuest(TScriptInterface<Class> Quest);                                                             // [0xab636a0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetSelectedQuest(TScriptInterface<Class> Quest);                                                             // [0xae617d8] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/MatchQuestsRuntime.ControllerComponent_MatchQuests.OnRep_QuestOffering
-	// void OnRep_QuestOffering();                                                                                              // [0xab63680] Final|Native|Private|Const 
+	// void OnRep_QuestOffering();                                                                                              // [0xae617b8] Final|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.ControllerComponent_MatchQuests.OnLandedFromBus
-	// void OnLandedFromBus(class AFortPlayerControllerZone* PlayerController);                                                 // [0x5d87858] Final|Native|Protected 
+	// void OnLandedFromBus(class AFortPlayerControllerZone* PlayerController);                                                 // [0x5decebc] Final|Native|Protected 
 };
 
 /// Class /Script/MatchQuestsRuntime.FortGameStateComponent_SquadMatchQuests
@@ -60,15 +60,15 @@ public:
 
 	/// Functions
 	// Function /Script/MatchQuestsRuntime.FortPlayerStateComponent_MatchQuests.TryToGrantSelectedQuest
-	// void TryToGrantSelectedQuest(FFortGamePhaseUpdatedEvent& FortGamePhaseUpdatedEvent);                                     // [0x86af3b8] Final|Native|Private|HasOutParms 
+	// void TryToGrantSelectedQuest(FFortGamePhaseUpdatedEvent& FortGamePhaseUpdatedEvent);                                     // [0x86b34b4] Final|Native|Private|HasOutParms 
 	// Function /Script/MatchQuestsRuntime.FortPlayerStateComponent_MatchQuests.Server_SetSelectedQuest
-	// void Server_SetSelectedQuest(TScriptInterface<Class> Quest);                                                             // [0xab636a0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetSelectedQuest(TScriptInterface<Class> Quest);                                                             // [0xae617d8] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/MatchQuestsRuntime.FortPlayerStateComponent_MatchQuests.OnRep_SquadSelections
-	// void OnRep_SquadSelections();                                                                                            // [0x2e4c18c] Final|Native|Private|Const 
+	// void OnRep_SquadSelections();                                                                                            // [0x2f521f0] Final|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.FortPlayerStateComponent_MatchQuests.OnRep_QuestOffering
-	// void OnRep_QuestOffering();                                                                                              // [0x2e4acac] Final|Native|Private|Const 
+	// void OnRep_QuestOffering();                                                                                              // [0x2eac138] Final|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.FortPlayerStateComponent_MatchQuests.OnLandedFromBus
-	// void OnLandedFromBus(class AFortPlayerControllerZone* PlayerController);                                                 // [0x5d87858] Final|Native|Private 
+	// void OnLandedFromBus(class AFortPlayerControllerZone* PlayerController);                                                 // [0x5decebc] Final|Native|Private 
 };
 
 /// Class /Script/MatchQuestsRuntime.FortQuestDefinitionComponent_MatchQuests
@@ -103,15 +103,15 @@ public:
 
 	/// Functions
 	// Function /Script/MatchQuestsRuntime.MatchQuestsCheatManager.MatchQuests_RollNewOffer
-	// void MatchQuests_RollNewOffer();                                                                                         // [0x3047908] Final|Exec|Native|Private|Const 
+	// void MatchQuests_RollNewOffer();                                                                                         // [0x3097b14] Final|Exec|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.MatchQuestsCheatManager.MatchQuests_LogSquadSelections
-	// void MatchQuests_LogSquadSelections();                                                                                   // [0x3047908] Final|Exec|Native|Private|Const 
+	// void MatchQuests_LogSquadSelections();                                                                                   // [0x3097b14] Final|Exec|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.MatchQuestsCheatManager.MatchQuests_LogRNGSeeds
-	// void MatchQuests_LogRNGSeeds();                                                                                          // [0x3047908] Final|Exec|Native|Private 
+	// void MatchQuests_LogRNGSeeds();                                                                                          // [0x3097b14] Final|Exec|Native|Private 
 	// Function /Script/MatchQuestsRuntime.MatchQuestsCheatManager.MatchQuests_LogReportSimulatedRolls
-	// void MatchQuests_LogReportSimulatedRolls(int32_t RollsToSimulate);                                                       // [0x640d3e0] Final|Exec|Native|Private|Const 
+	// void MatchQuests_LogReportSimulatedRolls(int32_t RollsToSimulate);                                                       // [0x6470f8c] Final|Exec|Native|Private|Const 
 	// Function /Script/MatchQuestsRuntime.MatchQuestsCheatManager.MatchQuests_LogAvailableQuestsPool
-	// void MatchQuests_LogAvailableQuestsPool();                                                                               // [0x3047908] Final|Exec|Native|Private 
+	// void MatchQuests_LogAvailableQuestsPool();                                                                               // [0x3097b14] Final|Exec|Native|Private 
 };
 
 /// Struct /Script/MatchQuestsRuntime.SquadMemberSelection

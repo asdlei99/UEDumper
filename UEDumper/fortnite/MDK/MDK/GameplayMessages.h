@@ -24,11 +24,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.Unregister
-	// void Unregister();                                                                                                       // [0x186c4f8] Final|Native|Public|BlueprintCallable 
+	// void Unregister();                                                                                                       // [0x19b5670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.RegisterGameplayMessageReceiver
-	// class UAsyncAction_RegisterGameplayMessageReceiver* RegisterGameplayMessageReceiver(class UObject* WorldContextObject, FEventMessageTag Channel, class UScriptStruct* PayloadType, EGameplayMessageMatchType MatchType, class AActor* ActorContext); // [0x6c1cc28] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_RegisterGameplayMessageReceiver* RegisterGameplayMessageReceiver(class UObject* WorldContextObject, FEventMessageTag Channel, class UScriptStruct* PayloadType, EGameplayMessageMatchType MatchType, class AActor* ActorContext); // [0x6c8bf7c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.GetPayload
-	// bool GetPayload(int32_t& OutPayload);                                                                                    // [0x6c1c58c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetPayload(int32_t& OutPayload);                                                                                    // [0x6c8b540] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayMessages.GameplayMessageReplicator
@@ -43,7 +43,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.GameplayMessageReplicator.Multicast_ServerMessageTriggered
-	// void Multicast_ServerMessageTriggered(FEventMessageTag Channel, FReplicatedMessage MessageData);                         // [0x6c1ca5c] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ServerMessageTriggered(FEventMessageTag Channel, FReplicatedMessage MessageData);                         // [0x6c8bcc8] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/GameplayMessages.GameplayMessageRouter
@@ -59,11 +59,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.GameplayMessageRouter.K2_BroadcastMessage
-	// void K2_BroadcastMessage(FEventMessageTag Channel, int32_t& Message, bool bSaveToChannel, class AActor* ActorContext);   // [0x6c1c7d4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void K2_BroadcastMessage(FEventMessageTag Channel, int32_t& Message, bool bSaveToChannel, class AActor* ActorContext);   // [0x6c8b884] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayMessages.GameplayMessageRouter.HasValidSavedMessage
-	// bool HasValidSavedMessage(FEventMessageTag Channel);                                                                     // [0x6c1c6b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidSavedMessage(FEventMessageTag Channel);                                                                     // [0x6c8b6e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayMessages.GameplayMessageRouter.ClearSavedMessage
-	// void ClearSavedMessage(FEventMessageTag Channel);                                                                        // [0x6c1c414] Final|Native|Public|BlueprintCallable 
+	// void ClearSavedMessage(FEventMessageTag Channel);                                                                        // [0x6c8b2c8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayMessages.BlueprintEventMessageTagLibrary
@@ -78,7 +78,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.BlueprintEventMessageTagLibrary.GetEventMessageTagFromGameplayTag
-	// FEventMessageTag GetEventMessageTagFromGameplayTag(FGameplayTag InTag);                                                  // [0x6c1c4d4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FEventMessageTag GetEventMessageTagFromGameplayTag(FGameplayTag InTag);                                                  // [0x6c8b404] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GameplayMessages.EventMessageTag

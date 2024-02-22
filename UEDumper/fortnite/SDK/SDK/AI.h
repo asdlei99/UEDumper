@@ -47,9 +47,9 @@ public:
 
 	/// Functions
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnEndDance
-	// void OnEndDance();                                                                                                    // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnEndDance();                                                                                                    // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnBeginDance
-	// void OnBeginDance();                                                                                                  // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnBeginDance();                                                                                                  // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/AI/NavAreas/FortNavArea_JumpDown.FortNavArea_JumpDown_C
@@ -68,9 +68,9 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Struct /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimBlueprintGeneratedMutableData
@@ -202,17 +202,16 @@ public:
 	FAnimNode_ConvertLocalToComponentSpace             AnimGraphNode_LocalToComponentSpace;                        // 0x1C38   (0x0020)  
 	FAnimNode_ConvertComponentToLocalSpace             AnimGraphNode_ComponentToLocalSpace;                        // 0x1C58   (0x0020)  
 	FAnimNode_Slot                                     AnimGraphNode_Slot60;                                       // 0x1C78   (0x0048)  
-	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x1CC0   (0x00F8)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive61;                              // 0x1DB8   (0x00C8)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult62;                           // 0x1E80   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult63;                           // 0x1EA8   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer64;                             // 0x1ED0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult65;                                // 0x1F18   (0x0020)  
-	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose66;                               // 0x1F38   (0x0010)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult67;                                // 0x1F48   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine68;                               // 0x1F68   (0x00C8)  
-	FFortAnimNode_QuadrupedSlopeWarping                FortAnimGraphNode_QuadrupedSlopeWarping;                    // 0x2030   (0x05C8)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x25F8   (0x0008)  MISSED
+	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x1CC0   (0x0100)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive61;                              // 0x1DC0   (0x00C8)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult62;                           // 0x1E88   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult63;                           // 0x1EB0   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer64;                             // 0x1ED8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult65;                                // 0x1F20   (0x0020)  
+	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose66;                               // 0x1F40   (0x0010)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult67;                                // 0x1F50   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine68;                               // 0x1F70   (0x00C8)  
+	FFortAnimNode_QuadrupedSlopeWarping                FortAnimGraphNode_QuadrupedSlopeWarping;                    // 0x2038   (0x05C8)  
 	FFortAnimNode_WeightedLookAt                       FortAnimGraphNode_WeightedLookAt;                           // 0x2600   (0x0250)  
 	FAnimNode_Inertialization                          AnimGraphNode_Inertialization;                              // 0x2850   (0x0118)  
 	FAnimNode_LinkedAnimLayer                          AnimGraphNode_LinkedAnimLayer;                              // 0x2968   (0x00C8)  
@@ -328,21 +327,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x3d1d968] BlueprintEvent       
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                           // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                          // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                          // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.ExecuteUbergraph_Burt_AnimBP
-	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                // [0x130d900] Final                
+	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                // [0x3d1d968] Final                
 };
 
 /// Class /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C
@@ -354,7 +353,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                               // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                               // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C
@@ -459,32 +458,31 @@ public:
 	FAnimNode_ConvertLocalToComponentSpace             AnimGraphNode_LocalToComponentSpace;                        // 0x1FB8   (0x0020)  
 	FAnimNode_ConvertComponentToLocalSpace             AnimGraphNode_ComponentToLocalSpace;                        // 0x1FD8   (0x0020)  
 	FAnimNode_Slot                                     AnimGraphNode_Slot75;                                       // 0x1FF8   (0x0048)  
-	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x2040   (0x00F8)  
-	FAnimNode_Slot                                     AnimGraphNode_Slot76;                                       // 0x2138   (0x0048)  
-	FAnimNode_Slot                                     AnimGraphNode_Slot77;                                       // 0x2180   (0x0048)  
-	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose;                               // 0x21C8   (0x0078)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose78;                              // 0x2240   (0x0028)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose79;                              // 0x2268   (0x0028)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool80;                            // 0x2290   (0x0048)  
-	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend81;                           // 0x22D8   (0x00F0)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose82;                              // 0x23C8   (0x0028)  
-	FAnimNode_Slot                                     AnimGraphNode_Slot83;                                       // 0x23F0   (0x0048)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive84;                              // 0x2438   (0x00C8)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult85;                           // 0x2500   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult86;                           // 0x2528   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult87;                           // 0x2550   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult88;                           // 0x2578   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer89;                             // 0x25A0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult90;                                // 0x25E8   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer91;                             // 0x2608   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult92;                                // 0x2650   (0x0020)  
-	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose93;                               // 0x2670   (0x0010)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult94;                                // 0x2680   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine95;                               // 0x26A0   (0x00C8)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer96;                             // 0x2768   (0x0048)  
-	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend97;                           // 0x27B0   (0x00F0)  
-	FFortAnimNode_QuadrupedSlopeWarping                FortAnimGraphNode_QuadrupedSlopeWarping;                    // 0x28A0   (0x05C8)  
-	unsigned char                                      UnknownData02_5[0x8];                                       // 0x2E68   (0x0008)  MISSED
+	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x2040   (0x0100)  
+	FAnimNode_Slot                                     AnimGraphNode_Slot76;                                       // 0x2140   (0x0048)  
+	FAnimNode_Slot                                     AnimGraphNode_Slot77;                                       // 0x2188   (0x0048)  
+	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose;                               // 0x21D0   (0x0078)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose78;                              // 0x2248   (0x0028)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose79;                              // 0x2270   (0x0028)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool80;                            // 0x2298   (0x0048)  
+	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend81;                           // 0x22E0   (0x00F0)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose82;                              // 0x23D0   (0x0028)  
+	FAnimNode_Slot                                     AnimGraphNode_Slot83;                                       // 0x23F8   (0x0048)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive84;                              // 0x2440   (0x00C8)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult85;                           // 0x2508   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult86;                           // 0x2530   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult87;                           // 0x2558   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult88;                           // 0x2580   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer89;                             // 0x25A8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult90;                                // 0x25F0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer91;                             // 0x2610   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult92;                                // 0x2658   (0x0020)  
+	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose93;                               // 0x2678   (0x0010)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult94;                                // 0x2688   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine95;                               // 0x26A8   (0x00C8)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer96;                             // 0x2770   (0x0048)  
+	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend97;                           // 0x27B8   (0x00F0)  
+	FFortAnimNode_QuadrupedSlopeWarping                FortAnimGraphNode_QuadrupedSlopeWarping;                    // 0x28A8   (0x05C8)  
 	FFortAnimNode_WeightedLookAt                       FortAnimGraphNode_WeightedLookAt;                           // 0x2E70   (0x0250)  
 	FAnimNode_Inertialization                          AnimGraphNode_Inertialization;                              // 0x30C0   (0x0118)  
 	FAnimNode_LinkedAnimLayer                          AnimGraphNode_LinkedAnimLayer;                              // 0x31D8   (0x00C8)  
@@ -600,21 +598,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                               // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                               // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                            // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x130d900] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                        // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                           // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                          // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                          // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.ExecuteUbergraph_Grandma_AnimBP
-	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                             // [0x130d900] Final                
+	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                             // [0x3d1d968] Final                
 };
 
 /// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_PawnDmg.GE_RidingSprint_PawnDmg_C
@@ -624,16 +622,16 @@ class UGE_RidingSprint_PawnDmg_C : public UGET_DirectPhysicalDamage_C
 public:
 };
 
-/// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_VehicleDmg.GE_RidingSprint_VehicleDmg_C
+/// Class /Irwin/AI/Prey/Burt/Abilities/GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown.GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_RidingSprint_VehicleDmg_C : public UGET_DirectPhysicalDamage_C
+class UGE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C : public UGameplayEffect
 { 
 public:
 };
 
-/// Class /Irwin/AI/Prey/Burt/Abilities/GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown.GE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C
+/// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_VehicleDmg.GE_RidingSprint_VehicleDmg_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_NPC_Irwn_Prey_Burt_DiscoverLootCooldown_C : public UGameplayEffect
+class UGE_RidingSprint_VehicleDmg_C : public UGET_DirectPhysicalDamage_C
 { 
 public:
 };
@@ -704,11 +702,11 @@ struct FAnimBlueprintGeneratedConstantData : FAnimBlueprintConstantData
 	float                                              __FloatProperty43;                                          // 0x0164   (0x0004)  
 	bool                                               __BoolProperty44;                                           // 0x0168   (0x0001)  
 	EAnimSyncMethod                                    __EnumProperty45;                                           // 0x0169   (0x0001)  
-	SDK_UNDEFINED(1,9348) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                  // 0x016A   (0x0001)  
+	SDK_UNDEFINED(1,9390) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                  // 0x016A   (0x0001)  
 	unsigned char                                      UnknownData07_5[0x1];                                       // 0x016B   (0x0001)  MISSED
 	FName                                              __NameProperty46;                                           // 0x016C   (0x0004)  
 	int32_t                                            __IntProperty47;                                            // 0x0170   (0x0004)  
-	SDK_UNDEFINED(1,9349) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                    // 0x0174   (0x0001)  
+	SDK_UNDEFINED(1,9391) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                    // 0x0174   (0x0001)  
 	unsigned char                                      UnknownData08_5[0x3];                                       // 0x0175   (0x0003)  MISSED
 	FName                                              __NameProperty49;                                           // 0x0178   (0x0004)  
 	FName                                              __NameProperty50;                                           // 0x017C   (0x0004)  
@@ -918,7 +916,7 @@ struct FAnimBlueprintGeneratedConstantData : FAnimBlueprintConstantData
 
 /// Struct /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x2CE7 (0x000001 - 0x002CE8)
-struct FAnimBlueprintGeneratedConstantDatadup_113 : FAnimBlueprintConstantData
+struct FAnimBlueprintGeneratedConstantDatadup_121 : FAnimBlueprintConstantData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              __NameProperty;                                             // 0x0004   (0x0004)  
@@ -988,11 +986,11 @@ struct FAnimBlueprintGeneratedConstantDatadup_113 : FAnimBlueprintConstantData
 	float                                              __FloatProperty49;                                          // 0x0184   (0x0004)  
 	bool                                               __BoolProperty50;                                           // 0x0188   (0x0001)  
 	EAnimSyncMethod                                    __EnumProperty51;                                           // 0x0189   (0x0001)  
-	SDK_UNDEFINED(1,9350) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                  // 0x018A   (0x0001)  
+	SDK_UNDEFINED(1,9392) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                  // 0x018A   (0x0001)  
 	unsigned char                                      UnknownData07_5[0x1];                                       // 0x018B   (0x0001)  MISSED
 	FName                                              __NameProperty52;                                           // 0x018C   (0x0004)  
 	int32_t                                            __IntProperty53;                                            // 0x0190   (0x0004)  
-	SDK_UNDEFINED(1,9351) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                    // 0x0194   (0x0001)  
+	SDK_UNDEFINED(1,9393) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                    // 0x0194   (0x0001)  
 	unsigned char                                      UnknownData08_5[0x3];                                       // 0x0195   (0x0003)  MISSED
 	FName                                              __NameProperty55;                                           // 0x0198   (0x0004)  
 	FName                                              __NameProperty56;                                           // 0x019C   (0x0004)  
@@ -1232,7 +1230,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_113 : FAnimBlueprintConstantData
 
 /// Struct /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x0070 (0x000001 - 0x000071)
-struct FAnimBlueprintGeneratedMutableDatadup_114 : FAnimBlueprintMutableData
+struct FAnimBlueprintGeneratedMutableDatadup_122 : FAnimBlueprintMutableData
 { 
 	bool                                               __BoolProperty;                                             // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0002   (0x0002)  MISSED

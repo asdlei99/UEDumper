@@ -25,7 +25,7 @@ enum class EFabricUserOptionConversionType : uint8_t
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FFabricMetasoundDrumPlayerSampleData
 { 
-	SDK_UNDEFINED(24,13465) /* FText */                __um(SampleLabel);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,13559) /* FText */                __um(SampleLabel);                                          // 0x0000   (0x0018)  
 	class USoundWave*                                  WaveAsset;                                                  // 0x0018   (0x0008)  
 };
 
@@ -39,7 +39,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricMetasoundDataTypes.FabricMetasoundDrumPlayerSampleBankAsset.GetSampleLabels
-	// TArray<FText> GetSampleLabels();                                                                                      // [0xb77f098] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FText> GetSampleLabels();                                                                                      // [0xb894b24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricMetasoundDataTypes.FabricMetasoundDrumPlayerDataAsset
@@ -47,7 +47,7 @@ public:
 class UFabricMetasoundDrumPlayerDataAsset : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,13466) /* TArray<TWeakObjectPtr<UFabricMetasoundDrumPlayerSampleBankAsset*>> */ __um(SampleBanks); // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13560) /* TArray<TWeakObjectPtr<UFabricMetasoundDrumPlayerSampleBankAsset*>> */ __um(SampleBanks); // 0x0030   (0x0010)  
 };
 
 /// Class /Script/FabricMetasoundDataTypes.FabricMetasoundInstrumentPlayerDataAsset
@@ -63,7 +63,7 @@ public:
 class UFabricMetasoundInstrumentPlayerDataAssetList : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,13467) /* TArray<TWeakObjectPtr<UFabricMetasoundInstrumentPlayerDataAsset*>> */ __um(InstrumentPlayerData); // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13561) /* TArray<TWeakObjectPtr<UFabricMetasoundInstrumentPlayerDataAsset*>> */ __um(InstrumentPlayerData); // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/FabricMetasoundDataTypes.FabricUserOption

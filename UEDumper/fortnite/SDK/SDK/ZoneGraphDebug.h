@@ -49,9 +49,9 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphDebug.ZoneGraphTestingComponent.EnableCustomTests
-	// void EnableCustomTests();                                                                                             // [0xa8e60f0] Final|Native|Public|BlueprintCallable 
+	// void EnableCustomTests();                                                                                             // [0xa8e2458] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraphDebug.ZoneGraphTestingComponent.DisableCustomTests
-	// void DisableCustomTests();                                                                                            // [0xa8e60b4] Final|Native|Public|BlueprintCallable 
+	// void DisableCustomTests();                                                                                            // [0xa8e241c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ZoneGraphDebug.ZoneGraphTestingActor
@@ -64,8 +64,8 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphDebug.ZoneGraphTestingActor.EnableCustomTests
-	// void EnableCustomTests();                                                                                             // [0xa8e60c8] Final|Native|Public|BlueprintCallable 
+	// void EnableCustomTests();                                                                                             // [0xa8e2430] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraphDebug.ZoneGraphTestingActor.DisableCustomTests
-	// void DisableCustomTests();                                                                                            // [0xa8e608c] Final|Native|Public|BlueprintCallable 
+	// void DisableCustomTests();                                                                                            // [0xa8e23f4] Final|Native|Public|BlueprintCallable 
 };
 

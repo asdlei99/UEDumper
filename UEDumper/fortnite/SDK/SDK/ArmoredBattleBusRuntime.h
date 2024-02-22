@@ -32,7 +32,7 @@ public:
 	float                                              SlopePitchDegreeAngle;                                      // 0x1674   (0x0004)  
 	FVector                                            HandAttachL;                                                // 0x1678   (0x0018)  
 	FVector                                            HandAttachR;                                                // 0x1690   (0x0018)  
-	SDK_UNDEFINED(1,11637) /* TEnumAsByte<ERelativeTransformSpace> */ __um(TransformSpace);                        // 0x16A8   (0x0001)  
+	SDK_UNDEFINED(1,11700) /* TEnumAsByte<ERelativeTransformSpace> */ __um(TransformSpace);                        // 0x16A8   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x16A9   (0x0003)  MISSED
 	float                                              UpdateYawDeltaSmoothedLerpRate;                             // 0x16AC   (0x0004)  
 	int32_t                                            TurretPassengerFront;                                       // 0x16B0   (0x0004)  
@@ -53,21 +53,21 @@ public:
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateYawDeltaSmoothed
-	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xa9b4f9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xaccd2ec] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateSmoothedVehicleYawRate
-	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                            // [0xa9b4950] Final|Native|Public|BlueprintCallable 
+	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                            // [0xacccd7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateHandPositionsSlopeValues
-	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                  // [0xa9b4890] Final|Native|Public|BlueprintCallable 
+	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                  // [0xaccccfc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UnrotateHandAttachLocation
-	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);             // [0xa9b46cc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);             // [0xacccb38] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetPassengerTransform
-	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xa9b434c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xaccc860] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetHandAttachLocation
-	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xa9b417c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xaccc750] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetFootAttachTransform
-	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                    // [0xa9b4060] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                    // [0xaccc674] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GenerateCharacterPitchAndYawForSlopedTerrain
-	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xa9b3eb8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xaccc508] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance
@@ -102,12 +102,12 @@ public:
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateYawDeltaSmoothed
-	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xa9b516c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xaccd44c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateTurretAimPitchWeaponYaw
-	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xa9b4c80] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xaccd0b4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateSmoothedVehicleYawRate
-	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                 // [0xa9b4a98] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                 // [0xaccce84] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.GetPitchAndYaw
-	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xa9b4468] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xaccc93c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 

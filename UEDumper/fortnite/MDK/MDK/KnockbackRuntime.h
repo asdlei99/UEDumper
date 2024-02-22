@@ -33,17 +33,17 @@ public:
 
 	/// Functions
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.SetPlayersShouldBreakThroughStructures
-	// void SetPlayersShouldBreakThroughStructures(bool bActive, class AFortPlayerPawn* PlayerPawn);                            // [0xb4ab6c0] Final|Native|Public|BlueprintCallable 
+	// void SetPlayersShouldBreakThroughStructures(bool bActive, class AFortPlayerPawn* PlayerPawn);                            // [0xb5bc184] Final|Native|Public|BlueprintCallable 
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.HandleBlockedCharacterMovement
-	// void HandleBlockedCharacterMovement(FHitResult& InOutImpact, class AFortPawn* FortPawn);                                 // [0xb4ab4d4] Final|Native|Private|HasOutParms 
+	// void HandleBlockedCharacterMovement(FHitResult& InOutImpact, class AFortPawn* FortPawn);                                 // [0xb5bbf98] Final|Native|Private|HasOutParms 
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.GetPercentDamageMediumMaxThreshold
-	// float GetPercentDamageMediumMaxThreshold();                                                                              // [0xb4ab4a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentDamageMediumMaxThreshold();                                                                              // [0xb5bbf64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.GetPercentDamageLowMaxThreshold
-	// float GetPercentDamageLowMaxThreshold();                                                                                 // [0xb4ab46c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentDamageLowMaxThreshold();                                                                                 // [0xb5bbf30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.GetKnockbackMultiplierInitialValue
-	// float GetKnockbackMultiplierInitialValue();                                                                              // [0xb4ab454] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKnockbackMultiplierInitialValue();                                                                              // [0xb5bbf18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/KnockbackRuntime.FortAthenaMutator_Knockback.GetAllPlayersKnockbackData
-	// TArray<FKnockbackMutatorData> GetAllPlayersKnockbackData();                                                              // [0xb4aada8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FKnockbackMutatorData> GetAllPlayersKnockbackData();                                                              // [0xb5bb86c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/KnockbackRuntime.FortGameplayAbility_KnockbackMutator
@@ -60,9 +60,9 @@ public:
 
 	/// Functions
 	// Function /Script/KnockbackRuntime.FortGameplayAbility_KnockbackMutator.SaveKnockbackData
-	// void SaveKnockbackData(FKnockbackMutatorData& InKnockbackData);                                                          // [0xb4ab644] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SaveKnockbackData(FKnockbackMutatorData& InKnockbackData);                                                          // [0xb5bc108] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/KnockbackRuntime.FortGameplayAbility_KnockbackMutator.GetCachedMutator
-	// class AFortAthenaMutator_Knockback* GetCachedMutator();                                                                  // [0xb4ab430] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// class AFortAthenaMutator_Knockback* GetCachedMutator();                                                                  // [0xb5bbef4] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/KnockbackRuntime.KnockbackMutatorData

@@ -210,11 +210,11 @@ public:
 };
 
 /// Class /Script/IrisCore.NetObjectGridFilterConfig
-/// Size: 0x0048 (0x000030 - 0x000078)
+/// Size: 0x0050 (0x000030 - 0x000080)
 class UNetObjectGridFilterConfig : public UNetObjectFilterConfig
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 120;
+	static inline constexpr uint64_t __MDKClassSize = 128;
 
 public:
 	DMember(uint32_t)                                  ViewPosRelevancyFrameCount                                  OFFSET(get<uint32_t>, {0x30, 4, 0, 0})
@@ -224,6 +224,7 @@ public:
 	DMember(float)                                     DefaultCullDistance                                         OFFSET(get<float>, {0x40, 4, 0, 0})
 	SMember(FVector)                                   MinPos                                                      OFFSET(getStruct<T>, {0x48, 24, 0, 0})
 	SMember(FVector)                                   MaxPos                                                      OFFSET(getStruct<T>, {0x60, 24, 0, 0})
+	DMember(bool)                                      bUseExactCullDistance                                       OFFSET(get<bool>, {0x78, 1, 0, 0})
 };
 
 /// Class /Script/IrisCore.NetObjectGridFilter
@@ -360,14 +361,16 @@ public:
 };
 
 /// Class /Script/IrisCore.PartialNetObjectAttachmentHandlerConfig
-/// Size: 0x0008 (0x000030 - 0x000038)
+/// Size: 0x0010 (0x000030 - 0x000040)
 class UPartialNetObjectAttachmentHandlerConfig : public USequentialPartialNetBlobHandlerConfig
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 56;
+	static inline constexpr uint64_t __MDKClassSize = 64;
 
 public:
 	DMember(uint32_t)                                  BitCountSplitThreshold                                      OFFSET(get<uint32_t>, {0x30, 4, 0, 0})
+	DMember(uint32_t)                                  ClientUnreliableBitCountSplitThreshold                      OFFSET(get<uint32_t>, {0x34, 4, 0, 0})
+	DMember(uint32_t)                                  ServerUnreliableBitCountSplitThreshold                      OFFSET(get<uint32_t>, {0x38, 4, 0, 0})
 };
 
 /// Class /Script/IrisCore.SequentialPartialNetBlobHandler

@@ -17,27 +17,27 @@
 /// dependency: PlayspaceSystem
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyaleIslandPlayspace
-/// Size: 0x0078 (0x0006C0 - 0x000738)
+/// Size: 0x0078 (0x0006E8 - 0x000760)
 class ACreativeRoyaleIslandPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1848;
+	static inline constexpr uint64_t __MDKClassSize = 1888;
 
 public:
-	CMember(class UFortProjectEditComponent_CreativeRoyale*) ProjectEditComponent                                  OFFSET(get<T>, {0x6C0, 8, 0, 0})
-	CMember(class UPlayspaceComponent_PlayStopPauseManager*) PlayStopPauseManager                                  OFFSET(get<T>, {0x6C8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_CreativeLoadingStateProxy*) CreativeLoadingStateProxy                        OFFSET(get<T>, {0x6D0, 8, 0, 0})
-	CMember(class UPlayspaceComponent_SpatialGameplay*) SpatialGameplayComponent                                   OFFSET(get<T>, {0x6D8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_DeviceTracking*) DeviceTrackerComponent                                      OFFSET(get<T>, {0x6E0, 8, 0, 0})
-	CMember(class UPlayspaceComponent_CreativeModifyEmotes*) CreativeModifyEmotesComponent                         OFFSET(get<T>, {0x6E8, 8, 0, 0})
-	CMember(class UFortPlayspaceComponent_WorldTimeOfDayOverride*) WorldTimeOfDayOverrideComponent                 OFFSET(get<T>, {0x6F0, 8, 0, 0})
-	CMember(class UCreativeRoyalePlayspaceComponent_LoadingScreen*) LoadingScreenComponent                         OFFSET(get<T>, {0x6F8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_ActorMemoryTracker*) ActorMemoryTracker                                      OFFSET(get<T>, {0x700, 8, 0, 0})
-	CMember(class UFortPoiSwapManager*)                FortPoiSwapManager                                          OFFSET(get<T>, {0x708, 8, 0, 0})
-	CMember(TArray<class AActor*>)                     FoundActors                                                 OFFSET(get<T>, {0x718, 16, 0, 0})
-	DMember(int32_t)                                   IslandMemoryBudget                                          OFFSET(get<int32_t>, {0x728, 4, 0, 0})
-	DMember(float)                                     MaxMemorySamplingHeight                                     OFFSET(get<float>, {0x72C, 4, 0, 0})
-	DMember(float)                                     MaxMemorySamplingCellSize                                   OFFSET(get<float>, {0x730, 4, 0, 0})
+	CMember(class UFortProjectEditComponent_CreativeRoyale*) ProjectEditComponent                                  OFFSET(get<T>, {0x6E8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_PlayStopPauseManager*) PlayStopPauseManager                                  OFFSET(get<T>, {0x6F0, 8, 0, 0})
+	CMember(class UPlayspaceComponent_CreativeLoadingStateProxy*) CreativeLoadingStateProxy                        OFFSET(get<T>, {0x6F8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_SpatialGameplay*) SpatialGameplayComponent                                   OFFSET(get<T>, {0x700, 8, 0, 0})
+	CMember(class UPlayspaceComponent_DeviceTracking*) DeviceTrackerComponent                                      OFFSET(get<T>, {0x708, 8, 0, 0})
+	CMember(class UPlayspaceComponent_CreativeModifyEmotes*) CreativeModifyEmotesComponent                         OFFSET(get<T>, {0x710, 8, 0, 0})
+	CMember(class UFortPlayspaceComponent_WorldTimeOfDayOverride*) WorldTimeOfDayOverrideComponent                 OFFSET(get<T>, {0x718, 8, 0, 0})
+	CMember(class UCreativeRoyalePlayspaceComponent_LoadingScreen*) LoadingScreenComponent                         OFFSET(get<T>, {0x720, 8, 0, 0})
+	CMember(class UPlayspaceComponent_ActorMemoryTracker*) ActorMemoryTracker                                      OFFSET(get<T>, {0x728, 8, 0, 0})
+	CMember(class UFortPoiSwapManager*)                FortPoiSwapManager                                          OFFSET(get<T>, {0x730, 8, 0, 0})
+	CMember(TArray<class AActor*>)                     FoundActors                                                 OFFSET(get<T>, {0x740, 16, 0, 0})
+	DMember(int32_t)                                   IslandMemoryBudget                                          OFFSET(get<int32_t>, {0x750, 4, 0, 0})
+	DMember(float)                                     MaxMemorySamplingHeight                                     OFFSET(get<float>, {0x754, 4, 0, 0})
+	DMember(float)                                     MaxMemorySamplingCellSize                                   OFFSET(get<float>, {0x758, 4, 0, 0})
 };
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LoadingScreen
@@ -56,11 +56,11 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LoadingScreen.OnPlotLoadComplete
-	// void OnPlotLoadComplete();                                                                                               // [0xb954e10] Final|Native|Private 
+	// void OnPlotLoadComplete();                                                                                               // [0xbd0ca7c] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LoadingScreen.OnPlayspaceUserAdded
-	// void OnPlayspaceUserAdded(FPlayspaceUser& AddedUser);                                                                    // [0xb954d1c] Final|Native|Private|HasOutParms 
+	// void OnPlayspaceUserAdded(FPlayspaceUser& AddedUser);                                                                    // [0xbd0c988] Final|Native|Private|HasOutParms 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LoadingScreen.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                            // [0xb9549ec] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                            // [0xbd0c74c] Final|Native|Private 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceLoadWaitComponent
@@ -100,64 +100,64 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.SwapPoi
-	// void SwapPoi(class AFortPoiVolume* PoiToSwap);                                                                           // [0x5d87858] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SwapPoi(class AFortPoiVolume* PoiToSwap);                                                                           // [0x5decebc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.SetPoiSubPlot
-	// void SetPoiSubPlot(class AFortPoiVolume* POIVolume, FString SubPlotName, FString SubPlotLinkCode);                       // [0xb955270] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetPoiSubPlot(class AFortPoiVolume* POIVolume, FString SubPlotName, FString SubPlotLinkCode);                       // [0xbd0d06c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.OnPrePlayspaceContentUnload
-	// void OnPrePlayspaceContentUnload(class AFortPoiSwapPlayspace* PoiSwapPlayspace);                                         // [0xb954e24] Final|Native|Protected 
+	// void OnPrePlayspaceContentUnload(class AFortPoiSwapPlayspace* PoiSwapPlayspace);                                         // [0xbd0ca90] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.OnPlayspaceContentLoadingStateChanged
-	// void OnPlayspaceContentLoadingStateChanged(class AFortPoiSwapPlayspace* PoiSwapPlayspace, EFortPoiSwapUserContentState& ContentLoadingState); // [0xb954bec] Final|Native|Protected|HasOutParms 
+	// void OnPlayspaceContentLoadingStateChanged(class AFortPoiSwapPlayspace* PoiSwapPlayspace, EFortPoiSwapUserContentState& ContentLoadingState); // [0xbd0c890] Final|Native|Protected|HasOutParms 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.GetPoiSubPlotLinkCode
-	// FString GetPoiSubPlotLinkCode(class AFortPoiVolume* POIVolume);                                                          // [0xb954208] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetPoiSubPlotLinkCode(class AFortPoiVolume* POIVolume);                                                          // [0xbd0bf4c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapManager.GetPlayspaceForPoi
-	// class AFortPoiSwapPlayspace* GetPlayspaceForPoi(class AFortPoiVolume* POIVolume);                                        // [0xb954138] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortPoiSwapPlayspace* GetPlayspaceForPoi(class AFortPoiVolume* POIVolume);                                        // [0xbd0bebc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.FortPoiSwapPlayspace
-/// Size: 0x00B0 (0x0006C0 - 0x000770)
+/// Size: 0x00B0 (0x0006E8 - 0x000798)
 class AFortPoiSwapPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1904;
+	static inline constexpr uint64_t __MDKClassSize = 1944;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnContentStateChangedDelegate                               OFFSET(getStruct<T>, {0x6C0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPreContentUnloadDelegate                                  OFFSET(getStruct<T>, {0x6D0, 16, 0, 0})
-	CMember(class USceneComponent*)                    SceneComponent                                              OFFSET(get<T>, {0x6E0, 8, 0, 0})
-	CMember(class UFortLevelSaveComponent*)            LevelSaveComponent                                          OFFSET(get<T>, {0x6E8, 8, 0, 0})
-	CMember(class UPlaysetLevelStreamComponent*)       PlaysetLevelStreamComponent                                 OFFSET(get<T>, {0x6F0, 8, 0, 0})
-	CMember(TWeakObjectPtr<AFortPoiVolume*>)           PoiToReplace                                                OFFSET(get<T>, {0x6F8, 8, 0, 0})
-	CMember(TWeakObjectPtr<UFortCreativeRealEstatePlotItem*>) PlotToLoad                                           OFFSET(get<T>, {0x700, 8, 0, 0})
-	CMember(TWeakObjectPtr<UFortCreativeRealEstatePlotItem*>) LoadedPlot                                           OFFSET(get<T>, {0x708, 8, 0, 0})
-	SMember(FOnlineLinkId)                             LinkCodeToLoad                                              OFFSET(getStruct<T>, {0x710, 24, 0, 0})
-	CMember(TArray<class AActor*>)                     SpawnedActors                                               OFFSET(get<T>, {0x728, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnContentStateChangedDelegate                               OFFSET(getStruct<T>, {0x6E8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPreContentUnloadDelegate                                  OFFSET(getStruct<T>, {0x6F8, 16, 0, 0})
+	CMember(class USceneComponent*)                    SceneComponent                                              OFFSET(get<T>, {0x708, 8, 0, 0})
+	CMember(class UFortLevelSaveComponent*)            LevelSaveComponent                                          OFFSET(get<T>, {0x710, 8, 0, 0})
+	CMember(class UPlaysetLevelStreamComponent*)       PlaysetLevelStreamComponent                                 OFFSET(get<T>, {0x718, 8, 0, 0})
+	CMember(TWeakObjectPtr<AFortPoiVolume*>)           PoiToReplace                                                OFFSET(get<T>, {0x720, 8, 0, 0})
+	CMember(TWeakObjectPtr<UFortCreativeRealEstatePlotItem*>) PlotToLoad                                           OFFSET(get<T>, {0x728, 8, 0, 0})
+	CMember(TWeakObjectPtr<UFortCreativeRealEstatePlotItem*>) LoadedPlot                                           OFFSET(get<T>, {0x730, 8, 0, 0})
+	SMember(FOnlineLinkId)                             LinkCodeToLoad                                              OFFSET(getStruct<T>, {0x738, 24, 0, 0})
+	CMember(TArray<class AActor*>)                     SpawnedActors                                               OFFSET(get<T>, {0x750, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapPlayspace.OnUserContentUnloaded
-	// void OnUserContentUnloaded(FAsyncTaskResult& Result);                                                                    // [0xb954f2c] Final|Native|Protected|HasOutParms 
+	// void OnUserContentUnloaded(FAsyncTaskResult& Result);                                                                    // [0xbd0cb58] Final|Native|Protected|HasOutParms 
 	// Function /Script/CreativeRoyaleRuntime.FortPoiSwapPlayspace.OnUserContentLoaded
-	// void OnUserContentLoaded();                                                                                              // [0xb954f18] Final|Native|Protected 
+	// void OnUserContentLoaded();                                                                                              // [0xbd0cb44] Final|Native|Protected 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.AthenaAIServicePlayerBots_CreativeRoyale
-/// Size: 0x0080 (0x001380 - 0x001400)
+/// Size: 0x0070 (0x001370 - 0x0013E0)
 class UAthenaAIServicePlayerBots_CreativeRoyale : public UAthenaAIServiceCreativePlayerBots
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5120;
+	static inline constexpr uint64_t __MDKClassSize = 5088;
 
 public:
-	SMember(FScalableFloat)                            PlayerBotsEnabled                                           OFFSET(getStruct<T>, {0x1380, 40, 0, 0})
-	SMember(FScalableFloat)                            BotsAllowedOnHumanTeam                                      OFFSET(getStruct<T>, {0x13A8, 40, 0, 0})
-	SMember(FScalableFloat)                            ForceAllPlayerBotsToOneTeam                                 OFFSET(getStruct<T>, {0x13D0, 40, 0, 0})
+	SMember(FScalableFloat)                            PlayerBotsEnabled                                           OFFSET(getStruct<T>, {0x1368, 40, 0, 0})
+	SMember(FScalableFloat)                            BotsAllowedOnHumanTeam                                      OFFSET(getStruct<T>, {0x1390, 40, 0, 0})
+	SMember(FScalableFloat)                            ForceAllPlayerBotsToOneTeam                                 OFFSET(getStruct<T>, {0x13B8, 40, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.AthenaAIServicePlayerBots_CreativeRoyale.StartLootClustering
-	// void StartLootClustering();                                                                                              // [0xb955a48] Final|Native|Protected 
+	// void StartLootClustering();                                                                                              // [0xbd0d784] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.AthenaAIServicePlayerBots_CreativeRoyale.OnPlayerJoiningInProgress
-	// void OnPlayerJoiningInProgress(class AFortPlayerState* FortPlayerState);                                                 // [0xb954b2c] Final|Native|Protected 
+	// void OnPlayerJoiningInProgress(class AFortPlayerState* FortPlayerState);                                                 // [0xbd0c810] Final|Native|Protected 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset
@@ -184,41 +184,41 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.SaveParentToAttachToInformation
-	// void SaveParentToAttachToInformation(FGuid ActorToAttachGuid, class AActor* ActorToAttach);                              // [0xb95511c] Final|Native|Private|HasDefaults 
+	// void SaveParentToAttachToInformation(FGuid ActorToAttachGuid, class AActor* ActorToAttach);                              // [0xbd0ce30] Final|Native|Private|HasDefaults 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.SaveDamagedActor
-	// void SaveDamagedActor(class AActor* DamagedActor);                                                                       // [0x5d87858] Final|Native|Private 
+	// void SaveDamagedActor(class AActor* DamagedActor);                                                                       // [0x5decebc] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.SaveActorToBeRespawned
-	// void SaveActorToBeRespawned(class AActor* ActorToBeRespawned, bool bRemoveDamagedActor);                                 // [0x80f2794] Final|Native|Private 
+	// void SaveActorToBeRespawned(class AActor* ActorToBeRespawned, bool bRemoveDamagedActor);                                 // [0x81029b8] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.RestoreAttachedBuildingActors
-	// void RestoreAttachedBuildingActors(FGuid SpawnableActorGuid, class AActor* Actor);                                       // [0xb954fc8] Final|Native|Private|HasDefaults 
+	// void RestoreAttachedBuildingActors(FGuid SpawnableActorGuid, class AActor* Actor);                                       // [0xbd0cbf4] Final|Native|Private|HasDefaults 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.RespawnDeadActors
-	// void RespawnDeadActors();                                                                                                // [0x3047908] Final|Native|Private 
+	// void RespawnDeadActors();                                                                                                // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.OnSpawningFromSaveFinish
-	// void OnSpawningFromSaveFinish();                                                                                         // [0x3047908] Final|Native|Private 
+	// void OnSpawningFromSaveFinish();                                                                                         // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.OnPlotLoadComplete
-	// void OnPlotLoadComplete();                                                                                               // [0x3047908] Final|Native|Private 
+	// void OnPlotLoadComplete();                                                                                               // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.HandleMinigameStateChanged
-	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0x865af48] Final|Native|Private 
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0x8660a0c] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.HandleBuildingDied
-	// void HandleBuildingDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x86588b0] Final|Native|Private|HasDefaults 
+	// void HandleBuildingDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x865e4f4] Final|Native|Private|HasDefaults 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.HandleBuildingDestroyed
-	// void HandleBuildingDestroyed(TWeakObjectPtr<ABuildingActor*> DestroyedBuilding);                                         // [0xb954944] Final|Native|Private 
+	// void HandleBuildingDestroyed(TWeakObjectPtr<ABuildingActor*> DestroyedBuilding);                                         // [0xbd0c644] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.HandleBuildingDamaged
-	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x86588b0] Final|Native|Private|HasDefaults 
+	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x865e4f4] Final|Native|Private|HasDefaults 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.GetPoiSwapManager
-	// class UFortPoiSwapManager* GetPoiSwapManager();                                                                          // [0xb95491c] Final|Native|Protected 
+	// class UFortPoiSwapManager* GetPoiSwapManager();                                                                          // [0xbd0c61c] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.GetLevelSaveRecord
-	// class ULevelSaveRecord* GetLevelSaveRecord();                                                                            // [0xadb6388] Final|Native|Private 
+	// class ULevelSaveRecord* GetLevelSaveRecord();                                                                            // [0xb2e7870] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.DestroyDamagedActors
-	// void DestroyDamagedActors();                                                                                             // [0x3047908] Final|Native|Private 
+	// void DestroyDamagedActors();                                                                                             // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.ClearFoundActors
-	// void ClearFoundActors();                                                                                                 // [0x3047908] Final|Native|Private 
+	// void ClearFoundActors();                                                                                                 // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.CachePoiSwapManager
-	// void CachePoiSwapManager();                                                                                              // [0xb9540f8] Final|Native|Protected 
+	// void CachePoiSwapManager();                                                                                              // [0xbd0be7c] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.BindActorToCallbacks
-	// void BindActorToCallbacks(class AActor* Actor);                                                                          // [0xb953dc8] Final|Native|Private 
+	// void BindActorToCallbacks(class AActor* Actor);                                                                          // [0xbd0bb8c] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_LevelReset.AddActorToTrack
-	// void AddActorToTrack(class AActor* ActorToTrack);                                                                        // [0x5d87858] Final|Native|Public  
+	// void AddActorToTrack(class AActor* ActorToTrack);                                                                        // [0x5decebc] Final|Native|Public  
 };
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_PlayerSpawning
@@ -244,38 +244,38 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_RemoveItems.OnSpawningFromSaveFinish
-	// void OnSpawningFromSaveFinish();                                                                                         // [0x3047908] Final|Native|Private 
+	// void OnSpawningFromSaveFinish();                                                                                         // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_RemoveItems.OnPlotLoadComplete
-	// void OnPlotLoadComplete();                                                                                               // [0x3047908] Final|Native|Private 
+	// void OnPlotLoadComplete();                                                                                               // [0x3097b14] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyalePlayspaceComponent_RemoveItems.HandleMinigameStateChanged
-	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0x865af48] Final|Native|Private 
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0x8660a0c] Final|Native|Private 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace
-/// Size: 0x0038 (0x0006C0 - 0x0006F8)
+/// Size: 0x0038 (0x0006E8 - 0x000720)
 class ACreativeRoyaleRootPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1784;
+	static inline constexpr uint64_t __MDKClassSize = 1824;
 
 public:
-	CMember(class AFortPlayerControllerAthena*)        EditorIslandOwnerPlayerController                           OFFSET(get<T>, {0x6D8, 8, 0, 0})
-	DMember(bool)                                      bHasPlotLoaded                                              OFFSET(get<bool>, {0x6E8, 1, 0, 0})
+	CMember(class AFortPlayerControllerAthena*)        EditorIslandOwnerPlayerController                           OFFSET(get<T>, {0x700, 8, 0, 0})
+	DMember(bool)                                      bHasPlotLoaded                                              OFFSET(get<bool>, {0x710, 1, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.TeleportPlayerToPlayerStart
-	// void TeleportPlayerToPlayerStart(FPlayspaceUser& AddedUser);                                                             // [0xb955a5c] Final|Native|Protected|HasOutParms 
+	// void TeleportPlayerToPlayerStart(FPlayspaceUser& AddedUser);                                                             // [0xbd0d798] Final|Native|Protected|HasOutParms 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.TeleportPlayersToPlayerStarts
-	// void TeleportPlayersToPlayerStarts();                                                                                    // [0x3047908] Final|Native|Protected 
+	// void TeleportPlayersToPlayerStarts();                                                                                    // [0x3097b14] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.OnRep_bHasPlotLoaded
-	// void OnRep_bHasPlotLoaded();                                                                                             // [0xb954ef4] Final|Native|Private 
+	// void OnRep_bHasPlotLoaded();                                                                                             // [0xbd0cb20] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.OnPlotLoadComplete
-	// void OnPlotLoadComplete();                                                                                               // [0xb954dfc] Final|Native|Private 
+	// void OnPlotLoadComplete();                                                                                               // [0xbd0ca68] Final|Native|Private 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.Cheat_LoadEditorIsland
-	// void Cheat_LoadEditorIsland();                                                                                           // [0x3047908] Final|Native|Protected 
+	// void Cheat_LoadEditorIsland();                                                                                           // [0x3097b14] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.CreativeRoyaleRootPlayspace.BuildDataRegistryResolverScope_Implementation
-	// bool BuildDataRegistryResolverScope_Implementation(TArray<FName>& InOutResolverScopes, int32_t& InOutPriority);          // [0xb953ff4] Native|Public|HasOutParms|Const 
+	// bool BuildDataRegistryResolverScope_Implementation(TArray<FName>& InOutResolverScopes, int32_t& InOutPriority);          // [0xbd0bd78] Native|Public|HasOutParms|Const 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.FortAthenaMutator_CreativeRoyaleSafeZoneOverride
@@ -302,13 +302,13 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.FortCheatManager_CreativeRoyale.TeleportToPlotAferLoad
-	// void TeleportToPlotAferLoad();                                                                                           // [0xb955b3c] Final|Native|Protected|Const 
+	// void TeleportToPlotAferLoad();                                                                                           // [0xbd0d878] Final|Native|Protected|Const 
 	// Function /Script/CreativeRoyaleRuntime.FortCheatManager_CreativeRoyale.CreativeRoyaleTeleportToEditZone
-	// void CreativeRoyaleTeleportToEditZone();                                                                                 // [0x3047908] Final|Exec|Native|Public|Const 
+	// void CreativeRoyaleTeleportToEditZone();                                                                                 // [0x3097b14] Final|Exec|Native|Public|Const 
 	// Function /Script/CreativeRoyaleRuntime.FortCheatManager_CreativeRoyale.CreativeRoyaleResetIslandFile
-	// void CreativeRoyaleResetIslandFile();                                                                                    // [0xb95410c] Final|Exec|Native|Public|Const 
+	// void CreativeRoyaleResetIslandFile();                                                                                    // [0xbd0be90] Final|Exec|Native|Public|Const 
 	// Function /Script/CreativeRoyaleRuntime.FortCheatManager_CreativeRoyale.CreativeRoyaleLoadEditPlot
-	// void CreativeRoyaleLoadEditPlot();                                                                                       // [0x3047908] Final|Exec|Native|Public|Const 
+	// void CreativeRoyaleLoadEditPlot();                                                                                       // [0x3097b14] Final|Exec|Native|Public|Const 
 };
 
 /// Class /Script/CreativeRoyaleRuntime.FortProjectEditComponent_CreativeRoyale
@@ -324,9 +324,9 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeRoyaleRuntime.FortProjectEditComponent_CreativeRoyale.OnPlayerLoggedIn
-	// void OnPlayerLoggedIn(class APlayerController* PlayerController);                                                        // [0x5d87858] Final|Native|Protected 
+	// void OnPlayerLoggedIn(class APlayerController* PlayerController);                                                        // [0x5decebc] Final|Native|Protected 
 	// Function /Script/CreativeRoyaleRuntime.FortProjectEditComponent_CreativeRoyale.LoadPlotFromProject
-	// void LoadPlotFromProject();                                                                                              // [0x3047908] Final|Native|Protected 
+	// void LoadPlotFromProject();                                                                                              // [0x3097b14] Final|Native|Protected 
 };
 
 /// Struct /Script/CreativeRoyaleRuntime.AttachedBuildingActorGuids

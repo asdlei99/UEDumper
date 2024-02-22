@@ -18,8 +18,8 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeDynamicUIClient.CreativeDynamicUILibrary.GetVerticalAlignment
-	// TEnumAsByte<EVerticalAlignment> GetVerticalAlignment(ECreativeDynamicUIAlignment Alignment);                          // [0xb8755d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TEnumAsByte<EVerticalAlignment> GetVerticalAlignment(ECreativeDynamicUIAlignment Alignment);                          // [0xb98c354] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CreativeDynamicUIClient.CreativeDynamicUILibrary.GetHorizontalAlignment
-	// TEnumAsByte<EHorizontalAlignment> GetHorizontalAlignment(ECreativeDynamicUIAlignment Alignment);                      // [0xb8754bc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TEnumAsByte<EHorizontalAlignment> GetHorizontalAlignment(ECreativeDynamicUIAlignment Alignment);                      // [0xb98c280] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

@@ -22,6 +22,6 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialSurfaceCoverageRuntime.FortGameStateComponent_SurfaceCoverageMap.UpdateCoverageMap
-	// bool UpdateCoverageMap(class UObject* WorldContextObject, class UTextureRenderTarget2D* SpecialSurfaceRenderTarget, FVector& InTopLeftWorldCoordinate, FVector& InBottomRightWorldCoordinate, float CoverageThreshold, float DebugDrawDuration); // [0xb68e200] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool UpdateCoverageMap(class UObject* WorldContextObject, class UTextureRenderTarget2D* SpecialSurfaceRenderTarget, FVector& InTopLeftWorldCoordinate, FVector& InBottomRightWorldCoordinate, float CoverageThreshold, float DebugDrawDuration); // [0xb79b5e4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 

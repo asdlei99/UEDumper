@@ -42,23 +42,23 @@ class UFortVariantRedirectorTile : public UFortVariantEditorWidgetBase
 public:
 	class UDynamicEntryBox*                            EntryBox_VariantOptions;                                    // 0x03C0   (0x0008)  
 	class UCommonTextBlock*                            Text_VariantName;                                           // 0x03C8   (0x0008)  
-	SDK_UNDEFINED(32,14701) /* TWeakObjectPtr<UClass*> */ __um(SprayCustomizerClass);                              // 0x03D0   (0x0020)  
+	SDK_UNDEFINED(32,14839) /* TWeakObjectPtr<UClass*> */ __um(SprayCustomizerClass);                              // 0x03D0   (0x0020)  
 	class UFortVariantSprayCustomizerConfig*           SprayCustomizerConfig;                                      // 0x03F0   (0x0008)  
 	FDataTableRowHandle                                ClearAllSlotsInputAction;                                   // 0x03F8   (0x0010)  
 	FDataTableRowHandle                                RandomizeSpraysInputAction;                                 // 0x0408   (0x0010)  
-	SDK_UNDEFINED(8,14702) /* TWeakObjectPtr<UAthenaCosmeticItemDefinition*> */ __um(ItemDefinition);              // 0x0418   (0x0008)  
+	SDK_UNDEFINED(8,14840) /* TWeakObjectPtr<UAthenaCosmeticItemDefinition*> */ __um(ItemDefinition);              // 0x0418   (0x0008)  
 	TArray<FFortVariantRedirectorTileLoadedEmoteToRandomize> LoadedEmotesToRandomize;                              // 0x0420   (0x0010)  
-	SDK_UNDEFINED(16,14703) /* FMulticastInlineDelegate */ __um(OnVariantEngagedEvent);                            // 0x0430   (0x0010)  
+	SDK_UNDEFINED(16,14841) /* FMulticastInlineDelegate */ __um(OnVariantEngagedEvent);                            // 0x0430   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x68];                                      // 0x0440   (0x0068)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.OnVariantChangedEvent__DelegateSignature
-	// void OnVariantChangedEvent__DelegateSignature(FMcpVariantChannelInfo& InChannelInfo);                                 // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnVariantChangedEvent__DelegateSignature(FMcpVariantChannelInfo& InChannelInfo);                                 // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.HandleBoundaryNavigation
-	// class UWidget* HandleBoundaryNavigation(EUINavigation InNavigation);                                                  // [0xb4a14d8] Final|Native|Private 
+	// class UWidget* HandleBoundaryNavigation(EUINavigation InNavigation);                                                  // [0xb5b2018] Final|Native|Private 
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.GetButtonToFocus
-	// class UWidget* GetButtonToFocus();                                                                                    // [0xb4a14b0] Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetButtonToFocus();                                                                                    // [0xb5b1ff0] Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MeshCosmeticsUI.FortVariantSprayCustomizerConfig
@@ -66,7 +66,7 @@ public:
 class UFortVariantSprayCustomizerConfig : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,14704) /* TMap<FGameplayTag, FFortVariantSprayCustomizerCosmeticOptions> */ __um(SprayCustomizerOptions); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14842) /* TMap<FGameplayTag, FFortVariantSprayCustomizerCosmeticOptions> */ __um(SprayCustomizerOptions); // 0x0030   (0x0050)  
 };
 
 /// Class /Script/MeshCosmeticsUI.FortVariantRedirectorTileButton
@@ -115,9 +115,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizer.BP_SetVariantEditorMode
-	// void BP_SetVariantEditorMode(bool bIsLockerMode);                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_SetVariantEditorMode(bool bIsLockerMode);                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizer.BP_SetChannelSlotIcon
-	// void BP_SetChannelSlotIcon(TWeakObjectPtr<UObject*>& ChannelSlotIcon);                                                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_SetChannelSlotIcon(TWeakObjectPtr<UObject*>& ChannelSlotIcon);                                                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting
@@ -132,11 +132,11 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.HandleSliderValueChanged
-	// void HandleSliderValueChanged(float NormalizedValue);                                                                 // [0xb4a15a8] Final|Native|Private 
+	// void HandleSliderValueChanged(float NormalizedValue);                                                                 // [0xb5b20a8] Final|Native|Private 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.BP_OnSetConstraints
-	// void BP_OnSetConstraints(FFloatRange& Constraints);                                                                   // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnSetConstraints(FFloatRange& Constraints);                                                                   // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.BP_OnChangeValue
-	// void BP_OnChangeValue(float Value, float NormalizedValue);                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnChangeValue(float Value, float NormalizedValue);                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/MeshCosmeticsUI.FortVariantSprayCustomizerChannelOptions
@@ -150,7 +150,7 @@ struct FFortVariantSprayCustomizerChannelOptions
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FFortVariantSprayCustomizerCosmeticOptions
 { 
-	SDK_UNDEFINED(16,14705) /* TArray<TWeakObjectPtr<UFortItemDefinition*>> */ __um(ItemShopPreviewStyles);        // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,14706) /* TMap<FGameplayTag, FFortVariantSprayCustomizerChannelOptions> */ __um(ChannelOptions); // 0x0010   (0x0050)  
+	SDK_UNDEFINED(16,14843) /* TArray<TWeakObjectPtr<UFortItemDefinition*>> */ __um(ItemShopPreviewStyles);        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(80,14844) /* TMap<FGameplayTag, FFortVariantSprayCustomizerChannelOptions> */ __um(ChannelOptions); // 0x0010   (0x0050)  
 };
 

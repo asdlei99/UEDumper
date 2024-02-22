@@ -45,39 +45,39 @@ public:
 };
 
 /// Class /Script/VKEditGameplay.VKEditPlayspace
-/// Size: 0x0128 (0x0006C0 - 0x0007E8)
+/// Size: 0x0128 (0x0006E8 - 0x000810)
 class AVKEditPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2024;
+	static inline constexpr uint64_t __MDKClassSize = 2064;
 
 public:
-	CMember(TWeakObjectPtr<UClass*>)                   EditorOnlyMinigameSettingsMachineClassToSpawn               OFFSET(get<T>, {0x710, 32, 0, 0})
-	CMember(TWeakObjectPtr<UClass*>)                   EditorOnlyWorldManagerClassToSpawn                          OFFSET(get<T>, {0x730, 32, 0, 0})
-	CMember(class UFortLevelStreamComponent*)          LevelStreamComponent                                        OFFSET(get<T>, {0x750, 8, 0, 0})
-	CMember(class UFortProjectEditComponent*)          ProjectEditComponent                                        OFFSET(get<T>, {0x758, 8, 0, 0})
-	CMember(class UPlayspaceComponent_PlayStopPauseManager*) PlayStopPauseManager                                  OFFSET(get<T>, {0x760, 8, 0, 0})
-	CMember(class UPlayspaceComponent_EditConnectionManager*) EditConnectionManager                                OFFSET(get<T>, {0x768, 8, 0, 0})
-	CMember(class UPlayspaceComponent_LiveEdit*)       LiveEditComponent                                           OFFSET(get<T>, {0x770, 8, 0, 0})
-	CMember(class UPlayspaceComponent_VKEditCreativeToolsPermission*) CreativeToolsPermission                      OFFSET(get<T>, {0x778, 8, 0, 0})
-	CMember(class UPlayspaceComponent_CreativeLoadingStateProxy*) CreativeLoadingStateProxy                        OFFSET(get<T>, {0x780, 8, 0, 0})
-	CMember(class UPlayspaceComponent_SpatialGameplay*) SpatialGameplayComponent                                   OFFSET(get<T>, {0x788, 8, 0, 0})
-	CMember(class UFortVolumeObjectTrackingComponent*) ObjectTrackingComponent                                     OFFSET(get<T>, {0x790, 8, 0, 0})
-	CMember(class UPlayspaceComponent_DeviceTracking*) DeviceTrackerComponent                                      OFFSET(get<T>, {0x798, 8, 0, 0})
-	CMember(class UPlayspaceComponent_CreativeInventory*) CreativeInventoryComponent                               OFFSET(get<T>, {0x7A0, 8, 0, 0})
-	CMember(class UPlayspaceComponent_ActorMemoryTracker*) ActorMemoryTrackerComponent                             OFFSET(get<T>, {0x7A8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_GlobalMemoryTracker*) GlobalMemoryTrackerComponent                           OFFSET(get<T>, {0x7B0, 8, 0, 0})
-	CMember(class UFortCreativeDynamicXpComponent*)    FortCreativeDynamicXp                                       OFFSET(get<T>, {0x7B8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_CreativeModifyEmotes*) CreativeModifyEmotesComponent                         OFFSET(get<T>, {0x7C0, 8, 0, 0})
-	CMember(class UFortPlayspaceComponent_WorldTimeOfDayOverride*) WorldTimeOfDayOverrideComponent                 OFFSET(get<T>, {0x7C8, 8, 0, 0})
-	CMember(class UFortPlayspaceComponent_NaniteSettingsOverride*) NaniteSettingsOverrideComponent                 OFFSET(get<T>, {0x7D0, 8, 0, 0})
-	CMember(class UPlayspaceComponent_PlaysetRootSpawner*) PlaysetRootSpawnerComponent                             OFFSET(get<T>, {0x7D8, 8, 0, 0})
-	CMember(class UPlayspaceComponent_PlayerPawnOverrides*) PlayerPawnOverridesComponent                           OFFSET(get<T>, {0x7E0, 8, 0, 0})
+	CMember(TWeakObjectPtr<UClass*>)                   EditorOnlyMinigameSettingsMachineClassToSpawn               OFFSET(get<T>, {0x738, 32, 0, 0})
+	CMember(TWeakObjectPtr<UClass*>)                   EditorOnlyWorldManagerClassToSpawn                          OFFSET(get<T>, {0x758, 32, 0, 0})
+	CMember(class UFortLevelStreamComponent*)          LevelStreamComponent                                        OFFSET(get<T>, {0x778, 8, 0, 0})
+	CMember(class UFortProjectEditComponent*)          ProjectEditComponent                                        OFFSET(get<T>, {0x780, 8, 0, 0})
+	CMember(class UPlayspaceComponent_PlayStopPauseManager*) PlayStopPauseManager                                  OFFSET(get<T>, {0x788, 8, 0, 0})
+	CMember(class UPlayspaceComponent_EditConnectionManager*) EditConnectionManager                                OFFSET(get<T>, {0x790, 8, 0, 0})
+	CMember(class UPlayspaceComponent_LiveEdit*)       LiveEditComponent                                           OFFSET(get<T>, {0x798, 8, 0, 0})
+	CMember(class UPlayspaceComponent_VKEditCreativeToolsPermission*) CreativeToolsPermission                      OFFSET(get<T>, {0x7A0, 8, 0, 0})
+	CMember(class UPlayspaceComponent_CreativeLoadingStateProxy*) CreativeLoadingStateProxy                        OFFSET(get<T>, {0x7A8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_SpatialGameplay*) SpatialGameplayComponent                                   OFFSET(get<T>, {0x7B0, 8, 0, 0})
+	CMember(class UFortVolumeObjectTrackingComponent*) ObjectTrackingComponent                                     OFFSET(get<T>, {0x7B8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_DeviceTracking*) DeviceTrackerComponent                                      OFFSET(get<T>, {0x7C0, 8, 0, 0})
+	CMember(class UPlayspaceComponent_CreativeInventory*) CreativeInventoryComponent                               OFFSET(get<T>, {0x7C8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_ActorMemoryTracker*) ActorMemoryTrackerComponent                             OFFSET(get<T>, {0x7D0, 8, 0, 0})
+	CMember(class UPlayspaceComponent_GlobalMemoryTracker*) GlobalMemoryTrackerComponent                           OFFSET(get<T>, {0x7D8, 8, 0, 0})
+	CMember(class UFortCreativeDynamicXpComponent*)    FortCreativeDynamicXp                                       OFFSET(get<T>, {0x7E0, 8, 0, 0})
+	CMember(class UPlayspaceComponent_CreativeModifyEmotes*) CreativeModifyEmotesComponent                         OFFSET(get<T>, {0x7E8, 8, 0, 0})
+	CMember(class UFortPlayspaceComponent_WorldTimeOfDayOverride*) WorldTimeOfDayOverrideComponent                 OFFSET(get<T>, {0x7F0, 8, 0, 0})
+	CMember(class UFortPlayspaceComponent_NaniteSettingsOverride*) NaniteSettingsOverrideComponent                 OFFSET(get<T>, {0x7F8, 8, 0, 0})
+	CMember(class UPlayspaceComponent_PlaysetRootSpawner*) PlaysetRootSpawnerComponent                             OFFSET(get<T>, {0x800, 8, 0, 0})
+	CMember(class UPlayspaceComponent_PlayerPawnOverrides*) PlayerPawnOverridesComponent                           OFFSET(get<T>, {0x808, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/VKEditGameplay.VKEditPlayspace.OnClientActivatedContent
-	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                            // [0xb9447e4] Final|Native|Private|HasOutParms|Const 
+	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                            // [0xbcfc5c0] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager
@@ -95,8 +95,8 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_VkEditStatus
-	// void OnRep_VkEditStatus();                                                                                               // [0xb9448f8] Final|Native|Protected|Const 
+	// void OnRep_VkEditStatus();                                                                                               // [0xbcfc6d4] Final|Native|Protected|Const 
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_EditConnections
-	// void OnRep_EditConnections();                                                                                            // [0xb9448b4] Final|Native|Protected|Const 
+	// void OnRep_EditConnections();                                                                                            // [0xbcfc690] Final|Native|Protected|Const 
 };
 

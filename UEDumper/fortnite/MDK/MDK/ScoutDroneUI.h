@@ -53,9 +53,9 @@ public:
 
 	/// Functions
 	// Function /Script/ScoutDroneUI.DronePickUpIndicatorComponent.OnDroneDestroyed
-	// void OnDroneDestroyed(class AActor* DestroyedActor);                                                                     // [0xb726e08] Final|Native|Protected 
+	// void OnDroneDestroyed(class AActor* DestroyedActor);                                                                     // [0xb83e120] Final|Native|Protected 
 	// Function /Script/ScoutDroneUI.DronePickUpIndicatorComponent.Init
-	// void Init(class AFortScoutDrone* Drone);                                                                                 // [0xb726bf0] Final|Native|Protected|BlueprintCallable 
+	// void Init(class AFortScoutDrone* Drone);                                                                                 // [0xb83df48] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/ScoutDroneUI.ScoutDroneHUD
@@ -89,43 +89,43 @@ public:
 
 	/// Functions
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnTargetingStatusChanged
-	// void OnTargetingStatusChanged(FScoutDroneStatusData& StatusData);                                                        // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTargetingStatusChanged(FScoutDroneStatusData& StatusData);                                                        // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnReticleChangeAbilityActivated
-	// void OnReticleChangeAbilityActivated(FGameplayTag UpdatedTag);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnReticleChangeAbilityActivated(FGameplayTag UpdatedTag);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnOwningPlayerDamaged
-	// void OnOwningPlayerDamaged();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnOwningPlayerDamaged();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneSpeedBoostAbilityUsed
-	// void OnDroneSpeedBoostAbilityUsed();                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneSpeedBoostAbilityUsed();                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneSpeedBoostAbilityEnd
-	// void OnDroneSpeedBoostAbilityEnd();                                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneSpeedBoostAbilityEnd();                                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneSignalDataUpdated
-	// void OnDroneSignalDataUpdated(float DistanceFromPlayer, float SignalPercentage);                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneSignalDataUpdated(float DistanceFromPlayer, float SignalPercentage);                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDronePickUpTargetsEmpty
-	// void OnDronePickUpTargetsEmpty();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDronePickUpTargetsEmpty();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDronePickUpTargetsAvailable
-	// void OnDronePickUpTargetsAvailable();                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDronePickUpTargetsAvailable();                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDronePickUpAbilityUsed
-	// void OnDronePickUpAbilityUsed();                                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDronePickUpAbilityUsed();                                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDronePickUpAbilityEnd
-	// void OnDronePickUpAbilityEnd();                                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDronePickUpAbilityEnd();                                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneMarkAbilityUsed
-	// void OnDroneMarkAbilityUsed();                                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneMarkAbilityUsed();                                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneMarkAbilityEnd
-	// void OnDroneMarkAbilityEnd();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneMarkAbilityEnd();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneInteractAbilityUsed
-	// void OnDroneInteractAbilityUsed();                                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneInteractAbilityUsed();                                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneInteractAbilityEnd
-	// void OnDroneInteractAbilityEnd();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneInteractAbilityEnd();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneHealthUpdated
-	// void OnDroneHealthUpdated(float HealthPercentage, float CurrentHealth);                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneHealthUpdated(float HealthPercentage, float CurrentHealth);                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneEnergyChanged
-	// void OnDroneEnergyChanged(float EnergyPercentage);                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneEnergyChanged(float EnergyPercentage);                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.OnDroneDismissAbilityUsed
-	// void OnDroneDismissAbilityUsed();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnDroneDismissAbilityUsed();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.GetTargetConfirmationTime
-	// float GetTargetConfirmationTime();                                                                                       // [0xb726bc8] Final|Native|Private|BlueprintCallable 
+	// float GetTargetConfirmationTime();                                                                                       // [0xb83df20] Final|Native|Private|BlueprintCallable 
 	// Function /Script/ScoutDroneUI.ScoutDroneHUD.GetControlledDrone
-	// class AFortScoutDrone* GetControlledDrone();                                                                             // [0xb726ba4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AFortScoutDrone* GetControlledDrone();                                                                             // [0xb83defc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ScoutDroneUI.ScoutDroneTetherIndicator
@@ -140,15 +140,15 @@ public:
 
 	/// Functions
 	// Function /Script/ScoutDroneUI.ScoutDroneTetherIndicator.GetControlledDrone
-	// class AFortScoutDrone* GetControlledDrone();                                                                             // [0xb726ba4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AFortScoutDrone* GetControlledDrone();                                                                             // [0xb83defc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ScoutDroneUI.ScoutDroneTetherIndicator.BP_WhileInWarningRange
-	// void BP_WhileInWarningRange(float SignalIntensityPercentage);                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_WhileInWarningRange(float SignalIntensityPercentage);                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneTetherIndicator.BP_OnExitWarningRange
-	// void BP_OnExitWarningRange();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnExitWarningRange();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneTetherIndicator.BP_OnEnterWarningRange
-	// void BP_OnEnterWarningRange();                                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnEnterWarningRange();                                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneTetherIndicator.BP_OnEnterSignalLossRange
-	// void BP_OnEnterSignalLossRange();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnEnterSignalLossRange();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/ScoutDroneUI.ScoutDroneUIDirector
@@ -164,9 +164,9 @@ public:
 
 	/// Functions
 	// Function /Script/ScoutDroneUI.ScoutDroneUIDirector.BP_OnScoutDroneDismissed
-	// void BP_OnScoutDroneDismissed();                                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnScoutDroneDismissed();                                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ScoutDroneUI.ScoutDroneUIDirector.BP_OnScoutDroneDeployed
-	// void BP_OnScoutDroneDeployed();                                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnScoutDroneDeployed();                                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/ScoutDroneUI.ScoutDroneWidgetIdentifier

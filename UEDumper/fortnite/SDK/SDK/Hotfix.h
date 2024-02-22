@@ -57,27 +57,27 @@ class UOnlineHotfixManager : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x228];                                     // 0x0000   (0x0228)  MISSED
-	SDK_UNDEFINED(16,2420) /* FString */               __um(OSSName);                                              // 0x0228   (0x0010)  
-	SDK_UNDEFINED(16,2421) /* FString */               __um(HotfixManagerClassName);                               // 0x0238   (0x0010)  
-	SDK_UNDEFINED(16,2422) /* FString */               __um(DebugPrefix);                                          // 0x0248   (0x0010)  
+	SDK_UNDEFINED(16,2424) /* FString */               __um(OSSName);                                              // 0x0228   (0x0010)  
+	SDK_UNDEFINED(16,2425) /* FString */               __um(HotfixManagerClassName);                               // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,2426) /* FString */               __um(DebugPrefix);                                          // 0x0248   (0x0010)  
 	TArray<class UObject*>                             AssetsHotfixedFromIniFiles;                                 // 0x0258   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/Hotfix.OnlineHotfixManager.StartHotfixProcess
-	// void StartHotfixProcess();                                                                                            // [0x6200eec] Native|Public|BlueprintCallable 
+	// void StartHotfixProcess();                                                                                            // [0x625ffcc] Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Hotfix.UpdateContextDefinition
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FUpdateContextDefinition
 { 
-	SDK_UNDEFINED(16,2423) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2427) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	bool                                               bEnabled;                                                   // 0x0010   (0x0001)  
 	bool                                               bCheckAvailabilityOnly;                                     // 0x0011   (0x0001)  
 	bool                                               bPatchCheckEnabled;                                         // 0x0012   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x5];                                       // 0x0013   (0x0005)  MISSED
-	SDK_UNDEFINED(80,2424) /* TSet<FString> */         __um(AdditionalTags);                                       // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,2428) /* TSet<FString> */         __um(AdditionalTags);                                       // 0x0018   (0x0050)  
 };
 
 /// Class /Script/Hotfix.UpdateManager

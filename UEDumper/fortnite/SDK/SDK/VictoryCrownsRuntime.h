@@ -32,11 +32,11 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortGameplayCueNotify_CrownWear.RemoveCrownWear
-	// void RemoveCrownWear();                                                                                               // [0x3277208] Final|Native|Protected|BlueprintCallable 
+	// void RemoveCrownWear();                                                                                               // [0x362bea8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VictoryCrownsRuntime.FortGameplayCueNotify_CrownWear.OnIntroFXTimelineTick
-	// void OnIntroFXTimelineTick(FVector CurveValue);                                                                       // [0x2782698] Final|Native|Protected|HasDefaults 
+	// void OnIntroFXTimelineTick(FVector CurveValue);                                                                       // [0x1e2df30] Final|Native|Protected|HasDefaults 
 	// Function /Script/VictoryCrownsRuntime.FortGameplayCueNotify_CrownWear.ApplyCrownWear
-	// void ApplyCrownWear(TArray<UFXSystemComponent*>& ParticleComponents);                                                 // [0x297e4b4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void ApplyCrownWear(TArray<UFXSystemComponent*>& ParticleComponents);                                                 // [0x2b6c528] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortVictoryCrownViewModel
@@ -48,14 +48,14 @@ public:
 	bool                                               bHasWonCrownInMatch;                                        // 0x006C   (0x0001)  
 	bool                                               bHasWonRoyalRoyale;                                         // 0x006D   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x006E   (0x0002)  MISSED
-	SDK_UNDEFINED(8,12193) /* TWeakObjectPtr<UFortControllerComponent_VictoryCrowns*> */ __um(BoundVictoryCrownsComponent); // 0x0070   (0x0008)  
+	SDK_UNDEFINED(8,12280) /* TWeakObjectPtr<UFortControllerComponent_VictoryCrowns*> */ __um(BoundVictoryCrownsComponent); // 0x0070   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortVictoryCrownViewModel.HandleOnHasWonRoyalRoyale
-	// void HandleOnHasWonRoyalRoyale();                                                                                     // [0xb6c4168] Final|Native|Private 
+	// void HandleOnHasWonRoyalRoyale();                                                                                     // [0xb7d1580] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortVictoryCrownViewModel.HandleOnHasWonCrownInMatch
-	// void HandleOnHasWonCrownInMatch();                                                                                    // [0xb6c4154] Final|Native|Private 
+	// void HandleOnHasWonCrownInMatch();                                                                                    // [0xb7d156c] Final|Native|Private 
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns
@@ -63,16 +63,16 @@ public:
 class UFortControllerComponent_VictoryCrowns : public UFortControllerComponent
 { 
 public:
-	SDK_UNDEFINED(16,12194) /* FMulticastInlineDelegate */ __um(OnVictoryCrownStatusChanged);                      // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,12195) /* FMulticastInlineDelegate */ __um(OnHasWonCrownInMatch);                             // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,12196) /* FMulticastInlineDelegate */ __um(OnHasWonRoyalRoyale);                              // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,12281) /* FMulticastInlineDelegate */ __um(OnVictoryCrownStatusChanged);                      // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12282) /* FMulticastInlineDelegate */ __um(OnHasWonCrownInMatch);                             // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12283) /* FMulticastInlineDelegate */ __um(OnHasWonRoyalRoyale);                              // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x30];                                      // 0x00D8   (0x0030)  MISSED
-	SDK_UNDEFINED(32,12197) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(CrownInventoryItemClass);         // 0x0108   (0x0020)  
+	SDK_UNDEFINED(32,12284) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(CrownInventoryItemClass);         // 0x0108   (0x0020)  
 	bool                                               bWonCrownInMatch;                                           // 0x0128   (0x0001)  
 	bool                                               bWonRoyalRoyale;                                            // 0x0129   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x012A   (0x0006)  MISSED
 	class UFortVictoryCrownAccountItemDefinition*      VictoryCrownAccountItemDefinition;                          // 0x0130   (0x0008)  
-	SDK_UNDEFINED(32,12198) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(RoyalRoyaleEmoteItemDefinition); // 0x0138   (0x0020)  
+	SDK_UNDEFINED(32,12285) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(RoyalRoyaleEmoteItemDefinition); // 0x0138   (0x0020)  
 	class UDataTable*                                  VictoryCrownPlaylistData;                                   // 0x0158   (0x0008)  
 	FGameplayTagContainer                              SourceTagsForRoyalRoyale;                                   // 0x0160   (0x0020)  
 	FVictoryCrownAccountData                           VictoryCrownAccountData;                                    // 0x0180   (0x0010)  
@@ -84,47 +84,47 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.OnRep_WonRoyalRoyale
-	// void OnRep_WonRoyalRoyale();                                                                                          // [0xb6c44b4] Final|Native|Private 
+	// void OnRep_WonRoyalRoyale();                                                                                          // [0xb7d1814] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.OnRep_WonCrownInMatch
-	// void OnRep_WonCrownInMatch();                                                                                         // [0xb6c4480] Final|Native|Private 
+	// void OnRep_WonCrownInMatch();                                                                                         // [0xb7d17e0] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.OnRep_VictoryCrownAccountData
-	// void OnRep_VictoryCrownAccountData();                                                                                 // [0xb6c4464] Final|Native|Private 
+	// void OnRep_VictoryCrownAccountData();                                                                                 // [0xb7d17c4] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.OnEnterAircraft
-	// void OnEnterAircraft(class AController* EnteringController);                                                          // [0xb6c43a8] Final|Native|Protected 
+	// void OnEnterAircraft(class AController* EnteringController);                                                          // [0xb7d1748] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.OnAthenaProfileInitialized
-	// void OnAthenaProfileInitialized();                                                                                    // [0x3047908] Final|Native|Private 
+	// void OnAthenaProfileInitialized();                                                                                    // [0x3097b14] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.IsCrownInPlayerInventory
-	// bool IsCrownInPlayerInventory();                                                                                      // [0xb6c4384] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCrownInPlayerInventory();                                                                                      // [0xb7d1724] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.HasWonRoyalRoyale
-	// bool HasWonRoyalRoyale();                                                                                             // [0xb6c436c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasWonRoyalRoyale();                                                                                             // [0xb7d170c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.HasWonCrownInMatch
-	// bool HasWonCrownInMatch();                                                                                            // [0x7b82918] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasWonCrownInMatch();                                                                                            // [0x7b989cc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.HandlePawnChanged
-	// void HandlePawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                                   // [0xb6c417c] Final|Native|Protected 
+	// void HandlePawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                                   // [0xb7d1594] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.HandleExitAircraft
-	// void HandleExitAircraft(class AController* ExitingController);                                                        // [0xb6c4084] Final|Native|Protected 
+	// void HandleExitAircraft(class AController* ExitingController);                                                        // [0xb7d14e0] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.HandleEnterAircraft
-	// void HandleEnterAircraft();                                                                                           // [0xb6c4070] Final|Native|Protected 
+	// void HandleEnterAircraft();                                                                                           // [0xb7d14cc] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.GetVictoryCrownsBestowedCount
-	// int32_t GetVictoryCrownsBestowedCount();                                                                              // [0xb6c3dec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVictoryCrownsBestowedCount();                                                                              // [0xb7d12cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.GetRoyalRoyaleAchievedCount
-	// int32_t GetRoyalRoyaleAchievedCount();                                                                                // [0x5fcfecc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRoyalRoyaleAchievedCount();                                                                                // [0x603c590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.GetCrownInPlayerInventory
-	// class UFortWorldItem* GetCrownInPlayerInventory();                                                                    // [0xb6c3dc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortWorldItem* GetCrownInPlayerInventory();                                                                    // [0xb7d12a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.DebugForceSetRoyalRoyaleAchievedCount
-	// void DebugForceSetRoyalRoyaleAchievedCount(int32_t NewRoyalRoyaleCount);                                              // [0x640d3e0] Final|Exec|Native|Public 
+	// void DebugForceSetRoyalRoyaleAchievedCount(int32_t NewRoyalRoyaleCount);                                              // [0x6470f8c] Final|Exec|Native|Public 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.CacheAccountItemData
-	// void CacheAccountItemData();                                                                                          // [0x3047908] Final|Native|Private 
+	// void CacheAccountItemData();                                                                                          // [0x3097b14] Final|Native|Private 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.AuthoritySquadHasSeenCrownItem
-	// bool AuthoritySquadHasSeenCrownItem(class UFortItem* CrownItem, bool bDropped);                                       // [0xb6c3c74] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
+	// bool AuthoritySquadHasSeenCrownItem(class UFortItem* CrownItem, bool bDropped);                                       // [0xb7d11e4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.AuthorityHasSquadHeldCrownItem
-	// bool AuthorityHasSquadHeldCrownItem(class UFortItem* CrownItem);                                                      // [0xb6c3ba0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
+	// bool AuthorityHasSquadHeldCrownItem(class UFortItem* CrownItem);                                                      // [0xb7d1154] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.AuthorityHasSquadDroppedCrownItem
-	// bool AuthorityHasSquadDroppedCrownItem(class UFortItem* CrownItem);                                                   // [0xb6c3acc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
+	// bool AuthorityHasSquadDroppedCrownItem(class UFortItem* CrownItem);                                                   // [0xb7d10c4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.AuthorityHasHeldCrownItem
-	// bool AuthorityHasHeldCrownItem(class UFortItem* CrownItem);                                                           // [0xb6c39fc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
+	// bool AuthorityHasHeldCrownItem(class UFortItem* CrownItem);                                                           // [0xb7d1034] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
 	// Function /Script/VictoryCrownsRuntime.FortControllerComponent_VictoryCrowns.AuthorityHasDroppedCrownItem
-	// bool AuthorityHasDroppedCrownItem(class UFortItem* CrownItem);                                                        // [0xb6c392c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
+	// bool AuthorityHasDroppedCrownItem(class UFortItem* CrownItem);                                                        // [0xb7d0fa4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortCosmeticStatObject_HasCrown
@@ -141,7 +141,7 @@ class UFortCosmeticStatObject_TotalRoyalRoyales : public UFortCosmeticStatObject
 { 
 public:
 	class UFortVictoryCrownAccountItemDefinition*      VictoryCrownAccountItemDefinition;                          // 0x0088   (0x0008)  
-	SDK_UNDEFINED(16,12199) /* TArray<TWeakObjectPtr<UFortControllerComponent_VictoryCrowns*>> */ __um(CachedCrownComponents); // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,12286) /* TArray<TWeakObjectPtr<UFortControllerComponent_VictoryCrowns*>> */ __um(CachedCrownComponents); // 0x0090   (0x0010)  
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortCosmeticStatObject_TotalVictoryCrowns
@@ -158,20 +158,20 @@ class UFortGameStateComponent_VictoryCrowns : public UFortGameStateComponent
 { 
 public:
 	TArray<class AFortPlayerStateAthena*>              CrownBearerPlayerStates;                                    // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(24,12200) /* FText */                __um(KillFeedFormat_Dropped);                               // 0x00B0   (0x0018)  
-	SDK_UNDEFINED(24,12201) /* FText */                __um(KillFeedFormat_PickedUp);                              // 0x00C8   (0x0018)  
+	SDK_UNDEFINED(24,12287) /* FText */                __um(KillFeedFormat_Dropped);                               // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(24,12288) /* FText */                __um(KillFeedFormat_PickedUp);                              // 0x00C8   (0x0018)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00E0   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortGameStateComponent_VictoryCrowns.OnRep_CrownBearerPlayerStates
-	// void OnRep_CrownBearerPlayerStates();                                                                                 // [0x2f91828] Final|Native|Protected 
+	// void OnRep_CrownBearerPlayerStates();                                                                                 // [0x33623ec] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortGameStateComponent_VictoryCrowns.IsCrownBearer
-	// bool IsCrownBearer(class AFortPlayerStateAthena* FortPSA);                                                            // [0x30ce99c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCrownBearer(class AFortPlayerStateAthena* FortPSA);                                                            // [0x30f0a58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VictoryCrownsRuntime.FortGameStateComponent_VictoryCrowns.HandleCrownStatusChanged
-	// void HandleCrownStatusChanged(class AFortPlayerControllerAthena* FortPlayerControllerAthena, class UFortItem* CrownItem); // [0xb6c3e04] Final|Native|Protected 
+	// void HandleCrownStatusChanged(class AFortPlayerControllerAthena* FortPlayerControllerAthena, class UFortItem* CrownItem); // [0xb7d12e4] Final|Native|Protected 
 	// Function /Script/VictoryCrownsRuntime.FortGameStateComponent_VictoryCrowns.ClientKillFeedMessage
-	// void ClientKillFeedMessage(class AFortPlayerStateAthena* FortPSA, bool bAdded);                                       // [0x15e26cc] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void ClientKillFeedMessage(class AFortPlayerStateAthena* FortPSA, bool bAdded);                                       // [0x3042a74] Net|NetReliableNative|Event|NetMulticast|Public 
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortPawnComponent_VictoryCrownsFrontEnd
@@ -188,7 +188,7 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortPawnComponent_VictoryCrownsFrontEnd.PlaylistChanged
-	// void PlaylistChanged();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void PlaylistChanged();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/VictoryCrownsRuntime.FortPlayerStateComponent_VictoryCrowns
@@ -202,7 +202,7 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsRuntime.FortPlayerStateComponent_VictoryCrowns.GetWonRoyalRoyale
-	// bool GetWonRoyalRoyale();                                                                                             // [0x80d8748] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetWonRoyalRoyale();                                                                                             // [0x80e8094] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/VictoryCrownsRuntime.VictoryCrownPlaylistData

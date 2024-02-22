@@ -59,33 +59,33 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.StartMobEncounter
-	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                     // [0xb3fdc3c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                     // [0xb50f868] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.ResumeMobEncounter
-	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb3fdb74] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb50f7a0] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.PauseMobEncounter
-	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                     // [0xb3fdaac] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                     // [0xb50f6d8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                     // [0xb3fd8a8] Final|Native|Private 
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                     // [0xb50f54c] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                        // [0xb3fd5a8] Final|Native|Private 
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                        // [0xb50f28c] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb3fd14c] Final|Native|Private|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb50ed80] Final|Native|Private|HasDefaults 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterStarted__DelegateSignature
-	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                                  // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                                  // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterResumed__DelegateSignature
-	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                                  // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                                  // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterPaused__DelegateSignature
-	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                   // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                   // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterEnded__DelegateSignature
-	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                    // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                    // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorSpawned__DelegateSignature
-	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);                 // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);                 // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorDead__DelegateSignature
-	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndMobEncounter
-	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                       // [0xb3fd084] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                       // [0xb50ecb8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndAndCleanupAllMobEncounters
-	// void EndAndCleanupAllMobEncounters();                                                                                    // [0xb3fd070] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void EndAndCleanupAllMobEncounters();                                                                                    // [0xb50eca4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterWorldConditionSchema
@@ -115,11 +115,11 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                     // [0xb403234] Final|Native|Public  
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                     // [0xb5127e4] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                        // [0xb403070] Final|Native|Public  
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                        // [0xb512660] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb402b78] Final|Native|Public|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb5120b4] Final|Native|Public|HasDefaults 
 };
 
 /// Class /Script/EncountersRuntime.SpawnActorTaskHelper
@@ -155,7 +155,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterBlueprintLibrary.GetRelevantMobManagerComponentForActor
-	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                        // [0xb402978] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                        // [0xb528bf4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EncountersRuntime.EncounterFactionData
@@ -180,68 +180,55 @@ class AEncounterGameplayVolume : public AGameplayVolume
 
 public:
 	CMember(class UEncounterStateTreeComponent*)       EncounterStateTreeComponent                                 OFFSET(get<T>, {0x348, 8, 0, 0})
-	CMember(TArray<TScriptInterface<Class>>)           EncounterPointProviders                                     OFFSET(get<T>, {0x358, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<AEncounterMobAnchor*>>) EncounterAnchors                                         OFFSET(get<T>, {0x368, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<ABuildingActor*>>)   BuildingActors                                              OFFSET(get<T>, {0x378, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<AFortPlayerController*>>) Players                                                OFFSET(get<T>, {0x388, 16, 0, 0})
+	CMember(TArray<TScriptInterface<Class>>)           TrackedEncounterPointProviders                              OFFSET(get<T>, {0x358, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<AEncounterMobAnchor*>>) TrackedEncounterAnchors                                  OFFSET(get<T>, {0x368, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<ABuildingActor*>>)   TrackedBuildingActors                                       OFFSET(get<T>, {0x378, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<AFortPlayerController*>>) OverlappingPlayers                                     OFFSET(get<T>, {0x388, 16, 0, 0})
 	CMember(TMap<FString, FString>)                    AllVisitedPlayersMap                                        OFFSET(get<T>, {0x398, 80, 0, 0})
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.OnCleanup
-	// void OnCleanup();                                                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnCleanup();                                                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.IsDoneCleaningUp
-	// bool IsDoneCleaningUp();                                                                                                 // [0xaa12870] Native|Event|Public|BlueprintEvent|Const 
-};
-
-/// Class /Script/EncountersRuntime.EncounterItem
-/// Size: 0x0030 (0x000088 - 0x0000B8)
-class UEncounterItem : public UFortItem
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 184;
-
-public:
-	CMember(class UEncounterItemDefinition*)           EncounterItemDefinition                                     OFFSET(get<T>, {0x88, 8, 0, 0})
-	CMember(TWeakObjectPtr<ALivingWorldEncounterPrefab*>) EncounterPrefab                                          OFFSET(get<T>, {0x90, 8, 0, 0})
-	CMember(TWeakObjectPtr<UEncounterManagerComponent*>) EncounterManager                                          OFFSET(get<T>, {0x98, 8, 0, 0})
+	// bool IsDoneCleaningUp();                                                                                                 // [0xad11d18] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/EncountersRuntime.EncounterItemDefinition
-/// Size: 0x0218 (0x000338 - 0x000550)
+/// Size: 0x0218 (0x000328 - 0x000540)
 class UEncounterItemDefinition : public UFortItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1360;
+	static inline constexpr uint64_t __MDKClassSize = 1344;
 
 public:
-	DMember(bool)                                      bAutoHandleSuccessFailure                                   OFFSET(get<bool>, {0x338, 1, 0, 0})
-	CMember(TWeakObjectPtr<UWorld*>)                   Level                                                       OFFSET(get<T>, {0x340, 32, 0, 0})
-	CMember(TWeakObjectPtr<UStateTree*>)               StateTreeOverride                                           OFFSET(get<T>, {0x360, 32, 0, 0})
-	SMember(FGameplayCueTag)                           ProximityGameplayCueTag                                     OFFSET(getStruct<T>, {0x380, 4, 0, 0})
-	SMember(FGameplayCueTag)                           ActorCleanupGameplayCueTag                                  OFFSET(getStruct<T>, {0x384, 4, 0, 0})
-	CMember(TArray<FName>)                             SuccessRewards                                              OFFSET(get<T>, {0x388, 16, 0, 0})
-	SMember(FEncounterRewardBehavior)                  SuccessRewardBehavior                                       OFFSET(getStruct<T>, {0x398, 128, 0, 0})
-	SMember(FGameplayCueTag)                           ActorSuccessGameplayCueTag                                  OFFSET(getStruct<T>, {0x418, 4, 0, 0})
-	SMember(FGameplayCueTag)                           PlayerSuccessGameplayCueTag                                 OFFSET(getStruct<T>, {0x41C, 4, 0, 0})
-	CMember(TArray<FName>)                             FailureRewards                                              OFFSET(get<T>, {0x420, 16, 0, 0})
-	SMember(FEncounterRewardBehavior)                  FailureRewardBehavior                                       OFFSET(getStruct<T>, {0x430, 128, 0, 0})
-	SMember(FGameplayCueTag)                           ActorFailureGameplayCueTag                                  OFFSET(getStruct<T>, {0x4B0, 4, 0, 0})
-	SMember(FGameplayCueTag)                           PlayerFailureGameplayCueTag                                 OFFSET(getStruct<T>, {0x4B4, 4, 0, 0})
-	SMember(FScalableFloat)                            LWMDensityWeight                                            OFFSET(getStruct<T>, {0x4B8, 40, 0, 0})
-	SMember(FScalableFloat)                            LWMDensityRange                                             OFFSET(getStruct<T>, {0x4E0, 40, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  Vars                                                        OFFSET(get<T>, {0x508, 16, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  VariableSelections                                          OFFSET(get<T>, {0x518, 16, 0, 0})
-	SMember(FWorldConditionQueryDefinition)            CanSpawnWorldConditionDefinition                            OFFSET(getStruct<T>, {0x528, 24, 0, 0})
-	CMember(TArray<FFortAthenaLivingWorldPrefabActorSpawnerData>) ActorSpawnerDatas                                OFFSET(get<T>, {0x540, 16, 0, 0})
+	DMember(bool)                                      bAutoHandleSuccessFailure                                   OFFSET(get<bool>, {0x328, 1, 0, 0})
+	CMember(TWeakObjectPtr<UWorld*>)                   Level                                                       OFFSET(get<T>, {0x330, 32, 0, 0})
+	CMember(TWeakObjectPtr<UStateTree*>)               StateTreeOverride                                           OFFSET(get<T>, {0x350, 32, 0, 0})
+	SMember(FGameplayCueTag)                           ProximityGameplayCueTag                                     OFFSET(getStruct<T>, {0x370, 4, 0, 0})
+	SMember(FGameplayCueTag)                           ActorCleanupGameplayCueTag                                  OFFSET(getStruct<T>, {0x374, 4, 0, 0})
+	CMember(TArray<FName>)                             SuccessRewards                                              OFFSET(get<T>, {0x378, 16, 0, 0})
+	SMember(FEncounterRewardBehavior)                  SuccessRewardBehavior                                       OFFSET(getStruct<T>, {0x388, 128, 0, 0})
+	SMember(FGameplayCueTag)                           ActorSuccessGameplayCueTag                                  OFFSET(getStruct<T>, {0x408, 4, 0, 0})
+	SMember(FGameplayCueTag)                           PlayerSuccessGameplayCueTag                                 OFFSET(getStruct<T>, {0x40C, 4, 0, 0})
+	CMember(TArray<FName>)                             FailureRewards                                              OFFSET(get<T>, {0x410, 16, 0, 0})
+	SMember(FEncounterRewardBehavior)                  FailureRewardBehavior                                       OFFSET(getStruct<T>, {0x420, 128, 0, 0})
+	SMember(FGameplayCueTag)                           ActorFailureGameplayCueTag                                  OFFSET(getStruct<T>, {0x4A0, 4, 0, 0})
+	SMember(FGameplayCueTag)                           PlayerFailureGameplayCueTag                                 OFFSET(getStruct<T>, {0x4A4, 4, 0, 0})
+	SMember(FScalableFloat)                            LWMDensityWeight                                            OFFSET(getStruct<T>, {0x4A8, 40, 0, 0})
+	SMember(FScalableFloat)                            LWMDensityRange                                             OFFSET(getStruct<T>, {0x4D0, 40, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  Vars                                                        OFFSET(get<T>, {0x4F8, 16, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  VariableSelections                                          OFFSET(get<T>, {0x508, 16, 0, 0})
+	SMember(FWorldConditionQueryDefinition)            CanSpawnWorldConditionDefinition                            OFFSET(getStruct<T>, {0x518, 24, 0, 0})
+	CMember(TArray<FFortAthenaLivingWorldPrefabActorSpawnerData>) ActorSpawnerDatas                                OFFSET(get<T>, {0x530, 16, 0, 0})
 };
 
 /// Class /Script/EncountersRuntime.EncounterManagerComponent
-/// Size: 0x0228 (0x0000A0 - 0x0002C8)
+/// Size: 0x0238 (0x0000A0 - 0x0002D8)
 class UEncounterManagerComponent : public UGameFrameworkComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 712;
+	static inline constexpr uint64_t __MDKClassSize = 728;
 
 public:
 	CMember(TWeakObjectPtr<AEncounterGameplayVolume*>) EncounterVolume                                             OFFSET(get<T>, {0xA0, 8, 0, 0})
@@ -251,9 +238,9 @@ public:
 	SMember(FDataTableRowHandle)                       PostEncounterLWMCategory                                    OFFSET(getStruct<T>, {0xD0, 16, 0, 0})
 	CMember(TSet<AFortPlayerController*>)              ExplicitContributors                                        OFFSET(get<T>, {0xE0, 80, 0, 0})
 	CMember(TArray<FActorIdentifierEntry>)             ActorIdentifiers                                            OFFSET(get<T>, {0x130, 16, 0, 0})
-	CMember(TArray<FLWMEncounterInfo>)                 EncounterInfos                                              OFFSET(get<T>, {0x140, 16, 0, 0})
-	CMember(TArray<FGameplayEffectIdentifierInfo>)     GameplayEffectInfos                                         OFFSET(get<T>, {0x150, 16, 0, 0})
-	CMember(TWeakObjectPtr<UEncounterItem*>)           EncounterItem                                               OFFSET(get<T>, {0x160, 8, 0, 0})
+	DMember(bool)                                      bHasHandledSuccessFailure                                   OFFSET(get<bool>, {0x140, 1, 0, 0})
+	CMember(TArray<FLWMEncounterInfo>)                 EncounterInfos                                              OFFSET(get<T>, {0x148, 16, 0, 0})
+	CMember(TArray<FGameplayEffectIdentifierInfo>)     GameplayEffectInfos                                         OFFSET(get<T>, {0x158, 16, 0, 0})
 	CMember(TWeakObjectPtr<ALivingWorldEncounterPrefab*>) EncounterPrefab                                          OFFSET(get<T>, {0x168, 8, 0, 0})
 	CMember(TWeakObjectPtr<UDataTable*>)               LWMEncounterTable                                           OFFSET(get<T>, {0x170, 32, 0, 0})
 	CMember(TWeakObjectPtr<AActor*>)                   LastThreat                                                  OFFSET(get<T>, {0x290, 8, 0, 0})
@@ -263,39 +250,39 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.SetPersistentValue
-	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                        // [0xb4188c4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                        // [0xb5298f0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.RemoveExplicitContributor
-	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb4187e8] Final|Native|Public|BlueprintCallable 
+	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb529858] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.OnStateTreeStatusChanged
-	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                               // [0xb418728] Final|Native|Private 
+	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                               // [0xb5297d8] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterSuccess
-	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                        // [0xb418668] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                        // [0xb529720] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterFailure
-	// void HandleEncounterFailure(int32_t RewardIndex);                                                                        // [0xb4185a8] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterFailure(int32_t RewardIndex);                                                                        // [0xb529668] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_TagQuery
-	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                           // [0xb4184b4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                           // [0xb529574] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_LWMEncounter
-	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                                  // [0xb4183dc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                                  // [0xb52949c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ItemDefinition
-	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                       // [0xb418304] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                       // [0xb5293c4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Int
-	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                          // [0xb418230] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                          // [0xb5292f0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTagContainer
-	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                           // [0xb418144] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                           // [0xb529204] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTag
-	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                             // [0xb418074] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                             // [0xb529134] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Float
-	// float GetVariable_Float(FGameplayTag& VarName);                                                                          // [0xb417f9c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetVariable_Float(FGameplayTag& VarName);                                                                          // [0xb52905c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Bool
-	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                            // [0xb417ec8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                            // [0xb528f88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ActorDescription
-	// TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> GetVariable_ActorDescription(FGameplayTag& VarName);        // [0xb417de8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> GetVariable_ActorDescription(FGameplayTag& VarName);        // [0xb528ea8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ActorClass
-	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                   // [0xb417cf4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                   // [0xb528db4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetPersistentValue
-	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                    // [0xb417c44] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                    // [0xb528b44] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.AddExplicitContributor
-	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                   // [0xb417b64] Final|Native|Public|BlueprintCallable 
+	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                   // [0xb528aa8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterPatrolPathPointProvider
@@ -360,7 +347,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.FortCheatManager_Encounters.EncountersDump
-	// void EncountersDump();                                                                                                   // [0x3047908] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void EncountersDump();                                                                                                   // [0x3097b14] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/EncountersRuntime.LivingWorldEncounterPrefab
@@ -372,15 +359,14 @@ class ALivingWorldEncounterPrefab : public AFortAthenaLivingWorldPrefab
 
 public:
 	CMember(TArray<FEncounterPrefabInfo>)              EncounterEntries                                            OFFSET(get<T>, {0x998, 16, 0, 0})
-	CMember(class UEncounterItem*)                     EncounterItem                                               OFFSET(get<T>, {0x9A8, 8, 0, 0})
-	CMember(class UEncounterItemDefinition*)           EncounterDefinition                                         OFFSET(get<T>, {0x9B0, 8, 0, 0})
-	CMember(TWeakObjectPtr<AActor*>)                   ReservoirActorOverride                                      OFFSET(get<T>, {0x9B8, 8, 0, 0})
-	CMember(TWeakObjectPtr<UEncounterManagerComponent*>) EncounterManager                                          OFFSET(get<T>, {0x9C0, 8, 0, 0})
+	CMember(class UEncounterItemDefinition*)           EncounterDefinition                                         OFFSET(get<T>, {0x9A8, 8, 0, 0})
+	CMember(TWeakObjectPtr<AActor*>)                   ReservoirActorOverride                                      OFFSET(get<T>, {0x9B0, 8, 0, 0})
+	CMember(TWeakObjectPtr<UEncounterManagerComponent*>) EncounterManager                                          OFFSET(get<T>, {0x9B8, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LivingWorldEncounterPrefab.OnRep_EncounterDefinition
-	// void OnRep_EncounterDefinition();                                                                                        // [0x889bb00] Final|Native|Private 
+	// void OnRep_EncounterDefinition();                                                                                        // [0x88a03f0] Final|Native|Private 
 };
 
 /// Class /Script/EncountersRuntime.FortVerbProcessor_EncounterCompleted
@@ -593,17 +579,19 @@ public:
 };
 
 /// Struct /Script/EncountersRuntime.EnableSmartObjectsStateTreeTaskInstanceData
-/// Size: 0x0058 (0x000000 - 0x000058)
+/// Size: 0x0070 (0x000000 - 0x000070)
 class FEnableSmartObjectsStateTreeTaskInstanceData : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 88;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
 	SMember(FGameplayTagQuery)                         ActorQuery                                                  OFFSET(getStruct<T>, {0x0, 72, 0, 0})
 	DMember(bool)                                      bEnable                                                     OFFSET(get<bool>, {0x48, 1, 0, 0})
 	CMember(class AActor*)                             UserActor                                                   OFFSET(get<T>, {0x50, 8, 0, 0})
+	CMember(TArray<class AActor*>)                     AIActors                                                    OFFSET(get<T>, {0x58, 16, 0, 0})
+	SMember(FFortAICommandSOUsageDataBase)             AICommandSOUsageData                                        OFFSET(getStruct<T>, {0x68, 8, 0, 0})
 };
 
 /// Struct /Script/EncountersRuntime.EnableSmartObjectsStateTreeTask
@@ -2405,6 +2393,7 @@ public:
 	SMember(FGameplayTagQuery)                         EncounterQuery                                              OFFSET(getStruct<T>, {0x0, 72, 0, 0})
 	DMember(int32_t)                                   Value                                                       OFFSET(get<int32_t>, {0x48, 4, 0, 0})
 	CMember(class AActor*)                             UserActor                                                   OFFSET(get<T>, {0x50, 8, 0, 0})
+	DMember(bool)                                      bOnlyTriggerOnce                                            OFFSET(get<bool>, {0x58, 1, 0, 0})
 };
 
 /// Struct /Script/EncountersRuntime.LWMEncounterRemainingCountTransitionStateTreeTask

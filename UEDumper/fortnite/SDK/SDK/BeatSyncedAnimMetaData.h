@@ -15,7 +15,8 @@ class UBeatSyncedAnimMetaData : public UAnimMetaData
 { 
 public:
 	bool                                               bAllowBeatsyncing;                                          // 0x0028   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
+	bool                                               bIsForEmote;                                                // 0x0029   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x6];                                       // 0x002A   (0x0006)  MISSED
 };
 
 /// Class /Script/BeatSyncedAnimMetaData.PreciseBeatSyncedAnimMetaData

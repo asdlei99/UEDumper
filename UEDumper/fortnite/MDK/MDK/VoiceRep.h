@@ -24,13 +24,13 @@ public:
 
 	/// Functions
 	// Function /Script/VoiceRep.FortVoiceReportIntroModal.UpdateVisuals
-	// void UpdateVisuals(UFortVoiceReportIntroModalType DescriptionType);                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateVisuals(UFortVoiceReportIntroModalType DescriptionType);                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/VoiceRep.FortVoiceReportIntroModal.HandleTurnOnClicked
-	// void HandleTurnOnClicked();                                                                                              // [0xc584c54] Final|Native|Protected|BlueprintCallable 
+	// void HandleTurnOnClicked();                                                                                              // [0xc534054] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VoiceRep.FortVoiceReportIntroModal.HandleTurnOffClicked
-	// void HandleTurnOffClicked();                                                                                             // [0xc584c40] Final|Native|Protected|BlueprintCallable 
+	// void HandleTurnOffClicked();                                                                                             // [0xc534040] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VoiceRep.FortVoiceReportIntroModal.HandleLearnMore
-	// void HandleLearnMore();                                                                                                  // [0xc584c2c] Final|Native|Protected|BlueprintCallable 
+	// void HandleLearnMore();                                                                                                  // [0xc53402c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/VoiceRep.VoiceRepTooltipBase

@@ -136,7 +136,7 @@ struct FComponentCacheHelper
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FActorOwnedStateTreeConfig
 { 
-	SDK_UNDEFINED(32,2051) /* TWeakObjectPtr<UStateTree*> */ __um(StateTreeAsset);                                 // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,2055) /* TWeakObjectPtr<UStateTree*> */ __um(StateTreeAsset);                                 // 0x0000   (0x0020)  
 	bool                                               bShouldReplicate;                                           // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };

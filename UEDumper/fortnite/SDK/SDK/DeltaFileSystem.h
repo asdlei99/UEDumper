@@ -54,8 +54,8 @@ public:
 class UDeltaFileSubsystem : public UEngineSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,1982) /* TMap<UWorld*, FDeltaTrackingHandles> */ __um(WorldToTrackingHandles);                // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,1983) /* TMap<FName, UObject*> */ __um(DeltaFiles);                                           // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,1986) /* TMap<UWorld*, FDeltaTrackingHandles> */ __um(WorldToTrackingHandles);                // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,1987) /* TMap<FName, UObject*> */ __um(DeltaFiles);                                           // 0x0080   (0x0050)  
 	FSoftClassPath                                     DefaultDeltaFileClass;                                      // 0x00D0   (0x0018)  
 };
 
@@ -73,7 +73,7 @@ struct FDeltaAction
 /// Size: 0x0010 (0x000020 - 0x000030)
 struct FUpdateAction : FDeltaAction
 { 
-	SDK_UNDEFINED(16,1984) /* FString */               __um(JsonStringObjectForPropertyData);                      // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1988) /* FString */               __um(JsonStringObjectForPropertyData);                      // 0x0020   (0x0010)  
 };
 
 /// Class /Script/DeltaFileSystem.MapDelta
@@ -82,10 +82,10 @@ class UMapDelta : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(16,1985) /* FString */               __um(PackageToApplyTo);                                     // 0x0030   (0x0010)  
-	SDK_UNDEFINED(80,1986) /* TMap<FGuid, FAddAction> */ __um(AddActions);                                         // 0x0040   (0x0050)  
+	SDK_UNDEFINED(16,1989) /* FString */               __um(PackageToApplyTo);                                     // 0x0030   (0x0010)  
+	SDK_UNDEFINED(80,1990) /* TMap<FGuid, FAddAction> */ __um(AddActions);                                         // 0x0040   (0x0050)  
 	TArray<FUpdateAction>                              UpdateActions;                                              // 0x0090   (0x0010)  
-	SDK_UNDEFINED(80,1987) /* TMap<FGuid, FDeleteAction> */ __um(DeleteActions);                                   // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1991) /* TMap<FGuid, FDeleteAction> */ __um(DeleteActions);                                   // 0x00A0   (0x0050)  
 };
 
 /// Class /Script/DeltaFileSystem.MapDeltaApplier
@@ -100,8 +100,8 @@ public:
 /// Size: 0x0090 (0x000020 - 0x0000B0)
 struct FAddAction : FDeltaAction
 { 
-	SDK_UNDEFINED(32,1988) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0020   (0x0020)  
-	SDK_UNDEFINED(16,1989) /* FString */               __um(JsonStringObjectForPropertyData);                      // 0x0040   (0x0010)  
+	SDK_UNDEFINED(32,1992) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0020   (0x0020)  
+	SDK_UNDEFINED(16,1993) /* FString */               __um(JsonStringObjectForPropertyData);                      // 0x0040   (0x0010)  
 	FTransform                                         Transform;                                                  // 0x0050   (0x0060)  
 };
 
@@ -109,7 +109,7 @@ struct FAddAction : FDeltaAction
 /// Size: 0x0070 (0x000020 - 0x000090)
 struct FDeleteAction : FDeltaAction
 { 
-	SDK_UNDEFINED(16,1990) /* FString */               __um(ActorName);                                            // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1994) /* FString */               __um(ActorName);                                            // 0x0020   (0x0010)  
 	FTransform                                         Transform;                                                  // 0x0030   (0x0060)  
 };
 

@@ -1041,7 +1041,7 @@ struct FPCGSettingsOverridableParam
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
 	TArray<FName>                                      PropertiesNames;                                            // 0x0008   (0x0010)  
 	class UStruct*                                     PropertyClass;                                              // 0x0018   (0x0008)  
-	SDK_UNDEFINED(80,14319) /* TMap<int32_t, FPCGPropertyAliases> */ __um(MapOfAliases);                           // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,14437) /* TMap<int32_t, FPCGPropertyAliases> */ __um(MapOfAliases);                           // 0x0020   (0x0050)  
 	bool                                               bHasNameClash;                                              // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x17];                                      // 0x0071   (0x0017)  MISSED
 };
@@ -1053,10 +1053,10 @@ class UPCGSettings : public UPCGSettingsInterface
 public:
 	int32_t                                            Seed;                                                       // 0x0040   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0044   (0x0004)  MISSED
-	SDK_UNDEFINED(80,14320) /* TSet<FString> */        __um(FilterOnTags);                                         // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,14438) /* TSet<FString> */        __um(FilterOnTags);                                         // 0x0048   (0x0050)  
 	bool                                               bPassThroughFilteredOutInputs;                              // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0099   (0x0007)  MISSED
-	SDK_UNDEFINED(80,14321) /* TSet<FString> */        __um(TagsAppliedOnOutput);                                  // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,14439) /* TSet<FString> */        __um(TagsAppliedOnOutput);                                  // 0x00A0   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x00F0   (0x0008)  MISSED
 	bool                                               bUseSeed;                                                   // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3F];                                      // 0x00F9   (0x003F)  MISSED
@@ -1069,7 +1069,7 @@ public:
 class UPCGAddTagSettings : public UPCGSettings
 { 
 public:
-	SDK_UNDEFINED(16,14322) /* FString */              __um(TagsToAdd);                                            // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,14440) /* FString */              __um(TagsToAdd);                                            // 0x0150   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGAttributeExtractorTestObject
@@ -1090,7 +1090,7 @@ struct FPCGAttributePropertySelector
 	EPCGPointProperties                                PointProperty;                                              // 0x0010   (0x0001)  
 	EPCGExtraProperties                                ExtraProperty;                                              // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0012   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14323) /* TArray<FString> */      __um(ExtraNames);                                           // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,14441) /* TArray<FString> */      __um(ExtraNames);                                           // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/PCG.PCGAttributePropertyInputSelector
@@ -1116,7 +1116,7 @@ struct FPCGMetadataTypesConstantStruct
 	FVector4                                           Vector4Value;                                               // 0x0050   (0x0020)  
 	FQuat                                              QuatValue;                                                  // 0x0070   (0x0020)  
 	FTransform                                         TransformValue;                                             // 0x0090   (0x0060)  
-	SDK_UNDEFINED(16,14324) /* FString */              __um(StringValue);                                          // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,14442) /* FString */              __um(StringValue);                                          // 0x00F0   (0x0010)  
 	bool                                               BoolValue;                                                  // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0101   (0x0007)  MISSED
 	FRotator                                           RotatorValue;                                               // 0x0108   (0x0018)  
@@ -1175,7 +1175,7 @@ class UPCGAttributeFilterNamesSettings : public UPCGSettings
 public:
 	EPCGAttributeFilterOperation                       Operation;                                                  // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0154   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14325) /* FString */              __um(SelectedAttributes);                                   // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,14443) /* FString */              __um(SelectedAttributes);                                   // 0x0158   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers
@@ -1187,27 +1187,27 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.SetPointProperty
-	// bool SetPointProperty(FPCGAttributePropertySelector& Selector, EPCGPointProperties InPointProperty);                  // [0xae872f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool SetPointProperty(FPCGAttributePropertySelector& Selector, EPCGPointProperties InPointProperty);                  // [0xb0aef50] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.SetExtraProperty
-	// bool SetExtraProperty(FPCGAttributePropertySelector& Selector, EPCGExtraProperties InExtraProperty);                  // [0xae87138] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool SetExtraProperty(FPCGAttributePropertySelector& Selector, EPCGExtraProperties InExtraProperty);                  // [0xb0aed94] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.SetAttributeName
-	// bool SetAttributeName(FPCGAttributePropertySelector& Selector, FName InAttributeName);                                // [0xae86f7c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool SetAttributeName(FPCGAttributePropertySelector& Selector, FName InAttributeName);                                // [0xb0aebd8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetSelection
-	// EPCGAttributePropertySelection GetSelection(FPCGAttributePropertySelector& Selector);                                 // [0xae86ec8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// EPCGAttributePropertySelection GetSelection(FPCGAttributePropertySelector& Selector);                                 // [0xb0aeb24] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetPointProperty
-	// EPCGPointProperties GetPointProperty(FPCGAttributePropertySelector& Selector);                                        // [0xae86e14] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// EPCGPointProperties GetPointProperty(FPCGAttributePropertySelector& Selector);                                        // [0xb0aea70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetName
-	// FName GetName(FPCGAttributePropertySelector& Selector);                                                               // [0xae86d58] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FName GetName(FPCGAttributePropertySelector& Selector);                                                               // [0xb0ae9b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetExtraProperty
-	// EPCGExtraProperties GetExtraProperty(FPCGAttributePropertySelector& Selector);                                        // [0xae86ca4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// EPCGExtraProperties GetExtraProperty(FPCGAttributePropertySelector& Selector);                                        // [0xb0ae900] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetExtraNames
-	// TArray<FString> GetExtraNames(FPCGAttributePropertySelector& Selector);                                               // [0xae86be8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FString> GetExtraNames(FPCGAttributePropertySelector& Selector);                                               // [0xb0ae844] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.GetAttributeName
-	// FName GetAttributeName(FPCGAttributePropertySelector& Selector);                                                      // [0xae86b34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FName GetAttributeName(FPCGAttributePropertySelector& Selector);                                                      // [0xb0ae790] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.CopyAndFixSource
-	// FPCGAttributePropertyOutputSelector CopyAndFixSource(FPCGAttributePropertyOutputSelector& Selector, FPCGAttributePropertyInputSelector& InSelector); // [0xae869d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FPCGAttributePropertyOutputSelector CopyAndFixSource(FPCGAttributePropertyOutputSelector& Selector, FPCGAttributePropertyInputSelector& InSelector); // [0xb0ae630] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGAttributePropertySelectorBlueprintHelpers.CopyAndFixLast
-	// FPCGAttributePropertyInputSelector CopyAndFixLast(FPCGAttributePropertyInputSelector& Selector, class UPCGData* InData); // [0xae867fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FPCGAttributePropertyInputSelector CopyAndFixLast(FPCGAttributePropertyInputSelector& Selector, class UPCGData* InData); // [0xb0ae458] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGBooleanSelectSettings
@@ -1233,7 +1233,7 @@ public:
 class UPCGSpatialData : public UPCGData
 { 
 public:
-	SDK_UNDEFINED(8,14326) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0038   (0x0008)  
+	SDK_UNDEFINED(8,14444) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0038   (0x0008)  
 	bool                                               bKeepZeroDensityPoints;                                     // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0041   (0x0007)  MISSED
 	class UPCGMetadata*                                MetaData;                                                   // 0x0048   (0x0008)  
@@ -1244,41 +1244,41 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGSpatialData.UnionWith
-	// class UPCGUnionData* UnionWith(class UPCGSpatialData* InOther);                                                       // [0xaf18a58] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGUnionData* UnionWith(class UPCGSpatialData* InOther);                                                       // [0xb13e810] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.ToPointDataWithContext
-	// class UPCGPointData* ToPointDataWithContext(FPCGContext& Context);                                                    // [0xaf1898c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGPointData* ToPointDataWithContext(FPCGContext& Context);                                                    // [0xb13e744] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.ToPointData
-	// class UPCGPointData* ToPointData();                                                                                   // [0xaf18948] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGPointData* ToPointData();                                                                                   // [0xb13e700] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.Subtract
-	// class UPCGDifferenceData* Subtract(class UPCGSpatialData* InOther);                                                   // [0xaf18870] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGDifferenceData* Subtract(class UPCGSpatialData* InOther);                                                   // [0xb13e66c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.SamplePoint
-	// bool SamplePoint(FTransform& Transform, FBox& Bounds, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata);          // [0xaf17e34] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool SamplePoint(FTransform& Transform, FBox& Bounds, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata);          // [0xb13dc70] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.ProjectPoint
-	// bool ProjectPoint(FTransform& InTransform, FBox& InBounds, FPCGProjectionParams& InParams, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0xaf17b18] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool ProjectPoint(FTransform& InTransform, FBox& InBounds, FPCGProjectionParams& InParams, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0xb13d954] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.ProjectOn
-	// class UPCGSpatialData* ProjectOn(class UPCGSpatialData* InOther, FPCGProjectionParams& InParams);                     // [0xaf179e8] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGSpatialData* ProjectOn(class UPCGSpatialData* InOther, FPCGProjectionParams& InParams);                     // [0xb13d860] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.MutableMetadata
-	// class UPCGMetadata* MutableMetadata();                                                                                // [0x29973a8] Native|Public|BlueprintCallable 
+	// class UPCGMetadata* MutableMetadata();                                                                                // [0x2a35604] Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGSpatialData.IntersectWith
-	// class UPCGIntersectionData* IntersectWith(class UPCGSpatialData* InOther);                                            // [0xaf17910] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGIntersectionData* IntersectWith(class UPCGSpatialData* InOther);                                            // [0xb13d7cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.InitializeFromData
-	// void InitializeFromData(class UPCGSpatialData* InSource, class UPCGMetadata* InMetadataParentOverride, bool bInheritMetadata, bool bInheritAttributes); // [0xaf176c4] Final|Native|Public|BlueprintCallable 
+	// void InitializeFromData(class UPCGSpatialData* InSource, class UPCGMetadata* InMetadataParentOverride, bool bInheritMetadata, bool bInheritAttributes); // [0xb13d67c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGSpatialData.HasNonTrivialTransform
-	// bool HasNonTrivialTransform();                                                                                        // [0x63a636c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasNonTrivialTransform();                                                                                        // [0x6405614] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.GetStrictBounds
-	// FBox GetStrictBounds();                                                                                               // [0xaf171c0] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetStrictBounds();                                                                                               // [0xb13d2f8] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.GetNormal
-	// FVector GetNormal();                                                                                                  // [0xaf16948] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetNormal();                                                                                                  // [0xb13cac0] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.GetDimension
-	// int32_t GetDimension();                                                                                               // [0x636b4d0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetDimension();                                                                                               // [0x63caf64] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.GetDensityAtPosition
-	// float GetDensityAtPosition(FVector& InPosition);                                                                      // [0xaf16870] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// float GetDensityAtPosition(FVector& InPosition);                                                                      // [0xb13c9e8] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.GetBounds
-	// FBox GetBounds();                                                                                                     // [0xaf16824] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetBounds();                                                                                                     // [0xb13c99c] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGSpatialData.CreateEmptyMetadata
-	// class UPCGMetadata* CreateEmptyMetadata();                                                                            // [0xaf167b0] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateEmptyMetadata();                                                                            // [0xb13c928] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGSpatialData.ConstMetadata
-	// class UPCGMetadata* ConstMetadata();                                                                                  // [0x5ff8e2c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGMetadata* ConstMetadata();                                                                                  // [0x606416c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGSpatialDataWithPointCache
@@ -1366,7 +1366,7 @@ public:
 class UPCGExternalDataSettings : public UPCGSettings
 { 
 public:
-	SDK_UNDEFINED(80,14327) /* TMap<FString, FPCGAttributePropertyInputSelector> */ __um(AttributeMapping);        // 0x0150   (0x0050)  
+	SDK_UNDEFINED(80,14445) /* TMap<FString, FPCGAttributePropertyInputSelector> */ __um(AttributeMapping);        // 0x0150   (0x0050)  
 };
 
 /// Class /Script/PCG.PCGLoadDataTableSettings
@@ -1374,7 +1374,7 @@ public:
 class UPCGLoadDataTableSettings : public UPCGExternalDataSettings
 { 
 public:
-	SDK_UNDEFINED(32,14328) /* TWeakObjectPtr<UDataTable*> */ __um(DataTable);                                     // 0x01A0   (0x0020)  
+	SDK_UNDEFINED(32,14446) /* TWeakObjectPtr<UDataTable*> */ __um(DataTable);                                     // 0x01A0   (0x0020)  
 	EPCGExclusiveDataType                              OutputType;                                                 // 0x01C0   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x01C1   (0x0007)  MISSED
 };
@@ -1448,79 +1448,79 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetVectorParameter
-	// void SetVectorParameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector& Value);                        // [0xae8de6c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorParameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector& Value);                        // [0xb0b4684] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetVector4Parameter
-	// void SetVector4Parameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector4& Value);                      // [0xae8dc7c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector4Parameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector4& Value);                      // [0xb0b4518] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetVector2DParameter
-	// void SetVector2DParameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector2D& Value);                    // [0xae8daa0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector2DParameter(class UPCGGraphInterface* GraphInterface, FName Name, FVector2D& Value);                    // [0xb0b43c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetTransformParameter
-	// void SetTransformParameter(class UPCGGraphInterface* GraphInterface, FName Name, FTransform& Value);                  // [0xae8d858] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTransformParameter(class UPCGGraphInterface* GraphInterface, FName Name, FTransform& Value);                  // [0xb0b41fc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetStringParameter
-	// void SetStringParameter(class UPCGGraphInterface* GraphInterface, FName Name, FString Value);                         // [0xae8d024] Final|Native|Static|Public|BlueprintCallable 
+	// void SetStringParameter(class UPCGGraphInterface* GraphInterface, FName Name, FString Value);                         // [0xb0b3a88] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetSoftObjectPathParameter
-	// void SetSoftObjectPathParameter(class UPCGGraphInterface* GraphInterface, FName Name, FSoftObjectPath& Value);        // [0xae8ce4c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSoftObjectPathParameter(class UPCGGraphInterface* GraphInterface, FName Name, FSoftObjectPath& Value);        // [0xb0b3930] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetSoftObjectParameter
-	// void SetSoftObjectParameter(class UPCGGraphInterface* GraphInterface, FName Name, TWeakObjectPtr<UObject*>& Value);   // [0xae8cc6c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetSoftObjectParameter(class UPCGGraphInterface* GraphInterface, FName Name, TWeakObjectPtr<UObject*>& Value);   // [0xb0b37d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetSoftClassParameter
-	// void SetSoftClassParameter(class UPCGGraphInterface* GraphInterface, FName Name, TWeakObjectPtr<UClass*>& Value);     // [0xae8cc6c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetSoftClassParameter(class UPCGGraphInterface* GraphInterface, FName Name, TWeakObjectPtr<UClass*>& Value);     // [0xb0b37d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetRotatorParameter
-	// void SetRotatorParameter(class UPCGGraphInterface* GraphInterface, FName Name, FRotator& Value);                      // [0xae8ca90] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRotatorParameter(class UPCGGraphInterface* GraphInterface, FName Name, FRotator& Value);                      // [0xb0b367c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetQuaternionParameter
-	// void SetQuaternionParameter(class UPCGGraphInterface* GraphInterface, FName Name, FQuat& Value);                      // [0xae8c8b4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetQuaternionParameter(class UPCGGraphInterface* GraphInterface, FName Name, FQuat& Value);                      // [0xb0b3524] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetNameParameter
-	// void SetNameParameter(class UPCGGraphInterface* GraphInterface, FName Name, FName Value);                             // [0xae8c6c0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetNameParameter(class UPCGGraphInterface* GraphInterface, FName Name, FName Value);                             // [0xb0b33f4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetInt64Parameter
-	// void SetInt64Parameter(class UPCGGraphInterface* GraphInterface, FName Name, int64_t Value);                          // [0xae8c4cc] Final|Native|Static|Public|BlueprintCallable 
+	// void SetInt64Parameter(class UPCGGraphInterface* GraphInterface, FName Name, int64_t Value);                          // [0xb0b32c4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetInt32Parameter
-	// void SetInt32Parameter(class UPCGGraphInterface* GraphInterface, FName Name, int32_t Value);                          // [0xae8c2d8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetInt32Parameter(class UPCGGraphInterface* GraphInterface, FName Name, int32_t Value);                          // [0xb0b3194] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetFloatParameter
-	// void SetFloatParameter(class UPCGGraphInterface* GraphInterface, FName Name, float Value);                            // [0xae8c0d8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetFloatParameter(class UPCGGraphInterface* GraphInterface, FName Name, float Value);                            // [0xb0b3058] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetEnumParameter
-	// void SetEnumParameter(class UPCGGraphInterface* GraphInterface, FName Name, char Value, class UEnum* Enum);           // [0xae8bdf0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetEnumParameter(class UPCGGraphInterface* GraphInterface, FName Name, char Value, class UEnum* Enum);           // [0xb0b2e80] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetDoubleParameter
-	// void SetDoubleParameter(class UPCGGraphInterface* GraphInterface, FName Name, double Value);                          // [0xae8bbec] Final|Native|Static|Public|BlueprintCallable 
+	// void SetDoubleParameter(class UPCGGraphInterface* GraphInterface, FName Name, double Value);                          // [0xb0b2d40] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetByteParameter
-	// void SetByteParameter(class UPCGGraphInterface* GraphInterface, FName Name, char Value);                              // [0xae8b9f8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetByteParameter(class UPCGGraphInterface* GraphInterface, FName Name, char Value);                              // [0xb0b2c10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.SetBoolParameter
-	// void SetBoolParameter(class UPCGGraphInterface* GraphInterface, FName Name, bool bValue);                             // [0xae8b800] Final|Native|Static|Public|BlueprintCallable 
+	// void SetBoolParameter(class UPCGGraphInterface* GraphInterface, FName Name, bool bValue);                             // [0xb0b2adc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.IsOverridden
-	// bool IsOverridden(class UPCGGraphInterface* GraphInterface, FName Name);                                              // [0xae8b6b0] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsOverridden(class UPCGGraphInterface* GraphInterface, FName Name);                                              // [0xb0b2a08] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetVectorParameter
-	// FVector GetVectorParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                     // [0xae8b4b4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector GetVectorParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                     // [0xb0b2888] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetVector4Parameter
-	// FVector4 GetVector4Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xae8b294] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector4 GetVector4Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xb0b26e4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetVector2DParameter
-	// FVector2D GetVector2DParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                 // [0xae8b0c0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector2D GetVector2DParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                 // [0xb0b258c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetTransformParameter
-	// FTransform GetTransformParameter(class UPCGGraphInterface* GraphInterface, FName Name);                               // [0xae8af20] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetTransformParameter(class UPCGGraphInterface* GraphInterface, FName Name);                               // [0xb0b2480] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetStringParameter
-	// FString GetStringParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                     // [0xae8a734] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetStringParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                     // [0xb0b1d0c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetSoftObjectPathParameter
-	// FSoftObjectPath GetSoftObjectPathParameter(class UPCGGraphInterface* GraphInterface, FName Name);                     // [0xae8a550] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FSoftObjectPath GetSoftObjectPathParameter(class UPCGGraphInterface* GraphInterface, FName Name);                     // [0xb0b1ba8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetSoftObjectParameter
-	// TWeakObjectPtr<UObject*> GetSoftObjectParameter(class UPCGGraphInterface* GraphInterface, FName Name);                // [0xae8a314] Final|Native|Static|Public|BlueprintCallable 
+	// TWeakObjectPtr<UObject*> GetSoftObjectParameter(class UPCGGraphInterface* GraphInterface, FName Name);                // [0xb0b19f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetSoftClassParameter
-	// TWeakObjectPtr<UClass*> GetSoftClassParameter(class UPCGGraphInterface* GraphInterface, FName Name);                  // [0xae8a0d8] Final|Native|Static|Public|BlueprintCallable 
+	// TWeakObjectPtr<UClass*> GetSoftClassParameter(class UPCGGraphInterface* GraphInterface, FName Name);                  // [0xb0b1838] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetRotatorParameter
-	// FRotator GetRotatorParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xae89edc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRotator GetRotatorParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xb0b16b8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetQuaternionParameter
-	// FQuat GetQuaternionParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xae89ce8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FQuat GetQuaternionParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                   // [0xb0b1540] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetNameParameter
-	// FName GetNameParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                         // [0xae89b3c] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetNameParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                         // [0xb0b1414] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetInt64Parameter
-	// int64_t GetInt64Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xae899fc] Final|Native|Static|Public|BlueprintCallable 
+	// int64_t GetInt64Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xb0b1350] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetInt32Parameter
-	// int32_t GetInt32Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xae898bc] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetInt32Parameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xb0b1290] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetFloatParameter
-	// float GetFloatParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                        // [0xae8977c] Final|Native|Static|Public|BlueprintCallable 
+	// float GetFloatParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                        // [0xb0b11cc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetEnumParameter
-	// char GetEnumParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xae894b8] Final|Native|Static|Public|BlueprintCallable 
+	// char GetEnumParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xb0b1004] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetDoubleParameter
-	// double GetDoubleParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xae8963c] Final|Native|Static|Public|BlueprintCallable 
+	// double GetDoubleParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                      // [0xb0b1108] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetByteParameter
-	// char GetByteParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xae894b8] Final|Native|Static|Public|BlueprintCallable 
+	// char GetByteParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xb0b1004] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphParametersHelpers.GetBoolParameter
-	// bool GetBoolParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xae89334] Final|Native|Static|Public|BlueprintCallable 
+	// bool GetBoolParameter(class UPCGGraphInterface* GraphInterface, FName Name);                                          // [0xb0b0f00] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGHiGenGridSizeSettings
@@ -1564,7 +1564,7 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGMetadataSettingsBase.GetOutputDataFromPinOptions
-	// TArray<FName> GetOutputDataFromPinOptions();                                                                          // [0xaf16984] Final|Native|Protected|Const 
+	// TArray<FName> GetOutputDataFromPinOptions();                                                                          // [0xb13cafc] Final|Native|Protected|Const 
 };
 
 /// Class /Script/PCG.PCGMetadataMakeRotatorSettings
@@ -1721,11 +1721,11 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGDifferenceData.SetDensityFunction
-	// void SetDensityFunction(EPCGDifferenceDensityFunction InDensityFunction);                                             // [0xaf180f0] Final|Native|Public|BlueprintCallable 
+	// void SetDensityFunction(EPCGDifferenceDensityFunction InDensityFunction);                                             // [0xb13df2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGDifferenceData.Initialize
-	// void Initialize(class UPCGSpatialData* InData);                                                                       // [0xaf1720c] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class UPCGSpatialData* InData);                                                                       // [0xb13d344] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGDifferenceData.AddDifference
-	// void AddDifference(class UPCGSpatialData* InDifference);                                                              // [0xaf165c0] Final|Native|Public|BlueprintCallable 
+	// void AddDifference(class UPCGSpatialData* InDifference);                                                              // [0xb13c7c4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGIntersectionData
@@ -1743,7 +1743,7 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGIntersectionData.Initialize
-	// void Initialize(class UPCGSpatialData* InA, class UPCGSpatialData* InB);                                              // [0xaf172cc] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class UPCGSpatialData* InA, class UPCGSpatialData* InB);                                              // [0xb13d3c4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGSurfaceData
@@ -1770,7 +1770,7 @@ struct FPCGLandscapeDataProps
 class UPCGLandscapeData : public UPCGSurfaceData
 { 
 public:
-	SDK_UNDEFINED(16,14329) /* TArray<TWeakObjectPtr<ALandscapeProxy*>> */ __um(Landscapes);                       // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,14447) /* TArray<TWeakObjectPtr<ALandscapeProxy*>> */ __um(Landscapes);                       // 0x0130   (0x0010)  
 	FBox                                               Bounds;                                                     // 0x0140   (0x0038)  
 	FPCGLandscapeDataProps                             DataProps;                                                  // 0x0178   (0x0005)  
 	unsigned char                                      UnknownData00_6[0x23];                                      // 0x017D   (0x0023)  MISSED
@@ -1788,7 +1788,7 @@ public:
 class UPCGLandscapeSplineData : public UPCGPolyLineData
 { 
 public:
-	SDK_UNDEFINED(8,14330) /* TWeakObjectPtr<ULandscapeSplinesComponent*> */ __um(Spline);                         // 0x00D0   (0x0008)  
+	SDK_UNDEFINED(8,14448) /* TWeakObjectPtr<ULandscapeSplinesComponent*> */ __um(Spline);                         // 0x00D0   (0x0008)  
 };
 
 /// Class /Script/PCG.PCGPointData
@@ -1802,15 +1802,15 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGPointData.SetPoints
-	// void SetPoints(TArray<FPCGPoint>& InPoints);                                                                          // [0xaf181b0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPoints(TArray<FPCGPoint>& InPoints);                                                                          // [0xb13dfac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGPointData.GetPointsCopy
-	// TArray<FPCGPoint> GetPointsCopy();                                                                                    // [0xaf16b3c] Final|Native|Public|BlueprintCallable|Const 
+	// TArray<FPCGPoint> GetPointsCopy();                                                                                    // [0xb13cc74] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGPointData.GetPoints
-	// TArray<FPCGPoint> GetPoints();                                                                                        // [0xaf16b20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FPCGPoint> GetPoints();                                                                                        // [0xb13cc58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGPointData.GetPoint
-	// FPCGPoint GetPoint(int32_t Index);                                                                                    // [0xaf169c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPCGPoint GetPoint(int32_t Index);                                                                                    // [0xb13cb3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGPointData.CopyPointsFrom
-	// void CopyPointsFrom(class UPCGPointData* InData, TArray<int32_t>& InDataIndices);                                     // [0xaf16680] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CopyPointsFrom(class UPCGPointData* InData, TArray<int32_t>& InDataIndices);                                     // [0xb13c844] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGPrimitiveData
@@ -1819,7 +1819,7 @@ class UPCGPrimitiveData : public UPCGSpatialDataWithPointCache
 { 
 public:
 	FVector                                            VoxelSize;                                                  // 0x00D0   (0x0018)  
-	SDK_UNDEFINED(8,14331) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Primitive);                             // 0x00E8   (0x0008)  
+	SDK_UNDEFINED(8,14449) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Primitive);                             // 0x00E8   (0x0008)  
 	FBox                                               CachedBounds;                                               // 0x00F0   (0x0038)  
 	FBox                                               CachedStrictBounds;                                         // 0x0128   (0x0038)  
 };
@@ -1833,7 +1833,7 @@ struct FPCGProjectionParams
 	bool                                               bProjectScales;                                             // 0x0002   (0x0001)  
 	EPCGProjectionColorBlendMode                       ColorBlendMode;                                             // 0x0003   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14332) /* FString */              __um(AttributeList);                                        // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14450) /* FString */              __um(AttributeList);                                        // 0x0008   (0x0010)  
 	EPCGMetadataFilterMode                             AttributeMode;                                              // 0x0018   (0x0001)  
 	EPCGMetadataOp                                     AttributeMergeOperation;                                    // 0x0019   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x6];                                       // 0x001A   (0x0006)  MISSED
@@ -1885,7 +1885,7 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGRenderTargetData.Initialize
-	// void Initialize(class UTextureRenderTarget2D* InRenderTarget, FTransform& InTransform);                               // [0xaf1740c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void Initialize(class UTextureRenderTarget2D* InRenderTarget, FTransform& InTransform);                               // [0xb13d488] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/PCG.PCGSplineStruct
@@ -1925,7 +1925,7 @@ public:
 class UPCGTextureData : public UPCGBaseTextureData
 { 
 public:
-	SDK_UNDEFINED(8,14333) /* TWeakObjectPtr<UTexture*> */ __um(Texture);                                          // 0x01E0   (0x0008)  
+	SDK_UNDEFINED(8,14451) /* TWeakObjectPtr<UTexture*> */ __um(Texture);                                          // 0x01E0   (0x0008)  
 	int32_t                                            TextureIndex;                                               // 0x01E8   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x01EC   (0x0004)  MISSED
 };
@@ -1948,9 +1948,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGUnionData.Initialize
-	// void Initialize(class UPCGSpatialData* InA, class UPCGSpatialData* InB);                                              // [0xaf17584] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class UPCGSpatialData* InA, class UPCGSpatialData* InB);                                              // [0xb13d5b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGUnionData.AddData
-	// void AddData(class UPCGSpatialData* InData);                                                                          // [0xaf16500] Final|Native|Public|BlueprintCallable 
+	// void AddData(class UPCGSpatialData* InData);                                                                          // [0xb13c744] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGVolumeData
@@ -1959,7 +1959,7 @@ class UPCGVolumeData : public UPCGSpatialDataWithPointCache
 { 
 public:
 	FVector                                            VoxelSize;                                                  // 0x00D0   (0x0018)  
-	SDK_UNDEFINED(8,14334) /* TWeakObjectPtr<AVolume*> */ __um(Volume);                                            // 0x00E8   (0x0008)  
+	SDK_UNDEFINED(8,14452) /* TWeakObjectPtr<AVolume*> */ __um(Volume);                                            // 0x00E8   (0x0008)  
 	FBox                                               Bounds;                                                     // 0x00F0   (0x0038)  
 	FBox                                               StrictBounds;                                               // 0x0128   (0x0038)  
 };
@@ -1970,14 +1970,14 @@ struct FPCGWorldCommonQueryParams
 { 
 	bool                                               bIgnorePCGHits;                                             // 0x0000   (0x0001)  
 	bool                                               bIgnoreSelfHits;                                            // 0x0001   (0x0001)  
-	SDK_UNDEFINED(1,14335) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                            // 0x0002   (0x0001)  
+	SDK_UNDEFINED(1,14453) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                            // 0x0002   (0x0001)  
 	bool                                               bTraceComplex;                                              // 0x0003   (0x0001)  
 	EPCGWorldQueryFilterByTag                          ActorTagFilter;                                             // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,14336) /* FString */              __um(ActorTagsList);                                        // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14454) /* FString */              __um(ActorTagsList);                                        // 0x0008   (0x0010)  
 	bool                                               bIgnoreLandscapeHits;                                       // 0x0018   (0x0001)  
 	bool                                               bGetReferenceToActorHit;                                    // 0x0019   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x001A   (0x0006)  MISSED
-	SDK_UNDEFINED(80,14337) /* TSet<FName> */          __um(ParsedActorTagsList);                                  // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,14455) /* TSet<FName> */          __um(ParsedActorTagsList);                                  // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/PCG.PCGWorldVolumetricQueryParams
@@ -1993,8 +1993,8 @@ struct FPCGWorldVolumetricQueryParams : FPCGWorldCommonQueryParams
 class UPCGWorldVolumetricData : public UPCGVolumeData
 { 
 public:
-	SDK_UNDEFINED(8,14338) /* TWeakObjectPtr<UWorld*> */ __um(World);                                              // 0x0160   (0x0008)  
-	SDK_UNDEFINED(8,14339) /* TWeakObjectPtr<UPCGComponent*> */ __um(OriginatingComponent);                        // 0x0168   (0x0008)  
+	SDK_UNDEFINED(8,14456) /* TWeakObjectPtr<UWorld*> */ __um(World);                                              // 0x0160   (0x0008)  
+	SDK_UNDEFINED(8,14457) /* TWeakObjectPtr<UPCGComponent*> */ __um(OriginatingComponent);                        // 0x0168   (0x0008)  
 	FPCGWorldVolumetricQueryParams                     QueryParams;                                                // 0x0170   (0x0078)  
 };
 
@@ -2017,8 +2017,8 @@ struct FPCGWorldRayHitQueryParams : FPCGWorldCommonQueryParams
 class UPCGWorldRayHitData : public UPCGSurfaceData
 { 
 public:
-	SDK_UNDEFINED(8,14340) /* TWeakObjectPtr<UWorld*> */ __um(World);                                              // 0x0130   (0x0008)  
-	SDK_UNDEFINED(8,14341) /* TWeakObjectPtr<UPCGComponent*> */ __um(OriginatingComponent);                        // 0x0138   (0x0008)  
+	SDK_UNDEFINED(8,14458) /* TWeakObjectPtr<UWorld*> */ __um(World);                                              // 0x0130   (0x0008)  
+	SDK_UNDEFINED(8,14459) /* TWeakObjectPtr<UPCGComponent*> */ __um(OriginatingComponent);                        // 0x0138   (0x0008)  
 	FBox                                               Bounds;                                                     // 0x0140   (0x0038)  
 	FPCGWorldRayHitQueryParams                         QueryParams;                                                // 0x0178   (0x00B8)  
 };
@@ -2347,7 +2347,7 @@ public:
 	FName                                              ArriveTangentAttribute;                                     // 0x0154   (0x0004)  
 	FName                                              LeaveTangentAttribute;                                      // 0x0158   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x015C   (0x0004)  MISSED
-	SDK_UNDEFINED(32,14342) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0160   (0x0020)  
+	SDK_UNDEFINED(32,14460) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0160   (0x0020)  
 	EPCGAttachOptions                                  AttachOptions;                                              // 0x0180   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0184   (0x0004)  MISSED
 	TArray<FName>                                      PostProcessFunctionNames;                                   // 0x0188   (0x0010)  
@@ -2358,7 +2358,7 @@ public:
 struct FPCGActorPropertyOverrideDescription
 { 
 	FPCGAttributePropertyInputSelector                 InputSource;                                                // 0x0000   (0x0028)  
-	SDK_UNDEFINED(16,14343) /* FString */              __um(PropertyTarget);                                       // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14461) /* FString */              __um(PropertyTarget);                                       // 0x0028   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGCreateTargetActor
@@ -2371,8 +2371,8 @@ public:
 	bool                                               bAllowTemplateActorEditing;                                 // 0x0160   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0161   (0x0003)  MISSED
 	EPCGAttachOptions                                  AttachOptions;                                              // 0x0164   (0x0004)  
-	SDK_UNDEFINED(32,14344) /* TWeakObjectPtr<AActor*> */ __um(RootActor);                                         // 0x0168   (0x0020)  
-	SDK_UNDEFINED(16,14345) /* FString */              __um(ActorLabel);                                           // 0x0188   (0x0010)  
+	SDK_UNDEFINED(32,14462) /* TWeakObjectPtr<AActor*> */ __um(RootActor);                                         // 0x0168   (0x0020)  
+	SDK_UNDEFINED(16,14463) /* FString */              __um(ActorLabel);                                           // 0x0188   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0198   (0x0008)  MISSED
 	FTransform                                         ActorPivot;                                                 // 0x01A0   (0x0060)  
 	TArray<FPCGActorPropertyOverrideDescription>       PropertyOverrideDescriptions;                               // 0x0200   (0x0010)  
@@ -2434,8 +2434,8 @@ class UPCGDataTableRowToParamDataSettings : public UPCGSettings
 public:
 	FName                                              RowName;                                                    // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0154   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14346) /* FString */              __um(PathOverride);                                         // 0x0158   (0x0010)  
-	SDK_UNDEFINED(32,14347) /* TWeakObjectPtr<UDataTable*> */ __um(DataTable);                                     // 0x0168   (0x0020)  
+	SDK_UNDEFINED(16,14464) /* FString */              __um(PathOverride);                                         // 0x0158   (0x0010)  
+	SDK_UNDEFINED(32,14465) /* TWeakObjectPtr<UDataTable*> */ __um(DataTable);                                     // 0x0168   (0x0020)  
 };
 
 /// Class /Script/PCG.PCGDebugSettings
@@ -2443,7 +2443,7 @@ public:
 class UPCGDebugSettings : public UPCGSettings
 { 
 public:
-	SDK_UNDEFINED(32,14348) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0150   (0x0020)  
+	SDK_UNDEFINED(32,14466) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0150   (0x0020)  
 };
 
 /// Class /Script/PCG.PCGDensityFilterSettings
@@ -2512,53 +2512,53 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGBlueprintElement.VariableLoopBody
-	// TArray<FPCGPoint> VariableLoopBody(FPCGContext& InContext, class UPCGPointData* InData, FPCGPoint& InPoint, class UPCGMetadata* OutMetadata); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// TArray<FPCGPoint> VariableLoopBody(FPCGContext& InContext, class UPCGPointData* InData, FPCGPoint& InPoint, class UPCGMetadata* OutMetadata); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.VariableLoop
-	// void VariableLoop(FPCGContext& InContext, class UPCGPointData* InData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xaf902c8] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void VariableLoop(FPCGContext& InContext, class UPCGPointData* InData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xb1b5134] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGBlueprintElement.PointLoopBody
-	// bool PointLoopBody(FPCGContext& InContext, class UPCGPointData* InData, FPCGPoint& InPoint, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool PointLoopBody(FPCGContext& InContext, class UPCGPointData* InData, FPCGPoint& InPoint, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.PointLoop
-	// void PointLoop(FPCGContext& InContext, class UPCGPointData* InData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xaf8fd80] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void PointLoop(FPCGContext& InContext, class UPCGPointData* InData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xb1b4c6c] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGBlueprintElement.NodeTypeOverride
-	// EPCGSettingsType NodeTypeOverride();                                                                                  // [0x6093de8] Native|Event|Public|BlueprintEvent|Const 
+	// EPCGSettingsType NodeTypeOverride();                                                                                  // [0x60f7298] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.NodeTitleOverride
-	// FName NodeTitleOverride();                                                                                            // [0xaf8fd50] Native|Event|Public|BlueprintEvent|Const 
+	// FName NodeTitleOverride();                                                                                            // [0xb1b4c3c] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.NodeColorOverride
-	// FLinearColor NodeColorOverride();                                                                                     // [0x633183c] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FLinearColor NodeColorOverride();                                                                                     // [0x63919d4] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.NestedLoopBody
-	// bool NestedLoopBody(FPCGContext& InContext, class UPCGPointData* InOuterData, class UPCGPointData* InInnerData, FPCGPoint& InOuterPoint, FPCGPoint& InInnerPoint, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool NestedLoopBody(FPCGContext& InContext, class UPCGPointData* InOuterData, class UPCGPointData* InInnerData, FPCGPoint& InOuterPoint, FPCGPoint& InInnerPoint, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.NestedLoop
-	// void NestedLoop(FPCGContext& InContext, class UPCGPointData* InOuterData, class UPCGPointData* InInnerData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xaf8f988] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void NestedLoop(FPCGContext& InContext, class UPCGPointData* InOuterData, class UPCGPointData* InInnerData, class UPCGPointData*& OutData, class UPCGPointData* OptionalOutData); // [0xb1b4874] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGBlueprintElement.IterationLoopBody
-	// bool IterationLoopBody(FPCGContext& InContext, int64_t Iteration, class UPCGSpatialData* InA, class UPCGSpatialData* InB, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool IterationLoopBody(FPCGContext& InContext, int64_t Iteration, class UPCGSpatialData* InA, class UPCGSpatialData* InB, FPCGPoint& OutPoint, class UPCGMetadata* OutMetadata); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.IterationLoop
-	// void IterationLoop(FPCGContext& InContext, int64_t NumIterations, class UPCGPointData*& OutData, class UPCGSpatialData* OptionalA, class UPCGSpatialData* OptionalB, class UPCGPointData* OptionalOutData); // [0xaf8f4bc] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void IterationLoop(FPCGContext& InContext, int64_t NumIterations, class UPCGPointData*& OutData, class UPCGSpatialData* OptionalA, class UPCGSpatialData* OptionalB, class UPCGPointData* OptionalOutData); // [0xb1b43a8] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGBlueprintElement.IsCacheableOverride
-	// bool IsCacheableOverride();                                                                                           // [0x2ef8cdc] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsCacheableOverride();                                                                                           // [0x30babb0] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetSeed
-	// int32_t GetSeed(FPCGContext& InContext);                                                                              // [0xaf8f418] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSeed(FPCGContext& InContext);                                                                              // [0xb1b4304] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetRandomStream
-	// FRandomStream GetRandomStream(FPCGContext& InContext);                                                                // [0xaf8f360] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// FRandomStream GetRandomStream(FPCGContext& InContext);                                                                // [0xb1b424c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetOutputPins
-	// TArray<FPCGPinProperties> GetOutputPins();                                                                            // [0xaf8f320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FPCGPinProperties> GetOutputPins();                                                                            // [0xb1b420c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetOutputPinByLabel
-	// bool GetOutputPinByLabel(FName InPinLabel, FPCGPinProperties& OutFoundPin);                                           // [0xaf8f1f0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetOutputPinByLabel(FName InPinLabel, FPCGPinProperties& OutFoundPin);                                           // [0xb1b4128] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetInputPins
-	// TArray<FPCGPinProperties> GetInputPins();                                                                             // [0xaf8f1b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FPCGPinProperties> GetInputPins();                                                                             // [0xb1b40e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetInputPinByLabel
-	// bool GetInputPinByLabel(FName InPinLabel, FPCGPinProperties& OutFoundPin);                                            // [0xaf8f080] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetInputPinByLabel(FName InPinLabel, FPCGPinProperties& OutFoundPin);                                            // [0xb1b4004] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.GetContext
-	// FPCGContext GetContext();                                                                                             // [0xaf8f028] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPCGContext GetContext();                                                                                             // [0xb1b3fac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.ExecuteWithContext
-	// void ExecuteWithContext(FPCGContext& InContext, FPCGDataCollection& Input, FPCGDataCollection& Output);               // [0xaf8ee38] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void ExecuteWithContext(FPCGContext& InContext, FPCGDataCollection& Input, FPCGDataCollection& Output);               // [0xb1b3dbc] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/PCG.PCGBlueprintElement.Execute
-	// void Execute(FPCGDataCollection& Input, FPCGDataCollection& Output);                                                  // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Execute(FPCGDataCollection& Input, FPCGDataCollection& Output);                                                  // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PCG.PCGBlueprintElement.CustomOutputLabels
-	// TSet<FName> CustomOutputLabels();                                                                                     // [0xaf8ed0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TSet<FName> CustomOutputLabels();                                                                                     // [0xb1b3c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.CustomInputLabels
-	// TSet<FName> CustomInputLabels();                                                                                      // [0xaf8ebe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TSet<FName> CustomInputLabels();                                                                                      // [0xb1b3b64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGBlueprintElement.ApplyPreconfiguredSettings
-	// void ApplyPreconfiguredSettings(FPCGPreConfiguredSettingsInfo& InPreconfigureInfo);                                   // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void ApplyPreconfiguredSettings(FPCGPreConfiguredSettingsInfo& InPreconfigureInfo);                                   // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/PCG.PCGBlueprintSettings
@@ -2572,9 +2572,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGBlueprintSettings.SetElementType
-	// void SetElementType(class UClass* InElementType, class UPCGBlueprintElement*& ElementInstance);                       // [0xaf90048] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetElementType(class UClass* InElementType, class UPCGBlueprintElement*& ElementInstance);                       // [0xb1b4f34] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintSettings.GetElementType
-	// class UClass* GetElementType();                                                                                       // [0xaf8f044] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetElementType();                                                                                       // [0xb1b3fc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGFilterByTagSettings
@@ -2584,7 +2584,7 @@ class UPCGFilterByTagSettings : public UPCGSettings
 public:
 	EPCGFilterByTagOperation                           Operation;                                                  // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0154   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14349) /* FString */              __um(SelectedTags);                                         // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,14467) /* FString */              __um(SelectedTags);                                         // 0x0158   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGFilterByTypeSettings
@@ -2605,7 +2605,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0151   (0x0007)  MISSED
 	class UClass*                                      SettingsClass;                                              // 0x0158   (0x0008)  
 	class UClass*                                      BlueprintElementClass;                                      // 0x0160   (0x0008)  
-	SDK_UNDEFINED(32,14350) /* TWeakObjectPtr<UPCGSettings*> */ __um(Settings);                                    // 0x0168   (0x0020)  
+	SDK_UNDEFINED(32,14468) /* TWeakObjectPtr<UPCGSettings*> */ __um(Settings);                                    // 0x0168   (0x0020)  
 	bool                                               bTagOutputsBasedOnOutputPins;                               // 0x0188   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0189   (0x0007)  MISSED
 };
@@ -2641,7 +2641,7 @@ public:
 class UPCGLoopSettings : public UPCGSubgraphSettings
 { 
 public:
-	SDK_UNDEFINED(16,14351) /* FString */              __um(LoopPins);                                             // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,14469) /* FString */              __um(LoopPins);                                             // 0x0160   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGMatchAndSetAttributesSettings
@@ -2686,7 +2686,7 @@ public:
 class UPCGPointFromMeshSettings : public UPCGSettings
 { 
 public:
-	SDK_UNDEFINED(32,14352) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                   // 0x0150   (0x0020)  
+	SDK_UNDEFINED(32,14470) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                   // 0x0150   (0x0020)  
 	FName                                              MeshPathAttributeName;                                      // 0x0170   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0174   (0x0004)  MISSED
 };
@@ -2706,7 +2706,7 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGPointMatchAndSetSettings.SetMatchAndSetType
-	// void SetMatchAndSetType(class UClass* InMatchAndSetType);                                                             // [0xaf90180] Final|Native|Public|BlueprintCallable 
+	// void SetMatchAndSetType(class UClass* InMatchAndSetType);                                                             // [0xb1b502c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGProjectionSettings
@@ -2809,7 +2809,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0181   (0x0007)  MISSED
 	class AActor*                                      TemplateActor;                                              // 0x0188   (0x0008)  
 	TArray<FPCGActorPropertyOverrideDescription>       SpawnedActorPropertyOverrideDescriptions;                   // 0x0190   (0x0010)  
-	SDK_UNDEFINED(32,14353) /* TWeakObjectPtr<AActor*> */ __um(RootActor);                                         // 0x01A0   (0x0020)  
+	SDK_UNDEFINED(32,14471) /* TWeakObjectPtr<AActor*> */ __um(RootActor);                                         // 0x01A0   (0x0020)  
 	EPCGAttachOptions                                  AttachOptions;                                              // 0x01C0   (0x0004)  
 	bool                                               bSpawnByAttribute;                                          // 0x01C4   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x01C5   (0x0003)  MISSED
@@ -2835,13 +2835,13 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGNode.RemoveEdgeTo
-	// bool RemoveEdgeTo(FName FromPinLable, class UPCGNode* To, FName ToPinLabel);                                          // [0xb0a37f4] Final|Native|Public|BlueprintCallable 
+	// bool RemoveEdgeTo(FName FromPinLable, class UPCGNode* To, FName ToPinLabel);                                          // [0xb2c76f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGNode.GetSettings
-	// class UPCGSettings* GetSettings();                                                                                    // [0xb0a0eec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGSettings* GetSettings();                                                                                    // [0xb2c4f88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGNode.GetGraph
-	// class UPCGGraph* GetGraph();                                                                                          // [0xb09f928] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGGraph* GetGraph();                                                                                          // [0xb2c39c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGNode.AddEdgeTo
-	// class UPCGNode* AddEdgeTo(FName FromPinLabel, class UPCGNode* To, FName ToPinLabel);                                  // [0xb09e73c] Final|Native|Public|BlueprintCallable 
+	// class UPCGNode* AddEdgeTo(FName FromPinLabel, class UPCGNode* To, FName ToPinLabel);                                  // [0xb2c2ad8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGBaseSubgraphNode
@@ -2905,7 +2905,7 @@ struct FPCGStaticMeshSpawnerEntry
 { 
 	int32_t                                            Weight;                                                     // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,14354) /* TWeakObjectPtr<UStaticMesh*> */ __um(Mesh);                                         // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,14472) /* TWeakObjectPtr<UStaticMesh*> */ __um(Mesh);                                         // 0x0008   (0x0020)  
 	bool                                               bOverrideCollisionProfile;                                  // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	FCollisionProfileName                              CollisionProfile;                                           // 0x002C   (0x0004)  
@@ -2923,16 +2923,16 @@ public:
 	FName                                              OutAttributeName;                                           // 0x0170   (0x0004)  
 	bool                                               bApplyMeshBoundsToPoints;                                   // 0x0174   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0175   (0x0003)  MISSED
-	SDK_UNDEFINED(32,14355) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0178   (0x0020)  
+	SDK_UNDEFINED(32,14473) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                       // 0x0178   (0x0020)  
 	TArray<FName>                                      PostProcessFunctionNames;                                   // 0x0198   (0x0010)  
 	TArray<FPCGStaticMeshSpawnerEntry>                 Meshes;                                                     // 0x01A8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/PCG.PCGStaticMeshSpawnerSettings.SetMeshSelectorType
-	// void SetMeshSelectorType(class UClass* InMeshSelectorType);                                                           // [0xafbea2c] Final|Native|Public|BlueprintCallable 
+	// void SetMeshSelectorType(class UClass* InMeshSelectorType);                                                           // [0xb1e3218] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGStaticMeshSpawnerSettings.SetInstancePackerType
-	// void SetInstancePackerType(class UClass* InInstancePackerType);                                                       // [0xafbe794] Final|Native|Public|BlueprintCallable 
+	// void SetInstancePackerType(class UClass* InInstancePackerType);                                                       // [0xb1e2fc4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGSurfaceSamplerSettings
@@ -2959,7 +2959,7 @@ public:
 	FTransform                                         Transform;                                                  // 0x0150   (0x0060)  
 	bool                                               bUseAbsoluteTransform;                                      // 0x01B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01B1   (0x0007)  MISSED
-	SDK_UNDEFINED(32,14356) /* TWeakObjectPtr<UTexture*> */ __um(Texture);                                         // 0x01B8   (0x0020)  
+	SDK_UNDEFINED(32,14474) /* TWeakObjectPtr<UTexture*> */ __um(Texture);                                         // 0x01B8   (0x0020)  
 	int32_t                                            TextureArrayIndex;                                          // 0x01D8   (0x0004)  
 	EPCGTextureDensityFunction                         DensityFunction;                                            // 0x01DC   (0x0001)  
 	EPCGTextureColorChannel                            ColorChannel;                                               // 0x01DD   (0x0001)  
@@ -3076,15 +3076,15 @@ public:
 	EPCGLandscapeCacheSerializationMode                SerializationMode;                                          // 0x0028   (0x0001)  
 	EPCGLandscapeCacheSerializationContents            CookedSerializedContents;                                   // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x56];                                      // 0x002A   (0x0056)  MISSED
-	SDK_UNDEFINED(80,14357) /* TSet<FName> */          __um(CachedLayerNames);                                     // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,14475) /* TSet<FName> */          __um(CachedLayerNames);                                     // 0x0080   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x00D0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/PCG.PCGLandscapeCache.PrimeCache
-	// void PrimeCache();                                                                                                    // [0x3047908] Final|Native|Public  
+	// void PrimeCache();                                                                                                    // [0x3097b14] Final|Native|Public  
 	// Function /Script/PCG.PCGLandscapeCache.ClearCache
-	// void ClearCache();                                                                                                    // [0xafbce50] Final|Native|Public  
+	// void ClearCache();                                                                                                    // [0xb1e18e4] Final|Native|Public  
 };
 
 /// Class /Script/PCG.PCGPartitionActor
@@ -3094,8 +3094,8 @@ class APCGPartitionActor : public APartitionActor
 public:
 	FGuid                                              PCGGuid;                                                    // 0x0290   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x50];                                      // 0x02A0   (0x0050)  MISSED
-	SDK_UNDEFINED(80,14358) /* TMap<UPCGComponent*, TWeakObjectPtr<UPCGComponent*>> */ __um(LocalToOriginal);      // 0x02F0   (0x0050)  
-	SDK_UNDEFINED(80,14359) /* TMap<UPCGComponent*, TWeakObjectPtr<UPCGComponent*>> */ __um(LoadedPreviewComponents); // 0x0340   (0x0050)  
+	SDK_UNDEFINED(80,14476) /* TMap<UPCGComponent*, TWeakObjectPtr<UPCGComponent*>> */ __um(LocalToOriginal);      // 0x02F0   (0x0050)  
+	SDK_UNDEFINED(80,14477) /* TMap<UPCGComponent*, TWeakObjectPtr<UPCGComponent*>> */ __um(LoadedPreviewComponents); // 0x0340   (0x0050)  
 	uint32_t                                           PCGGridSize;                                                // 0x0390   (0x0004)  
 	bool                                               bUse2DGrid;                                                 // 0x0394   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x0395   (0x0003)  MISSED
@@ -3103,9 +3103,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGPartitionActor.GetOriginalComponent
-	// class UPCGComponent* GetOriginalComponent(class UPCGComponent* LocalComponent);                                       // [0xafbd9fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGComponent* GetOriginalComponent(class UPCGComponent* LocalComponent);                                       // [0xb1e226c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGPartitionActor.GetLocalComponent
-	// class UPCGComponent* GetLocalComponent(class UPCGComponent* OriginalComponent);                                       // [0xafbd92c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGComponent* GetLocalComponent(class UPCGComponent* OriginalComponent);                                       // [0xb1e21dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGActorHelpers
@@ -3124,45 +3124,45 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGBlueprintHelpers.SetSeedFromPosition
-	// void SetSeedFromPosition(FPCGPoint& InPoint);                                                                         // [0xafbeb04] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetSeedFromPosition(FPCGPoint& InPoint);                                                                         // [0xb1e32ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.SetLocalCenter
-	// void SetLocalCenter(FPCGPoint& InPoint, FVector& InLocalCenter);                                                      // [0xafbe86c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetLocalCenter(FPCGPoint& InPoint, FVector& InLocalCenter);                                                      // [0xb1e3058] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.SetExtents
-	// void SetExtents(FPCGPoint& InPoint, FVector& InExtents);                                                              // [0xafbe5d4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetExtents(FPCGPoint& InPoint, FVector& InExtents);                                                              // [0xb1e2e04] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetTransformedBounds
-	// FBox GetTransformedBounds(FPCGPoint& InPoint);                                                                        // [0xafbe4c4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FBox GetTransformedBounds(FPCGPoint& InPoint);                                                                        // [0xb1e2cf4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetTaskId
-	// int64_t GetTaskId(FPCGContext& Context);                                                                              // [0xafbe420] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int64_t GetTaskId(FPCGContext& Context);                                                                              // [0xb1e2c50] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetTargetActor
-	// class AActor* GetTargetActor(FPCGContext& Context, class UPCGSpatialData* SpatialData);                               // [0xafbe274] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class AActor* GetTargetActor(FPCGContext& Context, class UPCGSpatialData* SpatialData);                               // [0xb1e2aa4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetSettings
-	// class UPCGSettings* GetSettings(FPCGContext& Context);                                                                // [0xafbe1d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPCGSettings* GetSettings(FPCGContext& Context);                                                                // [0xb1e2a00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetRandomStreamFromTwoPoints
-	// FRandomStream GetRandomStreamFromTwoPoints(FPCGPoint& InPointA, FPCGPoint& InPointB, class UPCGSettings* OptionalSettings, class UPCGComponent* OptionalComponent); // [0xafbde38] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FRandomStream GetRandomStreamFromTwoPoints(FPCGPoint& InPointA, FPCGPoint& InPointB, class UPCGSettings* OptionalSettings, class UPCGComponent* OptionalComponent); // [0xb1e2668] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetRandomStreamFromPoint
-	// FRandomStream GetRandomStreamFromPoint(FPCGPoint& InPoint, class UPCGSettings* OptionalSettings, class UPCGComponent* OptionalComponent); // [0xafbdb70] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FRandomStream GetRandomStreamFromPoint(FPCGPoint& InPoint, class UPCGSettings* OptionalSettings, class UPCGComponent* OptionalComponent); // [0xb1e23a0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetOriginalComponent
-	// class UPCGComponent* GetOriginalComponent(FPCGContext& Context);                                                      // [0xafbdacc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPCGComponent* GetOriginalComponent(FPCGContext& Context);                                                      // [0xb1e22fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetLocalCenter
-	// FVector GetLocalCenter(FPCGPoint& InPoint);                                                                           // [0xafbd830] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetLocalCenter(FPCGPoint& InPoint);                                                                           // [0xb1e20e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetInterpolatedPCGLandscapeLayerWeights
-	// TArray<FPCGLandscapeLayerWeight> GetInterpolatedPCGLandscapeLayerWeights(class UObject* WorldContextObject, FVector& Location); // [0xafbd6a4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// TArray<FPCGLandscapeLayerWeight> GetInterpolatedPCGLandscapeLayerWeights(class UObject* WorldContextObject, FVector& Location); // [0xb1e1f9c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetInputData
-	// class UPCGData* GetInputData(FPCGContext& Context);                                                                   // [0xafbd5e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPCGData* GetInputData(FPCGContext& Context);                                                                   // [0xb1e1edc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetExtents
-	// FVector GetExtents(FPCGPoint& InPoint);                                                                               // [0xafbd4e8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetExtents(FPCGPoint& InPoint);                                                                               // [0xb1e1de0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetComponent
-	// class UPCGComponent* GetComponent(FPCGContext& Context);                                                              // [0xafbd440] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPCGComponent* GetComponent(FPCGContext& Context);                                                              // [0xb1e1d38] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetActorLocalBoundsPCG
-	// FBox GetActorLocalBoundsPCG(class AActor* InActor, bool bIgnorePCGCreatedComponents);                                 // [0xafbd2d0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FBox GetActorLocalBoundsPCG(class AActor* InActor, bool bIgnorePCGCreatedComponents);                                 // [0xb1e1c58] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetActorData
-	// class UPCGData* GetActorData(FPCGContext& Context);                                                                   // [0xafbd210] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPCGData* GetActorData(FPCGContext& Context);                                                                   // [0xb1e1b98] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.GetActorBoundsPCG
-	// FBox GetActorBoundsPCG(class AActor* InActor, bool bIgnorePCGCreatedComponents);                                      // [0xafbd0a0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FBox GetActorBoundsPCG(class AActor* InActor, bool bIgnorePCGCreatedComponents);                                      // [0xb1e1ab8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.CreatePCGDataFromActor
-	// class UPCGData* CreatePCGDataFromActor(class AActor* InActor, bool bParseActor);                                      // [0xafbcf5c] Final|Native|Static|Public|BlueprintCallable 
+	// class UPCGData* CreatePCGDataFromActor(class AActor* InActor, bool bParseActor);                                      // [0xb1e19f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGBlueprintHelpers.ComputeSeedFromPosition
-	// int32_t ComputeSeedFromPosition(FVector& InPosition);                                                                 // [0xafbce64] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// int32_t ComputeSeedFromPosition(FVector& InPosition);                                                                 // [0xb1e18f8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGInstanceDataPackerBase
@@ -3174,11 +3174,11 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGInstanceDataPackerBase.PackInstances
-	// void PackInstances(FPCGContext& Context, class UPCGSpatialData* InSpatialData, FPCGMeshInstanceList& InstanceList, FPCGPackedCustomData& OutPackedCustomData); // [0xb07ae6c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void PackInstances(FPCGContext& Context, class UPCGSpatialData* InSpatialData, FPCGMeshInstanceList& InstanceList, FPCGPackedCustomData& OutPackedCustomData); // [0xb29f894] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGInstanceDataPackerBase.PackCustomDataFromAttributes
-	// void PackCustomDataFromAttributes(FPCGMeshInstanceList& InstanceList, class UPCGMetadata* MetaData, TArray<FName>& AttributeNames, FPCGPackedCustomData& OutPackedCustomData); // [0xb07abf4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void PackCustomDataFromAttributes(FPCGMeshInstanceList& InstanceList, class UPCGMetadata* MetaData, TArray<FName>& AttributeNames, FPCGPackedCustomData& OutPackedCustomData); // [0xb29f61c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGInstanceDataPackerBase.AddTypeToPacking
-	// bool AddTypeToPacking(int32_t TypeId, FPCGPackedCustomData& OutPackedCustomData);                                     // [0xb06f57c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool AddTypeToPacking(int32_t TypeId, FPCGPackedCustomData& OutPackedCustomData);                                     // [0xb295294] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGInstanceDataPackerByAttribute
@@ -3194,7 +3194,7 @@ public:
 class UPCGInstanceDataPackerByRegex : public UPCGInstanceDataPackerBase
 { 
 public:
-	SDK_UNDEFINED(16,14360) /* TArray<FString> */      __um(RegexPatterns);                                        // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14478) /* TArray<FString> */      __um(RegexPatterns);                                        // 0x0028   (0x0010)  
 };
 
 /// Class /Script/PCG.PCGMatchAndSetBase
@@ -3210,9 +3210,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGMatchAndSetBase.ValidatePreconditions
-	// bool ValidatePreconditions(class UPCGPointData* InPointData);                                                         // [0xb08478c] Native|Event|Public|BlueprintEvent|Const 
+	// bool ValidatePreconditions(class UPCGPointData* InPointData);                                                         // [0xb2a8fb4] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/PCG.PCGMatchAndSetBase.MatchAndSet
-	// void MatchAndSet(FPCGContext& Context, class UPCGPointMatchAndSetSettings* InSettings, class UPCGPointData* InPointData, class UPCGPointData* OutPointData); // [0xb07a05c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void MatchAndSet(FPCGContext& Context, class UPCGPointMatchAndSetSettings* InSettings, class UPCGPointData* InPointData, class UPCGPointData* OutPointData); // [0xb29ebe8] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/PCG.PCGMatchAndSetByAttributeEntry
@@ -3325,7 +3325,7 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FPCGWeightedByCategoryEntryList
 { 
-	SDK_UNDEFINED(16,14361) /* FString */              __um(CategoryEntry);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14479) /* FString */              __um(CategoryEntry);                                        // 0x0000   (0x0010)  
 	bool                                               IsDefault;                                                  // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
 	TArray<FPCGMeshSelectorWeightedEntry>              WeightedMeshEntries;                                        // 0x0018   (0x0010)  
@@ -3351,93 +3351,93 @@ class UPCGMetadata : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	class UPCGMetadata*                                Parent;                                                     // 0x0028   (0x0008)  
-	SDK_UNDEFINED(80,14362) /* TSet<TWeakObjectPtr<UPCGMetadata*>> */ __um(OtherParents);                          // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14480) /* TSet<TWeakObjectPtr<UPCGMetadata*>> */ __um(OtherParents);                          // 0x0030   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x88];                                      // 0x0080   (0x0088)  MISSED
 
 
 	/// Functions
 	// Function /Script/PCG.PCGMetadata.SetPointAttributes
-	// void SetPointAttributes(FPCGPoint& Point, class UPCGMetadata* MetaData, FPCGPoint& OutPoint);                         // [0xb07e7ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPointAttributes(FPCGPoint& Point, class UPCGMetadata* MetaData, FPCGPoint& OutPoint);                         // [0xb2a3014] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.SetAttributesByKey
-	// void SetAttributesByKey(int64_t Key, class UPCGMetadata* InMetaData, int64_t TargetKey, int64_t& OutKey);             // [0xb07b9b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetAttributesByKey(int64_t Key, class UPCGMetadata* InMetaData, int64_t TargetKey, int64_t& OutKey);             // [0xb2a031c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.ResetWeightedAttributesByKey
-	// void ResetWeightedAttributesByKey(int64_t TargetKey, int64_t& OutKey);                                                // [0xb07b314] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResetWeightedAttributesByKey(int64_t TargetKey, int64_t& OutKey);                                                // [0xb29fcb0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.ResetPointWeightedAttributes
-	// void ResetPointWeightedAttributes(FPCGPoint& OutPoint);                                                               // [0xb07b250] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResetPointWeightedAttributes(FPCGPoint& OutPoint);                                                               // [0xb29fbec] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.RenameAttribute
-	// bool RenameAttribute(FName AttributeToRename, FName NewAttributeName);                                                // [0xb07b104] Final|Native|Public|BlueprintCallable 
+	// bool RenameAttribute(FName AttributeToRename, FName NewAttributeName);                                                // [0xb29fb2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.MergePointAttributes
-	// void MergePointAttributes(FPCGPoint& PointA, class UPCGMetadata* MetadataA, FPCGPoint& PointB, class UPCGMetadata* MetadataB, FPCGPoint& TargetPoint, EPCGMetadataOp Op); // [0xb07a774] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MergePointAttributes(FPCGPoint& PointA, class UPCGMetadata* MetadataA, FPCGPoint& PointB, class UPCGMetadata* MetadataB, FPCGPoint& TargetPoint, EPCGMetadataOp Op); // [0xb29f19c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.MergeAttributesByKey
-	// void MergeAttributesByKey(int64_t KeyA, class UPCGMetadata* MetadataA, int64_t KeyB, class UPCGMetadata* MetadataB, int64_t TargetKey, EPCGMetadataOp Op, int64_t& OutKey); // [0xb07a3f8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MergeAttributesByKey(int64_t KeyA, class UPCGMetadata* MetadataA, int64_t KeyB, class UPCGMetadata* MetadataB, int64_t TargetKey, EPCGMetadataOp Op, int64_t& OutKey); // [0xb29ef84] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.InitializeWithAttributeFilter
-	// void InitializeWithAttributeFilter(class UPCGMetadata* InParent, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb079da8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitializeWithAttributeFilter(class UPCGMetadata* InParent, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb29e968] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.InitializeAsCopyWithAttributeFilter
-	// void InitializeAsCopyWithAttributeFilter(class UPCGMetadata* InMetadataToCopy, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb0793c0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitializeAsCopyWithAttributeFilter(class UPCGMetadata* InMetadataToCopy, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb29dfc4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.InitializeAsCopy
-	// void InitializeAsCopy(class UPCGMetadata* InMetadataToCopy);                                                          // [0xb079300] Final|Native|Public|BlueprintCallable 
+	// void InitializeAsCopy(class UPCGMetadata* InMetadataToCopy);                                                          // [0xb29df44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.Initialize
-	// void Initialize(class UPCGMetadata* InParent);                                                                        // [0xb079240] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class UPCGMetadata* InParent);                                                                        // [0xb29dec4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.HasCommonAttributes
-	// bool HasCommonAttributes(class UPCGMetadata* InMetaData);                                                             // [0xb079094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasCommonAttributes(class UPCGMetadata* InMetaData);                                                             // [0xb29dd58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGMetadata.HasAttribute
-	// bool HasAttribute(FName AttributeName);                                                                               // [0xb078b4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAttribute(FName AttributeName);                                                                               // [0xb29d910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGMetadata.GetAttributes
-	// void GetAttributes(TArray<FName>& AttributeNames, TArray<EPCGMetadataTypes>& AttributeTypes);                         // [0xb0737fc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAttributes(TArray<FName>& AttributeNames, TArray<EPCGMetadataTypes>& AttributeTypes);                         // [0xb29905c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGMetadata.Flatten
-	// void Flatten();                                                                                                       // [0xb073724] Final|Native|Public|BlueprintCallable 
+	// void Flatten();                                                                                                       // [0xb298fc8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.DeleteAttribute
-	// void DeleteAttribute(FName AttributeName);                                                                            // [0xb073664] Final|Native|Public|BlueprintCallable 
+	// void DeleteAttribute(FName AttributeName);                                                                            // [0xb298f48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateVectorAttribute
-	// class UPCGMetadata* CreateVectorAttribute(FName AttributeName, FVector DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb073408] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateVectorAttribute(FName AttributeName, FVector DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb298bc8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateVector4Attribute
-	// class UPCGMetadata* CreateVector4Attribute(FName AttributeName, FVector4 DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb07319c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateVector4Attribute(FName AttributeName, FVector4 DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb298838] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateVector2Attribute
-	// class UPCGMetadata* CreateVector2Attribute(FName AttributeName, FVector2D DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb072f48] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateVector2Attribute(FName AttributeName, FVector2D DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb2984c0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateTransformAttribute
-	// class UPCGMetadata* CreateTransformAttribute(FName AttributeName, FTransform DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb072c54] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateTransformAttribute(FName AttributeName, FTransform DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb2980a4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateStringAttribute
-	// class UPCGMetadata* CreateStringAttribute(FName AttributeName, FString DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb0723e4] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateStringAttribute(FName AttributeName, FString DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb297938] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateSoftObjectPathAttribute
-	// class UPCGMetadata* CreateSoftObjectPathAttribute(FName AttributeName, FSoftObjectPath& DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb0720c8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateSoftObjectPathAttribute(FName AttributeName, FSoftObjectPath& DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb297668] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateSoftClassPathAttribute
-	// class UPCGMetadata* CreateSoftClassPathAttribute(FName AttributeName, FSoftClassPath& DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb071790] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateSoftClassPathAttribute(FName AttributeName, FSoftClassPath& DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb296d78] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateRotatorAttribute
-	// class UPCGMetadata* CreateRotatorAttribute(FName AttributeName, FRotator DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb071534] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateRotatorAttribute(FName AttributeName, FRotator DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb2969f8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateQuatAttribute
-	// class UPCGMetadata* CreateQuatAttribute(FName AttributeName, FQuat DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb0712dc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UPCGMetadata* CreateQuatAttribute(FName AttributeName, FQuat DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb29667c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateNameAttribute
-	// class UPCGMetadata* CreateNameAttribute(FName AttributeName, FName DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb071094] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateNameAttribute(FName AttributeName, FName DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb296530] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateInteger64Attribute
-	// class UPCGMetadata* CreateInteger64Attribute(FName AttributeName, int64_t DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb070e48] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateInteger64Attribute(FName AttributeName, int64_t DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb2963e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateInteger32Attribute
-	// class UPCGMetadata* CreateInteger32Attribute(FName AttributeName, int32_t DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb070bfc] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateInteger32Attribute(FName AttributeName, int32_t DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb296290] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateFloatAttribute
-	// class UPCGMetadata* CreateFloatAttribute(FName AttributeName, float DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb0709b0] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateFloatAttribute(FName AttributeName, float DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb296140] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateDoubleAttribute
-	// class UPCGMetadata* CreateDoubleAttribute(FName AttributeName, double DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb070760] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateDoubleAttribute(FName AttributeName, double DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb295fe8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CreateBoolAttribute
-	// class UPCGMetadata* CreateBoolAttribute(FName AttributeName, bool DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb070514] Final|Native|Public|BlueprintCallable 
+	// class UPCGMetadata* CreateBoolAttribute(FName AttributeName, bool DefaultValue, bool bAllowsInterpolation, bool bOverrideParent); // [0xb295e90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CopyExistingAttribute
-	// bool CopyExistingAttribute(FName AttributeToCopy, FName NewAttributeName, bool bKeepParent);                          // [0xb06ff2c] Final|Native|Public|BlueprintCallable 
+	// bool CopyExistingAttribute(FName AttributeToCopy, FName NewAttributeName, bool bKeepParent);                          // [0xb29596c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CopyAttributes
-	// void CopyAttributes(class UPCGMetadata* InOther);                                                                     // [0xb06fd44] Final|Native|Public|BlueprintCallable 
+	// void CopyAttributes(class UPCGMetadata* InOther);                                                                     // [0xb2957c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.CopyAttribute
-	// void CopyAttribute(class UPCGMetadata* InOther, FName AttributeToCopy, FName NewAttributeName);                       // [0xb06fb00] Final|Native|Public|BlueprintCallable 
+	// void CopyAttribute(class UPCGMetadata* InOther, FName AttributeToCopy, FName NewAttributeName);                       // [0xb295640] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.ClearAttribute
-	// void ClearAttribute(FName AttributeToClear);                                                                          // [0xb06f970] Final|Native|Public|BlueprintCallable 
+	// void ClearAttribute(FName AttributeToClear);                                                                          // [0xb295530] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AddEntry
-	// int64_t AddEntry(int64_t ParentEntryKey);                                                                             // [0xb06f388] Final|Native|Public|BlueprintCallable 
+	// int64_t AddEntry(int64_t ParentEntryKey);                                                                             // [0xb295124] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AddAttributesFiltered
-	// void AddAttributesFiltered(class UPCGMetadata* InOther, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb06eea4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddAttributesFiltered(class UPCGMetadata* InOther, TSet<FName>& InFilteredAttributes, EPCGMetadataFilterMode InFilterMode); // [0xb294c80] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AddAttributes
-	// void AddAttributes(class UPCGMetadata* InOther);                                                                      // [0xb06ede4] Final|Native|Public|BlueprintCallable 
+	// void AddAttributes(class UPCGMetadata* InOther);                                                                      // [0xb294c00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AddAttribute
-	// void AddAttribute(class UPCGMetadata* InOther, FName AttributeName);                                                  // [0xb06ebb8] Final|Native|Public|BlueprintCallable 
+	// void AddAttribute(class UPCGMetadata* InOther, FName AttributeName);                                                  // [0xb294a54] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AccumulateWeightedAttributesByKey
-	// void AccumulateWeightedAttributesByKey(int64_t Key, class UPCGMetadata* MetaData, float Weight, bool bSetNonInterpolableAttributes, int64_t TargetKey, int64_t& OutKey); // [0xb06e6e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AccumulateWeightedAttributesByKey(int64_t Key, class UPCGMetadata* MetaData, float Weight, bool bSetNonInterpolableAttributes, int64_t TargetKey, int64_t& OutKey); // [0xb2946c8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadata.AccumulatePointWeightedAttributes
-	// void AccumulatePointWeightedAttributes(FPCGPoint& InPoint, class UPCGMetadata* InMetaData, float Weight, bool bSetNonInterpolableAttributes, FPCGPoint& OutPoint); // [0xb06e104] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AccumulatePointWeightedAttributes(FPCGPoint& InPoint, class UPCGMetadata* InMetaData, float Weight, bool bSetNonInterpolableAttributes, FPCGPoint& OutPoint); // [0xb2940e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGMetadataAccessorHelpers
@@ -3449,131 +3449,131 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVectorAttributeByMetadataKey
-	// void SetVectorAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector& Value); // [0xb084454] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector& Value); // [0xb2a8c7c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVectorAttribute
-	// void SetVectorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector& Value);         // [0xb0840c8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector& Value);         // [0xb2a88f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVector4AttributeByMetadataKey
-	// void SetVector4AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector4& Value); // [0xb083e28] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector4AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector4& Value); // [0xb2a8650] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVector4Attribute
-	// void SetVector4Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector4& Value);       // [0xb083b48] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector4Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector4& Value);       // [0xb2a8370] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVector2AttributeByMetadataKey
-	// void SetVector2AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector2D& Value); // [0xb0838bc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector2AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FVector2D& Value); // [0xb2a80e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetVector2Attribute
-	// void SetVector2Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector2D& Value);      // [0xb0835f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVector2Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FVector2D& Value);      // [0xb2a7e18] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetTransformAttributeByMetadataKey
-	// void SetTransformAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FTransform& Value); // [0xb083244] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTransformAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FTransform& Value); // [0xb2a7a6c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetTransformAttribute
-	// void SetTransformAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FTransform& Value);   // [0xb082e74] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTransformAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FTransform& Value);   // [0xb2a769c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetStringAttributeByMetadataKey
-	// void SetStringAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FString Value); // [0xb0824e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetStringAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FString Value); // [0xb2a6d08] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetStringAttribute
-	// void SetStringAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FString Value);          // [0xb081af8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetStringAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FString Value);          // [0xb2a6320] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetSoftObjectPathAttributeByMetadataKey
-	// void SetSoftObjectPathAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FSoftObjectPath& Value); // [0xb081230] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSoftObjectPathAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FSoftObjectPath& Value); // [0xb2a5a58] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetSoftObjectPathAttribute
-	// void SetSoftObjectPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FSoftObjectPath& Value); // [0xb080924] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSoftObjectPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FSoftObjectPath& Value); // [0xb2a514c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetSoftClassPathAttributeByMetadataKey
-	// void SetSoftClassPathAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FSoftClassPath& Value); // [0xb08005c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSoftClassPathAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FSoftClassPath& Value); // [0xb2a4884] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetSoftClassPathAttribute
-	// void SetSoftClassPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FSoftClassPath& Value); // [0xb07f750] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSoftClassPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FSoftClassPath& Value); // [0xb2a3f78] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetRotatorAttributeByMetadataKey
-	// void SetRotatorAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FRotator& Value); // [0xb07f440] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRotatorAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FRotator& Value); // [0xb2a3c68] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetRotatorAttribute
-	// void SetRotatorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FRotator& Value);       // [0xb07f0e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRotatorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FRotator& Value);       // [0xb2a3908] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetQuatAttributeByMetadataKey
-	// void SetQuatAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FQuat& Value);    // [0xb07ee54] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetQuatAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, FQuat& Value);    // [0xb2a367c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetQuatAttribute
-	// void SetQuatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FQuat& Value);             // [0xb07eb88] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetQuatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FQuat& Value);             // [0xb2a33b0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetNameAttribute
-	// void SetNameAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FName& Value);             // [0xb07e248] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetNameAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, FName& Value);             // [0xb2a2a70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetInteger64AttributeByMetadataKey
-	// void SetInteger64AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, int64_t Value); // [0xb07dedc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetInteger64AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, int64_t Value); // [0xb2a2704] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetInteger64Attribute
-	// void SetInteger64Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, int64_t Value);       // [0xb07db1c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetInteger64Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, int64_t Value);       // [0xb2a2344] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetInteger32AttributeByMetadataKey
-	// void SetInteger32AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, int32_t Value); // [0xb07d7b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetInteger32AttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, int32_t Value); // [0xb2a1fdc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetInteger32Attribute
-	// void SetInteger32Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, int32_t Value);       // [0xb07d3f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetInteger32Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, int32_t Value);       // [0xb2a1c20] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetFloatAttributeByMetadataKey
-	// void SetFloatAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, float Value);    // [0xb07d098] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetFloatAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, float Value);    // [0xb2a18c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetFloatAttribute
-	// void SetFloatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, float Value);             // [0xb07cce4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetFloatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, float Value);             // [0xb2a150c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetDoubleAttributeByMetadataKey
-	// void SetDoubleAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, double Value);  // [0xb07c834] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDoubleAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, double Value);  // [0xb2a10d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetDoubleAttribute
-	// void SetDoubleAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, double Value);           // [0xb07c470] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDoubleAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, double Value);           // [0xb2a0d10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetBoolAttributeByMetadataKey
-	// void SetBoolAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, bool Value);      // [0xb07c104] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetBoolAttributeByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, bool Value);      // [0xb2a09a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetBoolAttribute
-	// void SetBoolAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, bool Value);               // [0xb07bd44] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetBoolAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName, bool Value);               // [0xb2a05e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.SetAttributeFromPropertyByMetadataKey
-	// bool SetAttributeFromPropertyByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, class UObject* Object, FName PropertyName); // [0xb07b420] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool SetAttributeFromPropertyByMetadataKey(int64_t& Key, class UPCGMetadata* MetaData, FName AttributeName, class UObject* Object, FName PropertyName); // [0xb29fd84] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.InitializeMetadata
-	// void InitializeMetadata(FPCGPoint& Point, class UPCGMetadata* MetaData, FPCGPoint& ParentPoint, class UPCGMetadata* ParentMetadata); // [0xb0798a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void InitializeMetadata(FPCGPoint& Point, class UPCGMetadata* MetaData, FPCGPoint& ParentPoint, class UPCGMetadata* ParentMetadata); // [0xb29e464] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.HasAttributeSetByMetadataKey
-	// bool HasAttributeSetByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb078edc] Final|Native|Static|Public|BlueprintCallable 
+	// bool HasAttributeSetByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb29dc60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.HasAttributeSet
-	// bool HasAttributeSet(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                            // [0xb078c18] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool HasAttributeSet(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                            // [0xb29d99c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVectorAttributeByMetadataKey
-	// FVector GetVectorAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);              // [0xb078980] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector GetVectorAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);              // [0xb29d804] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVectorAttribute
-	// FVector GetVectorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                      // [0xb0786a4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetVectorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                      // [0xb29d528] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVector4AttributeByMetadataKey
-	// FVector4 GetVector4AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);            // [0xb0784d8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector4 GetVector4AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);            // [0xb29d420] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVector4Attribute
-	// FVector4 GetVector4Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb078200] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector4 GetVector4Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb29d148] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVector2AttributeByMetadataKey
-	// FVector2D GetVector2AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb07803c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector2D GetVector2AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb29d048] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetVector2Attribute
-	// FVector2D GetVector2Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb077d6c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector2D GetVector2Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb29cd78] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetTransformAttributeByMetadataKey
-	// FTransform GetTransformAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);        // [0xb077b58] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetTransformAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);        // [0xb29cc2c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetTransformAttribute
-	// FTransform GetTransformAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                // [0xb077860] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FTransform GetTransformAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                // [0xb29c934] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetStringAttributeByMetadataKey
-	// FString GetStringAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);              // [0xb077690] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetStringAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);              // [0xb29c824] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetStringAttribute
-	// FString GetStringAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                      // [0xb0773b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FString GetStringAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                      // [0xb29c548] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetSoftObjectPathAttributeByMetadataKey
-	// FSoftObjectPath GetSoftObjectPathAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName); // [0xb0771d4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FSoftObjectPath GetSoftObjectPathAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName); // [0xb29c428] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetSoftObjectPathAttribute
-	// FSoftObjectPath GetSoftObjectPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);      // [0xb076ef8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FSoftObjectPath GetSoftObjectPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);      // [0xb29c14c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetSoftClassPathAttributeByMetadataKey
-	// FSoftClassPath GetSoftClassPathAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName); // [0xb076d18] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FSoftClassPath GetSoftClassPathAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName); // [0xb29c02c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetSoftClassPathAttribute
-	// FSoftClassPath GetSoftClassPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);        // [0xb076a3c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FSoftClassPath GetSoftClassPathAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);        // [0xb29bd50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetRotatorAttributeByMetadataKey
-	// FRotator GetRotatorAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);            // [0xb076858] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRotator GetRotatorAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);            // [0xb29bc2c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetRotatorAttribute
-	// FRotator GetRotatorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb07657c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FRotator GetRotatorAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                    // [0xb29b950] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetQuatAttributeByMetadataKey
-	// FQuat GetQuatAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                  // [0xb0763b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FQuat GetQuatAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                  // [0xb29b848] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetQuatAttribute
-	// FQuat GetQuatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                          // [0xb0760d8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FQuat GetQuatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                          // [0xb29b570] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetNameAttribute
-	// FName GetNameAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                          // [0xb075b80] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FName GetNameAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                          // [0xb29b018] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetInteger64AttributeByMetadataKey
-	// int64_t GetInteger64AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb0759c8] Final|Native|Static|Public|BlueprintCallable 
+	// int64_t GetInteger64AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb29af20] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetInteger64Attribute
-	// int64_t GetInteger64Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb075704] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int64_t GetInteger64Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb29ac5c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetInteger32AttributeByMetadataKey
-	// int32_t GetInteger32AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb07554c] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetInteger32AttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);           // [0xb29ab64] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetInteger32Attribute
-	// int32_t GetInteger32Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb075288] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t GetInteger32Attribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb29a8a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetFloatAttributeByMetadataKey
-	// float GetFloatAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                 // [0xb0750b0] Final|Native|Static|Public|BlueprintCallable 
+	// float GetFloatAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                 // [0xb29a78c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetFloatAttribute
-	// float GetFloatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                         // [0xb074dec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float GetFloatAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                         // [0xb29a4c8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetDoubleAttributeByMetadataKey
-	// double GetDoubleAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);               // [0xb074c18] Final|Native|Static|Public|BlueprintCallable 
+	// double GetDoubleAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);               // [0xb29a3b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetDoubleAttribute
-	// double GetDoubleAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                       // [0xb074954] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// double GetDoubleAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                       // [0xb29a0f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetBoolAttributeByMetadataKey
-	// bool GetBoolAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb07479c] Final|Native|Static|Public|BlueprintCallable 
+	// bool GetBoolAttributeByMetadataKey(int64_t Key, class UPCGMetadata* MetaData, FName AttributeName);                   // [0xb299ffc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.GetBoolAttribute
-	// bool GetBoolAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                           // [0xb0744d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetBoolAttribute(FPCGPoint& Point, class UPCGMetadata* MetaData, FName AttributeName);                           // [0xb299d38] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGMetadataAccessorHelpers.CopyPoint
-	// void CopyPoint(FPCGPoint& InPoint, FPCGPoint& OutPoint, bool bCopyMetadata, class UPCGMetadata* InMetaData, class UPCGMetadata* OutMetadata); // [0xb0700f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CopyPoint(FPCGPoint& InPoint, FPCGPoint& OutPoint, bool bCopyMetadata, class UPCGMetadata* InMetaData, class UPCGMetadata* OutMetadata); // [0xb295a74] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/PCG.PCGRuntimeGenerationRadii
@@ -3599,7 +3599,7 @@ struct FPCGRuntimeGenerationRadii
 struct FPCGTaggedData
 { 
 	class UPCGData*                                    Data;                                                       // 0x0000   (0x0008)  
-	SDK_UNDEFINED(80,14363) /* TSet<FString> */        __um(Tags);                                                 // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,14481) /* TSet<FString> */        __um(Tags);                                                 // 0x0008   (0x0050)  
 	FName                                              Pin;                                                        // 0x0058   (0x0004)  
 	bool                                               bPinlessData;                                               // 0x005C   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x005D   (0x0003)  MISSED
@@ -3646,7 +3646,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0178   (0x0008)  MISSED
 	FBox                                               LastGeneratedBounds;                                        // 0x0180   (0x0038)  
 	FPCGDataCollection                                 GeneratedGraphOutput;                                       // 0x01B8   (0x0020)  
-	SDK_UNDEFINED(80,14364) /* TMap<FString, FPCGDataCollection> */ __um(PerPinGeneratedOutput);                   // 0x01D8   (0x0050)  
+	SDK_UNDEFINED(80,14482) /* TMap<FString, FPCGDataCollection> */ __um(PerPinGeneratedOutput);                   // 0x01D8   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0228   (0x0018)  MISSED
 	bool                                               bIsComponentLocal;                                          // 0x0240   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x2F];                                      // 0x0241   (0x002F)  MISSED
@@ -3654,29 +3654,29 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGComponent.SetGraph
-	// void SetGraph(class UPCGGraphInterface* InGraph);                                                                     // [0x80ee8e4] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void SetGraph(class UPCGGraphInterface* InGraph);                                                                     // [0x80ff048] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.SetEditingMode
-	// void SetEditingMode(EPCGEditorDirtyMode InEditingMode, EPCGEditorDirtyMode InSerializedEditingMode);                  // [0xb07cba4] Final|Native|Public|BlueprintCallable 
+	// void SetEditingMode(EPCGEditorDirtyMode InEditingMode, EPCGEditorDirtyMode InSerializedEditingMode);                  // [0xb2a1444] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.NotifyPropertiesChangedFromBlueprint
-	// void NotifyPropertiesChangedFromBlueprint();                                                                          // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void NotifyPropertiesChangedFromBlueprint();                                                                          // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.GetSerializedEditingMode
-	// EPCGEditorDirtyMode GetSerializedEditingMode();                                                                       // [0xb076a24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EPCGEditorDirtyMode GetSerializedEditingMode();                                                                       // [0xb29bd38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGComponent.GetGeneratedGraphOutput
-	// FPCGDataCollection GetGeneratedGraphOutput();                                                                         // [0xb07526c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPCGDataCollection GetGeneratedGraphOutput();                                                                         // [0xb29a884] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGComponent.GetEditingMode
-	// EPCGEditorDirtyMode GetEditingMode();                                                                                 // [0xb074dd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EPCGEditorDirtyMode GetEditingMode();                                                                                 // [0xb29a4b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGComponent.GenerateLocal
-	// void GenerateLocal(bool bForce);                                                                                      // [0xb073738] Final|Native|Public|BlueprintCallable 
+	// void GenerateLocal(bool bForce);                                                                                      // [0xb298fdc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.Generate
-	// void Generate(bool bForce);                                                                                           // [0x6d7d028] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void Generate(bool bForce);                                                                                           // [0x6deb2e8] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.ClearPCGLink
-	// class AActor* ClearPCGLink(class UClass* TemplateActor);                                                              // [0xb06fa30] Final|Native|Public|BlueprintCallable 
+	// class AActor* ClearPCGLink(class UClass* TemplateActor);                                                              // [0xb2955b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.CleanupLocal
-	// void CleanupLocal(bool bRemoveComponents, bool bSave);                                                                // [0xb06f828] Final|Native|Public|BlueprintCallable 
+	// void CleanupLocal(bool bRemoveComponents, bool bSave);                                                                // [0xb295474] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.Cleanup
-	// void Cleanup(bool bRemoveComponents, bool bSave);                                                                     // [0xb06f6d4] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void Cleanup(bool bRemoveComponents, bool bSave);                                                                     // [0xb2953ac] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGComponent.AddToManagedResources
-	// void AddToManagedResources(class UPCGManagedResource* InResource);                                                    // [0xb06f458] Final|Native|Public|BlueprintCallable 
+	// void AddToManagedResources(class UPCGManagedResource* InResource);                                                    // [0xb2951b4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGDataFunctionLibrary
@@ -3688,29 +3688,29 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetTypedInputsByTag
-	// TArray<UPCGData*> GetTypedInputsByTag(FPCGDataCollection& InCollection, FString InTag, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb0a29a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UPCGData*> GetTypedInputsByTag(FPCGDataCollection& InCollection, FString InTag, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb2c6a3c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetTypedInputsByPinLabel
-	// TArray<UPCGData*> GetTypedInputsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb0a2064] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UPCGData*> GetTypedInputsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb2c6100] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetTypedInputsByPin
-	// TArray<UPCGData*> GetTypedInputsByPin(FPCGDataCollection& InCollection, FPCGPinProperties& InPin, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb0a17a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UPCGData*> GetTypedInputsByPin(FPCGDataCollection& InCollection, FPCGPinProperties& InPin, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb2c583c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetTypedInputs
-	// TArray<UPCGData*> GetTypedInputs(FPCGDataCollection& InCollection, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb0a0f10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UPCGData*> GetTypedInputs(FPCGDataCollection& InCollection, TArray<FPCGTaggedData>& OutTaggedData, class UClass* InDataTypeClass); // [0xb2c4fac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetParamsByTag
-	// TArray<FPCGTaggedData> GetParamsByTag(FPCGDataCollection& InCollection, FString InTag);                               // [0xb0a06f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetParamsByTag(FPCGDataCollection& InCollection, FString InTag);                               // [0xb2c4794] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetParamsByPinLabel
-	// TArray<FPCGTaggedData> GetParamsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel);                       // [0xb0a0504] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetParamsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel);                       // [0xb2c45a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetParams
-	// TArray<FPCGTaggedData> GetParams(FPCGDataCollection& InCollection);                                                   // [0xb0a041c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetParams(FPCGDataCollection& InCollection);                                                   // [0xb2c44b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetInputsByTag
-	// TArray<FPCGTaggedData> GetInputsByTag(FPCGDataCollection& InCollection, FString InTag);                               // [0xb09fc28] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetInputsByTag(FPCGDataCollection& InCollection, FString InTag);                               // [0xb2c3cc4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetInputsByPinLabel
-	// TArray<FPCGTaggedData> GetInputsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel);                       // [0xb09fa34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetInputsByPinLabel(FPCGDataCollection& InCollection, FName InPinLabel);                       // [0xb2c3ad0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetInputs
-	// TArray<FPCGTaggedData> GetInputs(FPCGDataCollection& InCollection);                                                   // [0xb09f94c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetInputs(FPCGDataCollection& InCollection);                                                   // [0xb2c39e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.GetAllSettings
-	// TArray<FPCGTaggedData> GetAllSettings(FPCGDataCollection& InCollection);                                              // [0xb09f840] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FPCGTaggedData> GetAllSettings(FPCGDataCollection& InCollection);                                              // [0xb2c38dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGDataFunctionLibrary.AddToCollection
-	// void AddToCollection(FPCGDataCollection& InCollection, class UPCGData* InData, FName InPinLabel, TArray<FString> InTags); // [0xb09ed58] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddToCollection(FPCGDataCollection& InCollection, class UPCGData* InData, FName InPinLabel, TArray<FString> InTags); // [0xb2c2f68] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PCG.PCGEdge
@@ -3738,9 +3738,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGGraphInterface.GetMutablePCGGraph
-	// class UPCGGraph* GetMutablePCGGraph();                                                                                // [0x7dc584c] Final|Native|Public|BlueprintCallable 
+	// class UPCGGraph* GetMutablePCGGraph();                                                                                // [0x7ddeb78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraphInterface.GetConstPCGGraph
-	// class UPCGGraph* GetConstPCGGraph();                                                                                  // [0x2ba70cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGGraph* GetConstPCGGraph();                                                                                  // [0x27ccc08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGGraph
@@ -3765,23 +3765,23 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGGraph.RemoveNodes
-	// void RemoveNodes(TArray<UPCGNode*>& InNodes);                                                                         // [0xb0a3a94] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveNodes(TArray<UPCGNode*>& InNodes);                                                                         // [0xb2c7898] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.RemoveNode
-	// void RemoveNode(class UPCGNode* InNode);                                                                              // [0xb0a39d4] Final|Native|Public|BlueprintCallable 
+	// void RemoveNode(class UPCGNode* InNode);                                                                              // [0xb2c7818] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.RemoveEdge
-	// bool RemoveEdge(class UPCGNode* From, FName& FromLabel, class UPCGNode* To, FName& ToLabel);                          // [0xb0a3624] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveEdge(class UPCGNode* From, FName& FromLabel, class UPCGNode* To, FName& ToLabel);                          // [0xb2c7594] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.GetOutputNode
-	// class UPCGNode* GetOutputNode();                                                                                      // [0x9842ea4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGNode* GetOutputNode();                                                                                      // [0x9855910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGGraph.GetInputNode
-	// class UPCGNode* GetInputNode();                                                                                       // [0x5de9f78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGNode* GetInputNode();                                                                                       // [0x5e4f978] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGGraph.AddNodeOfType
-	// class UPCGNode* AddNodeOfType(class UClass* InSettingsClass, class UPCGSettings*& DefaultNodeSettings);               // [0xb09ebc0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UPCGNode* AddNodeOfType(class UClass* InSettingsClass, class UPCGSettings*& DefaultNodeSettings);               // [0xb2c2e14] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.AddNodeInstance
-	// class UPCGNode* AddNodeInstance(class UPCGSettings* InSettings);                                                      // [0xb09ea98] Final|Native|Public|BlueprintCallable 
+	// class UPCGNode* AddNodeInstance(class UPCGSettings* InSettings);                                                      // [0xb2c2d2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.AddNodeCopy
-	// class UPCGNode* AddNodeCopy(class UPCGSettings* InSettings, class UPCGSettings*& DefaultNodeSettings);                // [0xb09e91c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UPCGNode* AddNodeCopy(class UPCGSettings* InSettings, class UPCGSettings*& DefaultNodeSettings);                // [0xb2c2bf8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGGraph.AddEdge
-	// class UPCGNode* AddEdge(class UPCGNode* From, FName& FromPinLabel, class UPCGNode* To, FName& ToPinLabel);            // [0xb09e56c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UPCGNode* AddEdge(class UPCGNode* From, FName& FromPinLabel, class UPCGNode* To, FName& ToPinLabel);            // [0xb2c2974] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/PCG.PCGOverrideInstancedPropertyBag
@@ -3789,7 +3789,7 @@ public:
 struct FPCGOverrideInstancedPropertyBag
 { 
 	FInstancedPropertyBag                              Parameters;                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,14365) /* TSet<FGuid> */          __um(PropertiesIDsOverridden);                              // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,14483) /* TSet<FGuid> */          __um(PropertiesIDsOverridden);                              // 0x0010   (0x0050)  
 };
 
 /// Class /Script/PCG.PCGGraphInstance
@@ -3806,7 +3806,7 @@ public:
 class UPCGGraphInputOutputSettings : public UPCGSettings
 { 
 public:
-	SDK_UNDEFINED(80,14366) /* TSet<FName> */          __um(PinLabels);                                            // 0x0150   (0x0050)  
+	SDK_UNDEFINED(80,14484) /* TSet<FName> */          __um(PinLabels);                                            // 0x0150   (0x0050)  
 	TArray<FPCGPinProperties>                          CustomPins;                                                 // 0x01A0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x01B0   (0x0048)  MISSED
 };
@@ -3836,7 +3836,7 @@ public:
 class UPCGManagedActors : public UPCGManagedResource
 { 
 public:
-	SDK_UNDEFINED(80,14367) /* TSet<TWeakObjectPtr<AActor*>> */ __um(GeneratedActors);                             // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14485) /* TSet<TWeakObjectPtr<AActor*>> */ __um(GeneratedActors);                             // 0x0038   (0x0050)  
 };
 
 /// Class /Script/PCG.PCGManagedComponent
@@ -3844,7 +3844,7 @@ public:
 class UPCGManagedComponent : public UPCGManagedResource
 { 
 public:
-	SDK_UNDEFINED(32,14368) /* TWeakObjectPtr<UActorComponent*> */ __um(GeneratedComponent);                       // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,14486) /* TWeakObjectPtr<UActorComponent*> */ __um(GeneratedComponent);                       // 0x0038   (0x0020)  
 };
 
 /// Class /Script/PCG.PCGManagedISMComponent
@@ -3868,7 +3868,7 @@ class UPCGParamData : public UPCGData
 { 
 public:
 	class UPCGMetadata*                                MetaData;                                                   // 0x0038   (0x0008)  
-	SDK_UNDEFINED(80,14369) /* TMap<FName, int64_t> */ __um(NameMap);                                              // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,14487) /* TMap<FName, int64_t> */ __um(NameMap);                                              // 0x0040   (0x0050)  
 	bool                                               bHasCachedLastSelector;                                     // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0091   (0x0007)  MISSED
 	FPCGAttributePropertyInputSelector                 CachedLastSelector;                                         // 0x0098   (0x0028)  
@@ -3876,17 +3876,17 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGParamData.MutableMetadata
-	// class UPCGMetadata* MutableMetadata();                                                                                // [0x29973a8] Native|Public|BlueprintCallable 
+	// class UPCGMetadata* MutableMetadata();                                                                                // [0x2a35604] Native|Public|BlueprintCallable 
 	// Function /Script/PCG.PCGParamData.FindOrAddMetadataKey
-	// int64_t FindOrAddMetadataKey(FName& InName);                                                                          // [0xb09f7a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// int64_t FindOrAddMetadataKey(FName& InName);                                                                          // [0xb2c3844] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGParamData.FindMetadataKey
-	// int64_t FindMetadataKey(FName& InName);                                                                               // [0xb09f710] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int64_t FindMetadataKey(FName& InName);                                                                               // [0xb2c37ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGParamData.FilterParamsByName
-	// class UPCGParamData* FilterParamsByName(FName& InName);                                                               // [0xb09f63c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGParamData* FilterParamsByName(FName& InName);                                                               // [0xb2c36d8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGParamData.FilterParamsByKey
-	// class UPCGParamData* FilterParamsByKey(int64_t InKey);                                                                // [0xb09f56c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGParamData* FilterParamsByKey(int64_t InKey);                                                                // [0xb2c3648] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PCG.PCGParamData.ConstMetadata
-	// class UPCGMetadata* ConstMetadata();                                                                                  // [0x5ff8e2c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPCGMetadata* ConstMetadata();                                                                                  // [0x606416c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGBlueprintPinHelpers
@@ -3898,9 +3898,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGBlueprintPinHelpers.MakePinProperty
-	// FPCGPinProperties MakePinProperty(FName Label, bool bAllowMultipleData, bool bAllowMultipleConnections, bool bAdvancedPin, EPCGExclusiveDataType AllowedType); // [0xb0a32f4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FPCGPinProperties MakePinProperty(FName Label, bool bAllowMultipleData, bool bAllowMultipleConnections, bool bAdvancedPin, EPCGExclusiveDataType AllowedType); // [0xb2c7390] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/PCG.PCGBlueprintPinHelpers.BreakPinProperty
-	// void BreakPinProperty(FPCGPinProperties& PinProperty, FName& Label, bool& bAllowMultipleData, bool& bAllowMultipleConnections, bool& bAdvancedPin, EPCGExclusiveDataType& AllowedType); // [0xb09f204] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BreakPinProperty(FPCGPinProperties& PinProperty, FName& Label, bool& bAllowMultipleData, bool& bAllowMultipleConnections, bool& bAdvancedPin, EPCGExclusiveDataType& AllowedType); // [0xb2c3414] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/PCG.PCGPin
@@ -3919,9 +3919,9 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGPin.SetToolTip
-	// void SetToolTip(FText& InTooltip);                                                                                    // [0x9539f68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetToolTip(FText& InTooltip);                                                                                    // [0x9549344] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PCG.PCGPin.GetTooltip
-	// FText GetTooltip();                                                                                                   // [0x9f27094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetTooltip();                                                                                                   // [0x9f39a50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PCG.PCGSettingsInstance
@@ -3972,7 +3972,7 @@ public:
 	class UPCGLandscapeCache*                          LandscapeCacheObject;                                       // 0x0298   (0x0008)  
 	bool                                               bUse2DGrid;                                                 // 0x02A0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
-	SDK_UNDEFINED(80,14370) /* TMap<uint32_t, FGuid> */ __um(GridGuids);                                           // 0x02A8   (0x0050)  
+	SDK_UNDEFINED(80,14488) /* TMap<uint32_t, FGuid> */ __um(GridGuids);                                           // 0x02A8   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x02F8   (0x0008)  MISSED
 };
 
@@ -4030,7 +4030,7 @@ public:
 
 	/// Functions
 	// Function /Script/PCG.PCGDeterminismTestBlueprintBase.ExecuteTest
-	// void ExecuteTest(class UPCGNode* InPCGNode, FDeterminismTestResult& InOutTestResult);                                 // [0xb0a9c34] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void ExecuteTest(class UPCGNode* InPCGNode, FDeterminismTestResult& InOutTestResult);                                 // [0xb2cda40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 };
 
 /// Class /Script/PCG.PCGDummyGetPropertyTest
@@ -4072,7 +4072,7 @@ public:
 	bool                                               BoolProperty;                                               // 0x02A8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x02A9   (0x0003)  MISSED
 	FName                                              NameProperty;                                               // 0x02AC   (0x0004)  
-	SDK_UNDEFINED(16,14371) /* FString */              __um(StringProperty);                                       // 0x02B0   (0x0010)  
+	SDK_UNDEFINED(16,14489) /* FString */              __um(StringProperty);                                       // 0x02B0   (0x0010)  
 	EPCGUnitTestDummyEnum                              EnumProperty;                                               // 0x02C0   (0x0008)  
 	FVector                                            VectorProperty;                                             // 0x02C8   (0x0018)  
 	FVector4                                           Vector4Property;                                            // 0x02E0   (0x0020)  
@@ -4108,7 +4108,7 @@ public:
 struct FPCGActorPropertyOverride
 { 
 	FPCGAttributePropertyInputSelector                 InputSource;                                                // 0x0000   (0x0028)  
-	SDK_UNDEFINED(16,14372) /* FString */              __um(PropertyTarget);                                       // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14490) /* FString */              __um(PropertyTarget);                                       // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/PCG.PCGAttributeExtractorTestStructDepth2
@@ -4140,7 +4140,7 @@ struct FPCGDataTableRowToParamDataTestStruct
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14373) /* FString */              __um(String);                                               // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14491) /* FString */              __um(String);                                               // 0x0008   (0x0010)  
 	int32_t                                            I32;                                                        // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	int64_t                                            I64;                                                        // 0x0020   (0x0008)  
@@ -4233,8 +4233,8 @@ struct FPCGDebugVisualizationSettings
 	float                                              PointScale;                                                 // 0x0000   (0x0004)  
 	EPCGDebugVisScaleMethod                            ScaleMethod;                                                // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
-	SDK_UNDEFINED(32,14374) /* TWeakObjectPtr<UStaticMesh*> */ __um(PointMesh);                                    // 0x0008   (0x0020)  
-	SDK_UNDEFINED(32,14375) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialOverride);                      // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,14492) /* TWeakObjectPtr<UStaticMesh*> */ __um(PointMesh);                                    // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,14493) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialOverride);                      // 0x0028   (0x0020)  
 	bool                                               bCheckForDuplicates;                                        // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0049   (0x0007)  MISSED
 };
@@ -4252,7 +4252,7 @@ struct FPCGPreConfiguredSettingsInfo
 { 
 	int32_t                                            PreconfiguredIndex;                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14376) /* FText */                __um(Label);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,14494) /* FText */                __um(Label);                                                // 0x0008   (0x0018)  
 };
 
 /// Struct /Script/PCG.DeterminismTestResult
@@ -4261,11 +4261,11 @@ struct FDeterminismTestResult
 { 
 	FName                                              TestResultTitle;                                            // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14377) /* FString */              __um(TestResultName);                                       // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14495) /* FString */              __um(TestResultName);                                       // 0x0008   (0x0010)  
 	int32_t                                            Seed;                                                       // 0x0018   (0x0004)  
 	EPCGDataType                                       DataTypesTested;                                            // 0x001C   (0x0004)  
-	SDK_UNDEFINED(80,14378) /* TMap<FName, EDeterminismLevel> */ __um(TestResults);                                // 0x0020   (0x0050)  
-	SDK_UNDEFINED(16,14379) /* TArray<FString> */      __um(AdditionalDetails);                                    // 0x0070   (0x0010)  
+	SDK_UNDEFINED(80,14496) /* TMap<FName, EDeterminismLevel> */ __um(TestResults);                                // 0x0020   (0x0050)  
+	SDK_UNDEFINED(16,14497) /* TArray<FString> */      __um(AdditionalDetails);                                    // 0x0070   (0x0010)  
 	bool                                               bFlagRaised;                                                // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0081   (0x0007)  MISSED
 };

@@ -53,16 +53,16 @@ class UCustomizableObjectPopulation : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,12635) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,12730) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
 	TArray<FClassWeightPair>                           ClassWeights;                                               // 0x0038   (0x0010)  
 	class UCustomizableObjectPopulationGenerator*      Generator;                                                  // 0x0048   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CustomizableObjectPopulation.CustomizableObjectPopulation.RegeneratePopulation
-	// bool RegeneratePopulation(int32_t Seed, TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate); // [0xaa55750] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool RegeneratePopulation(int32_t Seed, TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate); // [0xad54620] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObjectPopulation.CustomizableObjectPopulation.GeneratePopulation
-	// int32_t GeneratePopulation(TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate);       // [0xaa54f94] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GeneratePopulation(TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate);       // [0xad53e64] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CustomizableObjectPopulation.ConstraintRanges
@@ -83,10 +83,10 @@ struct FCustomizableObjectPopulationConstraint
 	int32_t                                            ConstraintWeight;                                           // 0x0004   (0x0004)  
 	int32_t                                            TrueWeight;                                                 // 0x0008   (0x0004)  
 	int32_t                                            FalseWeight;                                                // 0x000C   (0x0004)  
-	SDK_UNDEFINED(16,12636) /* FString */              __um(DiscreteValue);                                        // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12731) /* FString */              __um(DiscreteValue);                                        // 0x0010   (0x0010)  
 	FLinearColor                                       DiscreteColor;                                              // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,12637) /* TArray<FString> */      __um(AllowList);                                            // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,12638) /* TArray<FString> */      __um(Blocklist);                                            // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,12732) /* TArray<FString> */      __um(AllowList);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,12733) /* TArray<FString> */      __um(Blocklist);                                            // 0x0040   (0x0010)  
 	TArray<FConstraintRanges>                          Ranges;                                                     // 0x0050   (0x0010)  
 	class UCurveBase*                                  Curve;                                                      // 0x0060   (0x0008)  
 	ECurveColor                                        CurveColor;                                                 // 0x0068   (0x0001)  
@@ -97,7 +97,7 @@ struct FCustomizableObjectPopulationConstraint
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FCustomizableObjectPopulationCharacteristic
 { 
-	SDK_UNDEFINED(16,12639) /* FString */              __um(ParameterName);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12734) /* FString */              __um(ParameterName);                                        // 0x0000   (0x0010)  
 	TArray<FCustomizableObjectPopulationConstraint>    Constraints;                                                // 0x0010   (0x0010)  
 };
 
@@ -107,12 +107,12 @@ class UCustomizableObjectPopulationClass : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,12640) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,12735) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
 	class UCustomizableObject*                         CustomizableObject;                                         // 0x0038   (0x0008)  
-	SDK_UNDEFINED(16,12641) /* TArray<FString> */      __um(AllowList);                                            // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,12642) /* TArray<FString> */      __um(Blocklist);                                            // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,12736) /* TArray<FString> */      __um(AllowList);                                            // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,12737) /* TArray<FString> */      __um(Blocklist);                                            // 0x0050   (0x0010)  
 	TArray<FCustomizableObjectPopulationCharacteristic> Characteristics;                                           // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,12643) /* TArray<FString> */      __um(Tags);                                                 // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,12738) /* TArray<FString> */      __um(Tags);                                                 // 0x0070   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0080   (0x0010)  MISSED
 };
 
@@ -130,14 +130,14 @@ public:
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FPopulationClassParameterOptions
 { 
-	SDK_UNDEFINED(16,12644) /* TArray<FString> */      __um(Tags);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12739) /* TArray<FString> */      __um(Tags);                                                 // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/CustomizableObjectPopulation.PopulationClassParameter
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FPopulationClassParameter
 { 
-	SDK_UNDEFINED(16,12645) /* TArray<FString> */      __um(Tags);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,12646) /* TMap<FString, FPopulationClassParameterOptions> */ __um(ParameterOptions);          // 0x0010   (0x0050)  
+	SDK_UNDEFINED(16,12740) /* TArray<FString> */      __um(Tags);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(80,12741) /* TMap<FString, FPopulationClassParameterOptions> */ __um(ParameterOptions);          // 0x0010   (0x0050)  
 };
 

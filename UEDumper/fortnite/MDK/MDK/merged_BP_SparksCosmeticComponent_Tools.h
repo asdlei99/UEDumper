@@ -31,11 +31,11 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/BP_SparksCosmeticComponent.BP_SparksCosmeticComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/BP_SparksCosmeticComponent.BP_SparksCosmeticComponent_C.Debug_BP_ShowCosmeticPicker
-	// void Debug_BP_ShowCosmeticPicker(bool bShow);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void Debug_BP_ShowCosmeticPicker(bool bShow);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/BP_SparksCosmeticComponent.BP_SparksCosmeticComponent_C.ExecuteUbergraph_BP_SparksCosmeticComponent
-	// void ExecuteUbergraph_BP_SparksCosmeticComponent(int32_t EntryPoint);                                                    // [0x130d900] Final                
+	// void ExecuteUbergraph_BP_SparksCosmeticComponent(int32_t EntryPoint);                                                    // [0x3d1d968] Final                
 };
 
 /// Class /Game/Tools/Turntable_2/SunDirectionandColorSet.SunDirectionandColorSet_C
@@ -54,13 +54,13 @@ public:
 
 	/// Functions
 	// Function /Game/Tools/Turntable_2/SunDirectionandColorSet.SunDirectionandColorSet_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                           // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                           // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Tools/Turntable_2/SunDirectionandColorSet.SunDirectionandColorSet_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Game/Tools/Turntable_2/SunDirectionandColorSet.SunDirectionandColorSet_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Game/Tools/Turntable_2/SunDirectionandColorSet.SunDirectionandColorSet_C.ExecuteUbergraph_SunDirectionandColorSet
-	// void ExecuteUbergraph_SunDirectionandColorSet(int32_t EntryPoint);                                                       // [0x130d900] Final                
+	// void ExecuteUbergraph_SunDirectionandColorSet(int32_t EntryPoint);                                                       // [0x3d1d968] Final                
 };
 
 /// Class /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C
@@ -87,27 +87,57 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.GetChoice
-	// void GetChoice(ESparksAccountItemSubtype Item Subtype, ESparksInstrumentType Instrument type, FGameplayTag Variant Channel, FString& Choice); // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void GetChoice(ESparksAccountItemSubtype Item Subtype, ESparksInstrumentType Instrument type, FGameplayTag Variant Channel, FString& Choice); // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.OnCosmeticItemChanged
-	// void OnCosmeticItemChanged(class USparksAccountItemDefinition* ItemDef);                                                 // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnCosmeticItemChanged(class USparksAccountItemDefinition* ItemDef);                                                 // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.OnCosmeticChoiceChanged
-	// void OnCosmeticChoiceChanged(ESparksAccountItemSubtype Subtype, ESparksInstrumentType InstrumentType);                   // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnCosmeticChoiceChanged(ESparksAccountItemSubtype Subtype, ESparksInstrumentType InstrumentType);                   // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.SetCosmeticComponent
-	// void SetCosmeticComponent(class UBP_SparksCosmeticComponent_C* Component);                                               // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void SetCosmeticComponent(class UBP_SparksCosmeticComponent_C* Component);                                               // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.ReloadData
-	// void ReloadData();                                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ReloadData();                                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.Construct
-	// void Construct();                                                                                                        // [0x130d900] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Construct();                                                                                                        // [0x3d1d968] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.BndEvt__WBP_Sparks_CosmeticPicker_chk_Collapse_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature
-	// void BndEvt__WBP_Sparks_CosmeticPicker_chk_Collapse_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_CosmeticPicker_chk_Collapse_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.BndEvt__WBP_Sparks_CosmeticPicker_btn_Reload_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-	// void BndEvt__WBP_Sparks_CosmeticPicker_btn_Reload_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_CosmeticPicker_btn_Reload_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Defaults_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
-	// void BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Defaults_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Defaults_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Save_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
-	// void BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Save_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_Dbg_CosmeticPicker_btn_Save_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButtonLegacy* Button); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticPicker.WBP_Sparks_Dbg_CosmeticPicker_C.ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticPicker
-	// void ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticPicker(int32_t EntryPoint);                                                 // [0x130d900] Final                
+	// void ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticPicker(int32_t EntryPoint);                                                 // [0x3d1d968] Final                
+};
+
+/// Class /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C
+/// Size: 0x002D (0x0002C0 - 0x0002ED)
+class UWBP_Sparks_Dbg_VariantChannel_C : public UUserWidget
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 749;
+
+public:
+	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0x2C0, 8, 0, 0})
+	CMember(class UComboBoxString*)                    cb_ItemList                                                 OFFSET(get<T>, {0x2C8, 8, 0, 0})
+	CMember(class UImage*)                             Image                                                       OFFSET(get<T>, {0x2D0, 8, 0, 0})
+	CMember(class UCommonTextBlock*)                   txt_Name                                                    OFFSET(get<T>, {0x2D8, 8, 0, 0})
+	CMember(class UWBP_Sparks_Dbg_CosmeticItem_C*)     ParentItem                                                  OFFSET(get<T>, {0x2E0, 8, 0, 0})
+	SMember(FGameplayTag)                              ChannelTag                                                  OFFSET(getStruct<T>, {0x2E8, 4, 0, 0})
+	DMember(bool)                                      SendUpdates                                                 OFFSET(get<bool>, {0x2EC, 1, 0, 0})
+
+
+	/// Functions
+	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.ShouldSendUpdates
+	// void ShouldSendUpdates(bool ShouldSend);                                                                                 // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.SetSelection
+	// void SetSelection(FString Choice);                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.SetNameAndChannels
+	// void SetNameAndChannels(FGameplayTag tag, FText Channel Name, TArray<FString>& Options);                                 // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.BndEvt__WBP_Sparks_Dbg_VariantChannel_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature
+	// void BndEvt__WBP_Sparks_Dbg_VariantChannel_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(FString SelectedItem, TEnumAsByte<ESelectInfo> SelectionType); // [0x3d1d968] BlueprintEvent       
+	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.ExecuteUbergraph_WBP_Sparks_Dbg_VariantChannel
+	// void ExecuteUbergraph_WBP_Sparks_Dbg_VariantChannel(int32_t EntryPoint);                                                 // [0x3d1d968] Final                
 };
 
 /// Class /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C
@@ -131,19 +161,19 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.RefreshChoices
-	// void RefreshChoices();                                                                                                   // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void RefreshChoices();                                                                                                   // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.ChildSetChoice
-	// void ChildSetChoice(FGameplayTag Channel, FString Choice);                                                               // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ChildSetChoice(FGameplayTag Channel, FString Choice);                                                               // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.RefreshData
-	// void RefreshData(TMap<FGameplayTag, FString> Choices);                                                                   // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void RefreshData(TMap<FGameplayTag, FString> Choices);                                                                   // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.SetTypes
-	// void SetTypes(ESparksAccountItemSubtype Subtype, ESparksInstrumentType Instrument);                                      // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetTypes(ESparksAccountItemSubtype Subtype, ESparksInstrumentType Instrument);                                      // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.SetItemInfo
-	// void SetItemInfo(class USparksAccountItemDefinition* Item);                                                              // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetItemInfo(class USparksAccountItemDefinition* Item);                                                              // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.BndEvt__WBP_Sparks_Dbg_CosmeticItem_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature
-	// void BndEvt__WBP_Sparks_Dbg_CosmeticItem_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(FString SelectedItem, TEnumAsByte<ESelectInfo> SelectionType); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_Dbg_CosmeticItem_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(FString SelectedItem, TEnumAsByte<ESelectInfo> SelectionType); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_CosmeticItem.WBP_Sparks_Dbg_CosmeticItem_C.ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticItem
-	// void ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticItem(int32_t EntryPoint);                                                   // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_WBP_Sparks_Dbg_CosmeticItem(int32_t EntryPoint);                                                   // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Class /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C
@@ -167,46 +197,16 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.OnChoiceChanged
-	// void OnChoiceChanged(ESparksInstrumentType Instrument);                                                                  // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnChoiceChanged(ESparksInstrumentType Instrument);                                                                  // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.SetItemInfo
-	// void SetItemInfo(class USparksAccountItemDefinition* NewItem);                                                           // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void SetItemInfo(class USparksAccountItemDefinition* NewItem);                                                           // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.RefreshAll
-	// void RefreshAll();                                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void RefreshAll();                                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.SetGroupSubtype
-	// void SetGroupSubtype(ESparksAccountItemSubtype ItemType);                                                                // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetGroupSubtype(ESparksAccountItemSubtype ItemType);                                                                // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.BndEvt__WBP_Sparks_Dbg_Cosmetic_Group_chk_Collapse_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-	// void BndEvt__WBP_Sparks_Dbg_Cosmetic_Group_chk_Collapse_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked); // [0x130d900] BlueprintEvent       
+	// void BndEvt__WBP_Sparks_Dbg_Cosmetic_Group_chk_Collapse_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked); // [0x3d1d968] BlueprintEvent       
 	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_Cosmetic_Group.WBP_Sparks_Dbg_Cosmetic_Group_C.ExecuteUbergraph_WBP_Sparks_Dbg_Cosmetic_Group
-	// void ExecuteUbergraph_WBP_Sparks_Dbg_Cosmetic_Group(int32_t EntryPoint);                                                 // [0x130d900] Final                
-};
-
-/// Class /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C
-/// Size: 0x002D (0x0002C0 - 0x0002ED)
-class UWBP_Sparks_Dbg_VariantChannel_C : public UUserWidget
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 749;
-
-public:
-	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0x2C0, 8, 0, 0})
-	CMember(class UComboBoxString*)                    cb_ItemList                                                 OFFSET(get<T>, {0x2C8, 8, 0, 0})
-	CMember(class UImage*)                             Image                                                       OFFSET(get<T>, {0x2D0, 8, 0, 0})
-	CMember(class UCommonTextBlock*)                   txt_Name                                                    OFFSET(get<T>, {0x2D8, 8, 0, 0})
-	CMember(class UWBP_Sparks_Dbg_CosmeticItem_C*)     ParentItem                                                  OFFSET(get<T>, {0x2E0, 8, 0, 0})
-	SMember(FGameplayTag)                              ChannelTag                                                  OFFSET(getStruct<T>, {0x2E8, 4, 0, 0})
-	DMember(bool)                                      SendUpdates                                                 OFFSET(get<bool>, {0x2EC, 1, 0, 0})
-
-
-	/// Functions
-	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.ShouldSendUpdates
-	// void ShouldSendUpdates(bool ShouldSend);                                                                                 // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
-	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.SetSelection
-	// void SetSelection(FString Choice);                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
-	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.SetNameAndChannels
-	// void SetNameAndChannels(FGameplayTag tag, FText Channel Name, TArray<FString>& Options);                                 // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.BndEvt__WBP_Sparks_Dbg_VariantChannel_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature
-	// void BndEvt__WBP_Sparks_Dbg_VariantChannel_cb_ItemList_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(FString SelectedItem, TEnumAsByte<ESelectInfo> SelectionType); // [0x130d900] BlueprintEvent       
-	// Function /SparksCosmetics/Tools/WBP_Sparks_Dbg_VariantChannel.WBP_Sparks_Dbg_VariantChannel_C.ExecuteUbergraph_WBP_Sparks_Dbg_VariantChannel
-	// void ExecuteUbergraph_WBP_Sparks_Dbg_VariantChannel(int32_t EntryPoint);                                                 // [0x130d900] Final                
+	// void ExecuteUbergraph_WBP_Sparks_Dbg_Cosmetic_Group(int32_t EntryPoint);                                                 // [0x3d1d968] Final                
 };
 

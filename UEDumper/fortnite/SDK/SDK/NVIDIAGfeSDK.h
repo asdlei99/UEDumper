@@ -74,7 +74,7 @@ enum class EGfeSDKHighlightSignificance : uint8_t
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FGfeSDKCreateInputParams
 { 
-	SDK_UNDEFINED(16,14848) /* FString */              __um(AppName);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14988) /* FString */              __um(AppName);                                              // 0x0000   (0x0010)  
 	TArray<EGfeSDKScope>                               RequiredScopes;                                             // 0x0010   (0x0010)  
 	bool                                               PollForCallbacks;                                           // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
@@ -87,20 +87,20 @@ struct FGfeSDKCreateResponse
 	uint16_t                                           VersionMajor;                                               // 0x0000   (0x0002)  
 	uint16_t                                           VersionMinor;                                               // 0x0002   (0x0002)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14849) /* FString */              __um(NVIDIAGfeVersion);                                     // 0x0008   (0x0010)  
-	SDK_UNDEFINED(80,14850) /* TMap<EGfeSDKScope, EGfeSDKPermission> */ __um(ScopePermissions);                    // 0x0018   (0x0050)  
+	SDK_UNDEFINED(16,14989) /* FString */              __um(NVIDIAGfeVersion);                                     // 0x0008   (0x0010)  
+	SDK_UNDEFINED(80,14990) /* TMap<EGfeSDKScope, EGfeSDKPermission> */ __um(ScopePermissions);                    // 0x0018   (0x0050)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKHighlightDefinition
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FGfeSDKHighlightDefinition
 { 
-	SDK_UNDEFINED(16,14851) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14991) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
 	bool                                               UserDefaultInterest;                                        // 0x0010   (0x0001)  
 	EGfeSDKHighlightType                               HighlightTags;                                              // 0x0011   (0x0001)  
 	EGfeSDKHighlightSignificance                       Significance;                                               // 0x0012   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x5];                                       // 0x0013   (0x0005)  MISSED
-	SDK_UNDEFINED(80,14852) /* TMap<FString, FString> */ __um(NameTranslationTable);                               // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,14992) /* TMap<FString, FString> */ __um(NameTranslationTable);                               // 0x0018   (0x0050)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKHighlightConfigParams
@@ -108,7 +108,7 @@ struct FGfeSDKHighlightDefinition
 struct FGfeSDKHighlightConfigParams
 { 
 	TArray<FGfeSDKHighlightDefinition>                 HighlightDefinitions;                                       // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14853) /* FString */              __um(DefaultLocale);                                        // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14993) /* FString */              __um(DefaultLocale);                                        // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKRequestPermissionsParams
@@ -122,22 +122,22 @@ struct FGfeSDKRequestPermissionsParams
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FGfeSDKPermissionsChangedData
 { 
-	SDK_UNDEFINED(80,14854) /* TMap<EGfeSDKScope, EGfeSDKPermission> */ __um(ScopePermissions);                    // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14994) /* TMap<EGfeSDKScope, EGfeSDKPermission> */ __um(ScopePermissions);                    // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKHighlightOpenGroupParams
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FGfeSDKHighlightOpenGroupParams
 { 
-	SDK_UNDEFINED(16,14855) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,14856) /* TMap<FString, FString> */ __um(GroupDescriptionTranslationTable);                   // 0x0010   (0x0050)  
+	SDK_UNDEFINED(16,14995) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(80,14996) /* TMap<FString, FString> */ __um(GroupDescriptionTranslationTable);                   // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKHighlightCloseGroupParams
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FGfeSDKHighlightCloseGroupParams
 { 
-	SDK_UNDEFINED(16,14857) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14997) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
 	bool                                               DestroyHighlights;                                          // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };
@@ -146,16 +146,16 @@ struct FGfeSDKHighlightCloseGroupParams
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FGfeSDKHighlightScreenshotParams
 { 
-	SDK_UNDEFINED(16,14858) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14859) /* FString */              __um(HighlightId);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14998) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14999) /* FString */              __um(HighlightId);                                          // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/NVIDIAGfeSDK.GfeSDKHighlightVideoParams
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FGfeSDKHighlightVideoParams
 { 
-	SDK_UNDEFINED(16,14860) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14861) /* FString */              __um(HighlightId);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,15000) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15001) /* FString */              __um(HighlightId);                                          // 0x0010   (0x0010)  
 	int32_t                                            StartDelta;                                                 // 0x0020   (0x0004)  
 	int32_t                                            EndDelta;                                                   // 0x0024   (0x0004)  
 };
@@ -164,7 +164,7 @@ struct FGfeSDKHighlightVideoParams
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FGfeSDKHighlightGroupView
 { 
-	SDK_UNDEFINED(16,14862) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15002) /* FString */              __um(GroupId);                                              // 0x0000   (0x0010)  
 	EGfeSDKHighlightType                               TagsFilter;                                                 // 0x0010   (0x0001)  
 	EGfeSDKHighlightSignificance                       SignificanceFilter;                                         // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0012   (0x0006)  MISSED

@@ -32,8 +32,8 @@ public:
 
 	/// Functions
 	// Function /Script/NightNightModeRuntime.FortPawnComponent_NightNight.SetAllowUIViewTarget
-	// void SetAllowUIViewTarget(bool bAllow);                                                                               // [0xc1509d8] Final|Native|Public|BlueprintCallable 
+	// void SetAllowUIViewTarget(bool bAllow);                                                                               // [0xc0fd8ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NightNightModeRuntime.FortPawnComponent_NightNight.OnUIViewTargetChanged
-	// void OnUIViewTargetChanged(class UFortUICameraManagerComponent* InUICameraManagerComponent, class AActor* OldUIViewTarget, class AActor* NewUIViewTarget); // [0xc15081c] Final|Native|Private 
+	// void OnUIViewTargetChanged(class UFortUICameraManagerComponent* InUICameraManagerComponent, class AActor* OldUIViewTarget, class AActor* NewUIViewTarget); // [0xc0fd7f4] Final|Native|Private 
 };
 

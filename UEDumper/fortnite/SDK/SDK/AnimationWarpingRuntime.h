@@ -76,11 +76,11 @@ struct FFootPlacementTraceSettings
 	float                                              StartOffset;                                                // 0x0000   (0x0004)  
 	float                                              EndOffset;                                                  // 0x0004   (0x0004)  
 	float                                              SweepRadius;                                                // 0x0008   (0x0004)  
-	SDK_UNDEFINED(1,9352) /* TEnumAsByte<ETraceTypeQuery> */ __um(ComplexTraceChannel);                            // 0x000C   (0x0001)  
+	SDK_UNDEFINED(1,9394) /* TEnumAsByte<ETraceTypeQuery> */ __um(ComplexTraceChannel);                            // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
 	float                                              MaxGroundPenetration;                                       // 0x0010   (0x0004)  
 	float                                              SimpleCollisionInfluence;                                   // 0x0014   (0x0004)  
-	SDK_UNDEFINED(1,9353) /* TEnumAsByte<ETraceTypeQuery> */ __um(SimpleTraceChannel);                             // 0x0018   (0x0001)  
+	SDK_UNDEFINED(1,9395) /* TEnumAsByte<ETraceTypeQuery> */ __um(SimpleTraceChannel);                             // 0x0018   (0x0001)  
 	bool                                               bEnabled;                                                   // 0x0019   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x2];                                       // 0x001A   (0x0002)  MISSED
 };
@@ -180,7 +180,7 @@ struct FAnimNode_OrientationWarping : FAnimNode_SkeletalControlBase
 	FBoneReference                                     IKFootRootBone;                                             // 0x00F0   (0x000C)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x00FC   (0x0004)  MISSED
 	TArray<FBoneReference>                             IKFootBones;                                                // 0x0100   (0x0010)  
-	SDK_UNDEFINED(1,9354) /* TEnumAsByte<EAxis> */     __um(RotationAxis);                                         // 0x0110   (0x0001)  
+	SDK_UNDEFINED(1,9396) /* TEnumAsByte<EAxis> */     __um(RotationAxis);                                         // 0x0110   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0111   (0x0003)  MISSED
 	float                                              DistributedBoneOrientationAlpha;                            // 0x0114   (0x0004)  
 	float                                              RotationInterpSpeed;                                        // 0x0118   (0x0004)  

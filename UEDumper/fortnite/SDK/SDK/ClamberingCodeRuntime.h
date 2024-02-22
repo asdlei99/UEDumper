@@ -106,26 +106,26 @@ enum class EClamberingDebugTextAlign : uint8_t
 };
 
 /// Class /Script/ClamberingCodeRuntime.FortMovementMode_ExtClambering
-/// Size: 0x0068 (0x000170 - 0x0001D8)
+/// Size: 0x0068 (0x000178 - 0x0001E0)
 class UFortMovementMode_ExtClambering : public UFortMovementMode_ExtLogicTraversalBase
 { 
 public:
-	class UClass*                                      LedgeLaunchCameraMode;                                      // 0x0170   (0x0008)  
-	class UClass*                                      WindowClamberCameraMode;                                    // 0x0178   (0x0008)  
-	FGameplayTagContainer                              ClamberingTag;                                              // 0x0180   (0x0020)  
-	FGameplayTag                                       ClamberingStartedTag;                                       // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01A4   (0x0004)  MISSED
-	FGameplayTagContainer                              ClamberingFinishedTag;                                      // 0x01A8   (0x0020)  
-	class UCameraShakeBase*                            CameraShake;                                                // 0x01C8   (0x0008)  
-	float                                              LedgeLaunchSyncPointInterpSpeed;                            // 0x01D0   (0x0004)  
-	float                                              LedgeLaunchPlayerCollideBounceSpeed;                        // 0x01D4   (0x0004)  
+	class UClass*                                      LedgeLaunchCameraMode;                                      // 0x0178   (0x0008)  
+	class UClass*                                      WindowClamberCameraMode;                                    // 0x0180   (0x0008)  
+	FGameplayTagContainer                              ClamberingTag;                                              // 0x0188   (0x0020)  
+	FGameplayTag                                       ClamberingStartedTag;                                       // 0x01A8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01AC   (0x0004)  MISSED
+	FGameplayTagContainer                              ClamberingFinishedTag;                                      // 0x01B0   (0x0020)  
+	class UCameraShakeBase*                            CameraShake;                                                // 0x01D0   (0x0008)  
+	float                                              LedgeLaunchSyncPointInterpSpeed;                            // 0x01D8   (0x0004)  
+	float                                              LedgeLaunchPlayerCollideBounceSpeed;                        // 0x01DC   (0x0004)  
 
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.FortMovementMode_ExtClambering.BP_GetClamberLocation
-	// FVector BP_GetClamberLocation();                                                                                      // [0x2e14e84] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector BP_GetClamberLocation();                                                                                      // [0x2e67ff4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.FortMovementMode_ExtClambering.BP_GetAnimationMontageInformation
-	// void BP_GetAnimationMontageInformation(FClamberMontageInput& Context, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_GetAnimationMontageInformation(FClamberMontageInput& Context, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/ClamberingCodeRuntime.InstancedLedgeActor
@@ -139,9 +139,9 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.InstancedLedgeActor.BP_OnRemoveInstance
-	// void BP_OnRemoveInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                          // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void BP_OnRemoveInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                          // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.InstancedLedgeActor.BP_OnAddInstance
-	// void BP_OnAddInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                             // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void BP_OnAddInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                             // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/ClamberingCodeRuntime.LedgeLaunchWorldSubsystem
@@ -149,17 +149,17 @@ public:
 class ULedgeLaunchWorldSubsystem : public UBuildingWallSubsystem
 { 
 public:
-	SDK_UNDEFINED(32,12288) /* TWeakObjectPtr<UPBWLedgeConfigurationData*> */ __um(ConfigurationData);             // 0x0030   (0x0020)  
-	SDK_UNDEFINED(32,12289) /* TWeakObjectPtr<UClass*> */ __um(InstancedLedgeActorClass);                          // 0x0050   (0x0020)  
+	SDK_UNDEFINED(32,12375) /* TWeakObjectPtr<UPBWLedgeConfigurationData*> */ __um(ConfigurationData);             // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,12376) /* TWeakObjectPtr<UClass*> */ __um(InstancedLedgeActorClass);                          // 0x0050   (0x0020)  
 	class UPBWLedgeConfigurationData*                  CachedConfigurationData;                                    // 0x0070   (0x0008)  
 	class AInstancedLedgeActor*                        InstancedLedgeActor;                                        // 0x0078   (0x0008)  
-	SDK_UNDEFINED(80,12290) /* TMap<UClass*, FLedgeLaunchConfigEntry> */ __um(CachedLedgeLaunchMap);               // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,12377) /* TMap<UClass*, FLedgeLaunchConfigEntry> */ __um(CachedLedgeLaunchMap);               // 0x0080   (0x0050)  
 	unsigned char                                      UnknownData00_6[0xD0];                                      // 0x00D0   (0x00D0)  MISSED
 
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.LedgeLaunchWorldSubsystem.OnWallDied
-	// void OnWallDied(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0x23847b0] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void OnWallDied(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0x2e0ae80] Final|Native|Protected|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/ClamberingCodeRuntime.PBWLedgeConfigurationData
@@ -167,11 +167,11 @@ public:
 class UPBWLedgeConfigurationData : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,12291) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(MetalWalls);            // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,12292) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(StoneWalls);            // 0x0080   (0x0050)  
-	SDK_UNDEFINED(80,12293) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(WoodWalls);             // 0x00D0   (0x0050)  
-	SDK_UNDEFINED(80,12294) /* TMap<EPlayerBuiltWallType, FLedgeLaunchConfigEntry> */ __um(Transforms);            // 0x0120   (0x0050)  
-	SDK_UNDEFINED(80,12295) /* TMap<EPlayerBuiltWallMaterialType, FLedgeLaunchTransformConfigEntry> */ __um(PerMaterialTransforms); // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,12378) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(MetalWalls);            // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,12379) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(StoneWalls);            // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,12380) /* TMap<EPlayerBuiltWallType, TWeakObjectPtr<UClass*>> */ __um(WoodWalls);             // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,12381) /* TMap<EPlayerBuiltWallType, FLedgeLaunchConfigEntry> */ __um(Transforms);            // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,12382) /* TMap<EPlayerBuiltWallMaterialType, FLedgeLaunchTransformConfigEntry> */ __um(PerMaterialTransforms); // 0x0170   (0x0050)  
 };
 
 /// Class /Script/ClamberingCodeRuntime.ClamberingAnalytics
@@ -358,77 +358,77 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.UnregisterMutatorUpdatedDelegate
-	// void UnregisterMutatorUpdatedDelegate();                                                                              // [0xaaeda24] Final|Native|Protected 
+	// void UnregisterMutatorUpdatedDelegate();                                                                              // [0xade6884] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.ShouldShowClamberIndicator
-	// bool ShouldShowClamberIndicator();                                                                                    // [0xaaeda00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowClamberIndicator();                                                                                    // [0xade6860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.SetTutorialModeEnabled
-	// void SetTutorialModeEnabled(bool bEnabled);                                                                           // [0xaaed93c] Final|Native|Public|BlueprintCallable 
+	// void SetTutorialModeEnabled(bool bEnabled);                                                                           // [0xade67e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.ServerStartClambering
-	// void ServerStartClambering(FReplicatedClamberingTargetingData InReplicatedTargetingData, double ClientLastTeleportTime); // [0xaaed780] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerStartClambering(FReplicatedClamberingTargetingData InReplicatedTargetingData, double ClientLastTeleportTime); // [0xade653c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xaaed53c] Final|Native|Protected 
+	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xade636c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedTargetingData
-	// void OnRep_ReplicatedTargetingData();                                                                                 // [0xaaed3cc] Final|Native|Protected 
+	// void OnRep_ReplicatedTargetingData();                                                                                 // [0xade6244] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedLastTeleportTime
-	// void OnRep_ReplicatedLastTeleportTime();                                                                              // [0x25f2814] Final|Native|Protected 
+	// void OnRep_ReplicatedLastTeleportTime();                                                                              // [0x1e45a60] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedClamberingState
-	// void OnRep_ReplicatedClamberingState();                                                                               // [0x25f2428] Final|Native|Protected 
+	// void OnRep_ReplicatedClamberingState();                                                                               // [0x1e45d24] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2af2188] Final|Native|Protected 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2f6bfc4] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                              // [0x1e063e8] Final|Native|Protected 
+	// void OnMutatorUpdated();                                                                                              // [0x2296504] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.NetMulticast_ClamberingLedgeFailed
-	// void NetMulticast_ClamberingLedgeFailed(EClamberingFailedReason FailedReason, EClamberingState FailedState);          // [0xaaed288] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_ClamberingLedgeFailed(EClamberingFailedReason FailedReason, EClamberingState FailedState);          // [0xade617c] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsTutorialModeEnabled
-	// bool IsTutorialModeEnabled();                                                                                         // [0xaaed264] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTutorialModeEnabled();                                                                                         // [0xade6158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsClamberingEnabled
-	// bool IsClamberingEnabled();                                                                                           // [0xaaed240] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsClamberingEnabled();                                                                                           // [0xade6134] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsAutoClamberingEnabled
-	// bool IsAutoClamberingEnabled();                                                                                       // [0xaaed21c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAutoClamberingEnabled();                                                                                       // [0xade6110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetingDataValid
-	// void HandleTargetingDataValid(FClamberingTargetingData& TargetingData);                                               // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleTargetingDataValid(FClamberingTargetingData& TargetingData);                                               // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetingDataInvalid
-	// void HandleTargetingDataInvalid();                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleTargetingDataInvalid();                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetActorHealthChanged
-	// void HandleTargetActorHealthChanged();                                                                                // [0xaaed208] Final|Native|Protected 
+	// void HandleTargetActorHealthChanged();                                                                                // [0xade60fc] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetActorDestroyed
-	// void HandleTargetActorDestroyed(class AActor* Actor);                                                                 // [0xaaed148] Final|Native|Protected 
+	// void HandleTargetActorDestroyed(class AActor* Actor);                                                                 // [0xade607c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerTeleported
-	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                         // [0x385bab8] Final|Native|Protected|BlueprintCallable 
+	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                         // [0x3431d08] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerMovementModeChanged
-	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x177e878] Final|Native|Protected 
+	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x1e614dc] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xaaed084] Final|Native|Protected 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xade5ffc] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerDied
-	// void HandleOwnerDied(class AFortPawn* DeadPawn);                                                                      // [0xaaecfc4] Final|Native|Protected 
+	// void HandleOwnerDied(class AFortPawn* DeadPawn);                                                                      // [0xade5f7c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerDBNO
-	// void HandleOwnerDBNO();                                                                                               // [0x25f23ec] Final|Native|Protected 
+	// void HandleOwnerDBNO();                                                                                               // [0x1e45b00] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerASCInvalidated
-	// void HandleOwnerASCInvalidated();                                                                                     // [0x25f24c4] Final|Native|Protected 
+	// void HandleOwnerASCInvalidated();                                                                                     // [0x1e45b3c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerASCInitialized
-	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0x1e06530] Final|Native|Protected 
+	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0x2296544] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleClamberingTargetOutOfActivationRange
-	// void HandleClamberingTargetOutOfActivationRange();                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleClamberingTargetOutOfActivationRange();                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleClamberingTargetInActivationRange
-	// void HandleClamberingTargetInActivationRange();                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleClamberingTargetInActivationRange();                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.DrawDebugHUD
-	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                            // [0x67491ec] Final|Native|Protected 
+	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                            // [0x67b718c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_TutorialModeEnabled
-	// void BP_TutorialModeEnabled();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// void BP_TutorialModeEnabled();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_TutorialModeDisabled
-	// void BP_TutorialModeDisabled();                                                                                       // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// void BP_TutorialModeDisabled();                                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_OnMMEStarted
-	// void BP_OnMMEStarted();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnMMEStarted();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_IsValidTargetActor
-	// void BP_IsValidTargetActor(class AActor* TargetActor, bool& bIsValidTargetActor);                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_IsValidTargetActor(class AActor* TargetActor, bool& bIsValidTargetActor);                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_HandleSynchedActionStarted
-	// void BP_HandleSynchedActionStarted(FSynchedActionInfo& SynchedActionInfo);                                            // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_HandleSynchedActionStarted(FSynchedActionInfo& SynchedActionInfo);                                            // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_HandleClamberingStateChanged
-	// void BP_HandleClamberingStateChanged(EClamberingState OldClamberingState, EClamberingState NewClamberingState);       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_HandleClamberingStateChanged(EClamberingState OldClamberingState, EClamberingState NewClamberingState);       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_CanStartTargeting
-	// void BP_CanStartTargeting(bool& bCanStartTargeting);                                                                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartTargeting(bool& bCanStartTargeting);                                                                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_CanStartClambering
-	// void BP_CanStartClambering(bool& bCanStartClambering);                                                                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartClambering(bool& bCanStartClambering);                                                                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/ClamberingCodeRuntime.ClamberingLibrary
@@ -440,7 +440,7 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.ClamberingLibrary.PerformClamberingTargeting
-	// bool PerformClamberingTargeting(class ACharacter* Character, FClamberingTargetingData& OutTargetingData);             // [0xaaed400] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool PerformClamberingTargeting(class ACharacter* Character, FClamberingTargetingData& OutTargetingData);             // [0xade6278] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ClamberingCodeRuntime.FortAthenaMutator_LedgeLaunch
@@ -449,14 +449,14 @@ class AFortAthenaMutator_LedgeLaunch : public AFortAthenaMutator
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x158];                                     // 0x0338   (0x0158)  MISSED
-	SDK_UNDEFINED(16,12296) /* TArray<TWeakObjectPtr<ABuildingWall*>> */ __um(CurrentWalls);                       // 0x0490   (0x0010)  
+	SDK_UNDEFINED(16,12383) /* TArray<TWeakObjectPtr<ABuildingWall*>> */ __um(CurrentWalls);                       // 0x0490   (0x0010)  
 	bool                                               bShouldSpawnLedge;                                          // 0x04A0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0xF];                                       // 0x04A1   (0x000F)  MISSED
 
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.FortAthenaMutator_LedgeLaunch.OnRep_bShouldSpawnLedge
-	// void OnRep_bShouldSpawnLedge();                                                                                       // [0xaaed3e0] Final|Native|Private 
+	// void OnRep_bShouldSpawnLedge();                                                                                       // [0xade6258] Final|Native|Private 
 };
 
 /// Struct /Script/ClamberingCodeRuntime.FortMovementMode_ClamberingRuntimeData
@@ -503,7 +503,7 @@ struct FLedgeLaunchConfigEntry
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FLedgeLaunchTransformConfigEntry
 { 
-	SDK_UNDEFINED(80,12297) /* TMap<EPlayerBuiltWallType, FLedgeLaunchConfigEntry> */ __um(Transforms);            // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12384) /* TMap<EPlayerBuiltWallType, FLedgeLaunchConfigEntry> */ __um(Transforms);            // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/ClamberingCodeRuntime.ClamberingTargetingDebugDrawData

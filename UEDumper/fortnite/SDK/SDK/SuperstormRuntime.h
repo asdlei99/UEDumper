@@ -73,16 +73,16 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetLightningRadius
-	// float GetLightningRadius();                                                                                           // [0xb6b4b0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLightningRadius();                                                                                           // [0xb7c1ef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetCloudHeight
-	// float GetCloudHeight();                                                                                               // [0xb6b4ad8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloudHeight();                                                                                               // [0xb7c1ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SuperstormRuntime.TornadoSimulationData
 /// Size: 0x0034 (0x00000C - 0x000040)
 struct FTornadoSimulationData : FFastArraySerializerItem
 { 
-	SDK_UNDEFINED(8,15401) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,15544) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x000C   (0x0008)  
 	EFortPhysicsObjectType                             ObjectType;                                                 // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
 	float                                              TangentVelocity;                                            // 0x0018   (0x0004)  
@@ -104,13 +104,13 @@ struct FTornadoClientSimulationArray : FFastArraySerializer
 class UTempestTornadoForcesComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,15402) /* FMulticastInlineDelegate */ __um(OnActorAddedToTornadoForces);                      // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,15403) /* FMulticastInlineDelegate */ __um(OnActorRemovedFromTornadoForces);                  // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15545) /* FMulticastInlineDelegate */ __um(OnActorAddedToTornadoForces);                      // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,15546) /* FMulticastInlineDelegate */ __um(OnActorRemovedFromTornadoForces);                  // 0x00B0   (0x0010)  
 	FDataTableRowHandle                                ConfigHandle;                                               // 0x00C0   (0x0010)  
 	TArray<FGameplayTag>                               PhysicsPresetTagsAngularDampingToOverride;                  // 0x00D0   (0x0010)  
 	FScalableFloat                                     AngularDampingOverride;                                     // 0x00E0   (0x0028)  
 	class UClass*                                      PawnInGE;                                                   // 0x0108   (0x0008)  
-	SDK_UNDEFINED(80,15404) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxCapCount);      // 0x0110   (0x0050)  
+	SDK_UNDEFINED(80,15547) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxCapCount);      // 0x0110   (0x0050)  
 	FGameplayTagContainer                              TagsToIgnore;                                               // 0x0160   (0x0020)  
 	class UClass*                                      RecentlyRemovedGE;                                          // 0x0180   (0x0008)  
 	class UTargetingPreset*                            TargetingPreset;                                            // 0x0188   (0x0008)  
@@ -128,15 +128,15 @@ public:
 	unsigned char                                      UnknownData02_5[0x118];                                     // 0x0318   (0x0118)  MISSED
 	FTargetingRequestHandle                            AsyncTargetingHandle;                                       // 0x0430   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x0434   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15405) /* TSet<AFortPlayerPawn*> */ __um(PreviouslyNearPlayers);                              // 0x0438   (0x0050)  
+	SDK_UNDEFINED(80,15548) /* TSet<AFortPlayerPawn*> */ __um(PreviouslyNearPlayers);                              // 0x0438   (0x0050)  
 	unsigned char                                      UnknownData04_6[0xA8];                                      // 0x0488   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.OnVehicleInTornadoPlayerExit
-	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb6b4c10] Final|Native|Private 
+	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb7c1fb8] Final|Native|Private 
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.IsActorInTornado
-	// bool IsActorInTornado(class AActor* Actor);                                                                           // [0xb6b4b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActorInTornado(class AActor* Actor);                                                                           // [0xb7c1f28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TornadoRadialForce
@@ -180,30 +180,31 @@ struct FTornadoConfigEntry : FTableRowBase
 	float                                              EyeBufferDistance;                                          // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
 	class UCurveFloat*                                 TargetOrbitRadiusCurve;                                     // 0x0010   (0x0008)  
-	float                                              TargetOrbitRadius;                                          // 0x0018   (0x0004)  
-	float                                              OrbitStrength;                                              // 0x001C   (0x0004)  
-	float                                              TargetTangentVelocity;                                      // 0x0020   (0x0004)  
-	float                                              TangentVelocityVariance;                                    // 0x0024   (0x0004)  
-	float                                              TangentAcceleration;                                        // 0x0028   (0x0004)  
-	float                                              TangentAccelerationVariance;                                // 0x002C   (0x0004)  
-	float                                              TangentAngleOffset;                                         // 0x0030   (0x0004)  
-	float                                              TargetHeightVelocity;                                       // 0x0034   (0x0004)  
-	float                                              HeightVelocityVariance;                                     // 0x0038   (0x0004)  
-	float                                              HeightAcceleration;                                         // 0x003C   (0x0004)  
-	float                                              HeightAccelerationVariance;                                 // 0x0040   (0x0004)  
-	float                                              TorqueStrength;                                             // 0x0044   (0x0004)  
-	float                                              TorqueVariance;                                             // 0x0048   (0x0004)  
-	float                                              TimeToForceEject;                                           // 0x004C   (0x0004)  
-	float                                              HeightToForceEject;                                         // 0x0050   (0x0004)  
-	float                                              DepthToForceEject;                                          // 0x0054   (0x0004)  
+	float                                              OrbitStrength;                                              // 0x0018   (0x0004)  
+	float                                              TargetTangentVelocity;                                      // 0x001C   (0x0004)  
+	float                                              TangentVelocityVariance;                                    // 0x0020   (0x0004)  
+	float                                              TangentAcceleration;                                        // 0x0024   (0x0004)  
+	float                                              TangentAccelerationVariance;                                // 0x0028   (0x0004)  
+	float                                              TangentAngleOffset;                                         // 0x002C   (0x0004)  
+	float                                              TargetHeightVelocity;                                       // 0x0030   (0x0004)  
+	float                                              HeightVelocityVariance;                                     // 0x0034   (0x0004)  
+	float                                              HeightAcceleration;                                         // 0x0038   (0x0004)  
+	float                                              HeightAccelerationVariance;                                 // 0x003C   (0x0004)  
+	float                                              TorqueStrength;                                             // 0x0040   (0x0004)  
+	float                                              TorqueVariance;                                             // 0x0044   (0x0004)  
+	float                                              TimeToForceEject;                                           // 0x0048   (0x0004)  
+	float                                              HeightToForceEject;                                         // 0x004C   (0x0004)  
+	float                                              DepthToForceEject;                                          // 0x0050   (0x0004)  
+	bool                                               bOrbitRadiusExtendsDistanceToForceEject;                    // 0x0054   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0055   (0x0003)  MISSED
 	float                                              DistanceToForceEject;                                       // 0x0058   (0x0004)  
 	float                                              EjectionBoost;                                              // 0x005C   (0x0004)  
 	float                                              MaxDragVelocity;                                            // 0x0060   (0x0004)  
 	float                                              DragCoefficient1;                                           // 0x0064   (0x0004)  
 	float                                              DragCoefficient2;                                           // 0x0068   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x006C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15406) /* TMap<EFortPhysicsSimSize, FTornadoObjectForceModifiers> */ __um(SizeForceModifiers); // 0x0070   (0x0050)  
-	SDK_UNDEFINED(80,15407) /* TMap<EFortPhysicsObjectType, FTornadoObjectForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x00C0   (0x0050)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x006C   (0x0004)  MISSED
+	SDK_UNDEFINED(80,15549) /* TMap<EFortPhysicsSimSize, FTornadoObjectForceModifiers> */ __um(SizeForceModifiers); // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,15550) /* TMap<EFortPhysicsObjectType, FTornadoObjectForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x00C0   (0x0050)  
 	float                                              PlayerGravityFloorOffset;                                   // 0x0110   (0x0004)  
 	float                                              PlayerGravityFloorWidth;                                    // 0x0114   (0x0004)  
 	float                                              PlayerGravityFloorGravityScalar;                            // 0x0118   (0x0004)  
@@ -218,15 +219,15 @@ struct FTornadoConfigEntry : FTableRowBase
 	bool                                               bAffectStaticObjects;                                       // 0x0130   (0x0001)  
 	EFortPhysicsSimSize                                MaxAllowedPhysicsObjectSize;                                // 0x0131   (0x0001)  
 	EFortPhysicsSimSize                                MinAllowedPhysicsObjectSize;                                // 0x0132   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x5];                                       // 0x0133   (0x0005)  MISSED
+	unsigned char                                      UnknownData03_6[0x5];                                       // 0x0133   (0x0005)  MISSED
 };
 
 /// Struct /Script/SuperstormRuntime.TornadoTelemetryStats
 /// Size: 0x00A8 (0x000000 - 0x0000A8)
 struct FTornadoTelemetryStats
 { 
-	SDK_UNDEFINED(80,15408) /* TMap<EFortPhysicsObjectType, int32_t> */ __um(NumActorsEnteredByType);              // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,15409) /* TSet<FUniqueNetIdRepl> */ __um(EnteredPlayerAccountIds);                            // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,15551) /* TMap<EFortPhysicsObjectType, int32_t> */ __um(NumActorsEnteredByType);              // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,15552) /* TSet<FUniqueNetIdRepl> */ __um(EnteredPlayerAccountIds);                            // 0x0050   (0x0050)  
 	int32_t                                            NumPreBuiltStructuresDestroyed;                             // 0x00A0   (0x0004)  
 	int32_t                                            NumPlayerBuiltStructuresDestroyed;                          // 0x00A4   (0x0004)  
 };

@@ -28,9 +28,9 @@ public:
 
 	/// Functions
 	// Function /Script/MantisRuntime.FortMantisAnimInstance.OnMantisTechniqueStarted
-	// void OnMantisTechniqueStarted(int32_t TechniqueIndex, FName TechniqueName);                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMantisTechniqueStarted(int32_t TechniqueIndex, FName TechniqueName);                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortMantisAnimInstance.OnMantisTechniqueEnded
-	// void OnMantisTechniqueEnded(int32_t TechniqueIndex, FName TechniqueName);                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMantisTechniqueEnded(int32_t TechniqueIndex, FName TechniqueName);                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/MantisRuntime.FortMantisLayerAnimInstance
@@ -46,9 +46,9 @@ public:
 
 	/// Functions
 	// Function /Script/MantisRuntime.FortMantisLayerAnimInstance.OnMantisTechniqueStarted
-	// void OnMantisTechniqueStarted(int32_t TechniqueIndex, FName TechniqueName);                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMantisTechniqueStarted(int32_t TechniqueIndex, FName TechniqueName);                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortMantisLayerAnimInstance.OnMantisTechniqueEnded
-	// void OnMantisTechniqueEnded(int32_t TechniqueIndex, FName TechniqueName);                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMantisTechniqueEnded(int32_t TechniqueIndex, FName TechniqueName);                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/MantisRuntime.FortItemLayerAnimInstance_UncleBrolly
@@ -186,33 +186,33 @@ public:
 
 	/// Functions
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.OnMontageFinished
-	// void OnMontageFinished();                                                                                                // [0xab486f4] Final|Native|Protected 
+	// void OnMontageFinished();                                                                                                // [0xae43ac8] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.OnMontageCancelled
-	// void OnMontageCancelled();                                                                                               // [0xab486e0] Final|Native|Protected 
+	// void OnMontageCancelled();                                                                                               // [0xae43ab4] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.GetLevelForGameplayEffectContainer
-	// int32_t GetLevelForGameplayEffectContainer(FGameplayTag ApplicationTag);                                                 // [0xab48238] Native|Event|Protected|BlueprintEvent|Const 
+	// int32_t GetLevelForGameplayEffectContainer(FGameplayTag ApplicationTag);                                                 // [0xae4368c] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.GetDynamicMontageNameForTechnique
-	// FName GetDynamicMontageNameForTechnique(FName TechniqueName);                                                            // [0xab4816c] Native|Event|Protected|BlueprintEvent|Const 
+	// FName GetDynamicMontageNameForTechnique(FName TechniqueName);                                                            // [0xae43600] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.FillMetadataForTechnique
-	// void FillMetadataForTechnique(FName TechniqueName, FFortMantisTechniqueMetadata& OutTechniqueMetadata);                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void FillMetadataForTechnique(FName TechniqueName, FFortMantisTechniqueMetadata& OutTechniqueMetadata);                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.ConfigureRootMotionWarpingAlternativeBehavior
-	// void ConfigureRootMotionWarpingAlternativeBehavior(FName TechniqueName, class AActor*& OutTargetActor, bool& bOutSnapshotTargetActorLocation, EFortMantisWarpTranslationMethod& OutWarpTranslationMethod, FVector& OutWarpTranslationVector, EFortMantisWarpRotationMethod& OutWarpRotationMethod, FRotator& OutStaticRotation); // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ConfigureRootMotionWarpingAlternativeBehavior(FName TechniqueName, class AActor*& OutTargetActor, bool& bOutSnapshotTargetActorLocation, EFortMantisWarpTranslationMethod& OutWarpTranslationMethod, FVector& OutWarpTranslationVector, EFortMantisWarpRotationMethod& OutWarpRotationMethod, FRotator& OutStaticRotation); // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.ConfigureRootMotionWarping
-	// void ConfigureRootMotionWarping(FName TechniqueName, bool& bOutAllowTranslationWarp, bool& bOutAllowRotationWarp, class AActor*& OutTargetActor, bool& bOutSnapshotTargetActorLocation, bool& bOutWarpTranslationToLocation, FVector& outTargetLocation); // [0xab47e68] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ConfigureRootMotionWarping(FName TechniqueName, bool& bOutAllowTranslationWarp, bool& bOutAllowRotationWarp, class AActor*& OutTargetActor, bool& bOutSnapshotTargetActorLocation, bool& bOutWarpTranslationToLocation, FVector& outTargetLocation); // [0xae43334] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnTechniqueNotifyWindowStarted
-	// void BP_OnTechniqueNotifyWindowStarted(EFortMantisNotifyWindow NotifyWindow, class UFortAnimNotifyState_Mantis* Notify); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnTechniqueNotifyWindowStarted(EFortMantisNotifyWindow NotifyWindow, class UFortAnimNotifyState_Mantis* Notify); // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnTechniqueNotifyWindowEnded
-	// void BP_OnTechniqueNotifyWindowEnded(EFortMantisNotifyWindow NotifyWindow, class UFortAnimNotifyState_Mantis* Notify);   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnTechniqueNotifyWindowEnded(EFortMantisNotifyWindow NotifyWindow, class UFortAnimNotifyState_Mantis* Notify);   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnTechniqueNotifyEvent
-	// void BP_OnTechniqueNotifyEvent(EFortMantisNotifyEvent NotifyEvent, class UFortAnimNotify_Mantis* Notify);                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnTechniqueNotifyEvent(EFortMantisNotifyEvent NotifyEvent, class UFortAnimNotify_Mantis* Notify);                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnMantisTechniqueHit
-	// void BP_OnMantisTechniqueHit(FGameplayAbilityTargetDataHandle& TargetDataHandle, FGameplayTag ApplicationTag);           // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnMantisTechniqueHit(FGameplayAbilityTargetDataHandle& TargetDataHandle, FGameplayTag ApplicationTag);           // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnMantisPreTechniqueSelection
-	// void BP_OnMantisPreTechniqueSelection();                                                                                 // [0x130d900] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void BP_OnMantisPreTechniqueSelection();                                                                                 // [0x3d1d968] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_OnMantisInputEvent
-	// void BP_OnMantisInputEvent(EFortMantisTechniqueActivationInputType InputType, EFortMantisTechniqueActivationTimingType InputTiming, bool bDidInputStartTechnique, bool bDidInputQueueTechnique, float InputHeldDuration); // [0x130d900] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void BP_OnMantisInputEvent(EFortMantisTechniqueActivationInputType InputType, EFortMantisTechniqueActivationTimingType InputTiming, bool bDidInputStartTechnique, bool bDidInputQueueTechnique, float InputHeldDuration); // [0x3d1d968] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/MantisRuntime.FortGameplayAbility_Mantis.BP_MantisAbilityTechniqueStarted
-	// void BP_MantisAbilityTechniqueStarted(FGameplayTagContainer OwningTags, FName SequenceName, bool StartsSequence, bool EndsSequence); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_MantisAbilityTechniqueStarted(FGameplayTagContainer OwningTags, FName SequenceName, bool StartsSequence, bool EndsSequence); // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/MantisRuntime.FortMantisData
@@ -246,35 +246,35 @@ public:
 
 	/// Functions
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.TryManuallyStartTechnique
-	// bool TryManuallyStartTechnique(int32_t TechniqueDataIndex);                                                              // [0xab492ac] Final|Native|Public|BlueprintCallable 
+	// bool TryManuallyStartTechnique(int32_t TechniqueDataIndex);                                                              // [0xae44294] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.TryManuallyEndCurrentTechnique
-	// bool TryManuallyEndCurrentTechnique();                                                                                   // [0xab49258] Final|Native|Public|BlueprintCallable 
+	// bool TryManuallyEndCurrentTechnique();                                                                                   // [0xae44240] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.SimulateInputEvent
-	// void SimulateInputEvent(EFortMantisTechniqueActivationInputType InputType, EFortMantisTechniqueActivationTimingType InputTiming, bool bForceProcessEvent); // [0xab4909c] Final|Native|Public|BlueprintCallable 
+	// void SimulateInputEvent(EFortMantisTechniqueActivationInputType InputType, EFortMantisTechniqueActivationTimingType InputTiming, bool bForceProcessEvent); // [0xae44144] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.SetLockOnState
-	// void SetLockOnState(bool bEnabled, class AActor* TargetActor);                                                           // [0xab48eac] Final|Native|Public|BlueprintCallable 
+	// void SetLockOnState(bool bEnabled, class AActor* TargetActor);                                                           // [0xae43fd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.SetBranchRule
-	// void SetBranchRule(EFortMantisBranchRule InBranchRule, EFortMantisBranchPath InBranchPath);                              // [0xab48d70] Final|Native|Protected|BlueprintCallable 
+	// void SetBranchRule(EFortMantisBranchRule InBranchRule, EFortMantisBranchPath InBranchPath);                              // [0xae43f0c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.OnPostPhysicsRotation
-	// void OnPostPhysicsRotation(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds);                         // [0xab4871c] Final|Native|Protected 
+	// void OnPostPhysicsRotation(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds);                         // [0xae43af0] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.OnOwnerWeaponHolstered
-	// void OnOwnerWeaponHolstered();                                                                                           // [0xab48708] Final|Native|Protected 
+	// void OnOwnerWeaponHolstered();                                                                                           // [0xae43adc] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.OnCharacterMovementPreUpdate
-	// void OnCharacterMovementPreUpdate(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds);                  // [0xab484e0] Final|Native|Protected 
+	// void OnCharacterMovementPreUpdate(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds);                  // [0xae43970] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.IsSpecificInputPressed
-	// bool IsSpecificInputPressed(EFortMantisTechniqueActivationInputType InputType);                                          // [0xab483f0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSpecificInputPressed(EFortMantisTechniqueActivationInputType InputType);                                          // [0xae438c4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.IsPerformingLockOn
-	// bool IsPerformingLockOn();                                                                                               // [0xab483d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPerformingLockOn();                                                                                               // [0xae438a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.HasLockOnTarget
-	// bool HasLockOnTarget();                                                                                                  // [0xab48394] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasLockOnTarget();                                                                                                  // [0xae43868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.HasCurrentTechniqueMetadataBeenSet
-	// bool HasCurrentTechniqueMetadataBeenSet();                                                                               // [0xab4837c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasCurrentTechniqueMetadataBeenSet();                                                                               // [0xae43850] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.GetMontageForCurrentTechnique
-	// class UAnimMontage* GetMontageForCurrentTechnique();                                                                     // [0xab48330] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimMontage* GetMontageForCurrentTechnique();                                                                     // [0xae43804] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.GetLockOnTarget
-	// class AActor* GetLockOnTarget();                                                                                         // [0xab4830c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetLockOnTarget();                                                                                         // [0xae437e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MantisRuntime.FortMantisPawnComponent.GetCurrentTechniqueMetadata
-	// FFortMantisTechniqueMetadata GetCurrentTechniqueMetadata();                                                              // [0xab48150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortMantisTechniqueMetadata GetCurrentTechniqueMetadata();                                                              // [0xae435e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MantisRuntime.FortMantisWeaponComponent
@@ -296,23 +296,23 @@ public:
 
 	/// Functions
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnWeaponAbilitiesRemoved
-	// void OnWeaponAbilitiesRemoved(class AFortWeapon* Weapon, EFortWeaponAbilityRemovalReason RemovalReason);                 // [0xab48c30] Final|Native|Protected 
+	// void OnWeaponAbilitiesRemoved(class AFortWeapon* Weapon, EFortWeaponAbilityRemovalReason RemovalReason);                 // [0xae43e48] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnUnEquip
-	// void OnUnEquip(class AFortWeapon* Weapon);                                                                               // [0xab48b70] Final|Native|Protected 
+	// void OnUnEquip(class AFortWeapon* Weapon);                                                                               // [0xae43dc8] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnRep_ReplayAnimInstanceInfo
-	// void OnRep_ReplayAnimInstanceInfo();                                                                                     // [0xab48b5c] Final|Native|Protected 
+	// void OnRep_ReplayAnimInstanceInfo();                                                                                     // [0xae43db4] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnReleaseTrigger
-	// void OnReleaseTrigger(class AFortWeapon* Weapon);                                                                        // [0xab48a9c] Final|Native|Protected 
+	// void OnReleaseTrigger(class AFortWeapon* Weapon);                                                                        // [0xae43d34] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnReleaseSecondaryFire
-	// void OnReleaseSecondaryFire(class AFortWeapon* Weapon);                                                                  // [0xab489dc] Final|Native|Protected 
+	// void OnReleaseSecondaryFire(class AFortWeapon* Weapon);                                                                  // [0xae43cb4] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnPressTrigger
-	// void OnPressTrigger(class AFortWeapon* Weapon);                                                                          // [0xab4891c] Final|Native|Protected 
+	// void OnPressTrigger(class AFortWeapon* Weapon);                                                                          // [0xae43c34] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnPressSecondaryFire
-	// void OnPressSecondaryFire(class AFortWeapon* Weapon);                                                                    // [0xab4885c] Final|Native|Protected 
+	// void OnPressSecondaryFire(class AFortWeapon* Weapon);                                                                    // [0xae43bb4] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.OnEquip
-	// void OnEquip(class AFortWeapon* Weapon);                                                                                 // [0xab48620] Final|Native|Protected 
+	// void OnEquip(class AFortWeapon* Weapon);                                                                                 // [0xae43a34] Final|Native|Protected 
 	// Function /Script/MantisRuntime.FortMantisWeaponComponent.GetAnimInstanceInfo
-	// FFortMantisReplicatedAnimInstanceInfo GetAnimInstanceInfo();                                                             // [0xab48134] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortMantisReplicatedAnimInstanceInfo GetAnimInstanceInfo();                                                             // [0xad6d1f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MantisRuntime.FortMantisTechniqueMetadata

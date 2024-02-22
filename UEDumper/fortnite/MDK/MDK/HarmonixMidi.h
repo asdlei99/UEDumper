@@ -35,29 +35,29 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.MidiNoteToInt
-	// int32_t MidiNoteToInt(FMidiNote& InMidiNote);                                                                            // [0xac2a184] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t MidiNoteToInt(FMidiNote& InMidiNote);                                                                            // [0xaf27018] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.MidiNoteToByte
-	// char MidiNoteToByte(FMidiNote& InMidiNote);                                                                              // [0xac2a0fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// char MidiNoteToByte(FMidiNote& InMidiNote);                                                                              // [0xaf26f90] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.MakeLiteralMidiNote
-	// FMidiNote MakeLiteralMidiNote(FMidiNote Value);                                                                          // [0xac2a040] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote MakeLiteralMidiNote(FMidiNote Value);                                                                          // [0xaf26e54] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.IntToMidiNote
-	// FMidiNote IntToMidiNote(int32_t inInt);                                                                                  // [0xac29f88] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote IntToMidiNote(int32_t inInt);                                                                                  // [0xaf26ddc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMinNoteVelocity
-	// char GetMinNoteVelocity();                                                                                               // [0x2bf8390] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// char GetMinNoteVelocity();                                                                                               // [0x2c9e4a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMinNoteNumber
-	// char GetMinNoteNumber();                                                                                                 // [0x2bf8390] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// char GetMinNoteNumber();                                                                                                 // [0x2c9e4a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMinMidiNote
-	// FMidiNote GetMinMidiNote();                                                                                              // [0x2bf8390] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote GetMinMidiNote();                                                                                              // [0x2c9e4a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMaxNumNotes
-	// int32_t GetMaxNumNotes();                                                                                                // [0xac29f28] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetMaxNumNotes();                                                                                                // [0xaf26d7c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMaxNoteVelocity
-	// char GetMaxNoteVelocity();                                                                                               // [0xac29f14] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// char GetMaxNoteVelocity();                                                                                               // [0xaf26d68] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMaxNoteNumber
-	// char GetMaxNoteNumber();                                                                                                 // [0xac29f14] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// char GetMaxNoteNumber();                                                                                                 // [0xaf26d68] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.GetMaxMidiNote
-	// FMidiNote GetMaxMidiNote();                                                                                              // [0xac29f14] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote GetMaxMidiNote();                                                                                              // [0xaf26d68] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MidiNoteFunctionLibrary.ByteToMidiNote
-	// FMidiNote ByteToMidiNote(char InByte);                                                                                   // [0x8e71b98] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote ByteToMidiNote(char InByte);                                                                                   // [0x8e685ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/HarmonixMidi.MusicalTickFunctionLibrary
@@ -72,15 +72,15 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixMidi.MusicalTickFunctionLibrary.TickToQuarterNote
-	// float TickToQuarterNote(float InTick);                                                                                   // [0xac2a2d4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float TickToQuarterNote(float InTick);                                                                                   // [0xaf27124] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MusicalTickFunctionLibrary.QuarterNoteToTick
-	// float QuarterNoteToTick(float InQuarterNote);                                                                            // [0xac2a20c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float QuarterNoteToTick(float InQuarterNote);                                                                            // [0xaf270a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MusicalTickFunctionLibrary.GetTicksPerQuarterNoteInt
-	// int32_t GetTicksPerQuarterNoteInt();                                                                                     // [0xac29f70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetTicksPerQuarterNoteInt();                                                                                     // [0xaf26dc4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MusicalTickFunctionLibrary.GetTicksPerQuarterNote
-	// float GetTicksPerQuarterNote();                                                                                          // [0xac29f58] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetTicksPerQuarterNote();                                                                                          // [0xaf26dac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HarmonixMidi.MusicalTickFunctionLibrary.GetQuarterNotesPerTick
-	// float GetQuarterNotesPerTick();                                                                                          // [0xac29f40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetQuarterNotesPerTick();                                                                                          // [0xaf26d94] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/HarmonixMidi.MusicTimestamp

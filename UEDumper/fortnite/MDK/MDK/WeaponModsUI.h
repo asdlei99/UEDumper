@@ -25,11 +25,11 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaEquippedItemInfoWeaponMods.SetItemSlotInfo
-	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaEquippedItemInfoWeaponMods.ResetItemInfo
-	// void ResetItemInfo();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ResetItemInfo();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaEquippedItemInfoWeaponMods.HandleWeaponFullyEquipped
-	// void HandleWeaponFullyEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xb6cf364] Final|Native|Private 
+	// void HandleWeaponFullyEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xb7dbba0] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModsUI.AthenaInventoryGroupWeaponMods
@@ -44,9 +44,9 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaInventoryGroupWeaponMods.HandleButtonClicked
-	// void HandleButtonClicked(class UObject* Object);                                                                         // [0xb6cede4] Final|Native|Protected|BlueprintCallable 
+	// void HandleButtonClicked(class UObject* Object);                                                                         // [0xb7db7dc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModsUI.AthenaInventoryGroupWeaponMods.CanWeaponEquipMod
-	// bool CanWeaponEquipMod(class AFortWeapon* Weapon, class UFortWeaponModItemDefinition* Mod);                              // [0xb6cec90] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanWeaponEquipMod(class AFortWeapon* Weapon, class UFortWeaponModItemDefinition* Mod);                              // [0xb7db708] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods
@@ -61,19 +61,19 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.UpdateItemMods
-	// void UpdateItemMods();                                                                                                   // [0xb6cef64] Final|Native|Protected|BlueprintCallable 
+	// void UpdateItemMods();                                                                                                   // [0xb7db8dc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.SetItemSlotInfo
-	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.SetIsModifiableWeapon
-	// void SetIsModifiableWeapon(bool bIsModifiable);                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetIsModifiableWeapon(bool bIsModifiable);                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.ResetItemInfo
-	// void ResetItemInfo();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ResetItemInfo();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.HandleWeaponModSlotsChanged
-	// void HandleWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                             // [0xb6cf650] Final|Native|Private 
+	// void HandleWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                             // [0xb7dbcc0] Final|Native|Private 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.HandleInventoryPanelOpened
-	// void HandleInventoryPanelOpened();                                                                                       // [0xb6cef64] Final|Native|Private 
+	// void HandleInventoryPanelOpened();                                                                                       // [0xb7db8dc] Final|Native|Private 
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponMods.HandleInventoryItemSelected
-	// void HandleInventoryItemSelected(class UFortItem* SelectedItem);                                                         // [0xb6ceea4] Final|Native|Private 
+	// void HandleInventoryItemSelected(class UFortItem* SelectedItem);                                                         // [0xb7db85c] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponModsConfigurator
@@ -88,7 +88,7 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaInventoryItemInfoWeaponModsConfigurator.RemoveMod
-	// void RemoveMod(class UFortWeaponModItemDefinition* ModItemDef);                                                          // [0xb6cf874] Final|Native|Protected|BlueprintCallable 
+	// void RemoveMod(class UFortWeaponModItemDefinition* ModItemDef);                                                          // [0xb7dbe60] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/WeaponModsUI.AthenaLastKillerWeaponModsInfo
@@ -103,7 +103,7 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaLastKillerWeaponModsInfo.SetKillerWeaponMods
-	// void SetKillerWeaponMods(TArray<FFortWeaponModSlot>& ModSlots);                                                          // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetKillerWeaponMods(TArray<FFortWeaponModSlot>& ModSlots);                                                          // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods
@@ -118,21 +118,21 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.SetItemSlotInfo
-	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.SetItemModifiedWeaponName
-	// void SetItemModifiedWeaponName(FText& ModifiedWeaponName);                                                               // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemModifiedWeaponName(FText& ModifiedWeaponName);                                                               // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.SetEquippedWeaponItemSlotInfo
-	// void SetEquippedWeaponItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                         // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetEquippedWeaponItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                         // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.SetEquippedWeaponItemInfo
-	// void SetEquippedWeaponItemInfo(class UFortItemDefinition* ItemDef);                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetEquippedWeaponItemInfo(class UFortItemDefinition* ItemDef);                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.ResetItemInfo
-	// void ResetItemInfo();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ResetItemInfo();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.IsInspectViewCollapsedBySettings
-	// bool IsInspectViewCollapsedBySettings();                                                                                 // [0xb6cf82c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInspectViewCollapsedBySettings();                                                                                 // [0xb7dbe18] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb6cf174] Final|Native|Protected 
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb7dba34] Final|Native|Protected 
 	// Function /Script/WeaponModsUI.AthenaPickupIndicatorWeaponMods.HandlePickupHovered
-	// void HandlePickupHovered(class AFortPickup* Pickup);                                                                     // [0xb6cef78] Final|Native|Public|BlueprintCallable 
+	// void HandlePickupHovered(class AFortPickup* Pickup);                                                                     // [0xb7db8f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator
@@ -147,19 +147,19 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.SetItemSlotsInfo
-	// void SetItemSlotsInfo(TArray<FFortWeaponModSlot>& ModSlots);                                                             // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotsInfo(TArray<FFortWeaponModSlot>& ModSlots);                                                             // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.SetItemSlotSelected
-	// void SetItemSlotSelected(bool bIsSelected);                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetItemSlotSelected(bool bIsSelected);                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.SetItemSlotInfo
-	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotInfo(FFortWeaponModSlot& ModSlot);                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.ResetItemInfo
-	// void ResetItemInfo();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ResetItemInfo();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.HandleWeaponModSlotsChanged
-	// void HandleWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                             // [0xb6cf710] Final|Native|Private 
+	// void HandleWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                             // [0xb7dbd40] Final|Native|Private 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.HandleWeaponFullyEquipped
-	// void HandleWeaponFullyEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xb6cf510] Final|Native|Private 
+	// void HandleWeaponFullyEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0x29f7ea8] Final|Native|Private 
 	// Function /Script/WeaponModsUI.AthenaQuickBarSlotWeaponModsIndicator.HandleQuickBarSlotFocusChanged
-	// void HandleQuickBarSlotFocusChanged(EFortQuickBars QuickBarType, int32_t QuickBarSlot);                                  // [0xb6cf038] Final|Native|Private 
+	// void HandleQuickBarSlotFocusChanged(EFortQuickBars QuickBarType, int32_t QuickBarSlot);                                  // [0xb7db970] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModsUI.FortGameSettingRegistryExtension_WeaponModsUI

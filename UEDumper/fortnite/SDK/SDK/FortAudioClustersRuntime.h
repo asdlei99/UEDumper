@@ -18,7 +18,7 @@
 class UFortAudioClustersSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(80,13783) /* TMap<FGameplayTag, double> */ __um(ParameterDefaults);                              // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,13883) /* TMap<FGameplayTag, double> */ __um(ParameterDefaults);                              // 0x0030   (0x0050)  
 };
 
 /// Class /Script/FortAudioClustersRuntime.FortAudioClustersSubsystem
@@ -34,7 +34,7 @@ struct FGameFeatureAudioClusterEntry
 { 
 	FGameplayTag                                       ClusterTag;                                                 // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13784) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ActorClasses);                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13884) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ActorClasses);                              // 0x0008   (0x0010)  
 };
 
 /// Class /Script/FortAudioClustersRuntime.GameFeatureAction_AddAudioCluster
@@ -43,14 +43,14 @@ class UGameFeatureAction_AddAudioCluster : public UGameFeatureAction
 { 
 public:
 	TArray<FGameFeatureAudioClusterEntry>              Clusters;                                                   // 0x0028   (0x0010)  
-	SDK_UNDEFINED(80,13785) /* TMap<FName, FGameplayTag> */ __um(OverrideTable);                                   // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,13885) /* TMap<FName, FGameplayTag> */ __um(OverrideTable);                                   // 0x0038   (0x0050)  
 	FName                                              DisabledActorTag;                                           // 0x0088   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x64];                                      // 0x008C   (0x0064)  MISSED
 
 
 	/// Functions
 	// Function /Script/FortAudioClustersRuntime.GameFeatureAction_AddAudioCluster.HandleRegisteredActorDeath
-	// void HandleRegisteredActorDeath(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0x2dcfc1c] Final|Native|Private|HasOutParms|HasDefaults 
+	// void HandleRegisteredActorDeath(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0xb54ba70] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/FortAudioClustersRuntime.GameFeatureAction_AddAudioClusterConfigMaps
@@ -58,7 +58,7 @@ public:
 class UGameFeatureAction_AddAudioClusterConfigMaps : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(16,13786) /* TArray<TWeakObjectPtr<UAudioClusterConfigMap*>> */ __um(ConfigMaps);                // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13886) /* TArray<TWeakObjectPtr<UAudioClusterConfigMap*>> */ __um(ConfigMaps);                // 0x0028   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0038   (0x0050)  MISSED
 };
 

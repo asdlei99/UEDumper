@@ -63,35 +63,38 @@ public:
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSchema.GetTemplateId
-	// FString GetTemplateId();                                                                                                 // [0x7a3db9c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetTemplateId();                                                                                                 // [0x7a5f4c0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate
-/// Size: 0x0088 (0x000030 - 0x0000B8)
+/// Size: 0x0098 (0x000030 - 0x0000C8)
 class UCosmeticLoadoutSlotTemplate : public UPrimaryDataAsset
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 184;
+	static inline constexpr uint64_t __MDKClassSize = 200;
 
 public:
 	SMember(FGameplayTag)                              SlotTag                                                     OFFSET(getStruct<T>, {0x30, 4, 0, 0})
 	SMember(FGameplayTagContainer)                     MetaTags                                                    OFFSET(getStruct<T>, {0x38, 32, 0, 0})
 	SMember(FCosmeticLoadoutSlotRequirements)          Requirements                                                OFFSET(getStruct<T>, {0x58, 80, 0, 0})
-	SMember(FPrimaryAssetId)                           DefaultCosmeticItemId                                       OFFSET(getStruct<T>, {0xA8, 8, 0, 0})
-	DMember(bool)                                      bAlwaysUseDefaultCosmeticItemId                             OFFSET(get<bool>, {0xB0, 1, 0, 0})
+	SMember(FString)                                   ShortName                                                   OFFSET(getStruct<T>, {0xA8, 16, 0, 0})
+	SMember(FPrimaryAssetId)                           DefaultCosmeticItemId                                       OFFSET(getStruct<T>, {0xB8, 8, 0, 0})
+	DMember(bool)                                      bAlwaysUseDefaultCosmeticItemId                             OFFSET(get<bool>, {0xC0, 1, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetSlotTag
-	// FGameplayTag GetSlotTag();                                                                                               // [0x608fc68] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetSlotTag();                                                                                               // [0x60f3a48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetShortName
+	// FString GetShortName();                                                                                                  // [0x7a5f4a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetRequirements
-	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                      // [0x7a3db80] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                      // [0x7a5f488] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetMetaTags
-	// FGameplayTagContainer GetMetaTags();                                                                                     // [0x7a3db64] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetMetaTags();                                                                                     // [0x7a5f46c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetDefaultCosmeticItemId
-	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                              // [0x608cba0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                              // [0x7a5f454] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetAlwaysUseDefaultCosmeticItemId
-	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                                // [0x7a3db4c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                                // [0x7a5f43c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CosmeticsFrameworkLoadouts.CosmeticLoadout

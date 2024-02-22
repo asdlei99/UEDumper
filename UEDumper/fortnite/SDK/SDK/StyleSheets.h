@@ -29,7 +29,7 @@ public:
 class UGameFeatureAction_RegisterStyleThemes : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(32,15385) /* TWeakObjectPtr<UStyleThemeConfig*> */ __um(StyleThemeConfig);                       // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,15528) /* TWeakObjectPtr<UStyleThemeConfig*> */ __um(StyleThemeConfig);                       // 0x0028   (0x0020)  
 };
 
 /// Class /Script/StyleSheets.PropertyTweenContext
@@ -48,7 +48,7 @@ class UStyleAnimationProvider : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,15386) /* TMap<FWidgetProperty, int32_t> */ __um(WidgetPropertyTweens);                       // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,15529) /* TMap<FWidgetProperty, int32_t> */ __um(WidgetPropertyTweens);                       // 0x0028   (0x0050)  
 };
 
 /// Class /Script/StyleSheets.StyleProvider
@@ -57,8 +57,8 @@ class UStyleProvider : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x48];                                      // 0x0000   (0x0048)  MISSED
-	SDK_UNDEFINED(8,15387) /* TWeakObjectPtr<UStyleRuleTree*> */ __um(StyleRuleTree);                              // 0x0048   (0x0008)  
-	SDK_UNDEFINED(8,15388) /* TWeakObjectPtr<UStyleAnimationProvider*> */ __um(StyleAnimationProvider);            // 0x0050   (0x0008)  
+	SDK_UNDEFINED(8,15530) /* TWeakObjectPtr<UStyleRuleTree*> */ __um(StyleRuleTree);                              // 0x0048   (0x0008)  
+	SDK_UNDEFINED(8,15531) /* TWeakObjectPtr<UStyleAnimationProvider*> */ __um(StyleAnimationProvider);            // 0x0050   (0x0008)  
 	unsigned char                                      UnknownData01_6[0xB8];                                      // 0x0058   (0x00B8)  MISSED
 };
 
@@ -74,8 +74,8 @@ struct FStyleSelectorItem
 struct FStyleClass
 { 
 	FInstancedPropertyBag                              StylePropertyBag;                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,15389) /* TMap<FName, FStyleAnimationData> */ __um(PropertyAnimations);                       // 0x0010   (0x0050)  
-	SDK_UNDEFINED(80,15390) /* TMap<FName, FInstancedPropertyBag> */ __um(MaterialParameters);                     // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,15532) /* TMap<FName, FStyleAnimationData> */ __um(PropertyAnimations);                       // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,15533) /* TMap<FName, FInstancedPropertyBag> */ __um(MaterialParameters);                     // 0x0060   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x58];                                      // 0x00B0   (0x0058)  MISSED
 };
 
@@ -87,7 +87,7 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	TArray<class UStyleRule*>                          Children;                                                   // 0x0028   (0x0010)  
 	FStyleSelectorItem                                 StyleSelectorItem;                                          // 0x0038   (0x0010)  
-	SDK_UNDEFINED(8,15391) /* TWeakObjectPtr<UStyleRule*> */ __um(Parent);                                         // 0x0048   (0x0008)  
+	SDK_UNDEFINED(8,15534) /* TWeakObjectPtr<UStyleRule*> */ __um(Parent);                                         // 0x0048   (0x0008)  
 	FStyleClass                                        style;                                                      // 0x0050   (0x0108)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0158   (0x0008)  MISSED
 };
@@ -115,7 +115,7 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FStyleSheetSettings
 { 
-	SDK_UNDEFINED(16,15392) /* FString */              __um(Description);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15535) /* FString */              __um(Description);                                          // 0x0000   (0x0010)  
 	TArray<class UClass*>                              StylableWidgetClasses;                                      // 0x0010   (0x0010)  
 };
 
@@ -150,7 +150,7 @@ struct FStyleThemeConfigEntry
 { 
 	FName                                              ThemeName;                                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,15393) /* TWeakObjectPtr<UStyleSheetCollection*> */ __um(Theme);                              // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,15536) /* TWeakObjectPtr<UStyleSheetCollection*> */ __um(Theme);                              // 0x0008   (0x0020)  
 	class UStyleSheetCollection*                       ThemeInstance;                                              // 0x0028   (0x0008)  
 };
 
@@ -168,9 +168,9 @@ class UStyleThemeProvider : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(8,15394) /* TWeakObjectPtr<UStyleRuleTree*> */ __um(StyleRuleTree);                              // 0x0028   (0x0008)  
-	SDK_UNDEFINED(80,15395) /* TMap<FStyleThemeConfigKey, UStyleThemeConfig*> */ __um(ThemeConfigSourceMap);       // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,15396) /* TSet<FName> */          __um(ActiveThemeNames);                                     // 0x0080   (0x0050)  
+	SDK_UNDEFINED(8,15537) /* TWeakObjectPtr<UStyleRuleTree*> */ __um(StyleRuleTree);                              // 0x0028   (0x0008)  
+	SDK_UNDEFINED(80,15538) /* TMap<FStyleThemeConfigKey, UStyleThemeConfig*> */ __um(ThemeConfigSourceMap);       // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,15539) /* TSet<FName> */          __um(ActiveThemeNames);                                     // 0x0080   (0x0050)  
 };
 
 /// Class /Script/StyleSheets.WidgetBlueprintGeneratedClassExtension_StyleClass
@@ -178,7 +178,7 @@ public:
 class UWidgetBlueprintGeneratedClassExtension_StyleClass : public UWidgetBlueprintGeneratedClassExtension
 { 
 public:
-	SDK_UNDEFINED(80,15397) /* TMap<FName, FStyleTag> */ __um(WidgetStyleTagMap);                                  // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,15540) /* TMap<FName, FStyleTag> */ __um(WidgetStyleTagMap);                                  // 0x0028   (0x0050)  
 };
 
 /// Class /Script/StyleSheets.StylableWidget
@@ -190,7 +190,7 @@ public:
 
 	/// Functions
 	// Function /Script/StyleSheets.StylableWidget.BP_OnWidgetStyled
-	// void BP_OnWidgetStyled();                                                                                             // [0x130d900] RequiredAPI|Event|Protected|BlueprintEvent 
+	// void BP_OnWidgetStyled();                                                                                             // [0x3d1d968] RequiredAPI|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/StyleSheets.WidgetTypeEntry
@@ -209,7 +209,7 @@ class UStyleSheetsSettings : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	TArray<FWidgetTypeEntry>                           WidgetTypes;                                                // 0x0028   (0x0010)  
-	SDK_UNDEFINED(32,15398) /* TWeakObjectPtr<UStyleThemeConfig*> */ __um(StyleThemeConfig);                       // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,15541) /* TWeakObjectPtr<UStyleThemeConfig*> */ __um(StyleThemeConfig);                       // 0x0038   (0x0020)  
 	bool                                               bAllowAssigningStyleTagsToWidgets;                          // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0059   (0x0007)  MISSED
 };
@@ -231,7 +231,7 @@ public:
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FWidgetProperty
 { 
-	SDK_UNDEFINED(8,15399) /* TWeakObjectPtr<UWidget*> */ __um(Widget);                                            // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,15542) /* TWeakObjectPtr<UWidget*> */ __um(Widget);                                            // 0x0000   (0x0008)  
 	FName                                              PropertyPath;                                               // 0x0008   (0x0004)  
 };
 
@@ -249,7 +249,7 @@ struct FStyleAnimationData
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FStylePropertyStore
 { 
-	SDK_UNDEFINED(80,15400) /* TMap<UWidget*, FInstancedPropertyBag> */ __um(WidgetToPropertyBagMap);              // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,15543) /* TMap<UWidget*, FInstancedPropertyBag> */ __um(WidgetToPropertyBagMap);              // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/StyleSheets.StyleRulePreviewInfo

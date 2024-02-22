@@ -13,7 +13,7 @@
 /// dependency: SocketSubsystemEOS
 
 /// Class /Script/OnlineSubsystemEOS.NetDriverEOS
-/// Size: 0x0000 (0x000888 - 0x000888)
+/// Size: 0x0000 (0x000890 - 0x000890)
 class UNetDriverEOS : public UNetDriverEOSBase
 { 
 public:
@@ -30,13 +30,13 @@ public:
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FArtifactSettings
 { 
-	SDK_UNDEFINED(16,14864) /* FString */              __um(ArtifactName);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14865) /* FString */              __um(ClientId);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,14866) /* FString */              __um(ClientSecret);                                         // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,14867) /* FString */              __um(ProductId);                                            // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,14868) /* FString */              __um(SandboxId);                                            // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,14869) /* FString */              __um(DeploymentId);                                         // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,14870) /* FString */              __um(ClientEncryptionKey);                                  // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,15004) /* FString */              __um(ArtifactName);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15005) /* FString */              __um(ClientId);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,15006) /* FString */              __um(ClientSecret);                                         // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,15007) /* FString */              __um(ProductId);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,15008) /* FString */              __um(SandboxId);                                            // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,15009) /* FString */              __um(DeploymentId);                                         // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,15010) /* FString */              __um(ClientEncryptionKey);                                  // 0x0060   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystemEOS.EOSSettings
@@ -44,19 +44,19 @@ struct FArtifactSettings
 class UEOSSettings : public URuntimeOptionsBase
 { 
 public:
-	SDK_UNDEFINED(16,14871) /* FString */              __um(CacheDir);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,14872) /* FString */              __um(DefaultArtifactName);                                  // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14873) /* FString */              __um(RTCBackgroundMode);                                    // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,15011) /* FString */              __um(CacheDir);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,15012) /* FString */              __um(DefaultArtifactName);                                  // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,15013) /* FString */              __um(RTCBackgroundMode);                                    // 0x0058   (0x0010)  
 	int32_t                                            TickBudgetInMilliseconds;                                   // 0x0068   (0x0004)  
 	bool                                               bEnableOverlay;                                             // 0x006C   (0x0001)  
 	bool                                               bEnableSocialOverlay;                                       // 0x006D   (0x0001)  
 	bool                                               bEnableEditorOverlay;                                       // 0x006E   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x006F   (0x0001)  MISSED
-	SDK_UNDEFINED(16,14874) /* TArray<FString> */      __um(TitleStorageTags);                                     // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,15014) /* TArray<FString> */      __um(TitleStorageTags);                                     // 0x0070   (0x0010)  
 	int32_t                                            TitleStorageReadChunkLength;                                // 0x0080   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0084   (0x0004)  MISSED
 	TArray<FArtifactSettings>                          Artifacts;                                                  // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,14875) /* TArray<FString> */      __um(AuthScopeFlags);                                       // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,15015) /* TArray<FString> */      __um(AuthScopeFlags);                                       // 0x0098   (0x0010)  
 	bool                                               bUseEAS;                                                    // 0x00A8   (0x0001)  
 	bool                                               bUseEOSConnect;                                             // 0x00A9   (0x0001)  
 	bool                                               bMirrorStatsToEOS;                                          // 0x00AA   (0x0001)  

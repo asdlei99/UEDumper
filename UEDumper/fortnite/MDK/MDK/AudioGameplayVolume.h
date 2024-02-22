@@ -23,7 +23,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.AudioGameplayVolumeMutator.SetPriority
-	// void SetPriority(int32_t InPriority);                                                                                    // [0x7d14eb4] Final|Native|Public|BlueprintCallable 
+	// void SetPriority(int32_t InPriority);                                                                                    // [0x7d2eb00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioGameplayVolume.AttenuationVolumeComponent
@@ -42,9 +42,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.AttenuationVolumeComponent.SetInteriorVolume
-	// void SetInteriorVolume(float Volume, float InterpolateTime);                                                             // [0x7d14d64] Final|Native|Public|BlueprintCallable 
+	// void SetInteriorVolume(float Volume, float InterpolateTime);                                                             // [0x7d2ea2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplayVolume.AttenuationVolumeComponent.SetExteriorVolume
-	// void SetExteriorVolume(float Volume, float InterpolateTime);                                                             // [0x7d14c14] Final|Native|Public|BlueprintCallable 
+	// void SetExteriorVolume(float Volume, float InterpolateTime);                                                             // [0x7d2e958] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioGameplayVolume.AudioGameplayVolume
@@ -63,13 +63,13 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.AudioGameplayVolume.SetEnabled
-	// void SetEnabled(bool bEnable);                                                                                           // [0x7d14b3c] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bEnable);                                                                                           // [0x7d2e8c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplayVolume.AudioGameplayVolume.OnRep_bEnabled
-	// void OnRep_bEnabled();                                                                                                   // [0x36f7b08] Native|Protected     
+	// void OnRep_bEnabled();                                                                                                   // [0x1f9c7fc] Native|Protected     
 	// Function /Script/AudioGameplayVolume.AudioGameplayVolume.OnListenerExit
-	// void OnListenerExit();                                                                                                   // [0x2e1ebac] Native|Event|Public|BlueprintEvent 
+	// void OnListenerExit();                                                                                                   // [0x2f520e8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/AudioGameplayVolume.AudioGameplayVolume.OnListenerEnter
-	// void OnListenerEnter();                                                                                                  // [0x2f560f0] Native|Event|Public|BlueprintEvent 
+	// void OnListenerEnter();                                                                                                  // [0x304ed28] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/AudioGameplayVolume.AudioGameplayVolumeComponent
@@ -153,9 +153,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.FilterVolumeComponent.SetInteriorLPF
-	// void SetInteriorLPF(float Volume, float InterpolateTime);                                                                // [0x7d14d64] Final|Native|Public|BlueprintCallable 
+	// void SetInteriorLPF(float Volume, float InterpolateTime);                                                                // [0x7d2ea2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplayVolume.FilterVolumeComponent.SetExteriorLPF
-	// void SetExteriorLPF(float Volume, float InterpolateTime);                                                                // [0x7d14c14] Final|Native|Public|BlueprintCallable 
+	// void SetExteriorLPF(float Volume, float InterpolateTime);                                                                // [0x7d2e958] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioGameplayVolume.ReverbVolumeComponent
@@ -171,7 +171,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.ReverbVolumeComponent.SetReverbSettings
-	// void SetReverbSettings(FReverbSettings& NewReverbSettings);                                                              // [0x7d14f80] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetReverbSettings(FReverbSettings& NewReverbSettings);                                                              // [0x7d2eb8c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AudioGameplayVolume.SubmixOverrideVolumeComponent
@@ -187,7 +187,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.SubmixOverrideVolumeComponent.SetSubmixOverrideSettings
-	// void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings>& NewSubmixOverrideSettings);                   // [0x7d1502c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings>& NewSubmixOverrideSettings);                   // [0x7d2ec38] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AudioGameplayVolume.SubmixSendVolumeComponent
@@ -203,6 +203,6 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplayVolume.SubmixSendVolumeComponent.SetSubmixSendSettings
-	// void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings>& NewSubmixSendSettings);                               // [0x7d150f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings>& NewSubmixSendSettings);                               // [0x7d2ecfc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 

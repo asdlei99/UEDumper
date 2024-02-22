@@ -34,9 +34,9 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.CraftingObjectBGA.HandleInteractionRangeEndOverlap
-	// void HandleInteractionRangeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xaba2f24] Final|Native|Private 
+	// void HandleInteractionRangeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xaea104c] Final|Native|Private 
 	// Function /Script/CraftingRuntime.CraftingObjectBGA.HandleInteractionRangeBeginOverlap
-	// void HandleInteractionRangeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xaba2ba4] Final|Native|Private|HasOutParms 
+	// void HandleInteractionRangeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xaea0e04] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.CraftingCheatManager
@@ -51,9 +51,9 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.CraftingCheatManager.ToggleFreeCrafting
-	// void ToggleFreeCrafting();                                                                                               // [0x3047908] Final|Exec|Native|Public 
+	// void ToggleFreeCrafting();                                                                                               // [0x3097b14] Final|Exec|Native|Public 
 	// Function /Script/CraftingRuntime.CraftingCheatManager.StartSelfCrafting
-	// void StartSelfCrafting(FName FormulaName);                                                                               // [0x86db54c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void StartSelfCrafting(FName FormulaName);                                                                               // [0x86debf4] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/CraftingRuntime.CraftingObjectComponent
@@ -100,11 +100,11 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.CraftingObjectComponent.OnRep_CraftingObjectRepStateData
-	// void OnRep_CraftingObjectRepStateData(TArray<FCraftingObjectRepStateData>& OldValue);                                    // [0xaba3d20] Final|Native|Private|HasOutParms 
+	// void OnRep_CraftingObjectRepStateData(TArray<FCraftingObjectRepStateData>& OldValue);                                    // [0xaea1b48] Final|Native|Private|HasOutParms 
 	// Function /Script/CraftingRuntime.CraftingObjectComponent.HandlePickupCraftingItemPickedUp
-	// void HandlePickupCraftingItemPickedUp(class AFortPickup* Pickup, class AFortPawn* InteractingPawn, class UFortWorldItemDefinition* WorldItemDefinition, FVector PickupLocation); // [0xaba3218] Final|Native|Private|HasDefaults 
+	// void HandlePickupCraftingItemPickedUp(class AFortPickup* Pickup, class AFortPawn* InteractingPawn, class UFortWorldItemDefinition* WorldItemDefinition, FVector PickupLocation); // [0xaea1208] Final|Native|Private|HasDefaults 
 	// Function /Script/CraftingRuntime.CraftingObjectComponent.CraftingObjectOnFormulaCraftableChanged__DelegateSignature
-	// void CraftingObjectOnFormulaCraftableChanged__DelegateSignature(FName& FormulaRowName, bool bIsCraftable);               // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void CraftingObjectOnFormulaCraftableChanged__DelegateSignature(FName& FormulaRowName, bool bIsCraftable);               // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents
@@ -120,27 +120,27 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerStartCrafting
-	// void ServerStartCrafting(class AActor* CraftingObject, FName CraftingFormulaName, int32_t NumberToCraft, FCraftingMultiKey Key); // [0xaba58a0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerStartCrafting(class AActor* CraftingObject, FName CraftingFormulaName, int32_t NumberToCraft, FCraftingMultiKey Key); // [0xaea3644] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerResumeCrafting
-	// void ServerResumeCrafting(class AActor* CraftingObject, FCraftingMultiKey Key);                                          // [0xaba5728] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerResumeCrafting(class AActor* CraftingObject, FCraftingMultiKey Key);                                          // [0xaea3498] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerReportCraftingSuccess
-	// void ServerReportCraftingSuccess(class AActor* CraftingObject, FCraftingMultiKey Key);                                   // [0xaba55b0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerReportCraftingSuccess(class AActor* CraftingObject, FCraftingMultiKey Key);                                   // [0xaea32ec] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerPickupItemAndStartCrafting
-	// void ServerPickupItemAndStartCrafting(class AActor* CraftingObject, class AFortPickup* Pickup, FName CraftingFormulaName, FCraftingMultiKey Key); // [0xaba5334] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerPickupItemAndStartCrafting(class AActor* CraftingObject, class AFortPickup* Pickup, FName CraftingFormulaName, FCraftingMultiKey Key); // [0xaea30c8] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerPauseCrafting
-	// void ServerPauseCrafting(class AActor* CraftingObject, bool bDecayPausedTime, FCraftingMultiKey Key);                    // [0xaba513c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerPauseCrafting(class AActor* CraftingObject, bool bDecayPausedTime, FCraftingMultiKey Key);                    // [0xaea2edc] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerEjectItems
-	// void ServerEjectItems(class AActor* CraftingObject);                                                                     // [0xaba5058] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerEjectItems(class AActor* CraftingObject);                                                                     // [0xaea2e3c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerClaimCraftingResults
-	// void ServerClaimCraftingResults(class AActor* CraftingObject, FCraftingMultiKey Key);                                    // [0xaba4ee0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerClaimCraftingResults(class AActor* CraftingObject, FCraftingMultiKey Key);                                    // [0xaea2c90] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ServerCancelCrafting
-	// void ServerCancelCrafting(class AActor* CraftingObject, FCraftingMultiKey Key);                                          // [0xaba4d68] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerCancelCrafting(class AActor* CraftingObject, FCraftingMultiKey Key);                                          // [0xaea2ae4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.NotifyCraftingSuccess
-	// void NotifyCraftingSuccess(class AActor* CraftingObject, FName& FormulaRowName, TArray<FFortItemEntry>& ConsumedIngredients, FCraftingMultiKey Key); // [0xaba3874] Final|Native|Public|HasOutParms 
+	// void NotifyCraftingSuccess(class AActor* CraftingObject, FName& FormulaRowName, TArray<FFortItemEntry>& ConsumedIngredients, FCraftingMultiKey Key); // [0xaea1758] Final|Native|Public|HasOutParms 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ClientNotifyCraftingSuccess
-	// void ClientNotifyCraftingSuccess(class AActor* CraftingObject, FName FormulaRowName, TArray<FFortItemEntry> ConsumedIngredients, FCraftingMultiKey Key); // [0xaba01f8] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientNotifyCraftingSuccess(class AActor* CraftingObject, FName FormulaRowName, TArray<FFortItemEntry> ConsumedIngredients, FCraftingMultiKey Key); // [0xae9e7ec] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/CraftingRuntime.FortControllerComponent_CraftingNetworkEvents.ClientNotifyCraftingFailed
-	// void ClientNotifyCraftingFailed(class AActor* CraftingObject, FGameplayTagContainer FailedReason, FCraftingMultiKey Key); // [0xaba000c] Net|Native|Event|Public|NetClient 
+	// void ClientNotifyCraftingFailed(class AActor* CraftingObject, FGameplayTagContainer FailedReason, FCraftingMultiKey Key); // [0xae9e54c] Net|Native|Event|Public|NetClient 
 };
 
 /// Class /Script/CraftingRuntime.FortGameStateComponent_Crafting
@@ -158,9 +158,9 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.FortGameStateComponent_Crafting.OnRep_CraftingResultsList
-	// void OnRep_CraftingResultsList();                                                                                        // [0xaba43e0] Final|Native|Protected 
+	// void OnRep_CraftingResultsList();                                                                                        // [0xaea2208] Final|Native|Protected 
 	// Function /Script/CraftingRuntime.FortGameStateComponent_Crafting.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xaba3b68] RequiredAPI|Native|Protected|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xaea1a14] RequiredAPI|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.FortPickupInteractOverrideComponent_Crafting
@@ -191,7 +191,7 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.FortContextualTutorial_CraftingComplete.OnCraftingSuccess
-	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                              // [0xaba3ac0] Final|Native|Private|HasOutParms 
+	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                              // [0xaea196c] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.FortContextualTutorial_CraftingReady
@@ -206,7 +206,7 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.FortContextualTutorial_CraftingReady.HandleFormulaCraftableChanged
-	// void HandleFormulaCraftableChanged(FName& FormulaRowName, bool bIsCraftable);                                            // [0xaba2994] Final|Native|Private|HasOutParms 
+	// void HandleFormulaCraftableChanged(FName& FormulaRowName, bool bIsCraftable);                                            // [0xaea0bf4] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.FortContextualTutorial_CraftingTabOpen
@@ -221,9 +221,9 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.FortContextualTutorial_CraftingTabOpen.HandleInventoryTabChanged
-	// void HandleInventoryTabChanged(FName InventoryTabNameId);                                                                // [0xaba3158] Final|Native|Private 
+	// void HandleInventoryTabChanged(FName InventoryTabNameId);                                                                // [0xaea1188] Final|Native|Private 
 	// Function /Script/CraftingRuntime.FortContextualTutorial_CraftingTabOpen.HandleFormulaCraftableChanged
-	// void HandleFormulaCraftableChanged(FName& FormulaRowName, bool bIsCraftable);                                            // [0xaba2aa4] Final|Native|Private|HasOutParms 
+	// void HandleFormulaCraftableChanged(FName& FormulaRowName, bool bIsCraftable);                                            // [0xaea0d04] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/CraftingRuntime.CraftingGlobals
@@ -248,75 +248,75 @@ public:
 
 	/// Functions
 	// Function /Script/CraftingRuntime.CraftingLibrary.StartCrafting
-	// void StartCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FName& CraftingFormulaName, int32_t NumberToCraft, FCraftingMultiKey Key); // [0xaba5b1c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void StartCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FName& CraftingFormulaName, int32_t NumberToCraft, FCraftingMultiKey Key); // [0xaea3868] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.ResumeCrafting
-	// void ResumeCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key);       // [0xaba4b6c] Final|Native|Static|Public|BlueprintCallable 
+	// void ResumeCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key);       // [0xaea28f4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.ReportCraftingSuccess
-	// void ReportCraftingSuccess(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key); // [0xaba4970] Final|Native|Static|Public|BlueprintCallable 
+	// void ReportCraftingSuccess(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key); // [0xaea2704] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.PickupItemAndStartCrafting
-	// void PickupItemAndStartCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, class AFortPickup* Pickup, FName& CraftingFormulaName, FCraftingMultiKey Key); // [0xaba4678] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void PickupItemAndStartCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, class AFortPickup* Pickup, FName& CraftingFormulaName, FCraftingMultiKey Key); // [0xaea245c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.PauseCrafting
-	// void PauseCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, bool bDecayPausedTime, FCraftingMultiKey Key); // [0xaba43f4] Final|Native|Static|Public|BlueprintCallable 
+	// void PauseCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, bool bDecayPausedTime, FCraftingMultiKey Key); // [0xaea221c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.IsValidIngredient
-	// bool IsValidIngredient(class AFortPlayerController* FortPC, class AActor* CraftingObject, class UFortItemDefinition* ItemDef); // [0xaba3518] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsValidIngredient(class AFortPlayerController* FortPC, class AActor* CraftingObject, class UFortItemDefinition* ItemDef); // [0xaea1478] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.IsFreeCraftingEnabled
-	// bool IsFreeCraftingEnabled(class AActor* CraftingObject);                                                                // [0xaba3444] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsFreeCraftingEnabled(class AActor* CraftingObject);                                                                // [0xaea13e8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GiveItemToCraftingObject
-	// void GiveItemToCraftingObject(class AFortPlayerController* Instigator, class AActor* CraftingObject, FFortItemEntry& ItemEntryToGrant); // [0xaba26c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GiveItemToCraftingObject(class AFortPlayerController* Instigator, class AActor* CraftingObject, FFortItemEntry& ItemEntryToGrant); // [0xaea09a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetValidIngredientsInInventory
-	// void GetValidIngredientsInInventory(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<UFortWorldItem*>& OutIngredients); // [0xaba2320] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetValidIngredientsInInventory(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<UFortWorldItem*>& OutIngredients); // [0xaea0644] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetUIDataForCraftingIngredientTags
-	// void GetUIDataForCraftingIngredientTags(class UObject* WorldContextObject, FGameplayTagContainer& IngredientTags, TArray<TWeakObjectPtr<UFortItemDefinition*>>& OutItemDefs, TArray<TWeakObjectPtr<UObject*>>& OutIcons); // [0xaba20ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetUIDataForCraftingIngredientTags(class UObject* WorldContextObject, FGameplayTagContainer& IngredientTags, TArray<TWeakObjectPtr<UFortItemDefinition*>>& OutItemDefs, TArray<TWeakObjectPtr<UObject*>>& OutIcons); // [0xaea0448] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetTimeToCraftRecipe
-	// float GetTimeToCraftRecipe(class AActor* CraftingObject, FName& CraftingFormulaName);                                    // [0xaba1fe0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float GetTimeToCraftRecipe(class AActor* CraftingObject, FName& CraftingFormulaName);                                    // [0xaea0378] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetLastCraftedItemFormulaName
-	// FName GetLastCraftedItemFormulaName(class AActor* CraftingObject);                                                       // [0xaba1f0c] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetLastCraftedItemFormulaName(class AActor* CraftingObject);                                                       // [0xaea02e8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetKnownCraftingFormulas
-	// void GetKnownCraftingFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xaba1d10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetKnownCraftingFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xaea016c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetIngredientsInCraftingObject
-	// TArray<UFortWorldItem*> GetIngredientsInCraftingObject(class AActor* CraftingObject);                                    // [0xaba1be8] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UFortWorldItem*> GetIngredientsInCraftingObject(class AActor* CraftingObject);                                    // [0xaea0084] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingResultsForRowName
-	// void GetCraftingResultsForRowName(class UObject* WorldContextObject, FName& CraftingFormulaRow, TArray<FItemAndCount>& OutResults, int32_t NumToCraft); // [0xaba196c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCraftingResultsForRowName(class UObject* WorldContextObject, FName& CraftingFormulaRow, TArray<FItemAndCount>& OutResults, int32_t NumToCraft); // [0xae9fe3c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectTags
-	// FGameplayTagContainer GetCraftingObjectTags(class AActor* CraftingObject);                                               // [0xaba1894] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FGameplayTagContainer GetCraftingObjectTags(class AActor* CraftingObject);                                               // [0xae9fda4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectPausedTime
-	// float GetCraftingObjectPausedTime(class AActor* CraftingObject, FCraftingMultiKey Key);                                  // [0xaba1730] Final|Native|Static|Public|BlueprintCallable 
+	// float GetCraftingObjectPausedTime(class AActor* CraftingObject, FCraftingMultiKey Key);                                  // [0xae9fc08] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectCurrentCraftingStateTimeLeft
-	// float GetCraftingObjectCurrentCraftingStateTimeLeft(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xaba15cc] Final|Native|Static|Public|BlueprintCallable 
+	// float GetCraftingObjectCurrentCraftingStateTimeLeft(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xae9fa6c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectCurrentCraftingStateStartTime
-	// float GetCraftingObjectCurrentCraftingStateStartTime(class AActor* CraftingObject, FCraftingMultiKey Key);               // [0xaba1468] Final|Native|Static|Public|BlueprintCallable 
+	// float GetCraftingObjectCurrentCraftingStateStartTime(class AActor* CraftingObject, FCraftingMultiKey Key);               // [0xae9f8d0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectCurrentCraftingStateEndTime
-	// float GetCraftingObjectCurrentCraftingStateEndTime(class AActor* CraftingObject, FCraftingMultiKey Key);                 // [0xaba1304] Final|Native|Static|Public|BlueprintCallable 
+	// float GetCraftingObjectCurrentCraftingStateEndTime(class AActor* CraftingObject, FCraftingMultiKey Key);                 // [0xae9f734] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectCraftingState
-	// ECraftingObjectState GetCraftingObjectCraftingState(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xaba11c4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECraftingObjectState GetCraftingObjectCraftingState(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xae9f5ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingObjectComponent
-	// class UCraftingObjectComponent* GetCraftingObjectComponent(class AActor* CraftingObject);                                // [0xaba10f8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCraftingObjectComponent* GetCraftingObjectComponent(class AActor* CraftingObject);                                // [0xae9f520] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingIngredients_TempItems
-	// TArray<UFortWorldItem*> GetCraftingIngredients_TempItems(class AActor* CraftingObject, FCraftingMultiKey Key);           // [0xaba0f84] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UFortWorldItem*> GetCraftingIngredients_TempItems(class AActor* CraftingObject, FCraftingMultiKey Key);           // [0xae9f384] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingFormulaNameBeingCrafted
-	// FName GetCraftingFormulaNameBeingCrafted(class AActor* CraftingObject, FCraftingMultiKey Key);                           // [0xaba0e3c] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetCraftingFormulaNameBeingCrafted(class AActor* CraftingObject, FCraftingMultiKey Key);                           // [0xae9f204] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftingFormulaIngredientRequirements
-	// bool GetCraftingFormulaIngredientRequirements(class UObject* WorldContextObject, FName& CraftingFormulaRow, TArray<FCraftingIngredientRequirement>& OutIngredientRequirements); // [0xaba0cdc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetCraftingFormulaIngredientRequirements(class UObject* WorldContextObject, FName& CraftingFormulaRow, TArray<FCraftingIngredientRequirement>& OutIngredientRequirements); // [0xae9f0b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetCraftedResults_TempItems
-	// TArray<UFortWorldItem*> GetCraftedResults_TempItems(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xaba0b68] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UFortWorldItem*> GetCraftedResults_TempItems(class AActor* CraftingObject, FCraftingMultiKey Key);                // [0xae9ef14] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetAllValidIngredients
-	// void GetAllValidIngredients(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FGameplayTagContainer>& OutIngredients); // [0xaba094c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAllValidIngredients(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FGameplayTagContainer>& OutIngredients); // [0xae9ed7c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetAllCraftingFormulas
-	// void GetAllCraftingFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xaba0750] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAllCraftingFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xae9ec00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.GetAllCraftableFormulas
-	// void GetAllCraftableFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xaba05c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAllCraftableFormulas(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xae9eae8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.EjectItems
-	// void EjectItems(class AFortPlayerController* Instigator, class AActor* CraftingObject);                                  // [0xaba0444] Final|Native|Static|Public|BlueprintCallable 
+	// void EjectItems(class AFortPlayerController* Instigator, class AActor* CraftingObject);                                  // [0xae9e9ec] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.ClaimCraftingResults
-	// void ClaimCraftingResults(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key); // [0xab9fe10] Final|Native|Static|Public|BlueprintCallable 
+	// void ClaimCraftingResults(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key); // [0xae9e35c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.CanCraftFormulaWithAdditionalItems
-	// bool CanCraftFormulaWithAdditionalItems(class AFortPlayerController* FortPC, class AActor* CraftingObject, FName CraftingFormulaRow, TArray<FItemAndCount>& AdditionalItems, TArray<FCraftingIngredientQueryState>& OutIngredientStates, int32_t NumberToCraft); // [0xab9f884] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool CanCraftFormulaWithAdditionalItems(class AFortPlayerController* FortPC, class AActor* CraftingObject, FName CraftingFormulaRow, TArray<FItemAndCount>& AdditionalItems, TArray<FCraftingIngredientQueryState>& OutIngredientStates, int32_t NumberToCraft); // [0xae9dea8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.CanCraftFormula
-	// bool CanCraftFormula(class AFortPlayerController* FortPC, class AActor* CraftingObject, FName CraftingFormulaRow, TArray<FCraftingIngredientQueryState>& OutIngredientStates, int32_t NumberToCraft); // [0xab9f588] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool CanCraftFormula(class AFortPlayerController* FortPC, class AActor* CraftingObject, FName CraftingFormulaRow, TArray<FCraftingIngredientQueryState>& OutIngredientStates, int32_t NumberToCraft); // [0xae9dc70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.CancelCrafting
-	// void CancelCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key);       // [0xab9fc14] Final|Native|Static|Public|BlueprintCallable 
+	// void CancelCrafting(class AFortPlayerController* Instigator, class AActor* CraftingObject, FCraftingMultiKey Key);       // [0xae9e174] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CraftingRuntime.CraftingLibrary.CancelAllCrafting
-	// void CancelAllCrafting(class AActor* CraftingObject);                                                                    // [0x5d87858] Final|Native|Static|Public|BlueprintCallable 
+	// void CancelAllCrafting(class AActor* CraftingObject);                                                                    // [0x5decebc] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/CraftingRuntime.CraftingObjectSuccessEvent
@@ -383,23 +383,23 @@ public:
 };
 
 /// Struct /Script/CraftingRuntime.CraftingObjectServerStateData
-/// Size: 0x0200 (0x000000 - 0x000200)
+/// Size: 0x01F8 (0x000000 - 0x0001F8)
 class FCraftingObjectServerStateData : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 512;
+	static inline constexpr uint64_t __MDKClassSize = 504;
 
 public:
 	DMember(bool)                                      bNextResultsHandledExternally                               OFFSET(get<bool>, {0x0, 1, 1, 0})
 	CMember(class AFortPickup*)                        PendingPickupCraftingItem                                   OFFSET(get<T>, {0x8, 8, 0, 0})
 	SMember(FName)                                     PendingPickupCraftingFormula                                OFFSET(getStruct<T>, {0x10, 4, 0, 0})
-	SMember(FFortItemEntry)                            PendingPickupCraftingItemEntry                              OFFSET(getStruct<T>, {0x18, 424, 0, 0})
-	DMember(int32_t)                                   PendingPickupHeldCount                                      OFFSET(get<int32_t>, {0x1C0, 4, 0, 0})
-	CMember(TArray<FFortItemEntry>)                    AllOfTheIngredientItems                                     OFFSET(get<T>, {0x1C8, 16, 0, 0})
-	CMember(TArray<int32_t>)                           NonConsumedIngredientItemIndices                            OFFSET(get<T>, {0x1D8, 16, 0, 0})
-	CMember(TArray<FItemAndCount>)                     CraftingResults                                             OFFSET(get<T>, {0x1E8, 16, 0, 0})
-	SMember(FGameplayAbilitySpecHandle)                InstigatorWhileCraftingAbilitySpecHandle                    OFFSET(getStruct<T>, {0x1F8, 4, 0, 0})
+	SMember(FFortItemEntry)                            PendingPickupCraftingItemEntry                              OFFSET(getStruct<T>, {0x18, 416, 0, 0})
+	DMember(int32_t)                                   PendingPickupHeldCount                                      OFFSET(get<int32_t>, {0x1B8, 4, 0, 0})
+	CMember(TArray<FFortItemEntry>)                    AllOfTheIngredientItems                                     OFFSET(get<T>, {0x1C0, 16, 0, 0})
+	CMember(TArray<int32_t>)                           NonConsumedIngredientItemIndices                            OFFSET(get<T>, {0x1D0, 16, 0, 0})
+	CMember(TArray<FItemAndCount>)                     CraftingResults                                             OFFSET(get<T>, {0x1E0, 16, 0, 0})
+	SMember(FGameplayAbilitySpecHandle)                InstigatorWhileCraftingAbilitySpecHandle                    OFFSET(getStruct<T>, {0x1F0, 4, 0, 0})
 };
 
 /// Struct /Script/CraftingRuntime.CraftingIngredientRequirement

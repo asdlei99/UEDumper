@@ -56,47 +56,47 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.UpdateVisualParameters
-	// void UpdateVisualParameters();                                                                                           // [0xb7d8808] Final|Native|Public|BlueprintCallable 
+	// void UpdateVisualParameters();                                                                                           // [0xb8ea498] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.UpdateDeviceCableAnimator
-	// void UpdateDeviceCableAnimator();                                                                                        // [0xb7d87f4] Final|Native|Public|BlueprintCallable 
+	// void UpdateDeviceCableAnimator();                                                                                        // [0xb8ea484] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.SetFocusedVisuals
-	// void SetFocusedVisuals(bool bIsFocused);                                                                                 // [0xb7d85a0] Final|Native|Public|BlueprintCallable 
+	// void SetFocusedVisuals(bool bIsFocused);                                                                                 // [0xb8ea2f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnSplineUpdated
-	// void OnSplineUpdated(bool bCollisionEnabled);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSplineUpdated(bool bCollisionEnabled);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnScalesUpdated
-	// void OnScalesUpdated(FVector StartScale, FVector EndScale);                                                              // [0x130d900] Event|Protected|HasDefaults|BlueprintEvent 
+	// void OnScalesUpdated(FVector StartScale, FVector EndScale);                                                              // [0x3d1d968] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnRep_ServerPortB
-	// void OnRep_ServerPortB();                                                                                                // [0xb7d78d4] Final|Native|Private 
+	// void OnRep_ServerPortB();                                                                                                // [0xb8e9874] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnRep_ServerPortA
-	// void OnRep_ServerPortA();                                                                                                // [0xb7d78c0] Final|Native|Private 
+	// void OnRep_ServerPortA();                                                                                                // [0xb8e9860] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnCableReturned
-	// void OnCableReturned();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCableReturned();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnCableGrabbed
-	// void OnCableGrabbed(bool bThroughReplication);                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCableGrabbed(bool bThroughReplication);                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnCableDisconnected
-	// void OnCableDisconnected(bool bThroughReplication);                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCableDisconnected(bool bThroughReplication);                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.OnCableConnected
-	// void OnCableConnected(bool bThroughReplication);                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCableConnected(bool bThroughReplication);                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetPortB
-	// class UFMDeviceCablePortComponent* GetPortB();                                                                           // [0xb7d7118] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMDeviceCablePortComponent* GetPortB();                                                                           // [0xb8e9138] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetPortA
-	// class UFMDeviceCablePortComponent* GetPortA();                                                                           // [0xb7d7100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMDeviceCablePortComponent* GetPortA();                                                                           // [0xb8e9120] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetDeviceCableHead
-	// class UStaticMeshComponent* GetDeviceCableHead();                                                                        // [0xb7d70e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UStaticMeshComponent* GetDeviceCableHead();                                                                        // [0xb8e9108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetConstantPort
-	// class UFMDeviceCablePortComponent* GetConstantPort();                                                                    // [0xb7d70d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMDeviceCablePortComponent* GetConstantPort();                                                                    // [0xb8e90f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetCableSpline
-	// class USplineComponent* GetCableSpline();                                                                                // [0xb7d70b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USplineComponent* GetCableSpline();                                                                                // [0xb8e90d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.GetCableDataType
-	// EDeviceCablePortDataType GetCableDataType();                                                                             // [0xb7d7080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCablePortDataType GetCableDataType();                                                                             // [0xb8e90a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.Disconnect
-	// void Disconnect();                                                                                                       // [0xb7d7058] Final|Native|Public|BlueprintCallable 
+	// void Disconnect();                                                                                                       // [0xb8e9078] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.ConnectPort
-	// void ConnectPort(class UFMDeviceCablePortComponent* Port);                                                               // [0xb7d6e44] Final|Native|Public|BlueprintCallable 
+	// void ConnectPort(class UFMDeviceCablePortComponent* Port);                                                               // [0xb8e8ea0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.ConnectConstantPort
-	// void ConnectConstantPort(class UFMDeviceCablePortComponent* Port);                                                       // [0xb7d6d84] Final|Native|Public|BlueprintCallable 
+	// void ConnectConstantPort(class UFMDeviceCablePortComponent* Port);                                                       // [0xb8e8e20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCable.BuildMeshOnSpline
-	// void BuildMeshOnSpline(bool bCollisionEnabled);                                                                          // [0xb7d6cc0] Final|Native|Protected|BlueprintCallable 
+	// void BuildMeshOnSpline(bool bCollisionEnabled);                                                                          // [0xb8e8da0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorTickSubsystem
@@ -122,19 +122,19 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.SetOwnerPort
-	// void SetOwnerPort(class UFMDeviceCablePortComponent* OwnerPort);                                                         // [0xb7d8734] Final|Native|Public|BlueprintCallable 
+	// void SetOwnerPort(class UFMDeviceCablePortComponent* OwnerPort);                                                         // [0xb8ea404] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.RemoveMaterialInstance
-	// void RemoveMaterialInstance(class UMaterialInstanceDynamic* InMaterialInstance);                                         // [0xb7d7a6c] Final|Native|Public|BlueprintCallable 
+	// void RemoveMaterialInstance(class UMaterialInstanceDynamic* InMaterialInstance);                                         // [0xb8e9984] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.OnPortArtifactUpdated
-	// void OnPortArtifactUpdated();                                                                                            // [0x6200a90] Final|Native|Private 
+	// void OnPortArtifactUpdated();                                                                                            // [0x625f88c] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.OnConnectionStarted
-	// void OnConnectionStarted(class UFMDeviceCableConnectionBase* NewConnection);                                             // [0x6f4ff34] Final|Native|Private 
+	// void OnConnectionStarted(class UFMDeviceCableConnectionBase* NewConnection);                                             // [0xa801a08] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.OnConnectionEnded
-	// void OnConnectionEnded(class UFMDeviceCableConnectionBase* EndedConnection);                                             // [0x6f4fff8] Final|Native|Private 
+	// void OnConnectionEnded(class UFMDeviceCableConnectionBase* EndedConnection);                                             // [0xb8e9200] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorBase.AddMaterialInstance
-	// void AddMaterialInstance(class UMaterialInstanceDynamic* InMaterialInstance);                                            // [0xb7d6c00] Final|Native|Public|BlueprintCallable 
+	// void AddMaterialInstance(class UMaterialInstanceDynamic* InMaterialInstance);                                            // [0xb8e8d20] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorMidiEvent
@@ -156,7 +156,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorMidiEvent.OnMetaSoundOutputIntChangedBatch
-	// void OnMetaSoundOutputIntChangedBatch(FName& OutputName, TArray<int32_t>& Output);                                       // [0xb7d779c] Final|Native|Private|HasOutParms 
+	// void OnMetaSoundOutputIntChangedBatch(FName& OutputName, TArray<int32_t>& Output);                                       // [0xb8e973c] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorFloatProvider
@@ -174,9 +174,9 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorFloatProvider.SetFloatProvider
-	// void SetFloatProvider(class UFabricFloatProviderBase* InFloatProvider);                                                  // [0xb7d84e0] Final|Native|Public|BlueprintCallable 
+	// void SetFloatProvider(class UFabricFloatProviderBase* InFloatProvider);                                                  // [0xb8ea278] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorFloatProvider.OnFloatChanged
-	// void OnFloatChanged(float CurrentFloat);                                                                                 // [0xb7d72e0] Final|Native|Protected 
+	// void OnFloatChanged(float CurrentFloat);                                                                                 // [0xb8e9304] Final|Native|Protected 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorTextureProvider
@@ -194,7 +194,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorTextureProvider.SetTextureProvider
-	// void SetTextureProvider(class UFabricTextureProviderBase* InTextureProvider);                                            // [0xb7d8664] Final|Native|Public|BlueprintCallable 
+	// void SetTextureProvider(class UFabricTextureProviderBase* InTextureProvider);                                            // [0xb8ea378] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorMeshProvider
@@ -212,7 +212,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorMeshProvider.SetMeshProvider
-	// void SetMeshProvider(class UFabricMeshProviderBase* InMeshProvider);                                                     // [0xb7d8664] Final|Native|Public|BlueprintCallable 
+	// void SetMeshProvider(class UFabricMeshProviderBase* InMeshProvider);                                                     // [0xb8ea378] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorAudioAnalyzer
@@ -240,11 +240,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorAudioAnalyzer.SetAnalyzerName
-	// void SetAnalyzerName(FName AnalyzerName);                                                                                // [0xb7d8424] Final|Native|Public|BlueprintCallable 
+	// void SetAnalyzerName(FName AnalyzerName);                                                                                // [0xb8ea1fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorAudioAnalyzer.OnMetaSoundOutputFloatChangedBatch
-	// void OnMetaSoundOutputFloatChangedBatch(FName& OutputName, TArray<float>& Output, FFabricMetaSoundPatchWrapperPeakTamer& PeakTamer, float DeltaSeconds); // [0xb7d7524] Final|Native|Private|HasOutParms 
+	// void OnMetaSoundOutputFloatChangedBatch(FName& OutputName, TArray<float>& Output, FFabricMetaSoundPatchWrapperPeakTamer& PeakTamer, float DeltaSeconds); // [0xb8e94c4] Final|Native|Private|HasOutParms 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableAnimatorAudioAnalyzer.GetLastAnalyzerValue
-	// float GetLastAnalyzerValue();                                                                                            // [0x98b38f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLastAnalyzerValue();                                                                                            // [0x98c537c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableConnectionBase
@@ -263,11 +263,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableConnectionBase.StartConnectionBP
-	// void StartConnectionBP();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void StartConnectionBP();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableConnectionBase.RebuildDirtyConnectionBP
-	// void RebuildDirtyConnectionBP();                                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void RebuildDirtyConnectionBP();                                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableConnectionBase.EndConnectionBP
-	// void EndConnectionBP();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void EndConnectionBP();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableMetaSoundConnection
@@ -353,41 +353,41 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.SetControllerTargetForControllerPortBP
-	// void SetControllerTargetForControllerPortBP(class AActor* ControllerPortActor, class APlayerController* Controller);     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetControllerTargetForControllerPortBP(class AActor* ControllerPortActor, class APlayerController* Controller);     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.ServerVolumeChanged
-	// void ServerVolumeChanged();                                                                                              // [0x28146bc] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerVolumeChanged();                                                                                              // [0x3841600] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.ServerSelectPort
-	// void ServerSelectPort(class UFMDeviceCablePortComponent* SelectedPort);                                                  // [0x7a99850] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSelectPort(class UFMDeviceCablePortComponent* SelectedPort);                                                  // [0x7ab04e4] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.ServerPortsUpdated
-	// void ServerPortsUpdated(TArray<FPortUpdateInfo> PortChangeInfos);                                                        // [0xb7d7d30] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerPortsUpdated(TArray<FPortUpdateInfo> PortChangeInfos);                                                        // [0xb8e9b4c] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.ServerPortActivatedStateChanged
-	// void ServerPortActivatedStateChanged(class UFMDeviceCablePortComponent* Port, EDeviceCableActivatedState ActivatedState); // [0xb7d7bec] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerPortActivatedStateChanged(class UFMDeviceCablePortComponent* Port, EDeviceCableActivatedState ActivatedState); // [0xb8e9a84] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.ServerDisconnectController
-	// void ServerDisconnectController();                                                                                       // [0x2eb4140] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerDisconnectController();                                                                                       // [0x2e6c604] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.SelectPort
-	// void SelectPort(class UFMDeviceCablePortComponent* SelectedPort);                                                        // [0xb7d7b2c] Final|Native|Public|BlueprintCallable 
+	// void SelectPort(class UFMDeviceCablePortComponent* SelectedPort);                                                        // [0xb8e9a04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnWeaponEquipped
-	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                      // [0xb7d78fc] Final|Native|Private 
+	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                      // [0xb8e989c] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnRep_ServerDeviceCableManager
-	// void OnRep_ServerDeviceCableManager();                                                                                   // [0xb7d78ac] Final|Native|Private 
+	// void OnRep_ServerDeviceCableManager();                                                                                   // [0xb8e984c] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnRep_ServerControllerPort
-	// void OnRep_ServerControllerPort();                                                                                       // [0xb7d7898] Final|Native|Private 
+	// void OnRep_ServerControllerPort();                                                                                       // [0xb8e9838] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnNoFabricInteractablesHit
-	// void OnNoFabricInteractablesHit();                                                                                       // [0xb7d706c] Final|Native|Private 
+	// void OnNoFabricInteractablesHit();                                                                                       // [0xb8e908c] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnFortPawnChanged
-	// void OnFortPawnChanged(class AFortPawn* Pawn);                                                                           // [0xb7d73a4] Final|Native|Private 
+	// void OnFortPawnChanged(class AFortPawn* Pawn);                                                                           // [0xb8e9384] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnCreativePlotLinkedVolumeChanged
-	// void OnCreativePlotLinkedVolumeChanged(class AFortVolume* FortVolume);                                                   // [0xb7d7220] Final|Native|Private 
+	// void OnCreativePlotLinkedVolumeChanged(class AFortVolume* FortVolume);                                                   // [0xb8e9284] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnControllerCableDisconnected__DelegateSignature
-	// void OnControllerCableDisconnected__DelegateSignature();                                                                 // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnControllerCableDisconnected__DelegateSignature();                                                                 // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.OnControllerCableConnected__DelegateSignature
-	// void OnControllerCableConnected__DelegateSignature(TArray<UFMDeviceCablePortComponent*>& ConnectedPorts);                // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnControllerCableConnected__DelegateSignature(TArray<UFMDeviceCablePortComponent*>& ConnectedPorts);                // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.IsHoldingCable
-	// bool IsHoldingCable();                                                                                                   // [0xb7d7200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHoldingCable();                                                                                                   // [0xb8e91e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.IsCableConnectionValid
-	// bool IsCableConnectionValid(class UFMDeviceCablePortComponent* OtherPort);                                               // [0xb7d7130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCableConnectionValid(class UFMDeviceCablePortComponent* OtherPort);                                               // [0xb8e9150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableControllerComponent.DropCable
-	// void DropCable();                                                                                                        // [0xb7d706c] Final|Native|Public|BlueprintCallable 
+	// void DropCable();                                                                                                        // [0xb8e908c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableManagerComponent
@@ -414,7 +414,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableManagerComponent.GetCableInteractionType
-	// EDeviceCableInteractionType GetCableInteractionType();                                                                   // [0xb7d70a0] Final|Native|Public|BlueprintCallable 
+	// EDeviceCableInteractionType GetCableInteractionType();                                                                   // [0xb8e90c0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent
@@ -474,99 +474,101 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.UpdateStaticMesh
-	// void UpdateStaticMesh();                                                                                                 // [0xb7dcb98] Final|Native|Protected|BlueprintCallable 
+	// void UpdateStaticMesh();                                                                                                 // [0xb8ee2d8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetPortVisibility
-	// void SetPortVisibility(bool bPortVisible);                                                                               // [0xb7dcad4] Final|Native|Public|BlueprintCallable 
+	// void SetPortVisibility(bool bPortVisible);                                                                               // [0xb8ee258] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetPortSelectableState
-	// void SetPortSelectableState(EDeviceCablePortSelectableState NewSelectableState);                                         // [0xb7dca0c] Final|Native|Public|BlueprintCallable 
+	// void SetPortSelectableState(EDeviceCablePortSelectableState NewSelectableState);                                         // [0xb8ee1d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetPortConnectionsDirty
-	// void SetPortConnectionsDirty();                                                                                          // [0xb7dc9f8] Final|Native|Public|BlueprintCallable 
+	// void SetPortConnectionsDirty();                                                                                          // [0xb8ee1c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetPortActivatedState
-	// void SetPortActivatedState(EDeviceCableActivatedState NewActivatedState);                                                // [0xb7dc938] Final|Native|Public|BlueprintCallable 
+	// void SetPortActivatedState(EDeviceCableActivatedState NewActivatedState);                                                // [0xb8ee140] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetDeviceCableAnimator
-	// void SetDeviceCableAnimator(class UFMDeviceCableAnimatorBase* InAnimator);                                               // [0x5d87858] Final|Native|Public|BlueprintCallable 
+	// void SetDeviceCableAnimator(class UFMDeviceCableAnimatorBase* InAnimator);                                               // [0x5decebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SetCachedArtifact
-	// void SetCachedArtifact(FFMDeviceCableArtifact& InCachedArtifact);                                                        // [0xb7dc590] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void SetCachedArtifact(FFMDeviceCableArtifact& InCachedArtifact);                                                        // [0xb8edd1c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.SelectWithStaticOutputInteraction
-	// EPortSelectStatus SelectWithStaticOutputInteraction(class UFMDeviceCablePortComponent* PlayerSelectionPort, TArray<FPortUpdateInfo>& OutPortUpdates); // [0xb7dbe6c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// EPortSelectStatus SelectWithStaticOutputInteraction(class UFMDeviceCablePortComponent* PlayerSelectionPort, TArray<FPortUpdateInfo>& OutPortUpdates); // [0xb8ed63c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.Select
-	// EPortSelectStatus Select(class UFMDeviceCablePortComponent* PlayerSelectionPort, TArray<FPortUpdateInfo>& OutPortUpdates); // [0xb7db744] Native|Public|HasOutParms|BlueprintCallable 
+	// EPortSelectStatus Select(class UFMDeviceCablePortComponent* PlayerSelectionPort, TArray<FPortUpdateInfo>& OutPortUpdates); // [0xb8ecf58] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OpenConnectionToPort
-	// void OpenConnectionToPort(class UFMDeviceCablePortComponent* OtherPort);                                                 // [0xb7db684] Final|Native|Public|BlueprintCallable 
+	// void OpenConnectionToPort(class UFMDeviceCablePortComponent* OtherPort);                                                 // [0xb8eced8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnRep_ServerPortActivatedState
-	// void OnRep_ServerPortActivatedState();                                                                                   // [0xb7db640] Final|Native|Private 
+	// void OnRep_ServerPortActivatedState();                                                                                   // [0xb8ece94] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnRep_ServerConnectedPorts
-	// void OnRep_ServerConnectedPorts();                                                                                       // [0xb7db62c] Final|Native|Private 
+	// void OnRep_ServerConnectedPorts();                                                                                       // [0xb8ece80] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnRep_DeviceCableManager
-	// void OnRep_DeviceCableManager();                                                                                         // [0xb7db5d4] Final|Native|Private 
+	// void OnRep_DeviceCableManager();                                                                                         // [0xb8ece28] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnRep_ConstantCable
-	// void OnRep_ConstantCable();                                                                                              // [0xb7db588] Final|Native|Private 
+	// void OnRep_ConstantCable();                                                                                              // [0xb8ecddc] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnReceiveFloatProviders__DelegateSignature
-	// void OnReceiveFloatProviders__DelegateSignature(TArray<UFabricFloatProviderBase*>& FloatProviders);                      // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnReceiveFloatProviders__DelegateSignature(TArray<UFabricFloatProviderBase*>& FloatProviders);                      // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnPortArtifactUpdated__DelegateSignature
-	// void OnPortArtifactUpdated__DelegateSignature();                                                                         // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnPortArtifactUpdated__DelegateSignature();                                                                         // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnPlayerControllerPortDisconnected
-	// void OnPlayerControllerPortDisconnected();                                                                               // [0xb7db574] Final|Native|Private 
+	// void OnPlayerControllerPortDisconnected();                                                                               // [0xb8ecdc8] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnPlayerControllerPortConnected
-	// void OnPlayerControllerPortConnected(TArray<UFMDeviceCablePortComponent*>& ControllerPorts);                             // [0xb7daeb4] Final|Native|Private|HasOutParms 
+	// void OnPlayerControllerPortConnected(TArray<UFMDeviceCablePortComponent*>& ControllerPorts);                             // [0xb8ec708] Final|Native|Private|HasOutParms 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnDisconnectFloatProvider__DelegateSignature
-	// void OnDisconnectFloatProvider__DelegateSignature(class UFabricFloatProviderBase* FloatProvider);                        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnDisconnectFloatProvider__DelegateSignature(class UFabricFloatProviderBase* FloatProvider);                        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnDisconnected__DelegateSignature
-	// void OnDisconnected__DelegateSignature(class UFMDeviceCablePortComponent* DisconnectedPort);                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnDisconnected__DelegateSignature(class UFMDeviceCablePortComponent* DisconnectedPort);                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnConnectionStarted__DelegateSignature
-	// void OnConnectionStarted__DelegateSignature(class UFMDeviceCableConnectionBase* NewConnection);                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnConnectionStarted__DelegateSignature(class UFMDeviceCableConnectionBase* NewConnection);                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnConnectionEnded__DelegateSignature
-	// void OnConnectionEnded__DelegateSignature(class UFMDeviceCableConnectionBase* EndedConnection);                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnConnectionEnded__DelegateSignature(class UFMDeviceCableConnectionBase* EndedConnection);                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnConnectedWithSourcePort__DelegateSignature
-	// void OnConnectedWithSourcePort__DelegateSignature(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* OtherPort); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnConnectedWithSourcePort__DelegateSignature(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* OtherPort); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnConnected__DelegateSignature
-	// void OnConnected__DelegateSignature(class UFMDeviceCablePortComponent* ConnectedPort);                                   // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnConnected__DelegateSignature(class UFMDeviceCablePortComponent* ConnectedPort);                                   // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.OnAnimatorCreated__DelegateSignature
-	// void OnAnimatorCreated__DelegateSignature(class UFMDeviceCableAnimatorBase* Animator);                                   // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAnimatorCreated__DelegateSignature(class UFMDeviceCableAnimatorBase* Animator);                                   // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.MatchesPortConnectionType
-	// bool MatchesPortConnectionType(class UFMDeviceCablePortComponent* OtherPort);                                            // [0xb7da728] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool MatchesPortConnectionType(class UFMDeviceCablePortComponent* OtherPort);                                            // [0xb8ec228] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.IsConnectedToPort
-	// bool IsConnectedToPort(class UFMDeviceCablePortComponent* Port);                                                         // [0xb7da52c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsConnectedToPort(class UFMDeviceCablePortComponent* Port);                                                         // [0xb8ec0ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.IsConnected
-	// bool IsConnected();                                                                                                      // [0xb7da510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsConnected();                                                                                                      // [0xb8ec090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.HasSavedConnections
+	// bool HasSavedConnections();                                                                                              // [0xb8ec074] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetPreviousPortsInConnections
-	// TArray<UFMDeviceCablePortComponent*> GetPreviousPortsInConnections();                                                    // [0xb7da4d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMDeviceCablePortComponent*> GetPreviousPortsInConnections();                                                    // [0xb8ec038] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetPortSelectableState
-	// EDeviceCablePortSelectableState GetPortSelectableState();                                                                // [0xb7da4bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCablePortSelectableState GetPortSelectableState();                                                                // [0xb8ec020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetPortFlowType
-	// EDeviceCablePortFlowType GetPortFlowType();                                                                              // [0xb7da4a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCablePortFlowType GetPortFlowType();                                                                              // [0xb8ec008] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetPortDataType
-	// EDeviceCablePortDataType GetPortDataType();                                                                              // [0xb7da48c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCablePortDataType GetPortDataType();                                                                              // [0xb8ebff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetPortActivatedState
-	// EDeviceCableActivatedState GetPortActivatedState();                                                                      // [0xa04e148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCableActivatedState GetPortActivatedState();                                                                      // [0xa071e1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetOtherPortsOnActor
-	// TArray<UFMDeviceCablePortComponent*> GetOtherPortsOnActor();                                                             // [0xb7da470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMDeviceCablePortComponent*> GetOtherPortsOnActor();                                                             // [0xb8ebfd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetNextPortsInConnections
-	// TArray<UFMDeviceCablePortComponent*> GetNextPortsInConnections();                                                        // [0xb7da434] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMDeviceCablePortComponent*> GetNextPortsInConnections();                                                        // [0xb8ebf98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetIsTerminalPort
-	// bool GetIsTerminalPort(EDeviceCablePortFlowType FlowType);                                                               // [0xb7da364] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsTerminalPort(EDeviceCablePortFlowType FlowType);                                                               // [0xb8ebf0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetIsPlayerPort
-	// bool GetIsPlayerPort();                                                                                                  // [0x388d2c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsPlayerPort();                                                                                                  // [0xb8ebef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetGuid
-	// FGuid GetGuid();                                                                                                         // [0xb7da334] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FGuid GetGuid();                                                                                                         // [0xb8ebec4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetDeviceCableAnimator
-	// class UFMDeviceCableAnimatorBase* GetDeviceCableAnimator();                                                              // [0xb7da31c] Final|Native|Public|BlueprintCallable 
+	// class UFMDeviceCableAnimatorBase* GetDeviceCableAnimator();                                                              // [0xb8ebeac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetConstantCable
-	// class AFMDeviceCable* GetConstantCable();                                                                                // [0xb7da304] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AFMDeviceCable* GetConstantCable();                                                                                // [0xb8ebe94] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetConnections
-	// TArray<UFMDeviceCableConnectionBase*> GetConnections();                                                                  // [0xb7da2e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMDeviceCableConnectionBase*> GetConnections();                                                                  // [0xb8ebe78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetConnectedPorts
-	// TArray<UFMDeviceCablePortComponent*> GetConnectedPorts();                                                                // [0xb7da2cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMDeviceCablePortComponent*> GetConnectedPorts();                                                                // [0xb8ebe5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetCachedArtifact
-	// FFMDeviceCableArtifact GetCachedArtifact();                                                                              // [0xb7da2a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFMDeviceCableArtifact GetCachedArtifact();                                                                              // [0xb8ebe34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.GetAnimationSyncType
-	// EDeviceCablePortAnimationSyncType GetAnimationSyncType();                                                                // [0xb7da28c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDeviceCablePortAnimationSyncType GetAnimationSyncType();                                                                // [0xb8ebe1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.FabricCablePortSizeUpdated__DelegateSignature
-	// void FabricCablePortSizeUpdated__DelegateSignature(float Size);                                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void FabricCablePortSizeUpdated__DelegateSignature(float Size);                                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.EndConnectionWithPort
-	// void EndConnectionWithPort(class UFMDeviceCablePortComponent* OtherPort);                                                // [0xb7da1cc] Final|Native|Public|BlueprintCallable 
+	// void EndConnectionWithPort(class UFMDeviceCablePortComponent* OtherPort);                                                // [0xb8ebd9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablePortComponent.ActorHasValidControllerBP
-	// bool ActorHasValidControllerBP(class AActor* Actor, class AFortPlayerPawn*& OutFortPlayerPawn, class APlayerController*& OutPlayerController); // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// bool ActorHasValidControllerBP(class AActor* Actor, class AFortPlayerPawn*& OutFortPlayerPawn, class APlayerController*& OutPlayerController); // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableModulatorPortComponent
@@ -583,7 +585,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableModulatorPortComponent.SetDeviceCableManager
-	// void SetDeviceCableManager(class UFMDeviceCableManagerComponent* InDeviceCableManager);                                  // [0xb7dc618] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetDeviceCableManager(class UFMDeviceCableManagerComponent* InDeviceCableManager);                                  // [0xb8edda4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCablesFunctionLibrary
@@ -598,9 +600,9 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablesFunctionLibrary.MakeSoundSourceBusSendInfo
-	// FSoundSourceBusSendInfo MakeSoundSourceBusSendInfo(class USoundSourceBus* SoundSourceBus);                               // [0xb7da608] Final|Native|Static|Public|BlueprintCallable 
+	// FSoundSourceBusSendInfo MakeSoundSourceBusSendInfo(class USoundSourceBus* SoundSourceBus);                               // [0xb8ec148] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCablesFunctionLibrary.DeepCopySoundSourceBus
-	// class USoundSourceBus* DeepCopySoundSourceBus(class UObject* Context, class UObject* Outer, class USoundSourceBus* Source); // [0xb7d9bb0] Final|Native|Static|Public|BlueprintCallable 
+	// class USoundSourceBus* DeepCopySoundSourceBus(class UObject* Context, class UObject* Outer, class USoundSourceBus* Source); // [0xb8eb840] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent
@@ -631,25 +633,25 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.SetOutputRoot
-	// void SetOutputRoot(FVector RootLocation);                                                                                // [0xb7dc870] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetOutputRoot(FVector RootLocation);                                                                                // [0xb8edff8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.SetOutputPortsExpanded
-	// void SetOutputPortsExpanded(bool bExpanded);                                                                             // [0xb7dc7a0] Final|Native|Public|BlueprintCallable 
+	// void SetOutputPortsExpanded(bool bExpanded);                                                                             // [0xb8edf6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.SetInputRoot
-	// void SetInputRoot(FVector RootLocation);                                                                                 // [0xb7dc6d8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetInputRoot(FVector RootLocation);                                                                                 // [0xb8ede24] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnRep_ServerPortStates
-	// void OnRep_ServerPortStates();                                                                                           // [0xb7db670] Final|Native|Private 
+	// void OnRep_ServerPortStates();                                                                                           // [0xb8ecec4] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnOutputPortSlotSetFromSave
-	// void OnOutputPortSlotSetFromSave(class UFMDeviceCableWildcardPortComponent* WildcardPort, bool bHasConnections);         // [0xb7dad74] Final|Native|Private 
+	// void OnOutputPortSlotSetFromSave(class UFMDeviceCableWildcardPortComponent* WildcardPort, bool bHasConnections);         // [0xb8ec640] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnOutputPortDisconnected
-	// void OnOutputPortDisconnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* DisconnectedPort); // [0xb7dac34] Final|Native|Private 
+	// void OnOutputPortDisconnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* DisconnectedPort); // [0xb8ec57c] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnOutputPortConnected
-	// void OnOutputPortConnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* ConnectedPort); // [0xb7daaf4] Final|Native|Private 
+	// void OnOutputPortConnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* ConnectedPort); // [0xb8ec4b8] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnInputPortDisconnected
-	// void OnInputPortDisconnected(class UFMDeviceCablePortComponent* DisconnectedPort);                                       // [0xb7daa34] Final|Native|Private 
+	// void OnInputPortDisconnected(class UFMDeviceCablePortComponent* DisconnectedPort);                                       // [0xb8ec438] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnInputPortDataTypeChanged
-	// void OnInputPortDataTypeChanged(class UFMDeviceCableWildcardPortComponent* WildcardPort, EDeviceCablePortDataType DataType); // [0xb7da8f0] Final|Native|Private 
+	// void OnInputPortDataTypeChanged(class UFMDeviceCableWildcardPortComponent* WildcardPort, EDeviceCablePortDataType DataType); // [0xb8ec370] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardOrderingComponent.OnInputPortConnected
-	// void OnInputPortConnected(class UFMDeviceCablePortComponent* ConnectedPort);                                             // [0xb7da82c] Final|Native|Private 
+	// void OnInputPortConnected(class UFMDeviceCablePortComponent* ConnectedPort);                                             // [0xb8ec2ec] Final|Native|Private 
 };
 
 /// Class /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent
@@ -668,15 +670,15 @@ public:
 
 	/// Functions
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent.OnWildcardPortSlotSetFromSave__DelegateSignature
-	// void OnWildcardPortSlotSetFromSave__DelegateSignature(class UFMDeviceCableWildcardPortComponent* WildcardPort, bool bHasConnections); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnWildcardPortSlotSetFromSave__DelegateSignature(class UFMDeviceCableWildcardPortComponent* WildcardPort, bool bHasConnections); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent.OnWildcardDataTypeChanged__DelegateSignature
-	// void OnWildcardDataTypeChanged__DelegateSignature(class UFMDeviceCableWildcardPortComponent* WildcardPort, EDeviceCablePortDataType DataType); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnWildcardDataTypeChanged__DelegateSignature(class UFMDeviceCableWildcardPortComponent* WildcardPort, EDeviceCablePortDataType DataType); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent.OnRep_SavedSlotIndex
-	// void OnRep_SavedSlotIndex();                                                                                             // [0xb7ff46c] Final|Native|Private 
+	// void OnRep_SavedSlotIndex();                                                                                             // [0xb910b44] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent.OnPlayerControllerPortDisconnectedWildcard
-	// void OnPlayerControllerPortDisconnectedWildcard();                                                                       // [0xb7ff458] Final|Native|Private 
+	// void OnPlayerControllerPortDisconnectedWildcard();                                                                       // [0xb910b30] Final|Native|Private 
 	// Function /Script/FMDeviceCablesRuntime.FMDeviceCableWildcardPortComponent.OnPlayerControllerPortConnectedWildcard
-	// void OnPlayerControllerPortConnectedWildcard(TArray<UFMDeviceCablePortComponent*>& ControllerPorts);                     // [0xb7fed98] Final|Native|Private|HasOutParms 
+	// void OnPlayerControllerPortConnectedWildcard(TArray<UFMDeviceCablePortComponent*>& ControllerPorts);                     // [0xb910470] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/FMDeviceCablesRuntime.PortUpdateInfo

@@ -30,12 +30,12 @@ public:
 };
 
 /// Class /Script/GameHubRuntime.GameHubPlayspace
-/// Size: 0x0028 (0x0006C0 - 0x0006E8)
+/// Size: 0x0028 (0x0006E8 - 0x000710)
 class AGameHubPlayspace : public AFortPlayspace
 { 
 public:
-	bool                                               bSimulatePlayerDamage;                                      // 0x06C0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x06C1   (0x0007)  MISSED
-	FGameplayTagContainer                              PlayerStartRequirements;                                    // 0x06C8   (0x0020)  
+	bool                                               bSimulatePlayerDamage;                                      // 0x06E8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x06E9   (0x0007)  MISSED
+	FGameplayTagContainer                              PlayerStartRequirements;                                    // 0x06F0   (0x0020)  
 };
 

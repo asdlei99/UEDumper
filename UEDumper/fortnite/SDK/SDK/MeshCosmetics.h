@@ -119,7 +119,7 @@ public:
 /// Size: 0x0002 (0x000000 - 0x000002)
 struct FCosmeticSlotSelector
 { 
-	SDK_UNDEFINED(1,14673) /* TEnumAsByte<EFortCustomPartType> */ __um(LegacyPartType);                            // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,14811) /* TEnumAsByte<EFortCustomPartType> */ __um(LegacyPartType);                            // 0x0000   (0x0001)  
 	EAthenaCustomizationCategory                       SourceCategory;                                             // 0x0001   (0x0001)  
 };
 
@@ -127,32 +127,32 @@ struct FCosmeticSlotSelector
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FApparelCustomizableItemReference
 { 
-	SDK_UNDEFINED(16,14674) /* FString */              __um(GroupName);                                            // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14675) /* FString */              __um(ValueName);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14812) /* FString */              __um(GroupName);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14813) /* FString */              __um(ValueName);                                            // 0x0010   (0x0010)  
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsApparelItemDefinition
-/// Size: 0x0028 (0x000750 - 0x000778)
+/// Size: 0x0028 (0x000740 - 0x000768)
 class UMeshCosmeticsApparelItemDefinition : public UFortApparelItemDefinition
 { 
 public:
-	FCosmeticSlotSelector                              SlotValidWithin;                                            // 0x0750   (0x0002)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0752   (0x0006)  MISSED
-	FApparelCustomizableItemReference                  Parameter;                                                  // 0x0758   (0x0020)  
+	FCosmeticSlotSelector                              SlotValidWithin;                                            // 0x0740   (0x0002)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0742   (0x0006)  MISSED
+	FApparelCustomizableItemReference                  Parameter;                                                  // 0x0748   (0x0020)  
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectParamVariantBase
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FCustomizableObjectParamVariantBase
 { 
-	SDK_UNDEFINED(32,14676) /* TWeakObjectPtr<UCustomizableObject*> */ __um(ObjectToModify);                       // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14814) /* TWeakObjectPtr<UCustomizableObject*> */ __um(ObjectToModify);                       // 0x0000   (0x0020)  
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectValueBase
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FCustomizableObjectValueBase
 { 
-	SDK_UNDEFINED(16,14677) /* FString */              __um(ParameterName);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14815) /* FString */              __um(ParameterName);                                        // 0x0000   (0x0010)  
 	int32_t                                            RangeIndex;                                                 // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };
@@ -163,7 +163,7 @@ struct FCustomizableObjectIntValue : FCustomizableObjectValueBase
 { 
 	int32_t                                            NumericValue;                                               // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14678) /* FString */              __um(NamedValue);                                           // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,14816) /* FString */              __um(NamedValue);                                           // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectIntParamVariant
@@ -254,14 +254,14 @@ struct FCustomizableObjectProjectorVariant : FCustomizableObjectParamVariantBase
 /// Size: 0x0050 (0x000020 - 0x000070)
 struct FCustomizableObjectMultilayerProjectorVariant : FCustomizableObjectParamVariantBase
 { 
-	SDK_UNDEFINED(80,14679) /* TMap<FName, FCustomizableObjectMultilayerProjectors> */ __um(MultilayerProjectors); // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,14817) /* TMap<FName, FCustomizableObjectMultilayerProjectors> */ __um(MultilayerProjectors); // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectStateValue
 /// Size: 0x0010 (0x000018 - 0x000028)
 struct FCustomizableObjectStateValue : FCustomizableObjectValueBase
 { 
-	SDK_UNDEFINED(16,14680) /* FString */              __um(NewState);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,14818) /* FString */              __um(NewState);                                             // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectStateVariant
@@ -286,16 +286,16 @@ struct FCustomizableObjectParamsVariantDef : FBaseVariantDef
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectParameterVariant
-/// Size: 0x0010 (0x000070 - 0x000080)
+/// Size: 0x0010 (0x000080 - 0x000090)
 class UFortCustomizableObjectParameterVariant : public UFortCosmeticVariantBackedByArray
 { 
 public:
-	TArray<FCustomizableObjectParamsVariantDef>        ParameterOptions;                                           // 0x0070   (0x0010)  
+	TArray<FCustomizableObjectParamsVariantDef>        ParameterOptions;                                           // 0x0080   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshCosmetics.FortCustomizableObjectParameterVariant.ApplyVariants
-	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                 // [0x9ed6414] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                 // [0x9ee9094] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectSprayVariantFixedProperties
@@ -334,31 +334,31 @@ struct FCustomizableObjectSprayVariantPayloadClamps
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FCustomizableObjectSprayVariantSlotImageProperties
 { 
-	SDK_UNDEFINED(32,14681) /* TWeakObjectPtr<UTexture2D*> */ __um(SprayNotAssignedImage);                         // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,14682) /* TWeakObjectPtr<UTexture2D*> */ __um(SprayAssignedImage);                            // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,14819) /* TWeakObjectPtr<UTexture2D*> */ __um(SprayNotAssignedImage);                         // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14820) /* TWeakObjectPtr<UTexture2D*> */ __um(SprayAssignedImage);                            // 0x0020   (0x0020)  
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectSprayVariant
-/// Size: 0x0258 (0x000070 - 0x0002C8)
+/// Size: 0x0258 (0x000080 - 0x0002D8)
 class UFortCustomizableObjectSprayVariant : public UFortCosmeticVariant
 { 
 public:
-	FGameplayTag                                       ActiveSelectionTag;                                         // 0x0070   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14683) /* FString */              __um(EnabledParamName);                                     // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,14684) /* FString */              __um(ProjectorParamName);                                   // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,14685) /* FString */              __um(TextureParamName);                                     // 0x0098   (0x0010)  
-	SDK_UNDEFINED(16,14686) /* FString */              __um(SaturationParamName);                                  // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,14687) /* FString */              __um(WearParamName);                                        // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14688) /* FString */              __um(ScaleParamName);                                       // 0x00C8   (0x0010)  
-	FGameplayTagQuery                                  TagQueryForShouldOverrideCODefaultsWithFixedLocationParameters; // 0x00D8   (0x0048)  
-	FCustomizableObjectSprayVariantFixedProperties     FixedSprayLocation;                                         // 0x0120   (0x0068)  
-	FCustomizableObjectSprayVariantSelectablePayload   DefaultSprayCustomization;                                  // 0x0188   (0x00B8)  
-	FCustomizableObjectSprayVariantPayloadClamps       SprayNumericConstraints;                                    // 0x0240   (0x0030)  
-	float                                              TextureBaseScale;                                           // 0x0270   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0274   (0x0004)  MISSED
-	FCustomizableObjectSprayVariantSlotImageProperties SpraySlotImageProperties;                                   // 0x0278   (0x0040)  
-	unsigned char                                      UnknownData02_6[0x10];                                      // 0x02B8   (0x0010)  MISSED
+	FGameplayTag                                       ActiveSelectionTag;                                         // 0x0080   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0084   (0x0004)  MISSED
+	SDK_UNDEFINED(16,14821) /* FString */              __um(EnabledParamName);                                     // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,14822) /* FString */              __um(ProjectorParamName);                                   // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,14823) /* FString */              __um(TextureParamName);                                     // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14824) /* FString */              __um(SaturationParamName);                                  // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14825) /* FString */              __um(WearParamName);                                        // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14826) /* FString */              __um(ScaleParamName);                                       // 0x00D8   (0x0010)  
+	FGameplayTagQuery                                  TagQueryForShouldOverrideCODefaultsWithFixedLocationParameters; // 0x00E8   (0x0048)  
+	FCustomizableObjectSprayVariantFixedProperties     FixedSprayLocation;                                         // 0x0130   (0x0068)  
+	FCustomizableObjectSprayVariantSelectablePayload   DefaultSprayCustomization;                                  // 0x0198   (0x00B8)  
+	FCustomizableObjectSprayVariantPayloadClamps       SprayNumericConstraints;                                    // 0x0250   (0x0030)  
+	float                                              TextureBaseScale;                                           // 0x0280   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0284   (0x0004)  MISSED
+	FCustomizableObjectSprayVariantSlotImageProperties SpraySlotImageProperties;                                   // 0x0288   (0x0040)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x02C8   (0x0010)  MISSED
 };
 
 /// Class /Script/MeshCosmetics.GameFeatureAction_MeshCosmeticsCompileSchemaDepenencies
@@ -377,7 +377,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.MeshCosmeticTagInterface.OnPostCustomizationAnimGameplayTags_BP
-	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                     // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                     // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableInstanceLODManagement
@@ -388,12 +388,12 @@ public:
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsLayoutSchema
-/// Size: 0x00A0 (0x000338 - 0x0003D8)
+/// Size: 0x00A0 (0x000328 - 0x0003C8)
 class UMeshCosmeticsLayoutSchema : public UFortApparelLayoutItemDefinition
 { 
 public:
-	SDK_UNDEFINED(80,14689) /* TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot> */ __um(SlotDataConfig);          // 0x0338   (0x0050)  
-	SDK_UNDEFINED(80,14690) /* TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>> */ __um(SlottedCustomizableObjects); // 0x0388   (0x0050)  
+	SDK_UNDEFINED(80,14827) /* TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot> */ __um(SlotDataConfig);          // 0x0328   (0x0050)  
+	SDK_UNDEFINED(80,14828) /* TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>> */ __um(SlottedCustomizableObjects); // 0x0378   (0x0050)  
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsAppliedSchemaData
@@ -401,7 +401,7 @@ public:
 class UMeshCosmeticsAppliedSchemaData : public UFortCosmeticItemAdditionalData
 { 
 public:
-	SDK_UNDEFINED(32,14691) /* TWeakObjectPtr<UMeshCosmeticsLayoutSchema*> */ __um(SchemaAsset);                   // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,14829) /* TWeakObjectPtr<UMeshCosmeticsLayoutSchema*> */ __um(SchemaAsset);                   // 0x0028   (0x0020)  
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsSupportedSchemaData
@@ -409,7 +409,7 @@ public:
 class UMeshCosmeticsSupportedSchemaData : public UFortCosmeticItemAdditionalData
 { 
 public:
-	SDK_UNDEFINED(16,14692) /* TArray<TWeakObjectPtr<UMeshCosmeticsLayoutSchema*>> */ __um(SupportedSchemas);      // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14830) /* TArray<TWeakObjectPtr<UMeshCosmeticsLayoutSchema*>> */ __um(SupportedSchemas);      // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/MeshCosmetics.PartHandleControllers
@@ -445,7 +445,7 @@ struct FCustomizableObjectMultilayerProjectsVirtualLayer
 	float                                              Angle;                                                      // 0x0068   (0x0004)  
 	bool                                               bModifyImage;                                               // 0x006C   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x006D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,14693) /* FString */              __um(Image);                                                // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,14831) /* FString */              __um(Image);                                                // 0x0070   (0x0010)  
 	bool                                               bModifyOpacity;                                             // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0081   (0x0003)  MISSED
 	float                                              Opacity;                                                    // 0x0084   (0x0004)  
@@ -458,7 +458,7 @@ struct FCustomizableObjectMultilayerProjectsVirtualLayer
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FCustomizableObjectMultilayerProjectors
 { 
-	SDK_UNDEFINED(80,14694) /* TMap<FName, FCustomizableObjectMultilayerProjectsVirtualLayer> */ __um(VirtualLayers); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14832) /* TMap<FName, FCustomizableObjectMultilayerProjectsVirtualLayer> */ __um(VirtualLayers); // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/MeshCosmetics.MeshCosmeticsCustomizationPerSlotData
@@ -525,22 +525,22 @@ struct FSkeletalComponentData
 /// Size: 0x0110 (0x000000 - 0x000110)
 struct FMeshCosmeticsPassDataCommon
 { 
-	SDK_UNDEFINED(80,14695) /* TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot> */ __um(AllSlotDataConfigs);      // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,14696) /* TMap<FCosmeticSlotSelector, UMeshCosmeticsLayoutSchema*> */ __um(ProvidedSlotsToSchemaData); // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,14833) /* TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot> */ __um(AllSlotDataConfigs);      // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14834) /* TMap<FCosmeticSlotSelector, UMeshCosmeticsLayoutSchema*> */ __um(ProvidedSlotsToSchemaData); // 0x0050   (0x0050)  
 	TArray<class UAthenaCosmeticItemDefinition*>       MeshCosmeticsItemDefs;                                      // 0x00A0   (0x0010)  
 	TArray<class UObject*>                             KeepLoadedObjects;                                          // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(80,14697) /* TMap<UCustomizableSkeletalComponent*, FSkeletalComponentData> */ __um(SkeletalComponentData); // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,14835) /* TMap<UCustomizableSkeletalComponent*, FSkeletalComponentData> */ __um(SkeletalComponentData); // 0x00C0   (0x0050)  
 };
 
 /// Struct /Script/MeshCosmetics.CosmeticsLayoutSlot
 /// Size: 0x0098 (0x000000 - 0x000098)
 struct FCosmeticsLayoutSlot
 { 
-	SDK_UNDEFINED(32,14698) /* TWeakObjectPtr<UCustomizableObject*> */ __um(SlottedObject);                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14836) /* TWeakObjectPtr<UCustomizableObject*> */ __um(SlottedObject);                        // 0x0000   (0x0020)  
 	int32_t                                            ComponentIndex;                                             // 0x0020   (0x0004)  
 	FCosmeticSlotSelector                              RequiredCosmeticPart;                                       // 0x0024   (0x0002)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0026   (0x0002)  MISSED
-	SDK_UNDEFINED(32,14699) /* TWeakObjectPtr<UClass*> */ __um(ProportionalLayerAnimBP);                           // 0x0028   (0x0020)  
-	SDK_UNDEFINED(80,14700) /* TMap<int32_t, FName> */ __um(LinkedAnimGraphTag);                                   // 0x0048   (0x0050)  
+	SDK_UNDEFINED(32,14837) /* TWeakObjectPtr<UClass*> */ __um(ProportionalLayerAnimBP);                           // 0x0028   (0x0020)  
+	SDK_UNDEFINED(80,14838) /* TMap<int32_t, FName> */ __um(LinkedAnimGraphTag);                                   // 0x0048   (0x0050)  
 };
 

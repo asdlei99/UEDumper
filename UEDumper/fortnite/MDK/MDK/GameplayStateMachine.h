@@ -34,47 +34,47 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayStateMachine.GameplayState.UpdateStateEventServer
-	// void UpdateStateEventServer(float DeltaTime);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateStateEventServer(float DeltaTime);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.UpdateStateEventClient
-	// void UpdateStateEventClient(float DeltaTime);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateStateEventClient(float DeltaTime);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.UpdateStateEvent
-	// void UpdateStateEvent(float DeltaTime);                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateStateEvent(float DeltaTime);                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.RemoveStateRuntimeTag
-	// void RemoveStateRuntimeTag(FGameplayTag& RemovedTag);                                                                    // [0xae4bdac] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveStateRuntimeTag(FGameplayTag& RemovedTag);                                                                    // [0xb37dec8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayStateMachine.GameplayState.MarkStateToEvaluateTransitions
-	// void MarkStateToEvaluateTransitions();                                                                                   // [0xae4bd84] Final|Native|Public|BlueprintCallable 
+	// void MarkStateToEvaluateTransitions();                                                                                   // [0xb37dea0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayStateMachine.GameplayState.InitializeStateEventServer
-	// void InitializeStateEventServer(FGameplayTag& PrevStateId);                                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void InitializeStateEventServer(FGameplayTag& PrevStateId);                                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.InitializeStateEventClient
-	// void InitializeStateEventClient(FGameplayTag& PrevStateId);                                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void InitializeStateEventClient(FGameplayTag& PrevStateId);                                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.InitializeStateEvent
-	// void InitializeStateEvent(FGameplayTag& PrevStateId);                                                                    // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void InitializeStateEvent(FGameplayTag& PrevStateId);                                                                    // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.HasStateRuntimeTag
-	// bool HasStateRuntimeTag(FGameplayTag& QueryTag);                                                                         // [0xae4bcb0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool HasStateRuntimeTag(FGameplayTag& QueryTag);                                                                         // [0xb37ddcc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayStateMachine.GameplayState.HasAuthority
-	// bool HasAuthority();                                                                                                     // [0xae4bc8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAuthority();                                                                                                     // [0xb37dda8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayState.GetStateRuntimeTags
-	// FGameplayTagContainer GetStateRuntimeTags();                                                                             // [0x9d123a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetStateRuntimeTags();                                                                             // [0x9d28560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayState.GetStateId
-	// FGameplayTag GetStateId();                                                                                               // [0x67786ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetStateId();                                                                                               // [0x67ed834] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayState.GetOwningActor
-	// class AActor* GetOwningActor();                                                                                          // [0xae4bc68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetOwningActor();                                                                                          // [0xb37dd84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayState.GetGameplayStateMachine
-	// class UGameplayStateMachine* GetGameplayStateMachine();                                                                  // [0x7a81ab0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayStateMachine* GetGameplayStateMachine();                                                                  // [0x7a902e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayState.EndStateEventServer
-	// void EndStateEventServer(FGameplayTag& NextStateId);                                                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void EndStateEventServer(FGameplayTag& NextStateId);                                                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.EndStateEventClient
-	// void EndStateEventClient(FGameplayTag& NextStateId);                                                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void EndStateEventClient(FGameplayTag& NextStateId);                                                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.EndStateEvent
-	// void EndStateEvent(FGameplayTag& NextStateId);                                                                           // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void EndStateEvent(FGameplayTag& NextStateId);                                                                           // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.BeginStateEventServer
-	// void BeginStateEventServer(FGameplayTag& PrevStateId);                                                                   // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BeginStateEventServer(FGameplayTag& PrevStateId);                                                                   // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.BeginStateEventClient
-	// void BeginStateEventClient(FGameplayTag& PrevStateId);                                                                   // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BeginStateEventClient(FGameplayTag& PrevStateId);                                                                   // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.BeginStateEvent
-	// void BeginStateEvent(FGameplayTag& PrevStateId);                                                                         // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BeginStateEvent(FGameplayTag& PrevStateId);                                                                         // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayStateMachine.GameplayState.AddStateRuntimeTag
-	// void AddStateRuntimeTag(FGameplayTag& AddedTag);                                                                         // [0xae4bb78] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddStateRuntimeTag(FGameplayTag& AddedTag);                                                                         // [0xb37dc94] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayStateMachine.GameplayStateMachine
@@ -93,17 +93,17 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.SetState
-	// void SetState(FGameplayTag& InStateId, float InBeginStateDelay);                                                         // [0xae4be78] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetState(FGameplayTag& InStateId, float InBeginStateDelay);                                                         // [0xb37df94] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.OnRep_ActiveGameplayStateData
-	// void OnRep_ActiveGameplayStateData();                                                                                    // [0xae4bd98] Final|Native|Private 
+	// void OnRep_ActiveGameplayStateData();                                                                                    // [0xb37deb4] Final|Native|Private 
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.GetStateMachineId
-	// FGameplayTag GetStateMachineId();                                                                                        // [0x9b6ede0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetStateMachineId();                                                                                        // [0x9b93ddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.GetActiveStateObject
-	// class UGameplayState* GetActiveStateObject();                                                                            // [0x7b817a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayState* GetActiveStateObject();                                                                            // [0x7b97a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.GetActiveStateId
-	// FGameplayTag GetActiveStateId();                                                                                         // [0xae4bc40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetActiveStateId();                                                                                         // [0xb37dd5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayStateMachine.GameplayStateMachine.EvaluateStateTransition
-	// void EvaluateStateTransition();                                                                                          // [0x6200a90] Native|Event|Protected|BlueprintEvent 
+	// void EvaluateStateTransition();                                                                                          // [0x625f88c] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/GameplayStateMachine.GameplayStateMachineManager

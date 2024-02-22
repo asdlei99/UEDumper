@@ -17,7 +17,7 @@
 class UFortFallTeleportSpawnerComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(32,13596) /* TWeakObjectPtr<UClass*> */ __um(PlayerPawnReceiverClass);                           // 0x00A0   (0x0020)  
+	SDK_UNDEFINED(32,13687) /* TWeakObjectPtr<UClass*> */ __um(PlayerPawnReceiverClass);                           // 0x00A0   (0x0020)  
 	class UClass*                                      ComponentToAddClass;                                        // 0x00C0   (0x0008)  
 	FScalableFloat                                     TeleportEnabled;                                            // 0x00C8   (0x0028)  
 	FScalableFloat                                     RemoveComponentRequestTimeOffset;                           // 0x00F0   (0x0028)  
@@ -26,9 +26,9 @@ public:
 
 	/// Functions
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportSpawnerComponent.HandleWarmupCountdownEndTimeUpdated
-	// void HandleWarmupCountdownEndTimeUpdated(float NewEndTime);                                                           // [0xb439534] Final|Native|Protected 
+	// void HandleWarmupCountdownEndTimeUpdated(float NewEndTime);                                                           // [0xb549b98] Final|Native|Protected 
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportSpawnerComponent.HandleGamePhaseChanged
-	// void HandleGamePhaseChanged(FFortGamePhaseUpdatedEvent& Event);                                                       // [0xb4394a8] Final|Native|Protected|HasOutParms 
+	// void HandleGamePhaseChanged(FFortGamePhaseUpdatedEvent& Event);                                                       // [0xb549b0c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/FallTeleportationRuntime.FortFallTeleportCheatManager
@@ -40,7 +40,7 @@ public:
 
 	/// Functions
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportCheatManager.EnableFallTeleportationIndefinitely
-	// void EnableFallTeleportationIndefinitely();                                                                           // [0x3047908] Final|Exec|Native|Private 
+	// void EnableFallTeleportationIndefinitely();                                                                           // [0x3097b14] Final|Exec|Native|Private 
 };
 
 /// Class /Script/FallTeleportationRuntime.FortFallTeleportComponentBase
@@ -75,10 +75,10 @@ public:
 
 	/// Functions
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportComponentBase.UpdateLastGroundLocation
-	// void UpdateLastGroundLocation(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xb4397b8] Final|Native|Protected 
+	// void UpdateLastGroundLocation(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xb549d9c] Final|Native|Protected 
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportComponentBase.IsValidActorToTeleportOn
-	// bool IsValidActorToTeleportOn(class AActor* ActorToTeleportOn);                                                       // [0xb4396c4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidActorToTeleportOn(class AActor* ActorToTeleportOn);                                                       // [0xb549ce8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FallTeleportationRuntime.FortFallTeleportComponentBase.IsTeleportLocationValid
-	// bool IsTeleportLocationValid(FVector& LocationToTest);                                                                // [0xb4395f0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTeleportLocationValid(FVector& LocationToTest);                                                                // [0xb549c14] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 

@@ -64,9 +64,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.OverlapComponent.OnEndActorOverlap
-	// void OnEndActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x7511240] Native|Protected     
+	// void OnEndActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x752ec7c] Native|Protected     
 	// Function /Script/PlayspaceSystem.OverlapComponent.OnBeginActorOverlap
-	// void OnBeginActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x7510ec4] Native|Protected|HasOutParms 
+	// void OnBeginActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x752ea44] Native|Protected|HasOutParms 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceComponent
@@ -114,7 +114,7 @@ struct FReplicatedSpawnInfo
 class UPlayspaceControllerComponent_PlayerSpawning : public UControllerComponent
 { 
 public:
-	SDK_UNDEFINED(16,2666) /* FMulticastInlineDelegate */ __um(OnPlayerQueuedToSpawn);                             // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,2676) /* FMulticastInlineDelegate */ __um(OnPlayerQueuedToSpawn);                             // 0x00A0   (0x0010)  
 	class ACameraActor*                                SpawnCameraActor;                                           // 0x00B0   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x00B8   (0x0001)  MISSED
 	bool                                               bClientReadyForSpawning;                                    // 0x00B9   (0x0001)  
@@ -124,13 +124,13 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.PlayspaceControllerComponent_PlayerSpawning.ServerMarkReadyForSpawning
-	// void ServerMarkReadyForSpawning();                                                                                    // [0x7511b60] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerMarkReadyForSpawning();                                                                                    // [0x752f240] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/PlayspaceSystem.PlayspaceControllerComponent_PlayerSpawning.OnRep_ReplicatedSpawnInfo
-	// void OnRep_ReplicatedSpawnInfo();                                                                                     // [0x7511a7c] Final|Native|Private 
+	// void OnRep_ReplicatedSpawnInfo();                                                                                     // [0x752f19c] Final|Native|Private 
 	// Function /Script/PlayspaceSystem.PlayspaceControllerComponent_PlayerSpawning.GetSpawnInfo
-	// FReplicatedSpawnInfo GetSpawnInfo();                                                                                  // [0x7510d20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FReplicatedSpawnInfo GetSpawnInfo();                                                                                  // [0x752e8e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayspaceSystem.PlayspaceControllerComponent_PlayerSpawning.ClientReplicatedSpawnInfo
-	// void ClientReplicatedSpawnInfo(FReplicatedSpawnInfo InReplicatedSpawnInfo);                                           // [0x7510b4c] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientReplicatedSpawnInfo(FReplicatedSpawnInfo InReplicatedSpawnInfo);                                           // [0x752e6cc] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceGameStateComponent
@@ -145,7 +145,7 @@ public:
 struct FPlayspaceSpawningInfo
 { 
 	FUniqueNetIdRepl                                   UserId;                                                     // 0x0000   (0x0030)  
-	SDK_UNDEFINED(8,2667) /* TWeakObjectPtr<APlayspace*> */ __um(RequestingPlayspace);                             // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,2677) /* TWeakObjectPtr<APlayspace*> */ __um(RequestingPlayspace);                             // 0x0030   (0x0008)  
 	class AActor*                                      SpawnLocationActor;                                         // 0x0038   (0x0008)  
 	FVector                                            SpawnLocation;                                              // 0x0040   (0x0018)  
 	FRotator                                           SpawnRotation;                                              // 0x0058   (0x0018)  
@@ -170,7 +170,7 @@ public:
 /// Size: 0x0088 (0x000000 - 0x000088)
 struct FPlayspaceComponentConfiguration
 { 
-	SDK_UNDEFINED(32,2668) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceComponentClass);                            // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,2678) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceComponentClass);                            // 0x0000   (0x0020)  
 	EPlayspaceComponentCreationType                    CreationType;                                               // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	FGameplayTagQuery                                  TagQuery;                                                   // 0x0028   (0x0048)  
@@ -190,7 +190,7 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FPlayspaceConfiguration
 { 
-	SDK_UNDEFINED(32,2669) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceClass);                                     // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,2679) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceClass);                                     // 0x0000   (0x0020)  
 	EPlayspaceCreationType                             CreationType;                                               // 0x0020   (0x0001)  
 	bool                                               bForceSyncLoad;                                             // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0022   (0x0006)  MISSED
@@ -210,7 +210,7 @@ public:
 class AGameplayVolume : public AActor
 { 
 public:
-	SDK_UNDEFINED(32,2670) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceClassTemplate);                             // 0x0290   (0x0020)  
+	SDK_UNDEFINED(32,2680) /* TWeakObjectPtr<UClass*> */ __um(PlayspaceClassTemplate);                             // 0x0290   (0x0020)  
 	EPlayspaceCreationType                             PlayspaceCreationType;                                      // 0x02B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x02B1   (0x0007)  MISSED
 	class UClass*                                      PlayspaceClass;                                             // 0x02B8   (0x0008)  
@@ -224,13 +224,15 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.GameplayVolume.UpdateSize
-	// void UpdateSize(FVector& NewScale);                                                                                   // [0x7511bac] Native|Public|HasOutParms|HasDefaults 
+	// void UpdateSize(FVector& NewScale);                                                                                   // [0x752f28c] Native|Public|HasOutParms|HasDefaults 
+	// Function /Script/PlayspaceSystem.GameplayVolume.OnRep_Playspace
+	// void OnRep_Playspace();                                                                                               // [0x3867d8c] Final|Native|Protected 
 	// Function /Script/PlayspaceSystem.GameplayVolume.OnOverlappedPawnControllerChanged
-	// void OnOverlappedPawnControllerChanged(class APawn* Pawn, class AController* OldController, class AController* NewController); // [0x751147c] Native|Protected     
+	// void OnOverlappedPawnControllerChanged(class APawn* Pawn, class AController* OldController, class AController* NewController); // [0x752edbc] Native|Protected     
 	// Function /Script/PlayspaceSystem.GameplayVolume.InitializeBoundsComponent
-	// void InitializeBoundsComponent(class UOverlapComponent* NewBoundsComponent);                                          // [0x7510d78] Final|Native|Private|BlueprintCallable 
+	// void InitializeBoundsComponent(class UOverlapComponent* NewBoundsComponent);                                          // [0x752e938] Final|Native|Private|BlueprintCallable 
 	// Function /Script/PlayspaceSystem.GameplayVolume.GetPlayspace
-	// class APlayspace* GetPlayspace();                                                                                     // [0x27bfe60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayspace* GetPlayspace();                                                                                     // [0x286ba84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/PlayspaceSystem.PlayspaceUser
@@ -256,51 +258,55 @@ struct FPlayspaceUserList : FFastArraySerializer
 };
 
 /// Class /Script/PlayspaceSystem.Playspace
-/// Size: 0x0318 (0x000290 - 0x0005A8)
+/// Size: 0x0340 (0x000290 - 0x0005D0)
 class APlayspace : public AInfo
 { 
 public:
-	SDK_UNDEFINED(16,2671) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceUserAdded);                          // 0x0290   (0x0010)  
+	SDK_UNDEFINED(16,2681) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceUserAdded);                          // 0x0290   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x02A0   (0x0018)  MISSED
-	SDK_UNDEFINED(16,2672) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceUserRemoved);                        // 0x02B8   (0x0010)  
+	SDK_UNDEFINED(16,2682) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceUserRemoved);                        // 0x02B8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x02C8   (0x0018)  MISSED
-	SDK_UNDEFINED(16,2673) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceInitialized);                        // 0x02E0   (0x0010)  
+	SDK_UNDEFINED(16,2683) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceInitialized);                        // 0x02E0   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x18];                                      // 0x02F0   (0x0018)  MISSED
-	SDK_UNDEFINED(16,2674) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceCreatedAndReady);                    // 0x0308   (0x0010)  
-	unsigned char                                      UnknownData03_5[0x30];                                      // 0x0318   (0x0030)  MISSED
-	SDK_UNDEFINED(16,2675) /* FMulticastInlineDelegate */ __um(NotifyStartMatch);                                  // 0x0348   (0x0010)  
-	unsigned char                                      UnknownData04_5[0x18];                                      // 0x0358   (0x0018)  MISSED
-	SDK_UNDEFINED(16,2676) /* FMulticastInlineDelegate */ __um(NotifyEndMatch);                                    // 0x0370   (0x0010)  
+	SDK_UNDEFINED(16,2684) /* FMulticastInlineDelegate */ __um(NotifyPlayspaceCreatedAndReady);                    // 0x0308   (0x0010)  
+	unsigned char                                      UnknownData03_5[0x18];                                      // 0x0318   (0x0018)  MISSED
+	SDK_UNDEFINED(16,2685) /* FMulticastInlineDelegate */ __um(NotifyBoundGameplayVolumeReplicated);               // 0x0330   (0x0010)  
+	unsigned char                                      UnknownData04_5[0x30];                                      // 0x0340   (0x0030)  MISSED
+	SDK_UNDEFINED(16,2686) /* FMulticastInlineDelegate */ __um(NotifyStartMatch);                                  // 0x0370   (0x0010)  
 	unsigned char                                      UnknownData05_5[0x18];                                      // 0x0380   (0x0018)  MISSED
-	FGameplayTagContainer                              GameplayTags;                                               // 0x0398   (0x0020)  
-	FGameplayTag                                       RequestedPlayspaceParentTag;                                // 0x03B8   (0x0004)  
-	unsigned char                                      UnknownData06_5[0x4];                                       // 0x03BC   (0x0004)  MISSED
-	TArray<class UClass*>                              ChildPlayspaceClasses;                                      // 0x03C0   (0x0010)  
-	FPlayspaceUserList                                 PlayspaceUsers;                                             // 0x03D0   (0x0178)  
-	TArray<class APlayspace*>                          ChildPlayspaces;                                            // 0x0548   (0x0010)  
-	TArray<FUniqueNetIdRepl>                           PendingUsers;                                               // 0x0558   (0x0010)  
-	bool                                               bAutoStartMatchOnServerStart;                               // 0x0568   (0x0001)  
-	EWithinBoundsEvaluationType                        BoundsEvaluationType;                                       // 0x0569   (0x0001)  
-	unsigned char                                      UnknownData07_5[0x6];                                       // 0x056A   (0x0006)  MISSED
-	class UPlayspaceManagerComponent*                  PlayspaceManagerCached;                                     // 0x0570   (0x0008)  
-	class AGameplayVolume*                             BoundGameplayVolume;                                        // 0x0578   (0x0008)  
-	bool                                               bIsInitialized;                                             // 0x0580   (0x0001)  
-	unsigned char                                      UnknownData08_5[0x1];                                       // 0x0581   (0x0001)  MISSED
-	bool                                               bMatchHasEnded;                                             // 0x0582   (0x0001)  
-	unsigned char                                      UnknownData09_5[0x1];                                       // 0x0583   (0x0001)  MISSED
-	float                                              MatchStartTime;                                             // 0x0584   (0x0004)  
-	unsigned char                                      UnknownData10_6[0x20];                                      // 0x0588   (0x0020)  MISSED
+	SDK_UNDEFINED(16,2687) /* FMulticastInlineDelegate */ __um(NotifyEndMatch);                                    // 0x0398   (0x0010)  
+	unsigned char                                      UnknownData06_5[0x18];                                      // 0x03A8   (0x0018)  MISSED
+	FGameplayTagContainer                              GameplayTags;                                               // 0x03C0   (0x0020)  
+	FGameplayTag                                       RequestedPlayspaceParentTag;                                // 0x03E0   (0x0004)  
+	unsigned char                                      UnknownData07_5[0x4];                                       // 0x03E4   (0x0004)  MISSED
+	TArray<class UClass*>                              ChildPlayspaceClasses;                                      // 0x03E8   (0x0010)  
+	FPlayspaceUserList                                 PlayspaceUsers;                                             // 0x03F8   (0x0178)  
+	TArray<class APlayspace*>                          ChildPlayspaces;                                            // 0x0570   (0x0010)  
+	TArray<FUniqueNetIdRepl>                           PendingUsers;                                               // 0x0580   (0x0010)  
+	bool                                               bAutoStartMatchOnServerStart;                               // 0x0590   (0x0001)  
+	EWithinBoundsEvaluationType                        BoundsEvaluationType;                                       // 0x0591   (0x0001)  
+	unsigned char                                      UnknownData08_5[0x6];                                       // 0x0592   (0x0006)  MISSED
+	class UPlayspaceManagerComponent*                  PlayspaceManagerCached;                                     // 0x0598   (0x0008)  
+	class AGameplayVolume*                             BoundGameplayVolume;                                        // 0x05A0   (0x0008)  
+	bool                                               bIsInitialized;                                             // 0x05A8   (0x0001)  
+	unsigned char                                      UnknownData09_5[0x1];                                       // 0x05A9   (0x0001)  MISSED
+	bool                                               bMatchHasEnded;                                             // 0x05AA   (0x0001)  
+	unsigned char                                      UnknownData10_5[0x1];                                       // 0x05AB   (0x0001)  MISSED
+	float                                              MatchStartTime;                                             // 0x05AC   (0x0004)  
+	unsigned char                                      UnknownData11_6[0x20];                                      // 0x05B0   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.Playspace.OnRep_PlayspaceUsers
-	// void OnRep_PlayspaceUsers();                                                                                          // [0x1cf230c] Final|RequiredAPI|Native|Protected 
+	// void OnRep_PlayspaceUsers();                                                                                          // [0x200775c] Final|RequiredAPI|Native|Protected 
 	// Function /Script/PlayspaceSystem.Playspace.OnRep_MatchStartTime
-	// void OnRep_MatchStartTime();                                                                                          // [0x38589cc] RequiredAPI|Native|Protected 
+	// void OnRep_MatchStartTime();                                                                                          // [0x38b276c] RequiredAPI|Native|Protected 
+	// Function /Script/PlayspaceSystem.Playspace.OnRep_BoundGameplayVolume
+	// void OnRep_BoundGameplayVolume();                                                                                     // [0x752f140] Final|Native|Protected 
 	// Function /Script/PlayspaceSystem.Playspace.OnRep_bMatchHasEnded
-	// void OnRep_bMatchHasEnded();                                                                                          // [0x23d61d4] Final|RequiredAPI|Native|Protected 
+	// void OnRep_bMatchHasEnded();                                                                                          // [0x385f960] Final|RequiredAPI|Native|Protected 
 	// Function /Script/PlayspaceSystem.Playspace.OnRep_bIsInitialized
-	// void OnRep_bIsInitialized();                                                                                          // [0x6581a50] Final|RequiredAPI|Native|Protected 
+	// void OnRep_bIsInitialized();                                                                                          // [0x65f1174] Final|RequiredAPI|Native|Protected 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceComponent_Logic
@@ -353,7 +359,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.PlayspaceComponent_PlayerManager.OnPlayerPawnSet
-	// void OnPlayerPawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                         // [0x75118bc] Final|Native|Protected 
+	// void OnPlayerPawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                         // [0x752f040] Final|Native|Protected 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceLibrary
@@ -365,9 +371,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.PlayspaceLibrary.GetPlayspaceForActor
-	// class APlayspace* GetPlayspaceForActor(class UObject* WorldContextObject, class AActor* InActor);                     // [0x318d0e8] Final|Native|Static|Public|BlueprintCallable 
+	// class APlayspace* GetPlayspaceForActor(class UObject* WorldContextObject, class AActor* InActor);                     // [0x3281d64] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PlayspaceSystem.PlayspaceLibrary.DestroyPlayspace
-	// void DestroyPlayspace(class APlayspace* PlayspaceToDestroy);                                                          // [0x7510c64] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// void DestroyPlayspace(class APlayspace* PlayspaceToDestroy);                                                          // [0x752e864] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceLogic
@@ -385,9 +391,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.PlayspaceLogic.OnRep_MatchStartTime
-	// void OnRep_MatchStartTime();                                                                                          // [0x2f560f0] Native|Protected     
+	// void OnRep_MatchStartTime();                                                                                          // [0x304ed28] Native|Protected     
 	// Function /Script/PlayspaceSystem.PlayspaceLogic.OnRep_bMatchHasEnded
-	// void OnRep_bMatchHasEnded();                                                                                          // [0x1cf2340] Final|Native|Private 
+	// void OnRep_bMatchHasEnded();                                                                                          // [0x18011ac] Final|Native|Private 
 };
 
 /// Struct /Script/PlayspaceSystem.ActorOverlapEvent
@@ -409,20 +415,20 @@ public:
 	unsigned char                                      UnknownData01_5[0x11F];                                     // 0x00C1   (0x011F)  MISSED
 	TArray<FActorOverlapEvent>                         UnhandledEnterEvents;                                       // 0x01E0   (0x0010)  
 	TArray<FActorOverlapEvent>                         UnhandledExitEvents;                                        // 0x01F0   (0x0010)  
-	SDK_UNDEFINED(80,2677) /* TSet<APlayerController*> */ __um(UnassignedPlayers);                                 // 0x0200   (0x0050)  
+	SDK_UNDEFINED(80,2688) /* TSet<APlayerController*> */ __um(UnassignedPlayers);                                 // 0x0200   (0x0050)  
 	bool                                               bAssumeChildPlayspacesAreNested;                            // 0x0250   (0x0001)  
 	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0251   (0x000F)  MISSED
 
 
 	/// Functions
 	// Function /Script/PlayspaceSystem.PlayspaceManagerComponent.ProcessOverlapEvents
-	// bool ProcessOverlapEvents(float DeltaTime);                                                                           // [0x7511a90] Final|Native|Private 
+	// bool ProcessOverlapEvents(float DeltaTime);                                                                           // [0x752f1b0] Final|Native|Private 
 	// Function /Script/PlayspaceSystem.PlayspaceManagerComponent.OnRep_RootPlayspace
-	// void OnRep_RootPlayspace();                                                                                           // [0x287b504] Final|Native|Private 
+	// void OnRep_RootPlayspace();                                                                                           // [0x15427d4] Final|Native|Private 
 	// Function /Script/PlayspaceSystem.PlayspaceManagerComponent.OnPlayerEndOverlapGameplayVolume
-	// void OnPlayerEndOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume);                // [0x751177c] Final|Native|Private 
+	// void OnPlayerEndOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume);                // [0x752ef7c] Final|Native|Private 
 	// Function /Script/PlayspaceSystem.PlayspaceManagerComponent.OnPlayerBeginOverlapGameplayVolume
-	// void OnPlayerBeginOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume);              // [0x751163c] Final|Native|Private 
+	// void OnPlayerBeginOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume);              // [0x752eeb8] Final|Native|Private 
 };
 
 /// Class /Script/PlayspaceSystem.PlayspaceSpawnActor

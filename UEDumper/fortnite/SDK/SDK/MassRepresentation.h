@@ -293,8 +293,8 @@ struct FMassStaticRepresentationTag : FMassTag
 /// Size: 0x0007 (0x000001 - 0x000008)
 struct FMassRepresentationLODFragment : FMassFragment
 { 
-	SDK_UNDEFINED(1,14317) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,14318) /* TEnumAsByte<EMassLOD> */ __um(PrevLOD);                                              // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,14435) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,14436) /* TEnumAsByte<EMassLOD> */ __um(PrevLOD);                                              // 0x0001   (0x0001)  
 	EMassVisibility                                    Visibility;                                                 // 0x0002   (0x0001)  
 	EMassVisibility                                    PrevVisibility;                                             // 0x0003   (0x0001)  
 	float                                              LODSignificance;                                            // 0x0004   (0x0004)  

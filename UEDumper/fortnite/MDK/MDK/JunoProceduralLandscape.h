@@ -39,7 +39,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeExternalMaterialsCollector.CollectExternalMaterials
-	// void CollectExternalMaterials(class UJunoLandscapeLayersData* LayerData, bool bInlcudeMobile, bool bIncludeStandard);    // [0xbf8d490] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CollectExternalMaterials(class UJunoLandscapeLayersData* LayerData, bool bInlcudeMobile, bool bIncludeStandard);    // [0xbf43aa4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface
@@ -54,11 +54,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.Initialize
-	// void Initialize(class UJunoLandscapeRenderer* LandscapeRenderer);                                                        // [0x80f0888] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Initialize(class UJunoLandscapeRenderer* LandscapeRenderer);                                                        // [0x8100ce8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.GetAffectedWeightmapLayers
-	// TArray<FName> GetAffectedWeightmapLayers();                                                                              // [0xbf8e7dc] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TArray<FName> GetAffectedWeightmapLayers();                                                                              // [0xbf44f28] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.GenerateLandscape
-	// class UJunoLandscapeRenderTarget* GenerateLandscape(bool bRenderHeightmap, FName WeightmapName);                         // [0xbf8e68c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// class UJunoLandscapeRenderTarget* GenerateLandscape(bool bRenderHeightmap, FName WeightmapName);                         // [0xbf44e50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeMaterial
@@ -76,21 +76,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetVectorParameterValue
-	// void SetVectorParameterValue(FName ParameterName, FLinearColor Value);                                                   // [0xbf8f3e4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetVectorParameterValue(FName ParameterName, FLinearColor Value);                                                   // [0xbf45868] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetTextureParameterValue
-	// void SetTextureParameterValue(FName ParameterName, class UTexture* Value);                                               // [0xbf8ec40] Final|Native|Public|BlueprintCallable 
+	// void SetTextureParameterValue(FName ParameterName, class UTexture* Value);                                               // [0xbf45310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetScalarParameterValue
-	// void SetScalarParameterValue(FName ParameterName, float Value);                                                          // [0xbf8f2a8] Final|Native|Public|BlueprintCallable 
+	// void SetScalarParameterValue(FName ParameterName, float Value);                                                          // [0xbf457a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetRenderTargetParameterValue
-	// void SetRenderTargetParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);                        // [0xbf8f16c] Final|Native|Public|BlueprintCallable 
+	// void SetRenderTargetParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);                        // [0xbf456e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetJunoTextureParameterValue
-	// void SetJunoTextureParameterValue(FName ParameterName, class UTextureRenderTarget2D* Value);                             // [0xbf8ec40] Final|Native|Public|BlueprintCallable 
+	// void SetJunoTextureParameterValue(FName ParameterName, class UTextureRenderTarget2D* Value);                             // [0xbf45310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetDoubleVectorParameterValue
-	// void SetDoubleVectorParameterValue(FName ParameterName, FVector4 Value);                                                 // [0xbf8eadc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetDoubleVectorParameterValue(FName ParameterName, FVector4 Value);                                                 // [0xbf45168] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.K2_GetVectorParameterValue
-	// FLinearColor K2_GetVectorParameterValue(FName ParameterName);                                                            // [0xbf8ea00] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FLinearColor K2_GetVectorParameterValue(FName ParameterName);                                                            // [0xbf450cc] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.K2_GetScalarParameterValue
-	// float K2_GetScalarParameterValue(FName ParameterName);                                                                   // [0xbf8e930] Final|Native|Public|BlueprintCallable 
+	// float K2_GetScalarParameterValue(FName ParameterName);                                                                   // [0xbf4503c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeMaterialInstanceConstant
@@ -175,23 +175,23 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeLayersData.UpdateExternalMaterials
-	// void UpdateExternalMaterials();                                                                                          // [0x3047908] Final|Native|Public  
+	// void UpdateExternalMaterials();                                                                                          // [0x3097b14] Final|Native|Public  
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeManager
-/// Size: 0x0530 (0x000040 - 0x000570)
+/// Size: 0x0570 (0x000040 - 0x0005B0)
 class UJunoLandscapeManager : public UTickableWorldSubsystem
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1392;
+	static inline constexpr uint64_t __MDKClassSize = 1456;
 
 public:
 	CMember(class ALandscape*)                         Landscape                                                   OFFSET(get<T>, {0x108, 8, 0, 0})
 	CMember(TMap<FIntPoint, UJunoLandscapeComponent*>) ExistingComponents                                          OFFSET(get<T>, {0x130, 80, 0, 0})
 	CMember(TMap<UPrimitiveComponent*, UJunoLandscapeComponent*>) ExternalComponents                               OFFSET(get<T>, {0x180, 80, 0, 0})
 	CMember(class UMaterialInterface*)                 DebugMaterial                                               OFFSET(get<T>, {0x1D0, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 LandscapeMaterial                                           OFFSET(get<T>, {0x530, 8, 0, 0})
-	CMember(class UJunoLandscapeLayersData*)           LayersData                                                  OFFSET(get<T>, {0x538, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 LandscapeMaterial                                           OFFSET(get<T>, {0x570, 8, 0, 0})
+	CMember(class UJunoLandscapeLayersData*)           LayersData                                                  OFFSET(get<T>, {0x578, 8, 0, 0})
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeGenerationItems
@@ -377,33 +377,33 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialVectorParameterValue
-	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                                  // [0xbf8f018] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                                  // [0xbf45558] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialTextureParameterValue
-	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);            // [0xbf8eecc] Final|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);            // [0xbf45498] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialScalarParameterValue
-	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                         // [0xbf8ed7c] Final|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                         // [0xbf453d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.GetUVWorldTransform
-	// FVector4 GetUVWorldTransform();                                                                                          // [0x648b280] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector4 GetUVWorldTransform();                                                                                          // [0x64fb3cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.GetOutputHeightmapRenderTarget
-	// class UJunoLandscapeRenderTarget* GetOutputHeightmapRenderTarget();                                                      // [0xbf8e8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoLandscapeRenderTarget* GetOutputHeightmapRenderTarget();                                                      // [0xbf44ff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.FindOrCreateNamedRenderTarget
-	// class UJunoLandscapeRenderTarget* FindOrCreateNamedRenderTarget(FName Name, TEnumAsByte<ETextureRenderTargetFormat> Format); // [0xbf8e53c] Final|Native|Public|BlueprintCallable 
+	// class UJunoLandscapeRenderTarget* FindOrCreateNamedRenderTarget(FName Name, TEnumAsByte<ETextureRenderTargetFormat> Format); // [0xbf44d8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.EndDrawCanvasToRenderTarget
-	// void EndDrawCanvasToRenderTarget(FDrawToRenderTargetContext_JunoLandscape& Context);                                     // [0x80d57a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void EndDrawCanvasToRenderTarget(FDrawToRenderTargetContext_JunoLandscape& Context);                                     // [0x80e527c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.DrawMaterialToRenderTargetUV
-	// void DrawMaterialToRenderTargetUV(class UJunoLandscapeRenderTarget* RenderTarget, class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf8e158] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void DrawMaterialToRenderTargetUV(class UJunoLandscapeRenderTarget* RenderTarget, class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf447c0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.DrawMaterialToRenderTarget
-	// void DrawMaterialToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeMaterial* Material); // [0xbf8de00] Final|Native|Public|BlueprintCallable 
+	// void DrawMaterialToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeMaterial* Material); // [0xbf444ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CreateRenderTarget2D
-	// class UJunoLandscapeRenderTarget* CreateRenderTarget2D(int32_t Width, int32_t Height, TEnumAsByte<ETextureRenderTargetFormat> Format, FLinearColor ClearColor, bool bAutoGenerateMipMaps); // [0xbf8d800] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UJunoLandscapeRenderTarget* CreateRenderTarget2D(int32_t Width, int32_t Height, TEnumAsByte<ETextureRenderTargetFormat> Format, FLinearColor ClearColor, bool bAutoGenerateMipMaps); // [0xbf43c94] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CreateMaterial
-	// class UJunoLandscapeMaterial* CreateMaterial(class UMaterialInterface* Parent, FName OptionalName, EMIDCreationFlags CreationFlags); // [0xbf8d654] Final|Native|Public|BlueprintCallable 
+	// class UJunoLandscapeMaterial* CreateMaterial(class UMaterialInterface* Parent, FName OptionalName, EMIDCreationFlags CreationFlags); // [0xbf43ba4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.ClearRenderTarget2D
-	// void ClearRenderTarget2D(class UJunoLandscapeRenderTarget* TextureRenderTarget, FLinearColor ClearColor);                // [0xbf8d304] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void ClearRenderTarget2D(class UJunoLandscapeRenderTarget* TextureRenderTarget, FLinearColor ClearColor);                // [0xbf438e0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CalculateRenderArea
-	// FBox2D CalculateRenderArea(FTransform Transform, FVector2D HalfExtents);                                                 // [0xbf8d0fc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox2D CalculateRenderArea(FTransform Transform, FVector2D HalfExtents);                                                 // [0xbf435ec] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.BeginDrawCanvasToRenderTarget
-	// void BeginDrawCanvasToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeCanvas*& Canvas, FVector2D& Size, FDrawToRenderTargetContext_JunoLandscape& Context); // [0xbf8cf18] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void BeginDrawCanvasToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeCanvas*& Canvas, FVector2D& Size, FDrawToRenderTargetContext_JunoLandscape& Context); // [0xbf43438] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeRenderTarget
@@ -432,9 +432,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeCanvas.GetNameReplacement
-	// FName GetNameReplacement(FName NameIn);                                                                                  // [0xbf8e820] Final|Native|Static|Public 
+	// FName GetNameReplacement(FName NameIn);                                                                                  // [0xbf44f6c] Final|Native|Static|Public 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeCanvas.DrawMaterial
-	// void DrawMaterial(class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf8da98] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void DrawMaterial(class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf43f58] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/JunoProceduralLandscape.JunoLandscapeLayerInfo

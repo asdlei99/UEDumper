@@ -27,22 +27,23 @@ struct FAssembledMeshAttachmentRules
 };
 
 /// Class /Script/AssembledMeshSystem.AssembledMeshSchema
-/// Size: 0x0190 (0x000030 - 0x0001C0)
+/// Size: 0x01B0 (0x000030 - 0x0001E0)
 class UAssembledMeshSchema : public UPrimaryDataAsset
 { 
 public:
 	FGameplayTag                                       MeshSchemaTag;                                              // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(32,1723) /* TWeakObjectPtr<UCustomizableObjectInstance*> */ __um(CustomizableObjectInstance);    // 0x0038   (0x0020)  
-	SDK_UNDEFINED(32,1724) /* TWeakObjectPtr<UCustomizableObject*> */ __um(CustomizableObject);                    // 0x0058   (0x0020)  
+	SDK_UNDEFINED(32,1725) /* TWeakObjectPtr<UCustomizableObjectInstance*> */ __um(CustomizableObjectInstance);    // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,1726) /* TWeakObjectPtr<UCustomizableObject*> */ __um(CustomizableObject);                    // 0x0058   (0x0020)  
 	int32_t                                            ComponentIndex;                                             // 0x0078   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x007C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,1725) /* TMap<FString, FString> */ __um(SelectedIntParams);                                   // 0x0080   (0x0050)  
-	SDK_UNDEFINED(80,1726) /* TMap<FString, float> */  __um(SelectedFloatParams);                                  // 0x00D0   (0x0050)  
-	FAssembledMeshAttachmentRules                      AttachmentRules;                                            // 0x0120   (0x0050)  
-	SDK_UNDEFINED(32,1727) /* TWeakObjectPtr<UClass*> */ __um(AnimClass);                                          // 0x0170   (0x0020)  
-	FGameplayTagContainer                              SoundLibraryTags;                                           // 0x0190   (0x0020)  
-	TArray<FInstancedStruct>                           AdditionalData;                                             // 0x01B0   (0x0010)  
+	SDK_UNDEFINED(32,1727) /* TWeakObjectPtr<USkeletalMesh*> */ __um(SkeletalMesh);                                // 0x0080   (0x0020)  
+	SDK_UNDEFINED(80,1728) /* TMap<FString, FString> */ __um(SelectedIntParams);                                   // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1729) /* TMap<FString, float> */  __um(SelectedFloatParams);                                  // 0x00F0   (0x0050)  
+	FAssembledMeshAttachmentRules                      AttachmentRules;                                            // 0x0140   (0x0050)  
+	SDK_UNDEFINED(32,1730) /* TWeakObjectPtr<UClass*> */ __um(AnimClass);                                          // 0x0190   (0x0020)  
+	FGameplayTagContainer                              SoundLibraryTags;                                           // 0x01B0   (0x0020)  
+	TArray<FInstancedStruct>                           AdditionalData;                                             // 0x01D0   (0x0010)  
 };
 
 /// Class /Script/AssembledMeshSystem.HeadAccDataAssetLink
@@ -90,17 +91,17 @@ public:
 
 	/// Functions
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.SetMeshPart
-	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                             // [0x6f57964] Final|Native|Private|BlueprintCallable 
+	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                             // [0x6f75560] Final|Native|Private|BlueprintCallable 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.OnRep_MeshParts
-	// void OnRep_MeshParts();                                                                                               // [0x6f5794c] Native|Protected     
+	// void OnRep_MeshParts();                                                                                               // [0x2c0b188] Native|Protected     
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetMeshPart
-	// class UAssembledMeshSchema* GetMeshPart();                                                                            // [0x641f194] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class UAssembledMeshSchema* GetMeshPart();                                                                            // [0x6486500] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetAttachToComponent
-	// class USkeletalMeshComponent* GetAttachToComponent();                                                                 // [0x6f57924] Native|Event|Protected|BlueprintEvent 
+	// class USkeletalMeshComponent* GetAttachToComponent();                                                                 // [0x33804ac] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GatherAndAssignAssembledMeshParts
-	// void GatherAndAssignAssembledMeshParts();                                                                             // [0x2eb4140] Native|Public        
+	// void GatherAndAssignAssembledMeshParts();                                                                             // [0x2e6c604] Native|Public        
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.CustomizationCompleted
-	// void CustomizationCompleted(int32_t PartIndex);                                                                       // [0x6f57860] Native|Protected     
+	// void CustomizationCompleted(int32_t PartIndex);                                                                       // [0x6f754dc] Native|Protected     
 };
 
 /// Struct /Script/AssembledMeshSystem.AssembledMeshSchemaData
@@ -113,9 +114,9 @@ struct FAssembledMeshSchemaData
 /// Size: 0x005F (0x000001 - 0x000060)
 struct FAssembledMeshSchemaData_Icons : FAssembledMeshSchemaData
 { 
-	SDK_UNDEFINED(32,1728) /* TWeakObjectPtr<UTexture2D*> */ __um(WidePreviewImage);                               // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,1729) /* TWeakObjectPtr<UTexture2D*> */ __um(SmallPreviewImage);                              // 0x0020   (0x0020)  
-	SDK_UNDEFINED(32,1730) /* TWeakObjectPtr<UTexture2D*> */ __um(LargePreviewImage);                              // 0x0040   (0x0020)  
+	SDK_UNDEFINED(32,1731) /* TWeakObjectPtr<UTexture2D*> */ __um(WidePreviewImage);                               // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,1732) /* TWeakObjectPtr<UTexture2D*> */ __um(SmallPreviewImage);                              // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,1733) /* TWeakObjectPtr<UTexture2D*> */ __um(LargePreviewImage);                              // 0x0040   (0x0020)  
 };
 
 /// Struct /Script/AssembledMeshSystem.CosmeticProperty_AssembledMeshSchema
@@ -123,21 +124,21 @@ struct FAssembledMeshSchemaData_Icons : FAssembledMeshSchemaData
 struct FCosmeticProperty_AssembledMeshSchema : FCosmeticPropertyBase
 { 
 	unsigned char                                      UnknownData00_3[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,1731) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                  // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,1734) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                  // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/AssembledMeshSystem.BaseParamData
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FBaseParamData
 { 
-	SDK_UNDEFINED(16,1732) /* FString */               __um(ParamName);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1735) /* FString */               __um(ParamName);                                            // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/AssembledMeshSystem.IntParamData
 /// Size: 0x0010 (0x000010 - 0x000020)
 struct FIntParamData : FBaseParamData
 { 
-	SDK_UNDEFINED(16,1733) /* TArray<FString> */       __um(ParamOptions);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1736) /* TArray<FString> */       __um(ParamOptions);                                         // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/AssembledMeshSystem.FloatParamData

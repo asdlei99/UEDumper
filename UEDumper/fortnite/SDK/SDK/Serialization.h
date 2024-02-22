@@ -51,11 +51,11 @@ struct FStructSerializerObjectTestStruct
 	class UClass*                                      RawClass;                                                   // 0x0000   (0x0008)  
 	class UClass*                                      WrappedClass;                                               // 0x0008   (0x0008)  
 	class UClass*                                      SubClass;                                                   // 0x0010   (0x0008)  
-	SDK_UNDEFINED(32,15280) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                         // 0x0018   (0x0020)  
+	SDK_UNDEFINED(32,15426) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                         // 0x0018   (0x0020)  
 	class UObject*                                     RawObject;                                                  // 0x0038   (0x0008)  
 	class UObject*                                     WrappedObject;                                              // 0x0040   (0x0008)  
-	SDK_UNDEFINED(8,15281) /* TWeakObjectPtr<UMetaData*> */ __um(WeakObject);                                      // 0x0048   (0x0008)  
-	SDK_UNDEFINED(32,15282) /* TWeakObjectPtr<UMetaData*> */ __um(SoftObject);                                     // 0x0050   (0x0020)  
+	SDK_UNDEFINED(8,15427) /* TWeakObjectPtr<UMetaData*> */ __um(WeakObject);                                      // 0x0048   (0x0008)  
+	SDK_UNDEFINED(32,15428) /* TWeakObjectPtr<UMetaData*> */ __um(SoftObject);                                     // 0x0050   (0x0020)  
 	FSoftClassPath                                     ClassPath;                                                  // 0x0070   (0x0018)  
 	FSoftObjectPath                                    ObjectPath;                                                 // 0x0088   (0x0018)  
 };
@@ -67,8 +67,8 @@ struct FStructSerializerBuiltinTestStruct
 	FGuid                                              Guid;                                                       // 0x0000   (0x0010)  
 	FName                                              Name;                                                       // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,15283) /* FString */              __um(String);                                               // 0x0018   (0x0010)  
-	SDK_UNDEFINED(24,15284) /* FText */                __um(Text);                                                 // 0x0028   (0x0018)  
+	SDK_UNDEFINED(16,15429) /* FString */              __um(String);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(24,15430) /* FText */                __um(Text);                                                 // 0x0028   (0x0018)  
 	FVector                                            Vector;                                                     // 0x0040   (0x0018)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0058   (0x0008)  MISSED
 	FVector4                                           Vector4;                                                    // 0x0060   (0x0020)  
@@ -101,8 +101,8 @@ struct FStructSerializerLWCTypesTest
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x02A4   (0x0004)  MISSED
 	double                                             Double;                                                     // 0x02A8   (0x0008)  
 	TArray<FVector>                                    VectorArray;                                                // 0x02B0   (0x0010)  
-	SDK_UNDEFINED(80,15285) /* TMap<FString, FVector> */ __um(StrToVec);                                           // 0x02C0   (0x0050)  
-	SDK_UNDEFINED(80,15286) /* TSet<FVector> */        __um(VectorSet);                                            // 0x0310   (0x0050)  
+	SDK_UNDEFINED(80,15431) /* TMap<FString, FVector> */ __um(StrToVec);                                           // 0x02C0   (0x0050)  
+	SDK_UNDEFINED(80,15432) /* TSet<FVector> */        __um(VectorSet);                                            // 0x0310   (0x0050)  
 };
 
 /// Struct /Script/Serialization.OrientedBoxFloat
@@ -140,8 +140,8 @@ struct FStructSerializerNonLWCTypesTest
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x015C   (0x0004)  MISSED
 	double                                             Double;                                                     // 0x0160   (0x0008)  
 	TArray<FVector3f>                                  VectorArray;                                                // 0x0168   (0x0010)  
-	SDK_UNDEFINED(80,15287) /* TMap<FString, FVector3f> */ __um(StrToVec);                                         // 0x0178   (0x0050)  
-	SDK_UNDEFINED(80,15288) /* TSet<FVector3f> */      __um(VectorSet);                                            // 0x01C8   (0x0050)  
+	SDK_UNDEFINED(80,15433) /* TMap<FString, FVector3f> */ __um(StrToVec);                                         // 0x0178   (0x0050)  
+	SDK_UNDEFINED(80,15434) /* TSet<FVector3f> */      __um(VectorSet);                                            // 0x01C8   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0218   (0x0008)  MISSED
 };
 
@@ -177,20 +177,20 @@ struct FStructSerializerArrayTestStruct
 /// Size: 0x0140 (0x000000 - 0x000140)
 struct FStructSerializerMapTestStruct
 { 
-	SDK_UNDEFINED(80,15289) /* TMap<int32_t, FString> */ __um(IntToStr);                                           // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,15290) /* TMap<FString, FString> */ __um(StrToStr);                                           // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,15291) /* TMap<FString, FVector> */ __um(StrToVec);                                           // 0x00A0   (0x0050)  
-	SDK_UNDEFINED(80,15292) /* TMap<FString, FStructSerializerBuiltinTestStruct> */ __um(StrToStruct);             // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,15435) /* TMap<int32_t, FString> */ __um(IntToStr);                                           // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,15436) /* TMap<FString, FString> */ __um(StrToStr);                                           // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,15437) /* TMap<FString, FVector> */ __um(StrToVec);                                           // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,15438) /* TMap<FString, FStructSerializerBuiltinTestStruct> */ __um(StrToStruct);             // 0x00F0   (0x0050)  
 };
 
 /// Struct /Script/Serialization.StructSerializerSetTestStruct
 /// Size: 0x0140 (0x000000 - 0x000140)
 struct FStructSerializerSetTestStruct
 { 
-	SDK_UNDEFINED(80,15293) /* TSet<FString> */        __um(StrSet);                                               // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,15294) /* TSet<int32_t> */        __um(IntSet);                                               // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,15295) /* TSet<FName> */          __um(NameSet);                                              // 0x00A0   (0x0050)  
-	SDK_UNDEFINED(80,15296) /* TSet<FStructSerializerBuiltinTestStruct> */ __um(StructSet);                        // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,15439) /* TSet<FString> */        __um(StrSet);                                               // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,15440) /* TSet<int32_t> */        __um(IntSet);                                               // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,15441) /* TSet<FName> */          __um(NameSet);                                              // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,15442) /* TSet<FStructSerializerBuiltinTestStruct> */ __um(StructSet);                        // 0x00F0   (0x0050)  
 };
 
 /// Struct /Script/Serialization.StructSerializerTestStruct

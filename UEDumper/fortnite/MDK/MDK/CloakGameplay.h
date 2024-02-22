@@ -31,13 +31,13 @@ public:
 
 	/// Functions
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.TickVisibilityLevel
-	// float TickVisibilityLevel(float DeltaSeconds);                                                                           // [0xac144e0] Final|Native|Protected|BlueprintCallable 
+	// float TickVisibilityLevel(float DeltaSeconds);                                                                           // [0xaf120dc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.SetModifierEnabled
-	// bool SetModifierEnabled(FName& ModifierName, bool bNewEnabled);                                                          // [0xac143c0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool SetModifierEnabled(FName& ModifierName, bool bNewEnabled);                                                          // [0xaf11fbc] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.SetModifierCanBeEnabled
-	// bool SetModifierCanBeEnabled(FName& ModifierName, bool bNewCanBeEnabled);                                                // [0xac142a0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool SetModifierCanBeEnabled(FName& ModifierName, bool bNewCanBeEnabled);                                                // [0xaf11e9c] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.GetCurrentModifierValues
-	// bool GetCurrentModifierValues(float& OutVisibilityMultiplier, float& OutVisibilityAddition, FName& ModifierName);        // [0xac14174] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCurrentModifierValues(float& OutVisibilityMultiplier, float& OutVisibilityAddition, FName& ModifierName);        // [0xaf11d70] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CloakGameplay.FortGameCueCloakModifier

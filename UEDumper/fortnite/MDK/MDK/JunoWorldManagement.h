@@ -102,21 +102,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldSysMetadata
-	// void ProtoJuno_UpdateWorldSysMetadata(FString WorldId, FJsonObjectWrapper SysMetadata, FDedicatedServerUrlContext& Context); // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_UpdateWorldSysMetadata(FString WorldId, FJsonObjectWrapper SysMetadata, FDedicatedServerUrlContext& Context); // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldMetadata
-	// void ProtoJuno_UpdateWorldMetadata(FString WorldId, FJsonObjectWrapper WorldMetadata, FClientUrlContext& Context);       // [0xffff8009cf080000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void ProtoJuno_UpdateWorldMetadata(FString WorldId, FJsonObjectWrapper WorldMetadata, FClientUrlContext& Context);       // [0xffff80094a9f0000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldLastAccessTime
-	// void ProtoJuno_UpdateWorldLastAccessTime(FString WorldId, FClientUrlContext& Context);                                   // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_UpdateWorldLastAccessTime(FString WorldId, FClientUrlContext& Context);                                   // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_SetWorldName
-	// void ProtoJuno_SetWorldName(FString WorldId, FString Name, FClientUrlContext& Context);                                  // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_SetWorldName(FString WorldId, FString Name, FClientUrlContext& Context);                                  // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_MarkWorldDeleted
-	// void ProtoJuno_MarkWorldDeleted(FString WorldId, FClientUrlContext& Context);                                            // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_MarkWorldDeleted(FString WorldId, FClientUrlContext& Context);                                            // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_DeleteWorld
-	// void ProtoJuno_DeleteWorld(FString WorldId, FClientUrlContext& Context);                                                 // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_DeleteWorld(FString WorldId, FClientUrlContext& Context);                                                 // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_DeleteAllWorlds
-	// void ProtoJuno_DeleteAllWorlds(FClientUrlContext& Context);                                                              // [0xffff8009cf080000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_DeleteAllWorlds(FClientUrlContext& Context);                                                              // [0xffff80094a9f0000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_CreateWorld
-	// void ProtoJuno_CreateWorld(FJsonObjectWrapper world_metadata, FClientUrlContext& Context);                               // [0xffff8009cf080000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void ProtoJuno_CreateWorld(FJsonObjectWrapper world_metadata, FClientUrlContext& Context);                               // [0xffff80094a9f0000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 };
 
 /// Class /Script/JunoWorldManagement.JunoWorldManagementHandler_WorldArbitrationService

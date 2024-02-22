@@ -297,9 +297,9 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.SelectAll
-	// void SelectAll();                                                                                                     // [0xb149280] Final|Native|Public  
+	// void SelectAll();                                                                                                     // [0xaa2d590] Final|Native|Public  
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.InvertSelection
-	// void InvertSelection();                                                                                               // [0xb149244] Final|Native|Public  
+	// void InvertSelection();                                                                                               // [0xaa2d554] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionEditCommandArguments
@@ -375,8 +375,8 @@ class UBaseCreateFromSelectedHandleSourceProperties : public UOnAcceptHandleSour
 public:
 	EBaseCreateFromSelectedTargetType                  OutputWriteTo;                                              // 0x00B0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00B4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14707) /* FString */              __um(OutputNewName);                                        // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14708) /* FString */              __um(OutputExistingName);                                   // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14845) /* FString */              __um(OutputNewName);                                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14846) /* FString */              __um(OutputExistingName);                                   // 0x00C8   (0x0010)  
 };
 
 /// Class /Script/ModelingComponents.TransformInputsToolProperties
@@ -393,7 +393,7 @@ public:
 class UMultiSelectionMeshEditingTool : public UMultiSelectionTool
 { 
 public:
-	SDK_UNDEFINED(8,14709) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B8   (0x0008)  
+	SDK_UNDEFINED(8,14847) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B8   (0x0008)  
 };
 
 /// Class /Script/ModelingComponents.BaseCreateFromSelectedTool
@@ -455,7 +455,7 @@ public:
 class USingleSelectionMeshEditingTool : public USingleSelectionTool
 { 
 public:
-	SDK_UNDEFINED(8,14710) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B0   (0x0008)  
+	SDK_UNDEFINED(8,14848) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B0   (0x0008)  
 	class UPersistentMeshSelection*                    InputSelection;                                             // 0x00B8   (0x0008)  
 };
 
@@ -471,7 +471,7 @@ public:
 class USingleTargetWithSelectionTool : public USingleSelectionTool
 { 
 public:
-	SDK_UNDEFINED(8,14711) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B0   (0x0008)  
+	SDK_UNDEFINED(8,14849) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00B0   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x60];                                      // 0x00B8   (0x0060)  MISSED
 	class UGeometrySelectionVisualizationProperties*   GeometrySelectionVizProperties;                             // 0x0118   (0x0008)  
 	class UPreviewGeometry*                            GeometrySelectionViz;                                       // 0x0120   (0x0008)  
@@ -497,7 +497,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.OctreeDynamicMeshComponent.SetDynamicMesh
-	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                     // [0xb1492bc] Final|Native|Public|BlueprintCallable 
+	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                     // [0xaa2d5cc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.LineSetComponent
@@ -543,50 +543,50 @@ class UPreviewGeometry : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	class APreviewGeometryActor*                       ParentActor;                                                // 0x0028   (0x0008)  
-	SDK_UNDEFINED(80,14712) /* TMap<FString, UTriangleSetComponent*> */ __um(TriangleSets);                        // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,14713) /* TMap<FString, ULineSetComponent*> */ __um(LineSets);                                // 0x0080   (0x0050)  
-	SDK_UNDEFINED(80,14714) /* TMap<FString, UPointSetComponent*> */ __um(PointSets);                              // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,14850) /* TMap<FString, UTriangleSetComponent*> */ __um(TriangleSets);                        // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14851) /* TMap<FString, ULineSetComponent*> */ __um(LineSets);                                // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,14852) /* TMap<FString, UPointSetComponent*> */ __um(PointSets);                              // 0x00D0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetVisibility
-	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                // [0xb199768] Final|Native|Public  
+	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                // [0xaa7cb54] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetMaterial
-	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                          // [0xb199010] Final|Native|Public  
+	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                          // [0xaa7c480] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetVisibility
-	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                  // [0xb1988b4] Final|Native|Public  
+	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                  // [0xaa7bda8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetMaterial
-	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                            // [0xb19815c] Final|Native|Public  
+	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                            // [0xaa7b6d4] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllPointSetsMaterial
-	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                     // [0xb19809c] Final|Native|Public  
+	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                     // [0xaa7b654] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllLineSetsMaterial
-	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                      // [0xb197fdc] Final|Native|Public  
+	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                      // [0xaa7b5d4] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemovePointSet
-	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                       // [0xb197880] Final|Native|Public  
+	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                       // [0xaa7aefc] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveLineSet
-	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                         // [0xb197124] Final|Native|Public  
+	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                         // [0xaa7a824] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllPointSets
-	// void RemoveAllPointSets(bool bDestroy);                                                                               // [0xb197060] Final|Native|Public  
+	// void RemoveAllPointSets(bool bDestroy);                                                                               // [0xaa7a7a4] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllLineSets
-	// void RemoveAllLineSets(bool bDestroy);                                                                                // [0xb196f9c] Final|Native|Public  
+	// void RemoveAllLineSets(bool bDestroy);                                                                                // [0xaa7a724] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.GetActor
-	// class APreviewGeometryActor* GetActor();                                                                              // [0x7a62828] Final|Native|Public|Const 
+	// class APreviewGeometryActor* GetActor();                                                                              // [0x7a78994] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.PreviewGeometry.FindTriangleSet
-	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                          // [0xb19682c] Final|Native|Public  
+	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                          // [0xaa79ff8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindPointSet
-	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                   // [0xb196138] Final|Native|Public  
+	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                   // [0xaa79948] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindLineSet
-	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                      // [0xb195a44] Final|Native|Public  
+	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                      // [0xaa79298] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.Disconnect
-	// void Disconnect();                                                                                                    // [0xb195a30] Final|Native|Public  
+	// void Disconnect();                                                                                                    // [0xaa79284] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.CreateInWorld
-	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                   // [0xb194940] Final|Native|Public|HasOutParms|HasDefaults 
+	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                   // [0xaa781dc] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/ModelingComponents.PreviewGeometry.AddTriangleSet
-	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                           // [0xb19424c] Final|Native|Public  
+	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                           // [0xaa77b2c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddPointSet
-	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                    // [0xb193b58] Final|Native|Public  
+	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                    // [0xaa7747c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddLineSet
-	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                       // [0xb193464] Final|Native|Public  
+	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                       // [0xaa76dcc] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.MeshElementsVisualizer
@@ -914,7 +914,7 @@ public:
 	class UMaterialInterface*                          OverrideMaterial;                                           // 0x0070   (0x0008)  
 	class UMaterialInterface*                          WorkingMaterial;                                            // 0x0078   (0x0008)  
 	class UMaterialInterface*                          SecondaryMaterial;                                          // 0x0080   (0x0008)  
-	SDK_UNDEFINED(8,14715) /* TWeakObjectPtr<UWorld*> */ __um(PreviewWorld);                                       // 0x0088   (0x0008)  
+	SDK_UNDEFINED(8,14853) /* TWeakObjectPtr<UWorld*> */ __um(PreviewWorld);                                       // 0x0088   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x28];                                      // 0x0090   (0x0028)  MISSED
 };
 
@@ -927,7 +927,7 @@ public:
 	bool                                               bEnableRayTracing;                                          // 0x0031   (0x0001)  
 	bool                                               bGenerateLightmapUVs;                                       // 0x0032   (0x0001)  
 	bool                                               bEnableCollision;                                           // 0x0033   (0x0001)  
-	SDK_UNDEFINED(1,14716) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionMode);                             // 0x0034   (0x0001)  
+	SDK_UNDEFINED(1,14854) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionMode);                             // 0x0034   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0035   (0x0003)  MISSED
 };
 
@@ -954,13 +954,13 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateTextureObject
-	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                          // [0xb195360] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                          // [0xaa78bb4] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateNewActor
-	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                             // [0xb195280] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                             // [0xaa78ad4] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMeshObject
-	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                  // [0xb195184] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                  // [0xaa789d8] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMaterialObject
-	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                  // [0xb194ab8] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                  // [0xaa7830c] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.PreviewMeshActor
@@ -975,20 +975,20 @@ public:
 class UCreateMeshObjectTypeProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14717) /* FString */              __um(OutputType);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14855) /* FString */              __um(OutputType);                                           // 0x00A8   (0x0010)  
 	class UClass*                                      VolumeType;                                                 // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(16,14718) /* TArray<FString> */      __um(OutputTypeNamesList);                                  // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14856) /* TArray<FString> */      __um(OutputTypeNamesList);                                  // 0x00C0   (0x0010)  
 	bool                                               bShowVolumeList;                                            // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00D1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.ShouldShowPropertySet
-	// bool ShouldShowPropertySet();                                                                                         // [0xb199ec4] Final|Native|Public|Const 
+	// bool ShouldShowPropertySet();                                                                                         // [0xaa7d22c] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetOutputTypeNamesFunc
-	// TArray<FString> GetOutputTypeNamesFunc();                                                                             // [0xb196f80] Final|Native|Public  
+	// TArray<FString> GetOutputTypeNamesFunc();                                                                             // [0xaa7a708] Final|Native|Public  
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetCurrentCreateMeshType
-	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                     // [0xb196f20] Final|Native|Public|Const 
+	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                     // [0xaa7a6a8] Final|Native|Public|Const 
 };
 
 /// Class /Script/ModelingComponents.OnAcceptHandleSourcesPropertiesSingle
@@ -1007,12 +1007,12 @@ class UPolygroupLayersProperties : public UInteractiveToolPropertySet
 public:
 	FName                                              ActiveGroupLayer;                                           // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14719) /* TArray<FString> */      __um(GroupLayersList);                                      // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14857) /* TArray<FString> */      __um(GroupLayersList);                                      // 0x00B0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/ModelingComponents.PolygroupLayersProperties.GetGroupLayersFunc
-	// TArray<FString> GetGroupLayersFunc();                                                                                 // [0xb196f44] Final|Native|Public  
+	// TArray<FString> GetGroupLayersFunc();                                                                                 // [0xaa7a6cc] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.WeightMapSetProperties
@@ -1022,14 +1022,14 @@ class UWeightMapSetProperties : public UInteractiveToolPropertySet
 public:
 	FName                                              WeightMap;                                                  // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14720) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14858) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00B0   (0x0010)  
 	bool                                               bInvertWeightMap;                                           // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00C1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/ModelingComponents.WeightMapSetProperties.GetWeightMapsFunc
-	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xb196f44] Final|Native|Public  
+	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xaa7a6cc] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionManager
@@ -1155,11 +1155,11 @@ struct FCreateMeshObjectParams
 	class UWorld*                                      TargetWorld;                                                // 0x0020   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0028   (0x0008)  MISSED
 	FTransform                                         Transform;                                                  // 0x0030   (0x0060)  
-	SDK_UNDEFINED(16,14721) /* FString */              __um(BaseName);                                             // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,14859) /* FString */              __um(BaseName);                                             // 0x0090   (0x0010)  
 	TArray<class UMaterialInterface*>                  Materials;                                                  // 0x00A0   (0x0010)  
 	TArray<class UMaterialInterface*>                  AssetMaterials;                                             // 0x00B0   (0x0010)  
 	bool                                               bEnableCollision;                                           // 0x00C0   (0x0001)  
-	SDK_UNDEFINED(1,14722) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionMode);                             // 0x00C1   (0x0001)  
+	SDK_UNDEFINED(1,14860) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionMode);                             // 0x00C1   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x5E];                                      // 0x00C2   (0x005E)  MISSED
 	bool                                               bEnableRaytracingSupport;                                   // 0x0120   (0x0001)  
 	bool                                               bGenerateLightmapUVs;                                       // 0x0121   (0x0001)  
@@ -1192,7 +1192,7 @@ struct FCreateTextureObjectParams
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
 	class UWorld*                                      TargetWorld;                                                // 0x0008   (0x0008)  
 	class UObject*                                     StoreRelativeToObject;                                      // 0x0010   (0x0008)  
-	SDK_UNDEFINED(16,14723) /* FString */              __um(BaseName);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,14861) /* FString */              __um(BaseName);                                             // 0x0018   (0x0010)  
 	class UTexture2D*                                  GeneratedTransientTexture;                                  // 0x0028   (0x0008)  
 };
 
@@ -1211,7 +1211,7 @@ struct FCreateMaterialObjectParams
 { 
 	class UWorld*                                      TargetWorld;                                                // 0x0000   (0x0008)  
 	class UObject*                                     StoreRelativeToObject;                                      // 0x0008   (0x0008)  
-	SDK_UNDEFINED(16,14724) /* FString */              __um(BaseName);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14862) /* FString */              __um(BaseName);                                             // 0x0010   (0x0010)  
 	class UMaterialInterface*                          MaterialToDuplicate;                                        // 0x0020   (0x0008)  
 };
 
@@ -1229,7 +1229,7 @@ struct FCreateMaterialObjectResult
 struct FCreateActorParams
 { 
 	class UWorld*                                      TargetWorld;                                                // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,14725) /* FString */              __um(BaseName);                                             // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14863) /* FString */              __um(BaseName);                                             // 0x0008   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0018   (0x0008)  MISSED
 	FTransform                                         Transform;                                                  // 0x0020   (0x0060)  
 	class AActor*                                      TemplateActor;                                              // 0x0080   (0x0008)  

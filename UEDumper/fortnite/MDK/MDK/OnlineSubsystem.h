@@ -32,9 +32,9 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
-	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
-	// void OnMatchEnded(FString Match);                                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnMatchEnded(FString Match);                                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/OnlineSubsystem.NamedInterface

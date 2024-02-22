@@ -121,314 +121,314 @@ public:
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.Update
-	// void Update();                                                                                                           // [0xab10970] Final|Native|Public|BlueprintCallable 
+	// void Update();                                                                                                           // [0xae0b0b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheHoagieVehicle
-	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                            // [0xab10180] Final|Native|Public|BlueprintCallable 
+	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                            // [0xae0a894] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheAudioComponents
-	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);        // [0xab10004] Final|Native|Public|BlueprintCallable 
+	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);        // [0xae0a798] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HoagieRuntime.FortHoagieVehicle
-/// Size: 0x0630 (0x001EF0 - 0x002520)
+/// Size: 0x0630 (0x001F20 - 0x002550)
 class AFortHoagieVehicle : public AFortAthenaSKVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 9504;
+	static inline constexpr uint64_t __MDKClassSize = 9552;
 
 public:
-	SMember(FName)                                     PassengerCollision                                          OFFSET(getStruct<T>, {0x1EF0, 4, 0, 0})
-	DMember(float)                                     CameraBoomDistance                                          OFFSET(get<float>, {0x1EF4, 4, 0, 0})
-	DMember(float)                                     CameraBoomHeight                                            OFFSET(get<float>, {0x1EF8, 4, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnBoostStateChanged                                         OFFSET(getStruct<T>, {0x1F00, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAltimeterTraceUpdated                                     OFFSET(getStruct<T>, {0x1F10, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnCrashingStateEntered                                      OFFSET(getStruct<T>, {0x1F20, 16, 0, 0})
-	DMember(bool)                                      bEngineAudioDisabled                                        OFFSET(get<bool>, {0x1F30, 1, 0, 0})
-	DMember(float)                                     LiftRumbleTimer                                             OFFSET(get<float>, {0x1F34, 4, 0, 0})
-	DMember(bool)                                      bLiftUp                                                     OFFSET(get<bool>, {0x1F38, 1, 0, 0})
-	DMember(uint64_t)                                  LiftForceFeedbackHandle                                     OFFSET(get<uint64_t>, {0x1F40, 8, 0, 0})
-	DMember(uint64_t)                                  PassiveForceFeedbackHandle                                  OFFSET(get<uint64_t>, {0x1F48, 8, 0, 0})
-	DMember(float)                                     Theta_Native                                                OFFSET(get<float>, {0x1F50, 4, 0, 0})
-	DMember(float)                                     WashAltAlpha_Native                                         OFFSET(get<float>, {0x1F54, 4, 0, 0})
-	DMember(float)                                     RotorWashTickTimer                                          OFFSET(get<float>, {0x1F58, 4, 0, 0})
-	CMember(TArray<FVector>)                           RotorTraceArray                                             OFFSET(get<T>, {0x1F60, 16, 0, 0})
-	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     RotorWashObjectsTypes                                       OFFSET(get<T>, {0x1F70, 16, 0, 0})
-	CMember(class UFortHoagieVehicleConfigs*)          FortHoagieVehicleConfigs                                    OFFSET(get<T>, {0x1F80, 8, 0, 0})
-	CMember(class UCurveFloat*)                        RumbleIntensity                                             OFFSET(get<T>, {0x1F88, 8, 0, 0})
-	SMember(FFortHeliFlightModel)                      FlightModel                                                 OFFSET(getStruct<T>, {0x1F90, 488, 0, 0})
-	DMember(bool)                                      bClearPitchInput                                            OFFSET(get<bool>, {0x2178, 1, 0, 0})
-	DMember(float)                                     BoostTimeLeft                                               OFFSET(get<float>, {0x217C, 4, 0, 0})
-	DMember(float)                                     BoostBrakingTimeLeft                                        OFFSET(get<float>, {0x2180, 4, 0, 0})
-	DMember(float)                                     BoostCooldown                                               OFFSET(get<float>, {0x2184, 4, 0, 0})
-	DMember(float)                                     ShutdownTimer                                               OFFSET(get<float>, {0x2188, 4, 0, 0})
-	DMember(float)                                     FoliageDestructionTimer                                     OFFSET(get<float>, {0x218C, 4, 0, 0})
-	DMember(float)                                     CrashingScrapingTimer                                       OFFSET(get<float>, {0x2190, 4, 0, 0})
-	DMember(float)                                     CrashingNotMovingTimer                                      OFFSET(get<float>, {0x2194, 4, 0, 0})
-	DMember(bool)                                      bCanSleep                                                   OFFSET(get<bool>, {0x2198, 1, 0, 0})
-	DMember(bool)                                      bHasAppliedCrashDamage                                      OFFSET(get<bool>, {0x2199, 1, 0, 0})
-	DMember(bool)                                      bOrientedForLanding                                         OFFSET(get<bool>, {0x219A, 1, 0, 0})
-	DMember(bool)                                      bForceNegativeLift                                          OFFSET(get<bool>, {0x219B, 1, 0, 0})
-	DMember(float)                                     AltimeterTraceTimer                                         OFFSET(get<float>, {0x219C, 4, 0, 0})
-	DMember(float)                                     LastRotorImpulseTime                                        OFFSET(get<float>, {0x21A0, 4, 0, 0})
-	DMember(float)                                     CriticalExplodeTimer                                        OFFSET(get<float>, {0x21A4, 4, 0, 0})
-	DMember(bool)                                      bCriticalExplosionPlayed                                    OFFSET(get<bool>, {0x21A8, 1, 0, 0})
-	DMember(float)                                     TimeWhileCritical                                           OFFSET(get<float>, {0x21AC, 4, 0, 0})
-	DMember(float)                                     TimeWhileLanding                                            OFFSET(get<float>, {0x21B0, 4, 0, 0})
-	DMember(float)                                     LiftFromOverrideButton                                      OFFSET(get<float>, {0x21B4, 4, 0, 0})
-	SMember(FVector)                                   BoostDirection                                              OFFSET(getStruct<T>, {0x21B8, 24, 0, 0})
-	SMember(FVector)                                   LastRotorSweepDirection                                     OFFSET(getStruct<T>, {0x21D0, 24, 0, 0})
-	SMember(FHitResult)                                AltimeterTraceResult                                        OFFSET(getStruct<T>, {0x21E8, 232, 0, 0})
-	DMember(int32_t)                                   HoagieStateRep                                              OFFSET(get<int32_t>, {0x22D0, 4, 0, 0})
-	CMember(EHoagieState)                              CurrentHoagieState                                          OFFSET(get<T>, {0x22D4, 4, 0, 0})
-	DMember(float)                                     CurrentRotorSpeed                                           OFFSET(get<float>, {0x22D8, 4, 0, 0})
-	DMember(float)                                     CurrentRotorAngle                                           OFFSET(get<float>, {0x22DC, 4, 0, 0})
-	DMember(float)                                     RotorImpactTraceAngle                                       OFFSET(get<float>, {0x22E0, 4, 0, 0})
-	SMember(FVehicleGamepadLiftInputs)                 LiftInputs                                                  OFFSET(getStruct<T>, {0x22E4, 8, 0, 0})
-	CMember(TArray<FRotorHit>)                         RotorHits                                                   OFFSET(get<T>, {0x22F0, 16, 0, 0})
-	CMember(TArray<FCachedSeatCollision>)              CachedSeatCollision                                         OFFSET(get<T>, {0x2300, 16, 0, 0})
-	SMember(FVector)                                   RotorHitLinearImpulse                                       OFFSET(getStruct<T>, {0x2310, 24, 0, 0})
-	SMember(FVector)                                   RotorHitAngularImpulse                                      OFFSET(getStruct<T>, {0x2328, 24, 0, 0})
-	CMember(class UNiagaraComponent*)                  HoagieIdleFX_Native                                         OFFSET(get<T>, {0x2340, 8, 0, 0})
-	CMember(class UNiagaraComponent*)                  DamageFX_Native                                             OFFSET(get<T>, {0x2348, 8, 0, 0})
-	CMember(class UNiagaraComponent*)                  RotorWashFX_Native                                          OFFSET(get<T>, {0x2350, 8, 0, 0})
-	CMember(class UFortHoagieVehicleAnimInstance*)     HoagieAnimBP_Native                                         OFFSET(get<T>, {0x2358, 8, 0, 0})
-	SMember(FName)                                     AltimeterTraceSocketName                                    OFFSET(getStruct<T>, {0x2360, 4, 0, 0})
-	SMember(FName)                                     RotorDamageTraceSocketName                                  OFFSET(getStruct<T>, {0x2364, 4, 0, 0})
-	SMember(FName)                                     MainRotorCritSocketName                                     OFFSET(getStruct<T>, {0x2368, 4, 0, 0})
-	SMember(FName)                                     TailRotorCritSocketName                                     OFFSET(getStruct<T>, {0x236C, 4, 0, 0})
-	CMember(class UAnimMontage*)                       SeatTransition_ToDriver                                     OFFSET(get<T>, {0x2370, 8, 0, 0})
-	CMember(class UAnimMontage*)                       SeatTransition_ToPassenger                                  OFFSET(get<T>, {0x2378, 8, 0, 0})
-	SMember(FName)                                     RotorTraceProfile                                           OFFSET(getStruct<T>, {0x2380, 4, 0, 0})
-	SMember(FName)                                     FoliageOverlapsBoxTag                                       OFFSET(getStruct<T>, {0x2384, 4, 0, 0})
-	SMember(FReplicatedHeliControlState)               ControlState                                                OFFSET(getStruct<T>, {0x2388, 48, 0, 0})
-	DMember(float)                                     CurrentViewDistanceScale                                    OFFSET(get<float>, {0x23B8, 4, 0, 0})
-	DMember(float)                                     CurrentHLODDistanceOverrideScale                            OFFSET(get<float>, {0x23BC, 4, 0, 0})
-	DMember(float)                                     CurrentHLODMaxDrawDistanceScale                             OFFSET(get<float>, {0x23C0, 4, 0, 0})
-	SMember(FHoagieDeathEffectInfo)                    CachedDeathEffectInfo                                       OFFSET(getStruct<T>, {0x23D0, 336, 0, 0})
+	SMember(FName)                                     PassengerCollision                                          OFFSET(getStruct<T>, {0x1F18, 4, 0, 0})
+	DMember(float)                                     CameraBoomDistance                                          OFFSET(get<float>, {0x1F1C, 4, 0, 0})
+	DMember(float)                                     CameraBoomHeight                                            OFFSET(get<float>, {0x1F20, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnBoostStateChanged                                         OFFSET(getStruct<T>, {0x1F28, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAltimeterTraceUpdated                                     OFFSET(getStruct<T>, {0x1F38, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnCrashingStateEntered                                      OFFSET(getStruct<T>, {0x1F48, 16, 0, 0})
+	DMember(bool)                                      bEngineAudioDisabled                                        OFFSET(get<bool>, {0x1F58, 1, 0, 0})
+	DMember(float)                                     LiftRumbleTimer                                             OFFSET(get<float>, {0x1F5C, 4, 0, 0})
+	DMember(bool)                                      bLiftUp                                                     OFFSET(get<bool>, {0x1F60, 1, 0, 0})
+	DMember(uint64_t)                                  LiftForceFeedbackHandle                                     OFFSET(get<uint64_t>, {0x1F68, 8, 0, 0})
+	DMember(uint64_t)                                  PassiveForceFeedbackHandle                                  OFFSET(get<uint64_t>, {0x1F70, 8, 0, 0})
+	DMember(float)                                     Theta_Native                                                OFFSET(get<float>, {0x1F78, 4, 0, 0})
+	DMember(float)                                     WashAltAlpha_Native                                         OFFSET(get<float>, {0x1F7C, 4, 0, 0})
+	DMember(float)                                     RotorWashTickTimer                                          OFFSET(get<float>, {0x1F80, 4, 0, 0})
+	CMember(TArray<FVector>)                           RotorTraceArray                                             OFFSET(get<T>, {0x1F88, 16, 0, 0})
+	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     RotorWashObjectsTypes                                       OFFSET(get<T>, {0x1F98, 16, 0, 0})
+	CMember(class UFortHoagieVehicleConfigs*)          FortHoagieVehicleConfigs                                    OFFSET(get<T>, {0x1FA8, 8, 0, 0})
+	CMember(class UCurveFloat*)                        RumbleIntensity                                             OFFSET(get<T>, {0x1FB0, 8, 0, 0})
+	SMember(FFortHeliFlightModel)                      FlightModel                                                 OFFSET(getStruct<T>, {0x1FB8, 488, 0, 0})
+	DMember(bool)                                      bClearPitchInput                                            OFFSET(get<bool>, {0x21A0, 1, 0, 0})
+	DMember(float)                                     BoostTimeLeft                                               OFFSET(get<float>, {0x21A4, 4, 0, 0})
+	DMember(float)                                     BoostBrakingTimeLeft                                        OFFSET(get<float>, {0x21A8, 4, 0, 0})
+	DMember(float)                                     BoostCooldown                                               OFFSET(get<float>, {0x21AC, 4, 0, 0})
+	DMember(float)                                     ShutdownTimer                                               OFFSET(get<float>, {0x21B0, 4, 0, 0})
+	DMember(float)                                     FoliageDestructionTimer                                     OFFSET(get<float>, {0x21B4, 4, 0, 0})
+	DMember(float)                                     CrashingScrapingTimer                                       OFFSET(get<float>, {0x21B8, 4, 0, 0})
+	DMember(float)                                     CrashingNotMovingTimer                                      OFFSET(get<float>, {0x21BC, 4, 0, 0})
+	DMember(bool)                                      bCanSleep                                                   OFFSET(get<bool>, {0x21C0, 1, 0, 0})
+	DMember(bool)                                      bHasAppliedCrashDamage                                      OFFSET(get<bool>, {0x21C1, 1, 0, 0})
+	DMember(bool)                                      bOrientedForLanding                                         OFFSET(get<bool>, {0x21C2, 1, 0, 0})
+	DMember(bool)                                      bForceNegativeLift                                          OFFSET(get<bool>, {0x21C3, 1, 0, 0})
+	DMember(float)                                     AltimeterTraceTimer                                         OFFSET(get<float>, {0x21C4, 4, 0, 0})
+	DMember(float)                                     LastRotorImpulseTime                                        OFFSET(get<float>, {0x21C8, 4, 0, 0})
+	DMember(float)                                     CriticalExplodeTimer                                        OFFSET(get<float>, {0x21CC, 4, 0, 0})
+	DMember(bool)                                      bCriticalExplosionPlayed                                    OFFSET(get<bool>, {0x21D0, 1, 0, 0})
+	DMember(float)                                     TimeWhileCritical                                           OFFSET(get<float>, {0x21D4, 4, 0, 0})
+	DMember(float)                                     TimeWhileLanding                                            OFFSET(get<float>, {0x21D8, 4, 0, 0})
+	DMember(float)                                     LiftFromOverrideButton                                      OFFSET(get<float>, {0x21DC, 4, 0, 0})
+	SMember(FVector)                                   BoostDirection                                              OFFSET(getStruct<T>, {0x21E0, 24, 0, 0})
+	SMember(FVector)                                   LastRotorSweepDirection                                     OFFSET(getStruct<T>, {0x21F8, 24, 0, 0})
+	SMember(FHitResult)                                AltimeterTraceResult                                        OFFSET(getStruct<T>, {0x2210, 232, 0, 0})
+	DMember(int32_t)                                   HoagieStateRep                                              OFFSET(get<int32_t>, {0x22F8, 4, 0, 0})
+	CMember(EHoagieState)                              CurrentHoagieState                                          OFFSET(get<T>, {0x22FC, 4, 0, 0})
+	DMember(float)                                     CurrentRotorSpeed                                           OFFSET(get<float>, {0x2300, 4, 0, 0})
+	DMember(float)                                     CurrentRotorAngle                                           OFFSET(get<float>, {0x2304, 4, 0, 0})
+	DMember(float)                                     RotorImpactTraceAngle                                       OFFSET(get<float>, {0x2308, 4, 0, 0})
+	SMember(FVehicleGamepadLiftInputs)                 LiftInputs                                                  OFFSET(getStruct<T>, {0x230C, 8, 0, 0})
+	CMember(TArray<FRotorHit>)                         RotorHits                                                   OFFSET(get<T>, {0x2318, 16, 0, 0})
+	CMember(TArray<FCachedSeatCollision>)              CachedSeatCollision                                         OFFSET(get<T>, {0x2328, 16, 0, 0})
+	SMember(FVector)                                   RotorHitLinearImpulse                                       OFFSET(getStruct<T>, {0x2338, 24, 0, 0})
+	SMember(FVector)                                   RotorHitAngularImpulse                                      OFFSET(getStruct<T>, {0x2350, 24, 0, 0})
+	CMember(class UNiagaraComponent*)                  HoagieIdleFX_Native                                         OFFSET(get<T>, {0x2368, 8, 0, 0})
+	CMember(class UNiagaraComponent*)                  DamageFX_Native                                             OFFSET(get<T>, {0x2370, 8, 0, 0})
+	CMember(class UNiagaraComponent*)                  RotorWashFX_Native                                          OFFSET(get<T>, {0x2378, 8, 0, 0})
+	CMember(class UFortHoagieVehicleAnimInstance*)     HoagieAnimBP_Native                                         OFFSET(get<T>, {0x2380, 8, 0, 0})
+	SMember(FName)                                     AltimeterTraceSocketName                                    OFFSET(getStruct<T>, {0x2388, 4, 0, 0})
+	SMember(FName)                                     RotorDamageTraceSocketName                                  OFFSET(getStruct<T>, {0x238C, 4, 0, 0})
+	SMember(FName)                                     MainRotorCritSocketName                                     OFFSET(getStruct<T>, {0x2390, 4, 0, 0})
+	SMember(FName)                                     TailRotorCritSocketName                                     OFFSET(getStruct<T>, {0x2394, 4, 0, 0})
+	CMember(class UAnimMontage*)                       SeatTransition_ToDriver                                     OFFSET(get<T>, {0x2398, 8, 0, 0})
+	CMember(class UAnimMontage*)                       SeatTransition_ToPassenger                                  OFFSET(get<T>, {0x23A0, 8, 0, 0})
+	SMember(FName)                                     RotorTraceProfile                                           OFFSET(getStruct<T>, {0x23A8, 4, 0, 0})
+	SMember(FName)                                     FoliageOverlapsBoxTag                                       OFFSET(getStruct<T>, {0x23AC, 4, 0, 0})
+	SMember(FReplicatedHeliControlState)               ControlState                                                OFFSET(getStruct<T>, {0x23B0, 48, 0, 0})
+	DMember(float)                                     CurrentViewDistanceScale                                    OFFSET(get<float>, {0x23E0, 4, 0, 0})
+	DMember(float)                                     CurrentHLODDistanceOverrideScale                            OFFSET(get<float>, {0x23E4, 4, 0, 0})
+	DMember(float)                                     CurrentHLODMaxDrawDistanceScale                             OFFSET(get<float>, {0x23E8, 4, 0, 0})
+	SMember(FHoagieDeathEffectInfo)                    CachedDeathEffectInfo                                       OFFSET(getStruct<T>, {0x23F8, 336, 0, 0})
 
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateHoagieAnimBP
-	// void UpdateHoagieAnimBP();                                                                                               // [0x843c454] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateHoagieAnimBP();                                                                                               // [0x843fdb4] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateDamageStateNative
-	// void UpdateDamageStateNative(float Damage);                                                                              // [0xab109e4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateDamageStateNative(float Damage);                                                                              // [0xae0b12c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ShowCooldownCue
-	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetTailRotorRotation
-	// void SetTailRotorRotation(float Degrees);                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetTailRotorRotation(float Degrees);                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetRotorWashActive
-	// void SetRotorWashActive(bool bActive);                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetRotorWashActive(bool bActive);                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetMainRotorRotation
-	// void SetMainRotorRotation(float Degrees);                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetMainRotorRotation(float Degrees);                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ServerUpdateControlState
-	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                               // [0xab10888] Final|Net|Native|Event|Private|NetServer 
+	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                               // [0xae0af54] Final|Net|Native|Event|Private|NetServer 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnTickRotors
-	// void OnTickRotors(float RotorAngleDegrees);                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTickRotors(float RotorAngleDegrees);                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupEnd
-	// void OnStartupEnd();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStartupEnd();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupBegin
-	// void OnStartupBegin();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStartupBegin();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorsStop
-	// void OnRotorsStop();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRotorsStop();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamagePlayer
-	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                            // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                            // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtOuter
-	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                        // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                        // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtInner
-	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                        // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                        // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealt
-	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_HoagieState
-	// void OnRep_HoagieState();                                                                                                // [0xab10808] Final|Native|Protected 
+	// void OnRep_HoagieState();                                                                                                // [0xae0aed4] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_ControlState
-	// void OnRep_ControlState();                                                                                               // [0x3047908] Final|Native|Private 
+	// void OnRep_ControlState();                                                                                               // [0x3097b14] Final|Native|Private 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRefueledFromEmpty
-	// void OnRefueledFromEmpty();                                                                                              // [0xab107f4] Final|Native|Protected 
+	// void OnRefueledFromEmpty();                                                                                              // [0xae0aec0] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactWhileCritical
-	// void OnImpactWhileCritical();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnImpactWhileCritical();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactOtherHoagie
-	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                                  // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                                  // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnCritRotor
-	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostFinished();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.MulticastRotorImpulse
-	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                         // [0xab10720] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
+	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                         // [0xae0ad70] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsStartingUp
-	// bool IsStartingUp();                                                                                                     // [0xab10704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStartingUp();                                                                                                     // [0xae0ad54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsShuttingDown
-	// bool IsShuttingDown();                                                                                                   // [0xab106e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsShuttingDown();                                                                                                   // [0xae0ad34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsScrapingBottom
-	// bool IsScrapingBottom();                                                                                                 // [0xab106c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScrapingBottom();                                                                                                 // [0xae0ad10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.HoagieOnDisabledChanged
-	// void HoagieOnDisabledChanged(bool bDisabled);                                                                            // [0xab105fc] Final|Native|Protected 
+	// void HoagieOnDisabledChanged(bool bDisabled);                                                                            // [0xae0ac90] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetVerticalSpeedKmh
-	// float GetVerticalSpeedKmh();                                                                                             // [0xab105d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVerticalSpeedKmh();                                                                                             // [0xae0ac68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetThrustDirection
-	// FVector GetThrustDirection(bool bWorldSpace);                                                                            // [0xab104f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetThrustDirection(bool bWorldSpace);                                                                            // [0xae0abc4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetStrafeAlpha
-	// float GetStrafeAlpha();                                                                                                  // [0xab10370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStrafeAlpha();                                                                                                  // [0xae0aa44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetSteerAlpha
-	// float GetSteerAlpha();                                                                                                   // [0xab104c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteerAlpha();                                                                                                   // [0xae0ab9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetShutdownTimeLeft
-	// float GetShutdownTimeLeft();                                                                                             // [0xab104b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetShutdownTimeLeft();                                                                                             // [0xae0ab84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeedPercent
-	// float GetRotorSpeedPercent();                                                                                            // [0xab10490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeedPercent();                                                                                            // [0xae0ab64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeed
-	// float GetRotorSpeed();                                                                                                   // [0xab10478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeed();                                                                                                   // [0xae0ab4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorCenterPosition
-	// FVector GetRotorCenterPosition();                                                                                        // [0xab10440] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRotorCenterPosition();                                                                                        // [0xae0ab14] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorAngleDegrees
-	// float GetRotorAngleDegrees();                                                                                            // [0xab10428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorAngleDegrees();                                                                                            // [0xae0aafc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxBoostCooldown
-	// float GetMaxBoostCooldown();                                                                                             // [0xab10408] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxBoostCooldown();                                                                                             // [0xae0aadc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxAltitude
-	// float GetMaxAltitude();                                                                                                  // [0xab103e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxAltitude();                                                                                                  // [0xae0aabc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetLiftAlpha
-	// float GetLiftAlpha();                                                                                                    // [0xab103c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLiftAlpha();                                                                                                    // [0xae0aa94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetIsEngineOn
-	// bool GetIsEngineOn();                                                                                                    // [0xab103a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsEngineOn();                                                                                                    // [0xae0aa74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetForwardAlpha
-	// float GetForwardAlpha();                                                                                                 // [0xab10370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardAlpha();                                                                                                 // [0xae0aa44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetDistanceToGround
-	// float GetDistanceToGround();                                                                                             // [0xab10358] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceToGround();                                                                                             // [0xae0aa2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostTimeLeft
-	// float GetBoostTimeLeft();                                                                                                // [0xab10340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostTimeLeft();                                                                                                // [0xae0aa14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDuration
-	// float GetBoostDuration();                                                                                                // [0xab10320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostDuration();                                                                                                // [0xae0a9f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDirection
-	// FVector GetBoostDirection();                                                                                             // [0xab102f8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetBoostDirection();                                                                                             // [0xae0a9cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostCooldown
-	// float GetBoostCooldown();                                                                                                // [0xab102e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostCooldown();                                                                                                // [0xae0a9b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetAltitude
-	// float GetAltitude();                                                                                                     // [0xab102c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAltitude();                                                                                                     // [0xae0a994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/HoagieRuntime.FortHoagieVehicleConfigs
-/// Size: 0x0238 (0x000950 - 0x000B88)
+/// Size: 0x0238 (0x000948 - 0x000B80)
 class UFortHoagieVehicleConfigs : public UFortPhysicsVehicleConfigs
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2952;
+	static inline constexpr uint64_t __MDKClassSize = 2944;
 
 public:
-	DMember(float)                                     StrafeForce                                                 OFFSET(get<float>, {0x950, 4, 0, 0})
-	DMember(float)                                     StrafeForceMin                                              OFFSET(get<float>, {0x954, 4, 0, 0})
-	DMember(float)                                     MaxStrafeSpeedKmh                                           OFFSET(get<float>, {0x958, 4, 0, 0})
-	DMember(float)                                     StrafeTooFastBrakeForce                                     OFFSET(get<float>, {0x95C, 4, 0, 0})
-	DMember(float)                                     LandedBrakeForce                                            OFFSET(get<float>, {0x960, 4, 0, 0})
-	DMember(float)                                     LiftForce                                                   OFFSET(get<float>, {0x964, 4, 0, 0})
-	DMember(float)                                     MaxLiftSpeedKmh                                             OFFSET(get<float>, {0x968, 4, 0, 0})
-	DMember(float)                                     LiftTooFastBrakeForce                                       OFFSET(get<float>, {0x96C, 4, 0, 0})
-	DMember(float)                                     LateralDragCoefficient                                      OFFSET(get<float>, {0x970, 4, 0, 0})
-	DMember(float)                                     LateralDragCoefficient2                                     OFFSET(get<float>, {0x974, 4, 0, 0})
-	DMember(float)                                     LiftDragCoefficient                                         OFFSET(get<float>, {0x978, 4, 0, 0})
-	DMember(float)                                     LiftDragCoefficient2                                        OFFSET(get<float>, {0x97C, 4, 0, 0})
-	DMember(float)                                     MaxPitchForCameraYaw                                        OFFSET(get<float>, {0x980, 4, 0, 0})
-	DMember(float)                                     MaxCameraYawAngle                                           OFFSET(get<float>, {0x984, 4, 0, 0})
-	DMember(float)                                     CameraYawStiff                                              OFFSET(get<float>, {0x988, 4, 0, 0})
-	DMember(float)                                     CameraYawDamp                                               OFFSET(get<float>, {0x98C, 4, 0, 0})
-	DMember(float)                                     CameraYawStrength                                           OFFSET(get<float>, {0x990, 4, 0, 0})
-	DMember(float)                                     UprightStiff                                                OFFSET(get<float>, {0x994, 4, 0, 0})
-	DMember(float)                                     UprightDamp                                                 OFFSET(get<float>, {0x998, 4, 0, 0})
-	DMember(bool)                                      bUseVehiclePivotForCameraPitch                              OFFSET(get<bool>, {0x99C, 1, 0, 0})
-	DMember(float)                                     ThrustTorqueAnglePercent                                    OFFSET(get<float>, {0x9A0, 4, 0, 0})
-	DMember(float)                                     BoostThrustTorqueAnglePercent                               OFFSET(get<float>, {0x9A4, 4, 0, 0})
-	DMember(float)                                     ThrustTorqueStiff                                           OFFSET(get<float>, {0x9A8, 4, 0, 0})
-	DMember(float)                                     ThrustTorqueDamp                                            OFFSET(get<float>, {0x9AC, 4, 0, 0})
-	DMember(float)                                     ThrustTorqueMaxAccel                                        OFFSET(get<float>, {0x9B0, 4, 0, 0})
-	DMember(float)                                     ThrustTorque                                                OFFSET(get<float>, {0x9B4, 4, 0, 0})
-	DMember(float)                                     YawTorque                                                   OFFSET(get<float>, {0x9B8, 4, 0, 0})
-	DMember(float)                                     YawTorqueDampingSpeed                                       OFFSET(get<float>, {0x9BC, 4, 0, 0})
-	DMember(float)                                     BoostForce                                                  OFFSET(get<float>, {0x9C0, 4, 0, 0})
-	DMember(float)                                     BoostMaxSpeedKmh                                            OFFSET(get<float>, {0x9C4, 4, 0, 0})
-	DMember(float)                                     BoostDuration                                               OFFSET(get<float>, {0x9C8, 4, 0, 0})
-	DMember(float)                                     BoostCooldown                                               OFFSET(get<float>, {0x9CC, 4, 0, 0})
-	DMember(float)                                     BoostTorqueStiff                                            OFFSET(get<float>, {0x9D0, 4, 0, 0})
-	DMember(float)                                     BoostTorqueDamp                                             OFFSET(get<float>, {0x9D4, 4, 0, 0})
-	DMember(float)                                     AfterBoostBrakingForce                                      OFFSET(get<float>, {0x9D8, 4, 0, 0})
-	DMember(float)                                     AfterBoostBrakingDuration                                   OFFSET(get<float>, {0x9DC, 4, 0, 0})
-	DMember(float)                                     AfterBoostBrakingMinSpeed                                   OFFSET(get<float>, {0x9E0, 4, 0, 0})
-	DMember(float)                                     PitchAngleRequiredForFullThrust                             OFFSET(get<float>, {0x9E4, 4, 0, 0})
-	DMember(float)                                     DistanceToGroundForLanding                                  OFFSET(get<float>, {0x9E8, 4, 0, 0})
-	DMember(float)                                     StartupDelay                                                OFFSET(get<float>, {0x9EC, 4, 0, 0})
-	DMember(float)                                     LandingSequenceDelay                                        OFFSET(get<float>, {0x9F0, 4, 0, 0})
-	DMember(float)                                     RotorsRadius                                                OFFSET(get<float>, {0x9F4, 4, 0, 0})
-	DMember(float)                                     RotorsRadiusInner                                           OFFSET(get<float>, {0x9F8, 4, 0, 0})
-	DMember(float)                                     NoDriverBrakeForce                                          OFFSET(get<float>, {0x9FC, 4, 0, 0})
-	DMember(float)                                     TimeBetweenRotorDamageTicks                                 OFFSET(get<float>, {0xA00, 4, 0, 0})
-	DMember(float)                                     AutoLandingForce                                            OFFSET(get<float>, {0xA04, 4, 0, 0})
-	DMember(float)                                     RotorDamageBoxSweepLength                                   OFFSET(get<float>, {0xA08, 4, 0, 0})
-	DMember(float)                                     CriticalStateLiftForce                                      OFFSET(get<float>, {0xA0C, 4, 0, 0})
-	DMember(float)                                     IdleRotationMultiplier                                      OFFSET(get<float>, {0xA10, 4, 0, 0})
-	DMember(float)                                     LiftPitchDegrees                                            OFFSET(get<float>, {0xA14, 4, 0, 0})
-	DMember(float)                                     MinAltitudeForIdleNoise                                     OFFSET(get<float>, {0xA18, 4, 0, 0})
-	DMember(float)                                     DefaultLinearDamp                                           OFFSET(get<float>, {0xA1C, 4, 0, 0})
-	DMember(float)                                     DefaultAngularDamp                                          OFFSET(get<float>, {0xA20, 4, 0, 0})
-	DMember(float)                                     LandingLinearDamp                                           OFFSET(get<float>, {0xA24, 4, 0, 0})
-	DMember(float)                                     LandingAngularDamp                                          OFFSET(get<float>, {0xA28, 4, 0, 0})
-	DMember(float)                                     LandingLiftAlpha                                            OFFSET(get<float>, {0xA2C, 4, 0, 0})
-	DMember(float)                                     CriticalStateThrustMultiplier                               OFFSET(get<float>, {0xA30, 4, 0, 0})
-	DMember(float)                                     BodyUpDotThresholdForLanding                                OFFSET(get<float>, {0xA34, 4, 0, 0})
-	DMember(int32_t)                                   CriticalHealthThreshold                                     OFFSET(get<int32_t>, {0xA38, 4, 0, 0})
-	DMember(float)                                     DamagePerImpulseWhileCritical                               OFFSET(get<float>, {0xA3C, 4, 0, 0})
-	DMember(float)                                     RotorImpulseLinear                                          OFFSET(get<float>, {0xA40, 4, 0, 0})
-	DMember(float)                                     RotorImpulseAngular                                         OFFSET(get<float>, {0xA44, 4, 0, 0})
-	DMember(float)                                     RotorImpulseCooldown                                        OFFSET(get<float>, {0xA48, 4, 0, 0})
-	DMember(float)                                     StartupLift                                                 OFFSET(get<float>, {0xA4C, 4, 0, 0})
-	DMember(float)                                     StartupLiftTime                                             OFFSET(get<float>, {0xA50, 4, 0, 0})
-	DMember(float)                                     MaxAltitude                                                 OFFSET(get<float>, {0xA54, 4, 0, 0})
-	DMember(float)                                     AltitudeForSpinning                                         OFFSET(get<float>, {0xA58, 4, 0, 0})
-	DMember(float)                                     RotorMaxSpeed                                               OFFSET(get<float>, {0xA5C, 4, 0, 0})
-	DMember(float)                                     RotorAccel                                                  OFFSET(get<float>, {0xA60, 4, 0, 0})
-	DMember(float)                                     RotorDecel                                                  OFFSET(get<float>, {0xA64, 4, 0, 0})
-	DMember(float)                                     ExplodeRotorDecel                                           OFFSET(get<float>, {0xA68, 4, 0, 0})
-	DMember(float)                                     MinRotorSpeedForSkippingStartup                             OFFSET(get<float>, {0xA6C, 4, 0, 0})
-	DMember(float)                                     RotorSpeedForStartupLift                                    OFFSET(get<float>, {0xA70, 4, 0, 0})
-	DMember(float)                                     CriticalLiftForceDecay                                      OFFSET(get<float>, {0xA74, 4, 0, 0})
-	DMember(float)                                     CriticalYawTorqueMin                                        OFFSET(get<float>, {0xA78, 4, 0, 0})
-	DMember(float)                                     CriticalYawTorqueMax                                        OFFSET(get<float>, {0xA7C, 4, 0, 0})
-	DMember(float)                                     CriticalYawTorqueRampDuration                               OFFSET(get<float>, {0xA80, 4, 0, 0})
-	DMember(float)                                     RotorTraceRotationSpeed                                     OFFSET(get<float>, {0xA84, 4, 0, 0})
-	DMember(float)                                     RotorTraceBoxSize                                           OFFSET(get<float>, {0xA88, 4, 0, 0})
-	DMember(float)                                     RotorTraceBoxHeight                                         OFFSET(get<float>, {0xA8C, 4, 0, 0})
-	DMember(float)                                     MaxCriticalFallForce                                        OFFSET(get<float>, {0xA90, 4, 0, 0})
-	DMember(float)                                     BoostFOV                                                    OFFSET(get<float>, {0xA94, 4, 0, 0})
-	DMember(float)                                     GentleCrashTimeToExplode                                    OFFSET(get<float>, {0xA98, 4, 0, 0})
-	DMember(float)                                     CriticalTimeForGentleCrash                                  OFFSET(get<float>, {0xA9C, 4, 0, 0})
-	DMember(float)                                     AutoLandingYawTorque                                        OFFSET(get<float>, {0xAA0, 4, 0, 0})
-	DMember(float)                                     MinHeightForAutoLandingYawTorque                            OFFSET(get<float>, {0xAA4, 4, 0, 0})
-	DMember(float)                                     MinSpeedForScrapingBottom                                   OFFSET(get<float>, {0xAA8, 4, 0, 0})
-	DMember(float)                                     FallDamageHeightBuffer                                      OFFSET(get<float>, {0xAAC, 4, 0, 0})
-	DMember(float)                                     TimeBetweenRotorPlayerDamage                                OFFSET(get<float>, {0xAB0, 4, 0, 0})
-	DMember(float)                                     RotorMoveSpeedRequiredToUpdateTraceDirSqr                   OFFSET(get<float>, {0xAB4, 4, 0, 0})
-	DMember(float)                                     FoliageTraceRate                                            OFFSET(get<float>, {0xAB8, 4, 0, 0})
-	DMember(float)                                     RotorWashTicksPerFrame                                      OFFSET(get<float>, {0xABC, 4, 0, 0})
-	DMember(float)                                     CriticalHitRadius                                           OFFSET(get<float>, {0xAC0, 4, 0, 0})
-	DMember(float)                                     AngleNormalUpForLockMovement                                OFFSET(get<float>, {0xAC4, 4, 0, 0})
-	DMember(float)                                     MaxAutoLandingTime                                          OFFSET(get<float>, {0xAC8, 4, 0, 0})
-	DMember(float)                                     SpeedThresholdForCrashed                                    OFFSET(get<float>, {0xACC, 4, 0, 0})
-	DMember(float)                                     CritMultiplier                                              OFFSET(get<float>, {0xAD0, 4, 0, 0})
-	DMember(float)                                     AltitudeForSprings                                          OFFSET(get<float>, {0xAD4, 4, 0, 0})
-	DMember(float)                                     MaxCrashingTime                                             OFFSET(get<float>, {0xAD8, 4, 0, 0})
-	DMember(float)                                     MaxCrashingScrapingTime                                     OFFSET(get<float>, {0xADC, 4, 0, 0})
-	DMember(float)                                     MaxCrashingTimeSpentNotMoving                               OFFSET(get<float>, {0xAE0, 4, 0, 0})
-	DMember(float)                                     LandscapeRotorImpulseMag                                    OFFSET(get<float>, {0xAE4, 4, 0, 0})
-	DMember(float)                                     HealthThresholdForLandscapeRotorImpulse                     OFFSET(get<float>, {0xAE8, 4, 0, 0})
-	DMember(float)                                     MaxHeightBuffer                                             OFFSET(get<float>, {0xAEC, 4, 0, 0})
-	DMember(bool)                                      bImpulseOnOuterRotorHitLandscape                            OFFSET(get<bool>, {0xAF0, 1, 0, 0})
-	DMember(bool)                                      bSkipRotorImpulses                                          OFFSET(get<bool>, {0xAF1, 1, 0, 0})
-	SMember(FVector)                                   FoliageTraceBoxSize                                         OFFSET(getStruct<T>, {0xAF8, 24, 0, 0})
-	SMember(FVector)                                   WaterBoxSize                                                OFFSET(getStruct<T>, {0xB10, 24, 0, 0})
-	SMember(FVector)                                   WaterBoxOffset                                              OFFSET(getStruct<T>, {0xB28, 24, 0, 0})
-	SMember(FVector)                                   RotorOffsetFromActorLocationOnServer                        OFFSET(getStruct<T>, {0xB40, 24, 0, 0})
-	DMember(bool)                                      bSkipContactRotations                                       OFFSET(get<bool>, {0xB58, 1, 0, 0})
-	SMember(FScalableFloat)                            MaxAutoLandHeightWhenOutOfFuel                              OFFSET(getStruct<T>, {0xB60, 40, 0, 0})
+	DMember(float)                                     StrafeForce                                                 OFFSET(get<float>, {0x948, 4, 0, 0})
+	DMember(float)                                     StrafeForceMin                                              OFFSET(get<float>, {0x94C, 4, 0, 0})
+	DMember(float)                                     MaxStrafeSpeedKmh                                           OFFSET(get<float>, {0x950, 4, 0, 0})
+	DMember(float)                                     StrafeTooFastBrakeForce                                     OFFSET(get<float>, {0x954, 4, 0, 0})
+	DMember(float)                                     LandedBrakeForce                                            OFFSET(get<float>, {0x958, 4, 0, 0})
+	DMember(float)                                     LiftForce                                                   OFFSET(get<float>, {0x95C, 4, 0, 0})
+	DMember(float)                                     MaxLiftSpeedKmh                                             OFFSET(get<float>, {0x960, 4, 0, 0})
+	DMember(float)                                     LiftTooFastBrakeForce                                       OFFSET(get<float>, {0x964, 4, 0, 0})
+	DMember(float)                                     LateralDragCoefficient                                      OFFSET(get<float>, {0x968, 4, 0, 0})
+	DMember(float)                                     LateralDragCoefficient2                                     OFFSET(get<float>, {0x96C, 4, 0, 0})
+	DMember(float)                                     LiftDragCoefficient                                         OFFSET(get<float>, {0x970, 4, 0, 0})
+	DMember(float)                                     LiftDragCoefficient2                                        OFFSET(get<float>, {0x974, 4, 0, 0})
+	DMember(float)                                     MaxPitchForCameraYaw                                        OFFSET(get<float>, {0x978, 4, 0, 0})
+	DMember(float)                                     MaxCameraYawAngle                                           OFFSET(get<float>, {0x97C, 4, 0, 0})
+	DMember(float)                                     CameraYawStiff                                              OFFSET(get<float>, {0x980, 4, 0, 0})
+	DMember(float)                                     CameraYawDamp                                               OFFSET(get<float>, {0x984, 4, 0, 0})
+	DMember(float)                                     CameraYawStrength                                           OFFSET(get<float>, {0x988, 4, 0, 0})
+	DMember(float)                                     UprightStiff                                                OFFSET(get<float>, {0x98C, 4, 0, 0})
+	DMember(float)                                     UprightDamp                                                 OFFSET(get<float>, {0x990, 4, 0, 0})
+	DMember(bool)                                      bUseVehiclePivotForCameraPitch                              OFFSET(get<bool>, {0x994, 1, 0, 0})
+	DMember(float)                                     ThrustTorqueAnglePercent                                    OFFSET(get<float>, {0x998, 4, 0, 0})
+	DMember(float)                                     BoostThrustTorqueAnglePercent                               OFFSET(get<float>, {0x99C, 4, 0, 0})
+	DMember(float)                                     ThrustTorqueStiff                                           OFFSET(get<float>, {0x9A0, 4, 0, 0})
+	DMember(float)                                     ThrustTorqueDamp                                            OFFSET(get<float>, {0x9A4, 4, 0, 0})
+	DMember(float)                                     ThrustTorqueMaxAccel                                        OFFSET(get<float>, {0x9A8, 4, 0, 0})
+	DMember(float)                                     ThrustTorque                                                OFFSET(get<float>, {0x9AC, 4, 0, 0})
+	DMember(float)                                     YawTorque                                                   OFFSET(get<float>, {0x9B0, 4, 0, 0})
+	DMember(float)                                     YawTorqueDampingSpeed                                       OFFSET(get<float>, {0x9B4, 4, 0, 0})
+	DMember(float)                                     BoostForce                                                  OFFSET(get<float>, {0x9B8, 4, 0, 0})
+	DMember(float)                                     BoostMaxSpeedKmh                                            OFFSET(get<float>, {0x9BC, 4, 0, 0})
+	DMember(float)                                     BoostDuration                                               OFFSET(get<float>, {0x9C0, 4, 0, 0})
+	DMember(float)                                     BoostCooldown                                               OFFSET(get<float>, {0x9C4, 4, 0, 0})
+	DMember(float)                                     BoostTorqueStiff                                            OFFSET(get<float>, {0x9C8, 4, 0, 0})
+	DMember(float)                                     BoostTorqueDamp                                             OFFSET(get<float>, {0x9CC, 4, 0, 0})
+	DMember(float)                                     AfterBoostBrakingForce                                      OFFSET(get<float>, {0x9D0, 4, 0, 0})
+	DMember(float)                                     AfterBoostBrakingDuration                                   OFFSET(get<float>, {0x9D4, 4, 0, 0})
+	DMember(float)                                     AfterBoostBrakingMinSpeed                                   OFFSET(get<float>, {0x9D8, 4, 0, 0})
+	DMember(float)                                     PitchAngleRequiredForFullThrust                             OFFSET(get<float>, {0x9DC, 4, 0, 0})
+	DMember(float)                                     DistanceToGroundForLanding                                  OFFSET(get<float>, {0x9E0, 4, 0, 0})
+	DMember(float)                                     StartupDelay                                                OFFSET(get<float>, {0x9E4, 4, 0, 0})
+	DMember(float)                                     LandingSequenceDelay                                        OFFSET(get<float>, {0x9E8, 4, 0, 0})
+	DMember(float)                                     RotorsRadius                                                OFFSET(get<float>, {0x9EC, 4, 0, 0})
+	DMember(float)                                     RotorsRadiusInner                                           OFFSET(get<float>, {0x9F0, 4, 0, 0})
+	DMember(float)                                     NoDriverBrakeForce                                          OFFSET(get<float>, {0x9F4, 4, 0, 0})
+	DMember(float)                                     TimeBetweenRotorDamageTicks                                 OFFSET(get<float>, {0x9F8, 4, 0, 0})
+	DMember(float)                                     AutoLandingForce                                            OFFSET(get<float>, {0x9FC, 4, 0, 0})
+	DMember(float)                                     RotorDamageBoxSweepLength                                   OFFSET(get<float>, {0xA00, 4, 0, 0})
+	DMember(float)                                     CriticalStateLiftForce                                      OFFSET(get<float>, {0xA04, 4, 0, 0})
+	DMember(float)                                     IdleRotationMultiplier                                      OFFSET(get<float>, {0xA08, 4, 0, 0})
+	DMember(float)                                     LiftPitchDegrees                                            OFFSET(get<float>, {0xA0C, 4, 0, 0})
+	DMember(float)                                     MinAltitudeForIdleNoise                                     OFFSET(get<float>, {0xA10, 4, 0, 0})
+	DMember(float)                                     DefaultLinearDamp                                           OFFSET(get<float>, {0xA14, 4, 0, 0})
+	DMember(float)                                     DefaultAngularDamp                                          OFFSET(get<float>, {0xA18, 4, 0, 0})
+	DMember(float)                                     LandingLinearDamp                                           OFFSET(get<float>, {0xA1C, 4, 0, 0})
+	DMember(float)                                     LandingAngularDamp                                          OFFSET(get<float>, {0xA20, 4, 0, 0})
+	DMember(float)                                     LandingLiftAlpha                                            OFFSET(get<float>, {0xA24, 4, 0, 0})
+	DMember(float)                                     CriticalStateThrustMultiplier                               OFFSET(get<float>, {0xA28, 4, 0, 0})
+	DMember(float)                                     BodyUpDotThresholdForLanding                                OFFSET(get<float>, {0xA2C, 4, 0, 0})
+	DMember(int32_t)                                   CriticalHealthThreshold                                     OFFSET(get<int32_t>, {0xA30, 4, 0, 0})
+	DMember(float)                                     DamagePerImpulseWhileCritical                               OFFSET(get<float>, {0xA34, 4, 0, 0})
+	DMember(float)                                     RotorImpulseLinear                                          OFFSET(get<float>, {0xA38, 4, 0, 0})
+	DMember(float)                                     RotorImpulseAngular                                         OFFSET(get<float>, {0xA3C, 4, 0, 0})
+	DMember(float)                                     RotorImpulseCooldown                                        OFFSET(get<float>, {0xA40, 4, 0, 0})
+	DMember(float)                                     StartupLift                                                 OFFSET(get<float>, {0xA44, 4, 0, 0})
+	DMember(float)                                     StartupLiftTime                                             OFFSET(get<float>, {0xA48, 4, 0, 0})
+	DMember(float)                                     MaxAltitude                                                 OFFSET(get<float>, {0xA4C, 4, 0, 0})
+	DMember(float)                                     AltitudeForSpinning                                         OFFSET(get<float>, {0xA50, 4, 0, 0})
+	DMember(float)                                     RotorMaxSpeed                                               OFFSET(get<float>, {0xA54, 4, 0, 0})
+	DMember(float)                                     RotorAccel                                                  OFFSET(get<float>, {0xA58, 4, 0, 0})
+	DMember(float)                                     RotorDecel                                                  OFFSET(get<float>, {0xA5C, 4, 0, 0})
+	DMember(float)                                     ExplodeRotorDecel                                           OFFSET(get<float>, {0xA60, 4, 0, 0})
+	DMember(float)                                     MinRotorSpeedForSkippingStartup                             OFFSET(get<float>, {0xA64, 4, 0, 0})
+	DMember(float)                                     RotorSpeedForStartupLift                                    OFFSET(get<float>, {0xA68, 4, 0, 0})
+	DMember(float)                                     CriticalLiftForceDecay                                      OFFSET(get<float>, {0xA6C, 4, 0, 0})
+	DMember(float)                                     CriticalYawTorqueMin                                        OFFSET(get<float>, {0xA70, 4, 0, 0})
+	DMember(float)                                     CriticalYawTorqueMax                                        OFFSET(get<float>, {0xA74, 4, 0, 0})
+	DMember(float)                                     CriticalYawTorqueRampDuration                               OFFSET(get<float>, {0xA78, 4, 0, 0})
+	DMember(float)                                     RotorTraceRotationSpeed                                     OFFSET(get<float>, {0xA7C, 4, 0, 0})
+	DMember(float)                                     RotorTraceBoxSize                                           OFFSET(get<float>, {0xA80, 4, 0, 0})
+	DMember(float)                                     RotorTraceBoxHeight                                         OFFSET(get<float>, {0xA84, 4, 0, 0})
+	DMember(float)                                     MaxCriticalFallForce                                        OFFSET(get<float>, {0xA88, 4, 0, 0})
+	DMember(float)                                     BoostFOV                                                    OFFSET(get<float>, {0xA8C, 4, 0, 0})
+	DMember(float)                                     GentleCrashTimeToExplode                                    OFFSET(get<float>, {0xA90, 4, 0, 0})
+	DMember(float)                                     CriticalTimeForGentleCrash                                  OFFSET(get<float>, {0xA94, 4, 0, 0})
+	DMember(float)                                     AutoLandingYawTorque                                        OFFSET(get<float>, {0xA98, 4, 0, 0})
+	DMember(float)                                     MinHeightForAutoLandingYawTorque                            OFFSET(get<float>, {0xA9C, 4, 0, 0})
+	DMember(float)                                     MinSpeedForScrapingBottom                                   OFFSET(get<float>, {0xAA0, 4, 0, 0})
+	DMember(float)                                     FallDamageHeightBuffer                                      OFFSET(get<float>, {0xAA4, 4, 0, 0})
+	DMember(float)                                     TimeBetweenRotorPlayerDamage                                OFFSET(get<float>, {0xAA8, 4, 0, 0})
+	DMember(float)                                     RotorMoveSpeedRequiredToUpdateTraceDirSqr                   OFFSET(get<float>, {0xAAC, 4, 0, 0})
+	DMember(float)                                     FoliageTraceRate                                            OFFSET(get<float>, {0xAB0, 4, 0, 0})
+	DMember(float)                                     RotorWashTicksPerFrame                                      OFFSET(get<float>, {0xAB4, 4, 0, 0})
+	DMember(float)                                     CriticalHitRadius                                           OFFSET(get<float>, {0xAB8, 4, 0, 0})
+	DMember(float)                                     AngleNormalUpForLockMovement                                OFFSET(get<float>, {0xABC, 4, 0, 0})
+	DMember(float)                                     MaxAutoLandingTime                                          OFFSET(get<float>, {0xAC0, 4, 0, 0})
+	DMember(float)                                     SpeedThresholdForCrashed                                    OFFSET(get<float>, {0xAC4, 4, 0, 0})
+	DMember(float)                                     CritMultiplier                                              OFFSET(get<float>, {0xAC8, 4, 0, 0})
+	DMember(float)                                     AltitudeForSprings                                          OFFSET(get<float>, {0xACC, 4, 0, 0})
+	DMember(float)                                     MaxCrashingTime                                             OFFSET(get<float>, {0xAD0, 4, 0, 0})
+	DMember(float)                                     MaxCrashingScrapingTime                                     OFFSET(get<float>, {0xAD4, 4, 0, 0})
+	DMember(float)                                     MaxCrashingTimeSpentNotMoving                               OFFSET(get<float>, {0xAD8, 4, 0, 0})
+	DMember(float)                                     LandscapeRotorImpulseMag                                    OFFSET(get<float>, {0xADC, 4, 0, 0})
+	DMember(float)                                     HealthThresholdForLandscapeRotorImpulse                     OFFSET(get<float>, {0xAE0, 4, 0, 0})
+	DMember(float)                                     MaxHeightBuffer                                             OFFSET(get<float>, {0xAE4, 4, 0, 0})
+	DMember(bool)                                      bImpulseOnOuterRotorHitLandscape                            OFFSET(get<bool>, {0xAE8, 1, 0, 0})
+	DMember(bool)                                      bSkipRotorImpulses                                          OFFSET(get<bool>, {0xAE9, 1, 0, 0})
+	SMember(FVector)                                   FoliageTraceBoxSize                                         OFFSET(getStruct<T>, {0xAF0, 24, 0, 0})
+	SMember(FVector)                                   WaterBoxSize                                                OFFSET(getStruct<T>, {0xB08, 24, 0, 0})
+	SMember(FVector)                                   WaterBoxOffset                                              OFFSET(getStruct<T>, {0xB20, 24, 0, 0})
+	SMember(FVector)                                   RotorOffsetFromActorLocationOnServer                        OFFSET(getStruct<T>, {0xB38, 24, 0, 0})
+	DMember(bool)                                      bSkipContactRotations                                       OFFSET(get<bool>, {0xB50, 1, 0, 0})
+	SMember(FScalableFloat)                            MaxAutoLandHeightWhenOutOfFuel                              OFFSET(getStruct<T>, {0xB58, 40, 0, 0})
 };
 
 /// Struct /Script/HoagieRuntime.FortHeliFlightModel

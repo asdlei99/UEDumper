@@ -378,14 +378,14 @@ struct FRigVMGraphFunctionArgument
 	FName                                              DisplayName;                                                // 0x0004   (0x0004)  
 	FName                                              CPPType;                                                    // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(32,1640) /* TWeakObjectPtr<UObject*> */ __um(CPPTypeObject);                                     // 0x0010   (0x0020)  
+	SDK_UNDEFINED(32,1642) /* TWeakObjectPtr<UObject*> */ __um(CPPTypeObject);                                     // 0x0010   (0x0020)  
 	bool                                               bIsArray;                                                   // 0x0030   (0x0001)  
 	ERigVMPinDirection                                 Direction;                                                  // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0032   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1641) /* FString */               __um(DefaultValue);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1643) /* FString */               __um(DefaultValue);                                         // 0x0038   (0x0010)  
 	bool                                               bIsConst;                                                   // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(80,1642) /* TMap<FString, FText> */  __um(PathToTooltip);                                        // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,1644) /* TMap<FString, FText> */  __um(PathToTooltip);                                        // 0x0050   (0x0050)  
 };
 
 /// Struct /Script/RigVM.RigVMExternalVariableDef
@@ -409,13 +409,13 @@ struct FRigVMGraphFunctionHeader
 	FRigVMGraphFunctionIdentifier                      LibraryPointer;                                             // 0x0000   (0x0030)  
 	FName                                              Name;                                                       // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1643) /* FString */               __um(NodeTitle);                                            // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1645) /* FString */               __um(NodeTitle);                                            // 0x0038   (0x0010)  
 	FLinearColor                                       NodeColor;                                                  // 0x0048   (0x0010)  
-	SDK_UNDEFINED(24,1644) /* FText */                 __um(ToolTip);                                              // 0x0058   (0x0018)  
-	SDK_UNDEFINED(16,1645) /* FString */               __um(Category);                                             // 0x0070   (0x0010)  
-	SDK_UNDEFINED(16,1646) /* FString */               __um(Keywords);                                             // 0x0080   (0x0010)  
+	SDK_UNDEFINED(24,1646) /* FText */                 __um(ToolTip);                                              // 0x0058   (0x0018)  
+	SDK_UNDEFINED(16,1647) /* FString */               __um(Category);                                             // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,1648) /* FString */               __um(Keywords);                                             // 0x0080   (0x0010)  
 	TArray<FRigVMGraphFunctionArgument>                Arguments;                                                  // 0x0090   (0x0010)  
-	SDK_UNDEFINED(80,1647) /* TMap<FRigVMGraphFunctionIdentifier, uint32_t> */ __um(Dependencies);                 // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1649) /* TMap<FRigVMGraphFunctionIdentifier, uint32_t> */ __um(Dependencies);                 // 0x00A0   (0x0050)  
 	TArray<FRigVMExternalVariable>                     ExternalVariables;                                          // 0x00F0   (0x0010)  
 };
 
@@ -465,9 +465,9 @@ struct FRigVMFunctionCompilationPropertyDescription
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1648) /* FString */               __um(CPPType);                                              // 0x0008   (0x0010)  
-	SDK_UNDEFINED(32,1649) /* TWeakObjectPtr<UObject*> */ __um(CPPTypeObject);                                     // 0x0018   (0x0020)  
-	SDK_UNDEFINED(16,1650) /* FString */               __um(DefaultValue);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1650) /* FString */               __um(CPPType);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(32,1651) /* TWeakObjectPtr<UObject*> */ __um(CPPTypeObject);                                     // 0x0018   (0x0020)  
+	SDK_UNDEFINED(16,1652) /* FString */               __um(DefaultValue);                                         // 0x0038   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunctionCompilationPropertyPath
@@ -476,8 +476,8 @@ struct FRigVMFunctionCompilationPropertyPath
 { 
 	int32_t                                            PropertyIndex;                                              // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1651) /* FString */               __um(HeadCPPType);                                          // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1652) /* FString */               __um(SegmentPath);                                          // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1653) /* FString */               __um(HeadCPPType);                                          // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1654) /* FString */               __um(SegmentPath);                                          // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunctionCompilationData
@@ -494,8 +494,8 @@ struct FRigVMFunctionCompilationData
 	TArray<FRigVMFunctionCompilationPropertyPath>      DebugPropertyPathDescriptions;                              // 0x0100   (0x0010)  
 	TArray<FRigVMFunctionCompilationPropertyDescription> ExternalPropertyDescriptions;                             // 0x0110   (0x0010)  
 	TArray<FRigVMFunctionCompilationPropertyPath>      ExternalPropertyPathDescriptions;                           // 0x0120   (0x0010)  
-	SDK_UNDEFINED(80,1653) /* TMap<int32_t, FName> */  __um(ExternalRegisterIndexToVariable);                      // 0x0130   (0x0050)  
-	SDK_UNDEFINED(80,1654) /* TMap<FString, FRigVMOperand> */ __um(Operands);                                      // 0x0180   (0x0050)  
+	SDK_UNDEFINED(80,1655) /* TMap<int32_t, FName> */  __um(ExternalRegisterIndexToVariable);                      // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,1656) /* TMap<FString, FRigVMOperand> */ __um(Operands);                                      // 0x0180   (0x0050)  
 	uint32_t                                           Hash;                                                       // 0x01D0   (0x0004)  
 	bool                                               bEncounteredSurpressedErrors;                               // 0x01D4   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x53];                                      // 0x01D5   (0x0053)  MISSED
@@ -507,7 +507,7 @@ struct FRigVMGraphFunctionData
 { 
 	FRigVMGraphFunctionHeader                          Header;                                                     // 0x0000   (0x0100)  
 	FRigVMFunctionCompilationData                      CompilationData;                                            // 0x0100   (0x0228)  
-	SDK_UNDEFINED(16,1655) /* FString */               __um(SerializedCollapsedNode);                              // 0x0328   (0x0010)  
+	SDK_UNDEFINED(16,1657) /* FString */               __um(SerializedCollapsedNode);                              // 0x0328   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMGraphFunctionStore
@@ -560,7 +560,7 @@ struct FRigVMParameter
 	FName                                              Name;                                                       // 0x0004   (0x0004)  
 	int32_t                                            RegisterIndex;                                              // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1656) /* FString */               __um(CPPType);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1658) /* FString */               __um(CPPType);                                              // 0x0010   (0x0010)  
 	class UScriptStruct*                               ScriptStruct;                                               // 0x0020   (0x0008)  
 	FName                                              ScriptStructPath;                                           // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData02_6[0x4];                                       // 0x002C   (0x0004)  MISSED
@@ -590,53 +590,53 @@ public:
 
 	/// Functions
 	// Function /Script/RigVM.RigVM.SetParameterValueVector2D
-	// void SetParameterValueVector2D(FName& InParameterName, FVector2D& InValue, int32_t InArrayIndex);                     // [0x6da3d6c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetParameterValueVector2D(FName& InParameterName, FVector2D& InValue, int32_t InArrayIndex);                     // [0x6e11cb8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueVector
-	// void SetParameterValueVector(FName& InParameterName, FVector& InValue, int32_t InArrayIndex);                         // [0x6da3e90] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetParameterValueVector(FName& InParameterName, FVector& InValue, int32_t InArrayIndex);                         // [0x6e11ddc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueTransform
-	// void SetParameterValueTransform(FName& InParameterName, FTransform& InValue, int32_t InArrayIndex);                   // [0x6da3bd8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetParameterValueTransform(FName& InParameterName, FTransform& InValue, int32_t InArrayIndex);                   // [0x6e11b24] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueString
-	// void SetParameterValueString(FName& InParameterName, FString InValue, int32_t InArrayIndex);                          // [0x6da3458] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueString(FName& InParameterName, FString InValue, int32_t InArrayIndex);                          // [0x6e113a4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueQuat
-	// void SetParameterValueQuat(FName& InParameterName, FQuat& InValue, int32_t InArrayIndex);                             // [0x6da32dc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetParameterValueQuat(FName& InParameterName, FQuat& InValue, int32_t InArrayIndex);                             // [0x6e11228] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueName
-	// void SetParameterValueName(FName& InParameterName, FName& InValue, int32_t InArrayIndex);                             // [0x6da31b4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueName(FName& InParameterName, FName& InValue, int32_t InArrayIndex);                             // [0x6e11100] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueInt
-	// void SetParameterValueInt(FName& InParameterName, int32_t InValue, int32_t InArrayIndex);                             // [0x6da304c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueInt(FName& InParameterName, int32_t InValue, int32_t InArrayIndex);                             // [0x6e10f98] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueFloat
-	// void SetParameterValueFloat(FName& InParameterName, float InValue, int32_t InArrayIndex);                             // [0x6da2ee4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueFloat(FName& InParameterName, float InValue, int32_t InArrayIndex);                             // [0x6e10e30] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueDouble
-	// void SetParameterValueDouble(FName& InParameterName, double InValue, int32_t InArrayIndex);                           // [0x6da2d78] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueDouble(FName& InParameterName, double InValue, int32_t InArrayIndex);                           // [0x6e10cc4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.SetParameterValueBool
-	// void SetParameterValueBool(FName& InParameterName, bool InValue, int32_t InArrayIndex);                               // [0x6da2c10] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetParameterValueBool(FName& InParameterName, bool InValue, int32_t InArrayIndex);                               // [0x6e10b5c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetStatistics
-	// FRigVMStatistics GetStatistics();                                                                                     // [0x6da2a84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigVMStatistics GetStatistics();                                                                                     // [0x6e10a10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVM.GetRigVMFunctionName
-	// FString GetRigVMFunctionName(int32_t InFunctionIndex);                                                                // [0x6da299c] Native|Public|Const  
+	// FString GetRigVMFunctionName(int32_t InFunctionIndex);                                                                // [0x6e10968] Native|Public|Const  
 	// Function /Script/RigVM.RigVM.GetParameterValueVector2D
-	// FVector2D GetParameterValueVector2D(FName& InParameterName, int32_t InArrayIndex);                                    // [0x6da2790] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector2D GetParameterValueVector2D(FName& InParameterName, int32_t InArrayIndex);                                    // [0x6e1075c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueVector
-	// FVector GetParameterValueVector(FName& InParameterName, int32_t InArrayIndex);                                        // [0x6da2890] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetParameterValueVector(FName& InParameterName, int32_t InArrayIndex);                                        // [0x6e1085c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueTransform
-	// FTransform GetParameterValueTransform(FName& InParameterName, int32_t InArrayIndex);                                  // [0x6da265c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FTransform GetParameterValueTransform(FName& InParameterName, int32_t InArrayIndex);                                  // [0x6e10628] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueString
-	// FString GetParameterValueString(FName& InParameterName, int32_t InArrayIndex);                                        // [0x6da1f58] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FString GetParameterValueString(FName& InParameterName, int32_t InArrayIndex);                                        // [0x6e0ff24] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueQuat
-	// FQuat GetParameterValueQuat(FName& InParameterName, int32_t InArrayIndex);                                            // [0x6da1e50] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FQuat GetParameterValueQuat(FName& InParameterName, int32_t InArrayIndex);                                            // [0x6e0fe1c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueName
-	// FName GetParameterValueName(FName& InParameterName, int32_t InArrayIndex);                                            // [0x6da1d5c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FName GetParameterValueName(FName& InParameterName, int32_t InArrayIndex);                                            // [0x6e0fd28] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueInt
-	// int32_t GetParameterValueInt(FName& InParameterName, int32_t InArrayIndex);                                           // [0x6da1d5c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// int32_t GetParameterValueInt(FName& InParameterName, int32_t InArrayIndex);                                           // [0x6e0fd28] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueFloat
-	// float GetParameterValueFloat(FName& InParameterName, int32_t InArrayIndex);                                           // [0x6da1d5c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// float GetParameterValueFloat(FName& InParameterName, int32_t InArrayIndex);                                           // [0x6e0fd28] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueDouble
-	// double GetParameterValueDouble(FName& InParameterName, int32_t InArrayIndex);                                         // [0x6da1c68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// double GetParameterValueDouble(FName& InParameterName, int32_t InArrayIndex);                                         // [0x6e0fc34] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.GetParameterValueBool
-	// bool GetParameterValueBool(FName& InParameterName, int32_t InArrayIndex);                                             // [0x6da1b74] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetParameterValueBool(FName& InParameterName, int32_t InArrayIndex);                                             // [0x6e0fb40] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.Execute
-	// bool Execute(FRigVMExtendedExecuteContext& Context, FName& InEntryName);                                              // [0x6da1a44] Native|Public|HasOutParms|BlueprintCallable 
+	// bool Execute(FRigVMExtendedExecuteContext& Context, FName& InEntryName);                                              // [0x6e0fa10] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVM.AddRigVMFunction
-	// int32_t AddRigVMFunction(class UScriptStruct* InRigVMStruct, FName& InMethodName);                                    // [0x6da1924] Native|Public|HasOutParms 
+	// int32_t AddRigVMFunction(class UScriptStruct* InRigVMStruct, FName& InMethodName);                                    // [0x6e0f93c] Native|Public|HasOutParms 
 };
 
 /// Class /Script/RigVM.NameSpacedUserData
@@ -644,7 +644,7 @@ public:
 class UNameSpacedUserData : public UAssetUserData
 { 
 public:
-	SDK_UNDEFINED(16,1657) /* FString */               __um(NameSpace);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1659) /* FString */               __um(NameSpace);                                            // 0x0028   (0x0010)  
 	unsigned char                                      UnknownData00_6[0xC8];                                      // 0x0038   (0x00C8)  MISSED
 };
 
@@ -658,9 +658,9 @@ public:
 
 	/// Functions
 	// Function /Script/RigVM.DataAssetLink.SetDataAsset
-	// void SetDataAsset(class UDataAsset* InDataAsset);                                                                     // [0x6da2b50] Final|Native|Public|BlueprintCallable 
+	// void SetDataAsset(class UDataAsset* InDataAsset);                                                                     // [0x6e10adc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.DataAssetLink.GetDataAsset
-	// class UDataAsset* GetDataAsset();                                                                                     // [0x6da1b5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDataAsset* GetDataAsset();                                                                                     // [0x6e0fb28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/RigVM.RigVMMemoryStorageGeneratorClass
@@ -690,11 +690,11 @@ public:
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FRigVMUserWorkflow
 { 
-	SDK_UNDEFINED(16,1658) /* FString */               __um(Title);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1659) /* FString */               __um(ToolTip);                                              // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1660) /* FString */               __um(Title);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1661) /* FString */               __um(ToolTip);                                              // 0x0018   (0x0010)  
 	ERigVMUserWorkflowType                             Type;                                                       // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x17];                                      // 0x0029   (0x0017)  MISSED
-	SDK_UNDEFINED(12,1660) /* FDelegateProperty */     __um(PerformDynamicDelegate);                               // 0x0040   (0x000C)  
+	SDK_UNDEFINED(12,1662) /* FDelegateProperty */     __um(PerformDynamicDelegate);                               // 0x0040   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x004C   (0x0004)  MISSED
 	class UClass*                                      OptionsClass;                                               // 0x0050   (0x0008)  
 };
@@ -712,15 +712,15 @@ public:
 
 	/// Functions
 	// Function /Script/RigVM.RigVMUserWorkflowOptions.RequiresDialog
-	// bool RequiresDialog();                                                                                                // [0x6de7828] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool RequiresDialog();                                                                                                // [0x6e5bb38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMUserWorkflowOptions.ReportWarning
-	// void ReportWarning(FString InMessage);                                                                                // [0x6de712c] Final|Native|Public|BlueprintCallable 
+	// void ReportWarning(FString InMessage);                                                                                // [0x6e5b47c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMUserWorkflowOptions.ReportInfo
-	// void ReportInfo(FString InMessage);                                                                                   // [0x6de6a30] Final|Native|Public|BlueprintCallable 
+	// void ReportInfo(FString InMessage);                                                                                   // [0x6e5adc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMUserWorkflowOptions.ReportError
-	// void ReportError(FString InMessage);                                                                                  // [0x6de6334] Final|Native|Public|BlueprintCallable 
+	// void ReportError(FString InMessage);                                                                                  // [0x6e5a704] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMUserWorkflowOptions.IsValid
-	// bool IsValid();                                                                                                       // [0x6de6318] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValid();                                                                                                       // [0x6e5a6e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/RigVM.RigVMRuntimeSettings
@@ -736,7 +736,7 @@ struct FRigVMRuntimeSettings
 struct FRigVMDrawInstruction
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
-	SDK_UNDEFINED(1,1661) /* TEnumAsByte<ERigVMDrawSettings> */ __um(PrimitiveType);                               // 0x0004   (0x0001)  
+	SDK_UNDEFINED(1,1663) /* TEnumAsByte<ERigVMDrawSettings> */ __um(PrimitiveType);                               // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
 	TArray<FVector>                                    Positions;                                                  // 0x0008   (0x0010)  
 	FLinearColor                                       Color;                                                      // 0x0018   (0x0010)  
@@ -762,9 +762,9 @@ public:
 	FRigVMRuntimeSettings                              VMRuntimeSettings;                                          // 0x0030   (0x0018)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0048   (0x0010)  MISSED
 	class URigVM*                                      VM;                                                         // 0x0058   (0x0008)  
-	SDK_UNDEFINED(80,1662) /* TMap<FString, FSoftObjectPath> */ __um(UserDefinedStructGuidToPathName);             // 0x0060   (0x0050)  
-	SDK_UNDEFINED(80,1663) /* TMap<FString, FSoftObjectPath> */ __um(UserDefinedEnumToPathName);                   // 0x00B0   (0x0050)  
-	SDK_UNDEFINED(80,1664) /* TSet<UObject*> */        __um(UserDefinedTypesInUse);                                // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,1664) /* TMap<FString, FSoftObjectPath> */ __um(UserDefinedStructGuidToPathName);             // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,1665) /* TMap<FString, FSoftObjectPath> */ __um(UserDefinedEnumToPathName);                   // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,1666) /* TSet<UObject*> */        __um(UserDefinedTypesInUse);                                // 0x0100   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0150   (0x0008)  MISSED
 	FRigVMDrawContainer                                DrawContainer;                                              // 0x0158   (0x0018)  
 	unsigned char                                      UnknownData03_5[0x18];                                      // 0x0170   (0x0018)  MISSED
@@ -776,51 +776,51 @@ public:
 
 	/// Functions
 	// Function /Script/RigVM.RigVMHost.SupportsEvent
-	// bool SupportsEvent(FName& InEventName);                                                                               // [0x6e09164] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool SupportsEvent(FName& InEventName);                                                                               // [0x6e7c7d4] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.SetVariableFromString
-	// bool SetVariableFromString(FName& InVariableName, FString InValue);                                                   // [0x6e08a5c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetVariableFromString(FName& InVariableName, FString InValue);                                                   // [0x6e7c0cc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.SetFramesPerSecond
-	// void SetFramesPerSecond(float InFramesPerSecond);                                                                     // [0x6e0899c] Final|Native|Public|BlueprintCallable 
+	// void SetFramesPerSecond(float InFramesPerSecond);                                                                     // [0x6e7c04c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.SetDeltaTime
-	// void SetDeltaTime(float InDeltaTime);                                                                                 // [0x6e088dc] Final|Native|Public|BlueprintCallable 
+	// void SetDeltaTime(float InDeltaTime);                                                                                 // [0x6e7bfcc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.SetAbsoluteTime
-	// void SetAbsoluteTime(float InAbsoluteTime, bool InSetDeltaTimeZero);                                                  // [0x6e0879c] Final|Native|Public|BlueprintCallable 
+	// void SetAbsoluteTime(float InAbsoluteTime, bool InSetDeltaTimeZero);                                                  // [0x6e7bf04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.SetAbsoluteAndDeltaTime
-	// void SetAbsoluteAndDeltaTime(float InAbsoluteTime, float InDeltaTime);                                                // [0x6e0865c] Final|Native|Public|BlueprintCallable 
+	// void SetAbsoluteAndDeltaTime(float InAbsoluteTime, float InDeltaTime);                                                // [0x6e7be3c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.RequestRunOnceEvent
-	// void RequestRunOnceEvent(FName& InEventName, int32_t InEventIndex);                                                   // [0x6e08550] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RequestRunOnceEvent(FName& InEventName, int32_t InEventIndex);                                                   // [0x6e7bd30] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.RequestInit
-	// void RequestInit();                                                                                                   // [0x62008c8] Native|Public|BlueprintCallable 
+	// void RequestInit();                                                                                                   // [0x625f704] Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.RemoveRunOnceEvent
-	// bool RemoveRunOnceEvent(FName& InEventName);                                                                          // [0x6e084b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveRunOnceEvent(FName& InEventName);                                                                          // [0x6e7bc98] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.IsInitRequired
-	// bool IsInitRequired();                                                                                                // [0x637ae50] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInitRequired();                                                                                                // [0x63da4d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetVM
-	// class URigVM* GetVM();                                                                                                // [0x6e07d58] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class URigVM* GetVM();                                                                                                // [0x6e7b538] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/RigVM.RigVMHost.GetVariableType
-	// FName GetVariableType(FName& InVariableName);                                                                         // [0x6e08408] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FName GetVariableType(FName& InVariableName);                                                                         // [0x6e7bbe8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetVariableAsString
-	// FString GetVariableAsString(FName& InVariableName);                                                                   // [0x6e07d7c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FString GetVariableAsString(FName& InVariableName);                                                                   // [0x6e7b55c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetSupportedEvents
-	// TArray<FName> GetSupportedEvents();                                                                                   // [0x6e07d28] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetSupportedEvents();                                                                                   // [0x6e7b508] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetScriptAccessibleVariables
-	// TArray<FName> GetScriptAccessibleVariables();                                                                         // [0x6e07ce8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetScriptAccessibleVariables();                                                                         // [0x6e7b4c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetExtendedExecuteContext
-	// FRigVMExtendedExecuteContext GetExtendedExecuteContext();                                                             // [0x6e07cb8] Native|Public|BlueprintCallable 
+	// FRigVMExtendedExecuteContext GetExtendedExecuteContext();                                                             // [0x6e7b498] Native|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.GetDeltaTime
-	// float GetDeltaTime();                                                                                                 // [0x388cc68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDeltaTime();                                                                                                 // [0x38e62d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetCurrentFramesPerSecond
-	// float GetCurrentFramesPerSecond();                                                                                    // [0x6e07c98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentFramesPerSecond();                                                                                    // [0x6e7b478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.GetAbsoluteTime
-	// float GetAbsoluteTime();                                                                                              // [0x388c99c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAbsoluteTime();                                                                                              // [0x38e6004] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RigVM.RigVMHost.FindRigVMHosts
-	// TArray<URigVMHost*> FindRigVMHosts(class UObject* Outer, class UClass* OptionalClass);                                // [0x6e07954] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<URigVMHost*> FindRigVMHosts(class UObject* Outer, class UClass* OptionalClass);                                // [0x6e7b1b4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.ExecuteEvent
-	// bool ExecuteEvent(FName& InEventName);                                                                                // [0x6e078bc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool ExecuteEvent(FName& InEventName);                                                                                // [0x6e7b11c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.Execute
-	// bool Execute(FName& InEventName);                                                                                     // [0x6e0781c] Native|Public|HasOutParms|BlueprintCallable 
+	// bool Execute(FName& InEventName);                                                                                     // [0x6e7b07c] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/RigVM.RigVMHost.CanExecute
-	// bool CanExecute();                                                                                                    // [0x6093de8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanExecute();                                                                                                    // [0x60f7298] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/RigVM.RigVMEditorSettings
@@ -1154,7 +1154,7 @@ struct FRigVMRegisterOffset
 	int32_t                                            ArrayIndex;                                                 // 0x0028   (0x0004)  
 	uint16_t                                           ElementSize;                                                // 0x002C   (0x0002)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002E   (0x0002)  MISSED
-	SDK_UNDEFINED(16,1665) /* FString */               __um(CachedSegmentPath);                                    // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1667) /* FString */               __um(CachedSegmentPath);                                    // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMMemoryContainer
@@ -1168,7 +1168,7 @@ struct FRigVMMemoryContainer
 	TArray<FRigVMRegisterOffset>                       RegisterOffsets;                                            // 0x0018   (0x0010)  
 	TArray<char>                                       Data;                                                       // 0x0028   (0x0010)  
 	TArray<class UScriptStruct*>                       ScriptStructs;                                              // 0x0038   (0x0010)  
-	SDK_UNDEFINED(80,1666) /* TMap<FName, int32_t> */  __um(NameMap);                                              // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,1668) /* TMap<FName, int32_t> */  __um(NameMap);                                              // 0x0048   (0x0050)  
 	bool                                               bEncounteredErrorDuringLoad;                                // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0099   (0x0007)  MISSED
 };
@@ -2788,7 +2788,7 @@ struct FRigVMFunction_MathIntToString : FRigVMFunction_MathIntBase
 { 
 	int32_t                                            Number;                                                     // 0x0008   (0x0004)  
 	int32_t                                            PaddedSize;                                                 // 0x000C   (0x0004)  
-	SDK_UNDEFINED(16,1667) /* FString */               __um(Result);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1669) /* FString */               __um(Result);                                               // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_MathIntToName
@@ -3003,6 +3003,18 @@ struct FRigVMFunction_MathQuaternionToAxisAndAngle : FRigVMFunction_MathQuaterni
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x004C   (0x0004)  MISSED
 };
 
+/// Struct /Script/RigVM.RigVMFunction_MathQuaternionToVectors
+/// Size: 0x0078 (0x000008 - 0x000080)
+struct FRigVMFunction_MathQuaternionToVectors : FRigVMFunction_MathQuaternionBase
+{ 
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
+	FQuat                                              Value;                                                      // 0x0010   (0x0020)  
+	FVector                                            Forward;                                                    // 0x0030   (0x0018)  
+	FVector                                            Right;                                                      // 0x0048   (0x0018)  
+	FVector                                            Up;                                                         // 0x0060   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0078   (0x0008)  MISSED
+};
+
 /// Struct /Script/RigVM.RigVMFunction_MathQuaternionScale
 /// Size: 0x0038 (0x000008 - 0x000040)
 struct FRigVMFunction_MathQuaternionScale : FRigVMFunction_MathQuaternionBase
@@ -3135,7 +3147,7 @@ struct FRigVMFunction_MathQuaternionGetAxis : FRigVMFunction_MathQuaternionBase
 { 
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
 	FQuat                                              Quaternion;                                                 // 0x0010   (0x0020)  
-	SDK_UNDEFINED(1,1668) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,1670) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0031   (0x0007)  MISSED
 	FVector                                            Result;                                                     // 0x0038   (0x0018)  
 };
@@ -3186,8 +3198,8 @@ struct FRigVMFunction_MathQuaternionMirrorTransform : FRigVMFunction_MathQuatern
 { 
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
 	FQuat                                              Value;                                                      // 0x0010   (0x0020)  
-	SDK_UNDEFINED(1,1669) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0030   (0x0001)  
-	SDK_UNDEFINED(1,1670) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0031   (0x0001)  
+	SDK_UNDEFINED(1,1671) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,1672) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData01_5[0xE];                                       // 0x0032   (0x000E)  MISSED
 	FTransform                                         CentralTransform;                                           // 0x0040   (0x0060)  
 	FQuat                                              Result;                                                     // 0x00A0   (0x0020)  
@@ -3542,6 +3554,18 @@ struct FRigVMFunction_MathTransformToEulerTransform : FRigVMFunction_MathTransfo
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00B8   (0x0008)  MISSED
 };
 
+/// Struct /Script/RigVM.RigVMFunction_MathTransformToVectors
+/// Size: 0x00B8 (0x000008 - 0x0000C0)
+struct FRigVMFunction_MathTransformToVectors : FRigVMFunction_MathTransformBase
+{ 
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
+	FTransform                                         Value;                                                      // 0x0010   (0x0060)  
+	FVector                                            Forward;                                                    // 0x0070   (0x0018)  
+	FVector                                            Right;                                                      // 0x0088   (0x0018)  
+	FVector                                            Up;                                                         // 0x00A0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00B8   (0x0008)  MISSED
+};
+
 /// Struct /Script/RigVM.RigVMFunction_MathTransformMul
 /// Size: 0x0000 (0x000130 - 0x000130)
 struct FRigVMFunction_MathTransformMul : FRigVMFunction_MathTransformBinaryAggregateOp
@@ -3659,8 +3683,8 @@ struct FRigVMFunction_MathTransformClampSpatially : FRigVMFunction_MathTransform
 { 
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
 	FTransform                                         Value;                                                      // 0x0010   (0x0060)  
-	SDK_UNDEFINED(1,1671) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0070   (0x0001)  
-	SDK_UNDEFINED(1,1672) /* TEnumAsByte<ERigVMClampSpatialMode> */ __um(Type);                                    // 0x0071   (0x0001)  
+	SDK_UNDEFINED(1,1673) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,1674) /* TEnumAsByte<ERigVMClampSpatialMode> */ __um(Type);                                    // 0x0071   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0072   (0x0002)  MISSED
 	float                                              Minimum;                                                    // 0x0074   (0x0004)  
 	float                                              Maximum;                                                    // 0x0078   (0x0004)  
@@ -3680,8 +3704,8 @@ struct FRigVMFunction_MathTransformMirrorTransform : FRigVMFunction_MathTransfor
 { 
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0008   (0x0008)  MISSED
 	FTransform                                         Value;                                                      // 0x0010   (0x0060)  
-	SDK_UNDEFINED(1,1673) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0070   (0x0001)  
-	SDK_UNDEFINED(1,1674) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0071   (0x0001)  
+	SDK_UNDEFINED(1,1675) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,1676) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0071   (0x0001)  
 	unsigned char                                      UnknownData01_5[0xE];                                       // 0x0072   (0x000E)  MISSED
 	FTransform                                         CentralTransform;                                           // 0x0080   (0x0060)  
 	FTransform                                         Result;                                                     // 0x00E0   (0x0060)  
@@ -4076,8 +4100,8 @@ struct FRigVMFunction_MathVectorMakeBezierFourPoint : FRigVMFunction_MathVectorB
 struct FRigVMFunction_MathVectorClampSpatially : FRigVMFunction_MathVectorBase
 { 
 	FVector                                            Value;                                                      // 0x0008   (0x0018)  
-	SDK_UNDEFINED(1,1675) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0020   (0x0001)  
-	SDK_UNDEFINED(1,1676) /* TEnumAsByte<ERigVMClampSpatialMode> */ __um(Type);                                    // 0x0021   (0x0001)  
+	SDK_UNDEFINED(1,1677) /* TEnumAsByte<EAxis> */     __um(Axis);                                                 // 0x0020   (0x0001)  
+	SDK_UNDEFINED(1,1678) /* TEnumAsByte<ERigVMClampSpatialMode> */ __um(Type);                                    // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0022   (0x0002)  MISSED
 	float                                              Minimum;                                                    // 0x0024   (0x0004)  
 	float                                              Maximum;                                                    // 0x0028   (0x0004)  
@@ -4138,8 +4162,8 @@ struct FRigVMFunction_MathVectorMakeAbsolute : FRigVMFunction_MathVectorBase
 struct FRigVMFunction_MathVectorMirrorTransform : FRigVMFunction_MathVectorBase
 { 
 	FVector                                            Value;                                                      // 0x0008   (0x0018)  
-	SDK_UNDEFINED(1,1677) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0020   (0x0001)  
-	SDK_UNDEFINED(1,1678) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0021   (0x0001)  
+	SDK_UNDEFINED(1,1679) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0020   (0x0001)  
+	SDK_UNDEFINED(1,1680) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xE];                                       // 0x0022   (0x000E)  MISSED
 	FTransform                                         CentralTransform;                                           // 0x0030   (0x0060)  
 	FVector                                            Result;                                                     // 0x0090   (0x0018)  
@@ -4251,11 +4275,11 @@ struct FRigVMFunction_RandomVector : FRigVMFunction_MathBase
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FRigVMMirrorSettings
 { 
-	SDK_UNDEFINED(1,1679) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,1680) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,1681) /* TEnumAsByte<EAxis> */     __um(MirrorAxis);                                           // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,1682) /* TEnumAsByte<EAxis> */     __um(AxisToFlip);                                           // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0002   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1681) /* FString */               __um(SearchString);                                         // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1682) /* FString */               __um(ReplaceString);                                        // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1683) /* FString */               __um(SearchString);                                         // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1684) /* FString */               __um(ReplaceString);                                        // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMSimPoint
@@ -4544,39 +4568,39 @@ struct FRigVMFunction_StringBase : FRigVMStruct
 /// Size: 0x0030 (0x000008 - 0x000038)
 struct FRigVMFunction_StringConcat : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1683) /* FString */               __um(A);                                                    // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1684) /* FString */               __um(B);                                                    // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,1685) /* FString */               __um(Result);                                               // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1685) /* FString */               __um(A);                                                    // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1686) /* FString */               __um(B);                                                    // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1687) /* FString */               __um(Result);                                               // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringTruncate
 /// Size: 0x0038 (0x000008 - 0x000040)
 struct FRigVMFunction_StringTruncate : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1686) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1688) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
 	int32_t                                            Count;                                                      // 0x0018   (0x0004)  
 	bool                                               FromEnd;                                                    // 0x001C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x001D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,1687) /* FString */               __um(Remainder);                                            // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,1688) /* FString */               __um(Chopped);                                              // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1689) /* FString */               __um(Remainder);                                            // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1690) /* FString */               __um(Chopped);                                              // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringReplace
 /// Size: 0x0040 (0x000008 - 0x000048)
 struct FRigVMFunction_StringReplace : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1689) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1690) /* FString */               __um(Old);                                                  // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,1691) /* FString */               __um(New);                                                  // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,1692) /* FString */               __um(Result);                                               // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1691) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1692) /* FString */               __um(Old);                                                  // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1693) /* FString */               __um(New);                                                  // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1694) /* FString */               __um(Result);                                               // 0x0038   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringEndsWith
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringEndsWith : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1693) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1694) /* FString */               __um(Ending);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1695) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1696) /* FString */               __um(Ending);                                               // 0x0018   (0x0010)  
 	bool                                               Result;                                                     // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
@@ -4585,8 +4609,8 @@ struct FRigVMFunction_StringEndsWith : FRigVMFunction_StringBase
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringStartsWith : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1695) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1696) /* FString */               __um(Start);                                                // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1697) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1698) /* FString */               __um(Start);                                                // 0x0018   (0x0010)  
 	bool                                               Result;                                                     // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
@@ -4595,8 +4619,8 @@ struct FRigVMFunction_StringStartsWith : FRigVMFunction_StringBase
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringContains : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1697) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1698) /* FString */               __um(Search);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1699) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1700) /* FString */               __um(Search);                                               // 0x0018   (0x0010)  
 	bool                                               Result;                                                     // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
@@ -4605,7 +4629,7 @@ struct FRigVMFunction_StringContains : FRigVMFunction_StringBase
 /// Size: 0x0018 (0x000008 - 0x000020)
 struct FRigVMFunction_StringLength : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1699) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1701) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
 	int32_t                                            Length;                                                     // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x001C   (0x0004)  MISSED
 };
@@ -4614,47 +4638,37 @@ struct FRigVMFunction_StringLength : FRigVMFunction_StringBase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FRigVMFunction_StringTrimWhitespace : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1700) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1701) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1702) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1703) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringToUppercase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FRigVMFunction_StringToUppercase : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1702) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1703) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1704) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1705) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringToLowercase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FRigVMFunction_StringToLowercase : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1704) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1705) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1706) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1707) /* FString */               __um(Result);                                               // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringReverse
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FRigVMFunction_StringReverse : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1706) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1707) /* FString */               __um(Reverse);                                              // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1708) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1709) /* FString */               __um(Reverse);                                              // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringLeft
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringLeft : FRigVMFunction_StringBase
-{ 
-	SDK_UNDEFINED(16,1708) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	int32_t                                            Count;                                                      // 0x0018   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1709) /* FString */               __um(Result);                                               // 0x0020   (0x0010)  
-};
-
-/// Struct /Script/RigVM.RigVMFunction_StringRight
-/// Size: 0x0028 (0x000008 - 0x000030)
-struct FRigVMFunction_StringRight : FRigVMFunction_StringBase
 { 
 	SDK_UNDEFINED(16,1710) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
 	int32_t                                            Count;                                                      // 0x0018   (0x0004)  
@@ -4662,22 +4676,32 @@ struct FRigVMFunction_StringRight : FRigVMFunction_StringBase
 	SDK_UNDEFINED(16,1711) /* FString */               __um(Result);                                               // 0x0020   (0x0010)  
 };
 
+/// Struct /Script/RigVM.RigVMFunction_StringRight
+/// Size: 0x0028 (0x000008 - 0x000030)
+struct FRigVMFunction_StringRight : FRigVMFunction_StringBase
+{ 
+	SDK_UNDEFINED(16,1712) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	int32_t                                            Count;                                                      // 0x0018   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
+	SDK_UNDEFINED(16,1713) /* FString */               __um(Result);                                               // 0x0020   (0x0010)  
+};
+
 /// Struct /Script/RigVM.RigVMFunction_StringMiddle
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringMiddle : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1712) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1714) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
 	int32_t                                            Start;                                                      // 0x0018   (0x0004)  
 	int32_t                                            Count;                                                      // 0x001C   (0x0004)  
-	SDK_UNDEFINED(16,1713) /* FString */               __um(Result);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1715) /* FString */               __um(Result);                                               // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringFind
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FRigVMFunction_StringFind : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1714) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1715) /* FString */               __um(Search);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1716) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1717) /* FString */               __um(Search);                                               // 0x0018   (0x0010)  
 	bool                                               Found;                                                      // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            Index;                                                      // 0x002C   (0x0004)  
@@ -4687,18 +4711,18 @@ struct FRigVMFunction_StringFind : FRigVMFunction_StringBase
 /// Size: 0x0030 (0x000008 - 0x000038)
 struct FRigVMFunction_StringSplit : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1716) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1717) /* FString */               __um(Separator);                                            // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,1718) /* TArray<FString> */       __um(Result);                                               // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1718) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1719) /* FString */               __um(Separator);                                            // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1720) /* TArray<FString> */       __um(Result);                                               // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringJoin
 /// Size: 0x0030 (0x000008 - 0x000038)
 struct FRigVMFunction_StringJoin : FRigVMFunction_StringBase
 { 
-	SDK_UNDEFINED(16,1719) /* TArray<FString> */       __um(Values);                                               // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1720) /* FString */               __um(Separator);                                            // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,1721) /* FString */               __um(Result);                                               // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1721) /* TArray<FString> */       __um(Values);                                               // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1722) /* FString */               __um(Separator);                                            // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1723) /* FString */               __um(Result);                                               // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigVMFunction_StringPadInteger
@@ -4707,7 +4731,7 @@ struct FRigVMFunction_StringPadInteger : FRigVMFunction_StringBase
 { 
 	int32_t                                            Value;                                                      // 0x0008   (0x0004)  
 	int32_t                                            Digits;                                                     // 0x000C   (0x0004)  
-	SDK_UNDEFINED(16,1722) /* FString */               __um(Result);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1724) /* FString */               __um(Result);                                               // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/RigVM.RigDispatch_ToString

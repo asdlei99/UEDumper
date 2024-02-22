@@ -56,7 +56,7 @@ public:
 
 	/// Functions
 	// Function /Script/IKRig.IKGoalCreatorInterface.AddIKGoals
-	// void AddIKGoals(TMap<FName, FIKRigGoal>& OutGoals);                                                                      // [0x76de010] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AddIKGoals(TMap<FName, FIKRigGoal>& OutGoals);                                                                      // [0x77078b4] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/IKRig.PinBoneOp
@@ -106,13 +106,13 @@ public:
 
 	/// Functions
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoalTransform
-	// void SetIKRigGoalTransform(FName GoalName, FTransform Transform, float PositionAlpha, float RotationAlpha);              // [0x76dfde0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetIKRigGoalTransform(FName GoalName, FTransform Transform, float PositionAlpha, float RotationAlpha);              // [0x77095d8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoalPositionAndRotation
-	// void SetIKRigGoalPositionAndRotation(FName GoalName, FVector Position, FQuat Rotation, float PositionAlpha, float RotationAlpha); // [0x76dfb04] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetIKRigGoalPositionAndRotation(FName GoalName, FVector Position, FQuat Rotation, float PositionAlpha, float RotationAlpha); // [0x7709190] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoal
-	// void SetIKRigGoal(FIKRigGoal& Goal);                                                                                     // [0x76dfa68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIKRigGoal(FIKRigGoal& Goal);                                                                                     // [0x77090f4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.ClearAllGoals
-	// void ClearAllGoals();                                                                                                    // [0x76de0e0] Final|Native|Public|BlueprintCallable 
+	// void ClearAllGoals();                                                                                                    // [0x7707984] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/IKRig.RetargetChainSettings
@@ -177,31 +177,31 @@ public:
 
 	/// Functions
 	// Function /Script/IKRig.IKRetargeter.SetRootSettingsInRetargetProfile
-	// void SetRootSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetRootSettings& RootSettings);             // [0x76e00c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetRootSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetRootSettings& RootSettings);             // [0x77099c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetGlobalSettingsInRetargetProfile
-	// void SetGlobalSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FRetargetGlobalSettings& GlobalSettings);     // [0x76df93c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetGlobalSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FRetargetGlobalSettings& GlobalSettings);     // [0x7708fc8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainSpeedPlantSettingsInRetargetProfile
-	// void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSpeedPlantSettings& SpeedPlantSettings, FName TargetChainName); // [0x76df70c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSpeedPlantSettings& SpeedPlantSettings, FName TargetChainName); // [0x7708d98] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainSettingsInRetargetProfile
-	// void SetChainSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSettings& ChainSettings, FName TargetChainName); // [0x76df4ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSettings& ChainSettings, FName TargetChainName); // [0x7708b78] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainIKSettingsInRetargetProfile
-	// void SetChainIKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainIKSettings& IKSettings, FName TargetChainName); // [0x76df2cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainIKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainIKSettings& IKSettings, FName TargetChainName); // [0x7708958] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainFKSettingsInRetargetProfile
-	// void SetChainFKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainFKSettings& FKSettings, FName TargetChainName); // [0x76df098] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainFKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainFKSettings& FKSettings, FName TargetChainName); // [0x7708724] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.GetRootSettingsFromRetargetProfile
-	// FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                               // [0x76def84] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                               // [0x7708610] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetRootSettingsFromRetargetAsset
-	// void GetRootSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FTargetRootSettings& OutSettings); // [0x76ded00] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetRootSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FTargetRootSettings& OutSettings); // [0x77083f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetGlobalSettingsFromRetargetProfile
-	// FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                         // [0x76dec2c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                         // [0x7708324] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetGlobalSettingsFromRetargetAsset
-	// void GetGlobalSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FRetargetGlobalSettings& OutSettings); // [0x76dea44] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetGlobalSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FRetargetGlobalSettings& OutSettings); // [0x77081ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainUsingGoalFromRetargetAsset
-	// FTargetChainSettings GetChainUsingGoalFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName IKGoalName);           // [0x76de76c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainUsingGoalFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName IKGoalName);           // [0x7707f50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainSettingsFromRetargetProfile
-	// FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile, FName TargetChainName);      // [0x76de4b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile, FName TargetChainName);      // [0x7707c9c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainSettingsFromRetargetAsset
-	// FTargetChainSettings GetChainSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName TargetChainName, FName OptionalProfileName); // [0x76de110] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName TargetChainName, FName OptionalProfileName); // [0x77079b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/IKRig.IKRetargetProcessor

@@ -8,9 +8,9 @@
 /// dependency: CoreUObject
 /// dependency: Engine
 
-/// Class /Script/VkRuntime.ValkyriePluginBatchLoader
+/// Class /Script/ContentResolver.PluginBatchLoaderHelper
 /// Size: 0x0080 (0x000028 - 0x0000A8)
-class UValkyriePluginBatchLoader : public UObject
+class UPluginBatchLoaderHelper : public UObject
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 168;
@@ -18,9 +18,9 @@ class UValkyriePluginBatchLoader : public UObject
 public:
 };
 
-/// Class /Script/VkRuntime.ValkyrieExternalContentLoader
+/// Class /Script/ContentResolver.ExternalContentLoader
 /// Size: 0x0018 (0x000030 - 0x000048)
-class UValkyrieExternalContentLoader : public UEngineSubsystem
+class UExternalContentLoader : public UEngineSubsystem
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 72;

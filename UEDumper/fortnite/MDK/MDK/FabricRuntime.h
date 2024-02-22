@@ -12,6 +12,7 @@
 /// dependency: FabricUI
 /// dependency: FMCoreRuntime
 /// dependency: FortniteGame
+/// dependency: GameplayTags
 /// dependency: HarmonixMetasound
 /// dependency: HarmonixMidi
 /// dependency: MetasoundEngine
@@ -32,9 +33,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricAnimatableButtonInterface.PlayOpenAnimation
-	// void PlayOpenAnimation();                                                                                                // [0x2c35200] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayOpenAnimation();                                                                                                // [0x2c0e95c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricAnimatableButtonInterface.PlayCloseAnimation
-	// void PlayCloseAnimation();                                                                                               // [0x3064200] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayCloseAnimation();                                                                                               // [0x313fdf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricButtonBase
@@ -62,57 +63,57 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricButtonBase.ToggleStateChanged__DelegateSignature
-	// void ToggleStateChanged__DelegateSignature(class APlayerController* InteractingController, bool IsToggle);               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void ToggleStateChanged__DelegateSignature(class APlayerController* InteractingController, bool IsToggle);               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricButtonBase.SwapToggle
-	// void SwapToggle();                                                                                                       // [0xb781be8] Final|Native|Public|BlueprintCallable 
+	// void SwapToggle();                                                                                                       // [0xb8972c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonBase.SetWidgetViewModel
-	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb781a68] Final|Native|Public|BlueprintCallable 
+	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb8971c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonBase.SetToggleState
-	// void SetToggleState(bool bNewToggleState, bool bBroadcast, bool bForce);                                                 // [0xb7816c8] Final|Native|Public|BlueprintCallable 
+	// void SetToggleState(bool bNewToggleState, bool bBroadcast, bool bForce);                                                 // [0xb896fb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonBase.SetEnabled
-	// void SetEnabled(bool bNewEnabled);                                                                                       // [0xb781340] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bNewEnabled);                                                                                       // [0xb896d30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnUnhovered
-	// void OnUnhovered();                                                                                                      // [0x2e8c47c] Native|Event|Public|BlueprintEvent 
+	// void OnUnhovered();                                                                                                      // [0x2ee209c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnToggleStateChanged
-	// void OnToggleStateChanged(bool bIsToggled);                                                                              // [0x75f5818] Native|Event|Public|BlueprintEvent 
+	// void OnToggleStateChanged(bool bIsToggled);                                                                              // [0x761be4c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnHovered
-	// void OnHovered();                                                                                                        // [0x61075bc] Native|Event|Public|BlueprintEvent 
+	// void OnHovered();                                                                                                        // [0x6169b80] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnEnabled
-	// void OnEnabled();                                                                                                        // [0x2964714] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnEnabled();                                                                                                        // [0x2fef0f4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnDisabled
-	// void OnDisabled();                                                                                                       // [0x1cf2a00] Native|Event|Public|BlueprintEvent 
+	// void OnDisabled();                                                                                                       // [0x18017a4] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnButtonReleased
-	// void OnButtonReleased();                                                                                                 // [0x7bcfb24] Native|Event|Public|BlueprintEvent 
+	// void OnButtonReleased();                                                                                                 // [0x7be61dc] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnButtonPressed
-	// void OnButtonPressed();                                                                                                  // [0x36f7b08] Native|Event|Public|BlueprintEvent 
+	// void OnButtonPressed();                                                                                                  // [0x1f9c7fc] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnButtonDoubleClicked
-	// void OnButtonDoubleClicked();                                                                                            // [0x2e1ebac] Native|Event|Public|BlueprintEvent 
+	// void OnButtonDoubleClicked();                                                                                            // [0x2f520e8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.OnButtonClicked
-	// void OnButtonClicked();                                                                                                  // [0x1cf2340] Native|Event|Public|BlueprintEvent 
+	// void OnButtonClicked();                                                                                                  // [0x18011ac] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.IsToggledOn
-	// bool IsToggledOn();                                                                                                      // [0xb780b84] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsToggledOn();                                                                                                      // [0xb8965f8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonBase.IsPressed
-	// bool IsPressed();                                                                                                        // [0x85d2f1c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsPressed();                                                                                                        // [0x85d9cf8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonBase.IsHovered
-	// bool IsHovered();                                                                                                        // [0x92d9298] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsHovered();                                                                                                        // [0x92e51bc] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonBase.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xb780b24] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsEnabled();                                                                                                        // [0xb896598] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonUnhovered
-	// void HandleButtonUnhovered();                                                                                            // [0x6581a50] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonUnhovered();                                                                                            // [0x65f1174] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonReleased
-	// void HandleButtonReleased();                                                                                             // [0x895375c] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonReleased();                                                                                             // [0x894def8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonPressed
-	// void HandleButtonPressed();                                                                                              // [0x1cf5518] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonPressed();                                                                                              // [0x1ae88e0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonHovered
-	// void HandleButtonHovered();                                                                                              // [0x833d9a0] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonHovered();                                                                                              // [0x8344310] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonDoubleClicked
-	// void HandleButtonDoubleClicked();                                                                                        // [0x1c3b914] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonDoubleClicked();                                                                                        // [0x216a2f8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.HandleButtonClicked
-	// void HandleButtonClicked();                                                                                              // [0x1c3b558] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonClicked();                                                                                              // [0x216d69c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonBase.GetOpenTimeline
-	// class UTimelineComponent* GetOpenTimeline();                                                                             // [0x641f194] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UTimelineComponent* GetOpenTimeline();                                                                             // [0x6486500] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonBase.GetCloseTimeline
-	// class UTimelineComponent* GetCloseTimeline();                                                                            // [0x641f194] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UTimelineComponent* GetCloseTimeline();                                                                            // [0x6486500] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 };
 
 /// Class /Script/FabricRuntime.FabricButtonComponentBase
@@ -142,59 +143,59 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.ToggleStateChanged__DelegateSignature
-	// void ToggleStateChanged__DelegateSignature(class APlayerController* InteractingController, bool IsToggle);               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void ToggleStateChanged__DelegateSignature(class APlayerController* InteractingController, bool IsToggle);               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.SwapToggle
-	// void SwapToggle();                                                                                                       // [0xb781bfc] Final|Native|Public|BlueprintCallable 
+	// void SwapToggle();                                                                                                       // [0xb8972dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.SetWidgetViewModel
-	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb781b28] Final|Native|Public|BlueprintCallable 
+	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb897248] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.SetToggleState
-	// void SetToggleState(bool bNewToggleState, bool bBroadcast, bool bForce);                                                 // [0xb781898] Final|Native|Public|BlueprintCallable 
+	// void SetToggleState(bool bNewToggleState, bool bBroadcast, bool bForce);                                                 // [0xb8970bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.SetEnabled
-	// void SetEnabled(bool bNewEnabled);                                                                                       // [0xb781404] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bNewEnabled);                                                                                       // [0xb896db0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnUnhovered
-	// void OnUnhovered();                                                                                                      // [0xb781268] Native|Event|Public|BlueprintEvent 
+	// void OnUnhovered();                                                                                                      // [0xb896c98] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnToggleStateChanged
-	// void OnToggleStateChanged(bool bIsToggled);                                                                              // [0xb7811a0] Native|Event|Public|BlueprintEvent 
+	// void OnToggleStateChanged(bool bIsToggled);                                                                              // [0xb896c14] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnHovered
-	// void OnHovered();                                                                                                        // [0xb780bec] Native|Event|Public|BlueprintEvent 
+	// void OnHovered();                                                                                                        // [0xb896660] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnEnabled
-	// void OnEnabled();                                                                                                        // [0x1f77db0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnEnabled();                                                                                                        // [0x1377fa8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnDisabled
-	// void OnDisabled();                                                                                                       // [0x882370c] Native|Event|Public|BlueprintEvent 
+	// void OnDisabled();                                                                                                       // [0x88262b8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnButtonReleased
-	// void OnButtonReleased();                                                                                                 // [0xb780bd4] Native|Event|Public|BlueprintEvent 
+	// void OnButtonReleased();                                                                                                 // [0xb896648] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnButtonPressed
-	// void OnButtonPressed();                                                                                                  // [0xb1263b8] Native|Event|Public|BlueprintEvent 
+	// void OnButtonPressed();                                                                                                  // [0xa9aa268] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnButtonDoubleClicked
-	// void OnButtonDoubleClicked();                                                                                            // [0x38facc8] Native|Event|Public|BlueprintEvent 
+	// void OnButtonDoubleClicked();                                                                                            // [0x38e6d38] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.OnButtonClicked
-	// void OnButtonClicked();                                                                                                  // [0xb780bbc] Native|Event|Public|BlueprintEvent 
+	// void OnButtonClicked();                                                                                                  // [0xb896630] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.IsToggledOn
-	// bool IsToggledOn();                                                                                                      // [0xb780ba0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsToggledOn();                                                                                                      // [0xb896614] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.IsPressed
-	// bool IsPressed();                                                                                                        // [0xb780b6c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsPressed();                                                                                                        // [0xb8965e0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.IsHovered
-	// bool IsHovered();                                                                                                        // [0xb780b54] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsHovered();                                                                                                        // [0xb8965c8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xb780b3c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsEnabled();                                                                                                        // [0xb8965b0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonUnhovered
-	// void HandleButtonUnhovered();                                                                                            // [0xb780b0c] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonUnhovered();                                                                                            // [0xb896580] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonReleased
-	// void HandleButtonReleased();                                                                                             // [0xb780af4] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonReleased();                                                                                             // [0xb896568] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonPressed
-	// void HandleButtonPressed();                                                                                              // [0xb1263d0] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonPressed();                                                                                              // [0xa9aa280] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonHovered
-	// void HandleButtonHovered();                                                                                              // [0xb780adc] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonHovered();                                                                                              // [0xb896550] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonDoubleClicked
-	// void HandleButtonDoubleClicked();                                                                                        // [0xb780ac4] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonDoubleClicked();                                                                                        // [0xb896538] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.HandleButtonClicked
-	// void HandleButtonClicked();                                                                                              // [0xb780aac] Native|Event|Public|BlueprintEvent 
+	// void HandleButtonClicked();                                                                                              // [0xb896520] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.GetOpenTimeline
-	// class UTimelineComponent* GetOpenTimeline();                                                                             // [0x641f194] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UTimelineComponent* GetOpenTimeline();                                                                             // [0x6486500] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.GetCloseTimeline
-	// class UTimelineComponent* GetCloseTimeline();                                                                            // [0x641f194] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UTimelineComponent* GetCloseTimeline();                                                                            // [0x6486500] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricButtonComponentBase.ConstructButton
-	// void ConstructButton();                                                                                                  // [0x88246e4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ConstructButton();                                                                                                  // [0x8826f54] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricDevice
@@ -219,7 +220,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchOwner.GetMetaSoundPatchWrapper
-	// class UFabricMetaSoundPatchWrapper* GetMetaSoundPatchWrapper();                                                          // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class UFabricMetaSoundPatchWrapper* GetMetaSoundPatchWrapper();                                                          // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricAudioGenerator
@@ -234,7 +235,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricAudioGenerator.GetAudioAnalyzer
-	// FSourceEffectChainEntry GetAudioAnalyzer();                                                                              // [0xb7807dc] Native|Event|Public|BlueprintEvent 
+	// FSourceEffectChainEntry GetAudioAnalyzer();                                                                              // [0xb896290] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricAudioModifier
@@ -249,7 +250,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricAudioModifier.GetSourceEffectChainEntries
-	// TArray<FSourceEffectChainEntry> GetSourceEffectChainEntries();                                                           // [0xb780a38] Native|Event|Public|BlueprintEvent 
+	// TArray<FSourceEffectChainEntry> GetSourceEffectChainEntries();                                                           // [0xb8964ac] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricAudioReceiver
@@ -264,7 +265,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricAudioReceiver.GetSoundSourceBus
-	// class USoundSourceBus* GetSoundSourceBus();                                                                              // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class USoundSourceBus* GetSoundSourceBus();                                                                              // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatGenerator
@@ -279,7 +280,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatGenerator.GetFloatProvider
-	// class UFabricFloatProviderBase* GetFloatProvider();                                                                      // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class UFabricFloatProviderBase* GetFloatProvider();                                                                      // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatReceiver
@@ -294,7 +295,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatReceiver.SetFloatProviders
-	// void SetFloatProviders(TArray<UFabricFloatProviderBase*>& FloatProvider);                                                // [0x61b3328] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetFloatProviders(TArray<UFabricFloatProviderBase*>& FloatProvider);                                                // [0x620f0a0] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureGenerator
@@ -309,7 +310,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureGenerator.GetTextureProvider
-	// class UFabricTextureProviderBase* GetTextureProvider();                                                                  // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class UFabricTextureProviderBase* GetTextureProvider();                                                                  // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureModifier
@@ -324,9 +325,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureModifier.IsShowingTexturePreview
-	// bool IsShowingTexturePreview();                                                                                          // [0x2379ffc] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsShowingTexturePreview();                                                                                          // [0x23bb8dc] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/FabricRuntime.FabricTextureModifier.GetTextureModifier
-	// class UFabricTextureModifierBase* GetTextureModifier();                                                                  // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class UFabricTextureModifierBase* GetTextureModifier();                                                                  // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureReceiver
@@ -341,7 +342,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureReceiver.OnTexturesChanged
-	// void OnTexturesChanged(TArray<FFabricTextureProviderTexture>& Texture);                                                  // [0x758fbec] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnTexturesChanged(TArray<FFabricTextureProviderTexture>& Texture);                                                  // [0x75b0104] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricMeshGenerator
@@ -356,7 +357,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMeshGenerator.GetMeshProvider
-	// class UFabricMeshProviderBase* GetMeshProvider();                                                                        // [0x2d86750] Native|Event|Public|BlueprintEvent 
+	// class UFabricMeshProviderBase* GetMeshProvider();                                                                        // [0x2d8e9c4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricMeshModifier
@@ -371,11 +372,11 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMeshModifier.OnMeshesChanged
-	// void OnMeshesChanged(TArray<FFabricMeshInstanceReference>& InstanceMeshReferences, bool bInstancesChanged);              // [0xb780ffc] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnMeshesChanged(TArray<FFabricMeshInstanceReference>& InstanceMeshReferences, bool bInstancesChanged);              // [0xb896a70] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricMeshModifier.IsShowingMeshPreview
-	// bool IsShowingMeshPreview();                                                                                             // [0x80bf59c] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsShowingMeshPreview();                                                                                             // [0x80cf1e8] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/FabricRuntime.FabricMeshModifier.GetMeshModifier
-	// class UFabricMeshModifierBase* GetMeshModifier();                                                                        // [0x61d6738] Native|Event|Public|BlueprintEvent|Const 
+	// class UFabricMeshModifierBase* GetMeshModifier();                                                                        // [0x6231fec] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricMeshReceiver
@@ -390,11 +391,11 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMeshReceiver.OnMeshReferenceChanged
-	// void OnMeshReferenceChanged(FFabricMeshProviderMeshReference& ReferenceMesh);                                            // [0xb780f3c] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnMeshReferenceChanged(FFabricMeshProviderMeshReference& ReferenceMesh);                                            // [0xb8969b0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricMeshReceiver.OnMeshInstancesChanged
-	// void OnMeshInstancesChanged(TArray<FTransform>& Meshes);                                                                 // [0xb780e9c] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnMeshInstancesChanged(TArray<FTransform>& Meshes);                                                                 // [0xb896910] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricMeshReceiver.OnMeshInstanceReferencesChanged
-	// void OnMeshInstanceReferencesChanged(TArray<FFabricMeshInstanceReference>& MeshInstanceReferences, bool bMeshChanged, bool bInstancesChanged); // [0xb780c04] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnMeshInstanceReferencesChanged(TArray<FFabricMeshInstanceReference>& MeshInstanceReferences, bool bMeshChanged, bool bInstancesChanged); // [0xb896678] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricModulationNode
@@ -426,27 +427,27 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricModulatable.OnOptionsLoaded
-	// void OnOptionsLoaded();                                                                                                  // [0xb790b7c] Final|Native|Protected 
+	// void OnOptionsLoaded();                                                                                                  // [0xb8a5398] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricModulatable.OnModulatorFloatProviderConnectionChanged
-	// void OnModulatorFloatProviderConnectionChanged(bool bConnected, class UObject* ModulatorObject);                         // [0xb7914b8] Final|Native|Private 
+	// void OnModulatorFloatProviderConnectionChanged(bool bConnected, class UObject* ModulatorObject);                         // [0xb8a5bd0] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricModulatable.OnModulatedPropertyChanged
-	// void OnModulatedPropertyChanged(FString Value, class UObject* ModulatorObject);                                          // [0xb790d48] Final|Native|Private 
+	// void OnModulatedPropertyChanged(FString Value, class UObject* ModulatorObject);                                          // [0xb8a54dc] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricModulatable.OnAnyOptionUpdated
-	// void OnAnyOptionUpdated();                                                                                               // [0xb790b7c] Final|Native|Protected 
+	// void OnAnyOptionUpdated();                                                                                               // [0xb8a5398] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricModulatable.IsParamModulated
-	// bool IsParamModulated(FString Param);                                                                                    // [0xb7903dc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParamModulated(FString Param);                                                                                    // [0xb8a4c3c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedString
-	// bool GetModulatedString(FString Param, FMidiSongPos& SongPos, FString& OutString);                                       // [0xb78f110] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetModulatedString(FString Param, FMidiSongPos& SongPos, FString& OutString);                                       // [0xb8a3b68] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedInt
-	// bool GetModulatedInt(FString Param, FMidiSongPos& SongPos, int32_t& OutInt);                                             // [0xb78e93c] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetModulatedInt(FString Param, FMidiSongPos& SongPos, int32_t& OutInt);                                             // [0xb8a334c] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedFloat
-	// bool GetModulatedFloat(FString Param, FMidiSongPos& SongPos, float& OutFloat);                                           // [0xb78e0e0] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetModulatedFloat(FString Param, FMidiSongPos& SongPos, float& OutFloat);                                           // [0xb8a2b30] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedEnum
-	// bool GetModulatedEnum(FString Param, FMidiSongPos& SongPos, char& OutEnum);                                              // [0xb78d90c] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetModulatedEnum(FString Param, FMidiSongPos& SongPos, char& OutEnum);                                              // [0xb8a2398] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedBool
-	// bool GetModulatedBool(FString Param, FMidiSongPos& SongPos, bool& OutBool);                                              // [0xb78d0b0] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetModulatedBool(FString Param, FMidiSongPos& SongPos, bool& OutBool);                                              // [0xb8a1c00] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricModulatable.GetModulatedActor
-	// class AActor* GetModulatedActor();                                                                                       // [0x765c538] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetModulatedActor();                                                                                       // [0x7685a5c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatProviderBase
@@ -470,27 +471,27 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.SetProviderEnabled
-	// void SetProviderEnabled(bool bInIsEnabled);                                                                              // [0xb781608] Final|Native|Public|BlueprintCallable 
+	// void SetProviderEnabled(bool bInIsEnabled);                                                                              // [0xb896f30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.SetMusicClock
-	// void SetMusicClock(class UMusicClockComponent* NewMusicClock);                                                           // [0xb7814c8] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClock(class UMusicClockComponent* NewMusicClock);                                                           // [0xb896e30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.SetAssociatedPatchWrapper
-	// void SetAssociatedPatchWrapper(class UFabricMetaSoundModulatorPatchWrapper* PatchWrapper);                               // [0xb781280] Final|Native|Public|BlueprintCallable 
+	// void SetAssociatedPatchWrapper(class UFabricMetaSoundModulatorPatchWrapper* PatchWrapper);                               // [0xb896cb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.OnFloatChanged__DelegateSignature
-	// void OnFloatChanged__DelegateSignature(float float);                                                                     // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnFloatChanged__DelegateSignature(float float);                                                                     // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetFloatProviderType
-	// EFabricFloatProviderType GetFloatProviderType();                                                                         // [0x61d6ca4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFabricFloatProviderType GetFloatProviderType();                                                                         // [0x6232444] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetFloatAtSongPos
-	// float GetFloatAtSongPos(FMidiSongPos& SongPos);                                                                          // [0xb78094c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatAtSongPos(FMidiSongPos& SongPos);                                                                          // [0xb8963c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetCurrentSongPosWithOffset
-	// FMidiSongPos GetCurrentSongPosWithOffset(float OffsetSeconds);                                                           // [0xb780864] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FMidiSongPos GetCurrentSongPosWithOffset(float OffsetSeconds);                                                           // [0xb896318] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetCurrentSongPos
-	// FMidiSongPos GetCurrentSongPos();                                                                                        // [0xb780828] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FMidiSongPos GetCurrentSongPos();                                                                                        // [0xb8962dc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetCurrentFloat
-	// float GetCurrentFloat();                                                                                                 // [0x9d51d14] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentFloat();                                                                                                 // [0x9d65e48] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderBase.GetAssociatedPatchWrapper
-	// class UFabricMetaSoundModulatorPatchWrapper* GetAssociatedPatchWrapper();                                                // [0xb7807c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFabricMetaSoundModulatorPatchWrapper* GetAssociatedPatchWrapper();                                                // [0xb896278] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatProviderWave
@@ -516,23 +517,23 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.SetRandomSeedByGuid
-	// void SetRandomSeedByGuid(FGuid& InRandomGuid);                                                                           // [0xb784d24] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRandomSeedByGuid(FGuid& InRandomGuid);                                                                           // [0xb89a198] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.SetFreePhase
-	// void SetFreePhase(float InFreePhase);                                                                                    // [0xb784b9c] Final|Native|Public|BlueprintCallable 
+	// void SetFreePhase(float InFreePhase);                                                                                    // [0xb89a094] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.RemovePreviewDisplayMesh
-	// void RemovePreviewDisplayMesh(class UStaticMeshComponent* Mesh);                                                         // [0xb784628] Final|Native|Public|BlueprintCallable 
+	// void RemovePreviewDisplayMesh(class UStaticMeshComponent* Mesh);                                                         // [0xb899a64] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.GetRandomSeed
-	// int32_t GetRandomSeed();                                                                                                 // [0x80d56b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRandomSeed();                                                                                                 // [0x80e51d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.GetPreviewDisplayMeshes
-	// TArray<UStaticMeshComponent*> GetPreviewDisplayMeshes();                                                                 // [0xb783dbc] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UStaticMeshComponent*> GetPreviewDisplayMeshes();                                                                 // [0xb899304] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.GetCurrentPhase
-	// float GetCurrentPhase();                                                                                                 // [0xb783b14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentPhase();                                                                                                 // [0xb8990f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.GetCurrentFreePhase
-	// float GetCurrentFreePhase();                                                                                             // [0xb783aec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentFreePhase();                                                                                             // [0xb8990cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.ClearPreviewDisplayMeshes
-	// void ClearPreviewDisplayMeshes();                                                                                        // [0xb7837fc] Final|Native|Public|BlueprintCallable 
+	// void ClearPreviewDisplayMeshes();                                                                                        // [0xb898e58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricFloatProviderWave.AddPreviewDisplayMesh
-	// void AddPreviewDisplayMesh(class UStaticMeshComponent* Mesh);                                                            // [0xb7834fc] Final|Native|Public|BlueprintCallable 
+	// void AddPreviewDisplayMesh(class UStaticMeshComponent* Mesh);                                                            // [0xb898bdc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatProviderStep
@@ -553,7 +554,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatProviderStep.GetStepLengthBeats
-	// float GetStepLengthBeats();                                                                                              // [0xb783e30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepLengthBeats();                                                                                              // [0xb899378] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricFloatProviderValueSetter
@@ -570,13 +571,13 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricFloatProviderValueSetter.GetUpdateBeat
-	// float GetUpdateBeat();                                                                                                   // [0xb783e58] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetUpdateBeat();                                                                                                   // [0xb8993a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderValueSetter.CanUsePredictiveBeatBroadcasting
-	// bool CanUsePredictiveBeatBroadcasting();                                                                                 // [0xb7837e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanUsePredictiveBeatBroadcasting();                                                                                 // [0xb898e3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderValueSetter.CalculateTransitionTiming
-	// float CalculateTransitionTiming();                                                                                       // [0xb783714] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float CalculateTransitionTiming();                                                                                       // [0xb898d70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricFloatProviderValueSetter.BroadcastCurrentValue
-	// float BroadcastCurrentValue(float OverriddenBeat);                                                                       // [0xb783640] Final|Native|Public|BlueprintCallable 
+	// float BroadcastCurrentValue(float OverriddenBeat);                                                                       // [0xb898ce0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricHoldable
@@ -607,17 +608,17 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.ServerRequestDoesIslandContainFabricDevices
-	// void ServerRequestDoesIslandContainFabricDevices();                                                                      // [0x2eb4140] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerRequestDoesIslandContainFabricDevices();                                                                      // [0x2e6c604] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.ServerGivePlayerFabricInteractionTool
-	// void ServerGivePlayerFabricInteractionTool();                                                                            // [0x6d4279c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerGivePlayerFabricInteractionTool();                                                                            // [0x6db0d14] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.OnCreativeModeEnabledChangedDelegate
-	// void OnCreativeModeEnabledChangedDelegate(bool bCreativeEnabled);                                                        // [0x5d6b308] Final|Native|Public  
+	// void OnCreativeModeEnabledChangedDelegate(bool bCreativeEnabled);                                                        // [0x5dd0bf8] Final|Native|Public  
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.GiveBackInteractionTool
-	// void GiveBackInteractionTool();                                                                                          // [0xb783e70] Final|Native|Public|BlueprintCallable 
+	// void GiveBackInteractionTool();                                                                                          // [0xb8993b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.EnsurePlayerHasInteractionTool
-	// void EnsurePlayerHasInteractionTool();                                                                                   // [0xb783994] Final|Native|Public|BlueprintCallable 
+	// void EnsurePlayerHasInteractionTool();                                                                                   // [0xb898f74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractableControllerComponent.ClientReceiveDoesIslandContainFabricDevices
-	// void ClientReceiveDoesIslandContainFabricDevices(bool bIslandContainsFabricDevices);                                     // [0x80ef090] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientReceiveDoesIslandContainFabricDevices(bool bIslandContainsFabricDevices);                                     // [0x80ff6b4] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/FabricRuntime.FabricInteractable
@@ -632,43 +633,43 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricInteractable.StartSpecialInteraction
-	// void StartSpecialInteraction(class APlayerController* Controller);                                                       // [0x6f81be8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartSpecialInteraction(class APlayerController* Controller);                                                       // [0xb89a2b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.StartInteraction
-	// void StartInteraction(class APlayerController* Controller);                                                              // [0x80bfc1c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartInteraction(class APlayerController* Controller);                                                              // [0xb89a230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.ShouldPassInteractionToComponent
-	// bool ShouldPassInteractionToComponent(class AFabricInteractionTool* InteractionTool);                                    // [0xa595240] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool ShouldPassInteractionToComponent(class AFabricInteractionTool* InteractionTool);                                    // [0xa578ca4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.SetInteractable
-	// void SetInteractable(bool bInteractable);                                                                                // [0xb784c60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetInteractable(bool bInteractable);                                                                                // [0xb89a114] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.SetHitComponent
-	// void SetHitComponent(class USceneComponent* HitComponent);                                                               // [0x80bf824] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHitComponent(class USceneComponent* HitComponent);                                                               // [0x80cf554] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.SetFocused
-	// void SetFocused(bool bIsFocused);                                                                                        // [0x8127728] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetFocused(bool bIsFocused);                                                                                        // [0xb89a010] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.OnInteractionFocusTargetChanged
-	// void OnInteractionFocusTargetChanged(class APlayerController* Controller, class UObject* FocusTarget, bool bIsFocused);  // [0xb78428c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnInteractionFocusTargetChanged(class APlayerController* Controller, class UObject* FocusTarget, bool bIsFocused);  // [0xb899788] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.IsValidToInteractWith
-	// bool IsValidToInteractWith(class APlayerController* Controller);                                                         // [0xb784068] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool IsValidToInteractWith(class APlayerController* Controller);                                                         // [0xb89952c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.IsFocusDependentOnInteractionContext
-	// bool IsFocusDependentOnInteractionContext(class APlayerController* Controller);                                          // [0xb783f54] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool IsFocusDependentOnInteractionContext(class APlayerController* Controller);                                          // [0xb89945c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetLinkedInteractable
-	// class UObject* GetLinkedInteractable();                                                                                  // [0x8f82f00] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// class UObject* GetLinkedInteractable();                                                                                  // [0x8f78fec] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetInteractionSFX
-	// class UAudioComponent* GetInteractionSFX();                                                                              // [0xb783d7c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// class UAudioComponent* GetInteractionSFX();                                                                              // [0xb8992c4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetInteractableType
-	// EFabricInteractableType GetInteractableType();                                                                           // [0x649d8a8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// EFabricInteractableType GetInteractableType();                                                                           // [0x650f520] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetInteractableForwardVector
-	// FVector GetInteractableForwardVector(class USceneComponent* Interactable);                                               // [0xb783c98] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// FVector GetInteractableForwardVector(class USceneComponent* Interactable);                                               // [0xb899220] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetInteractableComponentLocation
-	// FVector GetInteractableComponentLocation(class USceneComponent* Interactable);                                           // [0xb783bb4] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// FVector GetInteractableComponentLocation(class USceneComponent* Interactable);                                           // [0xb89917c] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetContinuousInteractableValueNormalized
-	// float GetContinuousInteractableValueNormalized();                                                                        // [0xb7839c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// float GetContinuousInteractableValueNormalized();                                                                        // [0xb898fa0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.GetContinuousInteractableDirection
-	// EFabricContinuousInteractionDirection GetContinuousInteractableDirection();                                              // [0x2c16e54] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// EFabricContinuousInteractionDirection GetContinuousInteractableDirection();                                              // [0x2d37090] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.EndInteraction
-	// void EndInteraction(class APlayerController* PlayerController, bool bWasDragAndDropInteraction);                         // [0xb783850] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EndInteraction(class APlayerController* PlayerController, bool bWasDragAndDropInteraction);                         // [0xb898eac] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractable.DoesInteractionRequireHoldable
-	// bool DoesInteractionRequireHoldable();                                                                                   // [0x37308d8] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool DoesInteractionRequireHoldable();                                                                                   // [0x378b77c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricInteractable.CanInteractWithHoldable
-	// bool CanInteractWithHoldable(TScriptInterface<Class>& Holdable);                                                         // [0xb78373c] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool CanInteractWithHoldable(TScriptInterface<Class>& Holdable);                                                         // [0xb898d98] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricInteractablePlayspaceComponent
@@ -683,104 +684,104 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricInteractablePlayspaceComponent.SetFabricDeviceExistsInPlayspace
-	// void SetFabricDeviceExistsInPlayspace();                                                                                 // [0xb784b28] Final|Native|Public|BlueprintCallable 
+	// void SetFabricDeviceExistsInPlayspace();                                                                                 // [0xb899f9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractablePlayspaceComponent.OnPlayspaceUserAdded
-	// void OnPlayspaceUserAdded(FPlayspaceUser& PlayspaceUser);                                                                // [0xb78444c] Final|Native|Protected|HasOutParms 
+	// void OnPlayspaceUserAdded(FPlayspaceUser& PlayspaceUser);                                                                // [0xb899888] Final|Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricInteractablePlayspaceComponent.OnDownloadOnDemandCompleteIndividualClient
-	// void OnDownloadOnDemandCompleteIndividualClient(FEventMessageTag Channel, FClientFinishedDownloadOnDemand& Context);     // [0xb78413c] Final|Native|Protected|HasOutParms 
+	// void OnDownloadOnDemandCompleteIndividualClient(FEventMessageTag Channel, FClientFinishedDownloadOnDemand& Context);     // [0xb8995c0] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/FabricRuntime.FabricInteractionTool
-/// Size: 0x0198 (0x001508 - 0x0016A0)
+/// Size: 0x0198 (0x001518 - 0x0016B0)
 class AFabricInteractionTool : public AFortWeapon
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5792;
+	static inline constexpr uint64_t __MDKClassSize = 5808;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnInteractionStateChanged                                   OFFSET(getStruct<T>, {0x1508, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnCablesGrabbed                                             OFFSET(getStruct<T>, {0x1518, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnCablesDropped                                             OFFSET(getStruct<T>, {0x1528, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMetasoundGeneratorCrossfadeStarted                        OFFSET(getStruct<T>, {0x1538, 16, 0, 0})
-	CMember(class USplineComponent*)                   SplineComponent                                             OFFSET(get<T>, {0x1548, 8, 0, 0})
-	DMember(float)                                     MaxRange                                                    OFFSET(get<float>, {0x1550, 4, 0, 0})
-	DMember(float)                                     MinDragAndDropTriggerTime                                   OFFSET(get<float>, {0x1554, 4, 0, 0})
-	DMember(float)                                     FiringRate                                                  OFFSET(get<float>, {0x1558, 4, 0, 0})
-	DMember(float)                                     SplineEndForwardMultiplier                                  OFFSET(get<float>, {0x155C, 4, 0, 0})
-	DMember(float)                                     SplineStartForwardMultiplier                                OFFSET(get<float>, {0x1560, 4, 0, 0})
-	CMember(class UObject*)                            HoveredInteractable                                         OFFSET(get<T>, {0x1568, 8, 0, 0})
-	CMember(class USceneComponent*)                    HoveredInteractableHitComponent                             OFFSET(get<T>, {0x1570, 8, 0, 0})
-	CMember(class UObject*)                            PressedInteractable                                         OFFSET(get<T>, {0x1578, 8, 0, 0})
-	CMember(TWeakObjectPtr<UObject*>)                  LastPressedInteractable                                     OFFSET(get<T>, {0x1580, 8, 0, 0})
-	CMember(class USceneComponent*)                    PressedInteractableHitComponent                             OFFSET(get<T>, {0x1588, 8, 0, 0})
-	CMember(TWeakObjectPtr<AFortCreativeDeviceProp*>)  InteractableOwnerDevice                                     OFFSET(get<T>, {0x1590, 8, 0, 0})
-	DMember(float)                                     AccumulatedDragAndDropTriggerTime                           OFFSET(get<float>, {0x1598, 4, 0, 0})
-	SMember(FInteractionData)                          ServerInteractionData                                       OFFSET(getStruct<T>, {0x159C, 12, 0, 0})
-	DMember(bool)                                      bServerTriggerPressed                                       OFFSET(get<bool>, {0x15B9, 1, 0, 0})
-	DMember(bool)                                      bServerIsHoldingCable                                       OFFSET(get<bool>, {0x15BB, 1, 0, 0})
-	SMember(FInteractionSplinePoints)                  ServerSplinePoints                                          OFFSET(getStruct<T>, {0x15D0, 96, 0, 0})
-	DMember(float)                                     ServerContinuousInteractableValue                           OFFSET(get<float>, {0x1630, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInteractionStateChanged                                   OFFSET(getStruct<T>, {0x1518, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnCablesGrabbed                                             OFFSET(getStruct<T>, {0x1528, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnCablesDropped                                             OFFSET(getStruct<T>, {0x1538, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMetasoundGeneratorCrossfadeStarted                        OFFSET(getStruct<T>, {0x1548, 16, 0, 0})
+	CMember(class USplineComponent*)                   SplineComponent                                             OFFSET(get<T>, {0x1558, 8, 0, 0})
+	DMember(float)                                     MaxRange                                                    OFFSET(get<float>, {0x1560, 4, 0, 0})
+	DMember(float)                                     MinDragAndDropTriggerTime                                   OFFSET(get<float>, {0x1564, 4, 0, 0})
+	DMember(float)                                     FiringRate                                                  OFFSET(get<float>, {0x1568, 4, 0, 0})
+	DMember(float)                                     SplineEndForwardMultiplier                                  OFFSET(get<float>, {0x156C, 4, 0, 0})
+	DMember(float)                                     SplineStartForwardMultiplier                                OFFSET(get<float>, {0x1570, 4, 0, 0})
+	CMember(class UObject*)                            HoveredInteractable                                         OFFSET(get<T>, {0x1578, 8, 0, 0})
+	CMember(class USceneComponent*)                    HoveredInteractableHitComponent                             OFFSET(get<T>, {0x1580, 8, 0, 0})
+	CMember(class UObject*)                            PressedInteractable                                         OFFSET(get<T>, {0x1588, 8, 0, 0})
+	CMember(TWeakObjectPtr<UObject*>)                  LastPressedInteractable                                     OFFSET(get<T>, {0x1590, 8, 0, 0})
+	CMember(class USceneComponent*)                    PressedInteractableHitComponent                             OFFSET(get<T>, {0x1598, 8, 0, 0})
+	CMember(TWeakObjectPtr<AFortCreativeDeviceProp*>)  InteractableOwnerDevice                                     OFFSET(get<T>, {0x15A0, 8, 0, 0})
+	DMember(float)                                     AccumulatedDragAndDropTriggerTime                           OFFSET(get<float>, {0x15A8, 4, 0, 0})
+	SMember(FInteractionData)                          ServerInteractionData                                       OFFSET(getStruct<T>, {0x15AC, 12, 0, 0})
+	DMember(bool)                                      bServerTriggerPressed                                       OFFSET(get<bool>, {0x15C9, 1, 0, 0})
+	DMember(bool)                                      bServerIsHoldingCable                                       OFFSET(get<bool>, {0x15CB, 1, 0, 0})
+	SMember(FInteractionSplinePoints)                  ServerSplinePoints                                          OFFSET(getStruct<T>, {0x15E0, 96, 0, 0})
+	DMember(float)                                     ServerContinuousInteractableValue                           OFFSET(get<float>, {0x1640, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricInteractionTool.UnholsterWeapon
-	// void UnholsterWeapon();                                                                                                  // [0xb784dbc] Final|Native|Protected|BlueprintCallable 
+	// void UnholsterWeapon();                                                                                                  // [0xb89a330] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerSetTriggerPressed
-	// void ServerSetTriggerPressed(bool bPressed);                                                                             // [0xb784a60] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetTriggerPressed(bool bPressed);                                                                             // [0xb899f18] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerSetSplinePoints
-	// void ServerSetSplinePoints(FInteractionSplinePoints SplinePoints);                                                       // [0xb78491c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetSplinePoints(FInteractionSplinePoints SplinePoints);                                                       // [0xb899d54] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerSetIsHoldingCable
-	// void ServerSetIsHoldingCable(bool bHoldingCable);                                                                        // [0xb784854] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetIsHoldingCable(bool bHoldingCable);                                                                        // [0xb899cd0] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerSetInteractionData
-	// void ServerSetInteractionData(FInteractionData NewData);                                                                 // [0xb784778] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetInteractionData(FInteractionData NewData);                                                                 // [0xb899b70] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerSetContinuousInteractableValue
-	// void ServerSetContinuousInteractableValue(float Value);                                                                  // [0x8853d58] Net|Native|Event|Protected|NetServer 
+	// void ServerSetContinuousInteractableValue(float Value);                                                                  // [0x8858148] Net|Native|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ServerHandleFITFired
-	// void ServerHandleFITFired();                                                                                             // [0x8e1c2a4] Net|Native|Event|Protected|NetServer 
+	// void ServerHandleFITFired();                                                                                             // [0x8e1297c] Net|Native|Event|Protected|NetServer 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnSplineUpdated
-	// void OnSplineUpdated(EFabricInteractionToolStates NewInteractionState);                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSplineUpdated(EFabricInteractionToolStates NewInteractionState);                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnRep_ServerTriggerPressed
-	// void OnRep_ServerTriggerPressed();                                                                                       // [0xb7845d8] Final|Native|Protected 
+	// void OnRep_ServerTriggerPressed();                                                                                       // [0xb899a14] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnRep_ServerIsHoldingCable
-	// void OnRep_ServerIsHoldingCable();                                                                                       // [0xb784574] Final|Native|Protected 
+	// void OnRep_ServerIsHoldingCable();                                                                                       // [0xb8999b0] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnRep_ServerInteractionData
-	// void OnRep_ServerInteractionData();                                                                                      // [0xb784560] Final|Native|Protected 
+	// void OnRep_ServerInteractionData();                                                                                      // [0xb89999c] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnRep_ServerContinuousInteractableValue
-	// void OnRep_ServerContinuousInteractableValue();                                                                          // [0xb78452c] Final|Native|Protected 
+	// void OnRep_ServerContinuousInteractableValue();                                                                          // [0xb899968] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnMetasoundGeneratorCrossfadeStarted__DelegateSignature
-	// void OnMetasoundGeneratorCrossfadeStarted__DelegateSignature(float CrossfadeSeconds);                                    // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnMetasoundGeneratorCrossfadeStarted__DelegateSignature(float CrossfadeSeconds);                                    // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnInteractionStateChanged__DelegateSignature
-	// void OnInteractionStateChanged__DelegateSignature(EFabricInteractionToolStates NewState, class AFortCreativeDeviceProp* Device); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnInteractionStateChanged__DelegateSignature(EFabricInteractionToolStates NewState, class AFortCreativeDeviceProp* Device); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricInteractionTool.OnCableHeldStateChanged__DelegateSignature
-	// void OnCableHeldStateChanged__DelegateSignature(class AFortCreativeDeviceProp* Device);                                  // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnCableHeldStateChanged__DelegateSignature(class AFortCreativeDeviceProp* Device);                                  // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricInteractionTool.IsRunningOnOwningClient
-	// bool IsRunningOnOwningClient();                                                                                          // [0xb784044] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRunningOnOwningClient();                                                                                          // [0xb899508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricInteractionTool.IsHoldingCables
-	// bool IsHoldingCables();                                                                                                  // [0xb78402c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsHoldingCables();                                                                                                  // [0xb8994f0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricInteractionTool.HandleMetasoundGeneratorCrossfade
-	// void HandleMetasoundGeneratorCrossfade(float CrossfadeSeconds);                                                          // [0xb783e84] Final|Native|Public|BlueprintCallable 
+	// void HandleMetasoundGeneratorCrossfade(float CrossfadeSeconds);                                                          // [0xb8993cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetPressedInteractable
-	// class UObject* GetPressedInteractable();                                                                                 // [0xb783da4] Final|Native|Protected|BlueprintCallable 
+	// class UObject* GetPressedInteractable();                                                                                 // [0xb8992ec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetHoveredInteractableType
-	// EFabricInteractableType GetHoveredInteractableType();                                                                    // [0xb783b70] Final|Native|Protected|BlueprintCallable 
+	// EFabricInteractableType GetHoveredInteractableType();                                                                    // [0xb899138] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetHoveredInteractableHitComponent
-	// class USceneComponent* GetHoveredInteractableHitComponent();                                                             // [0xb783b58] Final|Native|Protected|BlueprintCallable 
+	// class USceneComponent* GetHoveredInteractableHitComponent();                                                             // [0xb899120] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetFabricInteractionToolState
-	// EFabricInteractionToolStates GetFabricInteractionToolState();                                                            // [0xb783b40] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// EFabricInteractionToolStates GetFabricInteractionToolState();                                                            // [0xadce47c] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetContinuousStateValue
-	// int32_t GetContinuousStateValue();                                                                                       // [0xb783aac] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// int32_t GetContinuousStateValue();                                                                                       // [0xb89908c] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetContinuousMovementValue
-	// float GetContinuousMovementValue();                                                                                      // [0xb783a84] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// float GetContinuousMovementValue();                                                                                      // [0xb899064] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetContinuousInteractionDirection
-	// EFabricContinuousInteractionDirection GetContinuousInteractionDirection();                                               // [0xb7839ec] Final|Native|Protected|BlueprintCallable 
+	// EFabricContinuousInteractionDirection GetContinuousInteractionDirection();                                               // [0xb898fcc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.GetContinuousInteractableValueNormalized
-	// float GetContinuousInteractableValueNormalized();                                                                        // [0xb7839a8] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// float GetContinuousInteractableValueNormalized();                                                                        // [0xb898f88] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricInteractionTool.DeactiveWeaponAndState
-	// void DeactiveWeaponAndState();                                                                                           // [0x8850fc8] Native|Protected|BlueprintCallable 
+	// void DeactiveWeaponAndState();                                                                                           // [0x885566c] Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ClientStopInteracting
-	// void ClientStopInteracting();                                                                                            // [0x889ccf4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientStopInteracting();                                                                                            // [0x88a160c] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/FabricRuntime.FabricInteractionTool.ClientDeactiveWeaponAndState
-	// void ClientDeactiveWeaponAndState();                                                                                     // [0x8390ae8] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientDeactiveWeaponAndState();                                                                                     // [0x8396d58] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/FabricRuntime.FabricMeshModifierBase
@@ -877,11 +878,11 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMeshTreeNode.Reset
-	// void Reset();                                                                                                            // [0xb787650] Final|Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                            // [0xb89c9d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMeshTreeNode.GenerateMeshInstanceReferences
-	// TArray<FFabricMeshInstanceReference> GenerateMeshInstanceReferences();                                                   // [0xb786b68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FFabricMeshInstanceReference> GenerateMeshInstanceReferences();                                                   // [0xb89c074] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMeshTreeNode.CopyProperties
-	// void CopyProperties(class UFabricMeshTreeNode* Other);                                                                   // [0xb7868a0] Final|Native|Public|BlueprintCallable 
+	// void CopyProperties(class UFabricMeshTreeNode* Other);                                                                   // [0xb89be2c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMeshProviderBase
@@ -901,15 +902,15 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMeshProviderBase.SetReferenceMesh
-	// void SetReferenceMesh(FFabricMeshProviderMeshReference& InMesh);                                                         // [0xb787c2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetReferenceMesh(FFabricMeshProviderMeshReference& InMesh);                                                         // [0xb89cf58] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundPatchWrapper
-/// Size: 0x0370 (0x000328 - 0x000698)
+/// Size: 0x0380 (0x000328 - 0x0006A8)
 class UFabricMetaSoundPatchWrapper : public UFabricModulatable
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1688;
+	static inline constexpr uint64_t __MDKClassSize = 1704;
 
 public:
 	SMember(FName)                                     EnabledStateInputName                                       OFFSET(getStruct<T>, {0x328, 4, 0, 0})
@@ -927,204 +928,204 @@ public:
 	DMember(bool)                                      bCanConsumeAudibleFlag                                      OFFSET(get<bool>, {0x441, 1, 0, 0})
 	DMember(bool)                                      bIsVisible                                                  OFFSET(get<bool>, {0x442, 1, 0, 0})
 	DMember(bool)                                      bIsAudible                                                  OFFSET(get<bool>, {0x443, 1, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMetaSoundOutputIntChangedBatch                            OFFSET(getStruct<T>, {0x4A8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMetaSoundOutputFloatChangedBatch                          OFFSET(getStruct<T>, {0x4B8, 16, 0, 0})
-	CMember(class UFabricMetaSoundManagerComponent*)   CurrentManager                                              OFFSET(get<T>, {0x4C8, 8, 0, 0})
-	CMember(TWeakObjectPtr<UFabricMetaSoundTickSubsystem*>) TickSubsystem                                          OFFSET(get<T>, {0x4D0, 8, 0, 0})
-	SMember(FFabricMetaSoundNodeInfo)                  CurrentNode                                                 OFFSET(getStruct<T>, {0x4D8, 240, 0, 0})
-	CMember(TWeakObjectPtr<AActor*>)                   PositionalProxyActor                                        OFFSET(get<T>, {0x5C8, 8, 0, 0})
-	CMember(TWeakObjectPtr<UAudioComponent*>)          CurrentAudioComponent                                       OFFSET(get<T>, {0x5F0, 8, 0, 0})
-	CMember(TWeakObjectPtr<UAudioComponent*>)          NewAudioComponent                                           OFFSET(get<T>, {0x5F8, 8, 0, 0})
-	SMember(FName)                                     CombinerMetaSoundType                                       OFFSET(getStruct<T>, {0x600, 4, 0, 0})
-	SMember(FName)                                     AnalyzerMetaSoundType                                       OFFSET(getStruct<T>, {0x604, 4, 0, 0})
-	CMember(TArray<FFabricMetaSoundRuntimeInputInfo>)  MetaSoundRuntimeInputInfos                                  OFFSET(get<T>, {0x608, 16, 0, 0})
-	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) ConnectedInputWrappers                                    OFFSET(get<T>, {0x618, 16, 0, 0})
-	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) PendingInputWrappers                                      OFFSET(get<T>, {0x628, 16, 0, 0})
-	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) PendingOutputWrappers                                     OFFSET(get<T>, {0x638, 16, 0, 0})
-	CMember(TArray<FMetaSoundCombinerNodeHandle>)      CombinersInUse                                              OFFSET(get<T>, {0x648, 16, 0, 0})
-	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) ConnectedOutputWrappers                                   OFFSET(get<T>, {0x658, 16, 0, 0})
-	CMember(EFabricMetaSoundPatchWrapperQuality)       PatchWrapperQuality                                         OFFSET(get<T>, {0x668, 1, 0, 0})
-	CMember(class UMetaSoundPatch*)                    LoadedMetaSoundPatch                                        OFFSET(get<T>, {0x680, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMetaSoundOutputIntChangedBatch                            OFFSET(getStruct<T>, {0x4B8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMetaSoundOutputFloatChangedBatch                          OFFSET(getStruct<T>, {0x4C8, 16, 0, 0})
+	CMember(class UFabricMetaSoundManagerComponent*)   CurrentManager                                              OFFSET(get<T>, {0x4D8, 8, 0, 0})
+	CMember(TWeakObjectPtr<UFabricMetaSoundTickSubsystem*>) TickSubsystem                                          OFFSET(get<T>, {0x4E0, 8, 0, 0})
+	SMember(FFabricMetaSoundNodeInfo)                  CurrentNode                                                 OFFSET(getStruct<T>, {0x4E8, 240, 0, 0})
+	CMember(TWeakObjectPtr<AActor*>)                   PositionalProxyActor                                        OFFSET(get<T>, {0x5D8, 8, 0, 0})
+	CMember(TWeakObjectPtr<UAudioComponent*>)          CurrentAudioComponent                                       OFFSET(get<T>, {0x600, 8, 0, 0})
+	CMember(TWeakObjectPtr<UAudioComponent*>)          NewAudioComponent                                           OFFSET(get<T>, {0x608, 8, 0, 0})
+	SMember(FName)                                     CombinerMetaSoundType                                       OFFSET(getStruct<T>, {0x610, 4, 0, 0})
+	SMember(FName)                                     AnalyzerMetaSoundType                                       OFFSET(getStruct<T>, {0x614, 4, 0, 0})
+	CMember(TArray<FFabricMetaSoundRuntimeInputInfo>)  MetaSoundRuntimeInputInfos                                  OFFSET(get<T>, {0x618, 16, 0, 0})
+	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) ConnectedInputWrappers                                    OFFSET(get<T>, {0x628, 16, 0, 0})
+	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) PendingInputWrappers                                      OFFSET(get<T>, {0x638, 16, 0, 0})
+	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) PendingOutputWrappers                                     OFFSET(get<T>, {0x648, 16, 0, 0})
+	CMember(TArray<FMetaSoundCombinerNodeHandle>)      CombinersInUse                                              OFFSET(get<T>, {0x658, 16, 0, 0})
+	CMember(TArray<class UFabricMetaSoundPatchWrapper*>) ConnectedOutputWrappers                                   OFFSET(get<T>, {0x668, 16, 0, 0})
+	CMember(EFabricMetaSoundPatchWrapperQuality)       PatchWrapperQuality                                         OFFSET(get<T>, {0x678, 1, 0, 0})
+	CMember(class UMetaSoundPatch*)                    LoadedMetaSoundPatch                                        OFFSET(get<T>, {0x690, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetStringInput
-	// void SetStringInput(FName& MetaSoundInputName, FString Value);                                                           // [0xb78abb8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetStringInput(FName& MetaSoundInputName, FString Value);                                                           // [0xb89f9fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetRunsOnServer
-	// void SetRunsOnServer(bool bAllowRunOnServer);                                                                            // [0xb78aaf8] Final|Native|Public|BlueprintCallable 
+	// void SetRunsOnServer(bool bAllowRunOnServer);                                                                            // [0xb89f97c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetPositionalProxyActor
-	// void SetPositionalProxyActor(class AActor* InLocationProxyActor);                                                        // [0xb78a9b8] Final|Native|Public|BlueprintCallable 
+	// void SetPositionalProxyActor(class AActor* InLocationProxyActor);                                                        // [0xb89f87c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetNodeEnabled
-	// void SetNodeEnabled(bool bEnabled);                                                                                      // [0xb78a8a4] Final|Native|Public|BlueprintCallable 
+	// void SetNodeEnabled(bool bEnabled);                                                                                      // [0xb89f7a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetIntInput
-	// void SetIntInput(FName& MetaSoundInputName, int32_t Value);                                                              // [0xb78a694] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIntInput(FName& MetaSoundInputName, int32_t Value);                                                              // [0xb89f5d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetFloatInput
-	// void SetFloatInput(FName& MetaSoundInputName, float Value);                                                              // [0xb78a588] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetFloatInput(FName& MetaSoundInputName, float Value);                                                              // [0xb89f4cc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetEnumInput
-	// void SetEnumInput(FName& MetaSoundInputName, char Value);                                                                // [0xb78a478] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEnumInput(FName& MetaSoundInputName, char Value);                                                                // [0xb89f3bc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.SetBoolInput
-	// void SetBoolInput(FName& MetaSoundInputName, bool bValue);                                                               // [0xb78a368] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBoolInput(FName& MetaSoundInputName, bool bValue);                                                               // [0xb89f2ac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.RemoveFromCurrentGraph
-	// void RemoveFromCurrentGraph();                                                                                           // [0xa1a3cec] Native|Public|BlueprintCallable 
+	// void RemoveFromCurrentGraph();                                                                                           // [0xa1a1b9c] Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.OnMetaSoundOutputValueChanged
-	// void OnMetaSoundOutputValueChanged(FName OutputName, FMetaSoundOutput& MetaSoundOutput);                                 // [0xb789e0c] Native|Protected|HasOutParms 
+	// void OnMetaSoundOutputValueChanged(FName OutputName, FMetaSoundOutput& MetaSoundOutput);                                 // [0xb89ee58] Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.OnMetaSoundOutputChanged
-	// void OnMetaSoundOutputChanged(FName OutputName, FMetaSoundOutput& Output);                                               // [0xb789ce0] Final|Native|Private|HasOutParms 
+	// void OnMetaSoundOutputChanged(FName OutputName, FMetaSoundOutput& Output);                                               // [0xb89ed74] Final|Native|Private|HasOutParms 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.OnMetasoundManagerEndPlay
-	// void OnMetasoundManagerEndPlay();                                                                                        // [0xb789f3c] Final|Native|Protected 
+	// void OnMetasoundManagerEndPlay();                                                                                        // [0xb89ef40] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.OnConnectedModulatorEnable
-	// void OnConnectedModulatorEnable(class UFabricMetaSoundPatchWrapper* EnabledPatchWrapper);                                // [0xb789838] Final|Native|Private 
+	// void OnConnectedModulatorEnable(class UFabricMetaSoundPatchWrapper* EnabledPatchWrapper);                                // [0xb89e8d0] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.OnAddedToManagerGraph
-	// void OnAddedToManagerGraph(class UFabricMetaSoundManagerComponent* Manager);                                             // [0xb789774] Native|Event|Protected|BlueprintEvent 
+	// void OnAddedToManagerGraph(class UFabricMetaSoundManagerComponent* Manager);                                             // [0xb89e84c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.NeedsParameterPackUpdate
-	// void NeedsParameterPackUpdate();                                                                                         // [0xb789760] Final|Native|Protected|BlueprintCallable 
+	// void NeedsParameterPackUpdate();                                                                                         // [0xb89e838] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.NeedsOutputWatcherUpdate
-	// void NeedsOutputWatcherUpdate();                                                                                         // [0xb78974c] Final|Native|Protected|BlueprintCallable 
+	// void NeedsOutputWatcherUpdate();                                                                                         // [0xb89e824] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.NeedsGeneratorHandleUpdate
-	// void NeedsGeneratorHandleUpdate();                                                                                       // [0xb789738] Final|Native|Protected|BlueprintCallable 
+	// void NeedsGeneratorHandleUpdate();                                                                                       // [0xb89e810] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.GetRunsOnServer
-	// bool GetRunsOnServer();                                                                                                  // [0xb7896b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetRunsOnServer();                                                                                                  // [0xb89e78c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.GetNodeEnabled
-	// bool GetNodeEnabled();                                                                                                   // [0xb78969c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetNodeEnabled();                                                                                                   // [0xb89e774] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.GetMusicClock
-	// class UMusicClockComponent* GetMusicClock();                                                                             // [0xb78967c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMusicClockComponent* GetMusicClock();                                                                             // [0xb89e754] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.GetMetaSoundInputNames
-	// TSet<FName> GetMetaSoundInputNames();                                                                                    // [0xb7895b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TSet<FName> GetMetaSoundInputNames();                                                                                    // [0xb89e68c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.AddToManagerGraph
-	// void AddToManagerGraph(class UFabricMetaSoundManagerComponent* Manager);                                                 // [0x5ffb5fc] Native|Public|BlueprintCallable 
+	// void AddToManagerGraph(class UFabricMetaSoundManagerComponent* Manager);                                                 // [0x60662a4] Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundPatchWrapper.AddToGraphOnFirstConnect
-	// bool AddToGraphOnFirstConnect();                                                                                         // [0x903cd58] Native|Event|Protected|BlueprintEvent 
+	// bool AddToGraphOnFirstConnect();                                                                                         // [0x9031c4c] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper
-/// Size: 0x00E0 (0x000698 - 0x000778)
+/// Size: 0x00E0 (0x0006A8 - 0x000788)
 class UFabricMetaSoundDrumPlayerPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1912;
+	static inline constexpr uint64_t __MDKClassSize = 1928;
 
 public:
-	SMember(FName)                                     PitchSampleInputName                                        OFFSET(getStruct<T>, {0x6A0, 4, 0, 0})
-	SMember(FName)                                     SlotKitInputName                                            OFFSET(getStruct<T>, {0x6A4, 4, 0, 0})
-	CMember(TArray<FString>)                           PitchSampleParams                                           OFFSET(get<T>, {0x6A8, 16, 0, 0})
-	CMember(TArray<FString>)                           SlotLinkParams                                              OFFSET(get<T>, {0x6B8, 16, 0, 0})
-	CMember(TArray<FString>)                           SlotUnlinkedKitParams                                       OFFSET(get<T>, {0x6C8, 16, 0, 0})
-	SMember(FString)                                   CurrentKitParam                                             OFFSET(getStruct<T>, {0x6D8, 16, 0, 0})
-	DMember(int32_t)                                   NumSamplesPerKit                                            OFFSET(get<int32_t>, {0x6E8, 4, 0, 0})
-	CMember(TArray<FFabricMetaSoundPatchWrapperBinding>) DrumAmplitudes                                            OFFSET(get<T>, {0x6F0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundDrumPlayerPatchDrumAmplitudesUpdate        OFFSET(getStruct<T>, {0x700, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundDrumPlayerSampleBanksLoaded                OFFSET(getStruct<T>, {0x710, 16, 0, 0})
-	CMember(TArray<class UObject*>)                    CurrentKitSamples                                           OFFSET(get<T>, {0x768, 16, 0, 0})
+	SMember(FName)                                     PitchSampleInputName                                        OFFSET(getStruct<T>, {0x6B0, 4, 0, 0})
+	SMember(FName)                                     SlotKitInputName                                            OFFSET(getStruct<T>, {0x6B4, 4, 0, 0})
+	CMember(TArray<FString>)                           PitchSampleParams                                           OFFSET(get<T>, {0x6B8, 16, 0, 0})
+	CMember(TArray<FString>)                           SlotLinkParams                                              OFFSET(get<T>, {0x6C8, 16, 0, 0})
+	CMember(TArray<FString>)                           SlotUnlinkedKitParams                                       OFFSET(get<T>, {0x6D8, 16, 0, 0})
+	SMember(FString)                                   CurrentKitParam                                             OFFSET(getStruct<T>, {0x6E8, 16, 0, 0})
+	DMember(int32_t)                                   NumSamplesPerKit                                            OFFSET(get<int32_t>, {0x6F8, 4, 0, 0})
+	CMember(TArray<FFabricMetaSoundPatchWrapperBinding>) DrumAmplitudes                                            OFFSET(get<T>, {0x700, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundDrumPlayerPatchDrumAmplitudesUpdate        OFFSET(getStruct<T>, {0x710, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundDrumPlayerSampleBanksLoaded                OFFSET(getStruct<T>, {0x720, 16, 0, 0})
+	CMember(TArray<class UObject*>)                    CurrentKitSamples                                           OFFSET(get<T>, {0x778, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper.SlotUnlinkedKitParamChanged
-	// void SlotUnlinkedKitParamChanged(int32_t PitchSampleIndex, int32_t Value);                                               // [0xb788108] Final|Native|Private 
+	// void SlotUnlinkedKitParamChanged(int32_t PitchSampleIndex, int32_t Value);                                               // [0xb89d2d0] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper.SlotLinkedParamChanged
-	// void SlotLinkedParamChanged(int32_t PitchSampleIndex, bool Value);                                                       // [0xb787fc8] Final|Native|Private 
+	// void SlotLinkedParamChanged(int32_t PitchSampleIndex, bool Value);                                                       // [0xb89d20c] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper.PitchSampleParamChanged
-	// void PitchSampleParamChanged(int32_t PitchSampleIndex, int32_t Value);                                                   // [0xb787384] Final|Native|Private 
+	// void PitchSampleParamChanged(int32_t PitchSampleIndex, int32_t Value);                                                   // [0xb89c7b4] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper.LoadDrumPlayerSampleBanks
-	// void LoadDrumPlayerSampleBanks(TArray<TWeakObjectPtr<UFabricMetasoundDrumPlayerSampleBankAsset*>>& SampleBankArray, TSet<int32_t>& KitNumbersToLoad); // [0xb7870e8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void LoadDrumPlayerSampleBanks(TArray<TWeakObjectPtr<UFabricMetasoundDrumPlayerSampleBankAsset*>>& SampleBankArray, TSet<int32_t>& KitNumbersToLoad); // [0xb89c558] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundDrumPlayerPatchWrapper.KitIndexChanged
-	// void KitIndexChanged(FName& Param, int32_t Value);                                                                       // [0xb786fdc] Final|Native|Private|HasOutParms 
+	// void KitIndexChanged(FName& Param, int32_t Value);                                                                       // [0xb89c44c] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundWetDryPatchWrapper
-/// Size: 0x00A0 (0x000698 - 0x000738)
+/// Size: 0x00A0 (0x0006A8 - 0x000748)
 class UFabricMetaSoundWetDryPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1848;
+	static inline constexpr uint64_t __MDKClassSize = 1864;
 
 public:
-	SMember(FFabricMetaSoundPatchWrapperWetDryOutputBinding) WetDryOutputBinding                                   OFFSET(getStruct<T>, {0x698, 144, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWetDryOutputSignalUpdate                                  OFFSET(getStruct<T>, {0x728, 16, 0, 0})
+	SMember(FFabricMetaSoundPatchWrapperWetDryOutputBinding) WetDryOutputBinding                                   OFFSET(getStruct<T>, {0x6A8, 144, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWetDryOutputSignalUpdate                                  OFFSET(getStruct<T>, {0x738, 16, 0, 0})
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundEchoPatchWrapper
-/// Size: 0x0018 (0x000738 - 0x000750)
+/// Size: 0x0018 (0x000748 - 0x000760)
 class UFabricMetaSoundEchoPatchWrapper : public UFabricMetaSoundWetDryPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1872;
+	static inline constexpr uint64_t __MDKClassSize = 1888;
 
 public:
-	DMember(bool)                                      bAllowWetSignalWaveformTexture                              OFFSET(get<bool>, {0x738, 1, 0, 0})
-	DMember(bool)                                      bAllowDrySignalWaveformTexture                              OFFSET(get<bool>, {0x739, 1, 0, 0})
-	CMember(class UFabricWaveformTexture*)             WetSignalWaveformTexture                                    OFFSET(get<T>, {0x740, 8, 0, 0})
-	CMember(class UFabricWaveformTexture*)             DrySignalWaveformTexture                                    OFFSET(get<T>, {0x748, 8, 0, 0})
+	DMember(bool)                                      bAllowWetSignalWaveformTexture                              OFFSET(get<bool>, {0x748, 1, 0, 0})
+	DMember(bool)                                      bAllowDrySignalWaveformTexture                              OFFSET(get<bool>, {0x749, 1, 0, 0})
+	CMember(class UFabricWaveformTexture*)             WetSignalWaveformTexture                                    OFFSET(get<T>, {0x750, 8, 0, 0})
+	CMember(class UFabricWaveformTexture*)             DrySignalWaveformTexture                                    OFFSET(get<T>, {0x758, 8, 0, 0})
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundInstrumentPlayerPatchWrapper
-/// Size: 0x00E0 (0x000698 - 0x000778)
+/// Size: 0x00E0 (0x0006A8 - 0x000788)
 class UFabricMetaSoundInstrumentPlayerPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1912;
+	static inline constexpr uint64_t __MDKClassSize = 1928;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnFFTResultsUpdated                                         OFFSET(getStruct<T>, {0x698, 16, 0, 0})
-	SMember(FFabricMetaSoundPatchWrapperBinding)       FFTAnalysisOutputBinding                                    OFFSET(getStruct<T>, {0x6A8, 72, 0, 0})
-	DMember(int32_t)                                   FFTCPDStartIndex                                            OFFSET(get<int32_t>, {0x6F0, 4, 0, 0})
-	DMember(int32_t)                                   FFTLength                                                   OFFSET(get<int32_t>, {0x6F4, 4, 0, 0})
-	CMember(TWeakObjectPtr<UFusionPatch*>)             CurrentFusionPatch                                          OFFSET(get<T>, {0x770, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFFTResultsUpdated                                         OFFSET(getStruct<T>, {0x6A8, 16, 0, 0})
+	SMember(FFabricMetaSoundPatchWrapperBinding)       FFTAnalysisOutputBinding                                    OFFSET(getStruct<T>, {0x6B8, 72, 0, 0})
+	DMember(int32_t)                                   FFTCPDStartIndex                                            OFFSET(get<int32_t>, {0x700, 4, 0, 0})
+	DMember(int32_t)                                   FFTLength                                                   OFFSET(get<int32_t>, {0x704, 4, 0, 0})
+	CMember(TWeakObjectPtr<UFusionPatch*>)             CurrentFusionPatch                                          OFFSET(get<T>, {0x780, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundInstrumentPlayerPatchWrapper.SetFusionPatch
-	// void SetFusionPatch(class UFusionPatch* FusionPatch);                                                                    // [0xb7878ac] Final|Native|Public|BlueprintCallable 
+	// void SetFusionPatch(class UFusionPatch* FusionPatch);                                                                    // [0xb89cc34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundInstrumentPlayerPatchWrapper.DriveFFTDataOnPrimitive
-	// void DriveFFTDataOnPrimitive(class UPrimitiveComponent* Primitive);                                                      // [0xb786960] Final|Native|Public|BlueprintCallable 
+	// void DriveFFTDataOnPrimitive(class UPrimitiveComponent* Primitive);                                                      // [0xb89beac] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundModulatorPatchWrapper
-/// Size: 0x0030 (0x000698 - 0x0006C8)
+/// Size: 0x0030 (0x0006A8 - 0x0006D8)
 class UFabricMetaSoundModulatorPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1736;
+	static inline constexpr uint64_t __MDKClassSize = 1752;
 
 public:
-	SMember(FName)                                     IntModulationOutputName                                     OFFSET(getStruct<T>, {0x698, 4, 0, 0})
-	SMember(FName)                                     FloatModulationOutputName                                   OFFSET(getStruct<T>, {0x69C, 4, 0, 0})
-	SMember(FName)                                     BoolModulationOutputName                                    OFFSET(getStruct<T>, {0x6A0, 4, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPatchWrapperVisibilityChanged                             OFFSET(getStruct<T>, {0x6A8, 16, 0, 0})
-	CMember(class UPlaylistUserOptionBase*)            CurrentUserOption                                           OFFSET(get<T>, {0x6B8, 8, 0, 0})
-	CMember(class UFabricMetaSoundUserOption*)         MetaSoundUserOption                                         OFFSET(get<T>, {0x6C0, 8, 0, 0})
+	SMember(FName)                                     IntModulationOutputName                                     OFFSET(getStruct<T>, {0x6A8, 4, 0, 0})
+	SMember(FName)                                     FloatModulationOutputName                                   OFFSET(getStruct<T>, {0x6AC, 4, 0, 0})
+	SMember(FName)                                     BoolModulationOutputName                                    OFFSET(getStruct<T>, {0x6B0, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPatchWrapperVisibilityChanged                             OFFSET(getStruct<T>, {0x6B8, 16, 0, 0})
+	CMember(class UPlaylistUserOptionBase*)            CurrentUserOption                                           OFFSET(get<T>, {0x6C8, 8, 0, 0})
+	CMember(class UFabricMetaSoundUserOption*)         MetaSoundUserOption                                         OFFSET(get<T>, {0x6D0, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundModulatorPatchWrapper.SetUserOption
-	// void SetUserOption(class UPlaylistUserOptionBase* UserOption);                                                           // [0xb78b2fc] Final|Native|Public|BlueprintCallable 
+	// void SetUserOption(class UPlaylistUserOptionBase* UserOption);                                                           // [0xb8a0140] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundModulatorPatchWrapper.ConnectToInput
-	// bool ConnectToInput(FFabricMetaSoundNodeInfo& Node, FName InputName, FName InputType);                                   // [0xb7892e8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool ConnectToInput(FFabricMetaSoundNodeInfo& Node, FName InputName, FName InputType);                                   // [0xb89e3c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundLFOPatchWrapper
-/// Size: 0x0018 (0x0006C8 - 0x0006E0)
+/// Size: 0x0018 (0x0006D8 - 0x0006F0)
 class UFabricMetaSoundLFOPatchWrapper : public UFabricMetaSoundModulatorPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1760;
+	static inline constexpr uint64_t __MDKClassSize = 1776;
 
 public:
-	CMember(class UFabricFloatProviderWave*)           LFOFloatProvider                                            OFFSET(get<T>, {0x6C8, 8, 0, 0})
-	SMember(FName)                                     FreePhaseStartName                                          OFFSET(getStruct<T>, {0x6D0, 4, 0, 0})
-	SMember(FName)                                     RandomSeedInputName                                         OFFSET(getStruct<T>, {0x6D4, 4, 0, 0})
+	CMember(class UFabricFloatProviderWave*)           LFOFloatProvider                                            OFFSET(get<T>, {0x6D8, 8, 0, 0})
+	SMember(FName)                                     FreePhaseStartName                                          OFFSET(getStruct<T>, {0x6E0, 4, 0, 0})
+	SMember(FName)                                     RandomSeedInputName                                         OFFSET(getStruct<T>, {0x6E4, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundLFOPatchWrapper.UpdateRandomSeed
-	// void UpdateRandomSeed();                                                                                                 // [0xb7883d4] Final|Native|Public|BlueprintCallable 
+	// void UpdateRandomSeed();                                                                                                 // [0xb89d4a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundManagerComponent
-/// Size: 0x0528 (0x0000A0 - 0x0005C8)
+/// Size: 0x0550 (0x0000A0 - 0x0005F0)
 class UFabricMetaSoundManagerComponent : public UActorComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1480;
+	static inline constexpr uint64_t __MDKClassSize = 1520;
 
 public:
 	CMember(TWeakObjectPtr<UMetaSoundPatch*>)          HarmonixMusicProviderPatch                                  OFFSET(get<T>, {0xA8, 32, 0, 0})
@@ -1149,107 +1150,129 @@ public:
 	DMember(float)                                     BlockRateOverride                                           OFFSET(get<float>, {0x218, 4, 0, 0})
 	SMember(FName)                                     QualityOverride                                             OFFSET(getStruct<T>, {0x21C, 4, 0, 0})
 	SMember(FMulticastInlineDelegate)                  OnMetasoundGeneratorCrossfadeStarted                        OFFSET(getStruct<T>, {0x238, 16, 0, 0})
-	CMember(TArray<FFabricSignificanceBasedUpdateBucketRuntime>) SignificanceRuntimeBuckets                        OFFSET(get<T>, {0x2C0, 16, 0, 0})
-	CMember(class UFabricSignificanceAsset*)           SignificanceBasedUpdate                                     OFFSET(get<T>, {0x2D0, 8, 0, 0})
-	DMember(float)                                     InitialCooldownTimeInSeconds                                OFFSET(get<float>, {0x2D8, 4, 0, 0})
-	CMember(class UMetaSoundSourceBuilder*)            SourceBuilder                                               OFFSET(get<T>, {0x2E0, 8, 0, 0})
-	CMember(class UMusicClockComponent*)               MusicClock                                                  OFFSET(get<T>, {0x2E8, 8, 0, 0})
-	CMember(TArray<class UAudioComponent*>)            PlaybackAudioComponents                                     OFFSET(get<T>, {0x2F0, 16, 0, 0})
-	CMember(TArray<class UMetasoundOfflinePlayerComponent*>) ServerPlaybackComponents                              OFFSET(get<T>, {0x300, 16, 0, 0})
-	CMember(TWeakObjectPtr<ABuildingActor*>)           StartMetasoundLockDevice                                    OFFSET(get<T>, {0x360, 8, 0, 0})
-	SMember(FFabricMetaSoundNodeInfo)                  HarmonixMusicProviderNode                                   OFFSET(getStruct<T>, {0x368, 240, 0, 0})
-	SMember(FMetaSoundBuilderNodeOutputHandle)         OnPlayNodeOutput                                            OFFSET(getStruct<T>, {0x458, 32, 0, 0})
-	SMember(FMetaSoundBuilderNodeInputHandle)          OnFinishedNodeInput                                         OFFSET(getStruct<T>, {0x478, 32, 0, 0})
-	CMember(TArray<FMetaSoundBuilderNodeInputHandle>)  AudioOutNodeInputs                                          OFFSET(get<T>, {0x498, 16, 0, 0})
-	CMember(TMap<UMetaSoundPatch*, FFabricMetaSoundNodePool>) FreeMetaSoundNodes                                   OFFSET(get<T>, {0x4E0, 80, 0, 0})
-	CMember(TMap<FName, FFabricLoadedUtilityPatches>)  UtilityNodeTypesToPatches                                   OFFSET(get<T>, {0x530, 80, 0, 0})
-	DMember(bool)                                      bGraphDirty                                                 OFFSET(get<bool>, {0x590, 1, 0, 0})
-	DMember(bool)                                      bIsAudioless                                                OFFSET(get<bool>, {0x591, 1, 0, 0})
-	DMember(bool)                                      bHasCompletedInitialCooldown                                OFFSET(get<bool>, {0x592, 1, 0, 0})
-	CMember(EFabricMetasoundPlayState)                 CurrentPlayState                                            OFFSET(get<T>, {0x593, 1, 0, 0})
-	CMember(EFabricMetasoundPlayState)                 PlayStateAfterRebuild                                       OFFSET(get<T>, {0x594, 1, 0, 0})
-	DMember(float)                                     ReplicatedReceivedSignalBufferDuration                      OFFSET(get<float>, {0x598, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMusicEventPriorityChanged                                 OFFSET(getStruct<T>, {0x2C0, 16, 0, 0})
+	CMember(TArray<FFabricSignificanceBasedUpdateBucketRuntime>) SignificanceRuntimeBuckets                        OFFSET(get<T>, {0x2E0, 16, 0, 0})
+	CMember(class UFabricSignificanceAsset*)           SignificanceBasedUpdate                                     OFFSET(get<T>, {0x2F0, 8, 0, 0})
+	DMember(float)                                     InitialCooldownTimeInSeconds                                OFFSET(get<float>, {0x2F8, 4, 0, 0})
+	CMember(class UMetaSoundSourceBuilder*)            SourceBuilder                                               OFFSET(get<T>, {0x300, 8, 0, 0})
+	CMember(class UMusicClockComponent*)               MusicClock                                                  OFFSET(get<T>, {0x308, 8, 0, 0})
+	CMember(TArray<class UAudioComponent*>)            PlaybackAudioComponents                                     OFFSET(get<T>, {0x310, 16, 0, 0})
+	CMember(TArray<class UMetasoundOfflinePlayerComponent*>) ServerPlaybackComponents                              OFFSET(get<T>, {0x320, 16, 0, 0})
+	CMember(TWeakObjectPtr<ABuildingActor*>)           StartMetasoundLockDevice                                    OFFSET(get<T>, {0x380, 8, 0, 0})
+	SMember(FFabricMetaSoundNodeInfo)                  HarmonixMusicProviderNode                                   OFFSET(getStruct<T>, {0x388, 240, 0, 0})
+	SMember(FMetaSoundBuilderNodeOutputHandle)         OnPlayNodeOutput                                            OFFSET(getStruct<T>, {0x478, 32, 0, 0})
+	SMember(FMetaSoundBuilderNodeInputHandle)          OnFinishedNodeInput                                         OFFSET(getStruct<T>, {0x498, 32, 0, 0})
+	CMember(TArray<FMetaSoundBuilderNodeInputHandle>)  AudioOutNodeInputs                                          OFFSET(get<T>, {0x4B8, 16, 0, 0})
+	CMember(TMap<UMetaSoundPatch*, FFabricMetaSoundNodePool>) FreeMetaSoundNodes                                   OFFSET(get<T>, {0x500, 80, 0, 0})
+	CMember(TMap<FName, FFabricLoadedUtilityPatches>)  UtilityNodeTypesToPatches                                   OFFSET(get<T>, {0x550, 80, 0, 0})
+	DMember(bool)                                      bGraphDirty                                                 OFFSET(get<bool>, {0x5B0, 1, 0, 0})
+	DMember(bool)                                      bIsAudioless                                                OFFSET(get<bool>, {0x5B1, 1, 0, 0})
+	DMember(bool)                                      bHasCompletedInitialCooldown                                OFFSET(get<bool>, {0x5B2, 1, 0, 0})
+	CMember(EFabricMetasoundPlayState)                 CurrentPlayState                                            OFFSET(get<T>, {0x5B3, 1, 0, 0})
+	CMember(EFabricMetasoundPlayState)                 PlayStateAfterRebuild                                       OFFSET(get<T>, {0x5B4, 1, 0, 0})
+	CMember(EJamFabricSyncType)                        JamSyncType                                                 OFFSET(get<T>, {0x5B5, 1, 0, 0})
+	CMember(EFabricMetasoundMusicEventPriority)        MusicEventPriority                                          OFFSET(get<T>, {0x5B6, 1, 0, 0})
+	SMember(FName)                                     ClientCurrentAudibleMusicEventGroup                         OFFSET(getStruct<T>, {0x5B8, 4, 0, 0})
+	SMember(FGameplayTag)                              AboveEmotesTag                                              OFFSET(getStruct<T>, {0x5BC, 4, 0, 0})
+	SMember(FGameplayTag)                              BelowEmotesTag                                              OFFSET(getStruct<T>, {0x5C0, 4, 0, 0})
+	DMember(float)                                     ReplicatedReceivedSignalBufferDuration                      OFFSET(get<float>, {0x5C4, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.UnregisterAsAudible
-	// void UnregisterAsAudible(class AActor* Device);                                                                          // [0xb788314] Final|Native|Public|BlueprintCallable 
+	// void UnregisterAsAudible(class AActor* Device);                                                                          // [0xb89d420] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.StopMetasound
-	// bool StopMetasound(class ABuildingActor* InStartMetasoundLockDevice);                                                    // [0xb788244] Final|Native|Public|BlueprintCallable 
+	// bool StopMetasound(class ABuildingActor* InStartMetasoundLockDevice);                                                    // [0xb89d390] Final|Native|Public|BlueprintCallable 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.ShouldSeekToStartOnGameReset
+	// bool ShouldSeekToStartOnGameReset();                                                                                     // [0xb89d1f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetTimeSignature
-	// void SetTimeSignature(int32_t Numerator, int32_t Denominator);                                                           // [0xb787e8c] Final|Native|Public|BlueprintCallable 
+	// void SetTimeSignature(int32_t Numerator, int32_t Denominator);                                                           // [0xb89d130] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetTempo
-	// void SetTempo(float Tempo);                                                                                              // [0xb787dc8] Final|Native|Public|BlueprintCallable 
+	// void SetTempo(float Tempo);                                                                                              // [0xb89d0b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetSpeed
-	// void SetSpeed(float Speed);                                                                                              // [0xb787d04] Final|Native|Public|BlueprintCallable 
+	// void SetSpeed(float Speed);                                                                                              // [0xb89d030] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetMusicKey
-	// void SetMusicKey(EMusicKey Key, EMusicKeyMode Mode);                                                                     // [0xb787af0] Final|Native|Public|BlueprintCallable 
+	// void SetMusicKey(EMusicKey Key, EMusicKeyMode Mode);                                                                     // [0xb89ce94] Final|Native|Public|BlueprintCallable 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetMusicEventPriority
+	// void SetMusicEventPriority(EFabricMetasoundMusicEventPriority InMusicEventPriority);                                     // [0xb89cdf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetMusicClock
-	// void SetMusicClock(class UMusicClockComponent* MusicClockComponent);                                                     // [0xb787a30] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClock(class UMusicClockComponent* MusicClockComponent);                                                     // [0xb89cd78] Final|Native|Public|BlueprintCallable 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetCurrentJamSyncType
+	// void SetCurrentJamSyncType(EJamFabricSyncType& InJamSyncType);                                                           // [0xb89cba8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SetAudioComponents
-	// void SetAudioComponents(TArray<UAudioComponent*> AudioComponents);                                                       // [0xb7877bc] Final|Native|Public|BlueprintCallable 
+	// void SetAudioComponents(TArray<UAudioComponent*> AudioComponents);                                                       // [0xb89cafc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SeekToTimestamp
-	// void SeekToTimestamp(FMusicTimestamp& Timestamp);                                                                        // [0xb787728] Final|Native|Public|HasOutParms 
+	// void SeekToTimestamp(FMusicTimestamp& Timestamp);                                                                        // [0xb89ca68] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.SeekToMs
-	// void SeekToMs(float Ms);                                                                                                 // [0xb787664] Final|Native|Public  
+	// void SeekToMs(float Ms);                                                                                                 // [0xb89c9e8] Final|Native|Public  
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.RegisterAsAudible
-	// void RegisterAsAudible(class AActor* Device);                                                                            // [0xb787590] Final|Native|Public|BlueprintCallable 
+	// void RegisterAsAudible(class AActor* Device, FName& AudibleEventGroup);                                                  // [0xb89c904] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.PlayMetasound
-	// bool PlayMetasound(class ABuildingActor* InStartMetasoundLockDevice);                                                    // [0xb7874c0] Final|Native|Public|BlueprintCallable 
+	// bool PlayMetasound(class ABuildingActor* InStartMetasoundLockDevice);                                                    // [0xb89c874] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.PauseMetasound
-	// bool PauseMetasound();                                                                                                   // [0xb787360] Final|Native|Public|BlueprintCallable 
+	// bool PauseMetasound();                                                                                                   // [0xb89c790] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.OnGeneratorJustStarted
-	// void OnGeneratorJustStarted(int32_t ComponentIndex);                                                                     // [0xb7872a0] Final|Native|Private 
+	// void OnGeneratorJustStarted(int32_t ComponentIndex);                                                                     // [0xb89c710] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.NotifyGraphChanged
-	// void NotifyGraphChanged();                                                                                               // [0xb787288] Final|Native|Public|BlueprintCallable 
+	// void NotifyGraphChanged();                                                                                               // [0xb89c6f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.InvalidateMetasoundGeneratorHandle
-	// void InvalidateMetasoundGeneratorHandle();                                                                               // [0xb786fc8] Final|Native|Public|BlueprintCallable 
+	// void InvalidateMetasoundGeneratorHandle();                                                                               // [0xb89c438] Final|Native|Public|BlueprintCallable 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMusicEventTag
+	// FGameplayTag GetMusicEventTag(EFabricMetasoundMusicEventPriority InMusicEventPriority);                                  // [0xb89c3a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMusicEventPriority
+	// EFabricMetasoundMusicEventPriority GetMusicEventPriority();                                                              // [0x60643b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMusicClock
-	// class UMusicClockComponent* GetMusicClock();                                                                             // [0xa3cd1e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMusicClockComponent* GetMusicClock();                                                                             // [0x3602570] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMetasoundOutputNodeName
-	// FName GetMetasoundOutputNodeName(FName NodeName, FName OutputName);                                                      // [0xb786e84] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetMetasoundOutputNodeName(FName NodeName, FName OutputName);                                                      // [0xb89c2ec] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMetaSoundNodeForWrapper
-	// FFabricMetaSoundNodeInfo GetMetaSoundNodeForWrapper(class UFabricMetaSoundPatchWrapper* PatchWrapper);                   // [0xb786c3c] Final|Native|Public|BlueprintCallable 
+	// FFabricMetaSoundNodeInfo GetMetaSoundNodeForWrapper(class UFabricMetaSoundPatchWrapper* PatchWrapper);                   // [0xb89c170] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetMetasoundInputNodeName
-	// FName GetMetasoundInputNodeName(FName NodeName, FName InputName);                                                        // [0xb786d40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetMetasoundInputNodeName(FName NodeName, FName InputName);                                                        // [0xb89c234] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetCurrentPlaystate
-	// EFabricMetasoundPlayState GetCurrentPlaystate();                                                                         // [0xb786c24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFabricMetasoundPlayState GetCurrentPlaystate();                                                                         // [0xb89c158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetCurrentPlaybackAudioComponent
-	// class UAudioComponent* GetCurrentPlaybackAudioComponent();                                                               // [0xb786c04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAudioComponent* GetCurrentPlaybackAudioComponent();                                                               // [0xb89c138] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetCurrentMusicEventTag
+	// FGameplayTag GetCurrentMusicEventTag();                                                                                  // [0xb89c110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetCurrentJamSyncType
+	// EJamFabricSyncType GetCurrentJamSyncType();                                                                              // [0x60643cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetCurrentClientAudibleMusicEventGroup
+	// FName GetCurrentClientAudibleMusicEventGroup();                                                                          // [0x38e5f2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.GetBuilder
-	// class UMetaSoundSourceBuilder* GetBuilder();                                                                             // [0x2f4f448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMetaSoundSourceBuilder* GetBuilder();                                                                             // [0xa0dd368] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.FreeMetaSoundNode
-	// void FreeMetaSoundNode(FFabricMetaSoundNodeInfo& Node);                                                                  // [0xb786aa4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void FreeMetaSoundNode(FFabricMetaSoundNodeInfo& Node);                                                                  // [0xb89bfb0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.AreAllPatchesReady
-	// bool AreAllPatchesReady();                                                                                               // [0xb78687c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AreAllPatchesReady();                                                                                               // [0xb89be08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.AddOutputNodeForOutputVertex
-	// void AddOutputNodeForOutputVertex(FMetaSoundBuilderNodeOutputHandle& OutputVertex, FName& NodeName, FName& OutOutputName, EMetaSoundBuilderResult& Result); // [0xb7866e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddOutputNodeForOutputVertex(FMetaSoundBuilderNodeOutputHandle& OutputVertex, FName& NodeName, FName& OutOutputName, EMetaSoundBuilderResult& Result); // [0xb89bc70] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundManagerComponent.AddInputNodeForNodeByNameBP
-	// void AddInputNodeForNodeByNameBP(FFabricMetaSoundNodeInfo& InOutNode, EFabricUserOptionType UserOptionType, FName& InputName); // [0xb7864f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddInputNodeForNodeByNameBP(FFabricMetaSoundNodeInfo& InOutNode, EFabricUserOptionType UserOptionType, FName& InputName); // [0xb89ba7c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricNoteTriggerPatchWrapper
-/// Size: 0x0068 (0x000698 - 0x000700)
+/// Size: 0x0068 (0x0006A8 - 0x000710)
 class UFabricNoteTriggerPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1792;
+	static inline constexpr uint64_t __MDKClassSize = 1808;
 
 public:
-	SMember(FName)                                     NoteOutputName                                              OFFSET(getStruct<T>, {0x698, 4, 0, 0})
-	SMember(FString)                                   OctaveParam                                                 OFFSET(getStruct<T>, {0x6A0, 16, 0, 0})
-	CMember(TArray<FString>)                           TriggerNoteParams                                           OFFSET(get<T>, {0x6B0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAnyMidiEventPassed                                        OFFSET(getStruct<T>, {0x6C0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMatchingMidiEventPassed                                   OFFSET(getStruct<T>, {0x6D0, 16, 0, 0})
+	SMember(FName)                                     NoteOutputName                                              OFFSET(getStruct<T>, {0x6A8, 4, 0, 0})
+	SMember(FString)                                   OctaveParam                                                 OFFSET(getStruct<T>, {0x6B0, 16, 0, 0})
+	CMember(TArray<FString>)                           TriggerNoteParams                                           OFFSET(get<T>, {0x6C0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAnyMidiEventPassed                                        OFFSET(getStruct<T>, {0x6D0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMatchingMidiEventPassed                                   OFFSET(getStruct<T>, {0x6E0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricNoteTriggerPatchWrapper.OnTriggerNoteChanged
-	// void OnTriggerNoteChanged(int32_t NoteIndex, bool bTriggerActive);                                                       // [0xb78a04c] Final|Native|Protected 
+	// void OnTriggerNoteChanged(int32_t NoteIndex, bool bTriggerActive);                                                       // [0xb89f050] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricNoteTriggerPatchWrapper.OnOctaveChanged
-	// void OnOctaveChanged(FName& ParamName, int32_t InOctave);                                                                // [0xb789f50] Final|Native|Protected|HasOutParms 
+	// void OnOctaveChanged(FName& ParamName, int32_t InOctave);                                                                // [0xb89ef54] Final|Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricNoteTriggerPatchWrapper.OnMetaSoundMidiEventPassed
-	// void OnMetaSoundMidiEventPassed(FName OutputName, FMetaSoundOutput& Output);                                             // [0xb789b8c] Final|Native|Protected|HasOutParms 
+	// void OnMetaSoundMidiEventPassed(FName OutputName, FMetaSoundOutput& Output);                                             // [0xb89ec5c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundTreeNode
@@ -1267,56 +1290,56 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundTreeNode.Reset
-	// void Reset();                                                                                                            // [0xb78a18c] Final|Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                            // [0xb89f114] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundTreeNode.GetValidChildren
-	// TArray<UFabricMetaSoundTreeNode*> GetValidChildren();                                                                    // [0xb7896cc] Final|Native|Public|BlueprintCallable 
+	// TArray<UFabricMetaSoundTreeNode*> GetValidChildren();                                                                    // [0xb89e7a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricMetaSoundTreeNode.ConnectToChildNodes
-	// void ConnectToChildNodes();                                                                                              // [0xb7892d4] Final|Native|Public|BlueprintCallable 
+	// void ConnectToChildNodes();                                                                                              // [0xb89e3ac] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundSequencerPatchWrapper
-/// Size: 0x0008 (0x000698 - 0x0006A0)
+/// Size: 0x0008 (0x0006A8 - 0x0006B0)
 class UFabricMetaSoundSequencerPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1696;
+	static inline constexpr uint64_t __MDKClassSize = 1712;
 
 public:
-	CMember(class UMidiStepSequence*)                  CurrentStepSequence                                         OFFSET(get<T>, {0x698, 8, 0, 0})
+	CMember(class UMidiStepSequence*)                  CurrentStepSequence                                         OFFSET(get<T>, {0x6A8, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundSequencerPatchWrapper.SetMidiStepSequence
-	// void SetMidiStepSequence(class UMidiStepSequence* StepSequence);                                                         // [0xb78a7a0] Final|Native|Public|BlueprintCallable 
+	// void SetMidiStepSequence(class UMidiStepSequence* StepSequence);                                                         // [0xb89f6e4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundSpeakerPatchWrapper
-/// Size: 0x0030 (0x000698 - 0x0006C8)
+/// Size: 0x0030 (0x0006A8 - 0x0006D8)
 class UFabricMetaSoundSpeakerPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1736;
+	static inline constexpr uint64_t __MDKClassSize = 1752;
 
 public:
-	SMember(FName)                                     SpeakerEnabledMetasoundParam                                OFFSET(getStruct<T>, {0x698, 4, 0, 0})
-	CMember(TArray<FFabricMetaSoundSpeakerPatchWrapperEqBandsBinding>) EqBands                                     OFFSET(get<T>, {0x6A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundSpeakerPatchEqBandUpdate                   OFFSET(getStruct<T>, {0x6B0, 16, 0, 0})
+	SMember(FName)                                     SpeakerEnabledMetasoundParam                                OFFSET(getStruct<T>, {0x6A8, 4, 0, 0})
+	CMember(TArray<FFabricMetaSoundSpeakerPatchWrapperEqBandsBinding>) EqBands                                     OFFSET(get<T>, {0x6B0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFabricMetaSoundSpeakerPatchEqBandUpdate                   OFFSET(getStruct<T>, {0x6C0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricMetaSoundSpeakerPatchWrapper.SetAudioBusFromSourceBus
-	// void SetAudioBusFromSourceBus(class USoundSourceBus* Bus);                                                               // [0xb78a1a0] Final|Native|Public|BlueprintCallable 
+	// void SetAudioBusFromSourceBus(class USoundSourceBus* Bus);                                                               // [0xb89f128] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundSplitterPatchWrapper
-/// Size: 0x0058 (0x000698 - 0x0006F0)
+/// Size: 0x0058 (0x0006A8 - 0x000700)
 class UFabricMetaSoundSplitterPatchWrapper : public UFabricMetaSoundPatchWrapper
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1776;
+	static inline constexpr uint64_t __MDKClassSize = 1792;
 
 public:
-	CMember(TMap<FName, FFabricMetaSoundNodeInfo>)     SplitterNodes                                               OFFSET(get<T>, {0x6A0, 80, 0, 0})
+	CMember(TMap<FName, FFabricMetaSoundNodeInfo>)     SplitterNodes                                               OFFSET(get<T>, {0x6B0, 80, 0, 0})
 };
 
 /// Class /Script/FabricRuntime.FabricMetaSoundTickSubsystem
@@ -1351,9 +1374,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricModulatorSource.GetUserOption
-	// class UPlaylistUserOptionBase* GetUserOption(FString Property);                                                          // [0xb78f9c8] Native|Event|Public|BlueprintEvent|Const 
+	// class UPlaylistUserOptionBase* GetUserOption(FString Property);                                                          // [0xb8a43a4] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/FabricRuntime.FabricModulatorSource.GetModulators
-	// void GetModulators(class UFabricModulatable* Modulatable);                                                               // [0x80b75fc] Native|Event|Public|BlueprintEvent 
+	// void GetModulators(class UFabricModulatable* Modulatable);                                                               // [0x80c6d98] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricModulatorDevice
@@ -1368,7 +1391,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricModulatorDevice.SetUserOption
-	// void SetUserOption(EFabricUserOptionType UserOptionType, class UPlaylistUserOptionBase* UserOption, class UObject* ModulatorObject); // [0xb792cc0] Native|Event|Public|BlueprintEvent 
+	// void SetUserOption(EFabricUserOptionType UserOptionType, class UPlaylistUserOptionBase* UserOption, class UObject* ModulatorObject); // [0xb8a6bd4] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FabricRuntime.FabricProgressorManager
@@ -1387,17 +1410,17 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricProgressorManager.SetGlobalProgression
-	// void SetGlobalProgression(FFabricProgressionPreset& InProgression, int32_t InPresetNumber);                              // [0xb791efc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetGlobalProgression(FFabricProgressionPreset& InProgression, int32_t InPresetNumber);                              // [0xb8a62e0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricProgressorManager.OnProgressionChanged__DelegateSignature
-	// void OnProgressionChanged__DelegateSignature();                                                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnProgressionChanged__DelegateSignature();                                                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/FabricRuntime.FabricProgressorManager.IsProgressionGlobal
-	// bool IsProgressionGlobal(FFabricProgressionPreset& InProgression);                                                       // [0xb790ad0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsProgressionGlobal(FFabricProgressionPreset& InProgression);                                                       // [0xb8a52ec] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricProgressorManager.HasActiveGlobalProgression
-	// bool HasActiveGlobalProgression();                                                                                       // [0xb7900c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasActiveGlobalProgression();                                                                                       // [0xb8a4a5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricProgressorManager.GetGlobalProgression
-	// FFabricProgressionPreset GetGlobalProgression();                                                                         // [0xb78d094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFabricProgressionPreset GetGlobalProgression();                                                                         // [0xb8a1be4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricProgressorManager.GetGlobalPresetNumber
-	// int32_t GetGlobalPresetNumber();                                                                                         // [0xb78d07c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGlobalPresetNumber();                                                                                         // [0xb8a1bcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricSteppedPreviewFXComponent
@@ -1435,43 +1458,43 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.UpdateStepData
-	// void UpdateStepData(int32_t Index, bool bMarkRenderStateDirty);                                                          // [0xb793474] Native|Protected|BlueprintCallable 
+	// void UpdateStepData(int32_t Index, bool bMarkRenderStateDirty);                                                          // [0xb8a7094] Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.UpdateExistingTransforms
-	// void UpdateExistingTransforms(int32_t NumInstances, int32_t NumSteps);                                                   // [0xb793164] Final|Native|Public|BlueprintCallable 
+	// void UpdateExistingTransforms(int32_t NumInstances, int32_t NumSteps);                                                   // [0xb8a6ebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.UpdateDeviceEnabledFX
-	// void UpdateDeviceEnabledFX(bool bEnabled);                                                                               // [0xb792fbc] Final|Native|Public|BlueprintCallable 
+	// void UpdateDeviceEnabledFX(bool bEnabled);                                                                               // [0xb8a6d94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.UpdateAllCurrentStepData
-	// void UpdateAllCurrentStepData(int32_t NumSteps, float StepLengthBeats);                                                  // [0xb792e78] Native|Protected|BlueprintCallable 
+	// void UpdateAllCurrentStepData(int32_t NumSteps, float StepLengthBeats);                                                  // [0xb8a6ccc] Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetSpanLength
-	// void SetSpanLength(int32_t InstanceIndex, float SpanLengthBeats);                                                        // [0xb79290c] Final|Native|Protected|BlueprintCallable 
+	// void SetSpanLength(int32_t InstanceIndex, float SpanLengthBeats);                                                        // [0xb8a6988] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetNumSteps
-	// void SetNumSteps(int32_t NumSteps);                                                                                      // [0xb792610] Final|Native|Protected|BlueprintCallable 
+	// void SetNumSteps(int32_t NumSteps);                                                                                      // [0xb8a67c8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetNoteTime
-	// void SetNoteTime(int32_t InstanceIndex, float NoteTimeOffsetBeats);                                                      // [0xb7924d4] Final|Native|Protected|BlueprintCallable 
+	// void SetNoteTime(int32_t InstanceIndex, float NoteTimeOffsetBeats);                                                      // [0xb8a6704] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetNoteOn
-	// void SetNoteOn(int32_t InstanceIndex, float NoteOn, bool bMarkRenderStateDirty);                                         // [0xb792318] Final|Native|Protected|BlueprintCallable 
+	// void SetNoteOn(int32_t InstanceIndex, float NoteOn, bool bMarkRenderStateDirty);                                         // [0xb8a660c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetNoteLength
-	// void SetNoteLength(int32_t InstanceIndex, float NoteLengthBeats);                                                        // [0xb7921dc] Final|Native|Protected|BlueprintCallable 
+	// void SetNoteLength(int32_t InstanceIndex, float NoteLengthBeats);                                                        // [0xb8a6548] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.SetGenericFloatValue
-	// void SetGenericFloatValue(int32_t InstanceIndex, float FloatValue, bool bMarkRenderStateDirty);                          // [0xb791d34] Final|Native|Protected|BlueprintCallable 
+	// void SetGenericFloatValue(int32_t InstanceIndex, float FloatValue, bool bMarkRenderStateDirty);                          // [0xb8a61d8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnQuarterNotesLengthChanged
-	// void OnQuarterNotesLengthChanged(float QuarterNoteLength);                                                               // [0xb7919f8] Native|Protected     
+	// void OnQuarterNotesLengthChanged(float QuarterNoteLength);                                                               // [0xb8a5f58] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnPageChanged
-	// void OnPageChanged(int32_t CurrentPage);                                                                                 // [0xb791934] Native|Protected     
+	// void OnPageChanged(int32_t CurrentPage);                                                                                 // [0xb8a5ed4] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnNumTracksChanged
-	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb791870] Native|Protected     
+	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb8a5e50] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnNumStepsChanged
-	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb7917ac] Native|Protected     
+	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb8a5dcc] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnNoteStyleChanged
-	// void OnNoteStyleChanged(EFabricNoteStyle style);                                                                         // [0xb791624] Native|Protected     
+	// void OnNoteStyleChanged(EFabricNoteStyle style);                                                                         // [0xb8a5cc4] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnBeatScaleChanged
-	// void OnBeatScaleChanged(float BeatScale);                                                                                // [0xb790c58] Native|Protected     
+	// void OnBeatScaleChanged(float BeatScale);                                                                                // [0xb8a5430] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.OnBeatOffsetChanged
-	// void OnBeatOffsetChanged(float BeatOffset);                                                                              // [0xb790b90] Native|Protected     
+	// void OnBeatOffsetChanged(float BeatOffset);                                                                              // [0xb8a53ac] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.GetNoteOn
-	// float GetNoteOn(int32_t InstanceIndex);                                                                                  // [0xb78f8f4] Native|Protected|BlueprintCallable 
+	// float GetNoteOn(int32_t InstanceIndex);                                                                                  // [0xb8a4310] Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSteppedPreviewFXComponent.ConstructPreviewVisuals
-	// void ConstructPreviewVisuals(int32_t NumSteps, float StepBeatLength, bool bForceUpdateTransform, bool bInTestNotesOn);   // [0xb78cbb4] Native|Public|BlueprintCallable 
+	// void ConstructPreviewVisuals(int32_t NumSteps, float StepBeatLength, bool bForceUpdateTransform, bool bInTestNotesOn);   // [0xb8a18f4] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricSequencerPreviewFXComponent
@@ -1488,17 +1511,17 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.UpdateNoteOn
-	// void UpdateNoteOn(int32_t Index, int32_t NumSteps, bool bMarkRenderStateDirty);                                          // [0xb7932a0] Final|Native|Private|BlueprintCallable 
+	// void UpdateNoteOn(int32_t Index, int32_t NumSteps, bool bMarkRenderStateDirty);                                          // [0xb8a6f7c] Final|Native|Private|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.SetSustainLength
-	// void SetSustainLength(int32_t InstanceIndex, float SustainLengthBeats);                                                  // [0xb792b84] Final|Native|Private|BlueprintCallable 
+	// void SetSustainLength(int32_t InstanceIndex, float SustainLengthBeats);                                                  // [0xb8a6b10] Final|Native|Private|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.SetSingleTrackNoteOn
-	// void SetSingleTrackNoteOn(int32_t InstanceIndex, int32_t TrackPICDIndex, float NoteOn, bool bMarkRenderStateDirty);      // [0xb7926d0] Final|Native|Private|BlueprintCallable 
+	// void SetSingleTrackNoteOn(int32_t InstanceIndex, int32_t TrackPICDIndex, float NoteOn, bool bMarkRenderStateDirty);      // [0xb8a6848] Final|Native|Private|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.OnStepChanged
-	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb791ac0] Final|Native|Protected|HasOutParms 
+	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb8a5fdc] Final|Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.OnFullTableChanged
-	// void OnFullTableChanged();                                                                                               // [0xb790d20] Final|Native|Protected 
+	// void OnFullTableChanged();                                                                                               // [0xb8a54b4] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricSequencerPreviewFXComponent.InitializePreviewFXComponent
-	// void InitializePreviewFXComponent(class UFabricStepSequencerComponent* InStepSequencer, class UFabricStepSequencerGridComponent* InStepSequencerGrid, bool bInTestNotesOn); // [0xb7900dc] Final|Native|Public|BlueprintCallable 
+	// void InitializePreviewFXComponent(class UFabricStepSequencerComponent* InStepSequencer, class UFabricStepSequencerGridComponent* InStepSequencerGrid, bool bInTestNotesOn); // [0xb8a4a74] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricSequencerSustainComponent
@@ -1524,43 +1547,43 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.UpdateVisibilityOfInstances
-	// void UpdateVisibilityOfInstances();                                                                                      // [0xb793aac] Final|Native|Protected|BlueprintCallable 
+	// void UpdateVisibilityOfInstances();                                                                                      // [0xb8a7420] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.UpdateSustainMaterial
-	// void UpdateSustainMaterial(int32_t InstanceIndex, int32_t HeadNoteStepIndex, int32_t TrackIndex);                        // [0xb7938f4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateSustainMaterial(int32_t InstanceIndex, int32_t HeadNoteStepIndex, int32_t TrackIndex);                        // [0xb8a732c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.UpdateSustainInstance
-	// void UpdateSustainInstance(int32_t StepIndex, int32_t TrackIndex, int32_t PageIndex, bool bEnabled, bool bContinuous, bool bStepChanged); // [0xb7935b8] Final|Native|Protected|BlueprintCallable 
+	// void UpdateSustainInstance(int32_t StepIndex, int32_t TrackIndex, int32_t PageIndex, bool bEnabled, bool bContinuous, bool bStepChanged); // [0xb8a715c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.UpdatePipsOnGridChanged
-	// void UpdatePipsOnGridChanged();                                                                                          // [0xb793460] Final|Native|Protected|BlueprintCallable 
+	// void UpdatePipsOnGridChanged();                                                                                          // [0xb8a7080] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.UpdateDeviceEnabledOnSustain
-	// void UpdateDeviceEnabledOnSustain(bool bEnabled);                                                                        // [0xb793090] Final|Native|Protected|BlueprintCallable 
+	// void UpdateDeviceEnabledOnSustain(bool bEnabled);                                                                        // [0xb8a6e28] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.SetStartBeat
-	// void SetStartBeat(int32_t InstanceIndex, float StartBeatValue);                                                          // [0xb792a48] Final|Native|Protected|BlueprintCallable 
+	// void SetStartBeat(int32_t InstanceIndex, float StartBeatValue);                                                          // [0xb8a6a4c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.SetLoopBeat
-	// void SetLoopBeat(int32_t InstanceIndex, float LoopBeatValue);                                                            // [0xb7920a0] Final|Native|Protected|BlueprintCallable 
+	// void SetLoopBeat(int32_t InstanceIndex, float LoopBeatValue);                                                            // [0xb8a6484] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.SetEndBeat
-	// void SetEndBeat(int32_t InstanceIndex, float EndBeatValue);                                                              // [0xb791bf8] Final|Native|Protected|BlueprintCallable 
+	// void SetEndBeat(int32_t InstanceIndex, float EndBeatValue);                                                              // [0xb8a6114] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.OnStepChanged
-	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb791b5c] Final|Native|Protected|HasOutParms 
+	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb8a6078] Final|Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.OnPageChanged
-	// void OnPageChanged(int32_t CurrentPage);                                                                                 // [0xb791870] Native|Protected     
+	// void OnPageChanged(int32_t CurrentPage);                                                                                 // [0xb8a5e50] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.OnNumTracksChanged
-	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb7917ac] Native|Protected     
+	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb8a5dcc] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.OnNumStepsChanged
-	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb7916e8] Native|Protected     
+	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb8a5d48] Native|Protected     
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.OnFullTableChanged
-	// void OnFullTableChanged();                                                                                               // [0xb790d34] Final|Native|Protected 
+	// void OnFullTableChanged();                                                                                               // [0xb8a54c8] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.InitializeSustainComponent
-	// void InitializeSustainComponent(class UFabricStepSequencerComponent* InStepSequencer, class UFabricStepSequencerGridComponent* InStepSequencerGrid); // [0xb79029c] Final|Native|Public|BlueprintCallable 
+	// void InitializeSustainComponent(class UFabricStepSequencerComponent* InStepSequencer, class UFabricStepSequencerGridComponent* InStepSequencerGrid); // [0xb8a4b78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.FindHeadNoteAndUpdateInstance
-	// void FindHeadNoteAndUpdateInstance(int32_t StepIndex, int32_t TrackIndex);                                               // [0xb78cf40] Final|Native|Protected|BlueprintCallable 
+	// void FindHeadNoteAndUpdateInstance(int32_t StepIndex, int32_t TrackIndex);                                               // [0xb8a1b0c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.FindAndDeleteInstance
-	// void FindAndDeleteInstance(int32_t StepIndex, int32_t TrackIndex);                                                       // [0xb78ce04] Final|Native|Protected|BlueprintCallable 
+	// void FindAndDeleteInstance(int32_t StepIndex, int32_t TrackIndex);                                                       // [0xb8a1a4c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.ConstructSustains
-	// void ConstructSustains();                                                                                                // [0xb78cdf0] Final|Native|Protected|BlueprintCallable 
+	// void ConstructSustains();                                                                                                // [0xb8a1a38] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.CalculateSustainLength
-	// float CalculateSustainLength(float NumStepsCoveredBySustain);                                                            // [0xb78cae0] Final|Native|Protected|BlueprintCallable 
+	// float CalculateSustainLength(float NumStepsCoveredBySustain);                                                            // [0xb8a1864] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricSequencerSustainComponent.AddSustainInstance
-	// void AddSustainInstance(int32_t StepIndex, int32_t TrackIndex);                                                          // [0xb78c9a4] Final|Native|Protected|BlueprintCallable 
+	// void AddSustainInstance(int32_t StepIndex, int32_t TrackIndex);                                                          // [0xb8a17a4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricSignificanceAsset
@@ -1646,111 +1669,111 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.UpdatePackedStepTableSaveRecordIfChanged
-	// void UpdatePackedStepTableSaveRecordIfChanged(FFabricStepTablePacked& InPackedStepTable);                                // [0xb7986d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UpdatePackedStepTableSaveRecordIfChanged(FFabricStepTablePacked& InPackedStepTable);                                // [0xb8aaab4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ToggleStepEnabledOnPage
-	// void ToggleStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column);                                                 // [0xb798518] Final|Native|Public|BlueprintCallable 
+	// void ToggleStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column);                                                 // [0xb8aa9c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ToggleStepEnabled
-	// void ToggleStepEnabled(int32_t Row, int32_t Column);                                                                     // [0xb7983d4] Final|Native|Public|BlueprintCallable 
+	// void ToggleStepEnabled(int32_t Row, int32_t Column);                                                                     // [0xb8aa8f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetStepEnabledOnPage
-	// void SetStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column, bool bState);                                       // [0xb7981a0] Final|Native|Public|BlueprintCallable 
+	// void SetStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column, bool bState);                                       // [0xb8aa7bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetStepEnabled
-	// void SetStepEnabled(int32_t Row, int32_t Column, bool bState);                                                           // [0xb797fe8] Final|Native|Public|BlueprintCallable 
+	// void SetStepEnabled(int32_t Row, int32_t Column, bool bState);                                                           // [0xb8aa6c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetStepContinuationOnPage
-	// void SetStepContinuationOnPage(int32_t Page, int32_t Row, int32_t Column, bool bIsContinuation);                         // [0xb797db4] Final|Native|Public|BlueprintCallable 
+	// void SetStepContinuationOnPage(int32_t Page, int32_t Row, int32_t Column, bool bIsContinuation);                         // [0xb8aa588] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetStepContinuation
-	// void SetStepContinuation(int32_t Row, int32_t Column, bool bIsContinuation);                                             // [0xb797bfc] Final|Native|Public|BlueprintCallable 
+	// void SetStepContinuation(int32_t Row, int32_t Column, bool bIsContinuation);                                             // [0xb8aa490] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetQuarterNotesLength
-	// void SetQuarterNotesLength(float QuarterNotes);                                                                          // [0xb797b38] Final|Native|Public|BlueprintCallable 
+	// void SetQuarterNotesLength(float QuarterNotes);                                                                          // [0xb8aa410] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetPlaying
-	// void SetPlaying(bool bNewPlaying);                                                                                       // [0xb797a74] Final|Native|Public|BlueprintCallable 
+	// void SetPlaying(bool bNewPlaying);                                                                                       // [0xb8aa390] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetNumberTracks
-	// void SetNumberTracks(int32_t NumTracks);                                                                                 // [0xb79796c] Final|Native|Public|BlueprintCallable 
+	// void SetNumberTracks(int32_t NumTracks);                                                                                 // [0xb8aa2cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetNumberSteps
-	// void SetNumberSteps(int32_t NumSteps);                                                                                   // [0xb7978ac] Final|Native|Public|BlueprintCallable 
+	// void SetNumberSteps(int32_t NumSteps);                                                                                   // [0xb8aa24c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetNumberPages
-	// void SetNumberPages(int32_t NumPages);                                                                                   // [0xb7977d0] Final|Native|Public|BlueprintCallable 
+	// void SetNumberPages(int32_t NumPages);                                                                                   // [0xb8aa1b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetNoteStyle
-	// void SetNoteStyle(EFabricNoteStyle style);                                                                               // [0xb797710] Final|Native|Public|BlueprintCallable 
+	// void SetNoteStyle(EFabricNoteStyle style);                                                                               // [0xb8aa130] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetNoteForTrack
-	// void SetNoteForTrack(FMidiNote Note, int32_t Track);                                                                     // [0xb7975c0] Final|Native|Public|BlueprintCallable 
+	// void SetNoteForTrack(FMidiNote Note, int32_t Track);                                                                     // [0xb8a9f04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetMusicClock
-	// void SetMusicClock(class UMusicClockComponent* InMusicClock);                                                            // [0xb797480] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClock(class UMusicClockComponent* InMusicClock);                                                            // [0xb8a9e04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetMonophonic
-	// void SetMonophonic(bool bNewMonophonic);                                                                                 // [0xb7973c0] Final|Native|Public|BlueprintCallable 
+	// void SetMonophonic(bool bNewMonophonic);                                                                                 // [0xb8a9d84] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetMaxSteps
-	// void SetMaxSteps(int32_t NumSteps);                                                                                      // [0xb7972ec] Final|Native|Public|BlueprintCallable 
+	// void SetMaxSteps(int32_t NumSteps);                                                                                      // [0xb8a9cf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetLoop
-	// void SetLoop(bool bNewLoop);                                                                                             // [0xb797228] Final|Native|Public|BlueprintCallable 
+	// void SetLoop(bool bNewLoop);                                                                                             // [0xb8a9c70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetCurrentPage
-	// void SetCurrentPage(int32_t NewPage);                                                                                    // [0xb796fec] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentPage(int32_t NewPage);                                                                                    // [0xb8a9aec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.SetBeatScale
-	// void SetBeatScale(float BeatScale);                                                                                      // [0xb796e64] Final|Native|Public|BlueprintCallable 
+	// void SetBeatScale(float BeatScale);                                                                                      // [0xb8a99ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.RandomizePage
-	// void RandomizePage(int32_t Page);                                                                                        // [0xb796ce4] Final|Native|Public|BlueprintCallable 
+	// void RandomizePage(int32_t Page);                                                                                        // [0xb8a98ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.RandomizeCurrentPage
-	// void RandomizeCurrentPage();                                                                                             // [0xb796ccc] Final|Native|Public|BlueprintCallable 
+	// void RandomizeCurrentPage();                                                                                             // [0xb8a98d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.OnRep_PackedStepTable
-	// void OnRep_PackedStepTable();                                                                                            // [0xb796c1c] Final|Native|Private 
+	// void OnRep_PackedStepTable();                                                                                            // [0xb8a9824] Final|Native|Private 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.IsStepEnabledForAnyTrackOnPage
-	// bool IsStepEnabledForAnyTrackOnPage(int32_t Page, int32_t Column);                                                       // [0xb79630c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStepEnabledForAnyTrackOnPage(int32_t Page, int32_t Column);                                                       // [0xb8a928c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.IsStepEnabledForAnyTrack
-	// bool IsStepEnabledForAnyTrack(int32_t Column);                                                                           // [0xb796234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStepEnabledForAnyTrack(int32_t Column);                                                                           // [0xb8a91f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.IsPageBlank
-	// bool IsPageBlank(int32_t PageIndex);                                                                                     // [0xb796164] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPageBlank(int32_t PageIndex);                                                                                     // [0xb8a9164] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetSupportsContinuation
-	// bool GetSupportsContinuation();                                                                                          // [0x87b6478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSupportsContinuation();                                                                                          // [0x87b8a4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepStartQuarterNotes
-	// float GetStepStartQuarterNotes(int32_t Step);                                                                            // [0xb796080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepStartQuarterNotes(int32_t Step);                                                                            // [0xb8a90c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepStartBeat
-	// float GetStepStartBeat(int32_t Step);                                                                                    // [0xb795f94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepStartBeat(int32_t Step);                                                                                    // [0xb8a9014] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepIsContinuationOnPage
-	// bool GetStepIsContinuationOnPage(int32_t Page, int32_t Row, int32_t Column);                                             // [0xb795ddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetStepIsContinuationOnPage(int32_t Page, int32_t Row, int32_t Column);                                             // [0xb8a8f1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepIsContinuation
-	// bool GetStepIsContinuation(int32_t Row, int32_t Column);                                                                 // [0xb795c88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetStepIsContinuation(int32_t Row, int32_t Column);                                                                 // [0xb8a8e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepEnabledOnPage
-	// bool GetStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column);                                                    // [0xb795ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetStepEnabledOnPage(int32_t Page, int32_t Row, int32_t Column);                                                    // [0xb8a8d58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepEnabled
-	// bool GetStepEnabled(int32_t Row, int32_t Column);                                                                        // [0xb79597c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetStepEnabled(int32_t Row, int32_t Column);                                                                        // [0xb8a8c8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepContinuationLengthOnPage
-	// float GetStepContinuationLengthOnPage(int32_t Page, int32_t Row, int32_t Column);                                        // [0xb7957c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepContinuationLengthOnPage(int32_t Page, int32_t Row, int32_t Column);                                        // [0xb8a8b94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetStepContinuationLength
-	// float GetStepContinuationLength(int32_t Row, int32_t Column);                                                            // [0xb795668] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepContinuationLength(int32_t Row, int32_t Column);                                                            // [0xb8a8ac8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetPageData
-	// void GetPageData(int32_t PageIndex, FStepSequencePage& OutPageData);                                                     // [0xb79550c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPageData(int32_t PageIndex, FStepSequencePage& OutPageData);                                                     // [0xb8a89b0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetNumUsedSteps
-	// int32_t GetNumUsedSteps(int32_t TotalSteps);                                                                             // [0xb795410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumUsedSteps(int32_t TotalSteps);                                                                             // [0xb8a88f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetNumberTracks
-	// int32_t GetNumberTracks();                                                                                               // [0xb7954f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberTracks();                                                                                               // [0xb8a8998] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetNumberSteps
-	// int32_t GetNumberSteps();                                                                                                // [0xb7954dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberSteps();                                                                                                // [0xb8a8980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetMidiStepSequence
-	// class UMidiStepSequence* GetMidiStepSequence();                                                                          // [0x63c7d24] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UMidiStepSequence* GetMidiStepSequence();                                                                          // [0x642786c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetMaxSteps
-	// int32_t GetMaxSteps();                                                                                                   // [0xb7953f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxSteps();                                                                                                   // [0xb8a88dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLongestContinuationLengthForColumnOnPage
-	// float GetLongestContinuationLengthForColumnOnPage(int32_t Page, int32_t Column);                                         // [0xb7952a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLongestContinuationLengthForColumnOnPage(int32_t Page, int32_t Column);                                         // [0xb8a8818] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLongestContinuationLengthForColumn
-	// float GetLongestContinuationLengthForColumn(int32_t Column);                                                             // [0xb7951d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLongestContinuationLengthForColumn(int32_t Column);                                                             // [0xb8a8780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLengthTrackQuarterNotes
-	// float GetLengthTrackQuarterNotes();                                                                                      // [0xb795190] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLengthTrackQuarterNotes();                                                                                      // [0xb8a8740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLengthTrackBeats
-	// float GetLengthTrackBeats();                                                                                             // [0xb795148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLengthTrackBeats();                                                                                             // [0xb8a86f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLengthStepQuarterNotes
-	// float GetLengthStepQuarterNotes();                                                                                       // [0xb795128] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLengthStepQuarterNotes();                                                                                       // [0xb8a86d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetLengthStepBeats
-	// float GetLengthStepBeats();                                                                                              // [0xb795100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLengthStepBeats();                                                                                              // [0xb8a86b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetCurrentPage
-	// int32_t GetCurrentPage();                                                                                                // [0xb794b54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentPage();                                                                                                // [0xb8a8324] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.GetContinuationFocusIndeces
-	// void GetContinuationFocusIndeces(int32_t& OutRowIndex, int32_t& OutStepIndex, int32_t& OutNumContinuationSteps);         // [0xb794a2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetContinuationFocusIndeces(int32_t& OutRowIndex, int32_t& OutStepIndex, int32_t& OutNumContinuationSteps);         // [0xb8a81fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ClearPage
-	// void ClearPage(int32_t Page, bool bUpdateSaveRecord);                                                                    // [0xb7948f4] Final|Native|Public|BlueprintCallable 
+	// void ClearPage(int32_t Page, bool bUpdateSaveRecord);                                                                    // [0xb8a8140] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ClearCurrentPage
-	// void ClearCurrentPage();                                                                                                 // [0xb7948dc] Final|Native|Public|BlueprintCallable 
+	// void ClearCurrentPage();                                                                                                 // [0xb8a8128] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ApplyTemplate
-	// void ApplyTemplate(class UMidiStepSequence* Template, int32_t StepSequencePageIndex, bool bUpdateSaveRecord);            // [0xb794638] Final|Native|Public|BlueprintCallable 
+	// void ApplyTemplate(class UMidiStepSequence* Template, int32_t StepSequencePageIndex, bool bUpdateSaveRecord);            // [0xb8a7f48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerComponent.ApplyPage
-	// void ApplyPage(int32_t PageIndex, FStepSequencePage& PageData);                                                          // [0xb794514] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ApplyPage(int32_t PageIndex, FStepSequencePage& PageData);                                                          // [0xb8a7e6c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricStepSequencerGridComponent
@@ -1774,43 +1797,43 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.SetGridVisible
-	// void SetGridVisible(bool bInGridVisible, bool bForceRefresh);                                                            // [0xb7970ac] Final|Native|Public|BlueprintCallable 
+	// void SetGridVisible(bool bInGridVisible, bool bForceRefresh);                                                            // [0xb8a9b6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.SetBypassed
-	// void SetBypassed(bool bBypassed);                                                                                        // [0xb796f28] Final|Native|Public|BlueprintCallable 
+	// void SetBypassed(bool bBypassed);                                                                                        // [0xb8a9a6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.SetActiveTrackIndex
-	// void SetActiveTrackIndex(int32_t ActiveTrackIndex);                                                                      // [0xb796da4] Final|Native|Public|BlueprintCallable 
+	// void SetActiveTrackIndex(int32_t ActiveTrackIndex);                                                                      // [0xb8a996c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnStepChanged
-	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb796c30] Final|Native|Protected|HasOutParms 
+	// void OnStepChanged(FFabricSequencerStepChangedInfo& StepInfo);                                                           // [0xb8a9838] Final|Native|Protected|HasOutParms 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnQuarterNotesLengthChanged
-	// void OnQuarterNotesLengthChanged(float QuarterNotesLength);                                                              // [0xb796854] Final|Native|Protected 
+	// void OnQuarterNotesLengthChanged(float QuarterNotesLength);                                                              // [0xb8a959c] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnNumTracksChanged
-	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb796b5c] Final|Native|Protected 
+	// void OnNumTracksChanged(int32_t NumTracks);                                                                              // [0xb8a97a4] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnNumStepsChanged
-	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb796a9c] Final|Native|Protected 
+	// void OnNumStepsChanged(int32_t NumSteps);                                                                                // [0xb8a9724] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnNoteStyleChanged
-	// void OnNoteStyleChanged(EFabricNoteStyle style);                                                                         // [0xb7969e0] Final|Native|Protected 
+	// void OnNoteStyleChanged(EFabricNoteStyle style);                                                                         // [0xb8a96a8] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnFullTableChanged
-	// void OnFullTableChanged();                                                                                               // [0xb7969cc] Final|Native|Protected 
+	// void OnFullTableChanged();                                                                                               // [0xb8a9694] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnCurrentPageChanged
-	// void OnCurrentPageChanged(int32_t NewPage);                                                                              // [0xb796910] Final|Native|Protected 
+	// void OnCurrentPageChanged(int32_t NewPage);                                                                              // [0xb8a9618] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnBeatScaleChanged
-	// void OnBeatScaleChanged(float BeatScale);                                                                                // [0xb796854] Final|Native|Protected 
+	// void OnBeatScaleChanged(float BeatScale);                                                                                // [0xb8a959c] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.OnBeatOffsetChanged
-	// void OnBeatOffsetChanged(float BeatOffset);                                                                              // [0xb796854] Final|Native|Protected 
+	// void OnBeatOffsetChanged(float BeatOffset);                                                                              // [0xb8a959c] Final|Native|Protected 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.NotifyInteractionFocusTargetExternallyChanged
-	// void NotifyInteractionFocusTargetExternallyChanged(class APlayerController* PlayerController, int32_t SourceRowIndex, int32_t SourceColumnIndex, int32_t FocusRowIndex, int32_t FocusColumnIndex, bool bIsFocused); // [0xb796524] Final|Native|Public|BlueprintCallable 
+	// void NotifyInteractionFocusTargetExternallyChanged(class APlayerController* PlayerController, int32_t SourceRowIndex, int32_t SourceColumnIndex, int32_t FocusRowIndex, int32_t FocusColumnIndex, bool bIsFocused); // [0xb8a93d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.IsStepToggledOnForAnyTrack
-	// bool IsStepToggledOnForAnyTrack(int32_t StepIndex);                                                                      // [0xb796458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStepToggledOnForAnyTrack(int32_t StepIndex);                                                                      // [0xb8a934c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.IsBypassed
-	// bool IsBypassed();                                                                                                       // [0x388c87c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsBypassed();                                                                                                       // [0x38e5ee4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.GetGridSquareYPosition
-	// float GetGridSquareYPosition(int32_t NumRows, int32_t RowIndex);                                                         // [0xb794fb0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float GetGridSquareYPosition(int32_t NumRows, int32_t RowIndex);                                                         // [0xb8a85ec] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.GetGridSquareXPosition
-	// float GetGridSquareXPosition(int32_t NumSteps, int32_t StepIndex);                                                       // [0xb794e60] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float GetGridSquareXPosition(int32_t NumSteps, int32_t StepIndex);                                                       // [0xb8a8528] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.GetGridSquareSize
-	// FVector2D GetGridSquareSize(int32_t NumSteps, int32_t NumRows);                                                          // [0xb794ccc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetGridSquareSize(int32_t NumSteps, int32_t NumRows);                                                          // [0xb8a8410] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridComponent.GetGridSquareExtents
-	// FVector GetGridSquareExtents(int32_t RowIndex, int32_t ColumnIndex);                                                     // [0xb794b6c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetGridSquareExtents(int32_t RowIndex, int32_t ColumnIndex);                                                     // [0xb8a833c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricStepSequencerGridSquareComponent
@@ -1830,15 +1853,15 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricStepSequencerGridSquareComponent.SetActiveTrack
-	// void SetActiveTrack(int32_t Track);                                                                                      // [0xb7c3e24] Final|Native|Public|BlueprintCallable 
+	// void SetActiveTrack(int32_t Track);                                                                                      // [0xb8d6078] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridSquareComponent.OnContinuationControl_StartInteraction
-	// void OnContinuationControl_StartInteraction(class APlayerController* Controller);                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnContinuationControl_StartInteraction(class APlayerController* Controller);                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridSquareComponent.OnContinuationControl_EndInteraction
-	// void OnContinuationControl_EndInteraction(class APlayerController* Controller);                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnContinuationControl_EndInteraction(class APlayerController* Controller);                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridSquareComponent.CanDoInteractionLogicOnStartInteraction
-	// bool CanDoInteractionLogicOnStartInteraction();                                                                          // [0xb7c3afc] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool CanDoInteractionLogicOnStartInteraction();                                                                          // [0xb8d5e4c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricStepSequencerGridSquareComponent.CanDoInteractionLogicOnEndInteraction
-	// bool CanDoInteractionLogicOnEndInteraction();                                                                            // [0xb7c3ad8] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool CanDoInteractionLogicOnEndInteraction();                                                                            // [0xb8d5e28] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureModifierBase
@@ -1855,7 +1878,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureModifierBase.OnSourceTextureChanged__DelegateSignature
-	// void OnSourceTextureChanged__DelegateSignature(TArray<FFabricTextureProviderTexture>& Textures);                         // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnSourceTextureChanged__DelegateSignature(TArray<FFabricTextureProviderTexture>& Textures);                         // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureTreeNode
@@ -1872,9 +1895,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureTreeNode.Reset
-	// void Reset();                                                                                                            // [0xb7c3e10] Final|Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                            // [0xb8d6064] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricTextureTreeNode.CopyProperties
-	// void CopyProperties(class UFabricTextureTreeNode* Other);                                                                // [0xb7c3b20] Final|Native|Public|BlueprintCallable 
+	// void CopyProperties(class UFabricTextureTreeNode* Other);                                                                // [0xb8d5e70] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FabricRuntime.FabricTextureProviderBase
@@ -1895,9 +1918,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTextureProviderBase.SetSourceTexture
-	// void SetSourceTexture(FFabricTextureProviderTexture& InTexture);                                                         // [0xb7c3fdc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSourceTexture(FFabricTextureProviderTexture& InTexture);                                                         // [0xb8d61b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricTextureProviderBase.OnTextureChanged__DelegateSignature
-	// void OnTextureChanged__DelegateSignature(FFabricTextureProviderTexture& Texture);                                        // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnTextureChanged__DelegateSignature(FFabricTextureProviderTexture& Texture);                                        // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 };
 
 /// Class /Script/FabricRuntime.FabricTimelinePreviewComponent
@@ -1913,9 +1936,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTimelinePreviewComponent.PreviewTimeline
-	// void PreviewTimeline(class UTimelineComponent* Timeline, float SecondsToPlay, bool bReverseAnimation);                   // [0xb7c3c70] Final|Native|Public|BlueprintCallable 
+	// void PreviewTimeline(class UTimelineComponent* Timeline, float SecondsToPlay, bool bReverseAnimation);                   // [0xb8d5f80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricTimelinePreviewComponent.GetShouldPreview
-	// bool GetShouldPreview();                                                                                                 // [0x2bf8390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShouldPreview();                                                                                                 // [0x2c9e4a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricRuntime.FabricTimelineSyncComponent
@@ -1942,11 +1965,11 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricTimelineSyncComponent.SetFabricMetaSoundManager
-	// void SetFabricMetaSoundManager(class UFabricMetaSoundManagerComponent* InMetaSoundManager);                              // [0xb7c3ee4] Final|Native|Public|BlueprintCallable 
+	// void SetFabricMetaSoundManager(class UFabricMetaSoundManagerComponent* InMetaSoundManager);                              // [0xb8d60f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricTimelineSyncComponent.OnTimelinePlayingChanged
-	// void OnTimelinePlayingChanged(EMusicClockState State);                                                                   // [0x80d5700] Final|Native|Public  
+	// void OnTimelinePlayingChanged(EMusicClockState State);                                                                   // [0x80e5218] Final|Native|Public  
 	// Function /Script/FabricRuntime.FabricTimelineSyncComponent.OnRep_ServerCurrentSongPos
-	// void OnRep_ServerCurrentSongPos();                                                                                       // [0xb7c3c58] Final|Native|Public  
+	// void OnRep_ServerCurrentSongPos();                                                                                       // [0xb8d5f68] Final|Native|Public  
 };
 
 /// Class /Script/FabricRuntime.FabricWaveformTexture
@@ -1967,13 +1990,13 @@ public:
 
 	/// Functions
 	// Function /Script/FabricRuntime.FabricWaveformTexture.Initialize
-	// void Initialize();                                                                                                       // [0xb7c3c44] Final|Native|Public|BlueprintCallable 
+	// void Initialize();                                                                                                       // [0xb8d5f54] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricWaveformTexture.GetWaveformTexture
-	// class UTexture2D* GetWaveformTexture();                                                                                  // [0x5de9f78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTexture2D* GetWaveformTexture();                                                                                  // [0x5e4f978] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FabricRuntime.FabricWaveformTexture.AddNewValueToWaveformTexture
-	// void AddNewValueToWaveformTexture(float Value);                                                                          // [0xb7c3a14] Final|Native|Public|BlueprintCallable 
+	// void AddNewValueToWaveformTexture(float Value);                                                                          // [0xb8d5da8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricRuntime.FabricWaveformTexture.AddMultipleValuesToWaveformTexture
-	// void AddMultipleValuesToWaveformTexture(TArray<float>& Values);                                                          // [0xb7c3938] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddMultipleValuesToWaveformTexture(TArray<float>& Values);                                                          // [0xb8d5ccc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/FabricRuntime.InteractionData
@@ -2605,6 +2628,15 @@ enum EFabricMetasoundPlayState : uint8_t
 	EFabricMetasoundPlayState__EFabricMetasoundPlayState_MAX                         = 4
 };
 
+/// Enum /Script/FabricRuntime.EFabricMetasoundMusicEventPriority
+/// Size: 0x03
+enum EFabricMetasoundMusicEventPriority : uint8_t
+{
+	EFabricMetasoundMusicEventPriority__AboveEmotes                                  = 0,
+	EFabricMetasoundMusicEventPriority__BelowEmotes                                  = 1,
+	EFabricMetasoundMusicEventPriority__EFabricMetasoundMusicEventPriority_MAX       = 2
+};
+
 /// Enum /Script/FabricRuntime.EFabricNoteStyle
 /// Size: 0x04
 enum EFabricNoteStyle : uint8_t
@@ -2667,6 +2699,16 @@ enum EFabricCloneTransformBehavior : uint8_t
 	EFabricCloneTransformBehavior__SteppedCentered                                   = 3,
 	EFabricCloneTransformBehavior__SteppedExponential                                = 4,
 	EFabricCloneTransformBehavior__EFabricCloneTransformBehavior_MAX                 = 5
+};
+
+/// Enum /Script/FabricRuntime.EJamFabricSyncType
+/// Size: 0x04
+enum EJamFabricSyncType : uint8_t
+{
+	EJamFabricSyncType__Disconnected                                                 = 0,
+	EJamFabricSyncType__FabricControlsJam                                            = 1,
+	EJamFabricSyncType__Bidirectional                                                = 2,
+	EJamFabricSyncType__EJamFabricSyncType_MAX                                       = 3
 };
 
 /// Enum /Script/FabricRuntime.EFabricMetaSoundPinDirection

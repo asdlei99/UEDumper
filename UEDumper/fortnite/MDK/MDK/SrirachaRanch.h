@@ -93,117 +93,117 @@ public:
 
 	/// Functions
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ToggleRadioActive
-	// void ToggleRadioActive();                                                                                                // [0xaa78f4c] Final|Native|Public|BlueprintCallable 
+	// void ToggleRadioActive();                                                                                                // [0xad75818] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.StopRadioWithFadeout
-	// void StopRadioWithFadeout(int32_t Milliseconds);                                                                         // [0xaa78e8c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StopRadioWithFadeout(int32_t Milliseconds);                                                                         // [0xad75798] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.StopRadio
-	// void StopRadio();                                                                                                        // [0xaa78e78] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StopRadio();                                                                                                        // [0xad75784] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.StopIfNoDriver
-	// void StopIfNoDriver(TScriptInterface<Class>& Vehicle);                                                                   // [0xaa78de8] Final|Native|Protected|HasOutParms 
+	// void StopIfNoDriver(TScriptInterface<Class>& Vehicle);                                                                   // [0xad756f4] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.StartRadio
-	// void StartRadio(int32_t IdxToPlay, bool bFallbackOverride);                                                              // [0xaa78ca8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StartRadio(int32_t IdxToPlay, bool bFallbackOverride);                                                              // [0xad75630] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.SoundMixUpdateWeaponState
-	// void SoundMixUpdateWeaponState(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xaa78ab4] Final|Native|Private 
+	// void SoundMixUpdateWeaponState(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xad754c0] Final|Native|Private 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.SoundMixUpdateTargetingState
-	// void SoundMixUpdateTargetingState(bool bNewIsTargeting);                                                                 // [0xaa789ec] Final|Native|Private 
+	// void SoundMixUpdateTargetingState(bool bNewIsTargeting);                                                                 // [0xad75438] Final|Native|Private 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.SetInteriorVolume
-	// void SetInteriorVolume(TScriptInterface<Class>& Vehicle);                                                                // [0xaa7895c] Final|Native|Protected|HasOutParms 
+	// void SetInteriorVolume(TScriptInterface<Class>& Vehicle);                                                                // [0xad753a8] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.SetExteriorVolume
-	// void SetExteriorVolume(TScriptInterface<Class>& Vehicle);                                                                // [0xaa788cc] Final|Native|Protected|HasOutParms 
+	// void SetExteriorVolume(TScriptInterface<Class>& Vehicle);                                                                // [0xad75318] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.SetActivationRadius
-	// void SetActivationRadius(float InRadius);                                                                                // [0xaa78800] Final|Native|Public|BlueprintCallable 
+	// void SetActivationRadius(float InRadius);                                                                                // [0xad7528c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerStopRadio
-	// void ServerStopRadio();                                                                                                  // [0x25a3d14] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerStopRadio();                                                                                                  // [0x1f2db84] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerSetDisabledForCurrentPlayerState
-	// void ServerSetDisabledForCurrentPlayerState(bool bInDisableForCurrentPlayerState);                                       // [0x80ef090] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSetDisabledForCurrentPlayerState(bool bInDisableForCurrentPlayerState);                                       // [0x80ff6b4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerSaveFadeOutTime
-	// void ServerSaveFadeOutTime(float InFadeOutSeconds);                                                                      // [0xaa12ae0] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSaveFadeOutTime(float InFadeOutSeconds);                                                                      // [0xad11e44] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerSavedSource
-	// void ServerSavedSource(FAthenaRadioStation InSource);                                                                    // [0xaa78724] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSavedSource(FAthenaRadioStation InSource);                                                                    // [0xad75130] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerSaveAutoStart
-	// void ServerSaveAutoStart(bool bInAutoStart);                                                                             // [0xaa7865c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSaveAutoStart(bool bInAutoStart);                                                                             // [0xad750ac] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.ServerPlayIndex
-	// void ServerPlayIndex(int32_t InIndex, EStreamingRadioSourceState InState);                                               // [0xaa78518] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerPlayIndex(int32_t InIndex, EStreamingRadioSourceState InState);                                               // [0xad74fe4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.PlayPrevIndex
-	// void PlayPrevIndex();                                                                                                    // [0xaa78504] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void PlayPrevIndex();                                                                                                    // [0xad74fd0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.PlayNextIndex
-	// void PlayNextIndex();                                                                                                    // [0xaa784f0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void PlayNextIndex();                                                                                                    // [0xad74fbc] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.PlayDefaultIndex
-	// void PlayDefaultIndex();                                                                                                 // [0xaa784dc] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void PlayDefaultIndex();                                                                                                 // [0xad74fa8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnRep_RadioSourceData
-	// void OnRep_RadioSourceData();                                                                                            // [0xaa784c8] Final|Native|Protected 
+	// void OnRep_RadioSourceData();                                                                                            // [0x2fa39ac] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnPiPPlayerBlockedChanged
-	// void OnPiPPlayerBlockedChanged(bool bPiPPlayerBlocking);                                                                 // [0xaa78404] Final|Native|Protected 
+	// void OnPiPPlayerBlockedChanged(bool bPiPPlayerBlocking);                                                                 // [0xad74f28] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnPawnExitVehicle
-	// void OnPawnExitVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPawnExitVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnPawnExitSeat
-	// void OnPawnExitSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                   // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPawnExitSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                   // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnPawnEnterVehicle
-	// void OnPawnEnterVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);               // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPawnEnterVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);               // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnPawnEnterSeat
-	// void OnPawnEnterSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                  // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPawnEnterSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);                  // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwningVehicleDied
-	// void OnOwningVehicleDied(class AFortAthenaVehicle* DeadVehicle, FGameplayTagContainer& InTags, class AController* EventInstigator, class AActor* DamageCauser); // [0xaa781c4] Final|Native|Protected|HasOutParms 
+	// void OnOwningVehicleDied(class AFortAthenaVehicle* DeadVehicle, FGameplayTagContainer& InTags, class AController* EventInstigator, class AActor* DamageCauser); // [0xad74d20] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwnerUnpowered
-	// void OnOwnerUnpowered();                                                                                                 // [0xaa781ac] Final|Native|Protected 
+	// void OnOwnerUnpowered();                                                                                                 // [0xad74d08] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwnerReFueled
-	// void OnOwnerReFueled();                                                                                                  // [0xaa78194] Final|Native|Protected 
+	// void OnOwnerReFueled();                                                                                                  // [0x300bc40] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwnerOutOfFuel
-	// void OnOwnerOutOfFuel();                                                                                                 // [0xaa78180] Final|Native|Protected 
+	// void OnOwnerOutOfFuel();                                                                                                 // [0xad74cf4] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwnerExploded
-	// void OnOwnerExploded();                                                                                                  // [0xaa78168] Final|Native|Protected 
+	// void OnOwnerExploded();                                                                                                  // [0xad74cdc] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.OnOwnerDisabledChanged
-	// void OnOwnerDisabledChanged(bool bDisabled);                                                                             // [0xaa780a4] Final|Native|Protected 
+	// void OnOwnerDisabledChanged(bool bDisabled);                                                                             // [0xad74c5c] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.NativeOnVehicleOwnerChanged
-	// void NativeOnVehicleOwnerChanged(TScriptInterface<Class>& Vehicle, class AActor* NewOwner, class AActor* PrevOwner);     // [0xaa77e1c] Final|Native|Protected|HasOutParms 
+	// void NativeOnVehicleOwnerChanged(TScriptInterface<Class>& Vehicle, class AActor* NewOwner, class AActor* PrevOwner);     // [0xad749d4] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.NativeOnPawnExitVehicle
-	// void NativeOnPawnExitVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);          // [0xaa77b94] Final|Native|Protected|HasOutParms 
+	// void NativeOnPawnExitVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);          // [0xad7474c] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.NativeOnPawnExitSeat
-	// void NativeOnPawnExitSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);             // [0xaa7790c] Final|Native|Protected|HasOutParms 
+	// void NativeOnPawnExitSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);             // [0xad744c4] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.NativeOnPawnEnterVehicle
-	// void NativeOnPawnEnterVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);         // [0xaa77684] Final|Native|Protected|HasOutParms 
+	// void NativeOnPawnEnterVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);         // [0xad7423c] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.NativeOnPawnEnterSeat
-	// void NativeOnPawnEnterSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);            // [0xaa773fc] Final|Native|Protected|HasOutParms 
+	// void NativeOnPawnEnterSeat(TScriptInterface<Class>& Vehicle, class AFortPawn* PlayerPawn, int32_t SeatIndex);            // [0xad73fb4] Final|Native|Protected|HasOutParms 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MetadataChanged
-	// void MetadataChanged(FFortMediaInBandMetadata MetaData);                                                                 // [0xaa772c0] Final|Native|Protected 
+	// void MetadataChanged(FFortMediaInBandMetadata MetaData);                                                                 // [0xad73df8] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaTerminalError
-	// void MediaTerminalError(EBaseMediaTerminalErrorReason Reason);                                                           // [0xaa77200] Final|Native|Protected 
+	// void MediaTerminalError(EBaseMediaTerminalErrorReason Reason);                                                           // [0xad73d78] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaResumed
-	// void MediaResumed();                                                                                                     // [0xaa771ec] Final|Native|Protected 
+	// void MediaResumed();                                                                                                     // [0xad73d64] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaOnSuccess
-	// void MediaOnSuccess();                                                                                                   // [0xaa771d8] Final|Native|Protected 
+	// void MediaOnSuccess();                                                                                                   // [0xad73d50] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaEnded
-	// void MediaEnded();                                                                                                       // [0xaa771c4] Final|Native|Protected 
+	// void MediaEnded();                                                                                                       // [0xad73d3c] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaClosed
-	// void MediaClosed();                                                                                                      // [0xaa771b0] Final|Native|Protected 
+	// void MediaClosed();                                                                                                      // [0xad73d28] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.MediaClose
-	// void MediaClose();                                                                                                       // [0xaa7719c] Final|Native|Protected 
+	// void MediaClose();                                                                                                       // [0xad73d14] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.IsRadioOn
-	// bool IsRadioOn();                                                                                                        // [0xaa77178] Final|Native|Protected|Const 
+	// bool IsRadioOn();                                                                                                        // [0xad73cf0] Final|Native|Protected|Const 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.IsPlayingLiveFeed
-	// bool IsPlayingLiveFeed();                                                                                                // [0xaa77144] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayingLiveFeed();                                                                                                // [0xad73cbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.IsExternalSeat
-	// bool IsExternalSeat(int32_t SeatIdx);                                                                                    // [0xaa77078] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsExternalSeat(int32_t SeatIdx);                                                                                    // [0xad73c30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.HandleLicensedAudioTreatmentChanged
-	// void HandleLicensedAudioTreatmentChanged(UCPTypes UCPType);                                                              // [0xaa76f88] Final|Native|Protected 
+	// void HandleLicensedAudioTreatmentChanged(UCPTypes UCPType);                                                              // [0xad73b80] Final|Native|Protected 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.GetOptionAt
-	// FAthenaRadioStation GetOptionAt(int32_t idx);                                                                            // [0xaa76e90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FAthenaRadioStation GetOptionAt(int32_t idx);                                                                            // [0xad73acc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.GetMediaMetadata
-	// FFortMediaInBandMetadata GetMediaMetadata();                                                                             // [0xaa76e4c] Final|Native|Public|BlueprintCallable 
+	// FFortMediaInBandMetadata GetMediaMetadata();                                                                             // [0xad73a88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SrirachaRanch.StreamingRadioPlayerComponent.GetBaseStreamingVideo
-	// class UFortBaseStreamingVideo* GetBaseStreamingVideo();                                                                  // [0xaa76e34] Final|Native|Public|BlueprintCallable 
+	// class UFortBaseStreamingVideo* GetBaseStreamingVideo();                                                                  // [0xad73a70] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SrirachaRanch.RadioContentSourceItemDefinition
-/// Size: 0x0018 (0x0003B8 - 0x0003D0)
+/// Size: 0x0018 (0x0003A8 - 0x0003C0)
 class URadioContentSourceItemDefinition : public UFortAccountItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 976;
+	static inline constexpr uint64_t __MDKClassSize = 960;
 
 public:
-	SMember(FString)                                   ResourceID                                                  OFFSET(getStruct<T>, {0x3B8, 16, 0, 0})
-	CMember(class UFortStreamMediaSource*)             MediaSource                                                 OFFSET(get<T>, {0x3C8, 8, 0, 0})
+	SMember(FString)                                   ResourceID                                                  OFFSET(getStruct<T>, {0x3A8, 16, 0, 0})
+	CMember(class UFortStreamMediaSource*)             MediaSource                                                 OFFSET(get<T>, {0x3B8, 8, 0, 0})
 };
 
 /// Struct /Script/SrirachaRanch.AthenaRadioStation

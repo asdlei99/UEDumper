@@ -157,54 +157,54 @@ public:
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsApparelItemDefinition
-/// Size: 0x0028 (0x000750 - 0x000778)
+/// Size: 0x0028 (0x000740 - 0x000768)
 class UMeshCosmeticsApparelItemDefinition : public UFortApparelItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1912;
+	static inline constexpr uint64_t __MDKClassSize = 1896;
 
 public:
-	SMember(FCosmeticSlotSelector)                     SlotValidWithin                                             OFFSET(getStruct<T>, {0x750, 2, 0, 0})
-	SMember(FApparelCustomizableItemReference)         Parameter                                                   OFFSET(getStruct<T>, {0x758, 32, 0, 0})
+	SMember(FCosmeticSlotSelector)                     SlotValidWithin                                             OFFSET(getStruct<T>, {0x740, 2, 0, 0})
+	SMember(FApparelCustomizableItemReference)         Parameter                                                   OFFSET(getStruct<T>, {0x748, 32, 0, 0})
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectParameterVariant
-/// Size: 0x0010 (0x000070 - 0x000080)
+/// Size: 0x0010 (0x000080 - 0x000090)
 class UFortCustomizableObjectParameterVariant : public UFortCosmeticVariantBackedByArray
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 144;
 
 public:
-	CMember(TArray<FCustomizableObjectParamsVariantDef>) ParameterOptions                                          OFFSET(get<T>, {0x70, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectParamsVariantDef>) ParameterOptions                                          OFFSET(get<T>, {0x80, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/MeshCosmetics.FortCustomizableObjectParameterVariant.ApplyVariants
-	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                    // [0x9ed6414] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                    // [0x9ee9094] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectSprayVariant
-/// Size: 0x0258 (0x000070 - 0x0002C8)
+/// Size: 0x0258 (0x000080 - 0x0002D8)
 class UFortCustomizableObjectSprayVariant : public UFortCosmeticVariant
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 712;
+	static inline constexpr uint64_t __MDKClassSize = 728;
 
 public:
-	SMember(FGameplayTag)                              ActiveSelectionTag                                          OFFSET(getStruct<T>, {0x70, 4, 0, 0})
-	SMember(FString)                                   EnabledParamName                                            OFFSET(getStruct<T>, {0x78, 16, 0, 0})
-	SMember(FString)                                   ProjectorParamName                                          OFFSET(getStruct<T>, {0x88, 16, 0, 0})
-	SMember(FString)                                   TextureParamName                                            OFFSET(getStruct<T>, {0x98, 16, 0, 0})
-	SMember(FString)                                   SaturationParamName                                         OFFSET(getStruct<T>, {0xA8, 16, 0, 0})
-	SMember(FString)                                   WearParamName                                               OFFSET(getStruct<T>, {0xB8, 16, 0, 0})
-	SMember(FString)                                   ScaleParamName                                              OFFSET(getStruct<T>, {0xC8, 16, 0, 0})
-	SMember(FGameplayTagQuery)                         TagQueryForShouldOverrideCODefaultsWithFixedLocationParameters OFFSET(getStruct<T>, {0xD8, 72, 0, 0})
-	SMember(FCustomizableObjectSprayVariantFixedProperties) FixedSprayLocation                                     OFFSET(getStruct<T>, {0x120, 104, 0, 0})
-	SMember(FCustomizableObjectSprayVariantSelectablePayload) DefaultSprayCustomization                            OFFSET(getStruct<T>, {0x188, 184, 0, 0})
-	SMember(FCustomizableObjectSprayVariantPayloadClamps) SprayNumericConstraints                                  OFFSET(getStruct<T>, {0x240, 48, 0, 0})
-	DMember(float)                                     TextureBaseScale                                            OFFSET(get<float>, {0x270, 4, 0, 0})
-	SMember(FCustomizableObjectSprayVariantSlotImageProperties) SpraySlotImageProperties                           OFFSET(getStruct<T>, {0x278, 64, 0, 0})
+	SMember(FGameplayTag)                              ActiveSelectionTag                                          OFFSET(getStruct<T>, {0x80, 4, 0, 0})
+	SMember(FString)                                   EnabledParamName                                            OFFSET(getStruct<T>, {0x88, 16, 0, 0})
+	SMember(FString)                                   ProjectorParamName                                          OFFSET(getStruct<T>, {0x98, 16, 0, 0})
+	SMember(FString)                                   TextureParamName                                            OFFSET(getStruct<T>, {0xA8, 16, 0, 0})
+	SMember(FString)                                   SaturationParamName                                         OFFSET(getStruct<T>, {0xB8, 16, 0, 0})
+	SMember(FString)                                   WearParamName                                               OFFSET(getStruct<T>, {0xC8, 16, 0, 0})
+	SMember(FString)                                   ScaleParamName                                              OFFSET(getStruct<T>, {0xD8, 16, 0, 0})
+	SMember(FGameplayTagQuery)                         TagQueryForShouldOverrideCODefaultsWithFixedLocationParameters OFFSET(getStruct<T>, {0xE8, 72, 0, 0})
+	SMember(FCustomizableObjectSprayVariantFixedProperties) FixedSprayLocation                                     OFFSET(getStruct<T>, {0x130, 104, 0, 0})
+	SMember(FCustomizableObjectSprayVariantSelectablePayload) DefaultSprayCustomization                            OFFSET(getStruct<T>, {0x198, 184, 0, 0})
+	SMember(FCustomizableObjectSprayVariantPayloadClamps) SprayNumericConstraints                                  OFFSET(getStruct<T>, {0x250, 48, 0, 0})
+	DMember(float)                                     TextureBaseScale                                            OFFSET(get<float>, {0x280, 4, 0, 0})
+	SMember(FCustomizableObjectSprayVariantSlotImageProperties) SpraySlotImageProperties                           OFFSET(getStruct<T>, {0x288, 64, 0, 0})
 };
 
 /// Class /Script/MeshCosmetics.GameFeatureAction_MeshCosmeticsCompileSchemaDepenencies
@@ -229,7 +229,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.MeshCosmeticTagInterface.OnPostCustomizationAnimGameplayTags_BP
-	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                        // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                        // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableInstanceLODManagement
@@ -243,15 +243,15 @@ public:
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsLayoutSchema
-/// Size: 0x00A0 (0x000338 - 0x0003D8)
+/// Size: 0x00A0 (0x000328 - 0x0003C8)
 class UMeshCosmeticsLayoutSchema : public UFortApparelLayoutItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 984;
+	static inline constexpr uint64_t __MDKClassSize = 968;
 
 public:
-	CMember(TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot>) SlotDataConfig                                      OFFSET(get<T>, {0x338, 80, 0, 0})
-	CMember(TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>>) SlottedCustomizableObjects          OFFSET(get<T>, {0x388, 80, 0, 0})
+	CMember(TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot>) SlotDataConfig                                      OFFSET(get<T>, {0x328, 80, 0, 0})
+	CMember(TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>>) SlottedCustomizableObjects          OFFSET(get<T>, {0x378, 80, 0, 0})
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsAppliedSchemaData

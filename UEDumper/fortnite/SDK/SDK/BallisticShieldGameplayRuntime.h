@@ -55,17 +55,17 @@ public:
 
 	/// Functions
 	// Function /Script/BallisticShieldGameplayRuntime.BallisticShieldWeaponInterface.GetBallisticShieldData
-	// void GetBallisticShieldData(EBallisticShieldPlayerActionState& BallisticShieldPlayerState, float& StaggerBuildupPercent); // [0xaaae008] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetBallisticShieldData(EBallisticShieldPlayerActionState& BallisticShieldPlayerState, float& StaggerBuildupPercent); // [0xada8c18] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/BallisticShieldGameplayRuntime.FortMovementMode_ELBShieldSprint
-/// Size: 0x0038 (0x0003C0 - 0x0003F8)
+/// Size: 0x0038 (0x0003C8 - 0x000400)
 class UFortMovementMode_ELBShieldSprint : public UFortMovementMode_ELTacSprint
 { 
 public:
-	FScalableFloat                                     ChargeRotationRate;                                         // 0x03C0   (0x0028)  
-	class UClass*                                      GrantedAbility;                                             // 0x03E8   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x03F0   (0x0008)  MISSED
+	FScalableFloat                                     ChargeRotationRate;                                         // 0x03C8   (0x0028)  
+	class UClass*                                      GrantedAbility;                                             // 0x03F0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x03F8   (0x0008)  MISSED
 };
 
 /// Class /Script/BallisticShieldGameplayRuntime.TargetingFilterTask_BShieldCharge

@@ -22,7 +22,7 @@ enum class ELinkCodeUserInputError : uint8_t
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FOnlineLinkId
 { 
-	SDK_UNDEFINED(16,2493) /* FString */               __um(Mnemonic);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2502) /* FString */               __um(Mnemonic);                                             // 0x0000   (0x0010)  
 	int32_t                                            Version;                                                    // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };

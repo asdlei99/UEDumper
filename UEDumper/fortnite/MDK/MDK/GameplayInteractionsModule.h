@@ -47,11 +47,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.UseSmartObjectWithGameplayInteraction
-	// class UAITask_UseGameplayInteraction* UseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d0b04c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayInteraction* UseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d1d3f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.RequestAbort
-	// void RequestAbort();                                                                                                     // [0x7d0b038] Final|Native|Public|BlueprintCallable 
+	// void RequestAbort();                                                                                                     // [0x7d1d3dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.MoveToAndUseSmartObjectWithGameplayInteraction
-	// class UAITask_UseGameplayInteraction* MoveToAndUseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d0abe4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayInteraction* MoveToAndUseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d1cfa0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayInteractionsModule.GameplayInteractionStateTreeSchema
@@ -94,9 +94,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayInteractionsModule.StateTreeTask_PlayContextualAnim_InstanceData.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                 // [0x7d0af10] Final|Native|Public|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                 // [0x7d1d2fc] Final|Native|Public|HasOutParms 
 	// Function /Script/GameplayInteractionsModule.StateTreeTask_PlayContextualAnim_InstanceData.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                                // [0x7d0add0] Final|Native|Public  
+	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                                // [0x7d1d234] Final|Native|Public  
 };
 
 /// Struct /Script/GameplayInteractionsModule.GameplayInteractionContext

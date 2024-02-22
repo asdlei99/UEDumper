@@ -33,6 +33,6 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FSoftModifierClassPtr
 { 
-	SDK_UNDEFINED(32,12451) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                         // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12538) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                         // 0x0000   (0x0020)  
 };
 

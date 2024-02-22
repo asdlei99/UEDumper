@@ -512,7 +512,7 @@ class AAtomModelActor : public AActor
 { 
 public:
 	class UAtomModel*                                  AtomModel;                                                  // 0x0290   (0x0008)  
-	SDK_UNDEFINED(16,11647) /* FString */              __um(PrimitiveStyleName);                                   // 0x0298   (0x0010)  
+	SDK_UNDEFINED(16,11710) /* FString */              __um(PrimitiveStyleName);                                   // 0x0298   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.ConnectionField
@@ -522,8 +522,9 @@ struct FConnectionField
 	FQuat                                              Rotation;                                                   // 0x0000   (0x0020)  
 	FVector                                            Location;                                                   // 0x0020   (0x0018)  
 	uint32_t                                           Subtype;                                                    // 0x0038   (0x0004)  
-	EConnectionFieldType                               Type;                                                       // 0x003C   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x3];                                       // 0x003D   (0x0003)  MISSED
+	uint16_t                                           BoneIndex;                                                  // 0x003C   (0x0002)  
+	EConnectionFieldType                               Type;                                                       // 0x003E   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x1];                                       // 0x003F   (0x0001)  MISSED
 };
 
 /// Struct /Script/AtomRuntime.ConnectionPoint
@@ -626,14 +627,13 @@ struct FAtomCommonPartInstancesCache
 };
 
 /// Class /Script/AtomRuntime.AtomModelAssetUserData
-/// Size: 0x00A0 (0x000028 - 0x0000C8)
+/// Size: 0x0080 (0x000028 - 0x0000A8)
 class UAtomModelAssetUserData : public UAssetUserData
 { 
 public:
-	SDK_UNDEFINED(32,11648) /* TWeakObjectPtr<UAtomModel*> */ __um(AtomModelAsset);                                // 0x0028   (0x0020)  
-	FSerializedConnectivityObjects                     AtomModelConnections;                                       // 0x0048   (0x0020)  
-	FAtomCommonPartInstancesCache                      CommonPartCache;                                            // 0x0068   (0x0050)  
-	TArray<FName>                                      Tags;                                                       // 0x00B8   (0x0010)  
+	FSerializedConnectivityObjects                     AtomModelConnections;                                       // 0x0028   (0x0020)  
+	FAtomCommonPartInstancesCache                      CommonPartCache;                                            // 0x0048   (0x0050)  
+	TArray<FName>                                      Tags;                                                       // 0x0098   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.AtomCommonPartAssetDescription
@@ -664,35 +664,35 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.SetName
-	// void SetName(FAtomModelPartsCollection& PartsCollection, FString Name);                                               // [0xbb2b474] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetName(FAtomModelPartsCollection& PartsCollection, FString Name);                                               // [0xa9b30e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.ReplacePartInstance
-	// void ReplacePartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartInstanceInfo& SourcePartInstance, FAtomModelPartGuid& TargetPartInstanceId); // [0xbb2aba0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ReplacePartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartInstanceInfo& SourcePartInstance, FAtomModelPartGuid& TargetPartInstanceId); // [0xa9b2894] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.RemovePartInstance
-	// void RemovePartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartGuid& PartInstanceId);               // [0xbb2aa8c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RemovePartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartGuid& PartInstanceId);               // [0xa9b2780] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.InitializeCommonParts
-	// FAtomModelPartsCollection InitializeCommonParts(FAtomModelPartsCollection& PartsCollection, class UAtomModel* Model, float Scale, bool bRemoveConnectedParts, bool bRemoveAllKnobs, bool bRemoveAllTubes, bool bRemoveAllPins); // [0xbb2a3d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAtomModelPartsCollection InitializeCommonParts(FAtomModelPartsCollection& PartsCollection, class UAtomModel* Model, float Scale, bool bRemoveConnectedParts, bool bRemoveAllKnobs, bool bRemoveAllTubes, bool bRemoveAllPins); // [0xa9b20c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.GetPrimitiveCommonParts
-	// TArray<FAtomCommonPartAndTransform> GetPrimitiveCommonParts(class UAtomPrimitive* Primitive, double Scale);           // [0xbb2a024] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FAtomCommonPartAndTransform> GetPrimitiveCommonParts(class UAtomPrimitive* Primitive, double Scale);           // [0xa9b1d9c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.GetParts
-	// TArray<FAtomModelPartInstanceInfo> GetParts(FAtomModelPartsCollection& PartsCollection);                              // [0xbb29f5c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomModelPartInstanceInfo> GetParts(FAtomModelPartsCollection& PartsCollection);                              // [0xa9b1cd4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.GetName
-	// FString GetName(FAtomModelPartsCollection& PartsCollection);                                                          // [0xbb296b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString GetName(FAtomModelPartsCollection& PartsCollection);                                                          // [0xa9b14e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.FilterTransparent
-	// FAtomModelPartsCollection FilterTransparent(FAtomModelPartsCollection& PartsCollectionToFilter, FString NewPartsCollectionName); // [0xbb2873c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FAtomModelPartsCollection FilterTransparent(FAtomModelPartsCollection& PartsCollectionToFilter, FString NewPartsCollectionName); // [0xa9b05b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.FilterSelectionSet
-	// FAtomModelPartsCollection FilterSelectionSet(FAtomModelPartsCollection& PartsCollectionToFilter, FString SelectionSetName, FString NewPartsCollectionName); // [0xbb27e00] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FAtomModelPartsCollection FilterSelectionSet(FAtomModelPartsCollection& PartsCollectionToFilter, FString SelectionSetName, FString NewPartsCollectionName); // [0xa9afc74] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.FilterNonTransparent
-	// FAtomModelPartsCollection FilterNonTransparent(FAtomModelPartsCollection& PartsCollectionToFilter, FString NewPartsCollectionName); // [0xbb275e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FAtomModelPartsCollection FilterNonTransparent(FAtomModelPartsCollection& PartsCollectionToFilter, FString NewPartsCollectionName); // [0xa9af458] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.FilterGroup
-	// FAtomModelPartsCollection FilterGroup(class UAtomModel* Model, FAtomModelPartsCollection& PartsCollectionToFilter, FString GroupName, FString NewPartsCollectionName); // [0xbb26c40] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FAtomModelPartsCollection FilterGroup(class UAtomModel* Model, FAtomModelPartsCollection& PartsCollectionToFilter, FString GroupName, FString NewPartsCollectionName); // [0xa9aeae8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.CreateColorInfoFromColorId
-	// FAtomModelPartColorInfo CreateColorInfoFromColorId(int32_t ColorId);                                                  // [0xbb26abc] Final|Native|Static|Public|BlueprintCallable 
+	// FAtomModelPartColorInfo CreateColorInfoFromColorId(int32_t ColorId);                                                  // [0xa9ae9a4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.Conv_StringToModelPartGuid
-	// FAtomModelPartGuid Conv_StringToModelPartGuid(FString InString);                                                      // [0xbb25b6c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FAtomModelPartGuid Conv_StringToModelPartGuid(FString InString);                                                      // [0xa9adb94] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.Conv_ModelPartGuidToString
-	// FString Conv_ModelPartGuidToString(FAtomModelPartGuid& InModelPartGuid);                                              // [0xbb25ab8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_ModelPartGuidToString(FAtomModelPartGuid& InModelPartGuid);                                              // [0xa9adae0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPartsCollectionBlueprintLibrary.AddPartInstance
-	// void AddPartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartInstanceInfo& PartInstance);            // [0xbb24c08] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddPartInstance(FAtomModelPartsCollection& PartCollection, FAtomModelPartInstanceInfo& PartInstance);            // [0xa9acd7c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomPrimitiveBlueprintLibrary
@@ -704,7 +704,7 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomPrimitiveBlueprintLibrary.GetDefaultPrimitiveScale
-	// float GetDefaultPrimitiveScale();                                                                                     // [0xbb29650] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetDefaultPrimitiveScale();                                                                                     // [0xa9b1480] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AtomRuntime.AtomPrimitiveGeometry
@@ -717,41 +717,41 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.ToSimplifiedStaticMesh
-	// class UStaticMesh* ToSimplifiedStaticMesh(float Scale, class UObject* Outer, FString Name, bool bFastBuild);          // [0xbb2be78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UStaticMesh* ToSimplifiedStaticMesh(float Scale, class UObject* Outer, FString Name, bool bFastBuild);          // [0xa9b3aa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.SplitByPolygonGroup
-	// TArray<UAtomPrimitiveGeometry*> SplitByPolygonGroup();                                                                // [0xbb2be0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UAtomPrimitiveGeometry*> SplitByPolygonGroup();                                                                // [0xa9b3a3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.SetVertexColor
-	// class UAtomPrimitiveGeometry* SetVertexColor(FColor& Color);                                                          // [0xbb2bd38] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* SetVertexColor(FColor& Color);                                                          // [0xa9b3968] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.SetTiledUVs
-	// class UAtomPrimitiveGeometry* SetTiledUVs(float TileSize);                                                            // [0xbb2bc68] Final|Native|Public|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* SetTiledUVs(float TileSize);                                                            // [0xa9b38d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.SetMaterialName
-	// class UAtomPrimitiveGeometry* SetMaterialName(FString Name, int32_t PolygonGroupIndex);                               // [0xbb2ad1c] Final|Native|Public|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* SetMaterialName(FString Name, int32_t PolygonGroupIndex);                               // [0xa9b2a10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.GetNumberOfCommonPartLODs
-	// int32_t GetNumberOfCommonPartLODs(FString ExportStyleName, EAtomCommonPartType CommonPartType, FString CommonPartsMeshPath); // [0xbb29790] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumberOfCommonPartLODs(FString ExportStyleName, EAtomCommonPartType CommonPartType, FString CommonPartsMeshPath); // [0xa9b15c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.GetMaterialNames
-	// TArray<FString> GetMaterialNames();                                                                                   // [0xbb29678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FString> GetMaterialNames();                                                                                   // [0xa9b14a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.GetBoneIndexForName
-	// int32_t GetBoneIndexForName(FString BoneName);                                                                        // [0xbb28f58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetBoneIndexForName(FString BoneName);                                                                        // [0xa9b0dcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.DuplicateGeometry
-	// class UAtomPrimitiveGeometry* DuplicateGeometry();                                                                    // [0xbb26c04] Final|Native|Public|BlueprintCallable|Const 
+	// class UAtomPrimitiveGeometry* DuplicateGeometry();                                                                    // [0xa9aeaac] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.CreateEmptyAtomGeometry
-	// class UAtomPrimitiveGeometry* CreateEmptyAtomGeometry();                                                              // [0xbb26bb0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* CreateEmptyAtomGeometry();                                                              // [0xa9aea58] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.CreateAtomGeometryFromCommonPart
-	// class UAtomPrimitiveGeometry* CreateAtomGeometryFromCommonPart(FString ExportStyleName, EAtomCommonPartType CommonPartType, int32_t LODIndex, FString CommonPartsMeshPath); // [0xbb26278] Final|Native|Static|Public|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* CreateAtomGeometryFromCommonPart(FString ExportStyleName, EAtomCommonPartType CommonPartType, int32_t LODIndex, FString CommonPartsMeshPath); // [0xa9ae25c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.BakeTransforms
-	// class UAtomPrimitiveGeometry* BakeTransforms(TArray<FTransform3f>& Transforms);                                       // [0xbb25a0c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* BakeTransforms(TArray<FTransform3f>& Transforms);                                       // [0xa9ada34] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.BakeTransform
-	// class UAtomPrimitiveGeometry* BakeTransform(FTransform3f& Transform);                                                 // [0xbb25940] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* BakeTransform(FTransform3f& Transform);                                                 // [0xa9ad968] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.BakeScale
-	// class UAtomPrimitiveGeometry* BakeScale(float Scale);                                                                 // [0xbb25870] Final|Native|Public|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* BakeScale(float Scale);                                                                 // [0xa9ad8d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.AttachVerticesToNamedBone
-	// void AttachVerticesToNamedBone(FString BoneName);                                                                     // [0xbb25170] Final|Native|Public|BlueprintCallable 
+	// void AttachVerticesToNamedBone(FString BoneName);                                                                     // [0xa9ad21c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.AttachVerticesToBoneIndex
-	// void AttachVerticesToBoneIndex(int32_t BoneIndex);                                                                    // [0xbb250b0] Final|Native|Public|BlueprintCallable 
+	// void AttachVerticesToBoneIndex(int32_t BoneIndex);                                                                    // [0xa9ad19c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.AppendAndWeld
-	// class UAtomPrimitiveGeometry* AppendAndWeld(class UAtomPrimitiveGeometry* GeometryToAppend, FTransform3f& Transform); // [0xbb24ecc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* AppendAndWeld(class UAtomPrimitiveGeometry* GeometryToAppend, FTransform3f& Transform); // [0xa9acffc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometry.Append
-	// class UAtomPrimitiveGeometry* Append(class UAtomPrimitiveGeometry* GeometryToAppend, FTransform3f& Transform);        // [0xbb24d38] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAtomPrimitiveGeometry* Append(class UAtomPrimitiveGeometry* GeometryToAppend, FTransform3f& Transform);        // [0xa9aceac] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomPrimitiveGeometryContainer
@@ -760,35 +760,37 @@ class UAtomPrimitiveGeometryContainer : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(32,11649) /* TWeakObjectPtr<UStaticMesh*> */ __um(SourceMesh);                                   // 0x0028   (0x0020)  
-	SDK_UNDEFINED(16,11650) /* FString */              __um(ExportStyleName);                                      // 0x0048   (0x0010)  
-	SDK_UNDEFINED(80,11651) /* TMap<FString, int32_t> */ __um(GeometryCount);                                      // 0x0058   (0x0050)  
+	SDK_UNDEFINED(32,11711) /* TWeakObjectPtr<UStaticMesh*> */ __um(SourceMesh);                                   // 0x0028   (0x0020)  
+	SDK_UNDEFINED(16,11712) /* FString */              __um(ExportStyleName);                                      // 0x0048   (0x0010)  
+	SDK_UNDEFINED(80,11713) /* TMap<FString, int32_t> */ __um(GeometryCount);                                      // 0x0058   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x50];                                      // 0x00A8   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetShellGeometry
-	// FAtomPrimitiveGeometryAndTransform GetShellGeometry();                                                                // [0xbb30a78] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// FAtomPrimitiveGeometryAndTransform GetShellGeometry();                                                                // [0xa9b8184] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetScaledShellGeometry
-	// FAtomPrimitiveGeometryAndTransform GetScaledShellGeometry(float Scale);                                               // [0xbb30984] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// FAtomPrimitiveGeometryAndTransform GetScaledShellGeometry(float Scale);                                               // [0xa9b80d0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetScaledGeometry
-	// class UAtomPrimitiveGeometry* GetScaledGeometry(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity, float Scale); // [0xbb30834] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAtomPrimitiveGeometry* GetScaledGeometry(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity, float Scale); // [0xa9b800c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetScaledDetailsGeometry
-	// TArray<FAtomPrimitiveGeometryAndTransform> GetScaledDetailsGeometry(float Scale);                                     // [0xbb3074c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomPrimitiveGeometryAndTransform> GetScaledDetailsGeometry(float Scale);                                     // [0xa9b7f64] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetScaledCapsGeometry
-	// TArray<FAtomPrimitiveGeometryAndTransform> GetScaledCapsGeometry(float Scale);                                        // [0xbb30664] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomPrimitiveGeometryAndTransform> GetScaledCapsGeometry(float Scale);                                        // [0xa9b7ebc] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetPartsGeometry
-	// TArray<FAtomPrimitiveGeometryAndTransform> GetPartsGeometry();                                                        // [0xbb303a4] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomPrimitiveGeometryAndTransform> GetPartsGeometry();                                                        // [0xa9b7b50] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetGeometryWithMaterialNames
-	// class UAtomPrimitiveGeometry* GetGeometryWithMaterialNames(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity, FString ShellMaterial, FString UndersideMaterial); // [0xbb2f808] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAtomPrimitiveGeometry* GetGeometryWithMaterialNames(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity, FString ShellMaterial, FString UndersideMaterial); // [0xa9b70a4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetGeometry
-	// class UAtomPrimitiveGeometry* GetGeometry(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity);                  // [0xbb2f738] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UAtomPrimitiveGeometry* GetGeometry(EPrimitiveGeometryComplexity PrimitiveGeometryComplexity);                  // [0xa9b7014] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetExportStyleName
-	// FString GetExportStyleName();                                                                                         // [0xa6ce46c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetExportStyleName();                                                                                         // [0xa6c3e5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetDetailsGeometry
-	// TArray<FAtomPrimitiveGeometryAndTransform> GetDetailsGeometry();                                                      // [0xbb2f578] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomPrimitiveGeometryAndTransform> GetDetailsGeometry();                                                      // [0xa9b6e94] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetDefaultBoneTransforms
+	// TArray<FTransform> GetDefaultBoneTransforms(float Scale);                                                             // [0xa9b6df0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitiveGeometryContainer.GetCapsGeometry
-	// TArray<FAtomPrimitiveGeometryAndTransform> GetCapsGeometry();                                                         // [0xbb2e83c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FAtomPrimitiveGeometryAndTransform> GetCapsGeometry();                                                         // [0xa9b5f9c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AtomRuntime.AtomRuntimeBlueprintLibrary
@@ -800,19 +802,19 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetInfoForColorId
-	// FAtomColorInfo GetInfoForColorId(int32_t ColorId);                                                                    // [0xbb2fff0] Final|Native|Static|Public|BlueprintCallable 
+	// FAtomColorInfo GetInfoForColorId(int32_t ColorId);                                                                    // [0xa9b77cc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetCommonPartDescriptionFromType
-	// void GetCommonPartDescriptionFromType(EAtomCommonPartType CommonPartType, FAtomCommonPartDescription& OutDescription); // [0xbb2ed7c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetCommonPartDescriptionFromType(EAtomCommonPartType CommonPartType, FAtomCommonPartDescription& OutDescription); // [0xa9b65c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetCommonPartCategoryFromType
-	// EAtomCommonPartCategory GetCommonPartCategoryFromType(EAtomCommonPartType CommonPartType);                            // [0xbb2ecbc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EAtomCommonPartCategory GetCommonPartCategoryFromType(EAtomCommonPartType CommonPartType);                            // [0xa9b6540] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetCommonPartAssetDescriptionFromStaticMesh
-	// void GetCommonPartAssetDescriptionFromStaticMesh(class UStaticMesh* StaticMesh, FAtomCommonPartAssetDescription& OutDescription, EGetCommonPartDescriptionResult& OutIsValid); // [0xbb2eb00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCommonPartAssetDescriptionFromStaticMesh(class UStaticMesh* StaticMesh, FAtomCommonPartAssetDescription& OutDescription, EGetCommonPartDescriptionResult& OutIsValid); // [0xa9b63c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetBitPackForColorId
-	// int32_t GetBitPackForColorId(int32_t AtomColorId);                                                                    // [0xbb2e744] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetBitPackForColorId(int32_t AtomColorId);                                                                    // [0xa9b5ee4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetBitPackForColor
-	// int32_t GetBitPackForColor(FColor& Color);                                                                            // [0xbb2e670] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// int32_t GetBitPackForColor(FColor& Color);                                                                            // [0xa9b5e10] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.AtomRuntimeBlueprintLibrary.GetAllColorInfo
-	// TMap<int32_t, FAtomColorInfo> GetAllColorInfo();                                                                      // [0xbb2e50c] Final|Native|Static|Public|BlueprintCallable 
+	// TMap<int32_t, FAtomColorInfo> GetAllColorInfo();                                                                      // [0xa9b5cec] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomRuntimeSettings
@@ -822,7 +824,7 @@ class UAtomRuntimeSettings : public UDeveloperSettings
 public:
 	float                                              PrimitiveGlobalScale;                                       // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(32,11652) /* TWeakObjectPtr<UDataTable*> */ __um(ColorDataTableOverride);                        // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,11714) /* TWeakObjectPtr<UDataTable*> */ __um(ColorDataTableOverride);                        // 0x0038   (0x0020)  
 	bool                                               bEnableWorldConnectivity;                                   // 0x0058   (0x0001)  
 	bool                                               bCookContent;                                               // 0x0059   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x6];                                       // 0x005A   (0x0006)  MISSED
@@ -830,7 +832,7 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomRuntimeSettings.GetColorDataTable
-	// class UDataTable* GetColorDataTable();                                                                                // [0xbb2eadc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDataTable* GetColorDataTable();                                                                                // [0xa9b639c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AtomRuntime.WorldConnectivitySubsystem
@@ -843,45 +845,45 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.UnregisterConnectivityActor
-	// void UnregisterConnectivityActor(class AActor* Actor);                                                                // [0xbb31e7c] Final|Native|Public|BlueprintCallable 
+	// void UnregisterConnectivityActor(class AActor* Actor);                                                                // [0xa9b9568] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.TryConnectObjectAtLocation
-	// bool TryConnectObjectAtLocation(FWorldConnectivityHandle ObjectToConnect, FTransform& DesiredObjectTransform, TArray<FWorldConnectivityHandle>& ConnectionCandidates, bool PerformConnection); // [0xbb31588] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TryConnectObjectAtLocation(FWorldConnectivityHandle ObjectToConnect, FTransform& DesiredObjectTransform, TArray<FWorldConnectivityHandle>& ConnectionCandidates, bool PerformConnection); // [0xa9b8b84] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.RunPlanarConnectivityQuery
-	// TArray<FConnectivityQueryResult> RunPlanarConnectivityQuery(class AActor* AtomModelActorToPlace, class AActor* AtomModelActorToConnect, FVector& QueryStartLocation, FVector& QueryEndLocation, TEnumAsByte<ECollisionChannel> QueryCollisionChannel, int32_t QueryRadius); // [0xbb31020] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// TArray<FConnectivityQueryResult> RunPlanarConnectivityQuery(class AActor* AtomModelActorToPlace, class AActor* AtomModelActorToConnect, FVector& QueryStartLocation, FVector& QueryEndLocation, TEnumAsByte<ECollisionChannel> QueryCollisionChannel, int32_t QueryRadius); // [0xa9b86a0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.RegisterModelActor
-	// void RegisterModelActor(class AActor* Actor, FSerializedConnectivityObjects& Connections);                            // [0xbb30ef0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RegisterModelActor(class AActor* Actor, FSerializedConnectivityObjects& Connections);                            // [0xa9b85ac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.RegisterCustomConnectivityActor
-	// void RegisterCustomConnectivityActor(class AActor* Actor, FSerializedConnectivityObjects& ConnectivityObject);        // [0xbb30ef0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RegisterCustomConnectivityActor(class AActor* Actor, FSerializedConnectivityObjects& ConnectivityObject);        // [0xa9b85ac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.RegisterConnectivityActor
-	// void RegisterConnectivityActor(class AActor* Actor, class UAtomModel* Model);                                         // [0xbb30d94] Final|Native|Public|BlueprintCallable 
+	// void RegisterConnectivityActor(class AActor* Actor, class UAtomModel* Model);                                         // [0xa9b84dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.PlanarGridStepSize
-	// double PlanarGridStepSize();                                                                                          // [0xbb30d74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// double PlanarGridStepSize();                                                                                          // [0xa9b84bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetTransform
-	// FTransform GetTransform(FWorldConnectivityHandle Handle);                                                             // [0xbb30c78] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetTransform(FWorldConnectivityHandle Handle);                                                             // [0xa9b8344] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetPlanarFields
-	// TArray<FPlanarFieldInfo> GetPlanarFields(FWorldConnectivityHandle Handle, EConnectionFieldGender Type);               // [0xbb304bc] Final|Native|Public|BlueprintCallable 
+	// TArray<FPlanarFieldInfo> GetPlanarFields(FWorldConnectivityHandle Handle, EConnectionFieldGender Type);               // [0xa9b7c68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetPlanarFieldCenter
-	// FVector GetPlanarFieldCenter(FPlanarFieldInfo& Field);                                                                // [0xbb303e0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetPlanarFieldCenter(FPlanarFieldInfo& Field);                                                                // [0xa9b7b8c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetOverlapPenetrationDepth
-	// FVector GetOverlapPenetrationDepth(class AStaticMeshActor* Actor1, class AStaticMeshActor* Actor2, FVector Offset);   // [0xbb300dc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetOverlapPenetrationDepth(class AStaticMeshActor* Actor1, class AStaticMeshActor* Actor2, FVector Offset);   // [0xa9b7878] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetConnectivityHandles
-	// TArray<FWorldConnectivityHandle> GetConnectivityHandles(class AActor* Actor);                                         // [0xbb2f2f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FWorldConnectivityHandle> GetConnectivityHandles(class AActor* Actor);                                         // [0xa9b6bac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetConnectivityHandle
-	// FWorldConnectivityHandle GetConnectivityHandle(class AActor* Actor);                                                  // [0xbb2f080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FWorldConnectivityHandle GetConnectivityHandle(class AActor* Actor);                                                  // [0xa9b6974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetConnectedObjectsRecursively
-	// TArray<FWorldConnectivityHandle> GetConnectedObjectsRecursively(FWorldConnectivityHandle Object);                     // [0xbb2ef98] Final|Native|Public|BlueprintCallable 
+	// TArray<FWorldConnectivityHandle> GetConnectedObjectsRecursively(FWorldConnectivityHandle Object);                     // [0xa9b6810] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetConnectedObjects
-	// TArray<FWorldConnectivityHandle> GetConnectedObjects(FWorldConnectivityHandle Object);                                // [0xbb2eeb0] Final|Native|Public|BlueprintCallable 
+	// TArray<FWorldConnectivityHandle> GetConnectedObjects(FWorldConnectivityHandle Object);                                // [0xa9b66ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetClosestFieldToPoint
-	// FPlanarFieldInfo GetClosestFieldToPoint(FWorldConnectivityHandle Handle, FVector& WorldLocation, EConnectionFieldGender Type, bool& bSuccess); // [0xbb2e878] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FPlanarFieldInfo GetClosestFieldToPoint(FWorldConnectivityHandle Handle, FVector& WorldLocation, EConnectionFieldGender Type, bool& bSuccess); // [0xa9b5fd8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetAtomModelAssetUserData
-	// class UAtomModelAssetUserData* GetAtomModelAssetUserData(class UObject* Object);                                      // [0xbb2e5b0] Final|Native|Public|BlueprintCallable 
+	// class UAtomModelAssetUserData* GetAtomModelAssetUserData(class UObject* Object);                                      // [0xa9b5d90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.GetActor
-	// class AActor* GetActor(FWorldConnectivityHandle Handle);                                                              // [0xbb2e43c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetActor(FWorldConnectivityHandle Handle);                                                              // [0xa9b5ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.DisconnectObjects
-	// void DisconnectObjects(FWorldConnectivityHandle ObjectA, FWorldConnectivityHandle ObjectB);                           // [0xbb2e1ac] Final|Native|Public|BlueprintCallable 
+	// void DisconnectObjects(FWorldConnectivityHandle ObjectA, FWorldConnectivityHandle ObjectB);                           // [0xa9b5874] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.WorldConnectivitySubsystem.DisconnectAllObjectConnections
-	// void DisconnectAllObjectConnections(FWorldConnectivityHandle Object);                                                 // [0xbb2e0ec] Final|Native|Public|BlueprintCallable 
+	// void DisconnectAllObjectConnections(FWorldConnectivityHandle Object);                                                 // [0xa9b5734] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.WorldConnectivityBlueprintLibrary
@@ -893,13 +895,13 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.WorldConnectivityBlueprintLibrary.IsValid
-	// bool IsValid(FWorldConnectivityHandle& Handle);                                                                       // [0xa41c3e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsValid(FWorldConnectivityHandle& Handle);                                                                       // [0xa410b3c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.WorldConnectivityBlueprintLibrary.GetTransform
-	// FTransform GetTransform(class UObject* WorldContext, FWorldConnectivityHandle& Handle);                               // [0xbb30ae8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetTransform(class UObject* WorldContext, FWorldConnectivityHandle& Handle);                               // [0xa9b81f4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.WorldConnectivityBlueprintLibrary.GetFieldCenter
-	// FVector GetFieldCenter(class UObject* WorldContext, FPlanarFieldInfo& Field);                                         // [0xbb2f5b4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetFieldCenter(class UObject* WorldContext, FPlanarFieldInfo& Field);                                         // [0xa9b6ed0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AtomRuntime.WorldConnectivityBlueprintLibrary.GetActor
-	// class AActor* GetActor(class UObject* WorldContext, FWorldConnectivityHandle& Handle);                                // [0xbb2e308] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class AActor* GetActor(class UObject* WorldContext, FWorldConnectivityHandle& Handle);                                // [0xa9b5aa8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AtomRuntime.AtomModelTags
@@ -947,22 +949,22 @@ struct FAtomColorSurface
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FAtomDecorationAssignment
 { 
-	SDK_UNDEFINED(16,11653) /* FString */              __um(SurfaceName);                                          // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,11654) /* FString */              __um(TextureName);                                          // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,11655) /* FString */              __um(Version);                                              // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,11715) /* FString */              __um(SurfaceName);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11716) /* FString */              __um(TextureName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11717) /* FString */              __um(Version);                                              // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.AtomModelPart
 /// Size: 0x00B0 (0x000000 - 0x0000B0)
 struct FAtomModelPart
 { 
-	SDK_UNDEFINED(32,11656) /* TWeakObjectPtr<UAtomPrimitive*> */ __um(AtomPrimitive);                             // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,11657) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialInstance);                      // 0x0020   (0x0020)  
-	SDK_UNDEFINED(32,11658) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialWithPayload);                   // 0x0040   (0x0020)  
+	SDK_UNDEFINED(32,11718) /* TWeakObjectPtr<UAtomPrimitive*> */ __um(AtomPrimitive);                             // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,11719) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialInstance);                      // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,11720) /* TWeakObjectPtr<UMaterialInterface*> */ __um(MaterialWithPayload);                   // 0x0040   (0x0020)  
 	TArray<FTransform>                                 Transforms;                                                 // 0x0060   (0x0010)  
 	uint32_t                                           PartId;                                                     // 0x0070   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11659) /* FString */              __um(PartRevision);                                         // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,11721) /* FString */              __um(PartRevision);                                         // 0x0078   (0x0010)  
 	TArray<FAtomColorSurface>                          ColorSurfaces;                                              // 0x0088   (0x0010)  
 	TArray<FAtomDecorationAssignment>                  Decorations;                                                // 0x0098   (0x0010)  
 	bool                                               bIgnoreCommonPartCulling;                                   // 0x00A8   (0x0001)  
@@ -1030,7 +1032,7 @@ struct FAtomHingedElement
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FAtomModelSelectionSet
 { 
-	SDK_UNDEFINED(80,11660) /* TSet<FGuid> */          __um(PrimitiveIds);                                         // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11722) /* TSet<FGuid> */          __um(PrimitiveIds);                                         // 0x0000   (0x0050)  
 	FName                                              SelectionSetName;                                           // 0x0050   (0x0004)  
 	FName                                              ImportedName;                                               // 0x0054   (0x0004)  
 	FGuid                                              ID;                                                         // 0x0058   (0x0010)  
@@ -1054,7 +1056,7 @@ struct FAtomModelConfigurationGroup
 	FName                                              Name;                                                       // 0x0010   (0x0004)  
 	FGuid                                              ParentGroupId;                                              // 0x0014   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11661) /* TSet<FGuid> */          __um(PrimitiveIds);                                         // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,11723) /* TSet<FGuid> */          __um(PrimitiveIds);                                         // 0x0028   (0x0050)  
 	TArray<FAtomModelSocket>                           Sockets;                                                    // 0x0078   (0x0010)  
 	bool                                               bHasGroupPivot;                                             // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0089   (0x0007)  MISSED
@@ -1065,7 +1067,7 @@ struct FAtomModelConfigurationGroup
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FAtomGlueSet
 { 
-	SDK_UNDEFINED(80,11662) /* TSet<FAtomModelPartReference> */ __um(Entries);                                     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11724) /* TSet<FAtomModelPartReference> */ __um(Entries);                                     // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/AtomRuntime.AtomSourceModel
@@ -1092,30 +1094,30 @@ public:
 	TArray<FAtomHingedElement>                         Elements;                                                   // 0x0070   (0x0010)  
 	TArray<FAtomModelSelectionSet>                     SelectionSets;                                              // 0x0080   (0x0010)  
 	TArray<FAtomModelConfigurationGroup>               Groups;                                                     // 0x0090   (0x0010)  
-	SDK_UNDEFINED(80,11663) /* TMap<EAtomCommonPartType, TWeakObjectPtr<UStaticMesh*>> */ __um(CommonPartOverrides); // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,11725) /* TMap<EAtomCommonPartType, TWeakObjectPtr<UStaticMesh*>> */ __um(CommonPartOverrides); // 0x00A0   (0x0050)  
 	char                                               CommonPartOptimization;                                     // 0x00F0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00F1   (0x0007)  MISSED
 	FSerializedConnectivityObjects                     SerializedConnectivityObjects;                              // 0x00F8   (0x0020)  
-	SDK_UNDEFINED(80,11664) /* TMap<FString, TWeakObjectPtr<UTexture*>> */ __um(TextureNameToAsset);               // 0x0118   (0x0050)  
+	SDK_UNDEFINED(80,11726) /* TMap<FString, TWeakObjectPtr<UTexture*>> */ __um(TextureNameToAsset);               // 0x0118   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x50];                                      // 0x0168   (0x0050)  MISSED
 	FAtomSourceModel                                   SourceModel;                                                // 0x01B8   (0x00A0)  
 
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomModel.GetTextureForDecorationTextureName
-	// class UTexture* GetTextureForDecorationTextureName(FString TextureName);                                              // [0xbb5f244] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTexture* GetTextureForDecorationTextureName(FString TextureName);                                              // [0xa9e334c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomModel.GetPrimitivesForChildArray
-	// void GetPrimitivesForChildArray(int32_t InChildIdx, TArray<FAtomModelPrimitiveInstance>& OutPrimitives);              // [0xbb5e9a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetPrimitivesForChildArray(int32_t InChildIdx, TArray<FAtomModelPrimitiveInstance>& OutPrimitives);              // [0xa9e2b2c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomModel.GetPartsCollection
-	// FAtomModelPartsCollection GetPartsCollection();                                                                       // [0xbb5e93c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FAtomModelPartsCollection GetPartsCollection();                                                                       // [0xa9e2ac8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomModel.GetModelPath
-	// FString GetModelPath();                                                                                               // [0xbb5e7e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetModelPath();                                                                                               // [0xa9e296c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomModel.GetModelName
-	// FString GetModelName();                                                                                               // [0xbb5e7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetModelName();                                                                                               // [0xa9e292c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomModel.GetGeneratedMergedMeshes
-	// TArray<TWeakObjectPtr<UStaticMesh*>> GetGeneratedMergedMeshes();                                                      // [0xbb5dee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<TWeakObjectPtr<UStaticMesh*>> GetGeneratedMergedMeshes();                                                      // [0xa9e2134] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomModel.GetChildIdentifier
-	// FString GetChildIdentifier(int32_t InChildIdx);                                                                       // [0xbb5d818] Final|Native|Public|BlueprintCallable 
+	// FString GetChildIdentifier(int32_t InChildIdx);                                                                       // [0xa9e1aa8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomModelComponent
@@ -1126,8 +1128,8 @@ public:
 	class UAtomModel*                                  AtomModel;                                                  // 0x0220   (0x0008)  
 	EAtomModelInstanceType                             InstanceType;                                               // 0x0228   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0229   (0x0007)  MISSED
-	SDK_UNDEFINED(16,11665) /* FString */              __um(RenderStyle);                                          // 0x0230   (0x0010)  
-	SDK_UNDEFINED(16,11666) /* FString */              __um(FallbackRenderStyle);                                  // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,11727) /* FString */              __um(RenderStyle);                                          // 0x0230   (0x0010)  
+	SDK_UNDEFINED(16,11728) /* FString */              __um(FallbackRenderStyle);                                  // 0x0240   (0x0010)  
 	bool                                               bUseCombinedMeshes;                                         // 0x0250   (0x0001)  
 	bool                                               bUseColorPayload;                                           // 0x0251   (0x0001)  
 	bool                                               bCreateRigidElements;                                       // 0x0252   (0x0001)  
@@ -1136,7 +1138,7 @@ public:
 	char                                               CommonPartOptimization;                                     // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0259   (0x0007)  MISSED
 	TArray<class USceneComponent*>                     RigidElementComponents;                                     // 0x0260   (0x0010)  
-	SDK_UNDEFINED(80,11667) /* TMap<FName, FModelPrimitiveEntry> */ __um(ComponentToPrimitive);                    // 0x0270   (0x0050)  
+	SDK_UNDEFINED(80,11729) /* TMap<FName, FModelPrimitiveEntry> */ __um(ComponentToPrimitive);                    // 0x0270   (0x0050)  
 };
 
 /// Class /Script/AtomRuntime.AtomPrimitiveComponent
@@ -1145,8 +1147,8 @@ class UAtomPrimitiveComponent : public UStaticMeshComponent
 { 
 public:
 	class UAtomPrimitive*                              AtomPrimitive;                                              // 0x05C0   (0x0008)  
-	SDK_UNDEFINED(16,11668) /* FString */              __um(RenderStyle);                                          // 0x05C8   (0x0010)  
-	SDK_UNDEFINED(16,11669) /* FString */              __um(FallbackRenderStyle);                                  // 0x05D8   (0x0010)  
+	SDK_UNDEFINED(16,11730) /* FString */              __um(RenderStyle);                                          // 0x05C8   (0x0010)  
+	SDK_UNDEFINED(16,11731) /* FString */              __um(FallbackRenderStyle);                                  // 0x05D8   (0x0010)  
 	bool                                               bUseCombinedMeshes;                                         // 0x05E8   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x05E9   (0x0007)  MISSED
 };
@@ -1162,23 +1164,23 @@ public:
 	float                                              DialogDelay;                                                // 0x002C   (0x0004)  
 	int32_t                                            NumProgressSteps;                                           // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11670) /* FString */              __um(ProgressMessage);                                      // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,11732) /* FString */              __um(ProgressMessage);                                      // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0048   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomModelProcessor.OnProcessPrimitive
-	// FAtomProcessorResult OnProcessPrimitive(class UAtomModel* DummyModel, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection, FAtomOnProcessPrimitiveSettings& Settings); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// FAtomProcessorResult OnProcessPrimitive(class UAtomModel* DummyModel, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection, FAtomOnProcessPrimitiveSettings& Settings); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AtomRuntime.AtomModelProcessor.OnProcessModel
-	// FAtomProcessorResult OnProcessModel(class UAtomModel* Model, FAtomModelPartsCollection& AtomModelPartsCollection, TArray<TWeakObjectPtr<UObject*>>& ExistingObjects); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// FAtomProcessorResult OnProcessModel(class UAtomModel* Model, FAtomModelPartsCollection& AtomModelPartsCollection, TArray<TWeakObjectPtr<UObject*>>& ExistingObjects); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AtomRuntime.AtomModelProcessor.OnGetTargetAssetPath
-	// FString OnGetTargetAssetPath(class UAtomModel* Model, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// FString OnGetTargetAssetPath(class UAtomModel* Model, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AtomRuntime.AtomModelProcessor.OnGetProcessPrimitiveTargetAssetPath
-	// FString OnGetProcessPrimitiveTargetAssetPath(class UAtomModel* Model, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection, FAtomOnProcessPrimitiveSettings& Settings); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// FString OnGetProcessPrimitiveTargetAssetPath(class UAtomModel* Model, class UAtomPrimitive* Primitive, FAtomModelPartsCollection& AtomModelPartsCollection, FAtomOnProcessPrimitiveSettings& Settings); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AtomRuntime.AtomModelProcessor.OnGetProcessModelTargetAssetPath
-	// FString OnGetProcessModelTargetAssetPath(class UAtomModel* Model, FAtomModelPartsCollection& AtomModelPartsCollection); // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// FString OnGetProcessModelTargetAssetPath(class UAtomModel* Model, FAtomModelPartsCollection& AtomModelPartsCollection); // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AtomRuntime.AtomModelProcessor.IncrementProgress
-	// void IncrementProgress(int32_t NumSteps, FString Message);                                                            // [0xbb5f938] Final|Native|Public|BlueprintCallable 
+	// void IncrementProgress(int32_t NumSteps, FString Message);                                                            // [0xa9e39fc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomProcessorBlueprintLibrary
@@ -1190,15 +1192,15 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomProcessorBlueprintLibrary.SetModelProcessor
-	// void SetModelProcessor(FAtomModelProcessorInstance& ProcessorInstance, class UAtomModelProcessor* ModelProcessor, bool bUseCustomSettings); // [0xbb601c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetModelProcessor(FAtomModelProcessorInstance& ProcessorInstance, class UAtomModelProcessor* ModelProcessor, bool bUseCustomSettings); // [0xa9e420c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomProcessorBlueprintLibrary.IsValid
-	// bool IsValid(FAtomModelProcessorInstance& ProcessorInstance);                                                         // [0xbb600f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsValid(FAtomModelProcessorInstance& ProcessorInstance);                                                         // [0xa9e4140] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomProcessorBlueprintLibrary.GetProcessorClass
-	// class UClass* GetProcessorClass(FAtomModelProcessorInstance& ProcessorInstance);                                      // [0xbb5f0ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UClass* GetProcessorClass(FAtomModelProcessorInstance& ProcessorInstance);                                      // [0xa9e31f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomProcessorBlueprintLibrary.GetModelProcessor
-	// class UAtomModelProcessor* GetModelProcessor(FAtomModelProcessorInstance& ProcessorInstance);                         // [0xbb5e844] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAtomModelProcessor* GetModelProcessor(FAtomModelProcessorInstance& ProcessorInstance);                         // [0xa9e29d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomProcessorBlueprintLibrary.AppendAtomProcessorResult
-	// FAtomProcessorResult AppendAtomProcessorResult(FAtomProcessorResult& Result, FAtomProcessorResult& ResultToAppend);   // [0xbb5d680] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAtomProcessorResult AppendAtomProcessorResult(FAtomProcessorResult& Result, FAtomProcessorResult& ResultToAppend);   // [0xa9e1910] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AtomRuntime.AtomPrimitive
@@ -1209,19 +1211,19 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	int32_t                                            PartId;                                                     // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11671) /* FString */              __um(PartRevision);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11733) /* FString */              __um(PartRevision);                                         // 0x0030   (0x0010)  
 	FName                                              DesignName;                                                 // 0x0040   (0x0004)  
 	bool                                               bIsFlex;                                                    // 0x0044   (0x0001)  
 	bool                                               bIsVariant;                                                 // 0x0045   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x0046   (0x0002)  MISSED
-	SDK_UNDEFINED(16,11672) /* TArray<FString> */      __um(DecorationSurfaceNames);                               // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,11734) /* TArray<FString> */      __um(DecorationSurfaceNames);                               // 0x0048   (0x0010)  
 	int32_t                                            NumberOfColorSurfaces;                                      // 0x0058   (0x0004)  
 	EAtomPlatform                                      AtomPlatform;                                               // 0x005C   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x005D   (0x0003)  MISSED
 	int32_t                                            AtomMainGroupId;                                            // 0x0060   (0x0004)  
 	int32_t                                            AtomSubMainGroupId;                                         // 0x0064   (0x0004)  
-	SDK_UNDEFINED(80,11673) /* TMap<EAtomCommonPartType, FAtomPrimitiveCommonPart> */ __um(PrimitiveCommonParts);  // 0x0068   (0x0050)  
-	SDK_UNDEFINED(80,11674) /* TMap<FName, FAtomPrimitiveCommonPart> */ __um(CommonParts);                         // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(80,11735) /* TMap<EAtomCommonPartType, FAtomPrimitiveCommonPart> */ __um(PrimitiveCommonParts);  // 0x0068   (0x0050)  
+	SDK_UNDEFINED(80,11736) /* TMap<FName, FAtomPrimitiveCommonPart> */ __um(CommonParts);                         // 0x00B8   (0x0050)  
 	bool                                               bOverrideConnectionFields;                                  // 0x0108   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x7];                                       // 0x0109   (0x0007)  MISSED
 	FBoxSphereBounds                                   Bounds;                                                     // 0x0110   (0x0038)  
@@ -1233,13 +1235,13 @@ public:
 
 	/// Functions
 	// Function /Script/AtomRuntime.AtomPrimitive.IsFlexElement
-	// bool IsFlexElement();                                                                                                 // [0xbb600e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFlexElement();                                                                                                 // [0xa9e412c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AtomRuntime.AtomPrimitive.GetSubMainGroupName
-	// FName GetSubMainGroupName(int32_t SubMainGroupId);                                                                    // [0xbb5f180] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetSubMainGroupName(int32_t SubMainGroupId);                                                                    // [0xa9e32c8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitive.GetMainGroupName
-	// FName GetMainGroupName(int32_t MainGroupId);                                                                          // [0xbb5e6dc] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetMainGroupName(int32_t MainGroupId);                                                                          // [0xa9e28a8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AtomRuntime.AtomPrimitive.GetGeometryContainerForExportStyle
-	// class UAtomPrimitiveGeometryContainer* GetGeometryContainerForExportStyle(FString ExportStyleName, FString FallbackExportStyleName); // [0xbb5df70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAtomPrimitiveGeometryContainer* GetGeometryContainerForExportStyle(FString ExportStyleName, FString FallbackExportStyleName); // [0xa9e21c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/AtomRuntime.AtomColorInfo
@@ -1249,7 +1251,7 @@ struct FAtomColorInfo : FTableRowBase
 	FColor                                             Color;                                                      // 0x0008   (0x0004)  
 	EAtomMaterialType                                  MaterialType;                                               // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,11675) /* FString */              __um(Name);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11737) /* FString */              __um(Name);                                                 // 0x0010   (0x0010)  
 	bool                                               bIsActive;                                                  // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
@@ -1290,7 +1292,7 @@ struct FAtomModelPartDecorationInfo
 { 
 	class UMaterialInterface*                          Material;                                                   // 0x0000   (0x0008)  
 	class UTexture*                                    Texture;                                                    // 0x0008   (0x0008)  
-	SDK_UNDEFINED(16,11676) /* FString */              __um(PrimitiveSurfaceName);                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11738) /* FString */              __um(PrimitiveSurfaceName);                                 // 0x0010   (0x0010)  
 	int32_t                                            PrimitiveSurfaceIndex;                                      // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0024   (0x0004)  MISSED
 };
@@ -1316,9 +1318,9 @@ struct FAtomModelPartInstanceInfo
 	TArray<FTransform>                                 Transforms;                                                 // 0x0028   (0x0010)  
 	TArray<FAtomModelPartDecorationInfo>               Decorations;                                                // 0x0038   (0x0010)  
 	TArray<FAtomModelPartColorInfo>                    Colors;                                                     // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,11677) /* TArray<FString> */      __um(SelectionSets);                                        // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,11678) /* FString */              __um(Group);                                                // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,11679) /* FString */              __um(ParentGroup);                                          // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,11739) /* TArray<FString> */      __um(SelectionSets);                                        // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,11740) /* FString */              __um(Group);                                                // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,11741) /* FString */              __um(ParentGroup);                                          // 0x0078   (0x0010)  
 	TArray<FAtomCommonPartAndTransform>                CommonParts;                                                // 0x0088   (0x0010)  
 	bool                                               bIsUndersideVisible;                                        // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0099   (0x0007)  MISSED
@@ -1328,59 +1330,63 @@ struct FAtomModelPartInstanceInfo
 /// Size: 0x0080 (0x000000 - 0x000080)
 struct FAtomModelPartsCollection
 { 
-	SDK_UNDEFINED(16,11680) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11742) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FTransform                                         Pivot;                                                      // 0x0010   (0x0060)  
 	TArray<FAtomModelPartInstanceInfo>                 Parts;                                                      // 0x0070   (0x0010)  
 };
 
-/// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeBox
-/// Size: 0x0048 (0x000000 - 0x000048)
-struct FAtomPrimitiveCollisionVolumeBox
+/// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeBase
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FAtomPrimitiveCollisionVolumeBase
 { 
 	FVector                                            Location;                                                   // 0x0000   (0x0018)  
-	FRotator                                           Rotation;                                                   // 0x0018   (0x0018)  
-	FVector                                            HalfExtent;                                                 // 0x0030   (0x0018)  
+	uint16_t                                           BoneIndex;                                                  // 0x0018   (0x0002)  
+	unsigned char                                      UnknownData00_6[0x6];                                       // 0x001A   (0x0006)  MISSED
+};
+
+/// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeBox
+/// Size: 0x0030 (0x000020 - 0x000050)
+struct FAtomPrimitiveCollisionVolumeBox : FAtomPrimitiveCollisionVolumeBase
+{ 
+	FRotator                                           Rotation;                                                   // 0x0020   (0x0018)  
+	FVector                                            HalfExtent;                                                 // 0x0038   (0x0018)  
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeCapsule
-/// Size: 0x0038 (0x000000 - 0x000038)
-struct FAtomPrimitiveCollisionVolumeCapsule
+/// Size: 0x0020 (0x000020 - 0x000040)
+struct FAtomPrimitiveCollisionVolumeCapsule : FAtomPrimitiveCollisionVolumeBase
 { 
-	FVector                                            Location;                                                   // 0x0000   (0x0018)  
-	FRotator                                           Rotation;                                                   // 0x0018   (0x0018)  
-	float                                              Radius;                                                     // 0x0030   (0x0004)  
-	float                                              HalfLength;                                                 // 0x0034   (0x0004)  
+	FRotator                                           Rotation;                                                   // 0x0020   (0x0018)  
+	float                                              Radius;                                                     // 0x0038   (0x0004)  
+	float                                              HalfLength;                                                 // 0x003C   (0x0004)  
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeCylinder
-/// Size: 0x0038 (0x000000 - 0x000038)
-struct FAtomPrimitiveCollisionVolumeCylinder
+/// Size: 0x0020 (0x000020 - 0x000040)
+struct FAtomPrimitiveCollisionVolumeCylinder : FAtomPrimitiveCollisionVolumeBase
 { 
-	FVector                                            Location;                                                   // 0x0000   (0x0018)  
-	FRotator                                           Rotation;                                                   // 0x0018   (0x0018)  
-	float                                              Radius;                                                     // 0x0030   (0x0004)  
-	float                                              HalfLength;                                                 // 0x0034   (0x0004)  
+	FRotator                                           Rotation;                                                   // 0x0020   (0x0018)  
+	float                                              Radius;                                                     // 0x0038   (0x0004)  
+	float                                              HalfLength;                                                 // 0x003C   (0x0004)  
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeTube
-/// Size: 0x0040 (0x000000 - 0x000040)
-struct FAtomPrimitiveCollisionVolumeTube
+/// Size: 0x0028 (0x000020 - 0x000048)
+struct FAtomPrimitiveCollisionVolumeTube : FAtomPrimitiveCollisionVolumeBase
 { 
-	FVector                                            Location;                                                   // 0x0000   (0x0018)  
-	FRotator                                           Rotation;                                                   // 0x0018   (0x0018)  
-	float                                              InnerRadius;                                                // 0x0030   (0x0004)  
-	float                                              OuterRadius;                                                // 0x0034   (0x0004)  
-	float                                              HalfLength;                                                 // 0x0038   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x003C   (0x0004)  MISSED
+	FRotator                                           Rotation;                                                   // 0x0020   (0x0018)  
+	float                                              InnerRadius;                                                // 0x0038   (0x0004)  
+	float                                              OuterRadius;                                                // 0x003C   (0x0004)  
+	float                                              HalfLength;                                                 // 0x0040   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0044   (0x0004)  MISSED
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeSphere
-/// Size: 0x0020 (0x000000 - 0x000020)
-struct FAtomPrimitiveCollisionVolumeSphere
+/// Size: 0x0008 (0x000020 - 0x000028)
+struct FAtomPrimitiveCollisionVolumeSphere : FAtomPrimitiveCollisionVolumeBase
 { 
-	FVector                                            Location;                                                   // 0x0000   (0x0018)  
-	float                                              Radius;                                                     // 0x0018   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x001C   (0x0004)  MISSED
+	float                                              Radius;                                                     // 0x0020   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0024   (0x0004)  MISSED
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveCollisionVolumeContainer
@@ -1627,11 +1633,11 @@ struct FAtomRigidElementSettings
 /// Size: 0x0090 (0x000000 - 0x000090)
 struct FAtomModelHierarchicalSceneNode
 { 
-	SDK_UNDEFINED(16,11681) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11743) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FTransform                                         WorldTransform;                                             // 0x0010   (0x0060)  
 	int32_t                                            ParentIndex;                                                // 0x0070   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11682) /* TArray<FString> */      __um(ItemNames);                                            // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,11744) /* TArray<FString> */      __um(ItemNames);                                            // 0x0078   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0088   (0x0008)  MISSED
 };
 
@@ -1648,14 +1654,14 @@ struct FAtomModelIssue
 { 
 	EAtomIssue                                         Issue;                                                      // 0x0000   (0x0004)  
 	int32_t                                            ID;                                                         // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,11683) /* FString */              __um(StringData);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,11745) /* FString */              __um(StringData);                                           // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.ModelPrimitiveEntry
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FModelPrimitiveEntry
 { 
-	SDK_UNDEFINED(32,11684) /* TWeakObjectPtr<UMeshComponent*> */ __um(Component);                                 // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,11746) /* TWeakObjectPtr<UMeshComponent*> */ __um(Component);                                 // 0x0000   (0x0020)  
 	FAtomModelPartReference                            PartReference;                                              // 0x0020   (0x0014)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0034   (0x0004)  MISSED
 };
@@ -1685,7 +1691,7 @@ struct FAtomModelProcessorInstance
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	class UAtomModelProcessor*                         Processor;                                                  // 0x0008   (0x0008)  
 	class UAtomModelProcessor*                         InternalTransientPropStorage;                               // 0x0010   (0x0008)  
-	SDK_UNDEFINED(16,11685) /* TArray<TWeakObjectPtr<UObject*>> */ __um(ProcessedObjects);                         // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,11747) /* TArray<TWeakObjectPtr<UObject*>> */ __um(ProcessedObjects);                         // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveConnectionPointReference
@@ -1738,8 +1744,8 @@ struct FAtomPrimitivePhysicsAttributes
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FAtomPrimitiveUserNote
 { 
-	SDK_UNDEFINED(16,11686) /* FString */              __um(Text);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,11687) /* FString */              __um(PartRevision);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11748) /* FString */              __um(Text);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11749) /* FString */              __um(PartRevision);                                         // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/AtomRuntime.AtomPrimitiveOptimizationSettings

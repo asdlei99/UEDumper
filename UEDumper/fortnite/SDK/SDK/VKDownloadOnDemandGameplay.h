@@ -24,7 +24,7 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandGameplay.DownloadOnDemandComponent.HandleMnemonicsFromValkyriePaletteProviderReceived
-	// void HandleMnemonicsFromValkyriePaletteProviderReceived(TArray<FString>& Mnemonics);                                  // [0xb936334] Final|Native|Private|HasOutParms 
+	// void HandleMnemonicsFromValkyriePaletteProviderReceived(TArray<FString>& Mnemonics);                                  // [0xbcee1a8] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/VKDownloadOnDemandGameplay.DownloadOnDemandPlot
@@ -44,7 +44,7 @@ class UDownloadOnDemandProject : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0xB8];                                      // 0x0000   (0x00B8)  MISSED
 	class UDownloadOnDemandProjectDescriptor*          Descriptor;                                                 // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(80,15468) /* TMap<FString, UDownloadOnDemandProjectContent*> */ __um(Contents);                  // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,15611) /* TMap<FString, UDownloadOnDemandProjectContent*> */ __um(Contents);                  // 0x00C0   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0110   (0x0020)  MISSED
 };
 

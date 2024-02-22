@@ -33,9 +33,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.ConditionalCompletion.SetConditionalCompletion
-	// void SetConditionalCompletion(int32_t AgentId, bool bIsCompleted);                                                       // [0xc43be28] Final|Native|Public|BlueprintCallable 
+	// void SetConditionalCompletion(int32_t AgentId, bool bIsCompleted);                                                       // [0xc3e07b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.ConditionalCompletion.AddConditionalCompletion
-	// class UConditionalCompletion* AddConditionalCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, ELearningAgentsCompletion InCompletionMode); // [0xc43638c] Final|Native|Static|Public|BlueprintCallable 
+	// class UConditionalCompletion* AddConditionalCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, ELearningAgentsCompletion InCompletionMode); // [0xc3db72c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.TimeElapsedCompletion
@@ -50,9 +50,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.TimeElapsedCompletion.SetTimeElapsedCompletion
-	// void SetTimeElapsedCompletion(int32_t AgentId, float Time);                                                              // [0xc43d144] Final|Native|Public|BlueprintCallable 
+	// void SetTimeElapsedCompletion(int32_t AgentId, float Time);                                                              // [0xc3e1b34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.TimeElapsedCompletion.AddTimeElapsedCompletion
-	// class UTimeElapsedCompletion* AddTimeElapsedCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode); // [0xc437b64] Final|Native|Static|Public|BlueprintCallable 
+	// class UTimeElapsedCompletion* AddTimeElapsedCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode); // [0xc3dc944] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.PlanarPositionDifferenceCompletion
@@ -67,9 +67,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.PlanarPositionDifferenceCompletion.SetPlanarPositionDifferenceCompletion
-	// void SetPlanarPositionDifferenceCompletion(int32_t AgentId, FVector Position0, FVector Position1);                       // [0xc43c3d0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetPlanarPositionDifferenceCompletion(int32_t AgentId, FVector Position0, FVector Position1);                       // [0xc3e0c94] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.PlanarPositionDifferenceCompletion.AddPlanarPositionDifferenceCompletion
-	// class UPlanarPositionDifferenceCompletion* AddPlanarPositionDifferenceCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode, FVector Axis0, FVector Axis1); // [0xc436ba8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UPlanarPositionDifferenceCompletion* AddPlanarPositionDifferenceCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode, FVector Axis0, FVector Axis1); // [0xc3dbc7c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.PlanarPositionSimilarityCompletion
@@ -84,9 +84,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.PlanarPositionSimilarityCompletion.SetPlanarPositionSimilarityCompletion
-	// void SetPlanarPositionSimilarityCompletion(int32_t AgentId, FVector Position0, FVector Position1);                       // [0xc43c7a8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetPlanarPositionSimilarityCompletion(int32_t AgentId, FVector Position0, FVector Position1);                       // [0xc3e11b4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.PlanarPositionSimilarityCompletion.AddPlanarPositionSimilarityCompletion
-	// class UPlanarPositionSimilarityCompletion* AddPlanarPositionSimilarityCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode, FVector Axis0, FVector Axis1); // [0xc4372d0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UPlanarPositionSimilarityCompletion* AddPlanarPositionSimilarityCompletion(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Threshold, ELearningAgentsCompletion InCompletionMode, FVector Axis0, FVector Axis1); // [0xc3dc318] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LearningAgentsImitationTrainer
@@ -104,17 +104,17 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.RunTraining
-	// void RunTraining(class ULearningAgentsPolicy* InPolicy, class ULearningAgentsRecording* Recording, FLearningAgentsImitationTrainerSettings& ImitationTrainerSettings, FLearningAgentsImitationTrainerTrainingSettings& ImitationTrainerTrainingSettings, FLearningAgentsTrainerPathSettings& ImitationTrainerPathSettings, bool bReinitializePolicyNetwork); // [0xc43a6c8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RunTraining(class ULearningAgentsPolicy* InPolicy, class ULearningAgentsRecording* Recording, FLearningAgentsImitationTrainerSettings& ImitationTrainerSettings, FLearningAgentsImitationTrainerTrainingSettings& ImitationTrainerTrainingSettings, FLearningAgentsTrainerPathSettings& ImitationTrainerPathSettings, bool bReinitializePolicyNetwork); // [0xc3df15c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.IterateTraining
-	// void IterateTraining();                                                                                                  // [0xc4397a0] Final|Native|Public|BlueprintCallable 
+	// void IterateTraining();                                                                                                  // [0xc3de2b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.IsTraining
-	// bool IsTraining();                                                                                                       // [0xadb080c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTraining();                                                                                                       // [0xb2dfbe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.HasTrainingFailed
-	// bool HasTrainingFailed();                                                                                                // [0xadb030c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTrainingFailed();                                                                                                // [0xb2df8b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.EndTraining
-	// void EndTraining();                                                                                                      // [0xc43952c] Final|Native|Public|BlueprintCallable 
+	// void EndTraining();                                                                                                      // [0xc3de0cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsImitationTrainer.BeginTraining
-	// void BeginTraining(class ULearningAgentsPolicy* InPolicy, class ULearningAgentsRecording* Recording, FLearningAgentsImitationTrainerSettings& ImitationTrainerSettings, FLearningAgentsImitationTrainerTrainingSettings& ImitationTrainerTrainingSettings, FLearningAgentsTrainerPathSettings& ImitationTrainerPathSettings, bool bReinitializePolicyNetwork); // [0xc438d58] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BeginTraining(class ULearningAgentsPolicy* InPolicy, class ULearningAgentsRecording* Recording, FLearningAgentsImitationTrainerSettings& ImitationTrainerSettings, FLearningAgentsImitationTrainerTrainingSettings& ImitationTrainerTrainingSettings, FLearningAgentsTrainerPathSettings& ImitationTrainerPathSettings, bool bReinitializePolicyNetwork); // [0xc3dd97c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LearningAgentsRecorder
@@ -132,31 +132,31 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.UseRecordingAsset
-	// void UseRecordingAsset(class ULearningAgentsRecording* RecordingAsset);                                                  // [0xc43d6b4] Final|Native|Public|BlueprintCallable 
+	// void UseRecordingAsset(class ULearningAgentsRecording* RecordingAsset);                                                  // [0xc3e1f3c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.SetupRecorder
-	// void SetupRecorder(class ULearningAgentsInteractor* InInteractor, FLearningAgentsRecorderPathSettings& RecorderPathSettings, class ULearningAgentsRecording* RecordingAsset); // [0xc43d280] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetupRecorder(class ULearningAgentsInteractor* InInteractor, FLearningAgentsRecorderPathSettings& RecorderPathSettings, class ULearningAgentsRecording* RecordingAsset); // [0xc3e1bf8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.SaveRecordingToFile
-	// void SaveRecordingToFile(FFilePath& File);                                                                               // [0xc43b008] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void SaveRecordingToFile(FFilePath& File);                                                                               // [0xc3df998] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.SaveRecordingToAsset
-	// void SaveRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                               // [0xc43ae88] Final|Native|Public|BlueprintCallable 
+	// void SaveRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                               // [0xc3df898] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.LoadRecordingFromFile
-	// void LoadRecordingFromFile(FFilePath& File);                                                                             // [0xc439934] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void LoadRecordingFromFile(FFilePath& File);                                                                             // [0xc3de3c8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.LoadRecordingFromAsset
-	// void LoadRecordingFromAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc4397b4] Final|Native|Public|BlueprintCallable 
+	// void LoadRecordingFromAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc3de2c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.IsRecording
-	// bool IsRecording();                                                                                                      // [0x98778fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRecording();                                                                                                      // [0x9889e68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.GetCurrentRecording
-	// class ULearningAgentsRecording* GetCurrentRecording();                                                                   // [0xc43957c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULearningAgentsRecording* GetCurrentRecording();                                                                   // [0xc3de11c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.EndRecording
-	// void EndRecording();                                                                                                     // [0xc439518] Final|Native|Public|BlueprintCallable 
+	// void EndRecording();                                                                                                     // [0xc3de0b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.BeginRecording
-	// void BeginRecording(bool bReinitializeRecording);                                                                        // [0xc438c94] Final|Native|Public|BlueprintCallable 
+	// void BeginRecording(bool bReinitializeRecording);                                                                        // [0xc3dd8fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.AppendRecordingToAsset
-	// void AppendRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc438b14] Final|Native|Public|BlueprintCallable 
+	// void AppendRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc3dd7fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.AppendRecordingFromFile
-	// void AppendRecordingFromFile(FFilePath& File);                                                                           // [0xc437d94] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AppendRecordingFromFile(FFilePath& File);                                                                           // [0xc3dca7c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecorder.AddExperience
-	// void AddExperience();                                                                                                    // [0xc436714] Final|Native|Public|BlueprintCallable 
+	// void AddExperience();                                                                                                    // [0xc3db934] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LearningAgentsRecording
@@ -172,17 +172,17 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.SaveRecordingToFile
-	// void SaveRecordingToFile(FFilePath& File);                                                                               // [0xc43b6c8] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void SaveRecordingToFile(FFilePath& File);                                                                               // [0xc3e0058] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.SaveRecordingToAsset
-	// void SaveRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                               // [0xc43af48] Final|Native|Public|BlueprintCallable 
+	// void SaveRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                               // [0xc3df918] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.LoadRecordingFromFile
-	// void LoadRecordingFromFile(FFilePath& File);                                                                             // [0xc439ff4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void LoadRecordingFromFile(FFilePath& File);                                                                             // [0xc3dea88] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.LoadRecordingFromAsset
-	// void LoadRecordingFromAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc439874] Final|Native|Public|BlueprintCallable 
+	// void LoadRecordingFromAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc3de348] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.AppendRecordingToAsset
-	// void AppendRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc438bd4] Final|Native|Public|BlueprintCallable 
+	// void AppendRecordingToAsset(class ULearningAgentsRecording* RecordingAsset);                                             // [0xc3dd87c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsRecording.AppendRecordingFromFile
-	// void AppendRecordingFromFile(FFilePath& File);                                                                           // [0xc438454] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AppendRecordingFromFile(FFilePath& File);                                                                           // [0xc3dd13c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LearningAgentsReward
@@ -208,9 +208,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.FloatReward.SetFloatReward
-	// void SetFloatReward(int32_t AgentId, float Reward);                                                                      // [0xc43c0a8] Final|Native|Public|BlueprintCallable 
+	// void SetFloatReward(int32_t AgentId, float Reward);                                                                      // [0xc3e0940] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.FloatReward.AddFloatReward
-	// class UFloatReward* AddFloatReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight);              // [0xc436728] Final|Native|Static|Public|BlueprintCallable 
+	// class UFloatReward* AddFloatReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight);              // [0xc3db948] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.ConditionalReward
@@ -225,9 +225,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.ConditionalReward.SetConditionalReward
-	// void SetConditionalReward(int32_t AgentId, bool bCondition);                                                             // [0xc43bf68] Final|Native|Public|BlueprintCallable 
+	// void SetConditionalReward(int32_t AgentId, bool bCondition);                                                             // [0xc3e087c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.ConditionalReward.AddConditionalReward
-	// class UConditionalReward* AddConditionalReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Value);   // [0xc436554] Final|Native|Static|Public|BlueprintCallable 
+	// class UConditionalReward* AddConditionalReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Value);   // [0xc3db834] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.ScalarVelocityReward
@@ -242,9 +242,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.ScalarVelocityReward.SetScalarVelocityReward
-	// void SetScalarVelocityReward(int32_t AgentId, float Velocity);                                                           // [0xc43d008] Final|Native|Public|BlueprintCallable 
+	// void SetScalarVelocityReward(int32_t AgentId, float Velocity);                                                           // [0xc3e1a70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.ScalarVelocityReward.AddScalarVelocityReward
-	// class UScalarVelocityReward* AddScalarVelocityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale); // [0xc437918] Final|Native|Static|Public|BlueprintCallable 
+	// class UScalarVelocityReward* AddScalarVelocityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale); // [0xc3dc7f4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LocalDirectionalVelocityReward
@@ -259,9 +259,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.LocalDirectionalVelocityReward.SetLocalDirectionalVelocityReward
-	// void SetLocalDirectionalVelocityReward(int32_t AgentId, FVector Velocity, FRotator RelativeRotation);                    // [0xc43c1e4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLocalDirectionalVelocityReward(int32_t AgentId, FVector Velocity, FRotator RelativeRotation);                    // [0xc3e0a04] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LocalDirectionalVelocityReward.AddLocalDirectionalVelocityReward
-	// class ULocalDirectionalVelocityReward* AddLocalDirectionalVelocityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale, FVector Axis); // [0xc4368e8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class ULocalDirectionalVelocityReward* AddLocalDirectionalVelocityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale, FVector Axis); // [0xc3dba48] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.PlanarPositionDifferencePenalty
@@ -276,9 +276,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.PlanarPositionDifferencePenalty.SetPlanarPositionDifferencePenalty
-	// void SetPlanarPositionDifferencePenalty(int32_t AgentId, FVector Position0, FVector Position1);                          // [0xc43c5bc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetPlanarPositionDifferencePenalty(int32_t AgentId, FVector Position0, FVector Position1);                          // [0xc3e0f24] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.PlanarPositionDifferencePenalty.AddPlanarPositionDifferencePenalty
-	// class UPlanarPositionDifferencePenalty* AddPlanarPositionDifferencePenalty(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale, float Threshold, FVector Axis0, FVector Axis1); // [0xc436efc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UPlanarPositionDifferencePenalty* AddPlanarPositionDifferencePenalty(class ULearningAgentsTrainer* InAgentTrainer, FName Name, float Weight, float Scale, float Threshold, FVector Axis0, FVector Axis1); // [0xc3dbfac] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.PositionArraySimilarityReward
@@ -293,9 +293,9 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.PositionArraySimilarityReward.SetPositionArraySimilarityReward
-	// void SetPositionArraySimilarityReward(int32_t AgentId, TArray<FVector>& Positions0, TArray<FVector>& Positions1, FVector RelativePosition0, FVector RelativePosition1, FRotator RelativeRotation0, FRotator RelativeRotation1); // [0xc43c994] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetPositionArraySimilarityReward(int32_t AgentId, TArray<FVector>& Positions0, TArray<FVector>& Positions1, FVector RelativePosition0, FVector RelativePosition1, FRotator RelativeRotation0, FRotator RelativeRotation1); // [0xc3e1444] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.PositionArraySimilarityReward.AddPositionArraySimilarityReward
-	// class UPositionArraySimilarityReward* AddPositionArraySimilarityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, int32_t PositionNum, float Scale, float Weight); // [0xc437624] Final|Native|Static|Public|BlueprintCallable 
+	// class UPositionArraySimilarityReward* AddPositionArraySimilarityReward(class ULearningAgentsTrainer* InAgentTrainer, FName Name, int32_t PositionNum, float Scale, float Weight); // [0xc3dc648] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/LearningAgentsTraining.LearningAgentsTrainer
@@ -317,37 +317,37 @@ public:
 
 	/// Functions
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.SetupTrainer
-	// void SetupTrainer(class ULearningAgentsInteractor* InInteractor, class ULearningAgentsPolicy* InPolicy, class ULearningAgentsCritic* InCritic, FLearningAgentsTrainerSettings& TrainerSettings); // [0xc43d490] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetupTrainer(class ULearningAgentsInteractor* InInteractor, class ULearningAgentsPolicy* InPolicy, class ULearningAgentsCritic* InCritic, FLearningAgentsTrainerSettings& TrainerSettings); // [0xc3e1dd4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.SetupRewards
-	// void SetupRewards();                                                                                                     // [0xa04f0e0] Native|Event|Public|BlueprintEvent 
+	// void SetupRewards();                                                                                                     // [0xa036cf0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.SetupCompletions
-	// void SetupCompletions();                                                                                                 // [0x1fbb424] Native|Event|Public|BlueprintEvent 
+	// void SetupCompletions();                                                                                                 // [0x38e5db0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.SetRewards
-	// void SetRewards(TArray<int32_t>& AgentIds);                                                                              // [0xc43cf68] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetRewards(TArray<int32_t>& AgentIds);                                                                              // [0xc3e19d0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.SetCompletions
-	// void SetCompletions(TArray<int32_t>& AgentIds);                                                                          // [0xc43bd88] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetCompletions(TArray<int32_t>& AgentIds);                                                                          // [0xc3e0718] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.RunTraining
-	// void RunTraining(FLearningAgentsTrainerTrainingSettings& TrainerTrainingSettings, FLearningAgentsTrainerGameSettings& TrainerGameSettings, FLearningAgentsTrainerPathSettings& TrainerPathSettings, bool bReinitializePolicyNetwork, bool bReinitializeCriticNetwork, bool bResetAgentsOnBegin); // [0xc43aa28] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RunTraining(FLearningAgentsTrainerTrainingSettings& TrainerTrainingSettings, FLearningAgentsTrainerGameSettings& TrainerGameSettings, FLearningAgentsTrainerPathSettings& TrainerPathSettings, bool bReinitializePolicyNetwork, bool bReinitializeCriticNetwork, bool bResetAgentsOnBegin); // [0xc3df438] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.ResetEpisodes
-	// void ResetEpisodes(TArray<int32_t>& AgentIds);                                                                           // [0xc37d124] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void ResetEpisodes(TArray<int32_t>& AgentIds);                                                                           // [0xc3241d0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.ProcessExperience
-	// void ProcessExperience();                                                                                                // [0xc43a6b4] Final|Native|Public|BlueprintCallable 
+	// void ProcessExperience();                                                                                                // [0xc3df148] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.IsTraining
-	// bool IsTraining();                                                                                                       // [0x846f3c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTraining();                                                                                                       // [0x8471b48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.IsCompleted
-	// bool IsCompleted(int32_t AgentId, ELearningAgentsCompletion& OutCompletion);                                             // [0xc439688] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCompleted(int32_t AgentId, ELearningAgentsCompletion& OutCompletion);                                             // [0xc3de1e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.HasTrainingFailed
-	// bool HasTrainingFailed();                                                                                                // [0xc439670] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTrainingFailed();                                                                                                // [0xc3de1d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.GetReward
-	// float GetReward(int32_t AgentId);                                                                                        // [0xc4395a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetReward(int32_t AgentId);                                                                                        // [0xc3de140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.EvaluateRewards
-	// void EvaluateRewards();                                                                                                  // [0xc439568] Final|Native|Public|BlueprintCallable 
+	// void EvaluateRewards();                                                                                                  // [0xc3de108] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.EvaluateCompletions
-	// void EvaluateCompletions();                                                                                              // [0xc439554] Final|Native|Public|BlueprintCallable 
+	// void EvaluateCompletions();                                                                                              // [0xc3de0f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.EndTraining
-	// void EndTraining();                                                                                                      // [0xc439540] Final|Native|Public|BlueprintCallable 
+	// void EndTraining();                                                                                                      // [0xc3de0e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LearningAgentsTraining.LearningAgentsTrainer.BeginTraining
-	// void BeginTraining(FLearningAgentsTrainerTrainingSettings& TrainerTrainingSettings, FLearningAgentsTrainerGameSettings& TrainerGameSettings, FLearningAgentsTrainerPathSettings& TrainerPathSettings, bool bReinitializePolicyNetwork, bool bReinitializeCriticNetwork, bool bResetAgentsOnBegin); // [0xc4390b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BeginTraining(FLearningAgentsTrainerTrainingSettings& TrainerTrainingSettings, FLearningAgentsTrainerGameSettings& TrainerGameSettings, FLearningAgentsTrainerPathSettings& TrainerPathSettings, bool bReinitializePolicyNetwork, bool bReinitializeCriticNetwork, bool bResetAgentsOnBegin); // [0xc3ddc58] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/LearningAgentsTraining.LearningAgentsImitationTrainerSettings

@@ -176,7 +176,7 @@ public:
 
 	/// Functions
 	// Function /Script/StyleSheets.StylableWidget.BP_OnWidgetStyled
-	// void BP_OnWidgetStyled();                                                                                                // [0x130d900] RequiredAPI|Event|Protected|BlueprintEvent 
+	// void BP_OnWidgetStyled();                                                                                                // [0x3d1d968] RequiredAPI|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/StyleSheets.StyleSheetsSettings

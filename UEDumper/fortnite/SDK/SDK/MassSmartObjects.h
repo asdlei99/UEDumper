@@ -97,8 +97,8 @@ struct FSmartObjectAnnotationData
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
 	TArray<int32_t>                                    AffectedLanes;                                              // 0x0008   (0x0010)  
 	TArray<FSmartObjectLaneLocation>                   SmartObjectLaneLocations;                                   // 0x0018   (0x0010)  
-	SDK_UNDEFINED(80,14649) /* TMap<FSmartObjectHandle, int32_t> */ __um(SmartObjectToLaneLocationIndexLookup);    // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,14650) /* TMap<int32_t, FSmartObjectLaneLocationIndices> */ __um(LaneToLaneLocationIndicesLookup); // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,14790) /* TMap<FSmartObjectHandle, int32_t> */ __um(SmartObjectToLaneLocationIndexLookup);    // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14791) /* TMap<int32_t, FSmartObjectLaneLocationIndices> */ __um(LaneToLaneLocationIndicesLookup); // 0x0078   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00C8   (0x0008)  MISSED
 };
 

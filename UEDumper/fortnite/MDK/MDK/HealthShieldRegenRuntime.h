@@ -20,15 +20,15 @@ public:
 
 	/// Functions
 	// Function /Script/HealthShieldRegenRuntime.FortHealthShieldRegenComponent.ClearHealthShieldRegen_ShieldListenerDelegates
-	// void ClearHealthShieldRegen_ShieldListenerDelegates(class UGameplayAbility* OwningAbility);                              // [0xb89b2dc] Final|Native|Static|Public|BlueprintCallable 
+	// void ClearHealthShieldRegen_ShieldListenerDelegates(class UGameplayAbility* OwningAbility);                              // [0xb9b4534] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HealthShieldRegenRuntime.FortHealthShieldRegenComponent.ClearHealthShieldRegen_HealthListenerDelegates
-	// void ClearHealthShieldRegen_HealthListenerDelegates(class UGameplayAbility* OwningAbility);                              // [0xb89a91c] Final|Native|Static|Public|BlueprintCallable 
+	// void ClearHealthShieldRegen_HealthListenerDelegates(class UGameplayAbility* OwningAbility);                              // [0xb9b3d60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HealthShieldRegenRuntime.FortHealthShieldRegenComponent.AssignHealthShieldRegen_ShieldListenerDelegates
-	// void AssignHealthShieldRegen_ShieldListenerDelegates(class UGameplayAbility* OwningAbility, FFortHealthShieldRegen_ShieldDelegateContainer Delegates); // [0xb89a7ac] Final|Native|Static|Public|BlueprintCallable 
+	// void AssignHealthShieldRegen_ShieldListenerDelegates(class UGameplayAbility* OwningAbility, FFortHealthShieldRegen_ShieldDelegateContainer Delegates); // [0xb9b3bbc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HealthShieldRegenRuntime.FortHealthShieldRegenComponent.AssignHealthShieldRegen_HealthListenerDelegates
-	// void AssignHealthShieldRegen_HealthListenerDelegates(class UGameplayAbility* OwningAbility, FFortHealthShieldRegen_HealthDelegateContainer Delegates); // [0xb89a654] Final|Native|Static|Public|BlueprintCallable 
+	// void AssignHealthShieldRegen_HealthListenerDelegates(class UGameplayAbility* OwningAbility, FFortHealthShieldRegen_HealthDelegateContainer Delegates); // [0xb9b3a2c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HealthShieldRegenRuntime.FortHealthShieldRegenComponent.AllowHealthShieldRegen
-	// bool AllowHealthShieldRegen();                                                                                           // [0xb89a638] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool AllowHealthShieldRegen();                                                                                           // [0xb9b3a10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/HealthShieldRegenRuntime.FortHealthShieldRegen_ShieldDelegateContainer

@@ -15,7 +15,7 @@
 class UFMVKContentDownloadComponent : public UGameStateComponent
 { 
 public:
-	SDK_UNDEFINED(16,13770) /* FString */              __um(DefaultLinkCode);                                      // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,13868) /* FString */              __um(DefaultLinkCode);                                      // 0x00A0   (0x0010)  
 };
 
 /// Class /Script/FMVKRuntime.FMVKSubsystem

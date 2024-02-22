@@ -49,7 +49,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoLowMemoryFallbackRuntime.JunoLowMemoryFallbackGameStateComponent.OnRep_TriggeredStrategies
-	// void OnRep_TriggeredStrategies();                                                                                        // [0xc0f0234] Final|Native|Private 
+	// void OnRep_TriggeredStrategies();                                                                                        // [0xc096348] Final|Native|Private 
 };
 
 /// Class /Script/JunoLowMemoryFallbackRuntime.JunoLowMemoryFallbackPlayerControllerComponent
@@ -64,9 +64,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoLowMemoryFallbackRuntime.JunoLowMemoryFallbackPlayerControllerComponent.Server_UntriggerStrategy
-	// void Server_UntriggerStrategy(class UClass* StrategyClass);                                                              // [0xc0f0324] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_UntriggerStrategy(class UClass* StrategyClass);                                                              // [0xc0963f8] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoLowMemoryFallbackRuntime.JunoLowMemoryFallbackPlayerControllerComponent.Server_TriggerStrategy
-	// void Server_TriggerStrategy(class UClass* StrategyClass);                                                                // [0xc0f0248] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_TriggerStrategy(class UClass* StrategyClass);                                                                // [0xc09635c] Net|NetReliableNative|Event|Public|NetServer 
 };
 
 /// Class /Script/JunoLowMemoryFallbackRuntime.JunoLowMemoryFallbackWorldSubsystem

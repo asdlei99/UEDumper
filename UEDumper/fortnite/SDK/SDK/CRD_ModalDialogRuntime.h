@@ -64,19 +64,19 @@ class UModalDialogVariant : public UCommonActivatableWidget
 public:
 	class UWidgetAnimation*                            BoundAnim_Open;                                             // 0x0400   (0x0008)  
 	class UWidgetAnimation*                            BoundAnim_Response;                                         // 0x0408   (0x0008)  
-	SDK_UNDEFINED(16,12461) /* FMulticastInlineDelegate */ __um(OnResponseAnimationFinished);                      // 0x0410   (0x0010)  
+	SDK_UNDEFINED(16,12548) /* FMulticastInlineDelegate */ __um(OnResponseAnimationFinished);                      // 0x0410   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/CRD_ModalDialogRuntime.ModalDialogVariant.OnResponseAnimationFinished__DelegateSignature
-	// void OnResponseAnimationFinished__DelegateSignature();                                                                // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnResponseAnimationFinished__DelegateSignature();                                                                // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CRD_ModalDialogRuntime.ModalDialogVariant.HasResponseAnimation
-	// bool HasResponseAnimation();                                                                                          // [0xb8365c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasResponseAnimation();                                                                                          // [0xb947428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogRuntime.ModalDialogVariant.HandleResponseAnimationFinished
-	// void HandleResponseAnimationFinished();                                                                               // [0xb8365ac] Final|Native|Private 
+	// void HandleResponseAnimationFinished();                                                                               // [0xb947414] Final|Native|Private 
 	// Function /Script/CRD_ModalDialogRuntime.ModalDialogVariant.AttemptToPlayResponseAnimation
-	// void AttemptToPlayResponseAnimation();                                                                                // [0xb83656c] Final|Native|Public|BlueprintCallable 
+	// void AttemptToPlayResponseAnimation();                                                                                // [0xb9473d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_ModalDialogRuntime.ModalDialogVariant.AttemptToPlayOpenAnimation
-	// void AttemptToPlayOpenAnimation();                                                                                    // [0xb83652c] Final|Native|Public|BlueprintCallable 
+	// void AttemptToPlayOpenAnimation();                                                                                    // [0xb947394] Final|Native|Public|BlueprintCallable 
 };
 

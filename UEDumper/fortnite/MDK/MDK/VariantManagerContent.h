@@ -23,11 +23,11 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.LevelVariantSets.GetVariantSetByName
-	// class UVariantSet* GetVariantSetByName(FString VariantSetName);                                                          // [0xc742334] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UVariantSet* GetVariantSetByName(FString VariantSetName);                                                          // [0xc6d6a60] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.LevelVariantSets.GetVariantSet
-	// class UVariantSet* GetVariantSet(int32_t VariantSetIndex);                                                               // [0xc742254] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UVariantSet* GetVariantSet(int32_t VariantSetIndex);                                                               // [0xc6d69c0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.LevelVariantSets.GetNumVariantSets
-	// int32_t GetNumVariantSets();                                                                                             // [0x63a4dec] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumVariantSets();                                                                                             // [0x64045a0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/VariantManagerContent.LevelVariantSetsActor
@@ -44,13 +44,13 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName
-	// bool SwitchOnVariantByName(FString VariantSetName, FString VariantName);                                                 // [0xc744658] Final|Native|Public|BlueprintCallable 
+	// bool SwitchOnVariantByName(FString VariantSetName, FString VariantName);                                                 // [0xc6d8a7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex
-	// bool SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex);                                              // [0xc7444cc] Final|Native|Public|BlueprintCallable 
+	// bool SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex);                                              // [0xc6d8974] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets
-	// void SetLevelVariantSets(class ULevelVariantSets* InVariantSets);                                                        // [0xc742e08] Final|Native|Public|BlueprintCallable 
+	// void SetLevelVariantSets(class ULevelVariantSets* InVariantSets);                                                        // [0xc6d7468] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets
-	// class ULevelVariantSets* GetLevelVariantSets(bool bLoad);                                                                // [0xc7418a0] Final|Native|Public|BlueprintCallable 
+	// class ULevelVariantSets* GetLevelVariantSets(bool bLoad);                                                                // [0xc6d60d0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/VariantManagerContent.LevelVariantSetsFunctionDirector
@@ -85,11 +85,11 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.PropertyValue.HasRecordedData
-	// bool HasRecordedData();                                                                                                  // [0xa8783d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasRecordedData();                                                                                                  // [0xa8740ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VariantManagerContent.PropertyValue.GetPropertyTooltip
-	// FText GetPropertyTooltip();                                                                                              // [0xc741a0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetPropertyTooltip();                                                                                              // [0xc6d61fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VariantManagerContent.PropertyValue.GetFullDisplayString
-	// FString GetFullDisplayString();                                                                                          // [0xc741884] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetFullDisplayString();                                                                                          // [0xc6d60b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VariantManagerContent.PropertyValueTransform
@@ -166,11 +166,11 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.SwitchActor.SelectOption
-	// void SelectOption(int32_t OptionIndex);                                                                                  // [0xc742ae0] Final|Native|Public|BlueprintCallable 
+	// void SelectOption(int32_t OptionIndex);                                                                                  // [0xc6d71c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.SwitchActor.GetSelectedOption
-	// int32_t GetSelectedOption();                                                                                             // [0x85591d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSelectedOption();                                                                                             // [0x855ac90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VariantManagerContent.SwitchActor.GetOptions
-	// TArray<AActor*> GetOptions();                                                                                            // [0xc741984] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AActor*> GetOptions();                                                                                            // [0xc6d6174] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VariantManagerContent.Variant
@@ -189,41 +189,41 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.Variant.SwitchOn
-	// void SwitchOn();                                                                                                         // [0xc7444b8] Final|Native|Public|BlueprintCallable 
+	// void SwitchOn();                                                                                                         // [0xc6d8960] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetThumbnailFromTexture
-	// void SetThumbnailFromTexture(class UTexture2D* NewThumbnail);                                                            // [0xc744318] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromTexture(class UTexture2D* NewThumbnail);                                                            // [0xc6d8848] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetThumbnailFromFile
-	// void SetThumbnailFromFile(FString FilePath);                                                                             // [0xc7434d8] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromFile(FString FilePath);                                                                             // [0xc6d7a90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetThumbnailFromEditorViewport
-	// void SetThumbnailFromEditorViewport();                                                                                   // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromEditorViewport();                                                                                   // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetThumbnailFromCamera
-	// void SetThumbnailFromCamera(class UObject* WorldContextObject, FTransform& CameraTransform, float FOVDegrees, float MinZ, float Gamma); // [0xc742ec8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetThumbnailFromCamera(class UObject* WorldContextObject, FTransform& CameraTransform, float FOVDegrees, float MinZ, float Gamma); // [0xc6d74e8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetDisplayText
-	// void SetDisplayText(FText& NewDisplayText);                                                                              // [0xc742cd0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDisplayText(FText& NewDisplayText);                                                                              // [0xc6d7330] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.SetDependency
-	// void SetDependency(int32_t Index, FVariantDependency& Dependency);                                                       // [0xc742ba0] Final|Native|Public|HasOutParms 
+	// void SetDependency(int32_t Index, FVariantDependency& Dependency);                                                       // [0xc6d7248] Final|Native|Public|HasOutParms 
 	// Function /Script/VariantManagerContent.Variant.IsActive
-	// bool IsActive();                                                                                                         // [0xc742a50] Final|Native|Public|BlueprintCallable 
+	// bool IsActive();                                                                                                         // [0xc6d7138] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.GetThumbnail
-	// class UTexture2D* GetThumbnail();                                                                                        // [0x9822b74] Final|Native|Public|BlueprintCallable 
+	// class UTexture2D* GetThumbnail();                                                                                        // [0x9834620] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.GetParent
-	// class UVariantSet* GetParent();                                                                                          // [0xc7419c4] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UVariantSet* GetParent();                                                                                          // [0xc6d61b4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.Variant.GetNumDependencies
-	// int32_t GetNumDependencies();                                                                                            // [0x608fc68] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumDependencies();                                                                                            // [0x60f3a48] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.Variant.GetNumActors
-	// int32_t GetNumActors();                                                                                                  // [0x7a81ac8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumActors();                                                                                                  // [0x7a902f8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.Variant.GetDisplayText
-	// FText GetDisplayText();                                                                                                  // [0xc7417fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDisplayText();                                                                                                  // [0xc6d602c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VariantManagerContent.Variant.GetDependents
-	// TArray<UVariant*> GetDependents(class ULevelVariantSets* LevelVariantSets, bool bOnlyEnabledDependencies);               // [0xc74155c] Final|Native|Public|BlueprintCallable 
+	// TArray<UVariant*> GetDependents(class ULevelVariantSets* LevelVariantSets, bool bOnlyEnabledDependencies);               // [0xc6d5e50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.Variant.GetDependency
-	// FVariantDependency GetDependency(int32_t Index);                                                                         // [0xc741484] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// FVariantDependency GetDependency(int32_t Index);                                                                         // [0xc6d5db8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.Variant.GetActor
-	// class AActor* GetActor(int32_t ActorIndex);                                                                              // [0xc741390] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* GetActor(int32_t ActorIndex);                                                                              // [0xc6d5d04] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.Variant.DeleteDependency
-	// void DeleteDependency(int32_t Index);                                                                                    // [0xc7412d0] Final|Native|Public  
+	// void DeleteDependency(int32_t Index);                                                                                    // [0xc6d5c84] Final|Native|Public  
 	// Function /Script/VariantManagerContent.Variant.AddDependency
-	// int32_t AddDependency(FVariantDependency& Dependency);                                                                   // [0xc741224] Final|Native|Public|HasOutParms 
+	// int32_t AddDependency(FVariantDependency& Dependency);                                                                   // [0xc6d5bd8] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/VariantManagerContent.VariantObjectBinding
@@ -257,27 +257,27 @@ public:
 
 	/// Functions
 	// Function /Script/VariantManagerContent.VariantSet.SetThumbnailFromTexture
-	// void SetThumbnailFromTexture(class UTexture2D* NewThumbnail);                                                            // [0xc7443e8] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromTexture(class UTexture2D* NewThumbnail);                                                            // [0xc6d88d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.SetThumbnailFromFile
-	// void SetThumbnailFromFile(FString FilePath);                                                                             // [0xc743bf8] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromFile(FString FilePath);                                                                             // [0xc6d816c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.SetThumbnailFromEditorViewport
-	// void SetThumbnailFromEditorViewport();                                                                                   // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void SetThumbnailFromEditorViewport();                                                                                   // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.SetThumbnailFromCamera
-	// void SetThumbnailFromCamera(class UObject* WorldContextObject, FTransform& CameraTransform, float FOVDegrees, float MinZ, float Gamma); // [0xc7431d0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetThumbnailFromCamera(class UObject* WorldContextObject, FTransform& CameraTransform, float FOVDegrees, float MinZ, float Gamma); // [0xc6d77bc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.SetDisplayText
-	// void SetDisplayText(FText& NewDisplayText);                                                                              // [0xc742d6c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDisplayText(FText& NewDisplayText);                                                                              // [0xc6d73cc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.GetVariantByName
-	// class UVariant* GetVariantByName(FString VariantName);                                                                   // [0xc741b38] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UVariant* GetVariantByName(FString VariantName);                                                                   // [0xc6d62e8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.VariantSet.GetVariant
-	// class UVariant* GetVariant(int32_t VariantIndex);                                                                        // [0xc741a58] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UVariant* GetVariant(int32_t VariantIndex);                                                                        // [0xc6d6248] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.VariantSet.GetThumbnail
-	// class UTexture2D* GetThumbnail();                                                                                        // [0x6070db8] Final|Native|Public|BlueprintCallable 
+	// class UTexture2D* GetThumbnail();                                                                                        // [0x60d5554] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VariantManagerContent.VariantSet.GetParent
-	// class ULevelVariantSets* GetParent();                                                                                    // [0xc7419e8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class ULevelVariantSets* GetParent();                                                                                    // [0xc6d61d8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/VariantManagerContent.VariantSet.GetNumVariants
-	// int32_t GetNumVariants();                                                                                                // [0xc741970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVariants();                                                                                                // [0xc6d6160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VariantManagerContent.VariantSet.GetDisplayText
-	// FText GetDisplayText();                                                                                                  // [0xc741840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDisplayText();                                                                                                  // [0xc6d6070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/VariantManagerContent.FunctionCaller

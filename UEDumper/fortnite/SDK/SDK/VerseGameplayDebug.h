@@ -14,6 +14,6 @@ struct FVerseGameplayStringDebugMessage
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,15459) /* FString */              __um(String);                                               // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,15602) /* FString */              __um(String);                                               // 0x0008   (0x0010)  
 };
 

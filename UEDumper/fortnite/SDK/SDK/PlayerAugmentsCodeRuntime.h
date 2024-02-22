@@ -91,15 +91,15 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortAugmentSelectionToolAbility.SetHighlightedChoiceIndex
-	// void SetHighlightedChoiceIndex(int32_t NewChoiceIndex);                                                               // [0xab8d6f4] Final|Native|Protected|BlueprintCallable 
+	// void SetHighlightedChoiceIndex(int32_t NewChoiceIndex);                                                               // [0xae8b8cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortAugmentSelectionToolAbility.OnSelectedChoiceIndex
-	// void OnSelectedChoiceIndex(int32_t ChoiceIndex);                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSelectedChoiceIndex(int32_t ChoiceIndex);                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortAugmentSelectionToolAbility.OnRerollPressedAndCannotAfford
-	// void OnRerollPressedAndCannotAfford();                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRerollPressedAndCannotAfford();                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortAugmentSelectionToolAbility.OnHoldRerollInputChanged
-	// void OnHoldRerollInputChanged(bool bIsPressed, bool bCompletedHold);                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnHoldRerollInputChanged(bool bIsPressed, bool bCompletedHold);                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortAugmentSelectionToolAbility.OnHighlightSelectionUpdated
-	// void OnHighlightSelectionUpdated(int32_t NewHighlightedChoiceIndex);                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnHighlightSelectionUpdated(int32_t NewHighlightedChoiceIndex);                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem
@@ -109,7 +109,7 @@ class UFortBattleRoyalePlayerAugmentSystem : public UFortControllerComponent
 public:
 	float                                              ServerGrantingStartedTimestamp;                             // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,12203) /* FMulticastInlineDelegate */ __um(OnMatchAugmentsResetEvent);                        // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,12289) /* FMulticastInlineDelegate */ __um(OnMatchAugmentsResetEvent);                        // 0x00B0   (0x0010)  
 	bool                                               bEnableAugmentCollectionUnlocking;                          // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0xF];                                       // 0x00C1   (0x000F)  MISSED
 	FScalableFloat                                     NumRollsForUnlock;                                          // 0x00D0   (0x0028)  
@@ -119,35 +119,35 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.TryIncrementUnlockRollCount
-	// void TryIncrementUnlockRollCount();                                                                                   // [0xab8d7e8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void TryIncrementUnlockRollCount();                                                                                   // [0xae8b980] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.TryClaimUnlock
-	// FFortAugmentPassiveUnlockResult TryClaimUnlock();                                                                     // [0xab8d7b4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// FFortAugmentPassiveUnlockResult TryClaimUnlock();                                                                     // [0xae8b94c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.ResetMatchAugments
-	// void ResetMatchAugments();                                                                                            // [0xab8d578] Final|Native|Public|BlueprintCallable 
+	// void ResetMatchAugments();                                                                                            // [0xae8b668] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.OnServerAugmentGrantTimestampReplicated
-	// void OnServerAugmentGrantTimestampReplicated(float ServerGrantStartTimestamp);                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnServerAugmentGrantTimestampReplicated(float ServerGrantStartTimestamp);                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.OnRep_ServerGrantingStartedTimestamp
-	// void OnRep_ServerGrantingStartedTimestamp();                                                                          // [0x399c8fc] Final|Native|Private 
+	// void OnRep_ServerGrantingStartedTimestamp();                                                                          // [0xae8b610] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.OnPossedPawnChanged
-	// void OnPossedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnPossedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.OnMatchAugmentsReset
-	// void OnMatchAugmentsReset();                                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMatchAugmentsReset();                                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.OnBattleRoyaleMatchAugmentResetDelegate__DelegateSignature
-	// void OnBattleRoyaleMatchAugmentResetDelegate__DelegateSignature();                                                    // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnBattleRoyaleMatchAugmentResetDelegate__DelegateSignature();                                                    // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.HandlePossessedPawnChanged
-	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xab8cff8] Final|Native|Protected 
+	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xae8b15c] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.GetServerGrantingStartedTimestamp
-	// float GetServerGrantingStartedTimestamp();                                                                            // [0x5dea864] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetServerGrantingStartedTimestamp();                                                                            // [0x5e5023c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.ChooseUnlockFromList
-	// FFortAugmentPassiveUnlockResult ChooseUnlockFromList(TArray<FPlayerAugmentLockStatus>& LockedList);                   // [0xab8a19c] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// FFortAugmentPassiveUnlockResult ChooseUnlockFromList(TArray<FPlayerAugmentLockStatus>& LockedList);                   // [0xae88600] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.BP_GetAugmentPlayerPawn
-	// void BP_GetAugmentPlayerPawn(EFortBRAugmentSystemCastResult& OutExec, class AFortPlayerPawn*& OutFortPlayerPawn);     // [0xab898b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_GetAugmentPlayerPawn(EFortBRAugmentSystemCastResult& OutExec, class AFortPlayerPawn*& OutFortPlayerPawn);     // [0xae87dd8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.BP_GetAugmentController
-	// void BP_GetAugmentController(EFortBRAugmentSystemCastResult& OutExec, class AController*& OutController);             // [0xab897d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_GetAugmentController(EFortBRAugmentSystemCastResult& OutExec, class AController*& OutController);             // [0xae87cf0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.BlueprintAugmentLog
-	// void BlueprintAugmentLog(FString Message, EBattleRoyaleBPAugmentLogVerbosity Verbosity, bool bAutonomousProxyOnly);   // [0xab899a0] Final|Native|Protected|BlueprintCallable 
+	// void BlueprintAugmentLog(FString Message, EBattleRoyaleBPAugmentLogVerbosity Verbosity, bool bAutonomousProxyOnly);   // [0xae87ec0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortBattleRoyalePlayerAugmentSystem.AuthoritySetServerGrantingStartedTimestamp
-	// void AuthoritySetServerGrantingStartedTimestamp(float ServerTimestamp);                                               // [0xab89634] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthoritySetServerGrantingStartedTimestamp(float ServerTimestamp);                                               // [0xae87bd4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortCollectionDataEntryPlayerAugment
@@ -156,7 +156,7 @@ class UFortCollectionDataEntryPlayerAugment : public UFortCollectionDataEntry
 { 
 public:
 	class UFortPlayerAugmentItemDefinition*            PlayerAugmentItemDefinition;                                // 0x0030   (0x0008)  
-	SDK_UNDEFINED(24,12204) /* FText */                __um(AdditionalDescription);                                // 0x0038   (0x0018)  
+	SDK_UNDEFINED(24,12290) /* FText */                __um(AdditionalDescription);                                // 0x0038   (0x0018)  
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortCollectionDataPlayerAugment
@@ -175,13 +175,13 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortContextualTutorial_MultipleAugmentsQueued.HandleBindCompletionTrigger
-	// void HandleBindCompletionTrigger(class AFortPlayerControllerZone* FortPCZone);                                        // [0xab8ca90] Final|Native|Protected 
+	// void HandleBindCompletionTrigger(class AFortPlayerControllerZone* FortPCZone);                                        // [0xae8ad74] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortContextualTutorial_MultipleAugmentsQueued.HandleBindActivationTrigger
-	// void HandleBindActivationTrigger(class AFortPlayerControllerZone* FortPCZone);                                        // [0xab8c9d0] Final|Native|Protected 
+	// void HandleBindActivationTrigger(class AFortPlayerControllerZone* FortPCZone);                                        // [0xae8acf4] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortContextualTutorial_MultipleAugmentsQueued.CompletionEventCallback
-	// void CompletionEventCallback(bool bIsOpened, bool bViewingAugmentInventory);                                          // [0xab8a910] Final|Native|Protected 
+	// void CompletionEventCallback(bool bIsOpened, bool bViewingAugmentInventory);                                          // [0xae88d34] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortContextualTutorial_MultipleAugmentsQueued.ActivationEventCallback
-	// void ActivationEventCallback(int8_t NumPendingAugmentsToGrant);                                                       // [0xab88a14] Final|Native|Protected 
+	// void ActivationEventCallback(int8_t NumPendingAugmentsToGrant);                                                       // [0xae86fc4] Final|Native|Protected 
 };
 
 /// Struct /Script/PlayerAugmentsCodeRuntime.PlayerAugmentChoiceDatum
@@ -201,19 +201,19 @@ struct FFortAugmentRerollCost
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem
-/// Size: 0x0540 (0x0000A8 - 0x0005E8)
+/// Size: 0x0530 (0x0000A8 - 0x0005D8)
 class UFortControllerComponent_AugmentGrantingSystem : public UFortControllerComponent
 { 
 public:
-	SDK_UNDEFINED(16,12205) /* FMulticastInlineDelegate */ __um(OnCanSelectAugmentChanged);                        // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,12206) /* FMulticastInlineDelegate */ __um(OnSelectedAugmentForGrant);                        // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,12207) /* FMulticastInlineDelegate */ __um(OnAvailableAugmentsForGrantingUpdated);            // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,12208) /* FMulticastInlineDelegate */ __um(OnAuthorityRequestAugmentChoices);                 // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,12209) /* FMulticastInlineDelegate */ __um(OnLocalReroll);                                    // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,12291) /* FMulticastInlineDelegate */ __um(OnCanSelectAugmentChanged);                        // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12292) /* FMulticastInlineDelegate */ __um(OnSelectedAugmentForGrant);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12293) /* FMulticastInlineDelegate */ __um(OnAvailableAugmentsForGrantingUpdated);            // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,12294) /* FMulticastInlineDelegate */ __um(OnAuthorityRequestAugmentChoices);                 // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,12295) /* FMulticastInlineDelegate */ __um(OnLocalReroll);                                    // 0x00E8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x20];                                      // 0x00F8   (0x0020)  MISSED
-	SDK_UNDEFINED(16,12210) /* FMulticastInlineDelegate */ __um(OnReplicateNumPendingAugmentsToGrant);             // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,12296) /* FMulticastInlineDelegate */ __um(OnReplicateNumPendingAugmentsToGrant);             // 0x0118   (0x0010)  
 	class UFortWeaponItemDefinition*                   AugmentSelectionModeItem;                                   // 0x0128   (0x0008)  
-	SDK_UNDEFINED(8,12211) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(CachedResourceCurrencyOverride);        // 0x0130   (0x0008)  
+	SDK_UNDEFINED(8,12297) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(CachedResourceCurrencyOverride);        // 0x0130   (0x0008)  
 	class UFortWorldItem*                              SelectionModeWorldItem;                                     // 0x0138   (0x0008)  
 	FScalableFloat                                     Enabled;                                                    // 0x0140   (0x0028)  
 	unsigned char                                      UnknownData01_5[0x1];                                       // 0x0168   (0x0001)  MISSED
@@ -231,86 +231,86 @@ public:
 	FGameplayTagContainer                              AugmentSelectInputDisablePlayerTags;                        // 0x01E8   (0x0020)  
 	unsigned char                                      UnknownData04_5[0x28];                                      // 0x0208   (0x0028)  MISSED
 	TArray<FFortAugmentRerollCost>                     RerollCosts;                                                // 0x0230   (0x0010)  
-	FFortItemEntry                                     SelectorItemEntry;                                          // 0x0240   (0x01A8)  
-	FFortItemEntry                                     LocalCachedPreviousWeapon;                                  // 0x03E8   (0x01A8)  
-	unsigned char                                      UnknownData05_6[0x58];                                      // 0x0590   (0x0058)  MISSED
+	FFortItemEntry                                     SelectorItemEntry;                                          // 0x0240   (0x01A0)  
+	FFortItemEntry                                     LocalCachedPreviousWeapon;                                  // 0x03E0   (0x01A0)  
+	unsigned char                                      UnknownData05_6[0x58];                                      // 0x0580   (0x0058)  MISSED
 
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.ServerRequestReroll
-	// void ServerRequestReroll();                                                                                           // [0x80c6f94] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerRequestReroll();                                                                                           // [0x80d7358] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.ServerGrantAugment
-	// void ServerGrantAugment(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef);                                    // [0x895253c] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerGrantAugment(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef);                                    // [0x894cee8] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnSelectedAugmentForGrantDelegate__DelegateSignature
-	// void OnSelectedAugmentForGrantDelegate__DelegateSignature(class UFortPlayerAugmentItemDefinition* SelectedAugment);   // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnSelectedAugmentForGrantDelegate__DelegateSignature(class UFortPlayerAugmentItemDefinition* SelectedAugment);   // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnReplicateNumPendingAugmentsToGrantDelegate__DelegateSignature
-	// void OnReplicateNumPendingAugmentsToGrantDelegate__DelegateSignature(int8_t NumPendingAugmentsToGrant);               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnReplicateNumPendingAugmentsToGrantDelegate__DelegateSignature(int8_t NumPendingAugmentsToGrant);               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnRep_SelectorItemEntry
-	// void OnRep_SelectorItemEntry();                                                                                       // [0xab8d564] Final|Native|Private 
+	// void OnRep_SelectorItemEntry();                                                                                       // [0xae8b5fc] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnRep_ReplicatedNumPendingAugmentsToGrant
-	// void OnRep_ReplicatedNumPendingAugmentsToGrant();                                                                     // [0x316b964] Final|Native|Private 
+	// void OnRep_ReplicatedNumPendingAugmentsToGrant();                                                                     // [0xae8b5e8] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnRep_ReplicatedAugmentChoices
-	// void OnRep_ReplicatedAugmentChoices();                                                                                // [0xab8d550] Final|Native|Private 
+	// void OnRep_ReplicatedAugmentChoices();                                                                                // [0xae8b5d4] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnRep_NumLockedSelectionChoices
-	// void OnRep_NumLockedSelectionChoices();                                                                               // [0xab8d53c] Final|Native|Private 
+	// void OnRep_NumLockedSelectionChoices();                                                                               // [0xae8b5c0] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnRep_NumFreeRerolls
-	// void OnRep_NumFreeRerolls();                                                                                          // [0x386653c] Final|Native|Private 
+	// void OnRep_NumFreeRerolls();                                                                                          // [0xae8b5ac] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnNumLockedSelectionChoicesUpdatedDelegate__DelegateSignature
-	// void OnNumLockedSelectionChoicesUpdatedDelegate__DelegateSignature(int32_t NewNumFreeRerolls);                        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnNumLockedSelectionChoicesUpdatedDelegate__DelegateSignature(int32_t NewNumFreeRerolls);                        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnMinigameStarted
-	// void OnMinigameStarted();                                                                                             // [0xab8d514] Final|Native|Protected 
+	// void OnMinigameStarted();                                                                                             // [0xae8b584] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnLocalUnequipAugmentSelectionPressed
-	// void OnLocalUnequipAugmentSelectionPressed();                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnLocalUnequipAugmentSelectionPressed();                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnLocalRerollDelegate__DelegateSignature
-	// void OnLocalRerollDelegate__DelegateSignature();                                                                      // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnLocalRerollDelegate__DelegateSignature();                                                                      // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnLocalEquipAugmentSelectionPressed
-	// void OnLocalEquipAugmentSelectionPressed();                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnLocalEquipAugmentSelectionPressed();                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnFreeRerollsUpdatedDelegate__DelegateSignature
-	// void OnFreeRerollsUpdatedDelegate__DelegateSignature(int32_t NewNumFreeRerolls);                                      // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnFreeRerollsUpdatedDelegate__DelegateSignature(int32_t NewNumFreeRerolls);                                      // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnAvailableAugmentsForGrantingUpdatedDelegate__DelegateSignature
-	// void OnAvailableAugmentsForGrantingUpdatedDelegate__DelegateSignature(class UFortControllerComponent_AugmentGrantingSystem* GrantingComponent); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAvailableAugmentsForGrantingUpdatedDelegate__DelegateSignature(class UFortControllerComponent_AugmentGrantingSystem* GrantingComponent); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.OnAuthorityRequestAugmentChoicesDelegate__DelegateSignature
-	// void OnAuthorityRequestAugmentChoicesDelegate__DelegateSignature(TArray<UFortPlayerAugmentItemDefinition*>& IgnoreInRoll); // [0x130d900] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnAuthorityRequestAugmentChoicesDelegate__DelegateSignature(TArray<UFortPlayerAugmentItemDefinition*>& IgnoreInRoll); // [0x3d1d968] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.IsSelectionItemEquipped
-	// bool IsSelectionItemEquipped();                                                                                       // [0xab8d36c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectionItemEquipped();                                                                                       // [0xae8b394] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.IsSelectionChoicesLocked
-	// bool IsSelectionChoicesLocked();                                                                                      // [0xab8d350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectionChoicesLocked();                                                                                      // [0xae8b378] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.HandleUnHolsteredEvent
-	// void HandleUnHolsteredEvent();                                                                                        // [0xab8d33c] Final|Native|Protected 
+	// void HandleUnHolsteredEvent();                                                                                        // [0xae8b364] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.HandleToggleFullscreenMap
-	// void HandleToggleFullscreenMap(bool bVisible);                                                                        // [0xab8d278] Final|Native|Private 
+	// void HandleToggleFullscreenMap(bool bVisible);                                                                        // [0xae8b2e4] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.HandlePossessedPawnChanged
-	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xab8d138] Final|Native|Private 
+	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* NewPawn);                                          // [0xae8b220] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.HandleHolsteredEvent
-	// void HandleHolsteredEvent();                                                                                          // [0xab8cfbc] Final|Native|Protected 
+	// void HandleHolsteredEvent();                                                                                          // [0xae8b120] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.HandleChangedBuildMode
-	// void HandleChangedBuildMode(bool bEnteredBuildMode);                                                                  // [0xab8cc90] Final|Native|Protected 
+	// void HandleChangedBuildMode(bool bEnteredBuildMode);                                                                  // [0xae8aeb8] Final|Native|Protected 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.GetPendingAugmentsToGrant
-	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xab8c71c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xae8aa88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.GetNumFreeRerolls
-	// int32_t GetNumFreeRerolls();                                                                                          // [0xab8c704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumFreeRerolls();                                                                                          // [0xae8aa70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.GetAvailableAugmentsToGrant
-	// TArray<FPlayerAugmentChoiceDatum> GetAvailableAugmentsToGrant();                                                      // [0xab8b02c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FPlayerAugmentChoiceDatum> GetAvailableAugmentsToGrant();                                                      // [0xae893d8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.GetAugmentGrantingComponentFromController
-	// class UFortControllerComponent_AugmentGrantingSystem* GetAugmentGrantingComponentFromController(class AController* Controller); // [0xab8adbc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UFortControllerComponent_AugmentGrantingSystem* GetAugmentGrantingComponentFromController(class AController* Controller); // [0xae891a8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.ClientSelectAvailableAugmentToGrant
-	// void ClientSelectAvailableAugmentToGrant(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef);                   // [0xab8a850] Final|Native|Public|BlueprintCallable 
+	// void ClientSelectAvailableAugmentToGrant(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef);                   // [0xae88cb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.CanSelectAugmentChangedDelegate__DelegateSignature
-	// void CanSelectAugmentChangedDelegate__DelegateSignature(bool bCanSelectAugment);                                      // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void CanSelectAugmentChangedDelegate__DelegateSignature(bool bCanSelectAugment);                                      // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.CanReroll
-	// bool CanReroll();                                                                                                     // [0xab8a178] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanReroll();                                                                                                     // [0xae885dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthoritySetAvailableAugmentChoices
-	// void AuthoritySetAvailableAugmentChoices(TArray<FPlayerAugmentChoiceDatum>& AvailableAugmentsToGrant);                // [0xab88e1c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void AuthoritySetAvailableAugmentChoices(TArray<FPlayerAugmentChoiceDatum>& AvailableAugmentsToGrant);                // [0xae873fc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthorityResetAugmentData
-	// void AuthorityResetAugmentData();                                                                                     // [0xab88e08] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityResetAugmentData();                                                                                     // [0xae873e8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthorityRequestSelectionToolItemGrant
-	// void AuthorityRequestSelectionToolItemGrant(class UObject* Instigator);                                               // [0xab88d58] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityRequestSelectionToolItemGrant(class UObject* Instigator);                                               // [0xae87378] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthorityIncrementLockedSelectionChoices
-	// void AuthorityIncrementLockedSelectionChoices(int32_t NumLocksToAdd);                                                 // [0xab88c88] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityIncrementLockedSelectionChoices(int32_t NumLocksToAdd);                                                 // [0xae872e8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthorityGrantNewAugment
-	// void AuthorityGrantNewAugment();                                                                                      // [0xab88c74] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityGrantNewAugment();                                                                                      // [0xae872d4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentGrantingSystem.AuthorityGrantFreeReroll
-	// void AuthorityGrantFreeReroll();                                                                                      // [0xab88c40] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityGrantFreeReroll();                                                                                      // [0xae872a0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.AugmentFuctionLibrary
@@ -322,7 +322,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.AugmentFuctionLibrary.GiveAugmentWithPreventDropping
-	// class UFortWorldItem* GiveAugmentWithPreventDropping(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef, TScriptInterface<Class> InventoryOwner); // [0xab8c734] Final|Native|Static|Public|BlueprintCallable 
+	// class UFortWorldItem* GiveAugmentWithPreventDropping(class UFortPlayerAugmentItemDefinition* ChosenAugmentDef, TScriptInterface<Class> InventoryOwner); // [0xae8aaa0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents
@@ -331,13 +331,13 @@ class UFortControllerComponent_AugmentUIEvents : public UFortControllerComponent
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x20];                                      // 0x00A8   (0x0020)  MISSED
-	SDK_UNDEFINED(16,12212) /* FMulticastInlineDelegate */ __um(OnAugmentSelectorHighlightedChoice);               // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,12213) /* FMulticastInlineDelegate */ __um(OnAugmentStartedSelectionOfChoice);                // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,12214) /* FMulticastInlineDelegate */ __um(OnAugmentSelectedByPointerEvent);                  // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,12215) /* FMulticastInlineDelegate */ __um(OnAugmentGrantingTimersFinishedForMatch);          // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,12216) /* FMulticastInlineDelegate */ __um(OnAugmentGrantingTimersResetForMatch);             // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,12217) /* FMulticastInlineDelegate */ __um(AugmentHoldInputRerollChanged);                    // 0x0118   (0x0010)  
-	SDK_UNDEFINED(16,12218) /* FMulticastInlineDelegate */ __um(OnAugmentToolViewSwap);                            // 0x0128   (0x0010)  
+	SDK_UNDEFINED(16,12298) /* FMulticastInlineDelegate */ __um(OnAugmentSelectorHighlightedChoice);               // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,12299) /* FMulticastInlineDelegate */ __um(OnAugmentStartedSelectionOfChoice);                // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,12300) /* FMulticastInlineDelegate */ __um(OnAugmentSelectedByPointerEvent);                  // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,12301) /* FMulticastInlineDelegate */ __um(OnAugmentGrantingTimersFinishedForMatch);          // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,12302) /* FMulticastInlineDelegate */ __um(OnAugmentGrantingTimersResetForMatch);             // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,12303) /* FMulticastInlineDelegate */ __um(AugmentHoldInputRerollChanged);                    // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,12304) /* FMulticastInlineDelegate */ __um(OnAugmentToolViewSwap);                            // 0x0128   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0138   (0x0018)  MISSED
 	int32_t                                            NumAugmentGrantRoundsForPlaylist;                           // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData02_6[0xC];                                       // 0x0154   (0x000C)  MISSED
@@ -345,33 +345,33 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.UpdatedTimerProgress
-	// void UpdatedTimerProgress(float TimeRemaining, float TimePercentage);                                                 // [0xab8d7fc] Final|Native|Public|BlueprintCallable 
+	// void UpdatedTimerProgress(float TimeRemaining, float TimePercentage);                                                 // [0xae8b994] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.SetNumGrantableAugmentsForPlaylist
-	// void SetNumGrantableAugmentsForPlaylist(int32_t NewNumRounds);                                                        // [0x640d3e0] Final|Native|Public|BlueprintCallable 
+	// void SetNumGrantableAugmentsForPlaylist(int32_t NewNumRounds);                                                        // [0x6470f8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnGrantTimerProgressUpdatedDelegate__DelegateSignature
-	// void OnGrantTimerProgressUpdatedDelegate__DelegateSignature(float TimeRemaining, float TimePercentage);               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnGrantTimerProgressUpdatedDelegate__DelegateSignature(float TimeRemaining, float TimePercentage);               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentToolViewSwapDelegate__DelegateSignature
-	// void OnAugmentToolViewSwapDelegate__DelegateSignature(bool ViewingInventoryAugments);                                 // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentToolViewSwapDelegate__DelegateSignature(bool ViewingInventoryAugments);                                 // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentStartedSelectionOfChoiceDelegate__DelegateSignature
-	// void OnAugmentStartedSelectionOfChoiceDelegate__DelegateSignature(int32_t ChoiceIndex);                               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentStartedSelectionOfChoiceDelegate__DelegateSignature(int32_t ChoiceIndex);                               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentSelectorOpenedStatusChangedDelegate__DelegateSignature
-	// void OnAugmentSelectorOpenedStatusChangedDelegate__DelegateSignature(bool bIsOpened, bool bViewingInventory);         // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentSelectorOpenedStatusChangedDelegate__DelegateSignature(bool bIsOpened, bool bViewingInventory);         // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentSelectorHighlightedChoiceDelegate__DelegateSignature
-	// void OnAugmentSelectorHighlightedChoiceDelegate__DelegateSignature(int32_t ChoiceIndex);                              // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentSelectorHighlightedChoiceDelegate__DelegateSignature(int32_t ChoiceIndex);                              // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentSelectedByPointerEvent__DelegateSignature
-	// void OnAugmentSelectedByPointerEvent__DelegateSignature(int32_t ChoiceIndex);                                         // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentSelectedByPointerEvent__DelegateSignature(int32_t ChoiceIndex);                                         // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentGrantingTimersResetForMatchDelegate__DelegateSignature
-	// void OnAugmentGrantingTimersResetForMatchDelegate__DelegateSignature();                                               // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentGrantingTimersResetForMatchDelegate__DelegateSignature();                                               // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.OnAugmentGrantingTimersFinishedForMatchDelegate__DelegateSignature
-	// void OnAugmentGrantingTimersFinishedForMatchDelegate__DelegateSignature();                                            // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentGrantingTimersFinishedForMatchDelegate__DelegateSignature();                                            // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.NotifyGrantingTimersReset
-	// void NotifyGrantingTimersReset();                                                                                     // [0xab8d500] Final|Native|Public|BlueprintCallable 
+	// void NotifyGrantingTimersReset();                                                                                     // [0xae8b570] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.NotifyGrantingTimersFinished
-	// void NotifyGrantingTimersFinished();                                                                                  // [0xab8d4dc] Final|Native|Public|BlueprintCallable 
+	// void NotifyGrantingTimersFinished();                                                                                  // [0xae8b54c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.HandleAugmentSelectorOpenedStatusChanged
-	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingInventory);                                // [0xab8c880] Final|Native|Public|BlueprintCallable 
+	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingInventory);                                // [0xae8ac30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_AugmentUIEvents.AugmentHoldInputRerollChangedDelegate__DelegateSignature
-	// void AugmentHoldInputRerollChangedDelegate__DelegateSignature(EAugmentHoldInputRerollState HoldState, float HoldDurationSeconds); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void AugmentHoldInputRerollChangedDelegate__DelegateSignature(EAugmentHoldInputRerollState HoldState, float HoldDurationSeconds); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 };
 
 /// Struct /Script/PlayerAugmentsCodeRuntime.ReplicatedSharedPlayerAugment
@@ -379,7 +379,7 @@ public:
 struct FReplicatedSharedPlayerAugment
 { 
 	int32_t                                            PlayerAugmentIndex;                                         // 0x0000   (0x0004)  
-	SDK_UNDEFINED(8,12219) /* TWeakObjectPtr<AFortPlayerStateAthena*> */ __um(SharedFromPlayer);                   // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,12305) /* TWeakObjectPtr<AFortPlayerStateAthena*> */ __um(SharedFromPlayer);                   // 0x0004   (0x0008)  
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence
@@ -392,34 +392,34 @@ public:
 	class AFortPlayerControllerAthena*                 PlayerController;                                           // 0x00F8   (0x0008)  
 	class UFortCollectionDataPlayerAugment*            CollectionData;                                             // 0x0100   (0x0008)  
 	FPlayerAugmentsPersistenceData                     LivePlayerAugmentsPersistenceData;                          // 0x0108   (0x0018)  
-	SDK_UNDEFINED(80,12220) /* TSet<UFortPlayerAugmentItemDefinition*> */ __um(AugmentsCollectedThisMatch);        // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,12306) /* TSet<UFortPlayerAugmentItemDefinition*> */ __um(AugmentsCollectedThisMatch);        // 0x0120   (0x0050)  
 	TArray<FReplicatedSharedPlayerAugment>             ReplicatedSharedPlayerAugments;                             // 0x0170   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x0180   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.HandleMcpProfilesInitialized
-	// void HandleMcpProfilesInitialized();                                                                                  // [0xab8cfd0] Final|Native|Private 
+	// void HandleMcpProfilesInitialized();                                                                                  // [0xae8b134] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.HandleCollectionDataTableLoaded
-	// void HandleCollectionDataTableLoaded(TWeakObjectPtr<UFortCollectionsDataTable*> CollectionsDataTableSoftPtr);         // [0xab8ce88] Final|Native|Private 
+	// void HandleCollectionDataTableLoaded(TWeakObjectPtr<UFortCollectionsDataTable*> CollectionsDataTableSoftPtr);         // [0xae8b02c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.HandleCollectionDataLoaded
-	// void HandleCollectionDataLoaded(TWeakObjectPtr<UFortCollectionData*> BaseCollectionDataSoftPtr);                      // [0xab8cd54] Final|Native|Private 
+	// void HandleCollectionDataLoaded(TWeakObjectPtr<UFortCollectionData*> BaseCollectionDataSoftPtr);                      // [0xae8af38] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.GetRollCountSinceLastRandomUnlock
-	// int32_t GetRollCountSinceLastRandomUnlock();                                                                          // [0x6faae00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRollCountSinceLastRandomUnlock();                                                                          // [0x6fc8834] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.GetLockStatusForAll
-	// void GetLockStatusForAll(TArray<FPlayerAugmentLockStatus>& OutLockStatusArray);                                       // [0xab8b884] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetLockStatusForAll(TArray<FPlayerAugmentLockStatus>& OutLockStatusArray);                                       // [0xae89bf0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.GetLockStatus
-	// FPlayerAugmentLockStatus GetLockStatus(class UFortPlayerAugmentItemDefinition* PlayerAugmentItemDefinition);          // [0xab8b78c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPlayerAugmentLockStatus GetLockStatus(class UFortPlayerAugmentItemDefinition* PlayerAugmentItemDefinition);          // [0xae89b38] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.GetLockedList
-	// void GetLockedList(TArray<FPlayerAugmentLockStatus>& OutLockedList, bool bIncludeSharedAugments);                     // [0xab8bf44] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetLockedList(TArray<FPlayerAugmentLockStatus>& OutLockedList, bool bIncludeSharedAugments);                     // [0xae8a2b0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.GetCarryOverPlayerAugments
-	// void GetCarryOverPlayerAugments(TArray<FCarryOverPlayerAugment>& OutCarryOverPlayerAugments);                         // [0xab8b0cc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCarryOverPlayerAugments(TArray<FCarryOverPlayerAugment>& OutCarryOverPlayerAugments);                         // [0xae89478] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.AuthorityUnlockPlayerAugment
-	// void AuthorityUnlockPlayerAugment(class UFortPlayerAugmentItemDefinition* PlayerAugmentToUnlock);                     // [0xab89710] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthorityUnlockPlayerAugment(class UFortPlayerAugmentItemDefinition* PlayerAugmentToUnlock);                     // [0xae87c70] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.AuthoritySetRollCountSinceLastRandomUnlock
-	// void AuthoritySetRollCountSinceLastRandomUnlock(int32_t NewRollCount);                                                // [0xab89574] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AuthoritySetRollCountSinceLastRandomUnlock(int32_t NewRollCount);                                                // [0xae87b54] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortControllerComponent_PlayerAugmentPersistence.AuthoritySetCarryOverPlayerAugments
-	// void AuthoritySetCarryOverPlayerAugments(TArray<FCarryOverPlayerAugment>& NewCarryOverPlayerAugments);                // [0xab88eb4] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void AuthoritySetCarryOverPlayerAugments(TArray<FCarryOverPlayerAugment>& NewCarryOverPlayerAugments);                // [0xae87494] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortGamestateComponent_AugmentTableManager
@@ -447,9 +447,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortMcpCollectionPlayerAugment.MarkSeenForPlayer
-	// void MarkSeenForPlayer(class AFortPlayerController* PlayerController, FGameplayTag VariantTag);                       // [0xab8d390] Final|Native|Static|Public|BlueprintCallable 
+	// void MarkSeenForPlayer(class AFortPlayerController* PlayerController, FGameplayTag VariantTag);                       // [0xae8b3b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortMcpCollectionPlayerAugment.AddToPlayerCollection
-	// void AddToPlayerCollection(class AFortPlayerController* PlayerController, FGameplayTag PlayerAugmentVariantTag);      // [0xab88ad4] Final|Native|Static|Public|BlueprintCallable 
+	// void AddToPlayerCollection(class AFortPlayerController* PlayerController, FGameplayTag PlayerAugmentVariantTag);      // [0xae87104] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager
@@ -461,35 +461,35 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.StartAugmentGrantingFlow
-	// void StartAugmentGrantingFlow();                                                                                      // [0x3047908] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void StartAugmentGrantingFlow();                                                                                      // [0x3097b14] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.SetPlayerAugmentRollCountSinceLastUnlock
-	// void SetPlayerAugmentRollCountSinceLastUnlock(int32_t RollCount);                                                     // [0x640d3e0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetPlayerAugmentRollCountSinceLastUnlock(int32_t RollCount);                                                     // [0x6470f8c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.ServerLogDynamicWeightsForPlayer
-	// void ServerLogDynamicWeightsForPlayer(bool bVeryDetailedReport);                                                      // [0x5d6b308] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void ServerLogDynamicWeightsForPlayer(bool bVeryDetailedReport);                                                      // [0x5dd0bf8] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.ResetAugmentGrantingToSeed
-	// void ResetAugmentGrantingToSeed(int32_t Seed);                                                                        // [0x640d3e0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void ResetAugmentGrantingToSeed(int32_t Seed);                                                                        // [0x6470f8c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.RemoveAugmentCount
-	// void RemoveAugmentCount(FString AugmentName, int32_t RemoveCount);                                                    // [0x8470dbc] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void RemoveAugmentCount(FString AugmentName, int32_t RemoveCount);                                                    // [0x8473210] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.RemoveAugment
-	// void RemoveAugment(FString AugmentName);                                                                              // [0x8c4a060] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void RemoveAugment(FString AugmentName);                                                                              // [0x8c2fc5c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.RemoveAllAugmentsFromBots
-	// void RemoveAllAugmentsFromBots();                                                                                     // [0x3047908] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void RemoveAllAugmentsFromBots();                                                                                     // [0x3097b14] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.RemoveAllAugments
-	// void RemoveAllAugments();                                                                                             // [0x3047908] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void RemoveAllAugments();                                                                                             // [0x3097b14] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.LogPlayerAugmentsLockStatus
-	// void LogPlayerAugmentsLockStatus();                                                                                   // [0x3047908] Final|Exec|Native|Public|BlueprintCallable 
+	// void LogPlayerAugmentsLockStatus();                                                                                   // [0x3097b14] Final|Exec|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.GiveAugmentToBots
-	// void GiveAugmentToBots(FString AugmentName);                                                                          // [0x8c4a060] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void GiveAugmentToBots(FString AugmentName);                                                                          // [0x8c2fc5c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.GiveAugmentCount
-	// void GiveAugmentCount(FString AugmentName, int32_t AddCount);                                                         // [0x8470dbc] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void GiveAugmentCount(FString AugmentName, int32_t AddCount);                                                         // [0x8473210] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.GiveAugment
-	// void GiveAugment(FString AugmentName);                                                                                // [0x8c4a060] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void GiveAugment(FString AugmentName);                                                                                // [0x8c2fc5c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.ForceSelectionAugments
-	// void ForceSelectionAugments(FString AugmentNameFirst, FString AugmentNameSecond);                                     // [0x846fc08] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void ForceSelectionAugments(FString AugmentNameFirst, FString AugmentNameSecond);                                     // [0x847210c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.CollectPlayerAugment
-	// void CollectPlayerAugment(FString TagMatch);                                                                          // [0x65e4080] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void CollectPlayerAugment(FString TagMatch);                                                                          // [0x6650f60] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerAugmentCheatManager.CollectAllPlayerAugments
-	// void CollectAllPlayerAugments();                                                                                      // [0x3047908] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void CollectAllPlayerAugments();                                                                                      // [0x3097b14] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 };
 
 /// Class /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem
@@ -498,35 +498,35 @@ class UFortPlayerStateComponent_PlayerAugmentSystem : public UFortPlayerStateCom
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x18];                                      // 0x00A0   (0x0018)  MISSED
-	SDK_UNDEFINED(16,12221) /* FMulticastInlineDelegate */ __um(OnAugmentListUpdated);                             // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12307) /* FMulticastInlineDelegate */ __um(OnAugmentListUpdated);                             // 0x00B8   (0x0010)  
 	FScalableFloat                                     EnableAugmentsFeature;                                      // 0x00C8   (0x0028)  
 	class UClass*                                      DynamicTagGEClass;                                          // 0x00F0   (0x0008)  
-	SDK_UNDEFINED(80,12222) /* TMap<FPrimaryAssetId, FPlayerAugmentTrackedData> */ __um(AugmentToRuntimeDataMap);  // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,12308) /* TMap<FPrimaryAssetId, FPlayerAugmentTrackedData> */ __um(AugmentToRuntimeDataMap);  // 0x00F8   (0x0050)  
 	TArray<class UFortPlayerAugmentItemDefinition*>    ActiveAugments;                                             // 0x0148   (0x0010)  
-	SDK_UNDEFINED(80,12223) /* TMap<FGameplayTag, double> */ __um(RuntimeAugmentMatchDataCacheFloat);              // 0x0158   (0x0050)  
+	SDK_UNDEFINED(80,12309) /* TMap<FGameplayTag, double> */ __um(RuntimeAugmentMatchDataCacheFloat);              // 0x0158   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.SetAugmentMatchDataCacheFloat
-	// void SetAugmentMatchDataCacheFloat(FGameplayTag TargetAugmentCacheTag, double InData);                                // [0xab8d58c] Final|Native|Public|BlueprintCallable 
+	// void SetAugmentMatchDataCacheFloat(FGameplayTag TargetAugmentCacheTag, double InData);                                // [0xae8b67c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.OnRep_ActiveAugments
-	// void OnRep_ActiveAugments();                                                                                          // [0xab8d528] Final|Native|Private 
+	// void OnRep_ActiveAugments();                                                                                          // [0xae8b598] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.OnAugmentListUpdatedEventDispatcher__DelegateSignature
-	// void OnAugmentListUpdatedEventDispatcher__DelegateSignature(class UFortPlayerStateComponent_PlayerAugmentSystem* AugmentComponent); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnAugmentListUpdatedEventDispatcher__DelegateSignature(class UFortPlayerStateComponent_PlayerAugmentSystem* AugmentComponent); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.HandlePlayerPawnSpawned
-	// void HandlePlayerPawnSpawned();                                                                                       // [0xab8cfe4] Final|Native|Private 
+	// void HandlePlayerPawnSpawned();                                                                                       // [0xae8b148] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.HandleBotPlayerPawnSpawned
-	// void HandleBotPlayerPawnSpawned(class AAIController* Controller, class AFortPawn* Pawn);                              // [0xab8cb50] Final|Native|Private 
+	// void HandleBotPlayerPawnSpawned(class AAIController* Controller, class AFortPawn* Pawn);                              // [0xae8adf4] Final|Native|Private 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.GetAugmentMatchDataCacheFloat
-	// double GetAugmentMatchDataCacheFloat(EAugmentExecResult& OutExec, FGameplayTag TargetAugmentCacheTag);                // [0xab8ae88] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// double GetAugmentMatchDataCacheFloat(EAugmentExecResult& OutExec, FGameplayTag TargetAugmentCacheTag);                // [0xae89234] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.GetAugmentComponentValidated
-	// class UFortPlayerStateComponent_PlayerAugmentSystem* GetAugmentComponentValidated(EAugmentExecResult& OutExec, class AActor* PlayerContextActor); // [0xab8ac18] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UFortPlayerStateComponent_PlayerAugmentSystem* GetAugmentComponentValidated(EAugmentExecResult& OutExec, class AActor* PlayerContextActor); // [0xae88fa0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.GetAugmentComponent
-	// class UFortPlayerStateComponent_PlayerAugmentSystem* GetAugmentComponent(class AActor* PlayerContextActor);           // [0xab8ab58] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UFortPlayerStateComponent_PlayerAugmentSystem* GetAugmentComponent(class AActor* PlayerContextActor);           // [0xae88eb0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.GetActiveAugments
-	// TArray<UFortPlayerAugmentItemDefinition*> GetActiveAugments(class AActor* Actor);                                     // [0xab8aa60] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// TArray<UFortPlayerAugmentItemDefinition*> GetActiveAugments(class AActor* Actor);                                     // [0xae88df8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsCodeRuntime.FortPlayerStateComponent_PlayerAugmentSystem.ClientClearMatchAugmentDataCache
-	// void ClientClearMatchAugmentDataCache();                                                                              // [0x6d4279c] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientClearMatchAugmentDataCache();                                                                              // [0x6db0d14] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Struct /Script/PlayerAugmentsCodeRuntime.FortAugmentPassiveUnlockResult

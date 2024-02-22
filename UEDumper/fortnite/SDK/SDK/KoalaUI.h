@@ -104,12 +104,12 @@ public:
 	unsigned char                                      UnknownData00_3[0x18];                                      // 0x0400   (0x0018)  MISSED
 	class UCommonButtonBase*                           Button_KoalaDummy;                                          // 0x0418   (0x0008)  
 	class UFortLazyImage*                              QrCodeImage;                                                // 0x0420   (0x0008)  
-	SDK_UNDEFINED(16,14598) /* FString */              __um(QRCodeURL);                                            // 0x0428   (0x0010)  
+	SDK_UNDEFINED(16,14730) /* FString */              __um(QRCodeURL);                                            // 0x0428   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/KoalaUI.FortSidebarPanelKoala.OnConnectionChanged
-	// void OnConnectionChanged(bool bConnected);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnConnectionChanged(bool bConnected);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/KoalaUI.FortUIGameFeatureAction_AttemptKoalaModal
@@ -117,7 +117,7 @@ public:
 class UFortUIGameFeatureAction_AttemptKoalaModal : public UFortUIGameFeatureAction_PostFrontendFlowActions
 { 
 public:
-	SDK_UNDEFINED(32,14599) /* TWeakObjectPtr<UClass*> */ __um(KoalaGraphicsModalClass);                           // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,14731) /* TWeakObjectPtr<UClass*> */ __um(KoalaGraphicsModalClass);                           // 0x0030   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0050   (0x0018)  MISSED
 };
 
@@ -147,7 +147,7 @@ public:
 	class UCommonActionWidget*                         ClipActionWidget;                                           // 0x0428   (0x0008)  
 	FDataTableRowHandle                                ClipObjectInputAction;                                      // 0x0430   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0440   (0x0008)  MISSED
-	SDK_UNDEFINED(80,14600) /* TMap<int32_t, FKoalaClipInfo> */ __um(ClipTracker);                                 // 0x0448   (0x0050)  
+	SDK_UNDEFINED(80,14732) /* TMap<int32_t, FKoalaClipInfo> */ __um(ClipTracker);                                 // 0x0448   (0x0050)  
 	unsigned char                                      UnknownData03_5[0x8];                                       // 0x0498   (0x0008)  MISSED
 	int32_t                                            LastClipID;                                                 // 0x04A0   (0x0004)  
 	unsigned char                                      UnknownData04_5[0x16];                                      // 0x04A4   (0x0016)  MISSED
@@ -162,37 +162,37 @@ public:
 
 	/// Functions
 	// Function /Script/KoalaUI.KoalaHUDWidget.UnregisterClipButtonInput
-	// void UnregisterClipButtonInput();                                                                                     // [0xb46a37c] Final|Native|Private 
+	// void UnregisterClipButtonInput();                                                                                     // [0xb57ae48] Final|Native|Private 
 	// Function /Script/KoalaUI.KoalaHUDWidget.RegisterClipButtonInput
-	// void RegisterClipButtonInput();                                                                                       // [0xb46a368] Final|Native|Private 
+	// void RegisterClipButtonInput();                                                                                       // [0xb57ae34] Final|Native|Private 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnTouchAreaMouseDown
-	// void OnTouchAreaMouseDown();                                                                                          // [0xb46a354] Final|Native|Protected|BlueprintCallable 
+	// void OnTouchAreaMouseDown();                                                                                          // [0xb57ae20] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnReminderTimerStarted
-	// void OnReminderTimerStarted(float Time);                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnReminderTimerStarted(float Time);                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnReminderEnded
-	// void OnReminderEnded();                                                                                               // [0xb46a33c] Final|Native|Protected|BlueprintCallable 
+	// void OnReminderEnded();                                                                                               // [0xb57ae08] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnRecordingStatusChanged
-	// void OnRecordingStatusChanged(EKoalaRecording InRecordingStatus);                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRecordingStatusChanged(EKoalaRecording InRecordingStatus);                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnInputProgress
-	// void OnInputProgress(float Progress);                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnInputProgress(float Progress);                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnInputComplete
-	// void OnInputComplete();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnInputComplete();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnConnectionChanged
-	// void OnConnectionChanged(EKoalaConnectionStatus InStatus);                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnConnectionChanged(EKoalaConnectionStatus InStatus);                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnClipStatusChanged
-	// void OnClipStatusChanged(int32_t InClipID, EKoalaClipStatus InClipStatus, float InUploadProgress);                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnClipStatusChanged(int32_t InClipID, EKoalaClipStatus InClipStatus, float InUploadProgress);                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.OnAvailabilityChanged
-	// void OnAvailabilityChanged(EKoalaAvailability Availability);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAvailabilityChanged(EKoalaAvailability Availability);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaHUDWidget.HandlePlayerPawnEmoteStopped
-	// void HandlePlayerPawnEmoteStopped(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);           // [0xb46a148] Final|Native|Private 
+	// void HandlePlayerPawnEmoteStopped(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);           // [0xb57ac9c] Final|Native|Private 
 	// Function /Script/KoalaUI.KoalaHUDWidget.HandlePlayerMatchWon
-	// void HandlePlayerMatchWon();                                                                                          // [0xb46a134] Final|Native|Private 
+	// void HandlePlayerMatchWon();                                                                                          // [0xb57ac88] Final|Native|Private 
 	// Function /Script/KoalaUI.KoalaHUDWidget.HandleLocalPlayerKilledPlayer
-	// void HandleLocalPlayerKilledPlayer(class AFortPlayerStateAthena* Player);                                             // [0xb46a074] Final|Native|Private 
+	// void HandleLocalPlayerKilledPlayer(class AFortPlayerStateAthena* Player);                                             // [0xb57ac08] Final|Native|Private 
 	// Function /Script/KoalaUI.KoalaHUDWidget.GetUploadingClipCount
-	// int32_t GetUploadingClipCount();                                                                                      // [0xb46a050] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetUploadingClipCount();                                                                                      // [0xb57abe4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/KoalaUI.KoalaHUDWidget.GetTrackedClipCount
-	// int32_t GetTrackedClipCount();                                                                                        // [0xa2c799c] Final|Native|Protected|BlueprintCallable 
+	// int32_t GetTrackedClipCount();                                                                                        // [0xa2c63fc] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/KoalaUI.KoalaMainMenuButton
@@ -213,9 +213,9 @@ public:
 
 	/// Functions
 	// Function /Script/KoalaUI.KoalaSettingDetailExtension.OnConnectionChanged
-	// void OnConnectionChanged(bool bConnected);                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnConnectionChanged(bool bConnected);                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/KoalaUI.KoalaSettingDetailExtension.OnAvailabilityChanged
-	// void OnAvailabilityChanged(bool bAvailable);                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAvailabilityChanged(bool bAvailable);                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/KoalaUI.KoalaClipInfo

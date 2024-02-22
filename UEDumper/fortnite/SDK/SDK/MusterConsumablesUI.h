@@ -21,8 +21,8 @@ public:
 
 	/// Functions
 	// Function /Script/MusterConsumablesUI.EnergyDrinkStaminaBarOverlayWidget.OnPlayerStateSet
-	// void OnPlayerStateSet(class AFortPlayerStateAthena* InPlayerState);                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnPlayerStateSet(class AFortPlayerStateAthena* InPlayerState);                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MusterConsumablesUI.EnergyDrinkStaminaBarOverlayWidget.OnPlayerDeadStateChanged
-	// void OnPlayerDeadStateChanged(class AFortPlayerStateAthena* PlayerState, bool bIsDead);                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnPlayerDeadStateChanged(class AFortPlayerStateAthena* PlayerState, bool bIsDead);                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 

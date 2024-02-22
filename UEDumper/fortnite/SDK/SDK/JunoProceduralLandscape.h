@@ -47,7 +47,7 @@ public:
 	TArray<class ULandscapeLayerInfoObject*>           LandscapeInfos;                                             // 0x0038   (0x0010)  
 	class UMaterialInstanceConstant*                   MaterialBase;                                               // 0x0048   (0x0008)  
 	class UJunoLandscapeMaterialInstanceConstant*      CPUReadbackMaterialBase;                                    // 0x0050   (0x0008)  
-	SDK_UNDEFINED(80,14289) /* TMap<FJunoLandscapeMaterialInstanceCacheKey, FJunoLandscapeCombinedMaterialInstance> */ __um(MaterialInstances); // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,14407) /* TMap<FJunoLandscapeMaterialInstanceCacheKey, FJunoLandscapeCombinedMaterialInstance> */ __um(MaterialInstances); // 0x0058   (0x0050)  
 	TArray<FJunoLandscapeGrassAndPhysics>              GrassAndPhysicsTypes;                                       // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x00B8   (0x0018)  MISSED
 };
@@ -61,7 +61,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeExternalMaterialsCollector.CollectExternalMaterials
-	// void CollectExternalMaterials(class UJunoLandscapeLayersData* LayerData, bool bInlcudeMobile, bool bIncludeStandard); // [0xbf8d490] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CollectExternalMaterials(class UJunoLandscapeLayersData* LayerData, bool bInlcudeMobile, bool bIncludeStandard); // [0xbf43aa4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface
@@ -73,11 +73,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.Initialize
-	// void Initialize(class UJunoLandscapeRenderer* LandscapeRenderer);                                                     // [0x80f0888] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Initialize(class UJunoLandscapeRenderer* LandscapeRenderer);                                                     // [0x8100ce8] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.GetAffectedWeightmapLayers
-	// TArray<FName> GetAffectedWeightmapLayers();                                                                           // [0xbf8e7dc] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TArray<FName> GetAffectedWeightmapLayers();                                                                           // [0xbf44f28] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeGeneratorInterface.GenerateLandscape
-	// class UJunoLandscapeRenderTarget* GenerateLandscape(bool bRenderHeightmap, FName WeightmapName);                      // [0xbf8e68c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// class UJunoLandscapeRenderTarget* GenerateLandscape(bool bRenderHeightmap, FName WeightmapName);                      // [0xbf44e50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeMaterial
@@ -88,26 +88,26 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	class UMaterialInterface*                          Parent;                                                     // 0x0028   (0x0008)  
 	class UMaterialInstanceDynamic*                    MaterialInstanceDynamic;                                    // 0x0030   (0x0008)  
-	SDK_UNDEFINED(80,14290) /* TMap<FName, UJunoLandscapeRenderTarget*> */ __um(TextureProperties);                // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14408) /* TMap<FName, UJunoLandscapeRenderTarget*> */ __um(TextureProperties);                // 0x0038   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetVectorParameterValue
-	// void SetVectorParameterValue(FName ParameterName, FLinearColor Value);                                                // [0xbf8f3e4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetVectorParameterValue(FName ParameterName, FLinearColor Value);                                                // [0xbf45868] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetTextureParameterValue
-	// void SetTextureParameterValue(FName ParameterName, class UTexture* Value);                                            // [0xbf8ec40] Final|Native|Public|BlueprintCallable 
+	// void SetTextureParameterValue(FName ParameterName, class UTexture* Value);                                            // [0xbf45310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetScalarParameterValue
-	// void SetScalarParameterValue(FName ParameterName, float Value);                                                       // [0xbf8f2a8] Final|Native|Public|BlueprintCallable 
+	// void SetScalarParameterValue(FName ParameterName, float Value);                                                       // [0xbf457a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetRenderTargetParameterValue
-	// void SetRenderTargetParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);                     // [0xbf8f16c] Final|Native|Public|BlueprintCallable 
+	// void SetRenderTargetParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);                     // [0xbf456e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetJunoTextureParameterValue
-	// void SetJunoTextureParameterValue(FName ParameterName, class UTextureRenderTarget2D* Value);                          // [0xbf8ec40] Final|Native|Public|BlueprintCallable 
+	// void SetJunoTextureParameterValue(FName ParameterName, class UTextureRenderTarget2D* Value);                          // [0xbf45310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.SetDoubleVectorParameterValue
-	// void SetDoubleVectorParameterValue(FName ParameterName, FVector4 Value);                                              // [0xbf8eadc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetDoubleVectorParameterValue(FName ParameterName, FVector4 Value);                                              // [0xbf45168] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.K2_GetVectorParameterValue
-	// FLinearColor K2_GetVectorParameterValue(FName ParameterName);                                                         // [0xbf8ea00] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FLinearColor K2_GetVectorParameterValue(FName ParameterName);                                                         // [0xbf450cc] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeMaterial.K2_GetScalarParameterValue
-	// float K2_GetScalarParameterValue(FName ParameterName);                                                                // [0xbf8e930] Final|Native|Public|BlueprintCallable 
+	// float K2_GetScalarParameterValue(FName ParameterName);                                                                // [0xbf4503c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeMaterialInstanceConstant
@@ -133,7 +133,7 @@ public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	class UMaterialInstanceDynamic*                    WrappedMaterial;                                            // 0x0028   (0x0008)  
 	class UTexture*                                    Heightmap;                                                  // 0x0030   (0x0008)  
-	SDK_UNDEFINED(80,14291) /* TMap<FString, UTexture*> */ __um(WeightMaps);                                       // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14409) /* TMap<FString, UTexture*> */ __um(WeightMaps);                                       // 0x0038   (0x0050)  
 };
 
 /// Struct /Script/JunoProceduralLandscape.JunoLandscapeComponentPrecachSettings
@@ -196,8 +196,8 @@ struct FJunoLandscapeLayersGroup
 /// Size: 0x00A0 (0x000000 - 0x0000A0)
 struct FJunoLandscapeMaterialCache
 { 
-	SDK_UNDEFINED(80,14292) /* TMap<FJunoLandscapeCombinedMaterialCacheKey, UJunoLandscapeCombinedMaterial*> */ __um(ExternalCombinedMaterials); // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,14293) /* TMap<FJunoLandscapeCombinedMaterialCacheKey, UJunoLandscapeCombinedMaterial*> */ __um(MaterialCombinations); // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,14410) /* TMap<FJunoLandscapeCombinedMaterialCacheKey, UJunoLandscapeCombinedMaterial*> */ __um(ExternalCombinedMaterials); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14411) /* TMap<FJunoLandscapeCombinedMaterialCacheKey, UJunoLandscapeCombinedMaterial*> */ __um(MaterialCombinations); // 0x0050   (0x0050)  
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeLayersData
@@ -207,37 +207,37 @@ class UJunoLandscapeLayersData : public UPrimaryDataAsset
 public:
 	class UClass*                                      ExternalMaterialGatherer;                                   // 0x0030   (0x0008)  
 	class UMaterial*                                   LandscapeMaterial;                                          // 0x0038   (0x0008)  
-	SDK_UNDEFINED(80,14294) /* TMap<FName, ULandscapeLayerInfoObject*> */ __um(AllLayerInfos);                     // 0x0040   (0x0050)  
-	SDK_UNDEFINED(16,14295) /* TArray<FString> */      __um(LayerInfoDirectories);                                 // 0x0090   (0x0010)  
+	SDK_UNDEFINED(80,14412) /* TMap<FName, ULandscapeLayerInfoObject*> */ __um(AllLayerInfos);                     // 0x0040   (0x0050)  
+	SDK_UNDEFINED(16,14413) /* TArray<FString> */      __um(LayerInfoDirectories);                                 // 0x0090   (0x0010)  
 	TArray<FName>                                      Biomes;                                                     // 0x00A0   (0x0010)  
 	TArray<FJunoLandscapeLayersGroup>                  LayerGroups;                                                // 0x00B0   (0x0010)  
 	TArray<FName>                                      SortedLayerNames;                                           // 0x00C0   (0x0010)  
 	TArray<class ULandscapeLayerInfoObject*>           SortedLayerInfos;                                           // 0x00D0   (0x0010)  
 	FJunoLandscapeMaterialCache                        AllMaterials;                                               // 0x00E0   (0x00A0)  
-	SDK_UNDEFINED(80,14296) /* TMap<FName, uint32_t> */ __um(LayerNameToIndex);                                    // 0x0180   (0x0050)  
+	SDK_UNDEFINED(80,14414) /* TMap<FName, uint32_t> */ __um(LayerNameToIndex);                                    // 0x0180   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x01D0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeLayersData.UpdateExternalMaterials
-	// void UpdateExternalMaterials();                                                                                       // [0x3047908] Final|Native|Public  
+	// void UpdateExternalMaterials();                                                                                       // [0x3097b14] Final|Native|Public  
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeManager
-/// Size: 0x0530 (0x000040 - 0x000570)
+/// Size: 0x0570 (0x000040 - 0x0005B0)
 class UJunoLandscapeManager : public UTickableWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_3[0xC8];                                      // 0x0040   (0x00C8)  MISSED
 	class ALandscape*                                  Landscape;                                                  // 0x0108   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x20];                                      // 0x0110   (0x0020)  MISSED
-	SDK_UNDEFINED(80,14297) /* TMap<FIntPoint, UJunoLandscapeComponent*> */ __um(ExistingComponents);              // 0x0130   (0x0050)  
-	SDK_UNDEFINED(80,14298) /* TMap<UPrimitiveComponent*, UJunoLandscapeComponent*> */ __um(ExternalComponents);   // 0x0180   (0x0050)  
+	SDK_UNDEFINED(80,14415) /* TMap<FIntPoint, UJunoLandscapeComponent*> */ __um(ExistingComponents);              // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,14416) /* TMap<UPrimitiveComponent*, UJunoLandscapeComponent*> */ __um(ExternalComponents);   // 0x0180   (0x0050)  
 	class UMaterialInterface*                          DebugMaterial;                                              // 0x01D0   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x358];                                     // 0x01D8   (0x0358)  MISSED
-	class UMaterialInterface*                          LandscapeMaterial;                                          // 0x0530   (0x0008)  
-	class UJunoLandscapeLayersData*                    LayersData;                                                 // 0x0538   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x30];                                      // 0x0540   (0x0030)  MISSED
+	unsigned char                                      UnknownData02_5[0x398];                                     // 0x01D8   (0x0398)  MISSED
+	class UMaterialInterface*                          LandscapeMaterial;                                          // 0x0570   (0x0008)  
+	class UJunoLandscapeLayersData*                    LayersData;                                                 // 0x0578   (0x0008)  
+	unsigned char                                      UnknownData03_6[0x30];                                      // 0x0580   (0x0030)  MISSED
 };
 
 /// Struct /Script/JunoProceduralLandscape.JunoLandscapeGenerationData
@@ -246,9 +246,9 @@ struct FJunoLandscapeGenerationData
 { 
 	int32_t                                            Version;                                                    // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,14299) /* TWeakObjectPtr<UObject*> */ __um(Generator);                                        // 0x0008   (0x0020)  
-	SDK_UNDEFINED(32,14300) /* TWeakObjectPtr<UMaterialInterface*> */ __um(LandscapeMaterial);                     // 0x0028   (0x0020)  
-	SDK_UNDEFINED(32,14301) /* TWeakObjectPtr<UJunoLandscapeLayersData*> */ __um(LayersData);                      // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,14417) /* TWeakObjectPtr<UObject*> */ __um(Generator);                                        // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,14418) /* TWeakObjectPtr<UMaterialInterface*> */ __um(LandscapeMaterial);                     // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,14419) /* TWeakObjectPtr<UJunoLandscapeLayersData*> */ __um(LayersData);                      // 0x0048   (0x0020)  
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeGenerationItems
@@ -389,39 +389,39 @@ public:
 	class UJunoLandscapeMaterial*                      LandscapeMaterial;                                          // 0x0028   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0030   (0x0018)  MISSED
 	class UWorld*                                      World;                                                      // 0x0048   (0x0008)  
-	SDK_UNDEFINED(80,14302) /* TMap<FName, UJunoLandscapeRenderTarget*> */ __um(RenderTargets);                    // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,14420) /* TMap<FName, UJunoLandscapeRenderTarget*> */ __um(RenderTargets);                    // 0x0050   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x18];                                      // 0x00A0   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialVectorParameterValue
-	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                               // [0xbf8f018] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                               // [0xbf45558] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialTextureParameterValue
-	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);         // [0xbf8eecc] Final|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UJunoLandscapeRenderTarget* Value);         // [0xbf45498] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.SetLandscapeMaterialScalarParameterValue
-	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                      // [0xbf8ed7c] Final|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                      // [0xbf453d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.GetUVWorldTransform
-	// FVector4 GetUVWorldTransform();                                                                                       // [0x648b280] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector4 GetUVWorldTransform();                                                                                       // [0x64fb3cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.GetOutputHeightmapRenderTarget
-	// class UJunoLandscapeRenderTarget* GetOutputHeightmapRenderTarget();                                                   // [0xbf8e8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoLandscapeRenderTarget* GetOutputHeightmapRenderTarget();                                                   // [0xbf44ff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.FindOrCreateNamedRenderTarget
-	// class UJunoLandscapeRenderTarget* FindOrCreateNamedRenderTarget(FName Name, TEnumAsByte<ETextureRenderTargetFormat> Format); // [0xbf8e53c] Final|Native|Public|BlueprintCallable 
+	// class UJunoLandscapeRenderTarget* FindOrCreateNamedRenderTarget(FName Name, TEnumAsByte<ETextureRenderTargetFormat> Format); // [0xbf44d8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.EndDrawCanvasToRenderTarget
-	// void EndDrawCanvasToRenderTarget(FDrawToRenderTargetContext_JunoLandscape& Context);                                  // [0x80d57a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void EndDrawCanvasToRenderTarget(FDrawToRenderTargetContext_JunoLandscape& Context);                                  // [0x80e527c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.DrawMaterialToRenderTargetUV
-	// void DrawMaterialToRenderTargetUV(class UJunoLandscapeRenderTarget* RenderTarget, class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf8e158] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void DrawMaterialToRenderTargetUV(class UJunoLandscapeRenderTarget* RenderTarget, class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf447c0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.DrawMaterialToRenderTarget
-	// void DrawMaterialToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeMaterial* Material); // [0xbf8de00] Final|Native|Public|BlueprintCallable 
+	// void DrawMaterialToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeMaterial* Material); // [0xbf444ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CreateRenderTarget2D
-	// class UJunoLandscapeRenderTarget* CreateRenderTarget2D(int32_t Width, int32_t Height, TEnumAsByte<ETextureRenderTargetFormat> Format, FLinearColor ClearColor, bool bAutoGenerateMipMaps); // [0xbf8d800] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UJunoLandscapeRenderTarget* CreateRenderTarget2D(int32_t Width, int32_t Height, TEnumAsByte<ETextureRenderTargetFormat> Format, FLinearColor ClearColor, bool bAutoGenerateMipMaps); // [0xbf43c94] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CreateMaterial
-	// class UJunoLandscapeMaterial* CreateMaterial(class UMaterialInterface* Parent, FName OptionalName, EMIDCreationFlags CreationFlags); // [0xbf8d654] Final|Native|Public|BlueprintCallable 
+	// class UJunoLandscapeMaterial* CreateMaterial(class UMaterialInterface* Parent, FName OptionalName, EMIDCreationFlags CreationFlags); // [0xbf43ba4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.ClearRenderTarget2D
-	// void ClearRenderTarget2D(class UJunoLandscapeRenderTarget* TextureRenderTarget, FLinearColor ClearColor);             // [0xbf8d304] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void ClearRenderTarget2D(class UJunoLandscapeRenderTarget* TextureRenderTarget, FLinearColor ClearColor);             // [0xbf438e0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.CalculateRenderArea
-	// FBox2D CalculateRenderArea(FTransform Transform, FVector2D HalfExtents);                                              // [0xbf8d0fc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox2D CalculateRenderArea(FTransform Transform, FVector2D HalfExtents);                                              // [0xbf435ec] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeRenderer.BeginDrawCanvasToRenderTarget
-	// void BeginDrawCanvasToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeCanvas*& Canvas, FVector2D& Size, FDrawToRenderTargetContext_JunoLandscape& Context); // [0xbf8cf18] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void BeginDrawCanvasToRenderTarget(class UJunoLandscapeRenderTarget* TextureRenderTarget, class UJunoLandscapeCanvas*& Canvas, FVector2D& Size, FDrawToRenderTargetContext_JunoLandscape& Context); // [0xbf43438] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralLandscape.JunoLandscapeRenderTarget
@@ -431,7 +431,7 @@ class UJunoLandscapeRenderTarget : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	FName                                              ID;                                                         // 0x0028   (0x0004)  
-	SDK_UNDEFINED(1,14303) /* TEnumAsByte<ETextureRenderTargetFormat> */ __um(Format);                             // 0x002C   (0x0001)  
+	SDK_UNDEFINED(1,14421) /* TEnumAsByte<ETextureRenderTargetFormat> */ __um(Format);                             // 0x002C   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x002D   (0x0003)  MISSED
 };
 
@@ -447,9 +447,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeCanvas.GetNameReplacement
-	// FName GetNameReplacement(FName NameIn);                                                                               // [0xbf8e820] Final|Native|Static|Public 
+	// FName GetNameReplacement(FName NameIn);                                                                               // [0xbf44f6c] Final|Native|Static|Public 
 	// Function /Script/JunoProceduralLandscape.JunoLandscapeCanvas.DrawMaterial
-	// void DrawMaterial(class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf8da98] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void DrawMaterial(class UJunoLandscapeMaterial* RenderMaterial, FVector2D ScreenPosition, FVector2D ScreenSize, FVector2D CoordinatePosition, FVector2D CoordinateSize, float Rotation, FVector2D PivotPoint); // [0xbf43f58] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/JunoProceduralLandscape.JunoLandscapeLayerInfo

@@ -29,9 +29,9 @@ public:
 
 	/// Functions
 	// Function /Script/EpicGamesEngine.VerseUEInputComponentBase.ServerTriggerAxis
-	// void ServerTriggerAxis(FName AxisName, float Value);                                                                     // [0xa7e4f7c] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerTriggerAxis(FName AxisName, float Value);                                                                     // [0xa7d5b20] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/EpicGamesEngine.VerseUEInputComponentBase.ServerTriggerAction
-	// void ServerTriggerAction(FName ActionName, TEnumAsByte<EInputEvent> InputEvent);                                         // [0xa7e4e04] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerTriggerAction(FName ActionName, TEnumAsByte<EInputEvent> InputEvent);                                         // [0xa7d5a34] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 };
 
 /// Struct /Script/EpicGamesEngine.VerseActionMapping

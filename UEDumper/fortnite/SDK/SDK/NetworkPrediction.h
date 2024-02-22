@@ -69,7 +69,7 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkPrediction.NetworkPredictionComponent.ServerReceiveClientInput
-	// void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter);                                         // [0x7702bfc] Net|Native|Event|Protected|NetServer|NetValidate 
+	// void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter);                                         // [0x772bdfc] Net|Native|Event|Protected|NetServer|NetValidate 
 };
 
 /// Class /Script/NetworkPrediction.NetworkPredictionPhysicsComponent
@@ -88,7 +88,7 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FSharedPackageMapItem
 { 
-	SDK_UNDEFINED(32,2608) /* TWeakObjectPtr<UObject*> */ __um(SoftPtr);                                           // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,2618) /* TWeakObjectPtr<UObject*> */ __um(SoftPtr);                                           // 0x0000   (0x0020)  
 };
 
 /// Struct /Script/NetworkPrediction.SharedPackageMap
@@ -129,8 +129,8 @@ struct FNetworkPredictionSettings
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FNetworkPredictionDevHUDItem
 { 
-	SDK_UNDEFINED(16,2609) /* FString */               __um(DisplayName);                                          // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2610) /* FString */               __um(ExecCommand);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2619) /* FString */               __um(DisplayName);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2620) /* FString */               __um(ExecCommand);                                          // 0x0010   (0x0010)  
 	bool                                               bAutoBack;                                                  // 0x0020   (0x0001)  
 	bool                                               bRequirePIE;                                                // 0x0021   (0x0001)  
 	bool                                               bRequireNotPIE;                                             // 0x0022   (0x0001)  
@@ -141,7 +141,7 @@ struct FNetworkPredictionDevHUDItem
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FNetworkPredictionDevHUD
 { 
-	SDK_UNDEFINED(16,2611) /* FString */               __um(HUDName);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2621) /* FString */               __um(HUDName);                                              // 0x0000   (0x0010)  
 	TArray<FNetworkPredictionDevHUDItem>               Items;                                                      // 0x0010   (0x0010)  
 	bool                                               bRequirePIE;                                                // 0x0020   (0x0001)  
 	bool                                               bRequireNotPIE;                                             // 0x0021   (0x0001)  

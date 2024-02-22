@@ -13,40 +13,18 @@
 /// dependency: FortniteGame
 /// dependency: FortniteUI
 /// dependency: ModelViewViewModel
+/// dependency: PilgrimCoreRuntime
 /// dependency: UMG
 
-/// Class /Script/PilgrimCoreUI.PilgrimPresetSelector
-/// Size: 0x0020 (0x000028 - 0x000048)
-class UPilgrimPresetSelector : public UObject
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 72;
-
-public:
-	DMember(int32_t)                                   NumLanes                                                    OFFSET(get<int32_t>, {0x38, 4, 0, 0})
-	CMember(EHardwareDevicePrimaryType)                DeviceType                                                  OFFSET(get<T>, {0x3C, 1, 0, 0})
-
-
-	/// Functions
-	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionRequested
-	// void OnPresetSelectionRequested(class APlayerController* Player);                                                        // [0x130d900] Event|Protected|BlueprintEvent 
-	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionCancelled
-	// void OnPresetSelectionCancelled();                                                                                       // [0xae84c24] Final|Native|Public|BlueprintCallable 
-	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelected
-	// void OnPresetSelected(int32_t SelectedNumLanes, class UFortInputMappingContext* SelectedPreset);                         // [0xae84768] Final|Native|Public|BlueprintCallable 
-};
-
 /// Class /Script/PilgrimCoreUI.FortSettingRegistryExtension_Pilgrim
-/// Size: 0x0060 (0x000028 - 0x000088)
+/// Size: 0x0078 (0x000028 - 0x0000A0)
 class UFortSettingRegistryExtension_Pilgrim : public UFortGameSettingRegistryExtension
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 136;
+	static inline constexpr uint64_t __MDKClassSize = 160;
 
 public:
-	CMember(class UClass*)                             PilgrimPresetSelectorClass                                  OFFSET(get<T>, {0x28, 8, 0, 0})
-	CMember(class UPilgrimPresetSelector*)             PilgrimPresetSelectorInstance                               OFFSET(get<T>, {0x30, 8, 0, 0})
-	CMember(TMap<int32_t, FString>)                    RhythmLanesToCollectionName                                 OFFSET(get<T>, {0x38, 80, 0, 0})
+	CMember(class UPilgrimPresetSelector*)             PilgrimPresetSelectorInstance                               OFFSET(get<T>, {0x48, 8, 0, 0})
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimPlayerInfoWidgetBase
@@ -61,7 +39,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPlayerInfoWidgetBase.HookUpVoiceIcon
-	// void HookUpVoiceIcon(class UFortVoiceChatStatusIcon* Icon, class AFortPlayerStateAthena* Player);                        // [0xae8442c] Final|Native|Public|BlueprintCallable 
+	// void HookUpVoiceIcon(class UFortVoiceChatStatusIcon* Icon, class AFortPlayerStateAthena* Player);                        // [0xb3b5a04] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget
@@ -76,9 +54,31 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget.GetTotalXP
-	// int32_t GetTotalXP();                                                                                                    // [0xae843e4] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalXP();                                                                                                    // [0xb3b59bc] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget.GetMatchXP
-	// int32_t GetMatchXP();                                                                                                    // [0xae842c4] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMatchXP();                                                                                                    // [0xb3b5890] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+};
+
+/// Class /Script/PilgrimCoreUI.PilgrimPresetSelector
+/// Size: 0x0028 (0x000028 - 0x000050)
+class UPilgrimPresetSelector : public UPilgrimPresetSelectorBase
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 80;
+
+public:
+	DMember(int32_t)                                   NumLanes                                                    OFFSET(get<int32_t>, {0x38, 4, 0, 0})
+	CMember(EHardwareDevicePrimaryType)                DeviceType                                                  OFFSET(get<T>, {0x3C, 1, 0, 0})
+	CMember(class UPilgrimPresetConfiguration*)        PilgrimPresetConfiguration                                  OFFSET(get<T>, {0x48, 8, 0, 0})
+
+
+	/// Functions
+	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionRequested
+	// void OnPresetSelectionRequested(class APlayerController* Player);                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionCancelled
+	// void OnPresetSelectionCancelled();                                                                                       // [0xb3b62f4] Final|Native|Public|BlueprintCallable 
+	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelected
+	// void OnPresetSelected(int32_t SelectedNumLanes, int32_t SelectedPresetIndex);                                            // [0xb3b6234] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimPresetSwitcher
@@ -97,9 +97,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSwitcher.InitializeForLanes
-	// void InitializeForLanes(int32_t NewNumLanes, EHardwareDevicePrimaryType DeviceType);                                     // [0xae8462c] Final|Native|Private|BlueprintCallable 
+	// void InitializeForLanes(int32_t NewNumLanes, TArray<UFortInputMappingContext*>& InputMappingContexts);                   // [0xb3b5b48] Final|Native|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSwitcher.GetSelectedItems
-	// void GetSelectedItems(int32_t& OutSelectedLaneNum, class UFortInputMappingContext*& OutInputContext);                    // [0xae8430c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetSelectedItems(int32_t& OutSelectedLaneNum, int32_t& OutSelectedIndex);                                           // [0xb3b58d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimSongSortVM
@@ -177,7 +177,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimSongFilterVM.Initialize
-	// void Initialize(class APlayerController* InOwningController);                                                            // [0xae8456c] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class APlayerController* InOwningController);                                                            // [0xb3b5ac8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimCoreUIGlobals

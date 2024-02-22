@@ -29,13 +29,13 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchContext.RequestCloseUI
-	// void RequestCloseUI();                                                                                                   // [0xb6cd4d8] Final|Native|Public|BlueprintCallable 
+	// void RequestCloseUI();                                                                                                   // [0xb7da41c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchContext.OnWeaponModsWorkbenchSelectedModChanged__DelegateSignature
-	// void OnWeaponModsWorkbenchSelectedModChanged__DelegateSignature(class UFortWeaponModItemDefinition* CurrentlySelectedMod); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnWeaponModsWorkbenchSelectedModChanged__DelegateSignature(class UFortWeaponModItemDefinition* CurrentlySelectedMod); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchContext.OnWeaponModsWorkbenchRequestClose__DelegateSignature
-	// void OnWeaponModsWorkbenchRequestClose__DelegateSignature();                                                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnWeaponModsWorkbenchRequestClose__DelegateSignature();                                                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchContext.GetCurrentModCategory
-	// FGameplayTag GetCurrentModCategory();                                                                                    // [0x6741e8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentModCategory();                                                                                    // [0x67ae6cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWidgetBase
@@ -50,13 +50,13 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWidgetBase.OnWorkbenchOpened
-	// void OnWorkbenchOpened();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWorkbenchOpened();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWidgetBase.OnWorkbenchClosed
-	// void OnWorkbenchClosed();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWorkbenchClosed();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWidgetBase.OnWeaponModCategoryChanged
-	// void OnWeaponModCategoryChanged(FGameplayTag ModTypeTag);                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWeaponModCategoryChanged(FGameplayTag ModTypeTag);                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWidgetBase.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb6cd078] Native|Protected     
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb7d9ffc] Native|Protected     
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails
@@ -71,15 +71,15 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails.OnSetEquippedModInfo
-	// void OnSetEquippedModInfo(class UFortWeaponModItemDefinition* ModItemDefinition, bool bIsDefaultMod, bool bSlotHasDefaultMod, bool bCanRemoveMod); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetEquippedModInfo(class UFortWeaponModItemDefinition* ModItemDefinition, bool bIsDefaultMod, bool bSlotHasDefaultMod, bool bCanRemoveMod); // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails.OnSetCurrentlySelectedModInfo
-	// void OnSetCurrentlySelectedModInfo(class UFortWeaponModItemDefinition* ModItemDefinition, bool bIsSameCategory, bool bIsEquippedMod); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetCurrentlySelectedModInfo(class UFortWeaponModItemDefinition* ModItemDefinition, bool bIsSameCategory, bool bIsEquippedMod); // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails.OnRemoveModClicked
-	// void OnRemoveModClicked();                                                                                               // [0xb6cd49c] Final|Native|Protected|BlueprintCallable 
+	// void OnRemoveModClicked();                                                                                               // [0xb7da3e0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails.HandleSetEquippedModInfo
-	// void HandleSetEquippedModInfo(class UFortWeaponModItemDefinition* WeaponMod);                                            // [0xb6ccccc] Final|Native|Private 
+	// void HandleSetEquippedModInfo(class UFortWeaponModItemDefinition* WeaponMod);                                            // [0xb7d9d98] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchEquippedModDetails.HandleCurrentlySelectedModChanged
-	// void HandleCurrentlySelectedModChanged(class UFortWeaponModItemDefinition* NewSelectedMod);                              // [0xb6ccb4c] Final|Native|Private 
+	// void HandleCurrentlySelectedModChanged(class UFortWeaponModItemDefinition* NewSelectedMod);                              // [0xb7d9c98] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal
@@ -97,15 +97,15 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal.OnWeaponEquipped
-	// void OnWeaponEquipped(bool bIsModdable);                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWeaponEquipped(bool bIsModdable);                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal.OnInputTypeChanged
-	// void OnInputTypeChanged(ECommonInputType NewInputType);                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnInputTypeChanged(ECommonInputType NewInputType);                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb6ccf38] Final|Native|Private 
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb7d9f38] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal.HandleModStationComponentForceStop
-	// void HandleModStationComponentForceStop(class AFortWeaponModStationBase* WeaponModStation);                              // [0xb6ccc0c] Final|Native|Private 
+	// void HandleModStationComponentForceStop(class AFortWeaponModStationBase* WeaponModStation);                              // [0xb7d9d18] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModal.HandleCloseUI
-	// void HandleCloseUI();                                                                                                    // [0x1fbb424] Final|Native|Private 
+	// void HandleCloseUI();                                                                                                    // [0x38e5db0] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModListEntry
@@ -120,13 +120,13 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModListEntry.OnRefreshStatus
-	// void OnRefreshStatus();                                                                                                  // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnRefreshStatus();                                                                                                  // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModListEntry.OnListItemSet
-	// void OnListItemSet(class UFortItemDefinition* Item);                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnListItemSet(class UFortItemDefinition* Item);                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModListEntry.IsEquippedMod
-	// bool IsEquippedMod();                                                                                                    // [0xb6cd2ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEquippedMod();                                                                                                    // [0xb7da1b4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModListEntry.IsEquippableMod
-	// bool IsEquippableMod();                                                                                                  // [0xb6cd27c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEquippableMod();                                                                                                  // [0xb7da144] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection
@@ -145,45 +145,45 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.SetCanRemoveMod
-	// void SetCanRemoveMod(bool bCanRemoveMod);                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetCanRemoveMod(bool bCanRemoveMod);                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.RequestRemoveMod
-	// void RequestRemoveMod();                                                                                                 // [0xb6cd4c4] Final|Native|Private 
+	// void RequestRemoveMod();                                                                                                 // [0xb7da408] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.RequestBuyAndEquip
-	// void RequestBuyAndEquip();                                                                                               // [0xb6cd3a0] Final|Native|Private 
+	// void RequestBuyAndEquip();                                                                                               // [0xb7da268] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnSetSelectedRemoveModCostAndOwnedCurrency
-	// void OnSetSelectedRemoveModCostAndOwnedCurrency(int32_t ModCost, int32_t OwnedCurrency);                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetSelectedRemoveModCostAndOwnedCurrency(int32_t ModCost, int32_t OwnedCurrency);                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnSetSelectedModInfo
-	// void OnSetSelectedModInfo(class UFortWeaponModItemDefinition* ModItemDef);                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetSelectedModInfo(class UFortWeaponModItemDefinition* ModItemDef);                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnSetSelectedModCostAndOwnedCurrency
-	// void OnSetSelectedModCostAndOwnedCurrency(int32_t ModCost, int32_t OwnedCurrency);                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSetSelectedModCostAndOwnedCurrency(int32_t ModCost, int32_t OwnedCurrency);                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnRemoveModClicked
-	// void OnRemoveModClicked();                                                                                               // [0xb6cd4c4] Final|Native|Protected|BlueprintCallable 
+	// void OnRemoveModClicked();                                                                                               // [0xb7da408] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnRefreshModType
-	// void OnRefreshModType(FGameplayTag ModCategoryTag);                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRefreshModType(FGameplayTag ModCategoryTag);                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnRefreshMods
-	// void OnRefreshMods(TArray<UFortWeaponModItemDefinition*>& WeaponModItemDefinitions);                                     // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRefreshMods(TArray<UFortWeaponModItemDefinition*>& WeaponModItemDefinitions);                                     // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnModRemovedCallback
-	// void OnModRemovedCallback();                                                                                             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnModRemovedCallback();                                                                                             // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnModPurchaseFailed
-	// void OnModPurchaseFailed();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnModPurchaseFailed();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnModPurchasedSuccessfully
-	// void OnModPurchasedSuccessfully();                                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnModPurchasedSuccessfully();                                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnExitUIClicked
-	// void OnExitUIClicked();                                                                                                  // [0xb6cd3b4] Final|Native|Protected|BlueprintCallable 
+	// void OnExitUIClicked();                                                                                                  // [0xb7da27c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.OnBuyAndEquipClicked
-	// void OnBuyAndEquipClicked();                                                                                             // [0xb6cd3a0] Final|Native|Protected|BlueprintCallable 
+	// void OnBuyAndEquipClicked();                                                                                             // [0xb7da268] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.IsSelectedModEquippedOnWeapon
-	// bool IsSelectedModEquippedOnWeapon();                                                                                    // [0xb6cd37c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectedModEquippedOnWeapon();                                                                                    // [0xb7da244] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.GetSelectedRemoveModCostAndOwnedCurrency
-	// void GetSelectedRemoveModCostAndOwnedCurrency(int32_t& RemoveModCost, int32_t& OwnedCurrency);                           // [0xb6cca74] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetSelectedRemoveModCostAndOwnedCurrency(int32_t& RemoveModCost, int32_t& OwnedCurrency);                           // [0xb7d9bc0] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.GetSelectedModCostAndOwnedCurrency
-	// void GetSelectedModCostAndOwnedCurrency(int32_t& ModCost, int32_t& OwnedCurrency);                                       // [0xb6cc99c] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetSelectedModCostAndOwnedCurrency(int32_t& ModCost, int32_t& OwnedCurrency);                                       // [0xb7d9ae8] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.DoesEquippedWeaponHaveDefaultModForSlot
-	// bool DoesEquippedWeaponHaveDefaultModForSlot();                                                                          // [0xb6cc960] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesEquippedWeaponHaveDefaultModForSlot();                                                                          // [0xb7d9aac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.CanRemoveSelectedModFromWeapon
-	// bool CanRemoveSelectedModFromWeapon();                                                                                   // [0x2e65248] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanRemoveSelectedModFromWeapon();                                                                                   // [0x2d64ed4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModSelection.CanApplySelectedModToEquippedWeapon
-	// bool CanApplySelectedModToEquippedWeapon();                                                                              // [0xb6cc8f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanApplySelectedModToEquippedWeapon();                                                                              // [0xb7d9a3c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton
@@ -200,15 +200,15 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton.SetEquippedOrDefaultMod
-	// void SetEquippedOrDefaultMod(class UFortWeaponModItemDefinition* ItemDefinition, bool bIsAvailableCategory);             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void SetEquippedOrDefaultMod(class UFortWeaponModItemDefinition* ItemDefinition, bool bIsAvailableCategory);             // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton.OnWorkbenchOpened
-	// void OnWorkbenchOpened();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWorkbenchOpened();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton.OnWorkbenchClosed
-	// void OnWorkbenchClosed();                                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWorkbenchClosed();                                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb6ccd8c] Final|Native|Private 
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb7d9e18] Final|Native|Private 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeButton.GetModTypeTag
-	// FGameplayTag GetModTypeTag();                                                                                            // [0xb6cc984] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetModTypeTag();                                                                                            // [0xb7d9ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeTabs
@@ -225,11 +225,11 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeTabs.SetItemSlotInfo
-	// void SetItemSlotInfo(TArray<FFortWeaponModSlot>& ModSlots);                                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetItemSlotInfo(TArray<FFortWeaponModSlot>& ModSlots);                                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeTabs.OnModTypeTabClicked
-	// void OnModTypeTabClicked(FGameplayTag ModTypeTag);                                                                       // [0xb6cd3dc] Final|Native|Protected|BlueprintCallable 
+	// void OnModTypeTabClicked(FGameplayTag ModTypeTag);                                                                       // [0xb7da2a4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchModTypeTabs.GetTabButtons
-	// TArray<UAthenaWeaponModsWorkbenchModTypeButton*> GetTabButtons();                                                        // [0x130d900] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// TArray<UAthenaWeaponModsWorkbenchModTypeButton*> GetTabButtons();                                                        // [0x3d1d968] Event|Protected|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponDetails
@@ -244,9 +244,9 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponDetails.SetWeaponType
-	// void SetWeaponType(FText& WeaponTypeText, class UTexture2D* WeaponTypeTexture);                                          // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetWeaponType(FText& WeaponTypeText, class UTexture2D* WeaponTypeTexture);                                          // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponDetails.OnWeaponEquipped
-	// void OnWeaponEquipped(class UFortItemDefinition* ItemDefinition, FText& DisplayName);                                    // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnWeaponEquipped(class UFortItemDefinition* ItemDefinition, FText& DisplayName);                                    // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponRenderContainer
@@ -261,10 +261,10 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponRenderContainer.OnWeaponModSlotsChanged
-	// void OnWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWeaponModSlotsChanged(class AFortWeapon* Weapon);                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponRenderContainer.OnWeaponModSlotPreview
-	// void OnWeaponModSlotPreview(class AFortWeapon* Weapon, class UFortWeaponModItemDefinition* PreviewingModItemDefinition); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnWeaponModSlotPreview(class AFortWeapon* Weapon, class UFortWeaponModItemDefinition* PreviewingModItemDefinition); // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/WeaponModStationUI.AthenaWeaponModsWorkbenchWeaponRenderContainer.HandleWeaponModSlotPreview
-	// void HandleWeaponModSlotPreview(class UFortWeaponModItemDefinition* PreviewingModItemDefinition);                        // [0xb6cd1bc] Final|Native|Private 
+	// void HandleWeaponModSlotPreview(class UFortWeaponModItemDefinition* PreviewingModItemDefinition);                        // [0xb7da0c4] Final|Native|Private 
 };
 

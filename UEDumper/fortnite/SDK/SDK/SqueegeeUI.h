@@ -34,7 +34,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateDetailsWidget.OnShowGamemodeDescription
-	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentGateRatingWidget
@@ -46,9 +46,9 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnStyleUpdated
-	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                               // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                               // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnLabelUpdated
-	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                        // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                        // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementDetails
@@ -62,11 +62,11 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowWeaponData
-	// void OnShowWeaponData();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowWeaponData();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowActivityData
-	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x130d900] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x3d1d968] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnPreviewImageChanged
-	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementButton
@@ -79,11 +79,11 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowGameActivity
-	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowError
-	// void OnShowError(FText& ErrorText);                                                                                   // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnShowError(FText& ErrorText);                                                                                   // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnChangeManagementState
-	// void OnChangeManagementState(EFortContentManagementState NewState);                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnChangeManagementState(EFortContentManagementState NewState);                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementLabelWidget
@@ -96,7 +96,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementLabelWidget.OnSetLabel
-	// void OnSetLabel(FText& InText);                                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetLabel(FText& InText);                                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementEntryLabelObject
@@ -129,8 +129,8 @@ public:
 class UFortContentManagementList : public UFortSqueegeeWidget
 { 
 public:
-	SDK_UNDEFINED(24,15370) /* FText */                __um(WeaponLabelText);                                      // 0x0308   (0x0018)  
-	SDK_UNDEFINED(24,15371) /* FText */                __um(GameModeLabelText);                                    // 0x0320   (0x0018)  
+	SDK_UNDEFINED(24,15513) /* FText */                __um(WeaponLabelText);                                      // 0x0308   (0x0018)  
+	SDK_UNDEFINED(24,15514) /* FText */                __um(GameModeLabelText);                                    // 0x0320   (0x0018)  
 	class UFortContentManagementListView*              ContentManagementListView;                                  // 0x0338   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0340   (0x0018)  MISSED
 	TArray<class UFortGameActivity*>                   CachedActivities;                                           // 0x0358   (0x0010)  
@@ -139,13 +139,13 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementList.ResetUnlockList
-	// void ResetUnlockList();                                                                                               // [0xb692cd0] Final|Native|Protected|BlueprintCallable 
+	// void ResetUnlockList();                                                                                               // [0xb7a0050] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.RequestNextUnlockPage
-	// void RequestNextUnlockPage();                                                                                         // [0xb692cbc] Final|Native|Protected|BlueprintCallable 
+	// void RequestNextUnlockPage();                                                                                         // [0xb7a003c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.OnNextUnlockPageRequestCompleted
-	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementList.CanRequestNextUnlockPage
-	// bool CanRequestNextUnlockPage();                                                                                      // [0xb692c84] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanRequestNextUnlockPage();                                                                                      // [0xb7a0004] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementScreen
@@ -160,7 +160,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementScreen.ExitScreen
-	// void ExitScreen();                                                                                                    // [0xb692ca8] Final|Native|Protected|BlueprintCallable 
+	// void ExitScreen();                                                                                                    // [0xb7a0028] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/SqueegeeUI.SqueegeeInjectionData
@@ -169,7 +169,7 @@ struct FSqueegeeInjectionData
 { 
 	ESqueegeeWidgetInjection                           WidgetType;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(32,15372) /* TWeakObjectPtr<UClass*> */ __um(WidgetClass);                                       // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,15515) /* TWeakObjectPtr<UClass*> */ __um(WidgetClass);                                       // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/SqueegeeUI.SqueegeeTextData
@@ -178,7 +178,7 @@ struct FSqueegeeTextData
 { 
 	ESqueegeeText                                      TextType;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(24,15373) /* FText */                __um(DesiredText);                                          // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,15516) /* FText */                __um(DesiredText);                                          // 0x0008   (0x0018)  
 };
 
 /// Class /Script/SqueegeeUI.SqueegeeUIGameFeatureAction
@@ -188,6 +188,6 @@ class USqueegeeUIGameFeatureAction : public UFortUIGameFeatureAction
 public:
 	TArray<FSqueegeeInjectionData>                     SqueegeeWidgetInjections;                                   // 0x0028   (0x0010)  
 	TArray<FSqueegeeTextData>                          SqueegeTexts;                                               // 0x0038   (0x0010)  
-	SDK_UNDEFINED(32,15374) /* TWeakObjectPtr<UClass*> */ __um(SqueegeeIntroModalClass);                           // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,15517) /* TWeakObjectPtr<UClass*> */ __um(SqueegeeIntroModalClass);                           // 0x0048   (0x0020)  
 };
 

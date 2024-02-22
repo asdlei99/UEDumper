@@ -31,7 +31,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortMobileButtonBehaviorComponent_AugmentsListIconPicker.OnAugmentToolViewSwap
-	// void OnAugmentToolViewSwap(bool bIsInInventoryView);                                                                  // [0xb5bcc6c] Final|Native|Private 
+	// void OnAugmentToolViewSwap(bool bIsInInventoryView);                                                                  // [0xb6cc90c] Final|Native|Private 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortMobileButtonBehaviorComponent_AugmentsListVisibility
@@ -44,9 +44,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortMobileButtonBehaviorComponent_AugmentsListVisibility.HandleAugmentToolViewSwap
-	// void HandleAugmentToolViewSwap(bool bInIsInventoryView);                                                              // [0x9b71b94] Final|Native|Private 
+	// void HandleAugmentToolViewSwap(bool bInIsInventoryView);                                                              // [0x9b98308] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortMobileButtonBehaviorComponent_AugmentsListVisibility.HandleAugmentToolOpenedStatusChanged
-	// void HandleAugmentToolOpenedStatusChanged(bool bIsOpened, bool bInIsInventoryView);                                   // [0xb5bbcb4] Final|Native|Private 
+	// void HandleAugmentToolOpenedStatusChanged(bool bIsOpened, bool bInIsInventoryView);                                   // [0xb6cbb58] Final|Native|Private 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortMobileButtonBehaviorComponent_AugmentsListVisibility_Swap
@@ -66,43 +66,43 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnTimerUpdated
-	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0xb5bcd30] Native|Event|Protected|BlueprintEvent 
+	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0xb6cc98c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnNumPendingAugmentsToGrantUpdated
-	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnMovementModeChanged
-	// void OnMovementModeChanged();                                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnMovementModeChanged();                                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnHUDElementVisibilityChanged
-	// void OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                                 // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                                 // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnCanSelectAugmentChanged
-	// void OnCanSelectAugmentChanged(bool bCanSelectAugment);                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCanSelectAugmentChanged(bool bCanSelectAugment);                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnAugmentSelectorOpenedStatusChanged
-	// void OnAugmentSelectorOpenedStatusChanged(bool bIsOpened);                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentSelectorOpenedStatusChanged(bool bIsOpened);                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnAugmentGrantingTimersResetForMatch
-	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.OnAugmentGrantingTimersFinishedForMatch
-	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleTimerUpdated
-	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb5bc864] Final|Native|Private 
+	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb6cc678] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleNumPendingAugmentsToGrantUpdated
-	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb5bc3fc] Final|Native|Private 
+	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb6cc14c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleHUDElementVisibilityChanged
-	// void HandleHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                             // [0xb5bc284] Final|Native|Private|HasOutParms 
+	// void HandleHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                             // [0xb6cbf54] Final|Native|Private|HasOutParms 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleCanSelectAugmentChanged
-	// void HandleCanSelectAugmentChanged(bool bCanSelectAugment);                                                           // [0xb5bbf88] Final|Native|Private 
+	// void HandleCanSelectAugmentChanged(bool bCanSelectAugment);                                                           // [0xb6cbd1c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleAugmentSelectorOpenedStatusChanged
-	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                         // [0xb5bbaa0] Final|Native|Private 
+	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                         // [0xb6cba14] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleAugmentGrantingTimersResetForMatch
-	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb5bb644] Final|Native|Private 
+	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb6cb750] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.HandleAugmentGrantingTimersFinishedForMatch
-	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb5bb608] Final|Native|Private 
+	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb6cb714] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.GetPendingAugmentsToGrant
-	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb5bb598] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb6cb6a4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.FormatTime
-	// FText FormatTime(float TotalSeconds);                                                                                 // [0xb5bb4b4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText FormatTime(float TotalSeconds);                                                                                 // [0xb6cb604] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.CanSelectAugment
-	// bool CanSelectAugment();                                                                                              // [0xb5bb34c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanSelectAugment();                                                                                              // [0xb6cb4dc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDTimerWidget.CanEquipSelectionTool
-	// bool CanEquipSelectionTool();                                                                                         // [0xb5bb2fc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanEquipSelectionTool();                                                                                         // [0xb6cb48c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentHUDSelectionTimerWidget
@@ -124,13 +124,13 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDSelectionTimerWidget.UpdateCountdown
-	// void UpdateCountdown(float TimeRemaining);                                                                            // [0xb5bd1d8] Final|Native|Protected|BlueprintCallable 
+	// void UpdateCountdown(float TimeRemaining);                                                                            // [0xb6cccb0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDSelectionTimerWidget.SetMobileProgressTimer
-	// void SetMobileProgressTimer(float TimePercentage);                                                                    // [0xb5bcf90] Final|Native|Protected|BlueprintCallable 
+	// void SetMobileProgressTimer(float TimePercentage);                                                                    // [0xb6ccb30] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDSelectionTimerWidget.OnCountdownActivated
-	// void OnCountdownActivated();                                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCountdownActivated();                                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDSelectionTimerWidget.IsCountdownVisible
-	// bool IsCountdownVisible();                                                                                            // [0xb5bcc48] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCountdownVisible();                                                                                            // [0xb6cc8e8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortMobileActionBBE_AugmentShoot
@@ -156,7 +156,7 @@ public:
 class UFortMobilePlayerAugmentTimer : public UFortMobileHUDElement
 { 
 public:
-	SDK_UNDEFINED(8,11216) /* TWeakObjectPtr<UFortControllerComponent_AugmentGrantingSystem*> */ __um(AugmentControllerComponent); // 0x0350   (0x0008)  
+	SDK_UNDEFINED(8,11266) /* TWeakObjectPtr<UFortControllerComponent_AugmentGrantingSystem*> */ __um(AugmentControllerComponent); // 0x0350   (0x0008)  
 	class UClass*                                      PlayerAugmentGranterWidgetClass;                            // 0x0358   (0x0008)  
 	class UUserWidget*                                 PlayerAugmentGranterWidget;                                 // 0x0360   (0x0008)  
 	class UCommonButtonBase*                           Button_PlayerAugmentTimer;                                  // 0x0368   (0x0008)  
@@ -164,9 +164,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortMobilePlayerAugmentTimer.HandleHUDElementVisibilityChanged
-	// void HandleHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                             // [0xb5bc1cc] Final|Native|Private|HasOutParms 
+	// void HandleHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer);                             // [0xb6cbe9c] Final|Native|Private|HasOutParms 
 	// Function /Script/PlayerAugmentsUI.FortMobilePlayerAugmentTimer.BP_OnHUDElementVisibilityChanged
-	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPickupInteractOverrideComponent_Augments
@@ -193,7 +193,7 @@ class UFortPlayerAugmentCollectionScreen : public UAthenaCollectionScreenBase
 { 
 public:
 	FScalableFloat                                     AugmentsEnabledViaHotfix;                                   // 0x0660   (0x0028)  
-	SDK_UNDEFINED(80,11217) /* TMap<FGameplayTag, TWeakObjectPtr<UObject*>> */ __um(TagToImageMap);                // 0x0688   (0x0050)  
+	SDK_UNDEFINED(80,11267) /* TMap<FGameplayTag, TWeakObjectPtr<UObject*>> */ __um(TagToImageMap);                // 0x0688   (0x0050)  
 	class UCommonTextBlock*                            Text_CategoryTitle;                                         // 0x06D8   (0x0008)  
 };
 
@@ -228,53 +228,53 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnTimerUpdated
-	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnSelectedAugmentForGrant
-	// void OnSelectedAugmentForGrant(class UFortPlayerAugmentItemDefinition* HighlightedAugment);                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnSelectedAugmentForGrant(class UFortPlayerAugmentItemDefinition* HighlightedAugment);                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnRerollAugments
-	// void OnRerollAugments();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRerollAugments();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnPopulateAvailableAugmentsHUD
-	// void OnPopulateAvailableAugmentsHUD(TArray<UFortPlayerAugmentItemDefinition*>& AugmentItemDefinition);                // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPopulateAvailableAugmentsHUD(TArray<UFortPlayerAugmentItemDefinition*>& AugmentItemDefinition);                // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnNumPendingAugmentsToGrantUpdated
-	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnInputTypeChanged
-	// void OnInputTypeChanged(ECommonInputType NewInputType);                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnInputTypeChanged(ECommonInputType NewInputType);                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnCanSelectAugmentChanged
-	// void OnCanSelectAugmentChanged(bool bCanSelectAugment);                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCanSelectAugmentChanged(bool bCanSelectAugment);                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentSelectorToolViewSwapped
-	// void OnAugmentSelectorToolViewSwapped(bool bViewingAugmentInventory);                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentSelectorToolViewSwapped(bool bViewingAugmentInventory);                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentSelectorOpenedStatusChanged
-	// void OnAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                             // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                             // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentSelectionStarted
-	// void OnAugmentSelectionStarted(int32_t SelectedAugmentIndex);                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentSelectionStarted(int32_t SelectedAugmentIndex);                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentScrollUpEvent
-	// void OnAugmentScrollUpEvent();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentScrollUpEvent();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentScrollDownEvent
-	// void OnAugmentScrollDownEvent();                                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentScrollDownEvent();                                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.OnAugmentHighlighted
-	// void OnAugmentHighlighted(int32_t HighlightedAugmentIndex);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentHighlighted(int32_t HighlightedAugmentIndex);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleTimerUpdated
-	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb5bc724] Final|Native|Private 
+	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb6cc5b4] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleSelectedAugmentForGrant
-	// void HandleSelectedAugmentForGrant(class UFortPlayerAugmentItemDefinition* SelectedAugment);                          // [0xb5bc664] Final|Native|Private 
+	// void HandleSelectedAugmentForGrant(class UFortPlayerAugmentItemDefinition* SelectedAugment);                          // [0xb6cc534] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleRerollAugments
-	// void HandleRerollAugments();                                                                                          // [0xb5bc63c] Final|Native|Private 
+	// void HandleRerollAugments();                                                                                          // [0xb6cc50c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleNumPendingAugmentsToGrantUpdated
-	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb5bc33c] Final|Native|Private 
+	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb6cc00c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleCanSelectAugmentChanged
-	// void HandleCanSelectAugmentChanged(bool bCanSelectAugment);                                                           // [0xb5bbec4] Final|Native|Private 
+	// void HandleCanSelectAugmentChanged(bool bCanSelectAugment);                                                           // [0xb6cbc9c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleAvailableAugmentsForGrantingUpdated
-	// void HandleAvailableAugmentsForGrantingUpdated(class UFortControllerComponent_AugmentGrantingSystem* GrantingComponent); // [0xb5bbe04] Final|Native|Private 
+	// void HandleAvailableAugmentsForGrantingUpdated(class UFortControllerComponent_AugmentGrantingSystem* GrantingComponent); // [0xb6cbc1c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleAugmentSelectorToolViewSwapped
-	// void HandleAugmentSelectorToolViewSwapped(bool bViewingAugmentsInventory);                                            // [0xb5bbbf0] Final|Native|Private 
+	// void HandleAugmentSelectorToolViewSwapped(bool bViewingAugmentsInventory);                                            // [0xb6cbad8] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleAugmentSelectorOpenedStatusChanged
-	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                         // [0xb5bb800] Final|Native|Private 
+	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingAugmentInventory);                         // [0xb6cb88c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleAugmentSelectionStarted
-	// void HandleAugmentSelectionStarted(int32_t SelectedAugmentIndex);                                                     // [0xb5bb740] Final|Native|Private 
+	// void HandleAugmentSelectionStarted(int32_t SelectedAugmentIndex);                                                     // [0xb6cb80c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.HandleAugmentHighlighted
-	// void HandleAugmentHighlighted(int32_t HighlightedAugmentIndex);                                                       // [0xb5bb680] Final|Native|Private 
+	// void HandleAugmentHighlighted(int32_t HighlightedAugmentIndex);                                                       // [0xb6cb78c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentGranterWidget.GetPendingAugmentsToGrant
-	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb5bb598] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb6cb6a4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentHUDQuickbarWidget
@@ -288,7 +288,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDQuickbarWidget.OnAugmentsUpdated
-	// void OnAugmentsUpdated(TArray<UFortPlayerAugmentItemDefinition*>& ActiveAugments);                                    // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnAugmentsUpdated(TArray<UFortPlayerAugmentItemDefinition*>& ActiveAugments);                                    // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget
@@ -309,21 +309,21 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.StartRerollHoldProgress
-	// void StartRerollHoldProgress(float duration);                                                                         // [0xb5bd054] Final|Native|Protected|BlueprintCallable 
+	// void StartRerollHoldProgress(float duration);                                                                         // [0xb6ccbb0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.OnUpdateCurrency
-	// void OnUpdateCurrency(int32_t OwnedCurrency, int32_t RerollCost);                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnUpdateCurrency(int32_t OwnedCurrency, int32_t RerollCost);                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.OnRerollAugments
-	// void OnRerollAugments();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnRerollAugments();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.OnFreeRerollsUpdated
-	// void OnFreeRerollsUpdated(int32_t NewNumFreeRerolls);                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnFreeRerollsUpdated(int32_t NewNumFreeRerolls);                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.HandleRerollAugments
-	// void HandleRerollAugments();                                                                                          // [0xb5bc650] Final|Native|Private 
+	// void HandleRerollAugments();                                                                                          // [0xb6cc520] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.HandleFreeRerollsUpdated
-	// void HandleFreeRerollsUpdated(int32_t NewNumFreeRerolls);                                                             // [0xb5bc10c] Final|Native|Private 
+	// void HandleFreeRerollsUpdated(int32_t NewNumFreeRerolls);                                                             // [0xb6cbe1c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.HandleAugmentSelectorOpenedStatusChanged
-	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingInventory);                                // [0xb5bb950] Final|Native|Private 
+	// void HandleAugmentSelectorOpenedStatusChanged(bool bIsOpened, bool bViewingInventory);                                // [0xb6cb950] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentHUDRerollWidget.EndRerollHoldProgress
-	// void EndRerollHoldProgress();                                                                                         // [0xb5bb4a0] Final|Native|Protected|BlueprintCallable 
+	// void EndRerollHoldProgress();                                                                                         // [0xb6cb5f0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInfoEntryWidget
@@ -331,7 +331,7 @@ public:
 class UFortPlayerAugmentInfoEntryWidget : public UCommonUserWidget
 { 
 public:
-	SDK_UNDEFINED(24,11218) /* FText */                __um(RarityTextFormat);                                     // 0x02E8   (0x0018)  
+	SDK_UNDEFINED(24,11268) /* FText */                __um(RarityTextFormat);                                     // 0x02E8   (0x0018)  
 	class UCommonTextBlock*                            Text_AugmentName;                                           // 0x0300   (0x0008)  
 	class UCommonTextBlock*                            Text_AugmentRarity;                                         // 0x0308   (0x0008)  
 	class UCommonTextBlock*                            Text_AugmentCategory;                                       // 0x0310   (0x0008)  
@@ -346,13 +346,13 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInfoEntryWidget.UpdateAugment
-	// void UpdateAugment(class UFortPlayerAugmentItemDefinition* AugmentItemDefinition);                                    // [0xb5bd118] Final|Native|Public|BlueprintCallable 
+	// void UpdateAugment(class UFortPlayerAugmentItemDefinition* AugmentItemDefinition);                                    // [0xb6ccc30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInfoEntryWidget.OnItemRaritySet
-	// void OnItemRaritySet(EFortRarity Rarity, FFortRarityItemData RarityItemData);                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnItemRaritySet(EFortRarity Rarity, FFortRarityItemData RarityItemData);                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInfoEntryWidget.OnItemPinColorSet
-	// void OnItemPinColorSet(FLinearColor PinColor);                                                                        // [0x130d900] Event|Protected|HasDefaults|BlueprintEvent 
+	// void OnItemPinColorSet(FLinearColor PinColor);                                                                        // [0x3d1d968] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInfoEntryWidget.OnItemNewOrBorrowedSet
-	// void OnItemNewOrBorrowedSet(bool bIsNew, bool bIsBorrowed);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnItemNewOrBorrowedSet(bool bIsNew, bool bIsBorrowed);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInGameCarriedWidget
@@ -364,9 +364,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInGameCarriedWidget.OnShowInitialAugment
-	// void OnShowInitialAugment(class UFortPlayerAugmentItemDefinition* PlayerAugmentItemDefinition);                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowInitialAugment(class UFortPlayerAugmentItemDefinition* PlayerAugmentItemDefinition);                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInGameCarriedWidget.HandleExitBus
-	// void HandleExitBus(class AFortPlayerControllerZone* FortPCZone);                                                      // [0xb5bc04c] Final|Native|Private 
+	// void HandleExitBus(class AFortPlayerControllerZone* FortPCZone);                                                      // [0xb6cbd9c] Final|Native|Private 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow
@@ -381,25 +381,25 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.RequestOpenSelector
-	// void RequestOpenSelector();                                                                                           // [0xb5bce74] Final|Native|Protected|BlueprintCallable 
+	// void RequestOpenSelector();                                                                                           // [0xb6cca54] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.OnTimerUpdated
-	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.OnNumPendingAugmentsToGrantUpdated
-	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.OnAugmentGrantingTimersResetForMatch
-	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.OnAugmentGrantingTimersFinishedForMatch
-	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.HandleTimerUpdated
-	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb5bc9a4] Final|Native|Private 
+	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb6cc73c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.HandleNumPendingAugmentsToGrantUpdated
-	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb5bc4bc] Final|Native|Private 
+	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb6cc28c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.HandleAugmentGrantingTimersResetForMatch
-	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb5bb658] Final|Native|Private 
+	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb6cb764] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.HandleAugmentGrantingTimersFinishedForMatch
-	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb5bb61c] Final|Native|Private 
+	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb6cb728] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryExtensionRow.GetPendingAugmentsToGrant
-	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb5bb5e4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb6cb6f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryInfoWidget
@@ -408,7 +408,7 @@ class UFortPlayerAugmentInventoryInfoWidget : public UCommonActivatableWidget
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0400   (0x0008)  MISSED
-	SDK_UNDEFINED(24,11219) /* FText */                __um(RarityTextFormat);                                     // 0x0408   (0x0018)  
+	SDK_UNDEFINED(24,11269) /* FText */                __um(RarityTextFormat);                                     // 0x0408   (0x0018)  
 	class UCommonTextBlock*                            Text_ItemName;                                              // 0x0420   (0x0008)  
 	class UCommonTextBlock*                            Text_ItemRarity;                                            // 0x0428   (0x0008)  
 	class UCommonTextBlock*                            Text_ItemCategory;                                          // 0x0430   (0x0008)  
@@ -421,9 +421,9 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryInfoWidget.OnItemRaritySet
-	// void OnItemRaritySet(EFortRarity Rarity, FFortRarityItemData RarityItemData);                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnItemRaritySet(EFortRarity Rarity, FFortRarityItemData RarityItemData);                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryInfoWidget.OnItemNewOrBorrowedSet
-	// void OnItemNewOrBorrowedSet(bool bIsNew, bool bIsBorrowed);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnItemNewOrBorrowedSet(bool bIsNew, bool bIsBorrowed);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryListEntry
@@ -436,7 +436,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryListEntry.OnAugmentListItemSet
-	// void OnAugmentListItemSet(class UFortItemDefinition* ItemDefinition);                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentListItemSet(class UFortItemDefinition* ItemDefinition);                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab
@@ -456,27 +456,27 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.RequestOpenSelector
-	// void RequestOpenSelector();                                                                                           // [0xb5bce74] Final|Native|Protected|BlueprintCallable 
+	// void RequestOpenSelector();                                                                                           // [0xb6cca54] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.OnTimerUpdated
-	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTimerUpdated(float TimeRemaining, float TimePercentage);                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.OnNumPendingAugmentsToGrantUpdated
-	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnNumPendingAugmentsToGrantUpdated(int32_t NumPendingAugmentsToGrant);                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.OnAugmentListUpdated
-	// void OnAugmentListUpdated(int32_t NumAugments);                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentListUpdated(int32_t NumAugments);                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.OnAugmentGrantingTimersResetForMatch
-	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersResetForMatch();                                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.OnAugmentGrantingTimersFinishedForMatch
-	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnAugmentGrantingTimersFinishedForMatch();                                                                       // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.HandleTimerUpdated
-	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb5bcae4] Final|Native|Private 
+	// void HandleTimerUpdated(float TimeRemaining, float TimePercentage);                                                   // [0xb6cc800] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.HandleNumPendingAugmentsToGrantUpdated
-	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb5bc57c] Final|Native|Private 
+	// void HandleNumPendingAugmentsToGrantUpdated(int8_t NumPendingAugmentsToGrant);                                        // [0xb6cc3cc] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.HandleAugmentGrantingTimersResetForMatch
-	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb5bb66c] Final|Native|Private 
+	// void HandleAugmentGrantingTimersResetForMatch();                                                                      // [0xb6cb778] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.HandleAugmentGrantingTimersFinishedForMatch
-	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb5bb630] Final|Native|Private 
+	// void HandleAugmentGrantingTimersFinishedForMatch();                                                                   // [0xb6cb73c] Final|Native|Private 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInventoryTab.GetPendingAugmentsToGrant
-	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb5bb5e4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPendingAugmentsToGrant();                                                                                  // [0xb6cb6f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentLobbyWidget
@@ -488,7 +488,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentLobbyWidget.OnShowInitialAugment
-	// void OnShowInitialAugment(class UFortPlayerAugmentItemDefinition* CarriedAugment);                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnShowInitialAugment(class UFortPlayerAugmentItemDefinition* CarriedAugment);                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentPostMatchUnlocksWidget
@@ -501,7 +501,7 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentPostMatchUnlocksWidget.OnShowUnlockedAugments
-	// void OnShowUnlockedAugments(TArray<UFortPlayerAugmentItemDefinition*>& UnlockedAugments);                             // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnShowUnlockedAugments(TArray<UFortPlayerAugmentItemDefinition*>& UnlockedAugments);                             // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget
@@ -518,17 +518,17 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.OpenWidget
-	// void OpenWidget(class UFortPlayerAugmentItemDefinition* ItemDef);                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OpenWidget(class UFortPlayerAugmentItemDefinition* ItemDef);                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.OnStompedByOtherWidget
-	// void OnStompedByOtherWidget();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnStompedByOtherWidget();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.OnEventAdded
-	// void OnEventAdded();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnEventAdded();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.HasMoreAugmentEvents
-	// bool HasMoreAugmentEvents();                                                                                          // [0xb5bcc24] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool HasMoreAugmentEvents();                                                                                          // [0xb6cc8c4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.ConstructEventDescription
-	// FText ConstructEventDescription(class UFortPlayerAugmentItemDefinition* ItemDef);                                     // [0xb5bb3b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText ConstructEventDescription(class UFortPlayerAugmentItemDefinition* ItemDef);                                     // [0xb6cb540] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentSpecialAcquiredNotificationWidget.CloseWidget
-	// void CloseWidget();                                                                                                   // [0xb5bb39c] Final|Native|Protected|BlueprintCallable 
+	// void CloseWidget();                                                                                                   // [0xb6cb52c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/PlayerAugmentsUI.FortPlayerAugmentInfoTouchWidget
@@ -541,6 +541,6 @@ public:
 
 	/// Functions
 	// Function /Script/PlayerAugmentsUI.FortPlayerAugmentInfoTouchWidget.SetAugmentIndexInList
-	// void SetAugmentIndexInList(int32_t InAugmentIndexInList);                                                             // [0xb5bcec4] Final|Native|Public|BlueprintCallable 
+	// void SetAugmentIndexInList(int32_t InAugmentIndexInList);                                                             // [0xb6ccaa4] Final|Native|Public|BlueprintCallable 
 };
 

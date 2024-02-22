@@ -128,8 +128,8 @@ class UFortCurieVoxelFireNativeFXHandler : public UFortCurieNativeFXHandler
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0040   (0x0030)  MISSED
-	SDK_UNDEFINED(80,14044) /* TSet<UFortCurieComponent*> */ __um(PendingUpdateComponents);                        // 0x0070   (0x0050)  
-	SDK_UNDEFINED(80,14045) /* TSet<UFortCurieComponent*> */ __um(PendingRemoveComponents);                        // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,14141) /* TSet<UFortCurieComponent*> */ __um(PendingUpdateComponents);                        // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,14142) /* TSet<UFortCurieComponent*> */ __um(PendingRemoveComponents);                        // 0x00C0   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x0110   (0x0050)  MISSED
 	TArray<class UFortCurieWorldNiagaraComponent*>     WorldFireNiagaraSystems;                                    // 0x0160   (0x0010)  
 	TArray<class UFortCurieWorldNiagaraComponent*>     WorldFireDebugNiagaraSystems;                               // 0x0170   (0x0010)  
@@ -144,8 +144,8 @@ public:
 	TArray<FFortCurieVoxelFireParticleGrassData>       CachedFireParticleGrassData;                                // 0x01D8   (0x0010)  
 	TArray<FFortCurieFireParticleActorData>            CachedFireParticleActorData;                                // 0x01E8   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x60];                                      // 0x01F8   (0x0060)  MISSED
-	SDK_UNDEFINED(80,14046) /* TSet<FFortSpatialCellIndex> */ __um(CachedBurningGrassGridCells);                   // 0x0258   (0x0050)  
-	SDK_UNDEFINED(80,14047) /* TMap<FFortSpatialCellIndex, UAudioComponent*> */ __um(GrassAudioMap);               // 0x02A8   (0x0050)  
+	SDK_UNDEFINED(80,14143) /* TSet<FFortSpatialCellIndex> */ __um(CachedBurningGrassGridCells);                   // 0x0258   (0x0050)  
+	SDK_UNDEFINED(80,14144) /* TMap<FFortSpatialCellIndex, UAudioComponent*> */ __um(GrassAudioMap);               // 0x02A8   (0x0050)  
 	unsigned char                                      UnknownData03_5[0x50];                                      // 0x02F8   (0x0050)  MISSED
 	TArray<class UAudioComponent*>                     PreallocatedAudioComponents;                                // 0x0348   (0x0010)  
 	FTimerHandle                                       AudioComponentCleanupTimerHandle;                           // 0x0358   (0x0008)  
@@ -154,7 +154,7 @@ public:
 
 	/// Functions
 	// Function /Script/InfernoRuntime.FortCurieVoxelFireNativeFXHandler.OnUserSettingsEffectQualityChanged
-	// void OnUserSettingsEffectQualityChanged();                                                                            // [0xb49a584] Final|Native|Private 
+	// void OnUserSettingsEffectQualityChanged();                                                                            // [0xb5ab0f0] Final|Native|Private 
 };
 
 /// Class /Script/InfernoRuntime.FortCurieVoxelFireParticleDataInterface

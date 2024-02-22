@@ -31,10 +31,10 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeDebugMenuRuntime.FortControllerComponent_CreativeDebugger.OnPlayerSpawned
-	// void OnPlayerSpawned(class AFortPlayerController* PC);                                                                   // [0xb72d73c] Final|Native|Public  
+	// void OnPlayerSpawned(class AFortPlayerController* PC);                                                                   // [0xb84481c] Final|Native|Public  
 	// Function /Script/CreativeDebugMenuRuntime.FortControllerComponent_CreativeDebugger.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0xb72d728] Final|Native|Public  
+	// void OnMutatorUpdated();                                                                                                 // [0xb844808] Final|Native|Public  
 	// Function /Script/CreativeDebugMenuRuntime.FortControllerComponent_CreativeDebugger.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                            // [0xb72d5e8] Final|Native|Public  
+	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                            // [0xb844744] Final|Native|Public  
 };
 

@@ -61,3 +61,42 @@ public:
 	DMember(bool)                                      bIsDolphinDoubleJump                                        OFFSET(get<bool>, {0x7D5, 1, 1, 4})
 };
 
+/// Class /Script/LinedNotebookGameplayRuntime.LinedNotebookLakeWeaponAnimInstance
+/// Size: 0x0090 (0x000470 - 0x000500)
+class ULinedNotebookLakeWeaponAnimInstance : public UFortWeaponAnimInstance
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 1280;
+
+public:
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     Swing01Montages                                             OFFSET(get<T>, {0x468, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     Swing02Montages                                             OFFSET(get<T>, {0x478, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     Swing03Montages                                             OFFSET(get<T>, {0x488, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     Swing04Montages                                             OFFSET(get<T>, {0x498, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     Swing05Montages                                             OFFSET(get<T>, {0x4A8, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     UpperBodySwing01Montages                                    OFFSET(get<T>, {0x4B8, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     UpperBodySwing02Montages                                    OFFSET(get<T>, {0x4C8, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     InAirAttackMontages                                         OFFSET(get<T>, {0x4D8, 16, 0, 0})
+	DMember(bool)                                      bIsEquipping                                                OFFSET(get<bool>, {0x4E8, 1, 0, 0})
+	DMember(bool)                                      bSwing01                                                    OFFSET(get<bool>, {0x4E9, 1, 0, 0})
+	DMember(bool)                                      bSwing02                                                    OFFSET(get<bool>, {0x4EA, 1, 0, 0})
+	DMember(bool)                                      bSwing03                                                    OFFSET(get<bool>, {0x4EB, 1, 0, 0})
+	DMember(bool)                                      bSwing04                                                    OFFSET(get<bool>, {0x4EC, 1, 0, 0})
+	DMember(bool)                                      bSwing05                                                    OFFSET(get<bool>, {0x4ED, 1, 0, 0})
+	DMember(bool)                                      bIsUpperBodySwing01                                         OFFSET(get<bool>, {0x4EE, 1, 0, 0})
+	DMember(bool)                                      bIsUpperBodySwing02                                         OFFSET(get<bool>, {0x4EF, 1, 0, 0})
+	DMember(bool)                                      bIsAirLand                                                  OFFSET(get<bool>, {0x4F0, 1, 0, 0})
+};
+
+/// Class /Script/LinedNotebookGameplayRuntime.LinedNotebookRiverWeaponAnimInstance
+/// Size: 0x0010 (0x000470 - 0x000480)
+class ULinedNotebookRiverWeaponAnimInstance : public UFortWeaponAnimInstance
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 1152;
+
+public:
+	CMember(TArray<TWeakObjectPtr<UAnimMontage*>>)     InAirMontages                                               OFFSET(get<T>, {0x468, 16, 0, 0})
+	DMember(bool)                                      bIsAirLand                                                  OFFSET(get<bool>, {0x478, 1, 0, 0})
+};
+

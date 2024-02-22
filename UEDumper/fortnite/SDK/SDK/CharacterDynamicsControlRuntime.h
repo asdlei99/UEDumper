@@ -23,13 +23,13 @@ public:
 
 	/// Functions
 	// Function /Script/CharacterDynamicsControlRuntime.CharacterDynamicsControlBPLibrary.UpdateRigidBodyWithControlNodeParameters
-	// FRigidBodyWithControlReference UpdateRigidBodyWithControlNodeParameters(FAnimUpdateContext& UpdateContext, FRigidBodyWithControlReference& RigidBodyWithControl); // [0xb3a05a4] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// FRigidBodyWithControlReference UpdateRigidBodyWithControlNodeParameters(FAnimUpdateContext& UpdateContext, FRigidBodyWithControlReference& RigidBodyWithControl); // [0xb4b3544] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.CharacterDynamicsControlBPLibrary.SetProperty
-	// void SetProperty(class UFortAnimInstance* InAnimInstance, FName InPropertyName, bool InValue);                        // [0xb3a021c] Final|Native|Static|Private|BlueprintCallable 
+	// void SetProperty(class UFortAnimInstance* InAnimInstance, FName InPropertyName, bool InValue);                        // [0xb4b32f0] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.CharacterDynamicsControlBPLibrary.GetProperty
-	// bool GetProperty(class UFortAnimInstance* InAnimInstance, FName InPropertyName);                                      // [0xb39ff20] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool GetProperty(class UFortAnimInstance* InAnimInstance, FName InPropertyName);                                      // [0xb4b30b0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/CharacterDynamicsControlRuntime.CharacterDynamicsControlBPLibrary.GetCharacterState
-	// FName GetCharacterState(class UFortAnimInstance* InAnimInstance);                                                     // [0xb39fdf8] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// FName GetCharacterState(class UFortAnimInstance* InAnimInstance);                                                     // [0xb4b2fc8] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/CharacterDynamicsControlRuntime.CharacterDynamicsControlGameFeatureData
@@ -124,22 +124,22 @@ public:
 
 	/// Functions
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.StateName
-	// FName StateName();                                                                                                    // [0xb3a0578] Final|Native|Public|BlueprintCallable 
+	// FName StateName();                                                                                                    // [0xb4b3518] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.StateIndex
-	// int32_t StateIndex();                                                                                                 // [0xb3a0540] Final|Native|Public|BlueprintCallable 
+	// int32_t StateIndex();                                                                                                 // [0xb4b34e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.SetProperty
-	// void SetProperty(FName PropertyName, bool PropertyValue);                                                             // [0xb3a0400] Final|Native|Public|BlueprintCallable 
+	// void SetProperty(FName PropertyName, bool PropertyValue);                                                             // [0xb4b341c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.PreviousStateName
-	// FName PreviousStateName();                                                                                            // [0xb3a01f4] Final|Native|Public|BlueprintCallable 
+	// FName PreviousStateName();                                                                                            // [0xb4b32c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.ParameterIndex
-	// int32_t ParameterIndex();                                                                                             // [0xb3a01bc] Final|Native|Public|BlueprintCallable 
+	// int32_t ParameterIndex();                                                                                             // [0xb4b3290] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.GetTransitionParameters
-	// FPhysicsControlControlAndModifierParameters GetTransitionParameters();                                                // [0xb3a0180] Final|Native|Public|BlueprintCallable 
+	// FPhysicsControlControlAndModifierParameters GetTransitionParameters();                                                // [0xb4b3254] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.GetTimeInCurrentStateSeconds
-	// float GetTimeInCurrentStateSeconds();                                                                                 // [0xb3a0158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeInCurrentStateSeconds();                                                                                 // [0xb4b322c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.GetProperty
-	// bool GetProperty(FName PropertyName);                                                                                 // [0xb3a008c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetProperty(FName PropertyName);                                                                                 // [0xb4b31a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CharacterDynamicsControlRuntime.FortCharacterDynamicsComponent.GetGravityOverrideVector
-	// FVector GetGravityOverrideVector();                                                                                   // [0xb39fee8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetGravityOverrideVector();                                                                                   // [0xb4b3078] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 

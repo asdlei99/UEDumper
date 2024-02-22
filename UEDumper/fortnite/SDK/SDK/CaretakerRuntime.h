@@ -25,9 +25,9 @@ public:
 
 	/// Functions
 	// Function /Script/CaretakerRuntime.FortAthenaCaretakerAIController.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* CharacterOwner, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb310820] Final|Native|Public  
+	// void OnMovementModeChanged(class ACharacter* CharacterOwner, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb427224] Final|Native|Public  
 	// Function /Script/CaretakerRuntime.FortAthenaCaretakerAIController.DebugUpdate
-	// void DebugUpdate(float UpdateInterval);                                                                               // [0x61bf3ac] Final|Native|Public|BlueprintCallable 
+	// void DebugUpdate(float UpdateInterval);                                                                               // [0x621acf8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CaretakerRuntime.FortBTTask_CaretakerMoveTo
@@ -36,7 +36,7 @@ class UFortBTTask_CaretakerMoveTo : public UBTTask_MoveTo
 { 
 public:
 	FBlackboardKeySelector                             FocalPointWhileMoving;                                      // 0x00B0   (0x0028)  
-	SDK_UNDEFINED(1,12267) /* TEnumAsByte<EPathObstacleAction> */ __um(PathObstacleAction);                        // 0x00D8   (0x0001)  
+	SDK_UNDEFINED(1,12354) /* TEnumAsByte<EPathObstacleAction> */ __um(PathObstacleAction);                        // 0x00D8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00D9   (0x0003)  MISSED
 	bool                                               bEnableSlowdownAtGoal : 1;                                  // 0x00DC:0 (0x0001)  
 	bool                                               bMoveDirectlyTowards : 1;                                   // 0x00DC:1 (0x0001)  
@@ -98,14 +98,14 @@ public:
 
 	/// Functions
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.SetDelayedMaterialParameters
-	// void SetDelayedMaterialParameters();                                                                                  // [0xb3109dc] Final|Native|Protected|BlueprintCallable 
+	// void SetDelayedMaterialParameters();                                                                                  // [0xb427320] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWorldStriderComponent
-	// class UFortAnimWorldStriderComponent* GetWorldStriderComponent();                                                     // [0xb3107f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAnimWorldStriderComponent* GetWorldStriderComponent();                                                     // [0xb4271fc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWalkSpeedWarpingValue
-	// float GetWalkSpeedWarpingValue();                                                                                     // [0xb3107cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWalkSpeedWarpingValue();                                                                                     // [0xb4271d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWalkPlayRateValue
-	// float GetWalkPlayRateValue();                                                                                         // [0xb3107ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWalkPlayRateValue();                                                                                         // [0xb4271b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetStartAnimPosition
-	// float GetStartAnimPosition();                                                                                         // [0xb310780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStartAnimPosition();                                                                                         // [0xb427184] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

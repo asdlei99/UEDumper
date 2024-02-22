@@ -39,9 +39,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectManagementTab.UpdateProjectConfirmed
-	// void UpdateProjectConfirmed();                                                                                           // [0xb93f04c] Final|Native|Protected|BlueprintCallable 
+	// void UpdateProjectConfirmed();                                                                                           // [0xbcf6e28] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectManagementTab.RemoveProjectConfirmed
-	// void RemoveProjectConfirmed();                                                                                           // [0xb93ef64] Final|Native|Protected|BlueprintCallable 
+	// void RemoveProjectConfirmed();                                                                                           // [0xbcf6d84] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandTabPanel
@@ -99,9 +99,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandAddProjectModal.UpdateLightningViolator
-	// void UpdateLightningViolator(ESlateVisibility InVisibility, FText& InText);                                              // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateLightningViolator(ESlateVisibility InVisibility, FText& InText);                                              // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandAddProjectModal.HandleDownloadLinkIdTextChanged
-	// void HandleDownloadLinkIdTextChanged(FText& InputLinkCode);                                                              // [0xb93eec8] Final|Native|Private|HasOutParms 
+	// void HandleDownloadLinkIdTextChanged(FText& InputLinkCode);                                                              // [0xbcf6ce8] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandMessageModal
@@ -201,9 +201,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTile.UpdateLabel
-	// void UpdateLabel(bool bShowLabel);                                                                                       // [0xb93ef88] Final|Native|Public|BlueprintCallable 
+	// void UpdateLabel(bool bShowLabel);                                                                                       // [0xbcf6da8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTile.OnLabelUpdated
-	// void OnLabelUpdated();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnLabelUpdated();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTileImage

@@ -44,11 +44,11 @@ public:
 	bool                                               bEnableDLSSInPlayInEditorViewports;                         // 0x002C   (0x0001)  
 	bool                                               bShowDLSSSDebugOnScreenMessages;                            // 0x002D   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002E   (0x0002)  MISSED
-	SDK_UNDEFINED(16,13193) /* FString */              __um(GenericDLSSBinaryPath);                                // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13290) /* FString */              __um(GenericDLSSBinaryPath);                                // 0x0030   (0x0010)  
 	bool                                               bGenericDLSSBinaryExists;                                   // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0041   (0x0003)  MISSED
 	uint32_t                                           NVIDIANGXApplicationId;                                     // 0x0044   (0x0004)  
-	SDK_UNDEFINED(16,13194) /* FString */              __um(CustomDLSSBinaryPath);                                 // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,13291) /* FString */              __um(CustomDLSSBinaryPath);                                 // 0x0048   (0x0010)  
 	bool                                               bCustomDLSSBinaryExists;                                    // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0059   (0x0007)  MISSED
 };

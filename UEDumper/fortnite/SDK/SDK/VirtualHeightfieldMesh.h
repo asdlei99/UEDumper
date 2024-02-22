@@ -32,7 +32,7 @@ class UMaterialExpressionHeightfieldMinMaxTexture : public UMaterialExpression
 { 
 public:
 	class UHeightfieldMinMaxTexture*                   MinMaxTexture;                                              // 0x00B0   (0x0008)  
-	SDK_UNDEFINED(1,15461) /* TEnumAsByte<EMaterialSamplerType> */ __um(SamplerType);                              // 0x00B8   (0x0001)  
+	SDK_UNDEFINED(1,15604) /* TEnumAsByte<EMaterialSamplerType> */ __um(SamplerType);                              // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00B9   (0x0007)  MISSED
 };
 
@@ -49,7 +49,7 @@ public:
 class UVirtualHeightfieldMeshComponent : public UPrimitiveComponent
 { 
 public:
-	SDK_UNDEFINED(32,15462) /* TWeakObjectPtr<ARuntimeVirtualTextureVolume*> */ __um(VirtualTexture);              // 0x0500   (0x0020)  
+	SDK_UNDEFINED(32,15605) /* TWeakObjectPtr<ARuntimeVirtualTextureVolume*> */ __um(VirtualTexture);              // 0x0500   (0x0020)  
 	class ARuntimeVirtualTextureVolume*                VirtualTextureRef;                                          // 0x0520   (0x0008)  
 	class UObject*                                     VirtualTextureThumbnail;                                    // 0x0528   (0x0008)  
 	bool                                               bCopyBoundsButton;                                          // 0x0530   (0x0001)  
@@ -72,6 +72,6 @@ public:
 
 	/// Functions
 	// Function /Script/VirtualHeightfieldMesh.VirtualHeightfieldMeshComponent.GatherHideFlags
-	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                             // [0xc6e276c] Final|Native|Protected|HasOutParms|Const 
+	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                             // [0xc677a90] Final|Native|Protected|HasOutParms|Const 
 };
 

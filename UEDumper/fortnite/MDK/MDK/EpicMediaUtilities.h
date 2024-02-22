@@ -21,11 +21,11 @@ public:
 
 	/// Functions
 	// Function /Script/EpicMediaUtilities.EpicMediaServerTime.ServerRequestServerTime
-	// void ServerRequestServerTime(double requestUtcTime);                                                                     // [0x7b716c4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestServerTime(double requestUtcTime);                                                                     // [0x7b87c20] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/EpicMediaUtilities.EpicMediaServerTime.GetTimeUtc
-	// bool GetTimeUtc(FDateTime& OutDateTime);                                                                                 // [0x7b7162c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTimeUtc(FDateTime& OutDateTime);                                                                                 // [0x7b87b88] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EpicMediaUtilities.EpicMediaServerTime.ClientReportServerTime
-	// void ClientReportServerTime(double requestUtcTime, double serverUtcTime);                                                // [0x7b714d8] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientReportServerTime(double requestUtcTime, double serverUtcTime);                                                // [0x7b87ab0] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Struct /Script/EpicMediaUtilities.EpicMediaImageDataExt

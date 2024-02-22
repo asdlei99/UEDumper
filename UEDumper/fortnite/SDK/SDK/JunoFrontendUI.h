@@ -29,14 +29,14 @@ class UJunoFrontendExperienceFlow : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x48];                                      // 0x0000   (0x0048)  MISSED
 	class UFortStreamMediaSource*                      VideoStream_Source;                                         // 0x0048   (0x0008)  
-	SDK_UNDEFINED(32,14255) /* TWeakObjectPtr<UClass*> */ __um(VideoPlayerClass);                                  // 0x0050   (0x0020)  
-	SDK_UNDEFINED(16,14256) /* TArray<FString> */      __um(FlowStepArray);                                        // 0x0070   (0x0010)  
+	SDK_UNDEFINED(32,14373) /* TWeakObjectPtr<UClass*> */ __um(VideoPlayerClass);                                  // 0x0050   (0x0020)  
+	SDK_UNDEFINED(16,14374) /* TArray<FString> */      __um(FlowStepArray);                                        // 0x0070   (0x0010)  
 	bool                                               bEnableTrailer;                                             // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0081   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14257) /* FString */              __um(CinematicTrailerVUID);                                 // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,14375) /* FString */              __um(CinematicTrailerVUID);                                 // 0x0088   (0x0010)  
 	FName                                              CinematicTrailerString;                                     // 0x0098   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x009C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,14258) /* TMap<FString, FString> */ __um(CinematicTrailerRating);                             // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,14376) /* TMap<FString, FString> */ __um(CinematicTrailerRating);                             // 0x00A0   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x00F0   (0x0008)  MISSED
 };
 
@@ -90,18 +90,18 @@ public:
 
 	/// Functions
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.StartMatchmakingInModeratorMode
-	// void StartMatchmakingInModeratorMode(FString InWorldId);                                                              // [0xc0ea47c] Final|Native|Public|BlueprintCallable 
+	// void StartMatchmakingInModeratorMode(FString InWorldId);                                                              // [0xc090614] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.RemoveSelectedWorldFromList
-	// void RemoveSelectedWorldFromList();                                                                                   // [0xc0ea468] Final|Native|Public|BlueprintCallable 
+	// void RemoveSelectedWorldFromList();                                                                                   // [0xc090600] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.InitWorldData
-	// void InitWorldData(TWeakObjectPtr<UDataTable*>& InSettingDataTable, TWeakObjectPtr<UDataTable*>& InWorldImageDataTable); // [0xc0ea350] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitWorldData(TWeakObjectPtr<UDataTable*>& InSettingDataTable, TWeakObjectPtr<UDataTable*>& InWorldImageDataTable); // [0xc0904e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.GetIsCreateFlowSelected
-	// bool GetIsCreateFlowSelected();                                                                                       // [0xc0ea308] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsCreateFlowSelected();                                                                                       // [0xc0904a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.FetchWorldData
-	// void FetchWorldData();                                                                                                // [0xc0ea2f4] Final|Native|Public|BlueprintCallable 
+	// void FetchWorldData();                                                                                                // [0xc09048c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.EnableDataRefresh
-	// void EnableDataRefresh();                                                                                             // [0xc0ea2e0] Final|Native|Public|BlueprintCallable 
+	// void EnableDataRefresh();                                                                                             // [0xc090478] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.DisableDataRefresh
-	// void DisableDataRefresh();                                                                                            // [0xc0ea2cc] Final|Native|Public|BlueprintCallable 
+	// void DisableDataRefresh();                                                                                            // [0xc090464] Final|Native|Public|BlueprintCallable 
 };
 

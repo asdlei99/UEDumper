@@ -69,7 +69,7 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicleAnimInstance.CollectConditionsFromDriver
-	// void CollectConditionsFromDriver();                                                                                      // [0xb303b88] Final|Native|Public|BlueprintCallable 
+	// void CollectConditionsFromDriver();                                                                                      // [0xb41aaa8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider
@@ -199,31 +199,31 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartWheelie
-	// void HandleStartWheelie();                                                                                               // [0xb303ee0] Final|Native|Public  
+	// void HandleStartWheelie();                                                                                               // [0xb41ad34] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartStoppie
-	// void HandleStartStoppie();                                                                                               // [0xb303ec8] Final|Native|Public  
+	// void HandleStartStoppie();                                                                                               // [0xb41ad1c] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartChargingJump
-	// void HandleStartChargingJump();                                                                                          // [0xb303eb0] Final|Native|Public  
+	// void HandleStartChargingJump();                                                                                          // [0xb41ad04] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartAirTrick
-	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                         // [0xb303df0] Final|Native|Public  
+	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                         // [0xb41ac88] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseWheelie
-	// void HandleReleaseWheelie();                                                                                             // [0xb303dd8] Final|Native|Public  
+	// void HandleReleaseWheelie();                                                                                             // [0xb41ac70] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseStoppie
-	// void HandleReleaseStoppie();                                                                                             // [0xb303dc0] Final|Native|Public  
+	// void HandleReleaseStoppie();                                                                                             // [0xb41ac58] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleJump
-	// void HandleJump(float InJumpChargeFactor);                                                                               // [0xb303cf8] Final|Native|Public  
+	// void HandleJump(float InJumpChargeFactor);                                                                               // [0xb41abd4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleFinishAirTrick
-	// void HandleFinishAirTrick();                                                                                             // [0xb303ce0] Final|Native|Public  
+	// void HandleFinishAirTrick();                                                                                             // [0xb41abbc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleChargingJump
-	// void HandleChargingJump(float InJumpChargeFactor);                                                                       // [0xb303c1c] Final|Native|Public  
+	// void HandleChargingJump(float InJumpChargeFactor);                                                                       // [0xb41ab3c] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleCancelChargingJump
-	// void HandleCancelChargingJump();                                                                                         // [0xb303c04] Final|Native|Public  
+	// void HandleCancelChargingJump();                                                                                         // [0xb41ab24] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CollapsedAimYawSmoothed
-	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                        // [0xb303ac4] Final|Native|Public|BlueprintCallable 
+	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                        // [0xb41aa28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CalculateNoiseAlpha
-	// void CalculateNoiseAlpha();                                                                                              // [0xb3039c4] Final|Native|Public|BlueprintCallable 
+	// void CalculateNoiseAlpha();                                                                                              // [0xb41a96c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.AnimNotify_JumpEntered
-	// void AnimNotify_JumpEntered();                                                                                           // [0xb3039a4] Final|Native|Public  
+	// void AnimNotify_JumpEntered();                                                                                           // [0xb41a94c] Final|Native|Public  
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleDriver
@@ -345,275 +345,275 @@ public:
 };
 
 /// Class /Script/MotorcycleRuntime.FortMotorcycleVehicle
-/// Size: 0x0450 (0x001F70 - 0x0023C0)
+/// Size: 0x0460 (0x001F90 - 0x0023F0)
 class AFortMotorcycleVehicle : public AFortAthenaSKMotorVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 9152;
+	static inline constexpr uint64_t __MDKClassSize = 9200;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnStartChargingJumpDelegate                                 OFFSET(getStruct<T>, {0x1F68, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnCancelChargingJumpDelegate                                OFFSET(getStruct<T>, {0x1F78, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnJumpDelegate                                              OFFSET(getStruct<T>, {0x1F88, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnChargingJumpDelegate                                      OFFSET(getStruct<T>, {0x1F98, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartAirTrickDelegate                                     OFFSET(getStruct<T>, {0x1FA8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFinishAirTrickDelegate                                    OFFSET(getStruct<T>, {0x1FB8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartWheelieDelegate                                      OFFSET(getStruct<T>, {0x1FC8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnReleaseWheelieDelegate                                    OFFSET(getStruct<T>, {0x1FD8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnLandWheelieDelegate                                       OFFSET(getStruct<T>, {0x1FE8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFailWheelieDelegate                                       OFFSET(getStruct<T>, {0x1FF8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartStoppieDelegate                                      OFFSET(getStruct<T>, {0x2008, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnReleaseStoppieDelegate                                    OFFSET(getStruct<T>, {0x2018, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnLandStoppieDelegate                                       OFFSET(getStruct<T>, {0x2028, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnInventoryModeChangedDelegate                              OFFSET(getStruct<T>, {0x2038, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnSuperSlidingChangedDelegate                               OFFSET(getStruct<T>, {0x2048, 16, 0, 0})
-	CMember(class UClass*)                             InventoryCameraModeClass                                    OFFSET(get<T>, {0x2058, 8, 0, 0})
-	CMember(class UClass*)                             InventoryCameraModeClassADS                                 OFFSET(get<T>, {0x2060, 8, 0, 0})
-	CMember(class UClass*)                             PassengerCameraModeClass                                    OFFSET(get<T>, {0x2068, 8, 0, 0})
-	CMember(class UClass*)                             PassengerCameraModeClassADS                                 OFFSET(get<T>, {0x2070, 8, 0, 0})
-	CMember(class UFortMotorcycleVehicleConfigs*)      FortMotorcycleVehicleConfigs                                OFFSET(get<T>, {0x2078, 8, 0, 0})
-	SMember(FName)                                     RearAxleSocket                                              OFFSET(getStruct<T>, {0x2080, 4, 0, 0})
-	CMember(TArray<FActionDefForUI>)                   ActionDefForUI                                              OFFSET(get<T>, {0x2088, 16, 0, 0})
-	DMember(float)                                     SwingArmRotation                                            OFFSET(get<float>, {0x2098, 4, 0, 0})
-	CMember(TArray<int32_t>)                           BoostShapeIndices                                           OFFSET(get<T>, {0x2118, 16, 0, 0})
-	DMember(bool)                                      bIsBoostAttacking                                           OFFSET(get<bool>, {0x2128, 1, 0, 0})
-	CMember(EFortMotorcycleAirTrickType)               CachedTrickType                                             OFFSET(get<T>, {0x2138, 1, 0, 0})
-	DMember(bool)                                      bHadPassengerAtTrickStart                                   OFFSET(get<bool>, {0x2139, 1, 0, 0})
-	CMember(TArray<FName>)                             PassengerADSSockets                                         OFFSET(get<T>, {0x2170, 16, 0, 0})
-	CMember(TArray<FVector>)                           PassengerADSRelativeOffsets                                 OFFSET(get<T>, {0x2180, 16, 0, 0})
-	CMember(class UNiagaraComponent*)                  CachedNiagaraComponentRoadAndExhaust                        OFFSET(get<T>, {0x2190, 8, 0, 0})
-	SMember(FString)                                   RoadAndExhaustNiagaraComponentName                          OFFSET(getStruct<T>, {0x2198, 16, 0, 0})
-	SMember(FName)                                     RoadAndExhaustVehicleSpeedName                              OFFSET(getStruct<T>, {0x21A8, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustSlideDirectionName                            OFFSET(getStruct<T>, {0x21AC, 4, 0, 0})
-	DMember(float)                                     RoadAndExhaustMinSpeedForDust                               OFFSET(get<float>, {0x21B0, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustDustRearName                                  OFFSET(getStruct<T>, {0x21B4, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustDustColorLerpName                             OFFSET(getStruct<T>, {0x21B8, 4, 0, 0})
-	DMember(float)                                     RoadAndExhaustDustColorLerp                                 OFFSET(get<float>, {0x21BC, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustDustAlphaMultiplierName                       OFFSET(getStruct<T>, {0x21C0, 4, 0, 0})
-	DMember(float)                                     RoadAndExhaustDustAlphaMultiplier                           OFFSET(get<float>, {0x21C4, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustPeelOutColorIndexName                         OFFSET(getStruct<T>, {0x21C8, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustPeelOutRearName                               OFFSET(getStruct<T>, {0x21CC, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustIsPeelOutOnRoadName                           OFFSET(getStruct<T>, {0x21D0, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustIsPeelOutOnRoadRewindName                     OFFSET(getStruct<T>, {0x21D4, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustIsInAirName                                   OFFSET(getStruct<T>, {0x21D8, 4, 0, 0})
-	SMember(FGameplayTag)                              RoadAndExhaustCameraDirtGameplayCueTag                      OFFSET(getStruct<T>, {0x21DC, 4, 0, 0})
-	SMember(FGameplayTag)                              RoadAndExhaustCameraWaterGameplayCueTag                     OFFSET(getStruct<T>, {0x21E0, 4, 0, 0})
-	CMember(TArray<TEnumAsByte<EPhysicalSurface>>)     RoadAndExhaustSurfaceTypeArrayForFX                         OFFSET(get<T>, {0x21E8, 16, 0, 0})
-	CMember(class ULegacyCameraShake*)                 DriverCameraShakeInstance                                   OFFSET(get<T>, {0x21F8, 8, 0, 0})
-	CMember(class ULegacyCameraShake*)                 AcceleratingCameraShakeInstance                             OFFSET(get<T>, {0x2200, 8, 0, 0})
-	SMember(FName)                                     RoadAndExhaustHeadlightsName                                OFFSET(getStruct<T>, {0x2210, 4, 0, 0})
-	SMember(FName)                                     RoadAndExhaustBrakelightsName                               OFFSET(getStruct<T>, {0x2214, 4, 0, 0})
-	SMember(FScalableFloat)                            DoorBashMinSpeed                                            OFFSET(getStruct<T>, {0x2218, 40, 0, 0})
-	SMember(FScalableFloat)                            DoorBashMaxSpeed                                            OFFSET(getStruct<T>, {0x2240, 40, 0, 0})
-	SMember(FScalableFloat)                            DoorBashForwardDistanceMin                                  OFFSET(getStruct<T>, {0x2268, 40, 0, 0})
-	SMember(FScalableFloat)                            DoorBashForwardDistanceMax                                  OFFSET(getStruct<T>, {0x2290, 40, 0, 0})
-	SMember(FGameplayTag)                              DoorBashGameplayCueTag                                      OFFSET(getStruct<T>, {0x22B8, 4, 0, 0})
-	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     DoorBashCollisionTypesForDoor                               OFFSET(get<T>, {0x22C0, 16, 0, 0})
-	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     DoorBashCollisionTypesForPawn                               OFFSET(get<T>, {0x22D0, 16, 0, 0})
-	SMember(FScalableFloat)                            DoorBashSphereRadiusForPawnLaunch                           OFFSET(getStruct<T>, {0x22E0, 40, 0, 0})
-	SMember(FScalableFloat)                            DoorBashScalarForPawnLaunch                                 OFFSET(getStruct<T>, {0x2308, 40, 0, 0})
-	SMember(FGameplayTag)                              DoorBashPawnLaunchGameplayCueTag                            OFFSET(getStruct<T>, {0x2330, 4, 0, 0})
-	SMember(FGameplayTagQuery)                         InventoryModeTagQuery                                       OFFSET(getStruct<T>, {0x2338, 72, 0, 0})
-	SMember(FGameplayTagContainer)                     InputContextBlockedTags                                     OFFSET(getStruct<T>, {0x2380, 32, 0, 0})
-	SMember(FGameplayTag)                              MobileHUDTag                                                OFFSET(getStruct<T>, {0x23B8, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartChargingJumpDelegate                                 OFFSET(getStruct<T>, {0x1F90, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnCancelChargingJumpDelegate                                OFFSET(getStruct<T>, {0x1FA0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnJumpDelegate                                              OFFSET(getStruct<T>, {0x1FB0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnChargingJumpDelegate                                      OFFSET(getStruct<T>, {0x1FC0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartAirTrickDelegate                                     OFFSET(getStruct<T>, {0x1FD0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFinishAirTrickDelegate                                    OFFSET(getStruct<T>, {0x1FE0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartWheelieDelegate                                      OFFSET(getStruct<T>, {0x1FF0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnReleaseWheelieDelegate                                    OFFSET(getStruct<T>, {0x2000, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnLandWheelieDelegate                                       OFFSET(getStruct<T>, {0x2010, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFailWheelieDelegate                                       OFFSET(getStruct<T>, {0x2020, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartStoppieDelegate                                      OFFSET(getStruct<T>, {0x2030, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnReleaseStoppieDelegate                                    OFFSET(getStruct<T>, {0x2040, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnLandStoppieDelegate                                       OFFSET(getStruct<T>, {0x2050, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInventoryModeChangedDelegate                              OFFSET(getStruct<T>, {0x2060, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnSuperSlidingChangedDelegate                               OFFSET(getStruct<T>, {0x2070, 16, 0, 0})
+	CMember(class UClass*)                             InventoryCameraModeClass                                    OFFSET(get<T>, {0x2080, 8, 0, 0})
+	CMember(class UClass*)                             InventoryCameraModeClassADS                                 OFFSET(get<T>, {0x2088, 8, 0, 0})
+	CMember(class UClass*)                             PassengerCameraModeClass                                    OFFSET(get<T>, {0x2090, 8, 0, 0})
+	CMember(class UClass*)                             PassengerCameraModeClassADS                                 OFFSET(get<T>, {0x2098, 8, 0, 0})
+	CMember(class UFortMotorcycleVehicleConfigs*)      FortMotorcycleVehicleConfigs                                OFFSET(get<T>, {0x20A0, 8, 0, 0})
+	SMember(FName)                                     RearAxleSocket                                              OFFSET(getStruct<T>, {0x20A8, 4, 0, 0})
+	CMember(TArray<FActionDefForUI>)                   ActionDefForUI                                              OFFSET(get<T>, {0x20B0, 16, 0, 0})
+	DMember(float)                                     SwingArmRotation                                            OFFSET(get<float>, {0x20C0, 4, 0, 0})
+	CMember(TArray<int32_t>)                           BoostShapeIndices                                           OFFSET(get<T>, {0x2140, 16, 0, 0})
+	DMember(bool)                                      bIsBoostAttacking                                           OFFSET(get<bool>, {0x2150, 1, 0, 0})
+	CMember(EFortMotorcycleAirTrickType)               CachedTrickType                                             OFFSET(get<T>, {0x2160, 1, 0, 0})
+	DMember(bool)                                      bHadPassengerAtTrickStart                                   OFFSET(get<bool>, {0x2161, 1, 0, 0})
+	CMember(TArray<FName>)                             PassengerADSSockets                                         OFFSET(get<T>, {0x2198, 16, 0, 0})
+	CMember(TArray<FVector>)                           PassengerADSRelativeOffsets                                 OFFSET(get<T>, {0x21A8, 16, 0, 0})
+	CMember(class UNiagaraComponent*)                  CachedNiagaraComponentRoadAndExhaust                        OFFSET(get<T>, {0x21B8, 8, 0, 0})
+	SMember(FString)                                   RoadAndExhaustNiagaraComponentName                          OFFSET(getStruct<T>, {0x21C0, 16, 0, 0})
+	SMember(FName)                                     RoadAndExhaustVehicleSpeedName                              OFFSET(getStruct<T>, {0x21D0, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustSlideDirectionName                            OFFSET(getStruct<T>, {0x21D4, 4, 0, 0})
+	DMember(float)                                     RoadAndExhaustMinSpeedForDust                               OFFSET(get<float>, {0x21D8, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustDustRearName                                  OFFSET(getStruct<T>, {0x21DC, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustDustColorLerpName                             OFFSET(getStruct<T>, {0x21E0, 4, 0, 0})
+	DMember(float)                                     RoadAndExhaustDustColorLerp                                 OFFSET(get<float>, {0x21E4, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustDustAlphaMultiplierName                       OFFSET(getStruct<T>, {0x21E8, 4, 0, 0})
+	DMember(float)                                     RoadAndExhaustDustAlphaMultiplier                           OFFSET(get<float>, {0x21EC, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustPeelOutColorIndexName                         OFFSET(getStruct<T>, {0x21F0, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustPeelOutRearName                               OFFSET(getStruct<T>, {0x21F4, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustIsPeelOutOnRoadName                           OFFSET(getStruct<T>, {0x21F8, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustIsPeelOutOnRoadRewindName                     OFFSET(getStruct<T>, {0x21FC, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustIsInAirName                                   OFFSET(getStruct<T>, {0x2200, 4, 0, 0})
+	SMember(FGameplayTag)                              RoadAndExhaustCameraDirtGameplayCueTag                      OFFSET(getStruct<T>, {0x2204, 4, 0, 0})
+	SMember(FGameplayTag)                              RoadAndExhaustCameraWaterGameplayCueTag                     OFFSET(getStruct<T>, {0x2208, 4, 0, 0})
+	CMember(TArray<TEnumAsByte<EPhysicalSurface>>)     RoadAndExhaustSurfaceTypeArrayForFX                         OFFSET(get<T>, {0x2210, 16, 0, 0})
+	CMember(class ULegacyCameraShake*)                 DriverCameraShakeInstance                                   OFFSET(get<T>, {0x2220, 8, 0, 0})
+	CMember(class ULegacyCameraShake*)                 AcceleratingCameraShakeInstance                             OFFSET(get<T>, {0x2228, 8, 0, 0})
+	SMember(FName)                                     RoadAndExhaustHeadlightsName                                OFFSET(getStruct<T>, {0x2238, 4, 0, 0})
+	SMember(FName)                                     RoadAndExhaustBrakelightsName                               OFFSET(getStruct<T>, {0x223C, 4, 0, 0})
+	SMember(FScalableFloat)                            DoorBashMinSpeed                                            OFFSET(getStruct<T>, {0x2240, 40, 0, 0})
+	SMember(FScalableFloat)                            DoorBashMaxSpeed                                            OFFSET(getStruct<T>, {0x2268, 40, 0, 0})
+	SMember(FScalableFloat)                            DoorBashForwardDistanceMin                                  OFFSET(getStruct<T>, {0x2290, 40, 0, 0})
+	SMember(FScalableFloat)                            DoorBashForwardDistanceMax                                  OFFSET(getStruct<T>, {0x22B8, 40, 0, 0})
+	SMember(FGameplayTag)                              DoorBashGameplayCueTag                                      OFFSET(getStruct<T>, {0x22E0, 4, 0, 0})
+	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     DoorBashCollisionTypesForDoor                               OFFSET(get<T>, {0x22E8, 16, 0, 0})
+	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     DoorBashCollisionTypesForPawn                               OFFSET(get<T>, {0x22F8, 16, 0, 0})
+	SMember(FScalableFloat)                            DoorBashSphereRadiusForPawnLaunch                           OFFSET(getStruct<T>, {0x2308, 40, 0, 0})
+	SMember(FScalableFloat)                            DoorBashScalarForPawnLaunch                                 OFFSET(getStruct<T>, {0x2330, 40, 0, 0})
+	SMember(FGameplayTag)                              DoorBashPawnLaunchGameplayCueTag                            OFFSET(getStruct<T>, {0x2358, 4, 0, 0})
+	SMember(FGameplayTagQuery)                         InventoryModeTagQuery                                       OFFSET(getStruct<T>, {0x2360, 72, 0, 0})
+	SMember(FGameplayTagContainer)                     InputContextBlockedTags                                     OFFSET(getStruct<T>, {0x23A8, 32, 0, 0})
+	SMember(FGameplayTag)                              MobileHUDTag                                                OFFSET(getStruct<T>, {0x23E0, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ServerEjectAllPlayers
-	// void ServerEjectAllPlayers();                                                                                            // [0x95b2ed8] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerEjectAllPlayers();                                                                                            // [0x95c9bf4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnRep_IsBoostAttacking
-	// void OnRep_IsBoostAttacking();                                                                                           // [0xb3040e0] Final|Native|Protected 
+	// void OnRep_IsBoostAttacking();                                                                                           // [0xb41aeac] Final|Native|Protected 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnPlayerWeaponChanged
-	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                             // [0xb303f64] Final|Native|Public  
+	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                             // [0xb41adb8] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleWheelie__DelegateSignature
-	// void MotorcycleWheelie__DelegateSignature();                                                                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleWheelie__DelegateSignature();                                                                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleSuperSlidingChanged__DelegateSignature
-	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStoppie__DelegateSignature
-	// void MotorcycleStoppie__DelegateSignature();                                                                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStoppie__DelegateSignature();                                                                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStartAirTrick__DelegateSignature
-	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                                  // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                                  // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleJump__DelegateSignature
-	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                          // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                          // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleInventoryMode__DelegateSignature
-	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                                 // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                                 // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleChargingJump__DelegateSignature
-	// void MotorcycleChargingJump__DelegateSignature();                                                                        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleChargingJump__DelegateSignature();                                                                        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleAirTrick__DelegateSignature
-	// void MotorcycleAirTrick__DelegateSignature();                                                                            // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void MotorcycleAirTrick__DelegateSignature();                                                                            // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsSuperSliding
-	// bool IsSuperSliding();                                                                                                   // [0xb303f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSuperSliding();                                                                                                   // [0xb41ad94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsPowerSliding
-	// bool IsPowerSliding();                                                                                                   // [0xb303f1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPowerSliding();                                                                                                   // [0xb41ad70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsInInventoryMode
-	// bool IsInInventoryMode();                                                                                                // [0xb303ef8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInInventoryMode();                                                                                                // [0xb41ad4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetSurfaceTypeVehicleOn
-	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                                 // [0xb303bec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                                 // [0xb41ab0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetLeanAngleDegrees
-	// float GetLeanAngleDegrees();                                                                                             // [0xb303bc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLeanAngleDegrees();                                                                                             // [0xb41aae4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetAverageSpringNormal
-	// FVector GetAverageSpringNormal();                                                                                        // [0xb303b9c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetAverageSpringNormal();                                                                                        // [0xb41aabc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ChangeBoostAttackState
-	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                                  // [0xb3039d8] Final|Native|Public|BlueprintCallable 
+	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                                  // [0xb41a980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartWheelie
-	// void BP_OnStartWheelie();                                                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartWheelie();                                                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartStoppie
-	// void BP_OnStartStoppie();                                                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartStoppie();                                                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartChargingJump
-	// void BP_OnStartChargingJump();                                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartChargingJump();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartAirTrick
-	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseWheelie
-	// void BP_OnReleaseWheelie();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseWheelie();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseStoppie
-	// void BP_OnReleaseStoppie();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseStoppie();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandWheelie
-	// void BP_OnLandWheelie();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnLandWheelie();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandStoppie
-	// void BP_OnLandStoppie();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnLandStoppie();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnJump
-	// void BP_OnJump(float JumpChargeFactor);                                                                                  // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnJump(float JumpChargeFactor);                                                                                  // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFinishAirTrick
-	// void BP_OnFinishAirTrick();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnFinishAirTrick();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFailWheelie
-	// void BP_OnFailWheelie();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnFailWheelie();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnChargingJump
-	// void BP_OnChargingJump(float JumpChargeFactor);                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnChargingJump(float JumpChargeFactor);                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnCancelChargingJump
-	// void BP_OnCancelChargingJump();                                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnCancelChargingJump();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/MotorcycleRuntime.FortMotorcycleVehicleConfigs
-/// Size: 0x02D0 (0x000950 - 0x000C20)
+/// Size: 0x02D0 (0x000948 - 0x000C18)
 class UFortMotorcycleVehicleConfigs : public UFortPhysicsVehicleConfigs
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3104;
+	static inline constexpr uint64_t __MDKClassSize = 3096;
 
 public:
-	CMember(TArray<FMotorcycleWheel>)                  Wheels                                                      OFFSET(get<T>, {0x950, 16, 0, 0})
-	DMember(float)                                     SpringInterpDamp                                            OFFSET(get<float>, {0x960, 4, 0, 0})
-	DMember(float)                                     WheelieSpringInterpDamp                                     OFFSET(get<float>, {0x964, 4, 0, 0})
-	DMember(float)                                     WallPushStiff                                               OFFSET(get<float>, {0x968, 4, 0, 0})
-	DMember(float)                                     WallPushDamp                                                OFFSET(get<float>, {0x96C, 4, 0, 0})
-	SMember(FVector)                                   WallPushXTraceOffset                                        OFFSET(getStruct<T>, {0x970, 24, 0, 0})
-	DMember(float)                                     WallPushForwardTraceLengthScale                             OFFSET(get<float>, {0x988, 4, 0, 0})
-	DMember(float)                                     WallPushBackTraceLengthScale                                OFFSET(get<float>, {0x98C, 4, 0, 0})
-	DMember(float)                                     WallPushRightTraceLength                                    OFFSET(get<float>, {0x990, 4, 0, 0})
-	SMember(FVector)                                   WallPushRightTraceOffset                                    OFFSET(getStruct<T>, {0x998, 24, 0, 0})
-	SMember(FVector)                                   WallPushRearRightTraceOffset                                OFFSET(getStruct<T>, {0x9B0, 24, 0, 0})
-	DMember(float)                                     WallPushAngle                                               OFFSET(get<float>, {0x9C8, 4, 0, 0})
-	DMember(bool)                                      bUseWallPushTracesForWalls                                  OFFSET(get<bool>, {0x9CC, 1, 0, 0})
-	DMember(bool)                                      bUseWallPushRearSideTracesForWalls                          OFFSET(get<bool>, {0x9CD, 1, 0, 0})
-	DMember(float)                                     MaxJumpChargeTime                                           OFFSET(get<float>, {0x9D0, 4, 0, 0})
-	DMember(float)                                     MinChargeJumpForce                                          OFFSET(get<float>, {0x9D4, 4, 0, 0})
-	DMember(float)                                     MaxChargeJumpForce                                          OFFSET(get<float>, {0x9D8, 4, 0, 0})
-	DMember(float)                                     MinJumpForwardAngle                                         OFFSET(get<float>, {0x9DC, 4, 0, 0})
-	DMember(float)                                     MaxJumpForwardAngle                                         OFFSET(get<float>, {0x9E0, 4, 0, 0})
-	SMember(FVector)                                   JumpForceMinCOMOffset                                       OFFSET(getStruct<T>, {0x9E8, 24, 0, 0})
-	SMember(FVector)                                   JumpForceMaxCOMOffset                                       OFFSET(getStruct<T>, {0xA00, 24, 0, 0})
-	DMember(float)                                     JumpChargeGraceTimeSeconds                                  OFFSET(get<float>, {0xA18, 4, 0, 0})
-	DMember(float)                                     JumpGraceTimeSeconds                                        OFFSET(get<float>, {0xA1C, 4, 0, 0})
-	DMember(float)                                     LeanAngleScale                                              OFFSET(get<float>, {0xA20, 4, 0, 0})
-	DMember(float)                                     LeanStiff                                                   OFFSET(get<float>, {0xA24, 4, 0, 0})
-	DMember(float)                                     LeanDamp                                                    OFFSET(get<float>, {0xA28, 4, 0, 0})
-	DMember(float)                                     LeanStrength                                                OFFSET(get<float>, {0xA2C, 4, 0, 0})
-	DMember(float)                                     SlideCatchupForceTime                                       OFFSET(get<float>, {0xA30, 4, 0, 0})
-	DMember(float)                                     SlideCatchupSpeed                                           OFFSET(get<float>, {0xA34, 4, 0, 0})
-	DMember(float)                                     SlideCatchupPushForce                                       OFFSET(get<float>, {0xA38, 4, 0, 0})
-	DMember(float)                                     AutoAirPitchAngle                                           OFFSET(get<float>, {0xA3C, 4, 0, 0})
-	DMember(float)                                     MinSteeringAngleForModifiedFriction                         OFFSET(get<float>, {0xA40, 4, 0, 0})
-	DMember(float)                                     MinSpeedForModifiedFriction                                 OFFSET(get<float>, {0xA44, 4, 0, 0})
-	DMember(float)                                     MinSteeringAngleToConsiderTractionLost                      OFFSET(get<float>, {0xA48, 4, 0, 0})
-	DMember(float)                                     FrictionRatioToConsiderTractionLost                         OFFSET(get<float>, {0xA4C, 4, 0, 0})
-	DMember(float)                                     WheeliePitchStiffMin                                        OFFSET(get<float>, {0xA50, 4, 0, 0})
-	DMember(float)                                     WheeliePitchStiffMax                                        OFFSET(get<float>, {0xA54, 4, 0, 0})
-	DMember(float)                                     WheeliePitchDampMin                                         OFFSET(get<float>, {0xA58, 4, 0, 0})
-	DMember(float)                                     WheeliePitchDampMax                                         OFFSET(get<float>, {0xA5C, 4, 0, 0})
-	DMember(float)                                     WheeliePitchAngleMin                                        OFFSET(get<float>, {0xA60, 4, 0, 0})
-	DMember(float)                                     WheeliePitchAngleMax                                        OFFSET(get<float>, {0xA64, 4, 0, 0})
-	DMember(float)                                     StoppiePitchAngle                                           OFFSET(get<float>, {0xA68, 4, 0, 0})
-	DMember(float)                                     StoppiePitchStiff                                           OFFSET(get<float>, {0xA6C, 4, 0, 0})
-	DMember(float)                                     StoppiePitchDamp                                            OFFSET(get<float>, {0xA70, 4, 0, 0})
-	DMember(float)                                     WheelieRampSeconds                                          OFFSET(get<float>, {0xA74, 4, 0, 0})
-	DMember(float)                                     WheelieFailPitchAngle                                       OFFSET(get<float>, {0xA78, 4, 0, 0})
-	DMember(float)                                     WheelieRecoveryRate                                         OFFSET(get<float>, {0xA7C, 4, 0, 0})
-	DMember(float)                                     WheelieFailRecoveryRate                                     OFFSET(get<float>, {0xA80, 4, 0, 0})
-	DMember(float)                                     WheelieMinStartSpeed                                        OFFSET(get<float>, {0xA84, 4, 0, 0})
-	DMember(float)                                     StoppieMinStopSpeed                                         OFFSET(get<float>, {0xA88, 4, 0, 0})
-	DMember(float)                                     WheelieSteerFactor                                          OFFSET(get<float>, {0xA8C, 4, 0, 0})
-	DMember(float)                                     StoppieSteerFactor                                          OFFSET(get<float>, {0xA90, 4, 0, 0})
-	DMember(float)                                     WheelieSteerAlphaThreshold                                  OFFSET(get<float>, {0xA94, 4, 0, 0})
-	DMember(float)                                     WheelieStoppieMaxLeanAllowedToInitiate                      OFFSET(get<float>, {0xA98, 4, 0, 0})
-	DMember(float)                                     WheelieGroundBufferTime                                     OFFSET(get<float>, {0xA9C, 4, 0, 0})
-	DMember(float)                                     StoppieGroundBufferTime                                     OFFSET(get<float>, {0xAA0, 4, 0, 0})
-	DMember(float)                                     WheelieSpringLengthExponent                                 OFFSET(get<float>, {0xAA4, 4, 0, 0})
-	DMember(float)                                     WheelieWheelOffsetLerpMultiplier                            OFFSET(get<float>, {0xAA8, 4, 0, 0})
-	DMember(float)                                     WheelieBrakeFactor                                          OFFSET(get<float>, {0xAAC, 4, 0, 0})
-	DMember(float)                                     StoppieTurnInPlaceSpeed                                     OFFSET(get<float>, {0xAB0, 4, 0, 0})
-	DMember(float)                                     StoppieTurnInPlaceSpeedIce                                  OFFSET(get<float>, {0xAB4, 4, 0, 0})
-	DMember(float)                                     StoppieTurnInPlaceSpeedMud                                  OFFSET(get<float>, {0xAB8, 4, 0, 0})
-	DMember(float)                                     MinSpeedKmhForMaxStoppie                                    OFFSET(get<float>, {0xABC, 4, 0, 0})
-	DMember(float)                                     StoppieTurnAngleExponent                                    OFFSET(get<float>, {0xAC0, 4, 0, 0})
-	DMember(float)                                     StoppieMaxTurnAngle                                         OFFSET(get<float>, {0xAC4, 4, 0, 0})
-	DMember(float)                                     WheelieTireTractionMultiplier_Min                           OFFSET(get<float>, {0xAC8, 4, 0, 0})
-	DMember(float)                                     WheelieCameraMinStraightFactor                              OFFSET(get<float>, {0xACC, 4, 0, 0})
-	DMember(float)                                     MaxLeanAccel                                                OFFSET(get<float>, {0xAD0, 4, 0, 0})
-	DMember(float)                                     CruiseControlForwardAlpha                                   OFFSET(get<float>, {0xAD4, 4, 0, 0})
-	DMember(float)                                     InventoryModeSpeedKmh                                       OFFSET(get<float>, {0xAD8, 4, 0, 0})
-	DMember(float)                                     CruiseControlDisengageSpeedKmh                              OFFSET(get<float>, {0xADC, 4, 0, 0})
-	DMember(bool)                                      bPowerSlideIsSuperSlide                                     OFFSET(get<bool>, {0xAE0, 1, 0, 0})
-	DMember(float)                                     PowerSlideFrontFrictionMultiplier                           OFFSET(get<float>, {0xAE4, 4, 0, 0})
-	DMember(float)                                     PowerSlideRearFrictionMultiplier                            OFFSET(get<float>, {0xAE8, 4, 0, 0})
-	DMember(float)                                     PowerSlideRoadFrontFrictionMultiplier                       OFFSET(get<float>, {0xAEC, 4, 0, 0})
-	DMember(float)                                     PowerSlideRoadRearFrictionMultiplier                        OFFSET(get<float>, {0xAF0, 4, 0, 0})
-	DMember(float)                                     PowerSlideDirtFrontFrictionMultiplier                       OFFSET(get<float>, {0xAF4, 4, 0, 0})
-	DMember(float)                                     PowerSlideDirtRearFrictionMultiplier                        OFFSET(get<float>, {0xAF8, 4, 0, 0})
-	DMember(float)                                     PowerSlideGrassFrontFrictionMultiplier                      OFFSET(get<float>, {0xAFC, 4, 0, 0})
-	DMember(float)                                     PowerSlideGrassRearFrictionMultiplier                       OFFSET(get<float>, {0xB00, 4, 0, 0})
-	DMember(float)                                     PowerSlideSnowFrontFrictionMultiplier                       OFFSET(get<float>, {0xB04, 4, 0, 0})
-	DMember(float)                                     PowerSlideSnowRearFrictionMultiplier                        OFFSET(get<float>, {0xB08, 4, 0, 0})
-	DMember(float)                                     PowerSlideIceFrontFrictionMultiplier                        OFFSET(get<float>, {0xB0C, 4, 0, 0})
-	DMember(float)                                     PowerSlideIceRearFrictionMultiplier                         OFFSET(get<float>, {0xB10, 4, 0, 0})
-	DMember(float)                                     PowerSlideMudFrontFrictionMultiplier                        OFFSET(get<float>, {0xB14, 4, 0, 0})
-	DMember(float)                                     PowerSlideMudRearFrictionMultiplier                         OFFSET(get<float>, {0xB18, 4, 0, 0})
-	DMember(float)                                     PowerSlideFactor                                            OFFSET(get<float>, {0xB1C, 4, 0, 0})
-	DMember(float)                                     PowerSlideDampFactor                                        OFFSET(get<float>, {0xB20, 4, 0, 0})
-	DMember(float)                                     FrictionDampFactor                                          OFFSET(get<float>, {0xB24, 4, 0, 0})
-	DMember(float)                                     PowerSlideLeanAngleScale                                    OFFSET(get<float>, {0xB28, 4, 0, 0})
-	DMember(float)                                     SuperSlideLeanAngle                                         OFFSET(get<float>, {0xB2C, 4, 0, 0})
-	DMember(float)                                     SuperSlideMinStartYawSpeedDegrees                           OFFSET(get<float>, {0xB30, 4, 0, 0})
-	DMember(float)                                     SuperSlideMinStartSpeedKmh                                  OFFSET(get<float>, {0xB34, 4, 0, 0})
-	DMember(float)                                     SuperSlideMaxEndSpeedKmh                                    OFFSET(get<float>, {0xB38, 4, 0, 0})
-	DMember(float)                                     PowerslideInputWindow                                       OFFSET(get<float>, {0xB3C, 4, 0, 0})
-	DMember(float)                                     ShootingMinSpeedSteeringAngle                               OFFSET(get<float>, {0xB40, 4, 0, 0})
-	DMember(float)                                     ShootingMaxSpeedSteeringAngle                               OFFSET(get<float>, {0xB44, 4, 0, 0})
-	DMember(float)                                     InventoryModeCameraYawConstraint                            OFFSET(get<float>, {0xB48, 4, 0, 0})
-	DMember(float)                                     BoostTopSpeedMultiplier                                     OFFSET(get<float>, {0xB4C, 4, 0, 0})
-	DMember(float)                                     BoostPushForceMultiplier                                    OFFSET(get<float>, {0xB50, 4, 0, 0})
-	DMember(float)                                     BoostMinPushForce                                           OFFSET(get<float>, {0xB54, 4, 0, 0})
-	DMember(float)                                     BoostSteeringMultiplier                                     OFFSET(get<float>, {0xB58, 4, 0, 0})
-	DMember(bool)                                      bPlayHolsterAnimsOnClient                                   OFFSET(get<bool>, {0xB5C, 1, 0, 0})
-	DMember(float)                                     FrontWheelSteeringFactor                                    OFFSET(get<float>, {0xB60, 4, 0, 0})
-	DMember(float)                                     FrontWheelRotationAcceleration                              OFFSET(get<float>, {0xB64, 4, 0, 0})
-	DMember(float)                                     PassengerInventoryCooldown                                  OFFSET(get<float>, {0xB68, 4, 0, 0})
-	DMember(float)                                     DriverInventoryCooldown                                     OFFSET(get<float>, {0xB6C, 4, 0, 0})
-	CMember(TSet<FName>)                               BoostAttackShapes                                           OFFSET(get<T>, {0xB70, 80, 0, 0})
-	DMember(float)                                     CameraAssistStrengthMax                                     OFFSET(get<float>, {0xBC0, 4, 0, 0})
-	DMember(float)                                     CameraAssistStrengthMin                                     OFFSET(get<float>, {0xBC4, 4, 0, 0})
-	DMember(float)                                     CameraAssistStrengthRecovery                                OFFSET(get<float>, {0xBC8, 4, 0, 0})
-	DMember(float)                                     CameraAssistInterpSpeed                                     OFFSET(get<float>, {0xBCC, 4, 0, 0})
-	DMember(float)                                     AirTrickIncrementInterval                                   OFFSET(get<float>, {0xBD0, 4, 0, 0})
-	DMember(float)                                     AirTrickFeedStartTime                                       OFFSET(get<float>, {0xBD4, 4, 0, 0})
-	DMember(float)                                     AirTrickPitchMultiplier                                     OFFSET(get<float>, {0xBD8, 4, 0, 0})
-	DMember(float)                                     AirTrickYawMultiplier                                       OFFSET(get<float>, {0xBDC, 4, 0, 0})
-	DMember(bool)                                      bAllowAirTrickNeutral                                       OFFSET(get<bool>, {0xBE0, 1, 0, 0})
-	DMember(bool)                                      bAllowAirTrickRight                                         OFFSET(get<bool>, {0xBE1, 1, 0, 0})
-	DMember(bool)                                      bAllowAirTrickLeft                                          OFFSET(get<bool>, {0xBE2, 1, 0, 0})
-	DMember(float)                                     PoppedTireTractionScalar_Front                              OFFSET(get<float>, {0xBE4, 4, 0, 0})
-	DMember(float)                                     PoppedTireTractionScalar_Rear                               OFFSET(get<float>, {0xBE8, 4, 0, 0})
-	DMember(float)                                     PoppedTireTractionScalar_Both                               OFFSET(get<float>, {0xBEC, 4, 0, 0})
-	SMember(FScalableFloat)                            TopSpeedKmh                                                 OFFSET(getStruct<T>, {0xBF0, 40, 0, 0})
+	CMember(TArray<FMotorcycleWheel>)                  Wheels                                                      OFFSET(get<T>, {0x948, 16, 0, 0})
+	DMember(float)                                     SpringInterpDamp                                            OFFSET(get<float>, {0x958, 4, 0, 0})
+	DMember(float)                                     WheelieSpringInterpDamp                                     OFFSET(get<float>, {0x95C, 4, 0, 0})
+	DMember(float)                                     WallPushStiff                                               OFFSET(get<float>, {0x960, 4, 0, 0})
+	DMember(float)                                     WallPushDamp                                                OFFSET(get<float>, {0x964, 4, 0, 0})
+	SMember(FVector)                                   WallPushXTraceOffset                                        OFFSET(getStruct<T>, {0x968, 24, 0, 0})
+	DMember(float)                                     WallPushForwardTraceLengthScale                             OFFSET(get<float>, {0x980, 4, 0, 0})
+	DMember(float)                                     WallPushBackTraceLengthScale                                OFFSET(get<float>, {0x984, 4, 0, 0})
+	DMember(float)                                     WallPushRightTraceLength                                    OFFSET(get<float>, {0x988, 4, 0, 0})
+	SMember(FVector)                                   WallPushRightTraceOffset                                    OFFSET(getStruct<T>, {0x990, 24, 0, 0})
+	SMember(FVector)                                   WallPushRearRightTraceOffset                                OFFSET(getStruct<T>, {0x9A8, 24, 0, 0})
+	DMember(float)                                     WallPushAngle                                               OFFSET(get<float>, {0x9C0, 4, 0, 0})
+	DMember(bool)                                      bUseWallPushTracesForWalls                                  OFFSET(get<bool>, {0x9C4, 1, 0, 0})
+	DMember(bool)                                      bUseWallPushRearSideTracesForWalls                          OFFSET(get<bool>, {0x9C5, 1, 0, 0})
+	DMember(float)                                     MaxJumpChargeTime                                           OFFSET(get<float>, {0x9C8, 4, 0, 0})
+	DMember(float)                                     MinChargeJumpForce                                          OFFSET(get<float>, {0x9CC, 4, 0, 0})
+	DMember(float)                                     MaxChargeJumpForce                                          OFFSET(get<float>, {0x9D0, 4, 0, 0})
+	DMember(float)                                     MinJumpForwardAngle                                         OFFSET(get<float>, {0x9D4, 4, 0, 0})
+	DMember(float)                                     MaxJumpForwardAngle                                         OFFSET(get<float>, {0x9D8, 4, 0, 0})
+	SMember(FVector)                                   JumpForceMinCOMOffset                                       OFFSET(getStruct<T>, {0x9E0, 24, 0, 0})
+	SMember(FVector)                                   JumpForceMaxCOMOffset                                       OFFSET(getStruct<T>, {0x9F8, 24, 0, 0})
+	DMember(float)                                     JumpChargeGraceTimeSeconds                                  OFFSET(get<float>, {0xA10, 4, 0, 0})
+	DMember(float)                                     JumpGraceTimeSeconds                                        OFFSET(get<float>, {0xA14, 4, 0, 0})
+	DMember(float)                                     LeanAngleScale                                              OFFSET(get<float>, {0xA18, 4, 0, 0})
+	DMember(float)                                     LeanStiff                                                   OFFSET(get<float>, {0xA1C, 4, 0, 0})
+	DMember(float)                                     LeanDamp                                                    OFFSET(get<float>, {0xA20, 4, 0, 0})
+	DMember(float)                                     LeanStrength                                                OFFSET(get<float>, {0xA24, 4, 0, 0})
+	DMember(float)                                     SlideCatchupForceTime                                       OFFSET(get<float>, {0xA28, 4, 0, 0})
+	DMember(float)                                     SlideCatchupSpeed                                           OFFSET(get<float>, {0xA2C, 4, 0, 0})
+	DMember(float)                                     SlideCatchupPushForce                                       OFFSET(get<float>, {0xA30, 4, 0, 0})
+	DMember(float)                                     AutoAirPitchAngle                                           OFFSET(get<float>, {0xA34, 4, 0, 0})
+	DMember(float)                                     MinSteeringAngleForModifiedFriction                         OFFSET(get<float>, {0xA38, 4, 0, 0})
+	DMember(float)                                     MinSpeedForModifiedFriction                                 OFFSET(get<float>, {0xA3C, 4, 0, 0})
+	DMember(float)                                     MinSteeringAngleToConsiderTractionLost                      OFFSET(get<float>, {0xA40, 4, 0, 0})
+	DMember(float)                                     FrictionRatioToConsiderTractionLost                         OFFSET(get<float>, {0xA44, 4, 0, 0})
+	DMember(float)                                     WheeliePitchStiffMin                                        OFFSET(get<float>, {0xA48, 4, 0, 0})
+	DMember(float)                                     WheeliePitchStiffMax                                        OFFSET(get<float>, {0xA4C, 4, 0, 0})
+	DMember(float)                                     WheeliePitchDampMin                                         OFFSET(get<float>, {0xA50, 4, 0, 0})
+	DMember(float)                                     WheeliePitchDampMax                                         OFFSET(get<float>, {0xA54, 4, 0, 0})
+	DMember(float)                                     WheeliePitchAngleMin                                        OFFSET(get<float>, {0xA58, 4, 0, 0})
+	DMember(float)                                     WheeliePitchAngleMax                                        OFFSET(get<float>, {0xA5C, 4, 0, 0})
+	DMember(float)                                     StoppiePitchAngle                                           OFFSET(get<float>, {0xA60, 4, 0, 0})
+	DMember(float)                                     StoppiePitchStiff                                           OFFSET(get<float>, {0xA64, 4, 0, 0})
+	DMember(float)                                     StoppiePitchDamp                                            OFFSET(get<float>, {0xA68, 4, 0, 0})
+	DMember(float)                                     WheelieRampSeconds                                          OFFSET(get<float>, {0xA6C, 4, 0, 0})
+	DMember(float)                                     WheelieFailPitchAngle                                       OFFSET(get<float>, {0xA70, 4, 0, 0})
+	DMember(float)                                     WheelieRecoveryRate                                         OFFSET(get<float>, {0xA74, 4, 0, 0})
+	DMember(float)                                     WheelieFailRecoveryRate                                     OFFSET(get<float>, {0xA78, 4, 0, 0})
+	DMember(float)                                     WheelieMinStartSpeed                                        OFFSET(get<float>, {0xA7C, 4, 0, 0})
+	DMember(float)                                     StoppieMinStopSpeed                                         OFFSET(get<float>, {0xA80, 4, 0, 0})
+	DMember(float)                                     WheelieSteerFactor                                          OFFSET(get<float>, {0xA84, 4, 0, 0})
+	DMember(float)                                     StoppieSteerFactor                                          OFFSET(get<float>, {0xA88, 4, 0, 0})
+	DMember(float)                                     WheelieSteerAlphaThreshold                                  OFFSET(get<float>, {0xA8C, 4, 0, 0})
+	DMember(float)                                     WheelieStoppieMaxLeanAllowedToInitiate                      OFFSET(get<float>, {0xA90, 4, 0, 0})
+	DMember(float)                                     WheelieGroundBufferTime                                     OFFSET(get<float>, {0xA94, 4, 0, 0})
+	DMember(float)                                     StoppieGroundBufferTime                                     OFFSET(get<float>, {0xA98, 4, 0, 0})
+	DMember(float)                                     WheelieSpringLengthExponent                                 OFFSET(get<float>, {0xA9C, 4, 0, 0})
+	DMember(float)                                     WheelieWheelOffsetLerpMultiplier                            OFFSET(get<float>, {0xAA0, 4, 0, 0})
+	DMember(float)                                     WheelieBrakeFactor                                          OFFSET(get<float>, {0xAA4, 4, 0, 0})
+	DMember(float)                                     StoppieTurnInPlaceSpeed                                     OFFSET(get<float>, {0xAA8, 4, 0, 0})
+	DMember(float)                                     StoppieTurnInPlaceSpeedIce                                  OFFSET(get<float>, {0xAAC, 4, 0, 0})
+	DMember(float)                                     StoppieTurnInPlaceSpeedMud                                  OFFSET(get<float>, {0xAB0, 4, 0, 0})
+	DMember(float)                                     MinSpeedKmhForMaxStoppie                                    OFFSET(get<float>, {0xAB4, 4, 0, 0})
+	DMember(float)                                     StoppieTurnAngleExponent                                    OFFSET(get<float>, {0xAB8, 4, 0, 0})
+	DMember(float)                                     StoppieMaxTurnAngle                                         OFFSET(get<float>, {0xABC, 4, 0, 0})
+	DMember(float)                                     WheelieTireTractionMultiplier_Min                           OFFSET(get<float>, {0xAC0, 4, 0, 0})
+	DMember(float)                                     WheelieCameraMinStraightFactor                              OFFSET(get<float>, {0xAC4, 4, 0, 0})
+	DMember(float)                                     MaxLeanAccel                                                OFFSET(get<float>, {0xAC8, 4, 0, 0})
+	DMember(float)                                     CruiseControlForwardAlpha                                   OFFSET(get<float>, {0xACC, 4, 0, 0})
+	DMember(float)                                     InventoryModeSpeedKmh                                       OFFSET(get<float>, {0xAD0, 4, 0, 0})
+	DMember(float)                                     CruiseControlDisengageSpeedKmh                              OFFSET(get<float>, {0xAD4, 4, 0, 0})
+	DMember(bool)                                      bPowerSlideIsSuperSlide                                     OFFSET(get<bool>, {0xAD8, 1, 0, 0})
+	DMember(float)                                     PowerSlideFrontFrictionMultiplier                           OFFSET(get<float>, {0xADC, 4, 0, 0})
+	DMember(float)                                     PowerSlideRearFrictionMultiplier                            OFFSET(get<float>, {0xAE0, 4, 0, 0})
+	DMember(float)                                     PowerSlideRoadFrontFrictionMultiplier                       OFFSET(get<float>, {0xAE4, 4, 0, 0})
+	DMember(float)                                     PowerSlideRoadRearFrictionMultiplier                        OFFSET(get<float>, {0xAE8, 4, 0, 0})
+	DMember(float)                                     PowerSlideDirtFrontFrictionMultiplier                       OFFSET(get<float>, {0xAEC, 4, 0, 0})
+	DMember(float)                                     PowerSlideDirtRearFrictionMultiplier                        OFFSET(get<float>, {0xAF0, 4, 0, 0})
+	DMember(float)                                     PowerSlideGrassFrontFrictionMultiplier                      OFFSET(get<float>, {0xAF4, 4, 0, 0})
+	DMember(float)                                     PowerSlideGrassRearFrictionMultiplier                       OFFSET(get<float>, {0xAF8, 4, 0, 0})
+	DMember(float)                                     PowerSlideSnowFrontFrictionMultiplier                       OFFSET(get<float>, {0xAFC, 4, 0, 0})
+	DMember(float)                                     PowerSlideSnowRearFrictionMultiplier                        OFFSET(get<float>, {0xB00, 4, 0, 0})
+	DMember(float)                                     PowerSlideIceFrontFrictionMultiplier                        OFFSET(get<float>, {0xB04, 4, 0, 0})
+	DMember(float)                                     PowerSlideIceRearFrictionMultiplier                         OFFSET(get<float>, {0xB08, 4, 0, 0})
+	DMember(float)                                     PowerSlideMudFrontFrictionMultiplier                        OFFSET(get<float>, {0xB0C, 4, 0, 0})
+	DMember(float)                                     PowerSlideMudRearFrictionMultiplier                         OFFSET(get<float>, {0xB10, 4, 0, 0})
+	DMember(float)                                     PowerSlideFactor                                            OFFSET(get<float>, {0xB14, 4, 0, 0})
+	DMember(float)                                     PowerSlideDampFactor                                        OFFSET(get<float>, {0xB18, 4, 0, 0})
+	DMember(float)                                     FrictionDampFactor                                          OFFSET(get<float>, {0xB1C, 4, 0, 0})
+	DMember(float)                                     PowerSlideLeanAngleScale                                    OFFSET(get<float>, {0xB20, 4, 0, 0})
+	DMember(float)                                     SuperSlideLeanAngle                                         OFFSET(get<float>, {0xB24, 4, 0, 0})
+	DMember(float)                                     SuperSlideMinStartYawSpeedDegrees                           OFFSET(get<float>, {0xB28, 4, 0, 0})
+	DMember(float)                                     SuperSlideMinStartSpeedKmh                                  OFFSET(get<float>, {0xB2C, 4, 0, 0})
+	DMember(float)                                     SuperSlideMaxEndSpeedKmh                                    OFFSET(get<float>, {0xB30, 4, 0, 0})
+	DMember(float)                                     PowerslideInputWindow                                       OFFSET(get<float>, {0xB34, 4, 0, 0})
+	DMember(float)                                     ShootingMinSpeedSteeringAngle                               OFFSET(get<float>, {0xB38, 4, 0, 0})
+	DMember(float)                                     ShootingMaxSpeedSteeringAngle                               OFFSET(get<float>, {0xB3C, 4, 0, 0})
+	DMember(float)                                     InventoryModeCameraYawConstraint                            OFFSET(get<float>, {0xB40, 4, 0, 0})
+	DMember(float)                                     BoostTopSpeedMultiplier                                     OFFSET(get<float>, {0xB44, 4, 0, 0})
+	DMember(float)                                     BoostPushForceMultiplier                                    OFFSET(get<float>, {0xB48, 4, 0, 0})
+	DMember(float)                                     BoostMinPushForce                                           OFFSET(get<float>, {0xB4C, 4, 0, 0})
+	DMember(float)                                     BoostSteeringMultiplier                                     OFFSET(get<float>, {0xB50, 4, 0, 0})
+	DMember(bool)                                      bPlayHolsterAnimsOnClient                                   OFFSET(get<bool>, {0xB54, 1, 0, 0})
+	DMember(float)                                     FrontWheelSteeringFactor                                    OFFSET(get<float>, {0xB58, 4, 0, 0})
+	DMember(float)                                     FrontWheelRotationAcceleration                              OFFSET(get<float>, {0xB5C, 4, 0, 0})
+	DMember(float)                                     PassengerInventoryCooldown                                  OFFSET(get<float>, {0xB60, 4, 0, 0})
+	DMember(float)                                     DriverInventoryCooldown                                     OFFSET(get<float>, {0xB64, 4, 0, 0})
+	CMember(TSet<FName>)                               BoostAttackShapes                                           OFFSET(get<T>, {0xB68, 80, 0, 0})
+	DMember(float)                                     CameraAssistStrengthMax                                     OFFSET(get<float>, {0xBB8, 4, 0, 0})
+	DMember(float)                                     CameraAssistStrengthMin                                     OFFSET(get<float>, {0xBBC, 4, 0, 0})
+	DMember(float)                                     CameraAssistStrengthRecovery                                OFFSET(get<float>, {0xBC0, 4, 0, 0})
+	DMember(float)                                     CameraAssistInterpSpeed                                     OFFSET(get<float>, {0xBC4, 4, 0, 0})
+	DMember(float)                                     AirTrickIncrementInterval                                   OFFSET(get<float>, {0xBC8, 4, 0, 0})
+	DMember(float)                                     AirTrickFeedStartTime                                       OFFSET(get<float>, {0xBCC, 4, 0, 0})
+	DMember(float)                                     AirTrickPitchMultiplier                                     OFFSET(get<float>, {0xBD0, 4, 0, 0})
+	DMember(float)                                     AirTrickYawMultiplier                                       OFFSET(get<float>, {0xBD4, 4, 0, 0})
+	DMember(bool)                                      bAllowAirTrickNeutral                                       OFFSET(get<bool>, {0xBD8, 1, 0, 0})
+	DMember(bool)                                      bAllowAirTrickRight                                         OFFSET(get<bool>, {0xBD9, 1, 0, 0})
+	DMember(bool)                                      bAllowAirTrickLeft                                          OFFSET(get<bool>, {0xBDA, 1, 0, 0})
+	DMember(float)                                     PoppedTireTractionScalar_Front                              OFFSET(get<float>, {0xBDC, 4, 0, 0})
+	DMember(float)                                     PoppedTireTractionScalar_Rear                               OFFSET(get<float>, {0xBE0, 4, 0, 0})
+	DMember(float)                                     PoppedTireTractionScalar_Both                               OFFSET(get<float>, {0xBE4, 4, 0, 0})
+	SMember(FScalableFloat)                            TopSpeedKmh                                                 OFFSET(getStruct<T>, {0xBE8, 40, 0, 0})
 };
 
 /// Struct /Script/MotorcycleRuntime.MotorcycleWheel

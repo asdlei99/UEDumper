@@ -17,12 +17,12 @@ public:
 
 	/// Functions
 	// Function /Script/AudioLinkEngine.AudioLinkBlueprintInterface.StopLink
-	// void StopLink();                                                                                                      // [0x2c70d64] Native|Public|BlueprintCallable 
+	// void StopLink();                                                                                                      // [0x2c62184] Native|Public|BlueprintCallable 
 	// Function /Script/AudioLinkEngine.AudioLinkBlueprintInterface.SetLinkSound
-	// void SetLinkSound(class USoundBase* NewSound);                                                                        // [0x602d2c8] Native|Public|BlueprintCallable 
+	// void SetLinkSound(class USoundBase* NewSound);                                                                        // [0x6094f28] Native|Public|BlueprintCallable 
 	// Function /Script/AudioLinkEngine.AudioLinkBlueprintInterface.PlayLink
-	// void PlayLink(float StartTime);                                                                                       // [0x602d204] Native|Public|BlueprintCallable 
+	// void PlayLink(float StartTime);                                                                                       // [0x6094ea4] Native|Public|BlueprintCallable 
 	// Function /Script/AudioLinkEngine.AudioLinkBlueprintInterface.IsLinkPlaying
-	// bool IsLinkPlaying();                                                                                                 // [0x2d861d8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLinkPlaying();                                                                                                 // [0x2efaf18] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

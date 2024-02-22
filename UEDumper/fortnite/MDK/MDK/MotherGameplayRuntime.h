@@ -38,19 +38,19 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.IsValidTarget
-	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure);  // [0xb729b00] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure);  // [0xb840f10] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetProjectile
-	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius);    // [0xb7294c4] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius);    // [0xb840914] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetActor
-	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                                // [0xb7292e8] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                                // [0xb840778] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.FortCabbageIglooVehicle
-/// Size: 0x0000 (0x002A50 - 0x002A50)
+/// Size: 0x0000 (0x002A70 - 0x002A70)
 class AFortCabbageIglooVehicle : public AFortOctopusVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 10832;
+	static inline constexpr uint64_t __MDKClassSize = 10864;
 
 public:
 };
@@ -105,15 +105,15 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropPreviewPosition
-	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb729f50] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb84126c] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropIndexEventState
-	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                              // [0xb729e08] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                              // [0xb841164] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropActivatedEventState
-	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);                 // [0xb729cc8] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);                 // [0xb841064] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropIndexEventState
-	// void ClearPropIndexEventState(class AActor* ContextActor);                                                               // [0xb72921c] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropIndexEventState(class AActor* ContextActor);                                                               // [0xb8406ec] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropActivatedEventState
-	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                           // [0xb729150] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                           // [0xb840660] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp
@@ -134,11 +134,11 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.UpdateAimEndPoint
-	// void UpdateAimEndPoint();                                                                                                // [0xb729cb4] Final|Native|Public|BlueprintCallable 
+	// void UpdateAimEndPoint();                                                                                                // [0xb841050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.OnEndPointUpdated
-	// void OnEndPointUpdated(FVector& FoundPoint);                                                                             // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnEndPointUpdated(FVector& FoundPoint);                                                                             // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.GetFoundEndPoint
-	// FVector GetFoundEndPoint();                                                                                              // [0xb729ad8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetFoundEndPoint();                                                                                              // [0xb840ee8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MotherGameplayRuntime.GravyGoblinActivatable_Event

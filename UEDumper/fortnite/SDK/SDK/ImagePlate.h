@@ -43,11 +43,11 @@ public:
 
 	/// Functions
 	// Function /Script/ImagePlate.ImagePlateComponent.SetImagePlate
-	// void SetImagePlate(FImagePlateParameters Plate);                                                                      // [0xc324a3c] Final|Native|Public|BlueprintCallable 
+	// void SetImagePlate(FImagePlateParameters Plate);                                                                      // [0xc2cca00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ImagePlate.ImagePlateComponent.OnRenderTextureChanged
-	// void OnRenderTextureChanged();                                                                                        // [0xc324a28] Final|Native|Public  
+	// void OnRenderTextureChanged();                                                                                        // [0xc2cc9ec] Final|Native|Public  
 	// Function /Script/ImagePlate.ImagePlateComponent.GetPlate
-	// FImagePlateParameters GetPlate();                                                                                     // [0xc3249b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FImagePlateParameters GetPlate();                                                                                     // [0xc2cc974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ImagePlate.ImagePlateSettings
@@ -56,7 +56,7 @@ class UImagePlateSettings : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,14041) /* FString */              __um(ProxyName);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14138) /* FString */              __um(ProxyName);                                            // 0x0028   (0x0010)  
 };
 
 /// Class /Script/ImagePlate.ImagePlateFileSequence
@@ -66,7 +66,7 @@ class UImagePlateFileSequence : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	FDirectoryPath                                     SequencePath;                                               // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,14042) /* FString */              __um(FileWildcard);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,14139) /* FString */              __um(FileWildcard);                                         // 0x0038   (0x0010)  
 	float                                              FrameRate;                                                  // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x004C   (0x0004)  MISSED
 };

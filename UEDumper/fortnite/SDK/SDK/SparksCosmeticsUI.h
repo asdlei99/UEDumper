@@ -13,7 +13,7 @@
 /// dependency: ModelViewViewModel
 
 /// Class /Script/SparksCosmeticsUI.SparksItemLockerCategoryConfig
-/// Size: 0x0000 (0x000128 - 0x000128)
+/// Size: 0x0000 (0x000130 - 0x000130)
 class USparksItemLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 public:

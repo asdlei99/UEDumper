@@ -84,10 +84,10 @@ public:
 	EGLTFMaterialBakeMode                              BakeMaterialInputs;                                         // 0x0035   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0036   (0x0002)  MISSED
 	FGLTFMaterialBakeSize                              DefaultMaterialBakeSize;                                    // 0x0038   (0x000C)  
-	SDK_UNDEFINED(1,13916) /* TEnumAsByte<TextureFilter> */ __um(DefaultMaterialBakeFilter);                       // 0x0044   (0x0001)  
-	SDK_UNDEFINED(1,13917) /* TEnumAsByte<TextureAddress> */ __um(DefaultMaterialBakeTiling);                      // 0x0045   (0x0001)  
+	SDK_UNDEFINED(1,14014) /* TEnumAsByte<TextureFilter> */ __um(DefaultMaterialBakeFilter);                       // 0x0044   (0x0001)  
+	SDK_UNDEFINED(1,14015) /* TEnumAsByte<TextureAddress> */ __um(DefaultMaterialBakeTiling);                      // 0x0045   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x0046   (0x0002)  MISSED
-	SDK_UNDEFINED(80,13918) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(DefaultInputBakeSettings); // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,14016) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(DefaultInputBakeSettings); // 0x0048   (0x0050)  
 	int32_t                                            DefaultLevelOfDetail;                                       // 0x0098   (0x0004)  
 	bool                                               bExportVertexColors;                                        // 0x009C   (0x0001)  
 	bool                                               bExportVertexSkinWeights;                                   // 0x009D   (0x0001)  
@@ -109,7 +109,7 @@ public:
 
 	/// Functions
 	// Function /Script/GLTFExporter.GLTFExportOptions.ResetToDefault
-	// void ResetToDefault();                                                                                                // [0xc785338] Final|Native|Public|BlueprintCallable 
+	// void ResetToDefault();                                                                                                // [0xc719698] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GLTFExporter.GLTFExporter
@@ -121,7 +121,7 @@ public:
 
 	/// Functions
 	// Function /Script/GLTFExporter.GLTFExporter.ExportToGLTF
-	// bool ExportToGLTF(class UObject* Object, FString FilePath, class UGLTFExportOptions* Options, TSet<AActor*>& SelectedActors, FGLTFExportMessages& OutMessages); // [0xc784a34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool ExportToGLTF(class UObject* Object, FString FilePath, class UGLTFExportOptions* Options, TSet<AActor*>& SelectedActors, FGLTFExportMessages& OutMessages); // [0xc718e5c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GLTFExporter.GLTFAnimSequenceExporter
@@ -183,15 +183,15 @@ public:
 	bool                                               bUseThinTranslucentShadingModel;                            // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002A   (0x0002)  MISSED
 	FGLTFMaterialBakeSize                              DefaultMaterialBakeSize;                                    // 0x002C   (0x000C)  
-	SDK_UNDEFINED(1,13919) /* TEnumAsByte<TextureFilter> */ __um(DefaultMaterialBakeFilter);                       // 0x0038   (0x0001)  
-	SDK_UNDEFINED(1,13920) /* TEnumAsByte<TextureAddress> */ __um(DefaultMaterialBakeTiling);                      // 0x0039   (0x0001)  
+	SDK_UNDEFINED(1,14017) /* TEnumAsByte<TextureFilter> */ __um(DefaultMaterialBakeFilter);                       // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,14018) /* TEnumAsByte<TextureAddress> */ __um(DefaultMaterialBakeTiling);                      // 0x0039   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x003A   (0x0006)  MISSED
-	SDK_UNDEFINED(80,13921) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(DefaultInputBakeSettings); // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,14019) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(DefaultInputBakeSettings); // 0x0040   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/GLTFExporter.GLTFProxyOptions.ResetToDefault
-	// void ResetToDefault();                                                                                                // [0xc78534c] Final|Native|Public|BlueprintCallable 
+	// void ResetToDefault();                                                                                                // [0xc7196ac] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/GLTFExporter.GLTFOverrideMaterialBakeSettings
@@ -202,9 +202,9 @@ struct FGLTFOverrideMaterialBakeSettings
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FGLTFMaterialBakeSize                              Size;                                                       // 0x0004   (0x000C)  
 	bool                                               bOverrideFilter;                                            // 0x0010   (0x0001)  
-	SDK_UNDEFINED(1,13922) /* TEnumAsByte<TextureFilter> */ __um(Filter);                                          // 0x0011   (0x0001)  
+	SDK_UNDEFINED(1,14020) /* TEnumAsByte<TextureFilter> */ __um(Filter);                                          // 0x0011   (0x0001)  
 	bool                                               bOverrideTiling;                                            // 0x0012   (0x0001)  
-	SDK_UNDEFINED(1,13923) /* TEnumAsByte<TextureAddress> */ __um(Tiling);                                         // 0x0013   (0x0001)  
+	SDK_UNDEFINED(1,14021) /* TEnumAsByte<TextureAddress> */ __um(Tiling);                                         // 0x0013   (0x0001)  
 };
 
 /// Class /Script/GLTFExporter.GLTFMaterialExportOptions
@@ -215,15 +215,15 @@ public:
 	class UMaterialInterface*                          proxy;                                                      // 0x0028   (0x0008)  
 	FGLTFOverrideMaterialBakeSettings                  Default;                                                    // 0x0030   (0x0014)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0044   (0x0004)  MISSED
-	SDK_UNDEFINED(80,13924) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(Inputs); // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,14022) /* TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> */ __um(Inputs); // 0x0048   (0x0050)  
 };
 
 /// Struct /Script/GLTFExporter.GLTFExportMessages
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FGLTFExportMessages
 { 
-	SDK_UNDEFINED(16,13925) /* TArray<FString> */      __um(Suggestions);                                          // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13926) /* TArray<FString> */      __um(Warnings);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,13927) /* TArray<FString> */      __um(Errors);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,14023) /* TArray<FString> */      __um(Suggestions);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14024) /* TArray<FString> */      __um(Warnings);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14025) /* TArray<FString> */      __um(Errors);                                               // 0x0020   (0x0010)  
 };
 

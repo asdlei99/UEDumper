@@ -21,13 +21,13 @@ public:
 
 	/// Functions
 	// Function /Script/AudioCapture.AudioCapture.StopCapturingAudio
-	// void StopCapturingAudio();                                                                                            // [0xb3af440] Final|Native|Public|BlueprintCallable 
+	// void StopCapturingAudio();                                                                                            // [0xb4c2394] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioCapture.AudioCapture.StartCapturingAudio
-	// void StartCapturingAudio();                                                                                           // [0xb3af40c] Final|Native|Public|BlueprintCallable 
+	// void StartCapturingAudio();                                                                                           // [0xb4c2360] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioCapture.AudioCapture.IsCapturingAudio
-	// bool IsCapturingAudio();                                                                                              // [0xb3af3d4] Final|Native|Public|BlueprintCallable 
+	// bool IsCapturingAudio();                                                                                              // [0xb4c2328] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioCapture.AudioCapture.GetAudioCaptureDeviceInfo
-	// bool GetAudioCaptureDeviceInfo(FAudioCaptureDeviceInfo& OutInfo);                                                     // [0xb3af214] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetAudioCaptureDeviceInfo(FAudioCaptureDeviceInfo& OutInfo);                                                     // [0xb4c21b4] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AudioCapture.AudioCaptureFunctionLibrary
@@ -39,7 +39,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioCapture.AudioCaptureFunctionLibrary.CreateAudioCapture
-	// class UAudioCapture* CreateAudioCapture();                                                                            // [0xb3af1b0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAudioCapture* CreateAudioCapture();                                                                            // [0xb4c2150] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioCapture.AudioCaptureBlueprintLibrary
@@ -51,9 +51,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioCapture.AudioCaptureBlueprintLibrary.GetAvailableAudioInputDevices
-	// void GetAvailableAudioInputDevices(class UObject* WorldContextObject, FDelegateProperty& OnObtainDevicesEvent);       // [0xb3af2b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAvailableAudioInputDevices(class UObject* WorldContextObject, FDelegateProperty& OnObtainDevicesEvent);       // [0xb4c2250] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioCapture.AudioCaptureBlueprintLibrary.Conv_AudioInputDeviceInfoToString
-	// FString Conv_AudioInputDeviceInfoToString(FAudioInputDeviceInfo& Info);                                               // [0xb3af0b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_AudioInputDeviceInfoToString(FAudioInputDeviceInfo& Info);                                               // [0xb4c2054] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AudioCapture.AudioCaptureComponent
@@ -69,8 +69,8 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FAudioInputDeviceInfo
 { 
-	SDK_UNDEFINED(16,11690) /* FString */              __um(DeviceName);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,11691) /* FString */              __um(DeviceID);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11752) /* FString */              __um(DeviceName);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11753) /* FString */              __um(DeviceID);                                             // 0x0010   (0x0010)  
 	int32_t                                            InputChannels;                                              // 0x0020   (0x0004)  
 	int32_t                                            PreferredSampleRate;                                        // 0x0024   (0x0004)  
 	bool                                               bSupportsHardwareAEC : 1;                                   // 0x0028:0 (0x0001)  

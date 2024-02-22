@@ -44,16 +44,16 @@ class UGet_DirectDamageParent_C : public UGET_DamageParent_C
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_FallingDamage.GET_FallingDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_DirectEnvironmentDamage.GET_DirectEnvironmentDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_FallingDamage_C : public UGet_DirectDamageParent_C
+class UGET_DirectEnvironmentDamage_C : public UGet_DirectDamageParent_C
 { 
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_DirectEnvironmentDamage.GET_DirectEnvironmentDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_DirectVehicleDamage.GET_DirectVehicleDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_DirectEnvironmentDamage_C : public UGet_DirectDamageParent_C
+class UGET_DirectVehicleDamage_C : public UGet_DirectDamageParent_C
 { 
 public:
 };
@@ -65,9 +65,9 @@ class UGET_FatalDamage_C : public UGet_DirectDamageParent_C
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_DirectVehicleDamage.GET_DirectVehicleDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_FallingDamage.GET_FallingDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_DirectVehicleDamage_C : public UGet_DirectDamageParent_C
+class UGET_FallingDamage_C : public UGet_DirectDamageParent_C
 { 
 public:
 };
@@ -114,16 +114,16 @@ class UGET_EnergyCost_C : public UGameplayEffect
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_DirectEnergyDamage.GET_DirectEnergyDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_KnockbackImmunityTag.GET_KnockbackImmunityTag_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_DirectEnergyDamage_C : public UGET_DirectPhysicalDamage_C
+class UGET_KnockbackImmunityTag_C : public UGET_TagContainer_C
 { 
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_KnockbackImmunityTag.GET_KnockbackImmunityTag_C
+/// Class /Game/GameplayEffectTemplates/GET_DirectEnergyDamage.GET_DirectEnergyDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_KnockbackImmunityTag_C : public UGET_TagContainer_C
+class UGET_DirectEnergyDamage_C : public UGET_DirectPhysicalDamage_C
 { 
 public:
 };

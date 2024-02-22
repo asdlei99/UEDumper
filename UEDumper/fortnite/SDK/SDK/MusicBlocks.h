@@ -29,8 +29,8 @@ struct FMusicSequencerHitEntry : FFastArraySerializerItem
 	float                                              ServerWorldTimeStart;                                       // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	class UClass*                                      ActorClass;                                                 // 0x0020   (0x0008)  
-	SDK_UNDEFINED(8,14834) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0028   (0x0008)  
-	SDK_UNDEFINED(8,14835) /* TWeakObjectPtr<APlayerState*> */ __um(InstigatorPlayerState);                        // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,14974) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,14975) /* TWeakObjectPtr<APlayerState*> */ __um(InstigatorPlayerState);                        // 0x0030   (0x0008)  
 	FVector_NetQuantize                                SoundLocation;                                              // 0x0038   (0x0018)  
 	int32_t                                            SoundIndex;                                                 // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0054   (0x0004)  MISSED
@@ -42,7 +42,7 @@ struct FMusicSequencerHitEntry : FFastArraySerializerItem
 struct FMusicSequencerHitArray : FFastArraySerializer
 { 
 	TArray<FMusicSequencerHitEntry>                    Items;                                                      // 0x0108   (0x0010)  
-	SDK_UNDEFINED(8,14836) /* TWeakObjectPtr<UMusicSequencerHitComponent*> */ __um(OwningComponent);               // 0x0118   (0x0008)  
+	SDK_UNDEFINED(8,14976) /* TWeakObjectPtr<UMusicSequencerHitComponent*> */ __um(OwningComponent);               // 0x0118   (0x0008)  
 };
 
 /// Class /Script/MusicBlocks.MusicSequencerHitComponent
@@ -57,17 +57,17 @@ public:
 
 	/// Functions
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.ReplicateMusicSequencerHit
-	// bool ReplicateMusicSequencerHit(class UObject* WorldContextObject, TScriptInterface<Class> HitInterface, class AController* Instigator); // [0xb593ccc] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool ReplicateMusicSequencerHit(class UObject* WorldContextObject, TScriptInterface<Class> HitInterface, class AController* Instigator); // [0xb6a4ba0] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.RegisterMusicSequencerActor
-	// bool RegisterMusicSequencerActor(class UObject* WorldContextObject, TScriptInterface<Class> Actor);                   // [0xb593b70] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool RegisterMusicSequencerActor(class UObject* WorldContextObject, TScriptInterface<Class> Actor);                   // [0xb6a4a08] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.ProcessSequenceHitEvent
-	// bool ProcessSequenceHitEvent(FMusicSequencerHitEntry& Event);                                                         // [0xb593a88] Final|Native|Protected|HasOutParms 
+	// bool ProcessSequenceHitEvent(FMusicSequencerHitEntry& Event);                                                         // [0xb6a4920] Final|Native|Protected|HasOutParms 
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.OnSequenceHitEventExpired
-	// void OnSequenceHitEventExpired(FMusicSequencerHitHandle ExpiredHandle);                                               // [0xb5939c8] Final|Native|Protected 
+	// void OnSequenceHitEventExpired(FMusicSequencerHitHandle ExpiredHandle);                                               // [0xb6a47e0] Final|Native|Protected 
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.AddSequenceHitEvent
-	// bool AddSequenceHitEvent(TScriptInterface<Class> HitInterface, class AController* Instigator);                        // [0xb59383c] Final|Native|Protected 
+	// bool AddSequenceHitEvent(TScriptInterface<Class> HitInterface, class AController* Instigator);                        // [0xb6a4564] Final|Native|Protected 
 	// Function /Script/MusicBlocks.MusicSequencerHitComponent.AddMusicSequencerActor
-	// bool AddMusicSequencerActor(TScriptInterface<Class> HitInterface);                                                    // [0xb593758] Final|Native|Protected 
+	// bool AddMusicSequencerActor(TScriptInterface<Class> HitInterface);                                                    // [0xb6a4404] Final|Native|Protected 
 };
 
 /// Class /Script/MusicBlocks.MusicSequencerHitActor
@@ -80,7 +80,7 @@ public:
 
 	/// Functions
 	// Function /Script/MusicBlocks.MusicSequencerHitActor.GetMusicSequencerHitComponent
-	// class UMusicSequencerHitComponent* GetMusicSequencerHitComponent();                                                   // [0x63c7d24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMusicSequencerHitComponent* GetMusicSequencerHitComponent();                                                   // [0x642786c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MusicBlocks.MusicSequencerHitAdderComponent
@@ -89,11 +89,11 @@ class UMusicSequencerHitAdderComponent : public UPlayspaceComponent
 { 
 public:
 	class UClass*                                      MusicSequencerHitActorClass;                                // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(8,14837) /* TWeakObjectPtr<AMusicSequencerHitActor*> */ __um(MusicSequencerHitActor);            // 0x00A8   (0x0008)  
+	SDK_UNDEFINED(8,14977) /* TWeakObjectPtr<AMusicSequencerHitActor*> */ __um(MusicSequencerHitActor);            // 0x00A8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/MusicBlocks.MusicSequencerHitAdderComponent.GetMusicSequencerHitActor
-	// class AMusicSequencerHitActor* GetMusicSequencerHitActor();                                                           // [0xb5939a4] Final|Native|Public|Const 
+	// class AMusicSequencerHitActor* GetMusicSequencerHitActor();                                                           // [0xb6a47bc] Final|Native|Public|Const 
 };
 

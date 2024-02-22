@@ -313,9 +313,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Harvest.HandleUnconverted
-	// void HandleUnconverted(class AFortPawn* UnconvertedPawn, EUnconvertReason UnconvertReason);                           // [0x9d906d0] Final|Native|Protected 
+	// void HandleUnconverted(class AFortPawn* UnconvertedPawn, EUnconvertReason UnconvertReason);                           // [0x9da30ec] Final|Native|Protected 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Harvest.HandleConverted
-	// void HandleConverted(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                                // [0x9d90598] Final|Native|Protected 
+	// void HandleConverted(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                                // [0x9da302c] Final|Native|Protected 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_MoveAway
@@ -328,11 +328,75 @@ public:
 	FScalableFloat                                     MaxSecondsToReactToBox;                                     // 0x0240   (0x0028)  
 	FScalableFloat                                     MinSecondsBetweenInstantReactions;                          // 0x0268   (0x0028)  
 	class UEnvQuery*                                   FindAwayLocationFromPawnQueryTemplate;                      // 0x0290   (0x0008)  
-	SDK_UNDEFINED(1,13797) /* TEnumAsByte<EEnvQueryRunMode> */ __um(FindAwayLocationFromPawnRunMode);              // 0x0298   (0x0001)  
+	SDK_UNDEFINED(1,13895) /* TEnumAsByte<EEnvQueryRunMode> */ __um(FindAwayLocationFromPawnRunMode);              // 0x0298   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0299   (0x0007)  MISSED
 	class UEnvQuery*                                   FindAwayLocationFromBoxQueryTemplate;                       // 0x02A0   (0x0008)  
-	SDK_UNDEFINED(1,13798) /* TEnumAsByte<EEnvQueryRunMode> */ __um(FindAwayLocationFromBoxRunMode);               // 0x02A8   (0x0001)  
+	SDK_UNDEFINED(1,13896) /* TEnumAsByte<EEnvQueryRunMode> */ __um(FindAwayLocationFromBoxRunMode);               // 0x02A8   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x02A9   (0x0007)  MISSED
+};
+
+/// Struct /Script/FortniteAIServer.BotEvaluatorCommandCooldown
+/// Size: 0x0018 (0x000000 - 0x000018)
+struct FBotEvaluatorCommandCooldown
+{ 
+	FFortAIActiveCommandSOUsageData                    Command;                                                    // 0x0000   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0010   (0x0008)  MISSED
+};
+
+/// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SmartObjectCommand
+/// Size: 0x00A0 (0x0001A8 - 0x000248)
+class UFortAthenaAIBotEvaluator_SmartObjectCommand : public UFortAthenaAIBotEvaluator_Movement
+{ 
+public:
+	class UFortAthenaAIRuntimeParameters_SmartObjectBase* SmartObjectRuntimeParameters;                            // 0x01A8   (0x0008)  
+	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x01B0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01B8   (0x0008)  MISSED
+	FFortAIActiveCommandSOUsageData                    RunningCommandData;                                         // 0x01C0   (0x0010)  
+	FBotEvaluatorCommandCooldown                       CommandOnCooldown;                                          // 0x01D0   (0x0018)  
+	FGameplayTag                                       EvaluationTag;                                              // 0x01E8   (0x0004)  
+	bool                                               bEvaluateSOValidityAfterChosen;                             // 0x01EC   (0x0001)  
+	bool                                               bEnableEntryLocationsSupport;                               // 0x01ED   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01EE   (0x0002)  MISSED
+	FScalableFloat                                     SingleCommandCooldown;                                      // 0x01F0   (0x0028)  
+	class UClass*                                      OverridenFilterClassForEntryPoints;                         // 0x0218   (0x0008)  
+	FName                                              SmartObjectExecutionStatusKeyName;                          // 0x0220   (0x0004)  
+	FName                                              SmartObjectMovementStateKeyName;                            // 0x0224   (0x0004)  
+	FName                                              SmartObjectDestinationKeyName;                              // 0x0228   (0x0004)  
+	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x022C   (0x0004)  
+	FName                                              SmartObjectShouldMoveKeyName;                               // 0x0230   (0x0004)  
+	FName                                              SmartObjectUrgencyKeyName;                                  // 0x0234   (0x0004)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0238   (0x0010)  MISSED
+};
+
+/// Struct /Script/FortniteAIServer.BotEvaluatorSmartObjectConvertedData
+/// Size: 0x0008 (0x000000 - 0x000008)
+struct FBotEvaluatorSmartObjectConvertedData
+{ 
+	class USmartObjectComponent*                       SmartObjectComponent;                                       // 0x0000   (0x0008)  
+};
+
+/// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SmartObjectConverted
+/// Size: 0x0058 (0x0001A8 - 0x000200)
+class UFortAthenaAIBotEvaluator_SmartObjectConverted : public UFortAthenaAIBotEvaluator_Movement
+{ 
+public:
+	class UFortAthenaAIRuntimeParameters_SmartObjectBase* SmartObjectRuntimeParameters;                            // 0x01A8   (0x0008)  
+	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x01B0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01B8   (0x0008)  MISSED
+	FBotEvaluatorSmartObjectConvertedData              RunningData;                                                // 0x01C0   (0x0008)  
+	FGameplayTag                                       EvaluationTag;                                              // 0x01C8   (0x0004)  
+	bool                                               bEvaluateSOValidityAfterChosen;                             // 0x01CC   (0x0001)  
+	bool                                               bEnableEntryLocationsSupport;                               // 0x01CD   (0x0001)  
+	bool                                               bIgnoreCooldowns;                                           // 0x01CE   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x1];                                       // 0x01CF   (0x0001)  MISSED
+	class UClass*                                      OverridenFilterClassForEntryPoints;                         // 0x01D0   (0x0008)  
+	FName                                              SmartObjectExecutionStatusKeyName;                          // 0x01D8   (0x0004)  
+	FName                                              SmartObjectMovementStateKeyName;                            // 0x01DC   (0x0004)  
+	FName                                              SmartObjectDestinationKeyName;                              // 0x01E0   (0x0004)  
+	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x01E4   (0x0004)  
+	FName                                              SmartObjectShouldMoveKeyName;                               // 0x01E8   (0x0004)  
+	FName                                              SmartObjectUrgencyKeyName;                                  // 0x01EC   (0x0004)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x01F0   (0x0010)  MISSED
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_TargetContext
@@ -372,7 +436,7 @@ struct FPositioningEQS
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_TokenPosition
-/// Size: 0x0088 (0x0001C0 - 0x000248)
+/// Size: 0x0090 (0x0001C0 - 0x000250)
 class UFortAthenaAIBotEvaluator_TokenPosition : public UFortAthenaAIBotEvaluator_Attack
 { 
 public:
@@ -380,12 +444,13 @@ public:
 	TArray<FPositioningEQS>                            EQSs;                                                       // 0x01D0   (0x0010)  
 	float                                              TokenPositionCooldown;                                      // 0x01E0   (0x0004)  
 	float                                              TokenPositionCooldownVariation;                             // 0x01E4   (0x0004)  
-	float                                              NextPositionTimestamp;                                      // 0x01E8   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x2C];                                      // 0x01EC   (0x002C)  MISSED
+	unsigned char                                      UnknownData01_5[0x30];                                      // 0x01E8   (0x0030)  MISSED
 	class UFortAICombatTokenConsumerComponent*         CachedTokenConsumerComponent;                               // 0x0218   (0x0008)  
-	SDK_UNDEFINED(8,13799) /* TWeakObjectPtr<UFortAICombatTokenProviderComponent*> */ __um(CachedTokenProviderComponent); // 0x0220   (0x0008)  
+	SDK_UNDEFINED(8,13897) /* TWeakObjectPtr<UFortAICombatTokenProviderComponent*> */ __um(CachedTokenProviderComponent); // 0x0220   (0x0008)  
 	int32_t                                            RunningEQSRequestID;                                        // 0x0228   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x1C];                                      // 0x022C   (0x001C)  MISSED
+	unsigned char                                      UnknownData02_5[0x1C];                                      // 0x022C   (0x001C)  MISSED
+	bool                                               bPositionRequested;                                         // 0x0248   (0x0001)  
+	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0249   (0x0007)  MISSED
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIEvaluator_AbovePhysicsObject
@@ -396,16 +461,15 @@ public:
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTService_MovementStyle
-/// Size: 0x00A0 (0x000070 - 0x000110)
+/// Size: 0x0098 (0x000070 - 0x000108)
 class UFortAthenaBTService_MovementStyle : public UBTService
 { 
 public:
-	SDK_UNDEFINED(1,13800) /* TEnumAsByte<EFortMovementStyle> */ __um(MovementStyle);                              // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,13898) /* TEnumAsByte<EFortMovementStyle> */ __um(MovementStyle);                              // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0071   (0x0007)  MISSED
 	FGameplayTagQuery                                  TagCondition;                                               // 0x0078   (0x0048)  
 	FBlackboardKeySelector                             BlackboardCondition;                                        // 0x00C0   (0x0028)  
-	unsigned char                                      UnknownData01_5[0x20];                                      // 0x00E8   (0x0020)  MISSED
-	class UAbilitySystemComponent*                     CachedAbilitySystemComponent;                               // 0x0108   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x20];                                      // 0x00E8   (0x0020)  MISSED
 };
 
 /// Struct /Script/FortniteAIServer.EquippedItemTagAssociationData
@@ -484,7 +548,7 @@ public:
 class UFortAthenaBTTask_VehicleSwitchSeat : public UBTTaskNode
 { 
 public:
-	SDK_UNDEFINED(1,13801) /* TEnumAsByte<SwitchSeatType> */ __um(SwitchSeatType);                                 // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,13899) /* TEnumAsByte<SwitchSeatType> */ __um(SwitchSeatType);                                 // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0071   (0x0007)  MISSED
 };
 
@@ -501,7 +565,7 @@ public:
 class UFortBTDecorator_AIBotVehicleSeatStatus : public UBTDecorator
 { 
 public:
-	SDK_UNDEFINED(1,13802) /* TEnumAsByte<SeatStatusType> */ __um(SeatType);                                       // 0x0068   (0x0001)  
+	SDK_UNDEFINED(1,13900) /* TEnumAsByte<SeatStatusType> */ __um(SeatType);                                       // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0069   (0x0007)  MISSED
 };
 
@@ -536,7 +600,7 @@ public:
 class UFortGameFeatureAction_AddInjectionSupportingBehavior : public UFortGameInstanceGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(16,13803) /* TArray<TWeakObjectPtr<UBehaviorTree*>> */ __um(InjectionSupportingBehaviors);       // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,13901) /* TArray<TWeakObjectPtr<UBehaviorTree*>> */ __um(InjectionSupportingBehaviors);       // 0x0038   (0x0010)  
 };
 
 /// Class /Script/FortniteAIServer.FortGameFeatureAction_InjectAIBehavior
@@ -605,6 +669,14 @@ public:
 	class UClass*                                      GenerateInBoxExtent;                                        // 0x01A8   (0x0008)  
 };
 
+/// Class /Script/FortniteAIServer.FortTokenGenerator_TokenHintPositions
+/// Size: 0x0028 (0x000050 - 0x000078)
+class UFortTokenGenerator_TokenHintPositions : public UEnvQueryGenerator
+{ 
+public:
+	FScalableFloat                                     MaximumDistance;                                            // 0x0050   (0x0028)  
+};
+
 /// Class /Script/FortniteAIServer.FortWorldConditionTimeOfDayState
 /// Size: 0x0038 (0x000028 - 0x000060)
 class UFortWorldConditionTimeOfDayState : public UObject
@@ -615,7 +687,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortWorldConditionTimeOfDayState.HandleTimeOfDayPhaseChange
-	// void HandleTimeOfDayPhaseChange(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);     // [0x9daf9d4] Final|Native|Private 
+	// void HandleTimeOfDayPhaseChange(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);     // [0x9db7184] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.PFWNPCReactions_Container
@@ -660,10 +732,10 @@ public:
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FGameFeatureFortAIEvaluatorEntry
 { 
-	SDK_UNDEFINED(32,13804) /* TWeakObjectPtr<UBehaviorTree*> */ __um(TreeAsset);                                  // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,13902) /* TWeakObjectPtr<UBehaviorTree*> */ __um(TreeAsset);                                  // 0x0000   (0x0020)  
 	FGameplayTag                                       InjectionTag;                                               // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(32,13805) /* TWeakObjectPtr<UClass*> */ __um(AIEvaluatorClass);                                  // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,13903) /* TWeakObjectPtr<UClass*> */ __um(AIEvaluatorClass);                                  // 0x0028   (0x0020)  
 };
 
 /// Class /Script/FortniteAIServer.FortGameFeatureAction_InjectAIEvaluators
@@ -684,13 +756,14 @@ public:
 };
 
 /// Class /Script/FortniteAIServer.FortEnvQueryGenerator_SimpleGrid
-/// Size: 0x0078 (0x000090 - 0x000108)
+/// Size: 0x00B0 (0x000090 - 0x000140)
 class UFortEnvQueryGenerator_SimpleGrid : public UFortEnvQueryGenerator_ProjectedPoints
 { 
 public:
 	FAIDataProviderFloatValue                          GridSize;                                                   // 0x0090   (0x0038)  
 	FAIDataProviderFloatValue                          SpaceBetween;                                               // 0x00C8   (0x0038)  
-	class UClass*                                      GenerateAround;                                             // 0x0100   (0x0008)  
+	FAIDataProviderFloatValue                          RandomDisplacementRatio;                                    // 0x0100   (0x0038)  
+	class UClass*                                      GenerateAround;                                             // 0x0138   (0x0008)  
 };
 
 /// Class /Script/FortniteAIServer.FortBTService_ContextOverride
@@ -706,7 +779,7 @@ class UFortBTContext_MoveUrgency : public UFortBTService_ContextOverride
 { 
 public:
 	FFortBehaviorValue_Enum                            MoveUrgencyValue;                                           // 0x0070   (0x0018)  
-	SDK_UNDEFINED(1,13806) /* TEnumAsByte<EFortMovementUrgency> */ __um(MoveUrgency);                              // 0x0088   (0x0001)  
+	SDK_UNDEFINED(1,13904) /* TEnumAsByte<EFortMovementUrgency> */ __um(MoveUrgency);                              // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0089   (0x0007)  MISSED
 };
 
@@ -749,7 +822,7 @@ public:
 class UFortBTDecorator_DistanceBetween : public UBTDecorator
 { 
 public:
-	SDK_UNDEFINED(1,13807) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(Operator);                              // 0x0068   (0x0001)  
+	SDK_UNDEFINED(1,13905) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(Operator);                              // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0069   (0x0007)  MISSED
 	FBlackboardKeySelector                             BlackboardKeyA;                                             // 0x0070   (0x0028)  
 	FBlackboardKeySelector                             BlackboardKeyB;                                             // 0x0098   (0x0028)  
@@ -983,7 +1056,7 @@ class UFortBTTask_GameMoveTo : public UBTTask_MoveTo
 { 
 public:
 	FBlackboardKeySelector                             FocalPointWhileMoving;                                      // 0x00B0   (0x0028)  
-	SDK_UNDEFINED(1,13808) /* TEnumAsByte<EPathObstacleAction> */ __um(PathObstacleAction);                        // 0x00D8   (0x0001)  
+	SDK_UNDEFINED(1,13906) /* TEnumAsByte<EPathObstacleAction> */ __um(PathObstacleAction);                        // 0x00D8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00D9   (0x0007)  MISSED
 	class UClass*                                      PushBumpedPawnClass;                                        // 0x00E0   (0x0008)  
 	FGameplayTag                                       NavFilterTag;                                               // 0x00E8   (0x0004)  
@@ -1054,9 +1127,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortEQSPrevisActor.SetQueryTemplate
-	// void SetQueryTemplate(class UEnvQuery* InPrevisQueryTemplate);                                                        // [0x5d87858] Final|Native|Public|BlueprintCallable 
+	// void SetQueryTemplate(class UEnvQuery* InPrevisQueryTemplate);                                                        // [0x5decebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FortniteAIServer.FortEQSPrevisActor.PrepForPrevis
-	// void PrepForPrevis();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void PrepForPrevis();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FortniteAIServer.FortQueryContext_AIPawnSpawnLocation
@@ -1306,7 +1379,7 @@ struct FFortPointOnCurveRange
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FFortPointsOnCurve
 { 
-	SDK_UNDEFINED(32,13809) /* TWeakObjectPtr<UCurveFloat*> */ __um(Curve);                                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,13907) /* TWeakObjectPtr<UCurveFloat*> */ __um(Curve);                                        // 0x0000   (0x0020)  
 	TArray<FFortPointOnCurveRange>                     RangesForPointsOnCurve;                                     // 0x0020   (0x0010)  
 };
 
@@ -1536,7 +1609,7 @@ public:
 	class UClass*                                      GenerateAround;                                             // 0x0088   (0x0008)  
 	FAIDataProviderIntValue                            MaxPointsPerClusterLocation;                                // 0x0090   (0x0038)  
 	FAIDataProviderFloatValue                          ClusterRadius;                                              // 0x00C8   (0x0038)  
-	SDK_UNDEFINED(32,13810) /* TWeakObjectPtr<UFortQueryData_CurvesAroundLine*> */ __um(CurvesAroundLineAsset);    // 0x0100   (0x0020)  
+	SDK_UNDEFINED(32,13908) /* TWeakObjectPtr<UFortQueryData_CurvesAroundLine*> */ __um(CurvesAroundLineAsset);    // 0x0100   (0x0020)  
 };
 
 /// Class /Script/FortniteAIServer.FortQueryGenerator_PointsFromNavGraph
@@ -1562,7 +1635,7 @@ public:
 	bool                                               bFilterAllowClimbup : 1;                                    // 0x01C8:7 (0x0001)  
 	bool                                               bFilterAllowSmash : 1;                                      // 0x01C9:0 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x2];                                       // 0x01CA   (0x0002)  MISSED
-	SDK_UNDEFINED(1,13811) /* TEnumAsByte<EFortPointsFromNavGraphGoalPathDistanceFilterOperator> */ __um(PathDistanceFilterOperator); // 0x01CC   (0x0001)  
+	SDK_UNDEFINED(1,13909) /* TEnumAsByte<EFortPointsFromNavGraphGoalPathDistanceFilterOperator> */ __um(PathDistanceFilterOperator); // 0x01CC   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x01CD   (0x0003)  MISSED
 	class UClass*                                      GenerateAround;                                             // 0x01D0   (0x0008)  
 };
@@ -1573,7 +1646,7 @@ class UFortQueryGenerator_PointsInVolume : public UEnvQueryGenerator
 { 
 public:
 	FAIDataProviderIntValue                            NumberOfPoints;                                             // 0x0050   (0x0038)  
-	SDK_UNDEFINED(1,13812) /* TEnumAsByte<EFortNamedNavmesh> */ __um(NavMeshToUse);                                // 0x0088   (0x0001)  
+	SDK_UNDEFINED(1,13910) /* TEnumAsByte<EFortNamedNavmesh> */ __um(NavMeshToUse);                                // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0089   (0x0007)  MISSED
 	class UClass*                                      GenerateIn;                                                 // 0x0090   (0x0008)  
 };
@@ -1606,12 +1679,13 @@ public:
 };
 
 /// Class /Script/FortniteAIServer.FortQueryGenerator_PointsOnWaterShoreLine
-/// Size: 0x0028 (0x000088 - 0x0000B0)
+/// Size: 0x0060 (0x000088 - 0x0000E8)
 class UFortQueryGenerator_PointsOnWaterShoreLine : public UEnvQueryGenerator_ProjectedPoints
 { 
 public:
 	class UClass*                                      GenerateAround;                                             // 0x0088   (0x0008)  
-	SDK_UNDEFINED(32,13813) /* TWeakObjectPtr<UFortQueryData_CurvesAroundLine*> */ __um(CurvesAroundLineAsset);    // 0x0090   (0x0020)  
+	SDK_UNDEFINED(32,13911) /* TWeakObjectPtr<UFortQueryData_CurvesAroundLine*> */ __um(CurvesAroundLineAsset);    // 0x0090   (0x0020)  
+	FAIDataProviderFloatValue                          SegmentMaximumVerticalDegreeAngle;                          // 0x00B0   (0x0038)  
 };
 
 /// Class /Script/FortniteAIServer.FortQueryGenerator_RandomPointsInBoundingVolume
@@ -1871,7 +1945,7 @@ public:
 	EDistanceMode                                      DistanceMode;                                               // 0x0268   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0269   (0x0007)  MISSED
 	class UClass*                                      DistanceTo;                                                 // 0x0270   (0x0008)  
-	SDK_UNDEFINED(1,13814) /* TEnumAsByte<EEnvTestDistance> */ __um(TestMode);                                     // 0x0278   (0x0001)  
+	SDK_UNDEFINED(1,13912) /* TEnumAsByte<EEnvTestDistance> */ __um(TestMode);                                     // 0x0278   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0279   (0x0007)  MISSED
 };
 
@@ -1882,7 +1956,7 @@ struct FGoalDistanceData
 	bool                                               bIgnoreScreeningDistance;                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	FAIDataProviderFloatValue                          ScreeningTestMaxDistance;                                   // 0x0008   (0x0038)  
-	SDK_UNDEFINED(32,13815) /* TWeakObjectPtr<UCurveFloat*> */ __um(TestScoreCurve);                               // 0x0040   (0x0020)  
+	SDK_UNDEFINED(32,13913) /* TWeakObjectPtr<UCurveFloat*> */ __um(TestScoreCurve);                               // 0x0040   (0x0020)  
 	FAIDataProviderFloatValue                          CurveDistanceScale;                                         // 0x0060   (0x0038)  
 };
 
@@ -1894,8 +1968,8 @@ public:
 	EDistanceMode                                      DistanceMode;                                               // 0x0268   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0269   (0x0007)  MISSED
 	class UClass*                                      DistanceTo;                                                 // 0x0270   (0x0008)  
-	SDK_UNDEFINED(1,13816) /* TEnumAsByte<EEnvTestDistance> */ __um(ScreeningTestMode);                            // 0x0278   (0x0001)  
-	SDK_UNDEFINED(1,13817) /* TEnumAsByte<EEnvTestDistance> */ __um(TestMode);                                     // 0x0279   (0x0001)  
+	SDK_UNDEFINED(1,13914) /* TEnumAsByte<EEnvTestDistance> */ __um(ScreeningTestMode);                            // 0x0278   (0x0001)  
+	SDK_UNDEFINED(1,13915) /* TEnumAsByte<EEnvTestDistance> */ __um(TestMode);                                     // 0x0279   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x027A   (0x0006)  MISSED
 	TArray<FGoalDistanceData>                          GoalDistanceDataRanges;                                     // 0x0280   (0x0010)  
 };
@@ -2265,7 +2339,7 @@ public:
 class UFortQueryTest_PerceptionAge : public UEnvQueryTest
 { 
 public:
-	SDK_UNDEFINED(1,13818) /* TEnumAsByte<ECorePerceptionTypes> */ __um(Sense);                                    // 0x01F8   (0x0001)  
+	SDK_UNDEFINED(1,13916) /* TEnumAsByte<ECorePerceptionTypes> */ __um(Sense);                                    // 0x01F8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01F9   (0x0007)  MISSED
 	class UClass*                                      SenseClass;                                                 // 0x0200   (0x0008)  
 };
@@ -2276,7 +2350,7 @@ class UFortQueryTest_PerceptionAll : public UFortQueryTest_GoalBase
 { 
 public:
 	FAIDataProviderFloatValue                          SenseScores;                                                // 0x0268   (0x0150)  
-	SDK_UNDEFINED(80,13819) /* TMap<UClass*, FAIDataProviderFloatValue> */ __um(AdditionalSenseScores);            // 0x03B8   (0x0050)  
+	SDK_UNDEFINED(80,13917) /* TMap<UClass*, FAIDataProviderFloatValue> */ __um(AdditionalSenseScores);            // 0x03B8   (0x0050)  
 	FAIDataProviderFloatValue                          MinSenseAge;                                                // 0x0408   (0x0038)  
 	FAIDataProviderFloatValue                          MaxSenseAge;                                                // 0x0440   (0x0038)  
 };
@@ -2286,7 +2360,7 @@ public:
 class UFortQueryTest_PerceptionExists : public UEnvQueryTest
 { 
 public:
-	SDK_UNDEFINED(1,13820) /* TEnumAsByte<ECorePerceptionTypes> */ __um(Sense);                                    // 0x01F8   (0x0001)  
+	SDK_UNDEFINED(1,13918) /* TEnumAsByte<ECorePerceptionTypes> */ __um(Sense);                                    // 0x01F8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01F9   (0x0007)  MISSED
 	class UClass*                                      SenseClass;                                                 // 0x0200   (0x0008)  
 };
@@ -2365,14 +2439,14 @@ public:
 	FAIDataProviderFloatValue                          Radius;                                                     // 0x01F8   (0x0038)  
 	FAIDataProviderFloatValue                          TraceOffsetUp;                                              // 0x0230   (0x0038)  
 	FAIDataProviderFloatValue                          TraceOffsetDown;                                            // 0x0268   (0x0038)  
-	SDK_UNDEFINED(1,13821) /* TEnumAsByte<ECollisionChannel> */ __um(TraceCollisionChannel);                       // 0x02A0   (0x0001)  
+	SDK_UNDEFINED(1,13919) /* TEnumAsByte<ECollisionChannel> */ __um(TraceCollisionChannel);                       // 0x02A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
 	FAIDataProviderFloatValue                          FlatSurfaceToleranceZ;                                      // 0x02A8   (0x0038)  
-	SDK_UNDEFINED(16,13822) /* TArray<TWeakObjectPtr<UPhysicalMaterial*>> */ __um(SurfaceMaterials);               // 0x02E0   (0x0010)  
+	SDK_UNDEFINED(16,13920) /* TArray<TWeakObjectPtr<UPhysicalMaterial*>> */ __um(SurfaceMaterials);               // 0x02E0   (0x0010)  
 	bool                                               bAreSurfaceMaterialsValid;                                  // 0x02F0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02F1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,13823) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ValidHitActorClasses);                      // 0x02F8   (0x0010)  
-	SDK_UNDEFINED(16,13824) /* TArray<TWeakObjectPtr<UClass*>> */ __um(InvalidHitActorClasses);                    // 0x0308   (0x0010)  
+	SDK_UNDEFINED(16,13921) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ValidHitActorClasses);                      // 0x02F8   (0x0010)  
+	SDK_UNDEFINED(16,13922) /* TArray<TWeakObjectPtr<UClass*>> */ __um(InvalidHitActorClasses);                    // 0x0308   (0x0010)  
 };
 
 /// Class /Script/FortniteAIServer.FortQueryTest_WithinHotfixVolumeBounds
@@ -2395,18 +2469,6 @@ public:
 	FVector                                            AreaExtentBuffer;                                           // 0x0240   (0x0018)  
 	bool                                               bAssumeInfiniteHeightForArea;                               // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0259   (0x0007)  MISSED
-};
-
-/// Class /Script/FortniteAIServer.FortGameplayInteractionSmartObjectBehaviorDefinition
-/// Size: 0x0000 (0x000040 - 0x000040)
-class UFortGameplayInteractionSmartObjectBehaviorDefinition : public UGameplayInteractionSmartObjectBehaviorDefinition
-{ 
-public:
-
-
-	/// Functions
-	// Function /Script/FortniteAIServer.FortGameplayInteractionSmartObjectBehaviorDefinition.CanBeUsedBy
-	// bool CanBeUsedBy(class AActor* User, class AActor* SmartObjectActor);                                                 // [0x66c52d0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTTask_BotAmbushPlayer
@@ -2462,7 +2524,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Ambush.OnAssignedPerksChangedEvent
-	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e023c4] Final|Native|Private 
+	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e0ea1c] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_AvoidThreat
@@ -2491,7 +2553,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Bunker.OnAssignedPerksChangedEvent
-	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e023d8] Final|Native|Private 
+	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e0ea30] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_CanMove
@@ -2521,9 +2583,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_CharacterLaunched.OnZiplineStateChanged
-	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e02a40] Final|Native|Private 
+	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e0efcc] Final|Native|Private 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_CharacterLaunched.OnCharacterLaunchChanged
-	// void OnCharacterLaunchChanged(class UFortMovementComp_Character* MovementComponent, FVector& LaunchVelocity);         // [0x9e02400] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnCharacterLaunchChanged(class UFortMovementComp_Character* MovementComponent, FVector& LaunchVelocity);         // [0x9e0ea58] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Conversation
@@ -2549,7 +2611,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Conversation.OnPlayerPawnSpawned
-	// void OnPlayerPawnSpawned(class AAIController* Controller, class AFortPawn* Pawn);                                     // [0x9e027c8] Final|Native|Private 
+	// void OnPlayerPawnSpawned(class AAIController* Controller, class AFortPawn* Pawn);                                     // [0x9e0ee4c] Final|Native|Private 
 };
 
 /// Struct /Script/FortniteAIServer.MimicConverterAbilityData
@@ -2579,7 +2641,7 @@ public:
 	FScalableFloat                                     NearbyPlayerDistanceForTeleportTowardsConverter;            // 0x0240   (0x0028)  
 	FScalableFloat                                     PlayerFOVForNearbyPlayersVisibility;                        // 0x0268   (0x0028)  
 	class UEnvQuery*                                   TeleportToConverterQueryTemplate;                           // 0x0290   (0x0008)  
-	SDK_UNDEFINED(1,13825) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToConverterRunMode);                   // 0x0298   (0x0001)  
+	SDK_UNDEFINED(1,13923) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToConverterRunMode);                   // 0x0298   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0299   (0x0007)  MISSED
 	TArray<FMimicConverterAbilityData>                 AbilitiesToMimic;                                           // 0x02A0   (0x0010)  
 	FGameplayTagQuery                                  RequiredTagQueryToTargetConverterDamagedPawn;               // 0x02B0   (0x0048)  
@@ -2591,9 +2653,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Converted.OnUnconvertedEvent
-	// void OnUnconvertedEvent(class AFortPawn* UnconvertedPawn, EUnconvertReason UnconvertReason);                          // [0x9e02908] Final|Native|Protected 
+	// void OnUnconvertedEvent(class AFortPawn* UnconvertedPawn, EUnconvertReason UnconvertReason);                          // [0x9e0ef10] Final|Native|Protected 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Converted.OnConvertedEvent
-	// void OnConvertedEvent(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                               // [0x9e02550] Final|Native|Protected 
+	// void OnConvertedEvent(class AFortPawn* InstigatorPawn, class AFortPawn* ConvertedPawn);                               // [0x9e0eb60] Final|Native|Protected 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_DanceOnKill
@@ -2655,7 +2717,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_DBNO.OnAllyPawnDBNOStateChanged
-	// void OnAllyPawnDBNOStateChanged(class AFortPawn* InPlayer, bool bInIsDBNO);                                           // [0x9e02284] Final|Native|Private 
+	// void OnAllyPawnDBNOStateChanged(class AFortPawn* InPlayer, bool bInIsDBNO);                                           // [0x9e0e954] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_DefensiveBuilding
@@ -2713,9 +2775,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_EvasiveManeuvers.OnMoveCompleted
-	// void OnMoveCompleted(FAIRequestID RequestID, TEnumAsByte<EPathFollowingResult> MovementResult);                       // [0x9e02688] Final|Native|Public  
+	// void OnMoveCompleted(FAIRequestID RequestID, TEnumAsByte<EPathFollowingResult> MovementResult);                       // [0x9e0ec20] Final|Native|Public  
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_EvasiveManeuvers.OnAssignedPerksChangedEvent
-	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e023ec] Final|Native|Private 
+	// void OnAssignedPerksChangedEvent();                                                                                   // [0x9e0ea44] Final|Native|Private 
 };
 
 /// Struct /Script/FortniteAIServer.FlankingLocationInfo
@@ -2738,7 +2800,7 @@ public:
 	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01C4   (0x000C)  MISSED
 	TArray<FFlankingLocationInfo>                      LocationsToEvaluate;                                        // 0x01D0   (0x0010)  
 	TArray<FFlankingLocationInfo>                      BestLocations;                                              // 0x01E0   (0x0010)  
-	SDK_UNDEFINED(16,13826) /* TArray<TWeakObjectPtr<AActor*>> */ __um(ActorsInArea);                              // 0x01F0   (0x0010)  
+	SDK_UNDEFINED(16,13924) /* TArray<TWeakObjectPtr<AActor*>> */ __um(ActorsInArea);                              // 0x01F0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0200   (0x0020)  MISSED
 };
 
@@ -2859,7 +2921,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Heal.HandlePlayerHealthOrShieldChanged
-	// void HandlePlayerHealthOrShieldChanged();                                                                             // [0x9e02270] Final|Native|Private 
+	// void HandlePlayerHealthOrShieldChanged();                                                                             // [0x9e2dd18] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_HitAndRun
@@ -2970,7 +3032,7 @@ public:
 	FName                                              GoalKeyName;                                                // 0x00B0   (0x0004)  
 	float                                              AcceptableRadius;                                           // 0x00B4   (0x0004)  
 	class UClass*                                      FilterClass;                                                // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(1,13827) /* TEnumAsByte<EPathTestQueryType> */ __um(PathQueryType);                              // 0x00C0   (0x0001)  
+	SDK_UNDEFINED(1,13925) /* TEnumAsByte<EPathTestQueryType> */ __um(PathQueryType);                              // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00C1   (0x0003)  MISSED
 	bool                                               bProjectGoalLocation : 1;                                   // 0x00C4:0 (0x0001)  
 	bool                                               bReachTestIncludesAgentRadius : 1;                          // 0x00C4:1 (0x0001)  
@@ -3048,15 +3110,15 @@ public:
 	class UFortAthenaAIBotAimingDigestedSkillSet*      CacheAimingDigestedSkillSet;                                // 0x0250   (0x0008)  
 	class UFortAthenaAIBotPerceptionDigestedSkillSet*  CachePerceptionDigestedSkillSet;                            // 0x0258   (0x0008)  
 	class UFortAthenaAIBotAttackingDigestedSkillSet*   CacheAttackingDigestedSkillSet;                             // 0x0260   (0x0008)  
-	SDK_UNDEFINED(8,13828) /* TWeakObjectPtr<UAthenaAIServiceZoneManager*> */ __um(CacheZoneManager);              // 0x0268   (0x0008)  
-	SDK_UNDEFINED(8,13829) /* TWeakObjectPtr<UAthenaAIServiceCover*> */ __um(CachedAIServiceCover);                // 0x0270   (0x0008)  
+	SDK_UNDEFINED(8,13926) /* TWeakObjectPtr<UAthenaAIServiceZoneManager*> */ __um(CacheZoneManager);              // 0x0268   (0x0008)  
+	SDK_UNDEFINED(8,13927) /* TWeakObjectPtr<UAthenaAIServiceCover*> */ __um(CachedAIServiceCover);                // 0x0270   (0x0008)  
 	class AActor*                                      ExcludeReachingTarget;                                      // 0x0278   (0x0008)  
 	unsigned char                                      UnknownData04_6[0xB0];                                      // 0x0280   (0x00B0)  MISSED
 
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_RangeAttack.FindShootingPosition_Async
-	// void FindShootingPosition_Async(int32_t RequestID, float DistanceFromTarget, float WeaponIdealAttackRange, FVector& TargetPosition); // [0x9e22390] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void FindShootingPosition_Async(int32_t RequestID, float DistanceFromTarget, float WeaponIdealAttackRange, FVector& TargetPosition); // [0x9e2db98] Final|Native|Protected|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_ReachBeacon
@@ -3068,7 +3130,7 @@ public:
 	FName                                              ReachBeaconMovementStateKeyName;                            // 0x01AC   (0x0004)  
 	FName                                              ReachBeaconTargetKeyName;                                   // 0x01B0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01B4   (0x0008)  MISSED
-	SDK_UNDEFINED(8,13830) /* TWeakObjectPtr<UFortAthenaBeaconComponent*> */ __um(CurrentBeacon);                  // 0x01BC   (0x0008)  
+	SDK_UNDEFINED(8,13928) /* TWeakObjectPtr<UFortAthenaBeaconComponent*> */ __um(CurrentBeacon);                  // 0x01BC   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x01C4   (0x0004)  MISSED
 };
 
@@ -3099,9 +3161,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_ReactToVerb.HandlePawnStoppedEmote
-	// void HandlePawnStoppedEmote(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                 // [0x67491ec] Final|Native|Protected 
+	// void HandlePawnStoppedEmote(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                 // [0x67b718c] Final|Native|Protected 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_ReactToVerb.HandlePawnStartedEmote
-	// void HandlePawnStartedEmote(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                 // [0x67491ec] Final|Native|Protected 
+	// void HandlePawnStartedEmote(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                 // [0x67b718c] Final|Native|Protected 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_RecoverLineOfSight
@@ -3142,7 +3204,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Retreat.HandlePlayerHealthOrShieldChanged
-	// void HandlePlayerHealthOrShieldChanged();                                                                             // [0x9e225cc] Final|Native|Protected 
+	// void HandlePlayerHealthOrShieldChanged();                                                                             // [0x9e2dd2c] Final|Native|Protected 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Revive
@@ -3162,7 +3224,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Revive.OnCurrentTargetRevived
-	// void OnCurrentTargetRevived(class AFortPlayerPawn* RevivedPawn);                                                      // [0x9e228fc] Final|Native|Private 
+	// void OnCurrentTargetRevived(class AFortPlayerPawn* RevivedPawn);                                                      // [0x9e2df1c] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SandTunnel
@@ -3182,9 +3244,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SandTunnel.OnBotControllerAlertLevelChanged
-	// void OnBotControllerAlertLevelChanged(class AFortAthenaAIBotController* BotController, EAlertLevel OldAlertLevel, EAlertLevel NewAlertLevel); // [0x9e22734] Final|Native|Private 
+	// void OnBotControllerAlertLevelChanged(class AFortAthenaAIBotController* BotController, EAlertLevel OldAlertLevel, EAlertLevel NewAlertLevel); // [0x9e2de18] Final|Native|Private 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SandTunnel.Jump
-	// void Jump();                                                                                                          // [0x9e225e0] Final|Native|Protected 
+	// void Jump();                                                                                                          // [0x9e2dd40] Final|Native|Protected 
 };
 
 /// Struct /Script/FortniteAIServer.FailedToReachPOI
@@ -3214,13 +3276,13 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SelectNextDynamicPOI.ReachingPositionFail_Async
-	// void ReachingPositionFail_Async(int32_t RequestID);                                                                   // [0x9e22ad8] Final|Native|Private 
+	// void ReachingPositionFail_Async(int32_t RequestID);                                                                   // [0x9e2e0b8] Final|Native|Private 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SelectNextDynamicPOI.OnSafeZonePhaseChanged
-	// void OnSafeZonePhaseChanged(FFortSafeZonePhaseUpdatedEvent& Event);                                                   // [0x9e22a48] Final|Native|Private|HasOutParms 
+	// void OnSafeZonePhaseChanged(FFortSafeZonePhaseUpdatedEvent& Event);                                                   // [0x9e2e028] Final|Native|Private|HasOutParms 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SelectNextDynamicPOI.OnGamePhaseLogicReady
-	// void OnGamePhaseLogicReady(FFortBattleRoyaleGamePhaseLogicComponentReadyEvent& Event);                                // [0x9e229bc] Final|Native|Private|HasOutParms 
+	// void OnGamePhaseLogicReady(FFortBattleRoyaleGamePhaseLogicComponentReadyEvent& Event);                                // [0x9e2df9c] Final|Native|Private|HasOutParms 
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SelectNextDynamicPOI.OnAgentDied
-	// void OnAgentDied(class AFortAthenaAIBotController* BotController, class AFortPawn* FortPawn);                         // [0x9e225f4] Final|Native|Protected 
+	// void OnAgentDied(class AFortAthenaAIBotController* BotController, class AFortPawn* FortPawn);                         // [0x9e2dd54] Final|Native|Protected 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SelectNextPOI
@@ -3265,16 +3327,17 @@ public:
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_SmartObjects
-/// Size: 0x00D8 (0x0001A8 - 0x000280)
+/// Size: 0x00C8 (0x0001A8 - 0x000270)
 class UFortAthenaAIBotEvaluator_SmartObjects : public UFortAthenaAIBotEvaluator_Movement
 { 
 public:
 	class UFortAthenaAIRuntimeParameters_SmartObjectBase* SmartObjectRuntimeParameters;                            // 0x01A8   (0x0008)  
 	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x01B0   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01B8   (0x0008)  MISSED
-	bool                                               bEvaluateSOValidityAfterChosen;                             // 0x01C0   (0x0001)  
-	bool                                               bEnableEntryLocationsSupport;                               // 0x01C1   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x6];                                       // 0x01C2   (0x0006)  MISSED
+	FGameplayTag                                       EvaluationTag;                                              // 0x01C0   (0x0004)  
+	bool                                               bEvaluateSOValidityAfterChosen;                             // 0x01C4   (0x0001)  
+	bool                                               bEnableEntryLocationsSupport;                               // 0x01C5   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01C6   (0x0002)  MISSED
 	FScalableFloat                                     MaximumEntryLocationsChecksPerEvaluation;                   // 0x01C8   (0x0028)  
 	FScalableFloat                                     EntryLocationFailuresBlacklistedTime;                       // 0x01F0   (0x0028)  
 	class UCurveFloat*                                 DistanceToWeightCurveForSlotPicking;                        // 0x0218   (0x0008)  
@@ -3287,7 +3350,7 @@ public:
 	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x0254   (0x0004)  
 	FName                                              SmartObjectShouldMoveKeyName;                               // 0x0258   (0x0004)  
 	FName                                              SmartObjectUrgencyKeyName;                                  // 0x025C   (0x0004)  
-	unsigned char                                      UnknownData03_6[0x20];                                      // 0x0260   (0x0020)  MISSED
+	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0260   (0x0010)  MISSED
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Sprinting
@@ -3358,7 +3421,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Storm.OnSafeZoneStateChanged
-	// void OnSafeZoneStateChanged(EFortSafeZoneState NewState);                                                             // [0x9e44c34] Final|Native|Public  
+	// void OnSafeZoneStateChanged(EFortSafeZoneState NewState);                                                             // [0x9e4d76c] Final|Native|Public  
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIBotEvaluator_TagQueryToBBKey
@@ -3499,7 +3562,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIBotEvaluator_Zipline.OnZiplineStateChanged
-	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e44dec] Final|Native|Protected 
+	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e4d7ec] Final|Native|Protected 
 };
 
 /// Struct /Script/FortniteAIServer.GameplayAbilityEvaluatorModule
@@ -3523,13 +3586,13 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaAIEvaluator_BlueprintBase.OnExit
-	// void OnExit(class UBehaviorTreeComponent* OwnerComp);                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnExit(class UBehaviorTreeComponent* OwnerComp);                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteAIServer.FortAthenaAIEvaluator_BlueprintBase.OnEnter
-	// void OnEnter(class UBehaviorTreeComponent* OwnerComp);                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnEnter(class UBehaviorTreeComponent* OwnerComp);                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteAIServer.FortAthenaAIEvaluator_BlueprintBase.EvaluateStartingConditions
-	// bool EvaluateStartingConditions(class UBehaviorTreeComponent* OwnerComp);                                             // [0x9e44a08] Native|Event|Protected|BlueprintEvent|Const 
+	// bool EvaluateStartingConditions(class UBehaviorTreeComponent* OwnerComp);                                             // [0x9e4d5c8] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/FortniteAIServer.FortAthenaAIEvaluator_BlueprintBase.EvaluateOngoingConditions
-	// bool EvaluateOngoingConditions(class UBehaviorTreeComponent* OwnerComp);                                              // [0x9e44930] Native|Event|Protected|BlueprintEvent|Const 
+	// bool EvaluateOngoingConditions(class UBehaviorTreeComponent* OwnerComp);                                              // [0x9e4d534] Native|Event|Protected|BlueprintEvent|Const 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaAIEvaluator_DormantUntilPhase
@@ -3600,13 +3663,40 @@ public:
 	int32_t                                            RequiredTypes;                                              // 0x00D0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00D4   (0x0004)  MISSED
 	FScalableFloat                                     MinimumDistanceToActors;                                    // 0x00D8   (0x0028)  
-	SDK_UNDEFINED(16,13831) /* TArray<TEnumAsByte<ETeamAttitude>> */ __um(RequiredAttitudes);                      // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,13929) /* TArray<TEnumAsByte<ETeamAttitude>> */ __um(RequiredAttitudes);                      // 0x0100   (0x0010)  
 	bool                                               bRequireLoS;                                                // 0x0110   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0111   (0x0007)  MISSED
 	FGameplayTagQuery                                  RequiredTagsQuery;                                          // 0x0118   (0x0048)  
 	unsigned char                                      UnknownData03_6[0xE8];                                      // 0x0160   (0x00E8)  MISSED
 };
 #pragma pack(pop)
+
+/// Class /Script/FortniteAIServer.FortAthenaAIEvaluator_SmartObjects
+/// Size: 0x00C8 (0x0000A0 - 0x000168)
+class UFortAthenaAIEvaluator_SmartObjects : public UFortAthenaAIEvaluator
+{ 
+public:
+	class UFortAthenaAIRuntimeParameters_SmartObjectBase* SmartObjectRuntimeParameters;                            // 0x00A0   (0x0008)  
+	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x00A8   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00B0   (0x0008)  MISSED
+	FGameplayTag                                       EvaluationTag;                                              // 0x00B8   (0x0004)  
+	bool                                               bEvaluateSOValidityAfterChosen;                             // 0x00BC   (0x0001)  
+	bool                                               bEnableEntryLocationsSupport;                               // 0x00BD   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x00BE   (0x0002)  MISSED
+	FScalableFloat                                     MaximumEntryLocationsChecksPerEvaluation;                   // 0x00C0   (0x0028)  
+	FScalableFloat                                     EntryLocationFailuresBlacklistedTime;                       // 0x00E8   (0x0028)  
+	class UCurveFloat*                                 DistanceToWeightCurveForSlotPicking;                        // 0x0110   (0x0008)  
+	class UClass*                                      OverridenFilterClassForEntryPoints;                         // 0x0118   (0x0008)  
+	TArray<FName>                                      ExecutionStatusesToCheckForAllowToAvoidGoingToSOKeyNames;   // 0x0120   (0x0010)  
+	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0130   (0x0010)  MISSED
+	FName                                              SmartObjectExecutionStatusKeyName;                          // 0x0140   (0x0004)  
+	FName                                              SmartObjectMovementStateKeyName;                            // 0x0144   (0x0004)  
+	FName                                              SmartObjectDestinationKeyName;                              // 0x0148   (0x0004)  
+	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x014C   (0x0004)  
+	FName                                              SmartObjectShouldMoveKeyName;                               // 0x0150   (0x0004)  
+	FName                                              SmartObjectUrgencyKeyName;                                  // 0x0154   (0x0004)  
+	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0158   (0x0010)  MISSED
+};
 
 /// Class /Script/FortniteAIServer.FortAthenaAIEvaluator_SpeechBubble
 /// Size: 0x0000 (0x000250 - 0x000250)
@@ -3720,7 +3810,7 @@ public:
 	FBlackboardKeySelector                             InteractObjectKeySelector;                                  // 0x00C0   (0x0028)  
 	FBlackboardKeySelector                             ExecutionStatusKeySelector;                                 // 0x00E8   (0x0028)  
 	FBlackboardKeySelector                             MovementStateKeySelector;                                   // 0x0110   (0x0028)  
-	SDK_UNDEFINED(1,13832) /* TEnumAsByte<EInteractionBeingAttempted> */ __um(InteractionBeingAttempted);          // 0x0138   (0x0001)  
+	SDK_UNDEFINED(1,13930) /* TEnumAsByte<EInteractionBeingAttempted> */ __um(InteractionBeingAttempted);          // 0x0138   (0x0001)  
 	bool                                               bRequireDistanceCheck;                                      // 0x0139   (0x0001)  
 	bool                                               bRequireBlockedCheck;                                       // 0x013A   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x5];                                       // 0x013B   (0x0005)  MISSED
@@ -3780,7 +3870,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaBTService_ManageWeapon.ManageWeaponTargeting
-	// void ManageWeaponTargeting(class UBehaviorTreeComponent* OwnerComp);                                                  // [0x9e44ae0] Final|Native|Protected|Const 
+	// void ManageWeaponTargeting(class UBehaviorTreeComponent* OwnerComp);                                                  // [0x9e4d65c] Final|Native|Protected|Const 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTService_ManageVehicleWeapon
@@ -3908,7 +3998,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaBTService_Slide.OnStopSliding
-	// void OnStopSliding(class AFortPlayerPawn* Pawn);                                                                      // [0x9e44cf4] Final|Native|Private 
+	// void OnStopSliding(class AFortPlayerPawn* Pawn);                                                                      // [0x9e6cd08] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTService_SmartObject
@@ -3918,7 +4008,8 @@ class UFortAthenaBTService_SmartObject : public UBTService
 public:
 	FName                                              SmartObjectStatusKeyName;                                   // 0x0070   (0x0004)  
 	FName                                              SmartObjectDestinationKeyName;                              // 0x0074   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0078   (0x0008)  MISSED
+	FGameplayTag                                       EvaluationTag;                                              // 0x0078   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x007C   (0x0004)  MISSED
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTService_Sprinting
@@ -4238,17 +4329,17 @@ public:
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTTask_UseSmartObject
-/// Size: 0x00A0 (0x000070 - 0x000110)
+/// Size: 0x0028 (0x000070 - 0x000098)
 class UFortAthenaBTTask_UseSmartObject : public UBTTaskNode
 { 
 public:
-	FName                                              SmartObjectsStatusKeyName;                                  // 0x0070   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x0078   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x007C   (0x0002)  MISSED
-	bool                                               bHandleAbortWithSoftDisable;                                // 0x007E   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x29];                                      // 0x007F   (0x0029)  MISSED
-	FGameplayInteractionContext                        GameplayInteractionContext;                                 // 0x00A8   (0x0068)  
+	FGameplayTag                                       EvaluationTag;                                              // 0x0070   (0x0004)  
+	FName                                              SmartObjectsStatusKeyName;                                  // 0x0074   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0078   (0x0004)  MISSED
+	FName                                              SmartObjectDestinationRotationKeyName;                      // 0x007C   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0080   (0x0002)  MISSED
+	bool                                               bHandleAbortWithSoftDisable;                                // 0x0082   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x15];                                      // 0x0083   (0x0015)  MISSED
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaBTTask_VehicleHonk
@@ -4295,7 +4386,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaBTTask_Zipline.OnZiplineStateChanged
-	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e68f58] Final|Native|Public  
+	// void OnZiplineStateChanged(bool bIsZiplining, class AFortPlayerPawn* FortPlayerPawn);                                 // [0x9e6cdc0] Final|Native|Public  
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaNpcEvaluator_Encampment
@@ -4493,9 +4584,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaPlayContextualAnimTaskInstanceData.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x9e68d08] Final|Native|Public|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x9e7dedc] Final|Native|Public|HasOutParms 
 	// Function /Script/FortniteAIServer.FortAthenaPlayContextualAnimTaskInstanceData.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x9e68a88] Final|Native|Public  
+	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x9e7dd4c] Final|Native|Public  
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaPlayInteractionStateTreeTask
@@ -4526,9 +4617,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaPlayInteractionStateTreeTask.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x9e68e30] Final|Native|Private|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x9e7dfbc] Final|Native|Private|HasOutParms 
 	// Function /Script/FortniteAIServer.FortAthenaPlayInteractionStateTreeTask.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x9e68bc8] Final|Native|Private 
+	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x9e7de14] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortAthenaPlayMontageStateTreeTask
@@ -4554,9 +4645,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortAthenaPlayMontageStateTreeTask.HandleNotifyBeginReceived
-	// void HandleNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);          // [0x9e68960] Final|Native|Private|HasOutParms 
+	// void HandleNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);          // [0x9e7dc54] Final|Native|Private|HasOutParms 
 	// Function /Script/FortniteAIServer.FortAthenaPlayMontageStateTreeTask.HandleMontageEnded
-	// void HandleMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                         // [0x9e68820] Final|Native|Private 
+	// void HandleMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                         // [0x9e7db8c] Final|Native|Private 
 };
 
 /// Class /Script/FortniteAIServer.FortWorldConditionWorldState_State
@@ -4569,7 +4660,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteAIServer.FortWorldConditionWorldState_State.HandleWorldStateChanged
-	// void HandleWorldStateChanged();                                                                                       // [0x9e6c834] Final|Native|Private 
+	// void HandleWorldStateChanged();                                                                                       // [0x9e7dd34] Final|Native|Private 
 };
 
 /// Struct /Script/FortniteAIServer.FortAthenaHandleSoftDisableGuardStateTreeTaskInstanceData
@@ -4606,7 +4697,7 @@ struct FFortAthenaHandleSoftDisableStateTreeTaskInstanceData
 };
 
 /// Struct /Script/FortniteAIServer.FortAthenaHandleSoftDisableStateTreeTask
-/// Size: 0x0030 (0x000020 - 0x000050)
+/// Size: 0x0038 (0x000020 - 0x000058)
 struct FFortAthenaHandleSoftDisableStateTreeTask : FStateTreeTaskCommonBase
 { 
 	FGameplayTag                                       StateTreeEventTag;                                          // 0x0020   (0x0004)  
@@ -4616,7 +4707,9 @@ struct FFortAthenaHandleSoftDisableStateTreeTask : FStateTreeTaskCommonBase
 	bool                                               bEnableNavmeshTeleportForPlayers;                           // 0x0044   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0045   (0x0003)  MISSED
 	float                                              MultiplierOnCapsuleHeightForTeleportLocation;               // 0x0048   (0x0004)  
-	float                                              MultiplierOnCapsuleHeightForFallbackTeleportSweepCast;      // 0x004C   (0x0004)  
+	float                                              MultiplierOnCapsuleRadiusForFallbackTeleportSweepCastSize;  // 0x004C   (0x0004)  
+	float                                              MultiplierOnCapsuleHeightForFallbackTeleportSweepCast;      // 0x0050   (0x0004)  
+	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0054   (0x0004)  MISSED
 };
 
 /// Struct /Script/FortniteAIServer.FortAthenaPickRandomMontageConfig
@@ -4772,7 +4865,7 @@ struct FFortWorldConditionWorldStat : FWorldConditionCommonBase
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FPFWNPCReactions_TriggeredReactions_PersistentInfoData
 { 
-	SDK_UNDEFINED(16,13833) /* TArray<FString> */      __um(TriggeredReactionRowNames);                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13931) /* TArray<FString> */      __um(TriggeredReactionRowNames);                            // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/FortniteAIServer.PFWNPCReactions_PersistentInfo
@@ -4780,13 +4873,6 @@ struct FPFWNPCReactions_TriggeredReactions_PersistentInfoData
 struct FPFWNPCReactions_PersistentInfo
 { 
 	FPFWNPCReactions_TriggeredReactions_PersistentInfoData TriggeredReactions_PersistentInfoData;                  // 0x0000   (0x0010)  
-};
-
-/// Struct /Script/FortniteAIServer.SmartObjectActivityResult
-/// Size: 0x0020 (0x000000 - 0x000020)
-struct FSmartObjectActivityResult
-{ 
-	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0000   (0x0020)  MISSED
 };
 
 /// Struct /Script/FortniteAIServer.GameplayTagActorHasMatchingGameplayTagInstanceData
@@ -4937,7 +5023,7 @@ struct FFortAthenaStateTreeCrouchTask : FStateTreeTaskCommonBase
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FFortAthenaStateTreeInteractTaskInstanceData
 { 
-	SDK_UNDEFINED(1,13834) /* TEnumAsByte<TInteractionType> */ __um(InteractType);                                 // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,13932) /* TEnumAsByte<TInteractionType> */ __um(InteractType);                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	class AActor*                                      Actor;                                                      // 0x0008   (0x0008)  
 	class AActor*                                      InteractTargetActor;                                        // 0x0010   (0x0008)  

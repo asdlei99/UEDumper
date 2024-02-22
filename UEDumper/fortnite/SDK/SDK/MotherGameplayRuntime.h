@@ -31,22 +31,22 @@ public:
 	FGameplayTagContainer                              TargetIsPlayerTag;                                          // 0x01E0   (0x0020)  
 	FGameplayTagContainer                              TargetIsAlreadyGrabbedTag;                                  // 0x0200   (0x0020)  
 	FGameplayTagContainer                              TargetIsOwnVehicleTag;                                      // 0x0220   (0x0020)  
-	SDK_UNDEFINED(16,14819) /* FMulticastInlineDelegate */ __um(FoundTargetDelegate);                              // 0x0240   (0x0010)  
-	SDK_UNDEFINED(16,14820) /* FMulticastInlineDelegate */ __um(DeactivateReticleDelegate);                        // 0x0250   (0x0010)  
+	SDK_UNDEFINED(16,14959) /* FMulticastInlineDelegate */ __um(FoundTargetDelegate);                              // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,14960) /* FMulticastInlineDelegate */ __um(DeactivateReticleDelegate);                        // 0x0250   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0260   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.IsValidTarget
-	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure); // [0xb729b00] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure); // [0xb840f10] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetProjectile
-	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius); // [0xb7294c4] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius); // [0xb840914] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetActor
-	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                             // [0xb7292e8] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                             // [0xb840778] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.FortCabbageIglooVehicle
-/// Size: 0x0000 (0x002A50 - 0x002A50)
+/// Size: 0x0000 (0x002A70 - 0x002A70)
 class AFortCabbageIglooVehicle : public AFortOctopusVehicle
 { 
 public:
@@ -106,15 +106,15 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropPreviewPosition
-	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb729f50] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb84126c] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropIndexEventState
-	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                           // [0xb729e08] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                           // [0xb841164] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropActivatedEventState
-	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);              // [0xb729cc8] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);              // [0xb841064] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropIndexEventState
-	// void ClearPropIndexEventState(class AActor* ContextActor);                                                            // [0xb72921c] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropIndexEventState(class AActor* ContextActor);                                                            // [0xb8406ec] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropActivatedEventState
-	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                        // [0xb729150] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                        // [0xb840660] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp
@@ -128,17 +128,17 @@ public:
 	FScalableFloat                                     MinHitDistance;                                             // 0x09D8   (0x0028)  
 	FScalableFloat                                     HitObjectsLimit;                                            // 0x0A00   (0x0028)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0A28   (0x0004)  MISSED
-	SDK_UNDEFINED(1,14821) /* TEnumAsByte<ECollisionChannel> */ __um(TraceChannel);                                // 0x0A2C   (0x0001)  
+	SDK_UNDEFINED(1,14961) /* TEnumAsByte<ECollisionChannel> */ __um(TraceChannel);                                // 0x0A2C   (0x0001)  
 	unsigned char                                      UnknownData01_6[0xB];                                       // 0x0A2D   (0x000B)  MISSED
 
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.UpdateAimEndPoint
-	// void UpdateAimEndPoint();                                                                                             // [0xb729cb4] Final|Native|Public|BlueprintCallable 
+	// void UpdateAimEndPoint();                                                                                             // [0xb841050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.OnEndPointUpdated
-	// void OnEndPointUpdated(FVector& FoundPoint);                                                                          // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnEndPointUpdated(FVector& FoundPoint);                                                                          // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.GetFoundEndPoint
-	// FVector GetFoundEndPoint();                                                                                           // [0xb729ad8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetFoundEndPoint();                                                                                           // [0xb840ee8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MotherGameplayRuntime.GravyGoblinActivatable_Event
@@ -159,12 +159,12 @@ struct FGravyGoblinRotatable_Event
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FPaddleGingerPropData
 { 
-	SDK_UNDEFINED(24,14822) /* FText */                __um(CategoryLabelText);                                    // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,14962) /* FText */                __um(CategoryLabelText);                                    // 0x0000   (0x0018)  
 	int32_t                                            PropIndex;                                                  // 0x0018   (0x0004)  
 	int32_t                                            MaxPropCount;                                               // 0x001C   (0x0004)  
 	int32_t                                            CategoryIndex;                                              // 0x0020   (0x0004)  
 	int32_t                                            MaxCategoryCount;                                           // 0x0024   (0x0004)  
-	SDK_UNDEFINED(8,14823) /* TWeakObjectPtr<APlayerState*> */ __um(Sender);                                       // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,14963) /* TWeakObjectPtr<APlayerState*> */ __um(Sender);                                       // 0x0028   (0x0008)  
 };
 
 /// Struct /Script/MotherGameplayRuntime.PaddleGingerPropActivatedData

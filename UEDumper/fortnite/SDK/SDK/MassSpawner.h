@@ -101,7 +101,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FMassSpawnedEntityType
 { 
-	SDK_UNDEFINED(32,14308) /* TWeakObjectPtr<UMassEntityConfigAsset*> */ __um(EntityConfig);                      // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14426) /* TWeakObjectPtr<UMassEntityConfigAsset*> */ __um(EntityConfig);                      // 0x0000   (0x0020)  
 	float                                              Proportion;                                                 // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	class UMassEntityConfigAsset*                      EntityConfigPtr;                                            // 0x0028   (0x0008)  
@@ -122,8 +122,8 @@ struct FMassSpawnDataGenerator
 class AMassSpawner : public AActor
 { 
 public:
-	SDK_UNDEFINED(16,14309) /* FMulticastInlineDelegate */ __um(OnSpawningFinishedEvent);                          // 0x0290   (0x0010)  
-	SDK_UNDEFINED(16,14310) /* FMulticastInlineDelegate */ __um(OnDespawningFinishedEvent);                        // 0x02A0   (0x0010)  
+	SDK_UNDEFINED(16,14427) /* FMulticastInlineDelegate */ __um(OnSpawningFinishedEvent);                          // 0x0290   (0x0010)  
+	SDK_UNDEFINED(16,14428) /* FMulticastInlineDelegate */ __um(OnDespawningFinishedEvent);                        // 0x02A0   (0x0010)  
 	int32_t                                            Count;                                                      // 0x02B0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x02B4   (0x0004)  MISSED
 	TArray<FMassSpawnedEntityType>                     EntityTypes;                                                // 0x02B8   (0x0010)  
@@ -138,19 +138,19 @@ public:
 
 	/// Functions
 	// Function /Script/MassSpawner.MassSpawner.UnloadConfig
-	// void UnloadConfig();                                                                                                  // [0xa8dc008] Final|Native|Public|BlueprintCallable 
+	// void UnloadConfig();                                                                                                  // [0xa8d8320] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassSpawner.MassSpawner.ScaleSpawningCount
-	// void ScaleSpawningCount(float Scale);                                                                                 // [0xa8dbf44] Final|Native|Public|BlueprintCallable 
+	// void ScaleSpawningCount(float Scale);                                                                                 // [0xa8d82a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassSpawner.MassSpawner.GetSpawningCountScale
-	// float GetSpawningCountScale();                                                                                        // [0xa170894] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSpawningCountScale();                                                                                        // [0xa1718e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MassSpawner.MassSpawner.GetCount
-	// int32_t GetCount();                                                                                                   // [0x85591d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCount();                                                                                                   // [0x855ac90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MassSpawner.MassSpawner.DoSpawning
-	// void DoSpawning();                                                                                                    // [0xa8dbf30] Final|Native|Public|BlueprintCallable 
+	// void DoSpawning();                                                                                                    // [0xa8d828c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassSpawner.MassSpawner.DoDespawning
-	// void DoDespawning();                                                                                                  // [0xa8dbf1c] Final|Native|Public|BlueprintCallable 
+	// void DoDespawning();                                                                                                  // [0xa8d8278] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassSpawner.MassSpawner.ClearTemplates
-	// void ClearTemplates();                                                                                                // [0xa8dbf08] Final|Native|Public|BlueprintCallable 
+	// void ClearTemplates();                                                                                                // [0xa8d8264] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MassSpawner.MassSpawnerSubsystem

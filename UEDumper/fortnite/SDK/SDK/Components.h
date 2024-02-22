@@ -21,13 +21,6 @@
 /// dependency: SoundLibrary
 /// dependency: VehicleCosmeticsRuntime
 
-/// Class /EventMode/Components/EventMode_Activator_Component.EventMode_Activator_Component_C
-/// Size: 0x0000 (0x000210 - 0x000210)
-class UEventMode_Activator_Component_C : public UFortGameFrameworkComponent_EventMode
-{ 
-public:
-};
-
 /// Class /RidingContent/Components/RidingGeneric_Interafce.RidingGeneric_Interafce_C
 /// Size: 0x0000 (0x000028 - 0x000028)
 class URidingGeneric_Interafce_C : public UInterface
@@ -37,9 +30,9 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Components/RidingGeneric_Interafce.RidingGeneric_Interafce_C.ToggleRidingAlternative
-	// void ToggleRidingAlternative();                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleRidingAlternative();                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/RidingGeneric_Interafce.RidingGeneric_Interafce_C.GetRidingInfoFromTarget
-	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /RidingContent/Components/CreatureBaseNonRidableComponent.CreatureBaseNonRidableComponent_C
@@ -56,13 +49,13 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Components/CreatureBaseNonRidableComponent.CreatureBaseNonRidableComponent_C.GetRidingInfoFromTarget
-	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseNonRidableComponent.CreatureBaseNonRidableComponent_C.ToggleRidingAlternative
-	// void ToggleRidingAlternative();                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleRidingAlternative();                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseNonRidableComponent.CreatureBaseNonRidableComponent_C.AlternateRidingEvent
-	// void AlternateRidingEvent();                                                                                          // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void AlternateRidingEvent();                                                                                          // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseNonRidableComponent.CreatureBaseNonRidableComponent_C.ExecuteUbergraph_CreatureBaseNonRidableComponent
-	// void ExecuteUbergraph_CreatureBaseNonRidableComponent(int32_t EntryPoint);                                            // [0x130d900] Final                
+	// void ExecuteUbergraph_CreatureBaseNonRidableComponent(int32_t EntryPoint);                                            // [0x3d1d968] Final                
 };
 
 /// Class /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C
@@ -110,10 +103,10 @@ public:
 	double                                             RidableSocket_Alpha;                                        // 0x08B0   (0x0008)  
 	class UClass*                                      GE_CooldownOverride;                                        // 0x08B8   (0x0008)  
 	FGameplayTagContainer                              T_CreatureOverrideCooldown;                                 // 0x08C0   (0x0020)  
-	SDK_UNDEFINED(80,12336) /* TMap<TEnumAsByte<ECollisionChannel>, TEnumAsByte<ECollisionResponse>> */ __um(OriginalCollisionResponseMap); // 0x08E0   (0x0050)  
+	SDK_UNDEFINED(80,12423) /* TMap<TEnumAsByte<ECollisionChannel>, TEnumAsByte<ECollisionResponse>> */ __um(OriginalCollisionResponseMap); // 0x08E0   (0x0050)  
 	FSoundIndicatorIconPicker                          RidingSoundIndicatorIconOverride;                           // 0x0930   (0x0028)  
-	SDK_UNDEFINED(16,12337) /* FMulticastInlineDelegate */ __um(AudioOnJump);                                      // 0x0958   (0x0010)  
-	SDK_UNDEFINED(16,12338) /* FMulticastInlineDelegate */ __um(AudioOnJumpApex);                                  // 0x0968   (0x0010)  
+	SDK_UNDEFINED(16,12424) /* FMulticastInlineDelegate */ __um(AudioOnJump);                                      // 0x0958   (0x0010)  
+	SDK_UNDEFINED(16,12425) /* FMulticastInlineDelegate */ __um(AudioOnJumpApex);                                  // 0x0968   (0x0010)  
 	char                                               MovementMode;                                               // 0x0978   (0x0001)  
 	bool                                               bFalling;                                                   // 0x0979   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x097A   (0x0006)  MISSED
@@ -122,7 +115,7 @@ public:
 	double                                             JumpAttach_GroundHeightBuffer;                              // 0x09B0   (0x0008)  
 	bool                                               UseAltRidingMessage;                                        // 0x09B8   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x09B9   (0x0007)  MISSED
-	SDK_UNDEFINED(24,12339) /* FText */                __um(Riding_Interaction_Text);                              // 0x09C0   (0x0018)  
+	SDK_UNDEFINED(24,12426) /* FText */                __um(Riding_Interaction_Text);                              // 0x09C0   (0x0018)  
 	double                                             currentEnergyValue;                                         // 0x09D8   (0x0008)  
 	class UPlayerRiderComponent_C*                     PlayerRiderComponentRef;                                    // 0x09E0   (0x0008)  
 	class ANPC_Pawn_Wildlife_Parent_C*                 NPCPawnWildlifeRef;                                         // 0x09E8   (0x0008)  
@@ -165,11 +158,11 @@ public:
 	class UClass*                                      GE_Creature_Sprint;                                         // 0x0C00   (0x0008)  
 	class USoundLibrary*                               RidingFoleySoundLibrary;                                    // 0x0C08   (0x0008)  
 	FGameplayTagContainer                              TagsPreventSprinting;                                       // 0x0C10   (0x0020)  
-	SDK_UNDEFINED(16,12340) /* FMulticastInlineDelegate */ __um(RidableUIStart);                                   // 0x0C30   (0x0010)  
-	SDK_UNDEFINED(16,12341) /* FMulticastInlineDelegate */ __um(RidableUIUpdateEnergy);                            // 0x0C40   (0x0010)  
+	SDK_UNDEFINED(16,12427) /* FMulticastInlineDelegate */ __um(RidableUIStart);                                   // 0x0C30   (0x0010)  
+	SDK_UNDEFINED(16,12428) /* FMulticastInlineDelegate */ __um(RidableUIUpdateEnergy);                            // 0x0C40   (0x0010)  
 	FGameplayTag                                       OutOfEnergySoundLibTag;                                     // 0x0C50   (0x0004)  
 	FGameplayTag                                       SprintStartSoundLibTag;                                     // 0x0C54   (0x0004)  
-	SDK_UNDEFINED(1,12342) /* TEnumAsByte<TInteractionType> */ __um(Riding_Interaction_Type);                      // 0x0C58   (0x0001)  
+	SDK_UNDEFINED(1,12429) /* TEnumAsByte<TInteractionType> */ __um(Riding_Interaction_Type);                      // 0x0C58   (0x0001)  
 	unsigned char                                      UnknownData11_5[0x7];                                       // 0x0C59   (0x0007)  MISSED
 	double                                             StartInAirTimestamp;                                        // 0x0C60   (0x0008)  
 	FTimerHandle                                       RetryJumpExitTimerHandle;                                   // 0x0C68   (0x0008)  
@@ -205,173 +198,173 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.GetRidingInfoFromTarget
-	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.JumpFatigue_LandTimeStamp
-	// void JumpFatigue_LandTimeStamp();                                                                                     // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void JumpFatigue_LandTimeStamp();                                                                                     // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.JumpFatigue_CheckApplyFatigue
-	// void JumpFatigue_CheckApplyFatigue();                                                                                 // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void JumpFatigue_CheckApplyFatigue();                                                                                 // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.JumpFatigue_CountJumps
-	// void JumpFatigue_CountJumps();                                                                                        // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void JumpFatigue_CountJumps();                                                                                        // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.JumpFatigue_RemoveFatigue
-	// void JumpFatigue_RemoveFatigue();                                                                                     // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void JumpFatigue_RemoveFatigue();                                                                                     // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.JumpFatigue_Landed
-	// void JumpFatigue_Landed();                                                                                            // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void JumpFatigue_Landed();                                                                                            // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Should Convert Jump Exit to Jump
-	// void Should Convert Jump Exit to Jump(bool& Out);                                                                     // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Should Convert Jump Exit to Jump(bool& Out);                                                                     // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ShouldBufferJumpExitToRetryJump
-	// void ShouldBufferJumpExitToRetryJump(bool& Output);                                                                   // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void ShouldBufferJumpExitToRetryJump(bool& Output);                                                                   // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.SetInfiniteStaminaBuff
-	// void SetInfiniteStaminaBuff(bool Enabled);                                                                            // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetInfiniteStaminaBuff(bool Enabled);                                                                            // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CanBePet
-	// bool CanBePet(class URiderComponent* Rider);                                                                          // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanBePet(class URiderComponent* Rider);                                                                          // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CanJumpExit
-	// void CanJumpExit(bool& CanJumpExit);                                                                                  // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void CanJumpExit(bool& CanJumpExit);                                                                                  // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UpdateLootAnimalGlow
-	// void UpdateLootAnimalGlow(double Scale);                                                                              // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UpdateLootAnimalGlow(double Scale);                                                                              // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnRep_currentEnergyValue
-	// void OnRep_currentEnergyValue();                                                                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnRep_currentEnergyValue();                                                                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Propagate Immunity Fall Damage
-	// void Propagate Immunity Fall Damage();                                                                                // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Propagate Immunity Fall Damage();                                                                                // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CanRiderPlayEmote
-	// bool CanRiderPlayEmote(class URiderComponent* Rider);                                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanRiderPlayEmote(class URiderComponent* Rider);                                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleEnemyFoleySoundLibrary
-	// void HandleEnemyFoleySoundLibrary(class UActorComponent* Rider, bool bIsRiding);                                      // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleEnemyFoleySoundLibrary(class UActorComponent* Rider, bool bIsRiding);                                      // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.IsSwimming
-	// void IsSwimming(bool& IsSwimming);                                                                                    // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void IsSwimming(bool& IsSwimming);                                                                                    // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.StopSprinting
-	// void StopSprinting();                                                                                                 // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void StopSprinting();                                                                                                 // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.RemoveGEByTag
-	// void RemoveGEByTag(FGameplayTagContainer Tags);                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void RemoveGEByTag(FGameplayTagContainer Tags);                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ApplyGEToSelf
-	// void ApplyGEToSelf(class UClass* GameplayEffectClass, bool& IsValidClass);                                            // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ApplyGEToSelf(class UClass* GameplayEffectClass, bool& IsValidClass);                                            // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.KickRiderOffSelf
-	// void KickRiderOffSelf();                                                                                              // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void KickRiderOffSelf();                                                                                              // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.DetermineRateOfChange
-	// void DetermineRateOfChange(double& rateOfChange);                                                                     // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void DetermineRateOfChange(double& rateOfChange);                                                                     // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CommitEnergyCosts
-	// void CommitEnergyCosts(bool RequireAllEnergy, double EnergyCost, bool& Success);                                      // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void CommitEnergyCosts(bool RequireAllEnergy, double EnergyCost, bool& Success);                                      // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.TestThreshold
-	// void TestThreshold(bool isDecaying, double CurrentValue, double testTreshold, bool PreviousState, bool& crossedThreshold); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void TestThreshold(bool isDecaying, double CurrentValue, double testTreshold, bool PreviousState, bool& crossedThreshold); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.SetWildlifeHealth
-	// void SetWildlifeHealth();                                                                                             // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void SetWildlifeHealth();                                                                                             // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UpdateValue
-	// void UpdateValue(double TargetValue, double rateOfChange, double DeltaTime, double& updatedValue, bool& EnergyDepleted); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateValue(double TargetValue, double rateOfChange, double DeltaTime, double& updatedValue, bool& EnergyDepleted); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ToggleRiding
-	// void ToggleRiding(class AActor* PlayerPawn, class AActor* Target, bool ShouldRide, bool& bChangedRiding);             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ToggleRiding(class AActor* PlayerPawn, class AActor* Target, bool ShouldRide, bool& bChangedRiding);             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ForceTaming
-	// void ForceTaming(class AActor* PlayerPawn, class AActor* CreaturePawn, bool& IsTamingEnabled);                        // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ForceTaming(class AActor* PlayerPawn, class AActor* CreaturePawn, bool& IsTamingEnabled);                        // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.RestoreCollisionResponses
-	// void RestoreCollisionResponses();                                                                                     // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void RestoreCollisionResponses();                                                                                     // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ApplyCollisionResponse
-	// void ApplyCollisionResponse(TArray<TEnumAsByte<ECollisionChannel>>& Channels, TEnumAsByte<ECollisionResponse> Response); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ApplyCollisionResponse(TArray<TEnumAsByte<ECollisionChannel>>& Channels, TEnumAsByte<ECollisionResponse> Response); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ShouldCameraFocusOnRidable
-	// bool ShouldCameraFocusOnRidable(class URiderComponent* Rider);                                                        // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldCameraFocusOnRidable(class URiderComponent* Rider);                                                        // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UpdateAnimInputBool
-	// void UpdateAnimInputBool(class AFortPawn* FortPawn, bool IsBeingRidden);                                              // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateAnimInputBool(class AFortPawn* FortPawn, bool IsBeingRidden);                                              // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.GetRiderCapsuleSize
-	// void GetRiderCapsuleSize(class URiderComponent* Rider, double& RiderCapsuleRadius, double& RiderCapsuleHH);           // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRiderCapsuleSize(class URiderComponent* Rider, double& RiderCapsuleRadius, double& RiderCapsuleHH);           // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.GetRidingEmoteCapsuleSize
-	// void GetRidingEmoteCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRidingEmoteCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.GetRidingCapsuleSize
-	// void GetRidingCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRidingCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnRep_IdleAnim_Add
-	// void OnRep_IdleAnim_Add();                                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnRep_IdleAnim_Add();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ShouldSetAsViewTarget
-	// bool ShouldSetAsViewTarget(class URiderComponent* Rider);                                                             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldSetAsViewTarget(class URiderComponent* Rider);                                                             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.GetRiderLocation
-	// void GetRiderLocation(FVector& Location);                                                                             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void GetRiderLocation(FVector& Location);                                                                             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Removed_AD51144144164FD235EE5BA4F6E87456
-	// void Removed_AD51144144164FD235EE5BA4F6E87456();                                                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Removed_AD51144144164FD235EE5BA4F6E87456();                                                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Added_FBD936634BCC61A726DA279226E2F4BE
-	// void Added_FBD936634BCC61A726DA279226E2F4BE();                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Added_FBD936634BCC61A726DA279226E2F4BE();                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Removed_C4C6E29B4217C014B9DE0E80B7134D6E
-	// void Removed_C4C6E29B4217C014B9DE0E80B7134D6E();                                                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Removed_C4C6E29B4217C014B9DE0E80B7134D6E();                                                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ToggleRidingAlternative
-	// void ToggleRidingAlternative();                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleRidingAlternative();                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleRiderStartedRiding
-	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleRiderStoppedRiding
-	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UpdateDebug
-	// void UpdateDebug();                                                                                                   // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void UpdateDebug();                                                                                                   // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleAbilityHeld
-	// void HandleAbilityHeld();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleAbilityHeld();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleAbilityStarted
-	// void HandleAbilityStarted();                                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleAbilityStarted();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleAbilityStopped
-	// void HandleAbilityStopped();                                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleAbilityStopped();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleJumpStarted
-	// void HandleJumpStarted();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleJumpStarted();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnJumping
-	// void OnJumping(double JumpPitchInterpSpeed);                                                                          // [0x130d900] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
+	// void OnJumping(double JumpPitchInterpSpeed);                                                                          // [0x3d1d968] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnJumpingApex
-	// void OnJumpingApex();                                                                                                 // [0x130d900] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
+	// void OnJumpingApex();                                                                                                 // [0x3d1d968] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.NPCPawnInteractWithDispatcher_Event
-	// void NPCPawnInteractWithDispatcher_Event(class AActor* AIPawn, class AFortPlayerPawn* InteractingPlayerPawn);         // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void NPCPawnInteractWithDispatcher_Event(class AActor* AIPawn, class AFortPlayerPawn* InteractingPlayerPawn);         // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.EnergyTrackingStart
-	// void EnergyTrackingStart();                                                                                           // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void EnergyTrackingStart();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.EnergyTrackingStop
-	// void EnergyTrackingStop();                                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void EnergyTrackingStop();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UpdateEnergy
-	// void UpdateEnergy();                                                                                                  // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void UpdateEnergy();                                                                                                  // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ConvertedDispatcher_Event
-	// void ConvertedDispatcher_Event(bool Converted, class AFortPawn* InstigatorPawn);                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ConvertedDispatcher_Event(bool Converted, class AFortPawn* InstigatorPawn);                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnPawnHealthChanged_Event
-	// void OnPawnHealthChanged_Event();                                                                                     // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnPawnHealthChanged_Event();                                                                                     // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.UseEnergyAmountServer
-	// void UseEnergyAmountServer(double EnergyCost);                                                                        // [0x130d900] Net|NetServer|BlueprintCallable|BlueprintEvent 
+	// void UseEnergyAmountServer(double EnergyCost);                                                                        // [0x3d1d968] Net|NetServer|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleCancelSprint
-	// void HandleCancelSprint(bool bAbilityInputHeld, bool bForceCancel);                                                   // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleCancelSprint(bool bAbilityInputHeld, bool bForceCancel);                                                   // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CheatSetStaminaPercent
-	// void CheatSetStaminaPercent(float StaminaPercent);                                                                    // [0x130d900] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
+	// void CheatSetStaminaPercent(float StaminaPercent);                                                                    // [0x3d1d968] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnEnergyUpdate
-	// void OnEnergyUpdate(double Energy, bool bWarningActive);                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnEnergyUpdate(double Energy, bool bWarningActive);                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnEnergyDepletedClient
-	// void OnEnergyDepletedClient();                                                                                        // [0x130d900] Net|NetMulticast|BlueprintCallable|BlueprintEvent 
+	// void OnEnergyDepletedClient();                                                                                        // [0x3d1d968] Net|NetMulticast|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnSprintStarted
-	// void OnSprintStarted();                                                                                               // [0x130d900] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
+	// void OnSprintStarted();                                                                                               // [0x3d1d968] Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.OnEatToRefuel
-	// void OnEatToRefuel(double EnergyCost);                                                                                // [0x130d900] Net|NetServer|BlueprintCallable|BlueprintEvent 
+	// void OnEatToRefuel(double EnergyCost);                                                                                // [0x3d1d968] Net|NetServer|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ReTryJumpExit
-	// void ReTryJumpExit();                                                                                                 // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ReTryJumpExit();                                                                                                 // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ManualEnergyDepleted
-	// void ManualEnergyDepleted();                                                                                          // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ManualEnergyDepleted();                                                                                          // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Check Regen on Stopped Riding
-	// void Check Regen on Stopped Riding();                                                                                 // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Check Regen on Stopped Riding();                                                                                 // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Check Regen on Started Riding
-	// void Check Regen on Started Riding();                                                                                 // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Check Regen on Started Riding();                                                                                 // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Activate Regen
-	// void Activate Regen();                                                                                                // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Activate Regen();                                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.Deactivate Regen
-	// void Deactivate Regen();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Deactivate Regen();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.HandleJumpStopped
-	// void HandleJumpStopped();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleJumpStopped();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ExecuteBufferedJumpExit
-	// void ExecuteBufferedJumpExit();                                                                                       // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ExecuteBufferedJumpExit();                                                                                       // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.CancelJumpExitAndJump
-	// void CancelJumpExitAndJump();                                                                                         // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void CancelJumpExitAndJump();                                                                                         // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.MountLandedClient
-	// void MountLandedClient(FHitResult& Hit);                                                                              // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void MountLandedClient(FHitResult& Hit);                                                                              // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.TryConvertBufferedJumpExitToJump
-	// void TryConvertBufferedJumpExitToJump();                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void TryConvertBufferedJumpExitToJump();                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.MountLandedServer_JumpFatigue
-	// void MountLandedServer_JumpFatigue(FHitResult& Hit);                                                                  // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void MountLandedServer_JumpFatigue(FHitResult& Hit);                                                                  // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.ExecuteUbergraph_CreatureBaseRidableComponent
-	// void ExecuteUbergraph_CreatureBaseRidableComponent(int32_t EntryPoint);                                               // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_CreatureBaseRidableComponent(int32_t EntryPoint);                                               // [0x3d1d968] Final|HasDefaults    
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.RidableUIUpdateEnergy__DelegateSignature
-	// void RidableUIUpdateEnergy__DelegateSignature(double Energy, bool bIsResting);                                        // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RidableUIUpdateEnergy__DelegateSignature(double Energy, bool bIsResting);                                        // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.RidableUIStart__DelegateSignature
-	// void RidableUIStart__DelegateSignature(FText Name, FSlateBrush Icon);                                                 // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RidableUIStart__DelegateSignature(FText Name, FSlateBrush Icon);                                                 // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.AudioOnJumpApex__DelegateSignature
-	// void AudioOnJumpApex__DelegateSignature();                                                                            // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void AudioOnJumpApex__DelegateSignature();                                                                            // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/CreatureBaseRidableComponent.CreatureBaseRidableComponent_C.AudioOnJump__DelegateSignature
-	// void AudioOnJump__DelegateSignature(double JumpPitchInterpSpeed);                                                     // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void AudioOnJump__DelegateSignature(double JumpPitchInterpSpeed);                                                     // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C
@@ -384,13 +377,13 @@ public:
 	class UClass*                                      GE_PlayerIsRiding;                                          // 0x06F0   (0x0008)  
 	class AFortPlayerPawn*                             FortPlayerRef;                                              // 0x06F8   (0x0008)  
 	double                                             JumpOnMountDistanceCheck;                                   // 0x0700   (0x0008)  
-	SDK_UNDEFINED(16,12343) /* FMulticastInlineDelegate */ __um(RiderUINewStats);                                  // 0x0708   (0x0010)  
-	SDK_UNDEFINED(16,12344) /* FMulticastInlineDelegate */ __um(RiderUIEnd);                                       // 0x0718   (0x0010)  
+	SDK_UNDEFINED(16,12430) /* FMulticastInlineDelegate */ __um(RiderUINewStats);                                  // 0x0708   (0x0010)  
+	SDK_UNDEFINED(16,12431) /* FMulticastInlineDelegate */ __um(RiderUIEnd);                                       // 0x0718   (0x0010)  
 	double                                             targetEnergy;                                               // 0x0728   (0x0008)  
 	double                                             targetHealth;                                               // 0x0730   (0x0008)  
 	FGameplayTagContainer                              T_CannotRideBucket;                                         // 0x0738   (0x0020)  
-	SDK_UNDEFINED(16,12345) /* FMulticastInlineDelegate */ __um(RiderUIUpdateEnergy);                              // 0x0758   (0x0010)  
-	SDK_UNDEFINED(16,12346) /* FMulticastInlineDelegate */ __um(RiderUIUpdateHealth);                              // 0x0768   (0x0010)  
+	SDK_UNDEFINED(16,12432) /* FMulticastInlineDelegate */ __um(RiderUIUpdateEnergy);                              // 0x0758   (0x0010)  
+	SDK_UNDEFINED(16,12433) /* FMulticastInlineDelegate */ __um(RiderUIUpdateHealth);                              // 0x0768   (0x0010)  
 	class AActor*                                      CachedRidableActor;                                         // 0x0778   (0x0008)  
 	FGameplayTagContainer                              Cannot_Ride_Rider_Bucket;                                   // 0x0780   (0x0020)  
 	FGameplayTag                                       JumpOnCreature_Cue_Tag;                                     // 0x07A0   (0x0004)  
@@ -403,63 +396,63 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.GetRidingInfoFromTarget
-	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetRidingInfoFromTarget(double& JumpAttachGroundHeightMin, double& JumpAttachGroundHeightBuffer, bool& UsesAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.OnRep_targetHealth
-	// void OnRep_targetHealth();                                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnRep_targetHealth();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.OnRep_targetEnergy
-	// void OnRep_targetEnergy();                                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void OnRep_targetEnergy();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.GetJumpInfo
-	// void GetJumpInfo(class AActor* TargetActor, class UActorComponent*& TargetActorComponent, double& JumpAttach_GroundHeightMin, double& JumpAttach_GroundHeightBuffer, bool& UseAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetJumpInfo(class AActor* TargetActor, class UActorComponent*& TargetActorComponent, double& JumpAttach_GroundHeightMin, double& JumpAttach_GroundHeightBuffer, bool& UseAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.TestIfValidForRidingAttempt
-	// void TestIfValidForRidingAttempt(class UObject* Object, bool& Success, class UObject*& TargetObject, bool& UseAltRidingMessage); // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void TestIfValidForRidingAttempt(class UObject* Object, bool& Success, class UObject*& TargetObject, bool& UseAltRidingMessage); // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.ToggleRiding
-	// void ToggleRiding(class AActor* PlayerPawn, class AActor* Target, bool ShouldRide, bool& bChangedRiding);             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ToggleRiding(class AActor* PlayerPawn, class AActor* Target, bool ShouldRide, bool& bChangedRiding);             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.EventReceived_E5B5FB5340DB5660002329825657B406
-	// void EventReceived_E5B5FB5340DB5660002329825657B406(FGameplayEventData Payload);                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void EventReceived_E5B5FB5340DB5660002329825657B406(FGameplayEventData Payload);                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.Added_42EF586645CCFF06FFA4D9A5D59B1298
-	// void Added_42EF586645CCFF06FFA4D9A5D59B1298();                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Added_42EF586645CCFF06FFA4D9A5D59B1298();                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.Added_A83C775344FE0F6BDAAC4B971F57425E
-	// void Added_A83C775344FE0F6BDAAC4B971F57425E();                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Added_A83C775344FE0F6BDAAC4B971F57425E();                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.EventReceived_3DA19BC649FB853BA2CC0FADFF8D08F6
-	// void EventReceived_3DA19BC649FB853BA2CC0FADFF8D08F6(FGameplayEventData Payload);                                      // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void EventReceived_3DA19BC649FB853BA2CC0FADFF8D08F6(FGameplayEventData Payload);                                      // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.Added_D3DFE4374EED456A4C597E95375A2028
-	// void Added_D3DFE4374EED456A4C597E95375A2028();                                                                        // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void Added_D3DFE4374EED456A4C597E95375A2028();                                                                        // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.ToggleRidingAlternative
-	// void ToggleRidingAlternative();                                                                                       // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleRidingAlternative();                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.HandleStartedRiding
-	// void HandleStartedRiding(class URidableComponent* Ridable);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleStartedRiding(class URidableComponent* Ridable);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.HandleStoppedRiding
-	// void HandleStoppedRiding(class URidableComponent* Ridable);                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleStoppedRiding(class URidableComponent* Ridable);                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.ToggleRidingOnServer
-	// void ToggleRidingOnServer(class UObject* TargetObject, bool UseAltRidingMessage);                                     // [0x130d900] Net|NetServer|BlueprintCallable|BlueprintEvent 
+	// void ToggleRidingOnServer(class UObject* TargetObject, bool UseAltRidingMessage);                                     // [0x3d1d968] Net|NetServer|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.SetTargetHealth
-	// void SetTargetHealth(double targetHealth);                                                                            // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void SetTargetHealth(double targetHealth);                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUIStartClient
-	// void RiderUIStartClient(FText Name, FSlateBrush Icon, class AActor* Ridable);                                         // [0x130d900] Net|NetClient|BlueprintCallable|BlueprintEvent 
+	// void RiderUIStartClient(FText Name, FSlateBrush Icon, class AActor* Ridable);                                         // [0x3d1d968] Net|NetClient|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUIEndClient
-	// void RiderUIEndClient(class AActor* Ridable);                                                                         // [0x130d900] Net|NetClient|BlueprintCallable|BlueprintEvent 
+	// void RiderUIEndClient(class AActor* Ridable);                                                                         // [0x3d1d968] Net|NetClient|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.MovementModeChanged
-	// void MovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void MovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.MountLanded
-	// void MountLanded(FHitResult& Hit);                                                                                    // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void MountLanded(FHitResult& Hit);                                                                                    // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.HandleRequestPettingStart
-	// void HandleRequestPettingStart();                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRequestPettingStart();                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.HandleRequestPettingStop
-	// void HandleRequestPettingStop();                                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRequestPettingStop();                                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.HandleRidableFound
-	// void HandleRidableFound(FHitResult& HitResult);                                                                       // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleRidableFound(FHitResult& HitResult);                                                                       // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.ExecuteUbergraph_PlayerRiderComponent
-	// void ExecuteUbergraph_PlayerRiderComponent(int32_t EntryPoint);                                                       // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_PlayerRiderComponent(int32_t EntryPoint);                                                       // [0x3d1d968] Final|HasDefaults    
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUIUpdateHealth__DelegateSignature
-	// void RiderUIUpdateHealth__DelegateSignature(double Health);                                                           // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RiderUIUpdateHealth__DelegateSignature(double Health);                                                           // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUIUpdateEnergy__DelegateSignature
-	// void RiderUIUpdateEnergy__DelegateSignature(double Energy);                                                           // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RiderUIUpdateEnergy__DelegateSignature(double Energy);                                                           // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUIEnd__DelegateSignature
-	// void RiderUIEnd__DelegateSignature(class AActor* RidableActor);                                                       // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RiderUIEnd__DelegateSignature(class AActor* RidableActor);                                                       // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/PlayerRiderComponent.PlayerRiderComponent_C.RiderUINewStats__DelegateSignature
-	// void RiderUINewStats__DelegateSignature(FText Name, FSlateBrush Icon, class AActor* RidableActor);                    // [0x130d900] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void RiderUINewStats__DelegateSignature(FText Name, FSlateBrush Icon, class AActor* RidableActor);                    // [0x3d1d968] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C
@@ -482,26 +475,33 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.OnReaction
-	// void OnReaction(class UObject* Object, FHitResult HitResult);                                                         // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void OnReaction(class UObject* Object, FHitResult HitResult);                                                         // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.HandleRiderStoppedRiding
-	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.HandleRiderStartedRiding
-	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.HandleAbilityStarted
-	// void HandleAbilityStarted();                                                                                          // [0x130d900] Event|Public|BlueprintEvent 
+	// void HandleAbilityStarted();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.OnReactionEvent
-	// void OnReactionEvent(class AActor* HitActor, bool bFromAsyncSweepBox, FCollisionReactionType CollisionReactionType, bool bIsFirstContinuousReactionOnDelayableActor, FHitResult& HitResult); // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void OnReactionEvent(class AActor* HitActor, bool bFromAsyncSweepBox, FCollisionReactionType CollisionReactionType, bool bIsFirstContinuousReactionOnDelayableActor, FHitResult& HitResult); // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Components/BoarRidableComponent.BoarRidableComponent_C.ExecuteUbergraph_BoarRidableComponent
-	// void ExecuteUbergraph_BoarRidableComponent(int32_t EntryPoint);                                                       // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_BoarRidableComponent(int32_t EntryPoint);                                                       // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Components/WolfRidableComponent.WolfRidableComponent_C
 /// Size: 0x0000 (0x000DE0 - 0x000DE0)
 class UWolfRidableComponent_C : public UCreatureBaseRidableComponent_C
+{ 
+public:
+};
+
+/// Class /EventMode/Components/EventMode_Activator_Component.EventMode_Activator_Component_C
+/// Size: 0x0000 (0x000210 - 0x000210)
+class UEventMode_Activator_Component_C : public UFortGameFrameworkComponent_EventMode
 { 
 public:
 };
@@ -518,13 +518,13 @@ public:
 
 	/// Functions
 	// Function /VehicleCosmetics/Components/BP_VehicleCosmeticsAMUC.BP_VehicleCosmeticsAMUC_C.ApplyInitialGC
-	// void ApplyInitialGC();                                                                                                // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void ApplyInitialGC();                                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /VehicleCosmetics/Components/BP_VehicleCosmeticsAMUC.BP_VehicleCosmeticsAMUC_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /VehicleCosmetics/Components/BP_VehicleCosmeticsAMUC.BP_VehicleCosmeticsAMUC_C.RemoveInitialGC
-	// void RemoveInitialGC();                                                                                               // [0x130d900] BlueprintCallable|BlueprintEvent 
+	// void RemoveInitialGC();                                                                                               // [0x3d1d968] BlueprintCallable|BlueprintEvent 
 	// Function /VehicleCosmetics/Components/BP_VehicleCosmeticsAMUC.BP_VehicleCosmeticsAMUC_C.ExecuteUbergraph_BP_VehicleCosmeticsAMUC
-	// void ExecuteUbergraph_BP_VehicleCosmeticsAMUC(int32_t EntryPoint);                                                    // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_BP_VehicleCosmeticsAMUC(int32_t EntryPoint);                                                    // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Class /NPCLibrary/Components/BP_PlayerStateCustomFeedMessages.BP_PlayerStateCustomFeedMessages_C

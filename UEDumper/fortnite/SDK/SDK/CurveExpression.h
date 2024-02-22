@@ -33,7 +33,7 @@ public:
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FCurveExpressionList
 { 
-	SDK_UNDEFINED(16,12632) /* FString */              __um(AssignmentExpressions);                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12727) /* FString */              __um(AssignmentExpressions);                                // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/CurveExpression.AnimNode_RemapCurvesBase
@@ -45,7 +45,7 @@ struct FAnimNode_RemapCurvesBase : FAnimNode_Base
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	FCurveExpressionList                               ExpressionList;                                             // 0x0028   (0x0010)  
 	class UCurveExpressionsDataAsset*                  CurveExpressionsDataAsset;                                  // 0x0038   (0x0008)  
-	SDK_UNDEFINED(80,12633) /* TMap<FName, FString> */ __um(CurveExpressions);                                     // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,12728) /* TMap<FName, FString> */ __um(CurveExpressions);                                     // 0x0040   (0x0050)  
 	bool                                               bExpressionsImmutable;                                      // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0091   (0x0007)  MISSED
 	TArray<FName>                                      CachedConstantNames;                                        // 0x0098   (0x0010)  
@@ -62,7 +62,7 @@ struct FAnimNode_RemapCurves : FAnimNode_RemapCurvesBase
 /// Size: 0x0078 (0x000110 - 0x000188)
 struct FAnimNode_RemapCurvesFromMesh : FAnimNode_RemapCurvesBase
 { 
-	SDK_UNDEFINED(8,12634) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                // 0x0110   (0x0008)  
+	SDK_UNDEFINED(8,12729) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                // 0x0110   (0x0008)  
 	bool                                               bUseAttachedParent;                                         // 0x0118   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6F];                                      // 0x0119   (0x006F)  MISSED
 };

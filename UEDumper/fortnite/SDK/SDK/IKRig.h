@@ -168,7 +168,7 @@ public:
 
 	/// Functions
 	// Function /Script/IKRig.IKGoalCreatorInterface.AddIKGoals
-	// void AddIKGoals(TMap<FName, FIKRigGoal>& OutGoals);                                                                   // [0x76de010] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AddIKGoals(TMap<FName, FIKRigGoal>& OutGoals);                                                                   // [0x77078b4] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Struct /Script/IKRig.PinBoneData
@@ -222,13 +222,13 @@ public:
 
 	/// Functions
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoalTransform
-	// void SetIKRigGoalTransform(FName GoalName, FTransform Transform, float PositionAlpha, float RotationAlpha);           // [0x76dfde0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetIKRigGoalTransform(FName GoalName, FTransform Transform, float PositionAlpha, float RotationAlpha);           // [0x77095d8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoalPositionAndRotation
-	// void SetIKRigGoalPositionAndRotation(FName GoalName, FVector Position, FQuat Rotation, float PositionAlpha, float RotationAlpha); // [0x76dfb04] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetIKRigGoalPositionAndRotation(FName GoalName, FVector Position, FQuat Rotation, float PositionAlpha, float RotationAlpha); // [0x7709190] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.SetIKRigGoal
-	// void SetIKRigGoal(FIKRigGoal& Goal);                                                                                  // [0x76dfa68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIKRigGoal(FIKRigGoal& Goal);                                                                                  // [0x77090f4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRigComponent.ClearAllGoals
-	// void ClearAllGoals();                                                                                                 // [0x76de0e0] Final|Native|Public|BlueprintCallable 
+	// void ClearAllGoals();                                                                                                 // [0x7707984] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/IKRig.TargetChainFKSettings
@@ -363,52 +363,52 @@ class UIKRetargeter : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(32,14027) /* TWeakObjectPtr<UIKRigDefinition*> */ __um(SourceIKRigAsset);                        // 0x0028   (0x0020)  
-	SDK_UNDEFINED(32,14028) /* TWeakObjectPtr<UIKRigDefinition*> */ __um(TargetIKRigAsset);                        // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,14124) /* TWeakObjectPtr<UIKRigDefinition*> */ __um(SourceIKRigAsset);                        // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,14125) /* TWeakObjectPtr<UIKRigDefinition*> */ __um(TargetIKRigAsset);                        // 0x0048   (0x0020)  
 	TArray<FRetargetChainMap>                          ChainMapping;                                               // 0x0068   (0x0010)  
 	TArray<class URetargetChainSettings*>              ChainSettings;                                              // 0x0078   (0x0010)  
 	class URetargetRootSettings*                       RootSettings;                                               // 0x0088   (0x0008)  
 	class UIKRetargetGlobalSettings*                   GlobalSettings;                                             // 0x0090   (0x0008)  
 	class URetargetOpStack*                            OpStack;                                                    // 0x0098   (0x0008)  
-	SDK_UNDEFINED(80,14029) /* TMap<FName, FRetargetProfile> */ __um(Profiles);                                    // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,14126) /* TMap<FName, FRetargetProfile> */ __um(Profiles);                                    // 0x00A0   (0x0050)  
 	FName                                              CurrentProfile;                                             // 0x00F0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00F4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,14030) /* TMap<FName, FIKRetargetPose> */ __um(SourceRetargetPoses);                          // 0x00F8   (0x0050)  
-	SDK_UNDEFINED(80,14031) /* TMap<FName, FIKRetargetPose> */ __um(TargetRetargetPoses);                          // 0x0148   (0x0050)  
+	SDK_UNDEFINED(80,14127) /* TMap<FName, FIKRetargetPose> */ __um(SourceRetargetPoses);                          // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,14128) /* TMap<FName, FIKRetargetPose> */ __um(TargetRetargetPoses);                          // 0x0148   (0x0050)  
 	FName                                              CurrentSourceRetargetPose;                                  // 0x0198   (0x0004)  
 	FName                                              CurrentTargetRetargetPose;                                  // 0x019C   (0x0004)  
-	SDK_UNDEFINED(80,14032) /* TMap<FName, FIKRetargetPose> */ __um(RetargetPoses);                                // 0x01A0   (0x0050)  
+	SDK_UNDEFINED(80,14129) /* TMap<FName, FIKRetargetPose> */ __um(RetargetPoses);                                // 0x01A0   (0x0050)  
 	FName                                              CurrentRetargetPose;                                        // 0x01F0   (0x0004)  
 	unsigned char                                      UnknownData02_6[0x4];                                       // 0x01F4   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/IKRig.IKRetargeter.SetRootSettingsInRetargetProfile
-	// void SetRootSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetRootSettings& RootSettings);          // [0x76e00c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetRootSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetRootSettings& RootSettings);          // [0x77099c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetGlobalSettingsInRetargetProfile
-	// void SetGlobalSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FRetargetGlobalSettings& GlobalSettings);  // [0x76df93c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetGlobalSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FRetargetGlobalSettings& GlobalSettings);  // [0x7708fc8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainSpeedPlantSettingsInRetargetProfile
-	// void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSpeedPlantSettings& SpeedPlantSettings, FName TargetChainName); // [0x76df70c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSpeedPlantSettings& SpeedPlantSettings, FName TargetChainName); // [0x7708d98] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainSettingsInRetargetProfile
-	// void SetChainSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSettings& ChainSettings, FName TargetChainName); // [0x76df4ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainSettings& ChainSettings, FName TargetChainName); // [0x7708b78] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainIKSettingsInRetargetProfile
-	// void SetChainIKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainIKSettings& IKSettings, FName TargetChainName); // [0x76df2cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainIKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainIKSettings& IKSettings, FName TargetChainName); // [0x7708958] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.SetChainFKSettingsInRetargetProfile
-	// void SetChainFKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainFKSettings& FKSettings, FName TargetChainName); // [0x76df098] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetChainFKSettingsInRetargetProfile(FRetargetProfile& RetargetProfile, FTargetChainFKSettings& FKSettings, FName TargetChainName); // [0x7708724] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/IKRig.IKRetargeter.GetRootSettingsFromRetargetProfile
-	// FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                            // [0x76def84] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                            // [0x7708610] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetRootSettingsFromRetargetAsset
-	// void GetRootSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FTargetRootSettings& OutSettings); // [0x76ded00] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetRootSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FTargetRootSettings& OutSettings); // [0x77083f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetGlobalSettingsFromRetargetProfile
-	// FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                      // [0x76dec2c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile);                      // [0x7708324] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetGlobalSettingsFromRetargetAsset
-	// void GetGlobalSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FRetargetGlobalSettings& OutSettings); // [0x76dea44] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetGlobalSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName OptionalProfileName, FRetargetGlobalSettings& OutSettings); // [0x77081ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainUsingGoalFromRetargetAsset
-	// FTargetChainSettings GetChainUsingGoalFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName IKGoalName);        // [0x76de76c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainUsingGoalFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName IKGoalName);        // [0x7707f50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainSettingsFromRetargetProfile
-	// FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile, FName TargetChainName);   // [0x76de4b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile& RetargetProfile, FName TargetChainName);   // [0x7707c9c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/IKRig.IKRetargeter.GetChainSettingsFromRetargetAsset
-	// FTargetChainSettings GetChainSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName TargetChainName, FName OptionalProfileName); // [0x76de110] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FTargetChainSettings GetChainSettingsFromRetargetAsset(class UIKRetargeter* RetargetAsset, FName TargetChainName, FName OptionalProfileName); // [0x77079b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/IKRig.IKRetargetProcessor
@@ -475,7 +475,7 @@ class UIKRigDefinition : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(32,14033) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PreviewSkeletalMesh);                        // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,14130) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PreviewSkeletalMesh);                        // 0x0030   (0x0020)  
 	FIKRigSkeleton                                     Skeleton;                                                   // 0x0050   (0x0070)  
 	TArray<class UIKRigEffectorGoal*>                  Goals;                                                      // 0x00C0   (0x0010)  
 	TArray<class UIKRigSolver*>                        Solvers;                                                    // 0x00D0   (0x0010)  
@@ -552,7 +552,7 @@ class UIKRig_LimbSolver : public UIKRigSolver
 public:
 	FName                                              RootName;                                                   // 0x0030   (0x0004)  
 	float                                              ReachPrecision;                                             // 0x0034   (0x0004)  
-	SDK_UNDEFINED(1,14034) /* TEnumAsByte<EAxis> */    __um(HingeRotationAxis);                                    // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,14131) /* TEnumAsByte<EAxis> */    __um(HingeRotationAxis);                                    // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	int32_t                                            MaxIterations;                                              // 0x003C   (0x0004)  
 	bool                                               bEnableLimit;                                               // 0x0040   (0x0001)  
@@ -563,7 +563,7 @@ public:
 	float                                              PullDistribution;                                           // 0x004C   (0x0004)  
 	float                                              ReachStepAlpha;                                             // 0x0050   (0x0004)  
 	bool                                               bEnableTwistCorrection;                                     // 0x0054   (0x0001)  
-	SDK_UNDEFINED(1,14035) /* TEnumAsByte<EAxis> */    __um(EndBoneForwardAxis);                                   // 0x0055   (0x0001)  
+	SDK_UNDEFINED(1,14132) /* TEnumAsByte<EAxis> */    __um(EndBoneForwardAxis);                                   // 0x0055   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x2];                                       // 0x0056   (0x0002)  MISSED
 	class UIKRig_LimbEffector*                         Effector;                                                   // 0x0058   (0x0008)  
 	unsigned char                                      UnknownData04_6[0x28];                                      // 0x0060   (0x0028)  MISSED
@@ -689,7 +689,7 @@ struct FRetargetProfile
 	FName                                              SourceRetargetPoseName;                                     // 0x000C   (0x0004)  
 	bool                                               bApplyChainSettings;                                        // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(80,14036) /* TMap<FName, FTargetChainSettings> */ __um(ChainSettings);                           // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,14133) /* TMap<FName, FTargetChainSettings> */ __um(ChainSettings);                           // 0x0018   (0x0050)  
 	bool                                               bApplyRootSettings;                                         // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0069   (0x0007)  MISSED
 	FTargetRootSettings                                RootSettings;                                               // 0x0070   (0x0068)  
@@ -746,7 +746,7 @@ struct FAnimNode_IKRig : FAnimNode_CustomProperty
 /// Size: 0x01C0 (0x000010 - 0x0001D0)
 struct FAnimNode_RetargetPoseFromMesh : FAnimNode_Base
 { 
-	SDK_UNDEFINED(8,14037) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,14134) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                // 0x0010   (0x0008)  
 	bool                                               bUseAttachedParent;                                         // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0019   (0x0007)  MISSED
 	class UIKRetargeter*                               IKRetargeterAsset;                                          // 0x0020   (0x0008)  
@@ -763,7 +763,7 @@ struct FAnimNode_RetargetPoseFromMesh : FAnimNode_Base
 struct FIKRetargetPose
 { 
 	FVector                                            RootTranslationOffset;                                      // 0x0000   (0x0018)  
-	SDK_UNDEFINED(80,14038) /* TMap<FName, FQuat> */   __um(BoneRotationOffsets);                                  // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,14135) /* TMap<FName, FQuat> */   __um(BoneRotationOffsets);                                  // 0x0018   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0068   (0x0008)  MISSED
 };
 
@@ -793,7 +793,7 @@ struct FIKRigInputSkeleton
 struct FLimbSolverSettings
 { 
 	float                                              ReachPrecision;                                             // 0x0000   (0x0004)  
-	SDK_UNDEFINED(1,14039) /* TEnumAsByte<EAxis> */    __um(HingeRotationAxis);                                    // 0x0004   (0x0001)  
+	SDK_UNDEFINED(1,14136) /* TEnumAsByte<EAxis> */    __um(HingeRotationAxis);                                    // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
 	int32_t                                            MaxIterations;                                              // 0x0008   (0x0004)  
 	bool                                               bEnableLimit;                                               // 0x000C   (0x0001)  
@@ -804,7 +804,7 @@ struct FLimbSolverSettings
 	float                                              PullDistribution;                                           // 0x0018   (0x0004)  
 	float                                              ReachStepAlpha;                                             // 0x001C   (0x0004)  
 	bool                                               bEnableTwistCorrection;                                     // 0x0020   (0x0001)  
-	SDK_UNDEFINED(1,14040) /* TEnumAsByte<EAxis> */    __um(EndBoneForwardAxis);                                   // 0x0021   (0x0001)  
+	SDK_UNDEFINED(1,14137) /* TEnumAsByte<EAxis> */    __um(EndBoneForwardAxis);                                   // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x2];                                       // 0x0022   (0x0002)  MISSED
 };
 

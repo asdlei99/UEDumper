@@ -28,17 +28,19 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCMS.CatalogData.IsFromHotfix
-	// bool IsFromHotfix();                                                                                                     // [0x388c760] Final|Native|Public|BlueprintCallable 
+	// bool IsFromHotfix();                                                                                                     // [0x38e5dc8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForPilgrim
-	// bool IsEnabledForPilgrim();                                                                                              // [0xac59c10] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForPilgrim();                                                                                              // [0xaf4b074] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForJam
-	// bool IsEnabledForJam();                                                                                                  // [0xac59bec] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForJam();                                                                                                  // [0xaf4b050] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xac59bc8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0xaf4b02c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/SparksCMS.CatalogData.GetTagForAgeRating
+	// FGameplayTag GetTagForAgeRating();                                                                                       // [0xaf4b004] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.ConsolidateData
-	// void ConsolidateData();                                                                                                  // [0xac57e24] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ConsolidateData();                                                                                                  // [0xaf493ac] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.ClearConsolidatedData
-	// void ClearConsolidatedData();                                                                                            // [0xac57e10] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearConsolidatedData();                                                                                            // [0xaf49398] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksCMS.SparksSongCatalog
@@ -57,19 +59,19 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCMS.SparksSongCatalog.SetCMSSuffix
-	// void SetCMSSuffix(FString InCMSSuffix);                                                                                  // [0xac59d44] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetCMSSuffix(FString InCMSSuffix);                                                                                  // [0xaf4b144] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.RequestSongCatalog
-	// void RequestSongCatalog();                                                                                               // [0xac59d30] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RequestSongCatalog();                                                                                               // [0xaf4b130] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.OnCalendarActiveEventsChanged
-	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                   // [0xac59c98] Final|Native|Protected|HasOutParms 
+	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                   // [0xaf4b098] Final|Native|Protected|HasOutParms 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongList
-	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xac593a8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xaf4a868] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByUID
-	// class UCatalogData* GetSongByUID(FString InUID);                                                                         // [0xac58cb4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByUID(FString InUID);                                                                         // [0xaf4a1b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByTemplateID
-	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                           // [0xac5852c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                           // [0xaf49a70] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByShortName
-	// class UCatalogData* GetSongByShortName(FString InShortName);                                                             // [0xac57e38] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByShortName(FString InShortName);                                                             // [0xaf493c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SparksCMS.SparksSongQuicksilverTrack
@@ -137,8 +139,9 @@ public:
 	DMember(int32_t)                                   duration                                                    OFFSET(get<int32_t>, {0x60, 4, 0, 0})
 	DMember(int32_t)                                   ReleaseYear                                                 OFFSET(get<int32_t>, {0x64, 4, 0, 0})
 	SMember(FDateTime)                                 NewUntilTime                                                OFFSET(getStruct<T>, {0x68, 8, 0, 0})
-	CMember(EMusicKey)                                 MusicKey                                                    OFFSET(get<T>, {0x70, 1, 0, 0})
-	CMember(EMusicKeyMode)                             MusicMode                                                   OFFSET(get<T>, {0x71, 1, 0, 0})
+	CMember(ESparksSongAgeRating)                      AgeRating                                                   OFFSET(get<T>, {0x70, 1, 0, 0})
+	CMember(EMusicKey)                                 MusicKey                                                    OFFSET(get<T>, {0x71, 1, 0, 0})
+	CMember(EMusicKeyMode)                             MusicMode                                                   OFFSET(get<T>, {0x72, 1, 0, 0})
 	DMember(int32_t)                                   MusicTempo                                                  OFFSET(get<int32_t>, {0x74, 4, 0, 0})
 	CMember(ESparksInstrumentType)                     StartingInstrumentGuitar                                    OFFSET(get<T>, {0x78, 1, 0, 0})
 	CMember(ESparksInstrumentType)                     StartingInstrumentBass                                      OFFSET(get<T>, {0x79, 1, 0, 0})
@@ -155,6 +158,17 @@ public:
 	SMember(FSparksSongQuicksilverInfo)                QuicksilverInfo                                             OFFSET(getStruct<T>, {0x110, 48, 0, 0})
 	SMember(FSparksSongIntensityInfo)                  Intensities                                                 OFFSET(getStruct<T>, {0x140, 32, 0, 0})
 	DMember(bool)                                      bValid                                                      OFFSET(get<bool>, {0x160, 1, 0, 0})
+};
+
+/// Enum /Script/SparksCMS.ESparksSongAgeRating
+/// Size: 0x05
+enum ESparksSongAgeRating : uint8_t
+{
+	ESparksSongAgeRating__None                                                       = 0,
+	ESparksSongAgeRating__E                                                          = 1,
+	ESparksSongAgeRating__E10p                                                       = 2,
+	ESparksSongAgeRating__T                                                          = 3,
+	ESparksSongAgeRating__ESparksSongAgeRating_MAX                                   = 4
 };
 
 /// Enum /Script/SparksCMS.ESparksGenre

@@ -73,7 +73,7 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleWeaponRuntime.GrappleKnifeWeaponInterface.GetGrappleKnifeData
-	// void GetGrappleKnifeData(bool& bIsAttached, bool& bIsFired, int32_t& DistanceBucket, bool& bAnimStartWallBounce, float& AnimBounceAngle); // [0xac1a59c] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetGrappleKnifeData(bool& bIsAttached, bool& bIsFired, int32_t& DistanceBucket, bool& bAnimStartWallBounce, float& AnimBounceAngle); // [0xaf17e60] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GrappleWeaponRuntime.GrappleWeaponLibrary
@@ -85,13 +85,13 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.IsTargetingLedge
-	// void IsTargetingLedge(class ACharacter* SourceCharacter, class AActor* TargetActor, FVector& TargetLocation, FVector& TargetNormal, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xac1a9d0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void IsTargetingLedge(class ACharacter* SourceCharacter, class AActor* TargetActor, FVector& TargetLocation, FVector& TargetNormal, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xaf18260] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.GetGrappleWeaponTargetInfo
-	// FGrappleWeaponTargetInfo GetGrappleWeaponTargetInfo(class AFortPlayerPawn* SourcePlayerPawn, FGrappleWeaponTargetingConfig& Config, float DrawDebugDuration); // [0xac1a778] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FGrappleWeaponTargetInfo GetGrappleWeaponTargetInfo(class AFortPlayerPawn* SourcePlayerPawn, FGrappleWeaponTargetingConfig& Config, float DrawDebugDuration); // [0xaf1803c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.DidHitResultImpactLedge
-	// void DidHitResultImpactLedge(class ACharacter* SourceCharacter, FHitResult& HitResult, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xac1a010] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void DidHitResultImpactLedge(class ACharacter* SourceCharacter, FHitResult& HitResult, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xaf17a10] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.CalculateDirectionalTargetOffset
-	// FVector CalculateDirectionalTargetOffset(FVector& DirToTarget, FVector& MovementOffset, FVector& LedgeOffset);        // [0xac19e08] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector CalculateDirectionalTargetOffset(FVector& DirToTarget, FVector& MovementOffset, FVector& LedgeOffset);        // [0xaf17808] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GrappleWeaponRuntime.GrappleWeaponLedgeConfig
@@ -126,8 +126,8 @@ struct FGrappleWeaponTargetInfo
 { 
 	bool                                               bHitTarget;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
-	SDK_UNDEFINED(8,13938) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0004   (0x0008)  
-	SDK_UNDEFINED(8,13939) /* TWeakObjectPtr<USceneComponent*> */ __um(TargetComponent);                           // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,14036) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,14037) /* TWeakObjectPtr<USceneComponent*> */ __um(TargetComponent);                           // 0x000C   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	FVector                                            TargetPoint;                                                // 0x0018   (0x0018)  
 	float                                              HitDistance;                                                // 0x0030   (0x0004)  

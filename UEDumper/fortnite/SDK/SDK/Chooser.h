@@ -90,7 +90,7 @@ class UChooserColumnBool : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(16,2425) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2429) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
 	TArray<bool>                                       RowValues;                                                  // 0x0040   (0x0010)  
 };
 
@@ -118,7 +118,7 @@ class UChooserColumnEnum : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(16,2426) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2430) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
 	TArray<FChooserEnumRowData>                        RowValues;                                                  // 0x0040   (0x0010)  
 };
 
@@ -145,7 +145,7 @@ class UChooserColumnFloatRange : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(16,2427) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2431) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
 	TArray<FChooserFloatRangeRowData>                  RowValues;                                                  // 0x0040   (0x0010)  
 };
 
@@ -164,7 +164,7 @@ class UChooserColumnGameplayTag : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
-	SDK_UNDEFINED(16,2428) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2432) /* TScriptInterface<Class> */ __um(InputValue);                                         // 0x0030   (0x0010)  
 	EGameplayContainerMatchType                        TagMatchType;                                               // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0041   (0x0007)  MISSED
 	TArray<FGameplayTagContainer>                      RowValues;                                                  // 0x0048   (0x0010)  
@@ -270,23 +270,23 @@ public:
 
 	/// Functions
 	// Function /Script/Chooser.ChooserFunctionLibrary.MakeEvaluateChooser
-	// FInstancedStruct MakeEvaluateChooser(class UChooserTable* Chooser);                                                   // [0x7a47734] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FInstancedStruct MakeEvaluateChooser(class UChooserTable* Chooser);                                                   // [0x7a66f40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.MakeChooserEvaluationContext
-	// FChooserEvaluationContext MakeChooserEvaluationContext();                                                             // [0x7a476b8] Final|Native|Static|Public|BlueprintCallable 
+	// FChooserEvaluationContext MakeChooserEvaluationContext();                                                             // [0x7a66ec4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.GetChooserStructOutput
-	// void GetChooserStructOutput(FChooserEvaluationContext& Context, int32_t Index, int32_t& Value);                       // [0x7a4732c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetChooserStructOutput(FChooserEvaluationContext& Context, int32_t Index, int32_t& Value);                       // [0x7a66b38] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateObjectChooserBaseMulti
-	// TArray<UObject*> EvaluateObjectChooserBaseMulti(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a46fc0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UObject*> EvaluateObjectChooserBaseMulti(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a667cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateObjectChooserBase
-	// class UObject* EvaluateObjectChooserBase(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a46c74] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UObject* EvaluateObjectChooserBase(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a66480] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateChooserMulti
-	// TArray<UObject*> EvaluateChooserMulti(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a46a78] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UObject*> EvaluateChooserMulti(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a66348] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateChooser
-	// class UObject* EvaluateChooser(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a468a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UObject* EvaluateChooser(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a66238] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.AddChooserStructInput
-	// void AddChooserStructInput(FChooserEvaluationContext& Context, int32_t Value);                                        // [0x7a46628] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddChooserStructInput(FChooserEvaluationContext& Context, int32_t Value);                                        // [0x7a65fbc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.AddChooserObjectInput
-	// void AddChooserObjectInput(FChooserEvaluationContext& Context, class UObject* Object);                                // [0x7a46458] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddChooserObjectInput(FChooserEvaluationContext& Context, class UObject* Object);                                // [0x7a65dec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/Chooser.ChooserParameterBase
@@ -517,7 +517,7 @@ struct FChooserObjectRowData
 { 
 	EObjectColumnCellValueComparison                   Comparison;                                                 // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,2429) /* TWeakObjectPtr<UObject*> */ __um(Value);                                             // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,2433) /* TWeakObjectPtr<UObject*> */ __um(Value);                                             // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/Chooser.ObjectColumn

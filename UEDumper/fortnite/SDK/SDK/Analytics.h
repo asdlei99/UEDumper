@@ -5,16 +5,14 @@
 *                                                       *
 ********************************************************/
 
+#pragma once
 /// dependency: CoreUObject
-/// dependency: MassEntity
+/// dependency: LimeNative
 
-/// Class /Script/MassAIDebug.MassDebugStateTreeProcessor
-/// Size: 0x02A0 (0x0000C0 - 0x000360)
-class UMassDebugStateTreeProcessor : public UMassProcessor
+/// Class /Lime/Analytics/Lime_Analytics.Lime_Analytics_C
+/// Size: 0x0000 (0x000058 - 0x000058)
+class ULime_Analytics_C : public ULimeAnalytics
 { 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 864;
-
 public:
 };
 

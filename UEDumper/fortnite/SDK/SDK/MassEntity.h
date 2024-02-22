@@ -117,16 +117,16 @@ struct FMassProcessingPhaseConfig
 };
 
 /// Class /Script/MassEntity.MassEntitySettings
-/// Size: 0x00F0 (0x000028 - 0x000118)
+/// Size: 0x0108 (0x000028 - 0x000130)
 class UMassEntitySettings : public UMassModuleSettings
 { 
 public:
 	int32_t                                            ChunkMemorySize;                                            // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11864) /* FString */              __um(DumpDependencyGraphFileName);                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11926) /* FString */              __um(DumpDependencyGraphFileName);                          // 0x0030   (0x0010)  
 	FMassProcessingPhaseConfig                         ProcessingPhasesConfig;                                     // 0x0040   (0x00C0)  
 	TArray<class UMassProcessor*>                      ProcessorCDOs;                                              // 0x0100   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0110   (0x0008)  MISSED
+	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0110   (0x0020)  MISSED
 };
 
 /// Class /Script/MassEntity.MassEntitySubsystem
@@ -178,7 +178,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FMassEntityObserverClassesMap
 { 
-	SDK_UNDEFINED(80,11865) /* TMap<UScriptStruct*, FMassProcessorClassCollection> */ __um(Container);             // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11927) /* TMap<UScriptStruct*, FMassProcessorClassCollection> */ __um(Container);             // 0x0000   (0x0050)  
 };
 
 /// Class /Script/MassEntity.MassObserverRegistry
@@ -192,20 +192,21 @@ public:
 };
 
 /// Struct /Script/MassEntity.MassRuntimePipeline
-/// Size: 0x0010 (0x000000 - 0x000010)
+/// Size: 0x0018 (0x000000 - 0x000018)
 struct FMassRuntimePipeline
 { 
 	TArray<class UMassProcessor*>                      Processors;                                                 // 0x0000   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0010   (0x0008)  MISSED
 };
 
 /// Class /Script/MassEntity.MassCompositeProcessor
-/// Size: 0x0038 (0x0000C0 - 0x0000F8)
+/// Size: 0x0040 (0x0000C0 - 0x000100)
 class UMassCompositeProcessor : public UMassProcessor
 { 
 public:
-	FMassRuntimePipeline                               ChildPipeline;                                              // 0x00C0   (0x0010)  
-	FName                                              GroupName;                                                  // 0x00D0   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x24];                                      // 0x00D4   (0x0024)  MISSED
+	FMassRuntimePipeline                               ChildPipeline;                                              // 0x00C0   (0x0018)  
+	FName                                              GroupName;                                                  // 0x00D8   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x24];                                      // 0x00DC   (0x0024)  MISSED
 };
 
 /// Class /Script/MassEntity.MassSettings
@@ -213,7 +214,7 @@ public:
 class UMassSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(80,11866) /* TMap<FName, UMassModuleSettings*> */ __um(ModuleSettings);                          // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,11928) /* TMap<FName, UMassModuleSettings*> */ __um(ModuleSettings);                          // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/MassEntity.MassFragmentRequirements
@@ -274,7 +275,7 @@ struct FMassEntityView
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FMassObserversMap
 { 
-	SDK_UNDEFINED(80,11867) /* TMap<UScriptStruct*, FMassRuntimePipeline> */ __um(Container);                      // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11929) /* TMap<UScriptStruct*, FMassRuntimePipeline> */ __um(Container);                      // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/MassEntity.MassObserverManager

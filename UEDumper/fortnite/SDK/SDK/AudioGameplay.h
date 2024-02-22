@@ -28,9 +28,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplay.AudioGameplayCondition.ConditionMet_Position
-	// bool ConditionMet_Position(FVector& Position);                                                                        // [0x138ada4] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ConditionMet_Position(FVector& Position);                                                                        // [0x103cf18] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioGameplayCondition.ConditionMet
-	// bool ConditionMet();                                                                                                  // [0x188e5cc] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ConditionMet();                                                                                                  // [0x1377b44] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/AudioGameplay.AudioGameplayVolumeInteraction
@@ -42,9 +42,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplay.AudioGameplayVolumeInteraction.OnListenerExit
-	// void OnListenerExit();                                                                                                // [0x3064200] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnListenerExit();                                                                                                // [0x313fdf0] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/AudioGameplay.AudioGameplayVolumeInteraction.OnListenerEnter
-	// void OnListenerEnter();                                                                                               // [0x2c35200] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnListenerEnter();                                                                                               // [0x2c0e95c] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/AudioGameplay.SoundHandleSubsystem
@@ -76,51 +76,51 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplay.AudioComponentGroup.UnsubscribeObject
-	// void UnsubscribeObject(class UObject* Object);                                                                        // [0x6e0f218] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void UnsubscribeObject(class UObject* Object);                                                                        // [0x6e815b8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SubscribeToStringParam
-	// void SubscribeToStringParam(FName ParamName, FDelegateProperty Delegate);                                             // [0x6e0f0c4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SubscribeToStringParam(FName ParamName, FDelegateProperty Delegate);                                             // [0x6e814e0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SubscribeToEvent
-	// void SubscribeToEvent(FName EventName, FDelegateProperty Delegate);                                                   // [0x6e0ef70] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SubscribeToEvent(FName EventName, FDelegateProperty Delegate);                                                   // [0x6e81408] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SubscribeToBool
-	// void SubscribeToBool(FName ParamName, FDelegateProperty Delegate);                                                    // [0x6e0ee1c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SubscribeToBool(FName ParamName, FDelegateProperty Delegate);                                                    // [0x6e81330] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.StopSound
-	// void StopSound(class USoundBase* sound, float FadeTime);                                                              // [0x6e0ecdc] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StopSound(class USoundBase* sound, float FadeTime);                                                              // [0x6e8126c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.StaticGetOrCreateComponentGroup
-	// class UAudioComponentGroup* StaticGetOrCreateComponentGroup(class AActor* Actor);                                     // [0x6e0ec1c] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// class UAudioComponentGroup* StaticGetOrCreateComponentGroup(class AActor* Actor);                                     // [0x6e811ec] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SetVolumeMultiplier
-	// void SetVolumeMultiplier(float InVolume);                                                                             // [0x6e0eb58] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetVolumeMultiplier(float InVolume);                                                                             // [0x6e8116c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SetPitchMultiplier
-	// void SetPitchMultiplier(float InPitch);                                                                               // [0x6e0ea94] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetPitchMultiplier(float InPitch);                                                                               // [0x6e810ec] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.SetLowPassFilter
-	// void SetLowPassFilter(float InFrequency);                                                                             // [0x6e0e9d0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetLowPassFilter(float InFrequency);                                                                             // [0x6e8106c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.RemoveExternalComponent
-	// void RemoveExternalComponent(class UAudioComponent* ComponentToRemove);                                               // [0x6e0e880] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RemoveExternalComponent(class UAudioComponent* ComponentToRemove);                                               // [0x6e80f5c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.RemoveExtension
-	// void RemoveExtension(TScriptInterface<Class> NewExtension);                                                           // [0x6e0e79c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RemoveExtension(TScriptInterface<Class> NewExtension);                                                           // [0x6e80dfc] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.IsVirtualized
-	// bool IsVirtualized();                                                                                                 // [0x6e0e784] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVirtualized();                                                                                                 // [0x6e80de4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioComponentGroup.IsPlayingAny
-	// bool IsPlayingAny();                                                                                                  // [0x6e0e768] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayingAny();                                                                                                  // [0x6e80dc8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioComponentGroup.GetStringParamValue
-	// FString GetStringParamValue(FName ParamName);                                                                         // [0x6e0e684] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStringParamValue(FName ParamName);                                                                         // [0x6e80d24] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioComponentGroup.GetFloatParamValue
-	// float GetFloatParamValue(FName ParamName);                                                                            // [0x6e0e5b4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatParamValue(FName ParamName);                                                                            // [0x6e80c94] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioComponentGroup.GetBoolParamValue
-	// bool GetBoolParamValue(FName ParamName);                                                                              // [0x6e0e4e8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolParamValue(FName ParamName);                                                                              // [0x6e80c08] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioGameplay.AudioComponentGroup.EnableVirtualization
-	// void EnableVirtualization();                                                                                          // [0x6e0e4d4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void EnableVirtualization();                                                                                          // [0x6e80bf4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.DisableVirtualization
-	// void DisableVirtualization();                                                                                         // [0x6e0e4c0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void DisableVirtualization();                                                                                         // [0x6e80be0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.BroadcastStopAll
-	// void BroadcastStopAll();                                                                                              // [0x6e0e4a4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void BroadcastStopAll();                                                                                              // [0x6e80bc4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.BroadcastKill
-	// void BroadcastKill();                                                                                                 // [0x6e0e488] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void BroadcastKill();                                                                                                 // [0x6e80ba8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.BroadcastEvent
-	// void BroadcastEvent(FName EventName);                                                                                 // [0x6e0e3c8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void BroadcastEvent(FName EventName);                                                                                 // [0x6e80b28] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.AddExternalComponent
-	// void AddExternalComponent(class UAudioComponent* ComponentToAdd);                                                     // [0x6e0df30] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void AddExternalComponent(class UAudioComponent* ComponentToAdd);                                                     // [0x6e80960] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioGameplay.AudioComponentGroup.AddExtension
-	// void AddExtension(TScriptInterface<Class> NewExtension);                                                              // [0x6e0de5c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void AddExtension(TScriptInterface<Class> NewExtension);                                                              // [0x6e8080c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 #pragma pack(pop)
 
@@ -152,7 +152,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioGameplay.AudioParameterComponent.GetParameters
-	// TArray<FAudioParameter> GetParameters();                                                                              // [0x2e2b894] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FAudioParameter> GetParameters();                                                                              // [0x2e56884] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/AudioGameplay.AudioGameplayRequirements

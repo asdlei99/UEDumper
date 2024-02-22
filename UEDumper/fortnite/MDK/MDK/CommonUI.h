@@ -66,21 +66,21 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonActionWidget.SetInputActions
-	// void SetInputActions(TArray<FDataTableRowHandle> NewInputActions);                                                       // [0x6fad920] Final|Native|Public|BlueprintCallable 
+	// void SetInputActions(TArray<FDataTableRowHandle> NewInputActions);                                                       // [0x6fcaac8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActionWidget.SetInputAction
-	// void SetInputAction(FDataTableRowHandle InputActionRow);                                                                 // [0x303aa80] Final|Native|Public|BlueprintCallable 
+	// void SetInputAction(FDataTableRowHandle InputActionRow);                                                                 // [0x21d4224] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActionWidget.SetIconRimBrush
-	// void SetIconRimBrush(FSlateBrush InIconRimBrush);                                                                        // [0x3308318] Final|Native|Public|BlueprintCallable 
+	// void SetIconRimBrush(FSlateBrush InIconRimBrush);                                                                        // [0x3369670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActionWidget.SetEnhancedInputAction
-	// void SetEnhancedInputAction(class UInputAction* InInputAction);                                                          // [0x6fad438] Final|Native|Public|BlueprintCallable 
+	// void SetEnhancedInputAction(class UInputAction* InInputAction);                                                          // [0x6fca724] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActionWidget.OnInputMethodChanged__DelegateSignature
-	// void OnInputMethodChanged__DelegateSignature(bool bUsingGamepad);                                                        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnInputMethodChanged__DelegateSignature(bool bUsingGamepad);                                                        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonActionWidget.IsHeldAction
-	// bool IsHeldAction();                                                                                                     // [0x295d914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHeldAction();                                                                                                     // [0x21d4cc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActionWidget.GetIcon
-	// FSlateBrush GetIcon();                                                                                                   // [0x2c4d98c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FSlateBrush GetIcon();                                                                                                   // [0x21d4ce4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActionWidget.GetDisplayText
-	// FText GetDisplayText();                                                                                                  // [0x29f5cf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDisplayText();                                                                                                  // [0x2a7b498] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonUserWidget
@@ -97,7 +97,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonUserWidget.SetConsumePointerInput
-	// void SetConsumePointerInput(bool bInConsumePointerInput);                                                                // [0x6fad010] Final|Native|Public|BlueprintCallable 
+	// void SetConsumePointerInput(bool bInConsumePointerInput);                                                                // [0x6fca27c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonActivatableWidget
@@ -130,29 +130,29 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonActivatableWidget.SetBindVisibilities
-	// void SetBindVisibilities(ESlateVisibility OnActivatedVisibility, ESlateVisibility OnDeactivatedVisibility, bool bInAllActive); // [0x6fac9f0] Final|Native|Public|BlueprintCallable 
+	// void SetBindVisibilities(ESlateVisibility OnActivatedVisibility, ESlateVisibility OnDeactivatedVisibility, bool bInAllActive); // [0x6fc9d64] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidget.RequestRefreshFocus
-	// void RequestRefreshFocus();                                                                                              // [0x37ee0d0] Final|Native|Protected|BlueprintCallable 
+	// void RequestRefreshFocus();                                                                                              // [0x2f29680] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidget.IsActivated
-	// bool IsActivated();                                                                                                      // [0x30e58b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActivated();                                                                                                      // [0x31a4534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActivatableWidget.GetDesiredFocusTarget
-	// class UWidget* GetDesiredFocusTarget();                                                                                  // [0x6faa3ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetDesiredFocusTarget();                                                                                  // [0x6fc7e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActivatableWidget.DeactivateWidget
-	// void DeactivateWidget();                                                                                                 // [0x6fa9afc] Final|Native|Public|BlueprintCallable 
+	// void DeactivateWidget();                                                                                                 // [0x3cebe90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidget.BP_OnHandleBackAction
-	// bool BP_OnHandleBackAction();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// bool BP_OnHandleBackAction();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonActivatableWidget.BP_OnDeactivated
-	// void BP_OnDeactivated();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnDeactivated();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonActivatableWidget.BP_OnActivated
-	// void BP_OnActivated();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnActivated();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonActivatableWidget.BP_GetDesiredInputConfig
-	// FUIInputConfig BP_GetDesiredInputConfig();                                                                               // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// FUIInputConfig BP_GetDesiredInputConfig();                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/CommonUI.CommonActivatableWidget.BP_GetDesiredFocusTarget
-	// class UWidget* BP_GetDesiredFocusTarget();                                                                               // [0x130d900] Event|Protected|BlueprintEvent|Const 
+	// class UWidget* BP_GetDesiredFocusTarget();                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/CommonUI.CommonActivatableWidget.BindVisibilityToActivation
-	// void BindVisibilityToActivation(class UCommonActivatableWidget* ActivatableWidget);                                      // [0x6fa98c4] Final|Native|Public|BlueprintCallable 
+	// void BindVisibilityToActivation(class UCommonActivatableWidget* ActivatableWidget);                                      // [0x6fc74e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidget.ActivateWidget
-	// void ActivateWidget();                                                                                                   // [0x6fa94bc] Final|Native|Public|BlueprintCallable 
+	// void ActivateWidget();                                                                                                   // [0x3cebea4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonAnimatedSwitcher
@@ -171,17 +171,17 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.SetDisableTransitionAnimation
-	// void SetDisableTransitionAnimation(bool bDisableAnimation);                                                              // [0x6fad378] Final|Native|Public|BlueprintCallable 
+	// void SetDisableTransitionAnimation(bool bDisableAnimation);                                                              // [0x6fca6a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.IsTransitionPlaying
-	// bool IsTransitionPlaying();                                                                                              // [0x6fabcbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTransitionPlaying();                                                                                              // [0x6fc943c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.IsCurrentlySwitching
-	// bool IsCurrentlySwitching();                                                                                             // [0x6fabb64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurrentlySwitching();                                                                                             // [0x6fc92e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.HasWidgets
-	// bool HasWidgets();                                                                                                       // [0x32af1c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasWidgets();                                                                                                       // [0x32ce660] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.ActivatePreviousWidget
-	// void ActivatePreviousWidget(bool bCanWrap);                                                                              // [0x6fa93e4] Final|Native|Public|BlueprintCallable 
+	// void ActivatePreviousWidget(bool bCanWrap);                                                                              // [0x6fc711c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonAnimatedSwitcher.ActivateNextWidget
-	// void ActivateNextWidget(bool bCanWrap);                                                                                  // [0x6fa9320] Final|Native|Public|BlueprintCallable 
+	// void ActivateNextWidget(bool bCanWrap);                                                                                  // [0x6fc709c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonActivatableWidgetSwitcher
@@ -207,7 +207,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonBorderStyle.GetBackgroundBrush
-	// void GetBackgroundBrush(FSlateBrush& Brush);                                                                             // [0x6fa9ed0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetBackgroundBrush(FSlateBrush& Brush);                                                                             // [0x6fc79c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonBorder
@@ -225,7 +225,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonBorder.SetStyle
-	// void SetStyle(class UClass* InStyle);                                                                                    // [0x6faf0b8] Final|Native|Public|BlueprintCallable 
+	// void SetStyle(class UClass* InStyle);                                                                                    // [0x6fcbbdc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonButtonStyle
@@ -264,35 +264,35 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonButtonStyle.GetSelectedTextStyle
-	// class UCommonTextStyle* GetSelectedTextStyle();                                                                          // [0x6faafe8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetSelectedTextStyle();                                                                          // [0x6fc8a1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetSelectedPressedBrush
-	// void GetSelectedPressedBrush(FSlateBrush& Brush);                                                                        // [0x6faaefc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetSelectedPressedBrush(FSlateBrush& Brush);                                                                        // [0x6fc8930] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetSelectedHoveredTextStyle
-	// class UCommonTextStyle* GetSelectedHoveredTextStyle();                                                                   // [0x6faaec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetSelectedHoveredTextStyle();                                                                   // [0x6fc88f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetSelectedHoveredBrush
-	// void GetSelectedHoveredBrush(FSlateBrush& Brush);                                                                        // [0x6faae18] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetSelectedHoveredBrush(FSlateBrush& Brush);                                                                        // [0x6fc884c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetSelectedBaseBrush
-	// void GetSelectedBaseBrush(FSlateBrush& Brush);                                                                           // [0x6faad34] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetSelectedBaseBrush(FSlateBrush& Brush);                                                                           // [0x6fc8768] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetNormalTextStyle
-	// class UCommonTextStyle* GetNormalTextStyle();                                                                            // [0x6faace4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetNormalTextStyle();                                                                            // [0x6fc8718] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetNormalPressedBrush
-	// void GetNormalPressedBrush(FSlateBrush& Brush);                                                                          // [0x6faac3c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalPressedBrush(FSlateBrush& Brush);                                                                          // [0x6fc8670] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetNormalHoveredTextStyle
-	// class UCommonTextStyle* GetNormalHoveredTextStyle();                                                                     // [0x6faac18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetNormalHoveredTextStyle();                                                                     // [0x6fc864c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetNormalHoveredBrush
-	// void GetNormalHoveredBrush(FSlateBrush& Brush);                                                                          // [0x6faab70] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalHoveredBrush(FSlateBrush& Brush);                                                                          // [0x6fc85a4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetNormalBaseBrush
-	// void GetNormalBaseBrush(FSlateBrush& Brush);                                                                             // [0x6faaac8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetNormalBaseBrush(FSlateBrush& Brush);                                                                             // [0x6fc84fc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetMaterialBrush
-	// void GetMaterialBrush(FSlateBrush& Brush);                                                                               // [0x6fa9ed0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMaterialBrush(FSlateBrush& Brush);                                                                               // [0x6fc79c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetDisabledTextStyle
-	// class UCommonTextStyle* GetDisabledTextStyle();                                                                          // [0x6faa478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetDisabledTextStyle();                                                                          // [0x6fc7f2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetDisabledBrush
-	// void GetDisabledBrush(FSlateBrush& Brush);                                                                               // [0x6faa3d0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetDisabledBrush(FSlateBrush& Brush);                                                                               // [0x6fc7e84] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetCustomPadding
-	// void GetCustomPadding(FMargin& OutCustomPadding);                                                                        // [0x6faa304] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCustomPadding(FMargin& OutCustomPadding);                                                                        // [0x6fc7db8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonStyle.GetButtonPadding
-	// void GetButtonPadding(FMargin& OutButtonPadding);                                                                        // [0x6faa044] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetButtonPadding(FMargin& OutButtonPadding);                                                                        // [0x6fc7af8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonButtonInternalBase
@@ -366,165 +366,165 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonButtonBase.UpdateHoldData
-	// void UpdateHoldData(ECommonInputType CurrentInputType);                                                                  // [0x6faf8e0] Native|Protected     
+	// void UpdateHoldData(ECommonInputType CurrentInputType);                                                                  // [0x6fcc24c] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.StopDoubleClickPropagation
-	// void StopDoubleClickPropagation();                                                                                       // [0x6faf8c8] Final|Native|Protected|BlueprintCallable 
+	// void StopDoubleClickPropagation();                                                                                       // [0x6fcc234] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetTriggeringInputAction
-	// void SetTriggeringInputAction(FDataTableRowHandle& InputActionRow);                                                      // [0x22adb44] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTriggeringInputAction(FDataTableRowHandle& InputActionRow);                                                      // [0x2c22568] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetTriggeringEnhancedInputAction
-	// void SetTriggeringEnhancedInputAction(class UInputAction* InInputAction);                                                // [0x6faf720] Final|Native|Public|BlueprintCallable 
+	// void SetTriggeringEnhancedInputAction(class UInputAction* InInputAction);                                                // [0x6fcc10c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetTriggeredInputAction
-	// void SetTriggeredInputAction(FDataTableRowHandle& InputActionRow);                                                       // [0x6faf65c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTriggeredInputAction(FDataTableRowHandle& InputActionRow);                                                       // [0x6fcc048] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetTouchMethod
-	// void SetTouchMethod(TEnumAsByte<EButtonTouchMethod> InTouchMethod);                                                      // [0x6faf4cc] Final|Native|Public|BlueprintCallable 
+	// void SetTouchMethod(TEnumAsByte<EButtonTouchMethod> InTouchMethod);                                                      // [0x6fcbf38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetStyle
-	// void SetStyle(class UClass* InStyle);                                                                                    // [0x19a9ac8] Final|Native|Public|BlueprintCallable 
+	// void SetStyle(class UClass* InStyle);                                                                                    // [0x29e58b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetShouldUseFallbackDefaultInputAction
-	// void SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFallbackDefaultInputAction);                                // [0x6faeff4] Final|Native|Public|BlueprintCallable 
+	// void SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFallbackDefaultInputAction);                                // [0x6fcbb5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetShouldSelectUponReceivingFocus
-	// void SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponReceivingFocus);                                          // [0x6faef34] Final|Native|Public|BlueprintCallable 
+	// void SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponReceivingFocus);                                          // [0x6fcbadc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetSelectedPressedSoundOverride
-	// void SetSelectedPressedSoundOverride(class USoundBase* sound);                                                           // [0x6faed80] Final|Native|Public|BlueprintCallable 
+	// void SetSelectedPressedSoundOverride(class USoundBase* sound);                                                           // [0x6fcb9ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetSelectedInternal
-	// void SetSelectedInternal(bool bInSelected, bool bAllowSound, bool bBroadcast);                                           // [0x6faebb0] Final|Native|Protected|BlueprintCallable 
+	// void SetSelectedInternal(bool bInSelected, bool bAllowSound, bool bBroadcast);                                           // [0x6fcb8a0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetSelectedHoveredSoundOverride
-	// void SetSelectedHoveredSoundOverride(class USoundBase* sound);                                                           // [0x6faeac0] Final|Native|Public|BlueprintCallable 
+	// void SetSelectedHoveredSoundOverride(class USoundBase* sound);                                                           // [0x6fcb7f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetPressMethod
-	// void SetPressMethod(TEnumAsByte<EButtonPressMethod> InPressMethod);                                                      // [0x6fae854] Final|Native|Public|BlueprintCallable 
+	// void SetPressMethod(TEnumAsByte<EButtonPressMethod> InPressMethod);                                                      // [0x6fcb648] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetPressedSoundOverride
-	// void SetPressedSoundOverride(class USoundBase* sound);                                                                   // [0x6fae934] Final|Native|Public|BlueprintCallable 
+	// void SetPressedSoundOverride(class USoundBase* sound);                                                                   // [0x6fcb6e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetMinDimensions
-	// void SetMinDimensions(int32_t InMinWidth, int32_t InMinHeight);                                                          // [0x2a02110] Final|Native|Public|BlueprintCallable 
+	// void SetMinDimensions(int32_t InMinWidth, int32_t InMinHeight);                                                          // [0x21d4830] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetLockedPressedSoundOverride
-	// void SetLockedPressedSoundOverride(class USoundBase* sound);                                                             // [0x6fae3b8] Final|Native|Public|BlueprintCallable 
+	// void SetLockedPressedSoundOverride(class USoundBase* sound);                                                             // [0x6fcb238] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetLockedHoveredSoundOverride
-	// void SetLockedHoveredSoundOverride(class USoundBase* sound);                                                             // [0x6fae2c8] Final|Native|Public|BlueprintCallable 
+	// void SetLockedHoveredSoundOverride(class USoundBase* sound);                                                             // [0x6fcb188] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsToggleable
-	// void SetIsToggleable(bool bInIsToggleable);                                                                              // [0x6fade98] Final|Native|Public|BlueprintCallable 
+	// void SetIsToggleable(bool bInIsToggleable);                                                                              // [0x6fcae60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsSelected
-	// void SetIsSelected(bool InSelected, bool bGiveClickFeedback);                                                            // [0x6fadd48] Final|Native|Public|BlueprintCallable 
+	// void SetIsSelected(bool InSelected, bool bGiveClickFeedback);                                                            // [0x6fcad9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsSelectable
-	// void SetIsSelectable(bool bInIsSelectable);                                                                              // [0x6fadc84] Final|Native|Public|BlueprintCallable 
+	// void SetIsSelectable(bool bInIsSelectable);                                                                              // [0x6fcad1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsLocked
-	// void SetIsLocked(bool bInIsLocked);                                                                                      // [0x6fadbc0] Final|Native|Public|BlueprintCallable 
+	// void SetIsLocked(bool bInIsLocked);                                                                                      // [0x6fcac9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsInteractionEnabled
-	// void SetIsInteractionEnabled(bool bInIsInteractionEnabled);                                                              // [0x1ce0958] Final|Native|Public|BlueprintCallable 
+	// void SetIsInteractionEnabled(bool bInIsInteractionEnabled);                                                              // [0x254dad4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsInteractableWhenSelected
-	// void SetIsInteractableWhenSelected(bool bInInteractableWhenSelected);                                                    // [0x6fada38] Final|Native|Public|BlueprintCallable 
+	// void SetIsInteractableWhenSelected(bool bInInteractableWhenSelected);                                                    // [0x6fcab9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetIsFocusable
-	// void SetIsFocusable(bool bInIsFocusable);                                                                                // [0x32045f4] Final|Native|Public|BlueprintCallable 
+	// void SetIsFocusable(bool bInIsFocusable);                                                                                // [0x3277998] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetInputActionProgressMaterial
-	// void SetInputActionProgressMaterial(FSlateBrush& InProgressMaterialBrush, FName& InProgressMaterialParam);               // [0x6fad80c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetInputActionProgressMaterial(FSlateBrush& InProgressMaterialBrush, FName& InProgressMaterialParam);               // [0x6fca9b4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetHoveredSoundOverride
-	// void SetHoveredSoundOverride(class USoundBase* sound);                                                                   // [0x6fad74c] Final|Native|Public|BlueprintCallable 
+	// void SetHoveredSoundOverride(class USoundBase* sound);                                                                   // [0x6fca934] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetHideInputAction
-	// void SetHideInputAction(bool bInHideInputAction);                                                                        // [0x6fad5c4] Final|Native|Public|BlueprintCallable 
+	// void SetHideInputAction(bool bInHideInputAction);                                                                        // [0x6fca82c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.SetClickMethod
-	// void SetClickMethod(TEnumAsByte<EButtonClickMethod> InClickMethod);                                                      // [0x6facf30] Final|Native|Public|BlueprintCallable 
+	// void SetClickMethod(TEnumAsByte<EButtonClickMethod> InClickMethod);                                                      // [0x6fca1e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.OnTriggeringInputActionChanged
-	// void OnTriggeringInputActionChanged(FDataTableRowHandle& NewTriggeredAction);                                            // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTriggeringInputActionChanged(FDataTableRowHandle& NewTriggeredAction);                                            // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.OnTriggeringEnhancedInputActionChanged
-	// void OnTriggeringEnhancedInputActionChanged(class UInputAction* InInputAction);                                          // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTriggeringEnhancedInputActionChanged(class UInputAction* InInputAction);                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.OnTriggeredInputActionChanged
-	// void OnTriggeredInputActionChanged(FDataTableRowHandle& NewTriggeredAction);                                             // [0x130d900] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTriggeredInputActionChanged(FDataTableRowHandle& NewTriggeredAction);                                             // [0x3d1d968] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0x6fac1e4] Native|Protected     
+	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0x6fc97e0] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.OnCurrentTextStyleChanged
-	// void OnCurrentTextStyleChanged();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnCurrentTextStyleChanged();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.OnActionProgress
-	// void OnActionProgress(float HeldPercent);                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnActionProgress(float HeldPercent);                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.OnActionComplete
-	// void OnActionComplete();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnActionComplete();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.NativeOnHoldProgressRollback
-	// bool NativeOnHoldProgressRollback(float DeltaTime);                                                                      // [0x6fabe98] Native|Protected     
+	// bool NativeOnHoldProgressRollback(float DeltaTime);                                                                      // [0x6fc9594] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.NativeOnHoldProgress
-	// bool NativeOnHoldProgress(float DeltaTime);                                                                              // [0x6fabdc0] Native|Protected     
+	// bool NativeOnHoldProgress(float DeltaTime);                                                                              // [0x6fc94fc] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.NativeOnActionProgress
-	// void NativeOnActionProgress(float HeldPercent);                                                                          // [0x6fabcf8] Native|Protected     
+	// void NativeOnActionProgress(float HeldPercent);                                                                          // [0x6fc9478] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.NativeOnActionComplete
-	// void NativeOnActionComplete();                                                                                           // [0x6fabce0] Native|Protected     
+	// void NativeOnActionComplete();                                                                                           // [0x6fc9460] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.IsPressed
-	// bool IsPressed();                                                                                                        // [0x6fabc64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPressed();                                                                                                        // [0x6fc93e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.IsInteractionEnabled
-	// bool IsInteractionEnabled();                                                                                             // [0x6fabb94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInteractionEnabled();                                                                                             // [0x6fc9314] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.HoldReset
-	// void HoldReset();                                                                                                        // [0x628b018] Native|Protected     
+	// void HoldReset();                                                                                                        // [0x62ed124] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.HandleTriggeringActionCommited
-	// void HandleTriggeringActionCommited(bool& bPassThrough);                                                                 // [0x6fab7b8] Native|Protected|HasOutParms 
+	// void HandleTriggeringActionCommited(bool& bPassThrough);                                                                 // [0x6fc9078] Native|Protected|HasOutParms 
 	// Function /Script/CommonUI.CommonButtonBase.HandleFocusReceived
-	// void HandleFocusReceived();                                                                                              // [0x6fab56c] Native|Protected     
+	// void HandleFocusReceived();                                                                                              // [0x6fc8ea4] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.HandleFocusLost
-	// void HandleFocusLost();                                                                                                  // [0x6fab554] Native|Protected     
+	// void HandleFocusLost();                                                                                                  // [0x6fc8e8c] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.HandleButtonReleased
-	// void HandleButtonReleased();                                                                                             // [0x6fab540] Final|Native|Protected 
+	// void HandleButtonReleased();                                                                                             // [0x6fc8e78] Final|Native|Protected 
 	// Function /Script/CommonUI.CommonButtonBase.HandleButtonPressed
-	// void HandleButtonPressed();                                                                                              // [0x6fab52c] Final|Native|Protected 
+	// void HandleButtonPressed();                                                                                              // [0x6fc8e64] Final|Native|Protected 
 	// Function /Script/CommonUI.CommonButtonBase.HandleButtonClicked
-	// void HandleButtonClicked();                                                                                              // [0x6fab3dc] Final|Native|Protected 
+	// void HandleButtonClicked();                                                                                              // [0x6fc8d8c] Final|Native|Protected 
 	// Function /Script/CommonUI.CommonButtonBase.GetStyle
-	// class UCommonButtonStyle* GetStyle();                                                                                    // [0x6fab1e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonButtonStyle* GetStyle();                                                                                    // [0x6fc8c1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetSingleMaterialStyleMID
-	// class UMaterialInstanceDynamic* GetSingleMaterialStyleMID();                                                             // [0x387d498] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInstanceDynamic* GetSingleMaterialStyleMID();                                                             // [0x38d693c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetShouldSelectUponReceivingFocus
-	// bool GetShouldSelectUponReceivingFocus();                                                                                // [0x6fab124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShouldSelectUponReceivingFocus();                                                                                // [0x6fc8b58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetSelected
-	// bool GetSelected();                                                                                                      // [0x306fc74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSelected();                                                                                                      // [0x30d5568] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetLocked
-	// bool GetLocked();                                                                                                        // [0x6faa9c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetLocked();                                                                                                        // [0x6fc83fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetIsFocusable
-	// bool GetIsFocusable();                                                                                                   // [0x6faa970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsFocusable();                                                                                                   // [0x6fc83a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetInputAction
-	// bool GetInputAction(FDataTableRowHandle& InputActionRow);                                                                // [0x6faa6f4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetInputAction(FDataTableRowHandle& InputActionRow);                                                                // [0x6fc8128] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetEnhancedInputAction
-	// class UInputAction* GetEnhancedInputAction();                                                                            // [0x6faa49c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UInputAction* GetEnhancedInputAction();                                                                            // [0x6fc7f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetCurrentTextStyleClass
-	// class UClass* GetCurrentTextStyleClass();                                                                                // [0x19aa244] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetCurrentTextStyleClass();                                                                                // [0x1fbca94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetCurrentTextStyle
-	// class UCommonTextStyle* GetCurrentTextStyle();                                                                           // [0x6faa2e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonTextStyle* GetCurrentTextStyle();                                                                           // [0x6fc7d94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetCurrentCustomPadding
-	// void GetCurrentCustomPadding(FMargin& OutCustomPadding);                                                                 // [0x6faa240] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCurrentCustomPadding(FMargin& OutCustomPadding);                                                                 // [0x6fc7cf4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetCurrentButtonPadding
-	// void GetCurrentButtonPadding(FMargin& OutButtonPadding);                                                                 // [0x6faa1a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCurrentButtonPadding(FMargin& OutButtonPadding);                                                                 // [0x6fc7c54] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonBase.GetConvertInputActionToHold
-	// bool GetConvertInputActionToHold();                                                                                      // [0x6faa178] Native|Protected     
+	// bool GetConvertInputActionToHold();                                                                                      // [0x6fc7c2c] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonBase.DisableButtonWithReason
-	// void DisableButtonWithReason(FText& DisabledReason);                                                                     // [0x6fa9be8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DisableButtonWithReason(FText& DisabledReason);                                                                     // [0x6fc7768] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.ClearSelection
-	// void ClearSelection();                                                                                                   // [0x6fa9ac0] Final|Native|Public|BlueprintCallable 
+	// void ClearSelection();                                                                                                   // [0x6fc7698] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnUnhovered
-	// void BP_OnUnhovered();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnUnhovered();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnSelected
-	// void BP_OnSelected();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnSelected();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnReleased
-	// void BP_OnReleased();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnReleased();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnPressed
-	// void BP_OnPressed();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnPressed();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnLockedChanged
-	// void BP_OnLockedChanged(bool bIsLocked);                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnLockedChanged(bool bIsLocked);                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnLockDoubleClicked
-	// void BP_OnLockDoubleClicked();                                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnLockDoubleClicked();                                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnLockClicked
-	// void BP_OnLockClicked();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnLockClicked();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnInputMethodChanged
-	// void BP_OnInputMethodChanged(ECommonInputType CurrentInputType);                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnInputMethodChanged(ECommonInputType CurrentInputType);                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnInputActionTriggered
-	// void BP_OnInputActionTriggered();                                                                                        // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnInputActionTriggered();                                                                                        // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnHovered
-	// void BP_OnHovered();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnHovered();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnFocusReceived
-	// void BP_OnFocusReceived();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnFocusReceived();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnFocusLost
-	// void BP_OnFocusLost();                                                                                                   // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnFocusLost();                                                                                                   // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnEnabled
-	// void BP_OnEnabled();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnEnabled();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnDoubleClicked
-	// void BP_OnDoubleClicked();                                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnDoubleClicked();                                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnDisabled
-	// void BP_OnDisabled();                                                                                                    // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnDisabled();                                                                                                    // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnDeselected
-	// void BP_OnDeselected();                                                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnDeselected();                                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonButtonBase.BP_OnClicked
-	// void BP_OnClicked();                                                                                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnClicked();                                                                                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CommonUI.WidgetLockedStateRegistration
@@ -550,7 +550,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonCustomNavigation.OnCustomNavigationEvent__DelegateSignature
-	// bool OnCustomNavigationEvent__DelegateSignature(EUINavigation NavigationType);                                           // [0x130d900] Public|Delegate      
+	// bool OnCustomNavigationEvent__DelegateSignature(EUINavigation NavigationType);                                           // [0x3d1d968] Public|Delegate      
 };
 
 /// Class /Script/CommonUI.CommonTextBlock
@@ -571,25 +571,25 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonTextBlock.SetWrapTextWidth
-	// void SetWrapTextWidth(int32_t InWrapTextAt);                                                                             // [0x31ced20] Final|Native|Public|BlueprintCallable 
+	// void SetWrapTextWidth(int32_t InWrapTextAt);                                                                             // [0x322f2f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetTextCase
-	// void SetTextCase(bool bUseAllCaps);                                                                                      // [0x2bf84a4] Final|Native|Public|BlueprintCallable 
+	// void SetTextCase(bool bUseAllCaps);                                                                                      // [0x2c80da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetStyle
-	// void SetStyle(class UClass* InStyle);                                                                                    // [0x19aa298] Final|Native|Public|BlueprintCallable 
+	// void SetStyle(class UClass* InStyle);                                                                                    // [0x1fbcae8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetScrollingEnabled
-	// void SetScrollingEnabled(bool bInIsScrollingEnabled);                                                                    // [0x331cdc0] Final|Native|Public|BlueprintCallable 
+	// void SetScrollingEnabled(bool bInIsScrollingEnabled);                                                                    // [0x339b158] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetMobileFontSizeMultiplier
-	// void SetMobileFontSizeMultiplier(float InMobileFontSizeMultiplier);                                                      // [0x2b2b148] Final|Native|Public|BlueprintCallable 
+	// void SetMobileFontSizeMultiplier(float InMobileFontSizeMultiplier);                                                      // [0x2b8f038] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetMargin
-	// void SetMargin(FMargin& InMargin);                                                                                       // [0x6fae4a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMargin(FMargin& InMargin);                                                                                       // [0x6fcb2e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.SetLineHeightPercentage
-	// void SetLineHeightPercentage(float InLineHeightPercentage);                                                              // [0x32b1f6c] Final|Native|Public|BlueprintCallable 
+	// void SetLineHeightPercentage(float InLineHeightPercentage);                                                              // [0x3316f30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.ResetScrollState
-	// void ResetScrollState();                                                                                                 // [0x6fac578] Final|Native|Public|BlueprintCallable 
+	// void ResetScrollState();                                                                                                 // [0x6fc9a70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTextBlock.GetMobileFontSizeMultiplier
-	// float GetMobileFontSizeMultiplier();                                                                                     // [0x6faaa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMobileFontSizeMultiplier();                                                                                     // [0x6fc84c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextBlock.GetMargin
-	// FMargin GetMargin();                                                                                                     // [0x6faa9e4] Final|Native|Public|BlueprintCallable 
+	// FMargin GetMargin();                                                                                                     // [0x6fc8418] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonDateTimeTextBlock
@@ -606,13 +606,13 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonDateTimeTextBlock.SetTimespanValue
-	// void SetTimespanValue(FTimespan InTimespan);                                                                             // [0x6faf40c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetTimespanValue(FTimespan InTimespan);                                                                             // [0x6fcbdf8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/CommonUI.CommonDateTimeTextBlock.SetDateTimeValue
-	// void SetDateTimeValue(FDateTime InDateTime, bool bShowAsCountdown, float InRefreshDelay);                                // [0x6fad1ac] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetDateTimeValue(FDateTime InDateTime, bool bShowAsCountdown, float InRefreshDelay);                                // [0x6fca398] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/CommonUI.CommonDateTimeTextBlock.SetCountDownCompletionText
-	// void SetCountDownCompletionText(FText InCompletionText);                                                                 // [0x6fad0d0] Final|Native|Public|BlueprintCallable 
+	// void SetCountDownCompletionText(FText InCompletionText);                                                                 // [0x6fca2fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonDateTimeTextBlock.GetDateTime
-	// FDateTime GetDateTime();                                                                                                 // [0x6faa394] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetDateTime();                                                                                                 // [0x6fc7e48] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonGameViewportClient
@@ -663,15 +663,15 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonLazyImage.SetMaterialTextureParamName
-	// void SetMaterialTextureParamName(FName TextureParamName);                                                                // [0x6fae538] Final|Native|Public|BlueprintCallable 
+	// void SetMaterialTextureParamName(FName TextureParamName);                                                                // [0x6fcb378] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLazyImage.SetBrushFromLazyTexture
-	// void SetBrushFromLazyTexture(TWeakObjectPtr<UTexture2D*>& LazyTexture, bool bMatchSize);                                 // [0x6facd84] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBrushFromLazyTexture(TWeakObjectPtr<UTexture2D*>& LazyTexture, bool bMatchSize);                                 // [0x6fca034] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLazyImage.SetBrushFromLazyMaterial
-	// void SetBrushFromLazyMaterial(TWeakObjectPtr<UMaterialInterface*>& LazyMaterial);                                        // [0x6facce4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBrushFromLazyMaterial(TWeakObjectPtr<UMaterialInterface*>& LazyMaterial);                                        // [0x6fc9f94] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLazyImage.SetBrushFromLazyDisplayAsset
-	// void SetBrushFromLazyDisplayAsset(TWeakObjectPtr<UObject*>& LazyObject, bool bMatchTextureSize);                         // [0x6facbb8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBrushFromLazyDisplayAsset(TWeakObjectPtr<UObject*>& LazyObject, bool bMatchTextureSize);                         // [0x6fc9e68] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLazyImage.IsLoading
-	// bool IsLoading();                                                                                                        // [0x6fabbd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoading();                                                                                                        // [0x6fc9354] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonLazyWidget
@@ -689,11 +689,11 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonLazyWidget.SetLazyContent
-	// void SetLazyContent(TWeakObjectPtr<UClass*> SoftWidget);                                                                 // [0x6fadf5c] Final|Native|Public|BlueprintCallable 
+	// void SetLazyContent(TWeakObjectPtr<UClass*> SoftWidget);                                                                 // [0x6fcaee0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLazyWidget.IsLoading
-	// bool IsLoading();                                                                                                        // [0x6fabc04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoading();                                                                                                        // [0x6fc9384] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonLazyWidget.GetContent
-	// class UUserWidget* GetContent();                                                                                         // [0x6faa160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUserWidget* GetContent();                                                                                         // [0x6fc7c14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonListView
@@ -708,7 +708,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonListView.SetEntrySpacing
-	// void SetEntrySpacing(float InEntrySpacing);                                                                              // [0x6fad4f8] Final|Native|Public|BlueprintCallable 
+	// void SetEntrySpacing(float InEntrySpacing);                                                                              // [0x6fca7a4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.LoadGuardSlot
@@ -726,11 +726,11 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.LoadGuardSlot.SetVerticalAlignment
-	// void SetVerticalAlignment(TEnumAsByte<EVerticalAlignment> InVerticalAlignment);                                          // [0x6faf7e0] Final|Native|Public|BlueprintCallable 
+	// void SetVerticalAlignment(TEnumAsByte<EVerticalAlignment> InVerticalAlignment);                                          // [0x6fcc18c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.LoadGuardSlot.SetPadding
-	// void SetPadding(FMargin InPadding);                                                                                      // [0x6fae784] Final|Native|Public|BlueprintCallable 
+	// void SetPadding(FMargin InPadding);                                                                                      // [0x6fcb4fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.LoadGuardSlot.SetHorizontalAlignment
-	// void SetHorizontalAlignment(TEnumAsByte<EHorizontalAlignment> InHorizontalAlignment);                                    // [0x6fad68c] Final|Native|Public|BlueprintCallable 
+	// void SetHorizontalAlignment(TEnumAsByte<EHorizontalAlignment> InHorizontalAlignment);                                    // [0x6fca8b4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonLoadGuard
@@ -752,15 +752,15 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonLoadGuard.SetLoadingText
-	// void SetLoadingText(FText& InLoadingText);                                                                               // [0x6fae218] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetLoadingText(FText& InLoadingText);                                                                               // [0x6fcb0d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLoadGuard.SetIsLoading
-	// void SetIsLoading(bool bInIsLoading);                                                                                    // [0x6fadafc] Final|Native|Public|BlueprintCallable 
+	// void SetIsLoading(bool bInIsLoading);                                                                                    // [0x6fcac1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonLoadGuard.OnAssetLoaded__DelegateSignature
-	// void OnAssetLoaded__DelegateSignature(class UObject* Object);                                                            // [0x130d900] Public|Delegate      
+	// void OnAssetLoaded__DelegateSignature(class UObject* Object);                                                            // [0x3d1d968] Public|Delegate      
 	// Function /Script/CommonUI.CommonLoadGuard.IsLoading
-	// bool IsLoading();                                                                                                        // [0x6fabc34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoading();                                                                                                        // [0x6fc93b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonLoadGuard.BP_GuardAndLoadAsset
-	// void BP_GuardAndLoadAsset(TWeakObjectPtr<UObject*>& InLazyAsset, FDelegateProperty& OnAssetLoaded);                      // [0x6fa96ec] Final|Native|Private|HasOutParms|BlueprintCallable 
+	// void BP_GuardAndLoadAsset(TWeakObjectPtr<UObject*>& InLazyAsset, FDelegateProperty& OnAssetLoaded);                      // [0x6fc734c] Final|Native|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonNumericTextBlock
@@ -787,23 +787,23 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonNumericTextBlock.SetNumericType
-	// void SetNumericType(ECommonNumericType InNumericType);                                                                   // [0x6fae6bc] Final|Native|Public|BlueprintCallable 
+	// void SetNumericType(ECommonNumericType InNumericType);                                                                   // [0x6fcb478] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonNumericTextBlock.SetCurrentValue
-	// void SetCurrentValue(float NewValue);                                                                                    // [0x1ba1718] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentValue(float NewValue);                                                                                    // [0x29b2068] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonNumericTextBlock.OnOutro__DelegateSignature
-	// void OnOutro__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);                                        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnOutro__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);                                        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonNumericTextBlock.OnInterpolationUpdated__DelegateSignature
-	// void OnInterpolationUpdated__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, float LastValue, float NewValue); // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnInterpolationUpdated__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, float LastValue, float NewValue); // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonNumericTextBlock.OnInterpolationStarted__DelegateSignature
-	// void OnInterpolationStarted__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);                         // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnInterpolationStarted__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);                         // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonNumericTextBlock.OnInterpolationEnded__DelegateSignature
-	// void OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted);        // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted);        // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonNumericTextBlock.IsInterpolatingNumericValue
-	// bool IsInterpolatingNumericValue();                                                                                      // [0x6fabbb8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInterpolatingNumericValue();                                                                                      // [0x6fc9338] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonNumericTextBlock.InterpolateToValue
-	// void InterpolateToValue(float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset); // [0x6fab928] Final|Native|Public|BlueprintCallable 
+	// void InterpolateToValue(float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset); // [0x6fc91a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonNumericTextBlock.GetTargetValue
-	// float GetTargetValue();                                                                                                  // [0x6fab2d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetValue();                                                                                                  // [0x6fc8cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonPoolableWidgetInterface
@@ -818,9 +818,9 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonPoolableWidgetInterface.OnReleaseToPool
-	// void OnReleaseToPool();                                                                                                  // [0x6fac2a8] Native|Event|Protected|BlueprintEvent 
+	// void OnReleaseToPool();                                                                                                  // [0x6fc9864] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonPoolableWidgetInterface.OnAcquireFromPool
-	// void OnAcquireFromPool();                                                                                                // [0x6fabf84] Native|Event|Protected|BlueprintEvent 
+	// void OnAcquireFromPool();                                                                                                // [0x6fc9640] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CommonUI.CommonRichTextBlock
@@ -843,7 +843,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonRichTextBlock.SetScrollingEnabled
-	// void SetScrollingEnabled(bool bInIsScrollingEnabled);                                                                    // [0x6fae9f4] Final|Native|Public|BlueprintCallable 
+	// void SetScrollingEnabled(bool bInIsScrollingEnabled);                                                                    // [0x6fcb764] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonRotator
@@ -860,21 +860,21 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonRotator.ShiftTextRight
-	// void ShiftTextRight();                                                                                                   // [0x6faf8b4] Final|Native|Public|BlueprintCallable 
+	// void ShiftTextRight();                                                                                                   // [0x6fcc220] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonRotator.ShiftTextLeft
-	// void ShiftTextLeft();                                                                                                    // [0x6faf8a0] Final|Native|Public|BlueprintCallable 
+	// void ShiftTextLeft();                                                                                                    // [0x6fcc20c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonRotator.SetSelectedItem
-	// void SetSelectedItem(int32_t InValue);                                                                                   // [0x2c840c4] Native|Public|BlueprintCallable 
+	// void SetSelectedItem(int32_t InValue);                                                                                   // [0x2d0080c] Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonRotator.PopulateTextLabels
-	// void PopulateTextLabels(TArray<FText> Labels);                                                                           // [0x29f3b84] Final|Native|Public|BlueprintCallable 
+	// void PopulateTextLabels(TArray<FText> Labels);                                                                           // [0x27d6ab0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonRotator.GetSelectedText
-	// FText GetSelectedText();                                                                                                 // [0x6faafa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetSelectedText();                                                                                                 // [0x6fc89d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonRotator.GetSelectedIndex
-	// int32_t GetSelectedIndex();                                                                                              // [0x6faaee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSelectedIndex();                                                                                              // [0x6fc8918] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonRotator.BP_OnOptionsPopulated
-	// void BP_OnOptionsPopulated(int32_t Count);                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnOptionsPopulated(int32_t Count);                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonRotator.BP_OnOptionSelected
-	// void BP_OnOptionSelected(int32_t Index);                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_OnOptionSelected(int32_t Index);                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CommonUI.CommonTabListWidgetBase
@@ -902,59 +902,59 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SetTabVisibility
-	// void SetTabVisibility(FName TabNameID, ESlateVisibility NewVisibility);                                                  // [0x6faf2d0] Final|Native|Public|BlueprintCallable 
+	// void SetTabVisibility(FName TabNameID, ESlateVisibility NewVisibility);                                                  // [0x6fcbd34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SetTabInteractionEnabled
-	// void SetTabInteractionEnabled(FName TabNameID, bool bEnable);                                                            // [0x6faf190] Final|Native|Public|BlueprintCallable 
+	// void SetTabInteractionEnabled(FName TabNameID, bool bEnable);                                                            // [0x6fcbc70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SetTabEnabled
-	// void SetTabEnabled(FName TabNameID, bool bEnable);                                                                       // [0x1ce109c] Final|Native|Public|BlueprintCallable 
+	// void SetTabEnabled(FName TabNameID, bool bEnable);                                                                       // [0x2864f90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SetListeningForInput
-	// void SetListeningForInput(bool bShouldListen);                                                                           // [0x6fae150] Native|Public|BlueprintCallable 
+	// void SetListeningForInput(bool bShouldListen);                                                                           // [0x6fcb054] Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SetLinkedSwitcher
-	// void SetLinkedSwitcher(class UCommonAnimatedSwitcher* CommonSwitcher);                                                   // [0x386793c] Native|Public|BlueprintCallable 
+	// void SetLinkedSwitcher(class UCommonAnimatedSwitcher* CommonSwitcher);                                                   // [0x38c1150] Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.SelectTabByID
-	// bool SelectTabByID(FName TabNameID, bool bSuppressClickFeedback);                                                        // [0x3397848] Final|Native|Public|BlueprintCallable 
+	// bool SelectTabByID(FName TabNameID, bool bSuppressClickFeedback);                                                        // [0x286417c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.RemoveTab
-	// bool RemoveTab(FName TabNameID);                                                                                         // [0x6fac2d0] Final|Native|Public|BlueprintCallable 
+	// bool RemoveTab(FName TabNameID);                                                                                         // [0x6fc988c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.RemoveAllTabs
-	// void RemoveAllTabs();                                                                                                    // [0x27c4ca4] Final|Native|Public|BlueprintCallable 
+	// void RemoveAllTabs();                                                                                                    // [0x1fbb0e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.RegisterTab
-	// bool RegisterTab(FName TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget, int32_t TabIndex);       // [0x3098888] Final|Native|Public|BlueprintCallable 
+	// bool RegisterTab(FName TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget, int32_t TabIndex);       // [0x3108750] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.OnTabSelected__DelegateSignature
-	// void OnTabSelected__DelegateSignature(FName TabID);                                                                      // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnTabSelected__DelegateSignature(FName TabID);                                                                      // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.OnTabListRebuilt__DelegateSignature
-	// void OnTabListRebuilt__DelegateSignature();                                                                              // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnTabListRebuilt__DelegateSignature();                                                                              // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.OnTabButtonRemoval__DelegateSignature
-	// void OnTabButtonRemoval__DelegateSignature(FName TabID, class UCommonButtonBase* TabButton);                             // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnTabButtonRemoval__DelegateSignature(FName TabID, class UCommonButtonBase* TabButton);                             // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.OnTabButtonCreation__DelegateSignature
-	// void OnTabButtonCreation__DelegateSignature(FName TabID, class UCommonButtonBase* TabButton);                            // [0x130d900] MulticastDelegate|Public|Delegate 
+	// void OnTabButtonCreation__DelegateSignature(FName TabID, class UCommonButtonBase* TabButton);                            // [0x3d1d968] MulticastDelegate|Public|Delegate 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandleTabRemoval
-	// void HandleTabRemoval(FName TabNameID, class UCommonButtonBase* TabButton);                                              // [0x31cea74] Native|Event|Protected|BlueprintEvent 
+	// void HandleTabRemoval(FName TabNameID, class UCommonButtonBase* TabButton);                                              // [0x323b508] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandleTabCreation
-	// void HandleTabCreation(FName TabNameID, class UCommonButtonBase* TabButton);                                             // [0x276d684] Native|Event|Protected|BlueprintEvent 
+	// void HandleTabCreation(FName TabNameID, class UCommonButtonBase* TabButton);                                             // [0x27bcb78] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandleTabButtonSelected
-	// void HandleTabButtonSelected(class UCommonButtonBase* SelectedTabButton, int32_t ButtonIndex);                           // [0x1ce1d68] Final|Native|Protected 
+	// void HandleTabButtonSelected(class UCommonButtonBase* SelectedTabButton, int32_t ButtonIndex);                           // [0x2864ccc] Final|Native|Protected 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandlePreviousTabInputAction
-	// void HandlePreviousTabInputAction(bool& bPassThrough);                                                                   // [0x6fab73c] Final|Native|Protected|HasOutParms 
+	// void HandlePreviousTabInputAction(bool& bPassThrough);                                                                   // [0x6fc8ffc] Final|Native|Protected|HasOutParms 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandlePreLinkedSwitcherChanged_BP
-	// void HandlePreLinkedSwitcherChanged_BP();                                                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandlePreLinkedSwitcherChanged_BP();                                                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandlePostLinkedSwitcherChanged_BP
-	// void HandlePostLinkedSwitcherChanged_BP();                                                                               // [0x130d900] Event|Protected|BlueprintEvent 
+	// void HandlePostLinkedSwitcherChanged_BP();                                                                               // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.HandleNextTabInputAction
-	// void HandleNextTabInputAction(bool& bPassThrough);                                                                       // [0x6fab584] Final|Native|Protected|HasOutParms 
+	// void HandleNextTabInputAction(bool& bPassThrough);                                                                       // [0x6fc8ebc] Final|Native|Protected|HasOutParms 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetTabIdAtIndex
-	// FName GetTabIdAtIndex(int32_t Index);                                                                                    // [0x6fab20c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetTabIdAtIndex(int32_t Index);                                                                                    // [0x6fc8c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetTabCount
-	// int32_t GetTabCount();                                                                                                   // [0x313dcf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTabCount();                                                                                                   // [0x31aa7cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetTabButtonBaseByID
-	// class UCommonButtonBase* GetTabButtonBaseByID(FName TabNameID);                                                          // [0x1ce27d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonButtonBase* GetTabButtonBaseByID(FName TabNameID);                                                          // [0x384f508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetSelectedTabId
-	// FName GetSelectedTabId();                                                                                                // [0x1ce1070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetSelectedTabId();                                                                                                // [0x28653b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetLinkedSwitcher
-	// class UCommonAnimatedSwitcher* GetLinkedSwitcher();                                                                      // [0x6faa9a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonAnimatedSwitcher* GetLinkedSwitcher();                                                                      // [0x6fc83d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.GetActiveTab
-	// FName GetActiveTab();                                                                                                    // [0x3346dc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetActiveTab();                                                                                                    // [0x37720d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTabListWidgetBase.DisableTabWithReason
-	// void DisableTabWithReason(FName TabNameID, FText& Reason);                                                               // [0x6fa9c84] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DisableTabWithReason(FName TabNameID, FText& Reason);                                                               // [0x6fc7804] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonTextStyle
@@ -977,19 +977,19 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonTextStyle.GetStrikeBrush
-	// void GetStrikeBrush(FSlateBrush& OutStrikeBrush);                                                                        // [0x6fab140] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetStrikeBrush(FSlateBrush& OutStrikeBrush);                                                                        // [0x6fc8b74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetShadowOffset
-	// void GetShadowOffset(FVector2D& OutShadowOffset);                                                                        // [0x6fab098] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetShadowOffset(FVector2D& OutShadowOffset);                                                                        // [0x6fc8acc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetShadowColor
-	// void GetShadowColor(FLinearColor& OutColor);                                                                             // [0x6fab00c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetShadowColor(FLinearColor& OutColor);                                                                             // [0x6fc8a40] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetMargin
-	// void GetMargin(FMargin& OutMargin);                                                                                      // [0x6faaa00] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMargin(FMargin& OutMargin);                                                                                      // [0x6fc8434] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetLineHeightPercentage
-	// float GetLineHeightPercentage();                                                                                         // [0x6faa98c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLineHeightPercentage();                                                                                         // [0x6fc83c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetFont
-	// void GetFont(FSlateFontInfo& OutFont);                                                                                   // [0x6faa638] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetFont(FSlateFontInfo& OutFont);                                                                                   // [0x6fc806c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonTextStyle.GetColor
-	// void GetColor(FLinearColor& OutColor);                                                                                   // [0x6faa0d4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetColor(FLinearColor& OutColor);                                                                                   // [0x6fc7b88] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonTextScrollStyle
@@ -1053,7 +1053,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonUILibrary.FindParentWidgetOfType
-	// class UWidget* FindParentWidgetOfType(class UWidget* StartingWidget, class UClass* Type);                                // [0x37d6360] Final|Native|Static|Public|BlueprintCallable 
+	// class UWidget* FindParentWidgetOfType(class UWidget* StartingWidget, class UClass* Type);                                // [0x33a77b8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonUIRichTextData
@@ -1098,9 +1098,9 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonUISubsystemBase.GetInputActionButtonIcon
-	// FSlateBrush GetInputActionButtonIcon(FDataTableRowHandle& InputActionRowHandle, ECommonInputType InputType, FName& GamepadName); // [0x6faa790] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FSlateBrush GetInputActionButtonIcon(FDataTableRowHandle& InputActionRowHandle, ECommonInputType InputType, FName& GamepadName); // [0x6fc81c4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonUISubsystemBase.GetEnhancedInputActionButtonIcon
-	// FSlateBrush GetEnhancedInputActionButtonIcon(class UInputAction* InputAction, class ULocalPlayer* LocalPlayer);          // [0x6faa4b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FSlateBrush GetEnhancedInputActionButtonIcon(class UInputAction* InputAction, class ULocalPlayer* LocalPlayer);          // [0x6fc7f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonUI.CommonInputMetadata
@@ -1179,23 +1179,23 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.SetActiveWidgetIndex
-	// void SetActiveWidgetIndex(int32_t Index);                                                                                // [0x2eef5c4] Final|Native|Public|BlueprintCallable 
+	// void SetActiveWidgetIndex(int32_t Index);                                                                                // [0x2fa4008] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.SetActiveWidget
-	// void SetActiveWidget(class UWidget* Widget);                                                                             // [0x2ecf44c] Final|Native|Public|BlueprintCallable 
+	// void SetActiveWidget(class UWidget* Widget);                                                                             // [0x21d36c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.IsCurrentlySwitching
-	// bool IsCurrentlySwitching();                                                                                             // [0x6fabb7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurrentlySwitching();                                                                                             // [0x6fc92fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.IncrementActiveWidgetIndex
-	// void IncrementActiveWidgetIndex(bool bAllowWrapping);                                                                    // [0x6fab864] Final|Native|Public|BlueprintCallable 
+	// void IncrementActiveWidgetIndex(bool bAllowWrapping);                                                                    // [0x6fc9124] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.GetActiveWidgetIndex
-	// int32_t GetActiveWidgetIndex();                                                                                          // [0x31f3d08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetActiveWidgetIndex();                                                                                          // [0x32b38e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.GetActiveWidget
-	// class UWidget* GetActiveWidget();                                                                                        // [0x380e124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetActiveWidget();                                                                                        // [0x3866578] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.DecrementActiveWidgetIndex
-	// void DecrementActiveWidgetIndex(bool bAllowWrapping);                                                                    // [0x6fa9b10] Final|Native|Public|BlueprintCallable 
+	// void DecrementActiveWidgetIndex(bool bAllowWrapping);                                                                    // [0x6fc76d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.DeactivateVisibleSlot
-	// void DeactivateVisibleSlot();                                                                                            // [0x6fa9ae8] Final|Native|Public|BlueprintCallable 
+	// void DeactivateVisibleSlot();                                                                                            // [0x6fc76c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonVisibilitySwitcher.ActivateVisibleSlot
-	// void ActivateVisibleSlot();                                                                                              // [0x6fa94a8] Final|Native|Public|BlueprintCallable 
+	// void ActivateVisibleSlot();                                                                                              // [0x6fc719c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonVisibilitySwitcherSlot
@@ -1226,7 +1226,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.UCommonVisibilityWidgetBase.GetRegisteredPlatforms
-	// TArray<FName> GetRegisteredPlatforms();                                                                                  // [0x6faad08] Final|Native|Static|Protected 
+	// TArray<FName> GetRegisteredPlatforms();                                                                                  // [0x6fc873c] Final|Native|Static|Protected 
 };
 
 /// Class /Script/CommonUI.CommonVisualAttachment
@@ -1255,25 +1255,25 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonWidgetCarousel.SetMoveSpeed
-	// void SetMoveSpeed(float InMoveSpeed);                                                                                    // [0x6fae5f8] Final|Native|Public|BlueprintCallable 
+	// void SetMoveSpeed(float InMoveSpeed);                                                                                    // [0x6fcb3f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.SetActiveWidgetIndex
-	// void SetActiveWidgetIndex(int32_t Index);                                                                                // [0x6fac92c] Native|Public|BlueprintCallable 
+	// void SetActiveWidgetIndex(int32_t Index);                                                                                // [0x6fc9ce0] Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.SetActiveWidget
-	// void SetActiveWidget(class UWidget* Widget);                                                                             // [0x6fac868] Native|Public|BlueprintCallable 
+	// void SetActiveWidget(class UWidget* Widget);                                                                             // [0x6fc9c5c] Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.PreviousPage
-	// void PreviousPage();                                                                                                     // [0x6fac2bc] Final|Native|Public|BlueprintCallable 
+	// void PreviousPage();                                                                                                     // [0x6fc9878] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.NextPage
-	// void NextPage();                                                                                                         // [0x6fabf70] Final|Native|Public|BlueprintCallable 
+	// void NextPage();                                                                                                         // [0x6fc962c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.GetWidgetAtIndex
-	// class UWidget* GetWidgetAtIndex(int32_t Index);                                                                          // [0x6fab2f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetWidgetAtIndex(int32_t Index);                                                                          // [0x6fc8ce4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonWidgetCarousel.GetMoveSpeed
-	// float GetMoveSpeed();                                                                                                    // [0x6faaaa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMoveSpeed();                                                                                                    // [0x6fc84dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonWidgetCarousel.GetActiveWidgetIndex
-	// int32_t GetActiveWidgetIndex();                                                                                          // [0x6fa9eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetActiveWidgetIndex();                                                                                          // [0x6fc79a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonWidgetCarousel.EndAutoScrolling
-	// void EndAutoScrolling();                                                                                                 // [0x6fa9da8] Final|Native|Public|BlueprintCallable 
+	// void EndAutoScrolling();                                                                                                 // [0x6fc78e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarousel.BeginAutoScrolling
-	// void BeginAutoScrolling(float ScrollInterval);                                                                           // [0x6fa9800] Final|Native|Public|BlueprintCallable 
+	// void BeginAutoScrolling(float ScrollInterval);                                                                           // [0x6fc7460] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonWidgetCarouselNavBar
@@ -1293,11 +1293,11 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonWidgetCarouselNavBar.SetLinkedCarousel
-	// void SetLinkedCarousel(class UCommonWidgetCarousel* CommonCarousel);                                                     // [0x6fae090] Final|Native|Public|BlueprintCallable 
+	// void SetLinkedCarousel(class UCommonWidgetCarousel* CommonCarousel);                                                     // [0x6fcafd4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetCarouselNavBar.HandlePageChanged
-	// void HandlePageChanged(class UCommonWidgetCarousel* CommonCarousel, int32_t PageIndex);                                  // [0x6fab600] Final|Native|Protected 
+	// void HandlePageChanged(class UCommonWidgetCarousel* CommonCarousel, int32_t PageIndex);                                  // [0x6fc8f38] Final|Native|Protected 
 	// Function /Script/CommonUI.CommonWidgetCarouselNavBar.HandleButtonClicked
-	// void HandleButtonClicked(class UCommonButtonBase* AssociatedButton, int32_t ButtonIndex);                                // [0x6fab3f0] Final|Native|Protected 
+	// void HandleButtonClicked(class UCommonButtonBase* AssociatedButton, int32_t ButtonIndex);                                // [0x6fc8da0] Final|Native|Protected 
 };
 
 /// Class /Script/CommonUI.CommonWidgetGroupBase
@@ -1312,11 +1312,11 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonWidgetGroupBase.RemoveWidget
-	// void RemoveWidget(class UWidget* InWidget);                                                                              // [0x6fac45c] Final|Native|Public|BlueprintCallable 
+	// void RemoveWidget(class UWidget* InWidget);                                                                              // [0x6fc9994] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetGroupBase.RemoveAll
-	// void RemoveAll();                                                                                                        // [0x186c4f8] Final|Native|Public|BlueprintCallable 
+	// void RemoveAll();                                                                                                        // [0x19b5670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonWidgetGroupBase.AddWidget
-	// void AddWidget(class UWidget* InWidget);                                                                                 // [0x6fa94d0] Final|Native|Public|BlueprintCallable 
+	// void AddWidget(class UWidget* InWidget);                                                                                 // [0x6fc71b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonButtonGroupBase
@@ -1337,39 +1337,39 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonButtonGroupBase.SetSelectionRequired
-	// void SetSelectionRequired(bool bRequireSelection);                                                                       // [0x6faee70] Final|Native|Public|BlueprintCallable 
+	// void SetSelectionRequired(bool bRequireSelection);                                                                       // [0x6fcba5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonGroupBase.SelectPreviousButton
-	// void SelectPreviousButton(bool bAllowWrap);                                                                              // [0x6fac7a4] Final|Native|Public|BlueprintCallable 
+	// void SelectPreviousButton(bool bAllowWrap);                                                                              // [0x6fc9bdc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonGroupBase.SelectNextButton
-	// void SelectNextButton(bool bAllowWrap);                                                                                  // [0x6fac6e0] Final|Native|Public|BlueprintCallable 
+	// void SelectNextButton(bool bAllowWrap);                                                                                  // [0x6fc9b5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonGroupBase.SelectButtonAtIndex
-	// void SelectButtonAtIndex(int32_t ButtonIndex, bool bAllowSound);                                                         // [0x6fac5a0] Final|Native|Public|BlueprintCallable 
+	// void SelectButtonAtIndex(int32_t ButtonIndex, bool bAllowSound);                                                         // [0x6fc9a98] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonButtonGroupBase.OnSelectionStateChangedBase
-	// void OnSelectionStateChangedBase(class UCommonButtonBase* BaseButton, bool bIsSelected);                                 // [0x2fcb208] Native|Protected     
+	// void OnSelectionStateChangedBase(class UCommonButtonBase* BaseButton, bool bIsSelected);                                 // [0x3060060] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonGroupBase.OnHandleButtonBaseDoubleClicked
-	// void OnHandleButtonBaseDoubleClicked(class UCommonButtonBase* BaseButton);                                               // [0x6fac120] Native|Protected     
+	// void OnHandleButtonBaseDoubleClicked(class UCommonButtonBase* BaseButton);                                               // [0x6fc975c] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonGroupBase.OnHandleButtonBaseClicked
-	// void OnHandleButtonBaseClicked(class UCommonButtonBase* BaseButton);                                                     // [0x60aaa60] Native|Protected     
+	// void OnHandleButtonBaseClicked(class UCommonButtonBase* BaseButton);                                                     // [0x610d7d4] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonGroupBase.OnButtonBaseUnhovered
-	// void OnButtonBaseUnhovered(class UCommonButtonBase* BaseButton);                                                         // [0x6fac05c] Native|Protected     
+	// void OnButtonBaseUnhovered(class UCommonButtonBase* BaseButton);                                                         // [0x6fc96d8] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonGroupBase.OnButtonBaseHovered
-	// void OnButtonBaseHovered(class UCommonButtonBase* BaseButton);                                                           // [0x6fabf98] Native|Protected     
+	// void OnButtonBaseHovered(class UCommonButtonBase* BaseButton);                                                           // [0x6fc9654] Native|Protected     
 	// Function /Script/CommonUI.CommonButtonGroupBase.HasAnyButtons
-	// bool HasAnyButtons();                                                                                                    // [0x6fab848] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAnyButtons();                                                                                                    // [0x6fc9108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.GetSelectedButtonIndex
-	// int32_t GetSelectedButtonIndex();                                                                                        // [0x6faae00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSelectedButtonIndex();                                                                                        // [0x6fc8834] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.GetSelectedButtonBase
-	// class UCommonButtonBase* GetSelectedButtonBase();                                                                        // [0x6faaddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonButtonBase* GetSelectedButtonBase();                                                                        // [0x6fc8810] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.GetHoveredButtonIndex
-	// int32_t GetHoveredButtonIndex();                                                                                         // [0x6faa6dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetHoveredButtonIndex();                                                                                         // [0x6fc8110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.GetButtonCount
-	// int32_t GetButtonCount();                                                                                                // [0x5f0e0f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetButtonCount();                                                                                                // [0x5f76ec4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.GetButtonBaseAtIndex
-	// class UCommonButtonBase* GetButtonBaseAtIndex(int32_t Index);                                                            // [0x6fa9f74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonButtonBase* GetButtonBaseAtIndex(int32_t Index);                                                            // [0x6fc7a6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.FindButtonIndex
-	// int32_t FindButtonIndex(class UCommonButtonBase* ButtonToFind);                                                          // [0x6fa9dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindButtonIndex(class UCommonButtonBase* ButtonToFind);                                                          // [0x6fc78f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonButtonGroupBase.DeselectAll
-	// void DeselectAll();                                                                                                      // [0x6fa9bd4] Final|Native|Public|BlueprintCallable 
+	// void DeselectAll();                                                                                                      // [0x6fc7754] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonBoundActionBar
@@ -1388,7 +1388,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonBoundActionBar.SetDisplayOwningPlayerActionsOnly
-	// void SetDisplayOwningPlayerActionsOnly(bool bShouldOnlyDisplayOwningPlayerActions);                                      // [0x2f382e0] Final|Native|Public|BlueprintCallable 
+	// void SetDisplayOwningPlayerActionsOnly(bool bShouldOnlyDisplayOwningPlayerActions);                                      // [0x2ee9548] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonBoundActionButton
@@ -1404,7 +1404,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonBoundActionButton.OnUpdateInputAction
-	// void OnUpdateInputAction();                                                                                              // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnUpdateInputAction();                                                                                              // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CommonUI.CommonGenericInputActionDataTable
@@ -1470,17 +1470,17 @@ public:
 
 	/// Functions
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.SetTransitionDuration
-	// void SetTransitionDuration(float duration);                                                                              // [0x6faf58c] Final|Native|Public|BlueprintCallable 
+	// void SetTransitionDuration(float duration);                                                                              // [0x6fcbfb8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.RemoveWidget
-	// void RemoveWidget(class UCommonActivatableWidget* WidgetToRemove);                                                       // [0x6fac39c] Final|Native|Private|BlueprintCallable 
+	// void RemoveWidget(class UCommonActivatableWidget* WidgetToRemove);                                                       // [0x6fc9918] Final|Native|Private|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.GetTransitionDuration
-	// float GetTransitionDuration();                                                                                           // [0x6260ebc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTransitionDuration();                                                                                           // [0x62c2f44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.GetActiveWidget
-	// class UCommonActivatableWidget* GetActiveWidget();                                                                       // [0x6fa9e8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCommonActivatableWidget* GetActiveWidget();                                                                       // [0x6fc7984] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.ClearWidgets
-	// void ClearWidgets();                                                                                                     // [0x6fa9ad4] Final|Native|Public|BlueprintCallable 
+	// void ClearWidgets();                                                                                                     // [0x6fc76ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonUI.CommonActivatableWidgetContainerBase.BP_AddWidget
-	// class UCommonActivatableWidget* BP_AddWidget(class UClass* ActivatableWidgetClass);                                      // [0x6fa95ec] Final|Native|Private|BlueprintCallable 
+	// class UCommonActivatableWidget* BP_AddWidget(class UClass* ActivatableWidgetClass);                                      // [0x6fc728c] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/CommonUI.CommonActivatableWidgetStack

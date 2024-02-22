@@ -137,9 +137,9 @@ public:
 
 	/// Functions
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformPrimaryAttackTargeting
-	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                                // [0xabb5484] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                                // [0xaeb30bc] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformDashTargeting
-	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                           // [0xabb53a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                           // [0xaeb2fdc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/KatanaGameplayRuntime.FortKatanaPrimaryAttackVariationInfo

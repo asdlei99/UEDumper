@@ -8,19 +8,9 @@
 /// dependency: CoreUObject
 /// dependency: SpatialMetricsCore
 
-/// Class /Script/SpatialMetrics.SpatialMetricBase
-/// Size: 0x0058 (0x000058 - 0x0000B0)
-class USpatialMetricBase : public USpatialMetric
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 176;
-
-public:
-};
-
-/// Class /Script/SpatialMetrics.ActorCountMetric
+/// Class /Script/SpatialMetrics.SpatialActorCountMetric
 /// Size: 0x0008 (0x0000B0 - 0x0000B8)
-class UActorCountMetric : public USpatialMetricBase
+class USpatialActorCountMetric : public USpatialMetricBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 184;
@@ -28,9 +18,9 @@ class UActorCountMetric : public USpatialMetricBase
 public:
 };
 
-/// Class /Script/SpatialMetrics.ActorResourceSizeMetric
+/// Class /Script/SpatialMetrics.SpatialActorResourceSizeMetric
 /// Size: 0x00E8 (0x000058 - 0x000140)
-class UActorResourceSizeMetric : public USpatialMetric
+class USpatialActorResourceSizeMetric : public USpatialMetricInterface
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 320;
@@ -40,9 +30,9 @@ public:
 	CMember(EResourceSizeMemoryCategory)               MemoryCategoryFlags                                         OFFSET(get<T>, {0x13C, 1, 0, 0})
 };
 
-/// Class /Script/SpatialMetrics.PlatformMemoryMetric
+/// Class /Script/SpatialMetrics.SpatialAvailableMemoryMetric
 /// Size: 0x0000 (0x0000B0 - 0x0000B0)
-class UPlatformMemoryMetric : public USpatialMetricBase
+class USpatialAvailableMemoryMetric : public USpatialMetricBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 176;
@@ -50,9 +40,9 @@ class UPlatformMemoryMetric : public USpatialMetricBase
 public:
 };
 
-/// Class /Script/SpatialMetrics.PlatformAvailableMemoryMetric
+/// Class /Script/SpatialMetrics.SpatialFrameTimeMetric
 /// Size: 0x0000 (0x0000B0 - 0x0000B0)
-class UPlatformAvailableMemoryMetric : public USpatialMetricBase
+class USpatialFrameTimeMetric : public USpatialMetricBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 176;
@@ -60,9 +50,9 @@ class UPlatformAvailableMemoryMetric : public USpatialMetricBase
 public:
 };
 
-/// Class /Script/SpatialMetrics.PlatformTimeMetric
+/// Class /Script/SpatialMetrics.SpatialGameUpdateTimeMetric
 /// Size: 0x0000 (0x0000B0 - 0x0000B0)
-class UPlatformTimeMetric : public USpatialMetricBase
+class USpatialGameUpdateTimeMetric : public USpatialMetricBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 176;
@@ -70,9 +60,9 @@ class UPlatformTimeMetric : public USpatialMetricBase
 public:
 };
 
-/// Class /Script/SpatialMetrics.PlatformGameTimeMetric
+/// Class /Script/SpatialMetrics.SpatialMemoryUsageMetric
 /// Size: 0x0000 (0x0000B0 - 0x0000B0)
-class UPlatformGameTimeMetric : public USpatialMetricBase
+class USpatialMemoryUsageMetric : public USpatialMetricBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 176;
@@ -80,22 +70,22 @@ class UPlatformGameTimeMetric : public USpatialMetricBase
 public:
 };
 
-/// Class /Script/SpatialMetrics.PlatformRenderTimeMetric
-/// Size: 0x0000 (0x0000B0 - 0x0000B0)
-class UPlatformRenderTimeMetric : public USpatialMetricBase
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 176;
-
-public:
-};
-
-/// Class /Script/SpatialMetrics.ProxyMetric
+/// Class /Script/SpatialMetrics.SpatialProxyMetric
 /// Size: 0x0050 (0x000058 - 0x0000A8)
-class UProxyMetric : public USpatialMetric
+class USpatialProxyMetric : public USpatialMetricInterface
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 168;
+
+public:
+};
+
+/// Class /Script/SpatialMetrics.SpatialRenderTimeMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class USpatialRenderTimeMetric : public USpatialMetricBase
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 176;
 
 public:
 };

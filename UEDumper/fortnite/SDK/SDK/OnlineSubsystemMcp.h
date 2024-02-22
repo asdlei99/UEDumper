@@ -80,8 +80,8 @@ enum class ESupervisedSettingsValueType : uint8_t
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FOnlineIARCLocaleMapping
 { 
-	SDK_UNDEFINED(16,2620) /* FString */               __um(LanguageId);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2621) /* FString */               __um(IARCLocaleId);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2630) /* FString */               __um(LanguageId);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2631) /* FString */               __um(IARCLocaleId);                                         // 0x0010   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystemMcp.IARCLocaleMappingUtil
@@ -91,25 +91,25 @@ class UIARCLocaleMappingUtil : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	TArray<FOnlineIARCLocaleMapping>                   LocaleMappings;                                             // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,2622) /* FString */               __um(DefaultLocale);                                        // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,2632) /* FString */               __um(DefaultLocale);                                        // 0x0038   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.OnlineISOLanguageInfo
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FOnlineISOLanguageInfo
 { 
-	SDK_UNDEFINED(24,2623) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
-	SDK_UNDEFINED(16,2624) /* FString */               __um(LanguageId);                                           // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,2625) /* FString */               __um(BackendId);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(24,2633) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(16,2634) /* FString */               __um(LanguageId);                                           // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2635) /* FString */               __um(BackendId);                                            // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.OnlineISORegionInfo
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FOnlineISORegionInfo
 { 
-	SDK_UNDEFINED(24,2626) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
-	SDK_UNDEFINED(16,2627) /* FString */               __um(RegionId);                                             // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,2628) /* FString */               __um(BackendId);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(24,2636) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(16,2637) /* FString */               __um(RegionId);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2638) /* FString */               __um(BackendId);                                            // 0x0028   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystemMcp.OnlineISOConversionUtil
@@ -127,7 +127,7 @@ public:
 struct FOnlineDiscoveryModeSetDef
 { 
 	FOnlineLinkId                                      ModeSetId;                                                  // 0x0000   (0x0018)  
-	SDK_UNDEFINED(16,2629) /* FString */               __um(SubModeLinkType);                                      // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2639) /* FString */               __um(SubModeLinkType);                                      // 0x0018   (0x0010)  
 	TArray<FOnlineLinkId>                              SubModeLinkIds;                                             // 0x0028   (0x0010)  
 };
 
@@ -137,35 +137,35 @@ struct FOnlineDiscoverySurfaceDevelopmentLinkCodes
 { 
 	FName                                              SurfaceName;                                                // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2630) /* TArray<FString> */       __um(DevelopmentLinkCodes);                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2640) /* TArray<FString> */       __um(DevelopmentLinkCodes);                                 // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.JsonToxicityEvaluationRequestLegacy
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJsonToxicityEvaluationRequestLegacy
 { 
-	SDK_UNDEFINED(16,2631) /* FString */               __um(Text);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2641) /* FString */               __um(Text);                                                 // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.JsonToxicityBulkEvaluationRequestLegacy
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJsonToxicityBulkEvaluationRequestLegacy
 { 
-	SDK_UNDEFINED(16,2632) /* TArray<FString> */       __um(texts);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2642) /* TArray<FString> */       __um(texts);                                                // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.JsonToxicityEvaluationRequest
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJsonToxicityEvaluationRequest
 { 
-	SDK_UNDEFINED(16,2633) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2643) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.JsonToxicityBulkEvaluationRequest
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJsonToxicityBulkEvaluationRequest
 { 
-	SDK_UNDEFINED(16,2634) /* TArray<FString> */       __um(Names);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2644) /* TArray<FString> */       __um(Names);                                                // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemMcp.JsonToxicityEvaluationResponse

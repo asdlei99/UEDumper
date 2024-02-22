@@ -50,9 +50,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseDevices.ScriptDevice.SetEnabled
-	// void SetEnabled(bool bInEnabled);                                                                                        // [0xa8c3e64] Final|Native|Protected|BlueprintCallable 
+	// void SetEnabled(bool bInEnabled);                                                                                        // [0xa8c031c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VerseDevices.ScriptDevice.BP_SetVisibility
-	// void BP_SetVisibility(bool bVisible);                                                                                    // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_SetVisibility(bool bVisible);                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VerseDevices.VerseMovableObjectBase
@@ -109,19 +109,14 @@ public:
 };
 
 /// Class /Script/VerseDevices.VerseDeviceSubsystem
-/// Size: 0x0160 (0x000030 - 0x000190)
+/// Size: 0x0118 (0x000030 - 0x000148)
 class UVerseDeviceSubsystem : public UWorldSubsystem
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 400;
+	static inline constexpr uint64_t __MDKClassSize = 328;
 
 public:
 	CMember(TMap<TWeakObjectPtr<UClass*>, UVerseClass*>) DeviceClassToVerseClassMap                                OFFSET(get<T>, {0x30, 80, 0, 0})
-
-
-	/// Functions
-	// Function /Script/VerseDevices.VerseDeviceSubsystem.HandleMinigameStateChanged
-	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0xa8c3b84] Final|Native|Private 
 };
 
 /// Class /Script/VerseDevices.VerseDeviceWrapperClassMap

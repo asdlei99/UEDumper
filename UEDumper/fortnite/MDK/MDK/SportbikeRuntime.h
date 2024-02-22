@@ -51,21 +51,21 @@ public:
 };
 
 /// Class /Script/SportbikeRuntime.FortSportbikeVehicle
-/// Size: 0x0010 (0x0023C0 - 0x0023D0)
+/// Size: 0x0010 (0x0023F0 - 0x002400)
 class AFortSportbikeVehicle : public AFortMotorcycleVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 9168;
+	static inline constexpr uint64_t __MDKClassSize = 9216;
 
 public:
 };
 
 /// Class /Script/SportbikeRuntime.FortSportbikeVehicleConfigs
-/// Size: 0x0000 (0x000C20 - 0x000C20)
+/// Size: 0x0000 (0x000C18 - 0x000C18)
 class UFortSportbikeVehicleConfigs : public UFortMotorcycleVehicleConfigs
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3104;
+	static inline constexpr uint64_t __MDKClassSize = 3096;
 
 public:
 };

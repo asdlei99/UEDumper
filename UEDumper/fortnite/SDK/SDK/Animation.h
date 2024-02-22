@@ -28,7 +28,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_Player_HandSplash_R.AnimNotify_Player_HandSplash_R_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/Game/BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C
@@ -43,14 +43,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/Game/BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
-};
-
-/// Class /Game/Animation/Game/MainPlayer/Locomotion/Medium/Male/Jog/HeavyWeapon/BP_GCSteps.BP_GCSteps_C
-/// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UBP_GCSteps_C : public ULegacyCameraShake
-{ 
-public:
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C
@@ -65,11 +58,11 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.CanApplyHolster
-	// bool CanApplyHolster(FName& HolsterId);                                                                               // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool CanApplyHolster(FName& HolsterId);                                                                               // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_PlaySoundWithCondition.AnimNotify_PlaySoundWithCondition_C
@@ -81,7 +74,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_PlaySoundWithCondition.AnimNotify_PlaySoundWithCondition_C.ShouldTriggerAnimNotify
-	// bool ShouldTriggerAnimNotify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);             // [0x130d900] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool ShouldTriggerAnimNotify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);             // [0x3d1d968] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep.AnimNotify_FootStep_C
@@ -96,33 +89,9 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep.AnimNotify_FootStep_C.AudioPreview
-	// void AudioPreview(class AActor* InActor);                                                                             // [0x130d900] Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void AudioPreview(class AActor* InActor);                                                                             // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep.AnimNotify_FootStep_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
-};
-
-/// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Left.AnimNotify_FootStep_Left_C
-/// Size: 0x0000 (0x000078 - 0x000078)
-class UAnimNotify_FootStep_Left_C : public UAnimNotify_FootStep_C
-{ 
-public:
-
-
-	/// Functions
-	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Left.AnimNotify_FootStep_Left_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
-};
-
-/// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Right.AnimNotify_FootStep_Right_C
-/// Size: 0x0000 (0x000078 - 0x000078)
-class UAnimNotify_FootStep_Right_C : public UAnimNotify_FootStep_C
-{ 
-public:
-
-
-	/// Functions
-	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Right.AnimNotify_FootStep_Right_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_Player_HandSplash_L.AnimNotify_Player_HandSplash_L_C
@@ -134,7 +103,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_Player_HandSplash_L.AnimNotify_Player_HandSplash_L_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/Game/MainPlayer/Facial/FaceGameplay/Gameplay_FaceSystem_StateMachine_AnimBP.Gameplay_FaceSystem_StateMachine_AnimBP_C
@@ -259,21 +228,9 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/Game/MainPlayer/Facial/FaceGameplay/Gameplay_FaceSystem_StateMachine_AnimBP.Gameplay_FaceSystem_StateMachine_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Game/MainPlayer/Facial/FaceGameplay/Gameplay_FaceSystem_StateMachine_AnimBP.Gameplay_FaceSystem_StateMachine_AnimBP_C.ExecuteUbergraph_Gameplay_FaceSystem_StateMachine_AnimBP
-	// void ExecuteUbergraph_Gameplay_FaceSystem_StateMachine_AnimBP(int32_t EntryPoint);                                    // [0x130d900] Final                
-};
-
-/// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HightBeam_HandFX_HologramHide.AnimNotifyState_HightBeam_HandFX_HologramHide_C
-/// Size: 0x0000 (0x0000A2 - 0x0000A2)
-class UAnimNotifyState_HightBeam_HandFX_HologramHide_C : public UFN_TimedNiagaraNotify_C
-{ 
-public:
-
-
-	/// Functions
-	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HightBeam_HandFX_HologramHide.AnimNotifyState_HightBeam_HandFX_HologramHide_C.Received_NotifyTick
-	// bool Received_NotifyTick(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float FrameDeltaTime, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// void ExecuteUbergraph_Gameplay_FaceSystem_StateMachine_AnimBP(int32_t EntryPoint);                                    // [0x3d1d968] Final                
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HideWeapon.AnimNotifyState_HideWeapon_C
@@ -285,9 +242,52 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HideWeapon.AnimNotifyState_HideWeapon_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HideWeapon.AnimNotifyState_HideWeapon_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+};
+
+/// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Right.AnimNotify_FootStep_Right_C
+/// Size: 0x0000 (0x000078 - 0x000078)
+class UAnimNotify_FootStep_Right_C : public UAnimNotify_FootStep_C
+{ 
+public:
+
+
+	/// Functions
+	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Right.AnimNotify_FootStep_Right_C.Received_Notify
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+};
+
+/// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Left.AnimNotify_FootStep_Left_C
+/// Size: 0x0000 (0x000078 - 0x000078)
+class UAnimNotify_FootStep_Left_C : public UAnimNotify_FootStep_C
+{ 
+public:
+
+
+	/// Functions
+	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_FootStep_Left.AnimNotify_FootStep_Left_C.Received_Notify
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+};
+
+/// Class /Game/Animation/Game/MainPlayer/Locomotion/Medium/Male/Jog/HeavyWeapon/BP_GCSteps.BP_GCSteps_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class UBP_GCSteps_C : public ULegacyCameraShake
+{ 
+public:
+};
+
+/// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HightBeam_HandFX_HologramHide.AnimNotifyState_HightBeam_HandFX_HologramHide_C
+/// Size: 0x0000 (0x0000A2 - 0x0000A2)
+class UAnimNotifyState_HightBeam_HandFX_HologramHide_C : public UFN_TimedNiagaraNotify_C
+{ 
+public:
+
+
+	/// Functions
+	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_HightBeam_HandFX_HologramHide.AnimNotifyState_HightBeam_HandFX_HologramHide_C.Received_NotifyTick
+	// bool Received_NotifyTick(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float FrameDeltaTime, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C
@@ -299,77 +299,77 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Vehicle Dynamics Scaler Function
-	// void Vehicle Dynamics Scaler Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, bool Debug, class UObject* __WorldContext, double& InVehicleHeadScaleAlpha, double& InVehicleHeadSimAlpha, double& InVehicleSkirtScaleAlpha, double& InVehicleSkirtSimAlpha); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Vehicle Dynamics Scaler Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, bool Debug, class UObject* __WorldContext, double& InVehicleHeadScaleAlpha, double& InVehicleHeadSimAlpha, double& InVehicleSkirtScaleAlpha, double& InVehicleSkirtSimAlpha); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cloth Controller Function Nativization Wrapper
-	// void Cloth Controller Function Nativization Wrapper(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString& ClothingAssetName, FClothControllerClothParameterMap& Cloth Paramaters, FClothCoreSettings& Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_Speed_Limit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, float DeltaTime, float GameTimeInSeconds, FClothControllerWindParameterMap& WindGustsParams, FWindGustSettings& WindGustLocalSettings, class UObject* __WorldContext, FName& CharacterStateOut, FClothParameters& Cloth Settings Out, FWindGustSettings& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Cloth Controller Function Nativization Wrapper(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString& ClothingAssetName, FClothControllerClothParameterMap& Cloth Paramaters, FClothCoreSettings& Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_Speed_Limit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, float DeltaTime, float GameTimeInSeconds, FClothControllerWindParameterMap& WindGustsParams, FWindGustSettings& WindGustLocalSettings, class UObject* __WorldContext, FName& CharacterStateOut, FClothParameters& Cloth Settings Out, FWindGustSettings& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cloth Controller Convert To Nativized Parameters
-	// void Cloth Controller Convert To Nativized Parameters(FClothParamsStruct ClothParametersStruct, FWindGustParamsStruct WindParametersStruct, FClothCoreSettingStruct Cloth Core Settings, FWindGustLocalSettingStruct Wind Gust Settings, FName Character State Name, class UObject* __WorldContext, FClothParameters& Cloth Parameters Nativized, FWindGustParameters& Wind Parameters Nativized, FClothCoreSettings& ClothCoreSettings, FWindGustSettings& Wind Settings Nativized); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Cloth Controller Convert To Nativized Parameters(FClothParamsStruct ClothParametersStruct, FWindGustParamsStruct WindParametersStruct, FClothCoreSettingStruct Cloth Core Settings, FWindGustLocalSettingStruct Wind Gust Settings, FName Character State Name, class UObject* __WorldContext, FClothParameters& Cloth Parameters Nativized, FWindGustParameters& Wind Parameters Nativized, FClothCoreSettings& ClothCoreSettings, FWindGustSettings& Wind Settings Nativized); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.ConvertToNativizedWindParameters
-	// void ConvertToNativizedWindParameters(FWindGustSettingStruct& WindGustSettingStruct, class UObject* __WorldContext, FWindGustParameters& WindGustParameters); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ConvertToNativizedWindParameters(FWindGustSettingStruct& WindGustSettingStruct, class UObject* __WorldContext, FWindGustParameters& WindGustParameters); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.ConvertToNativizedClothParameters
-	// void ConvertToNativizedClothParameters(FClothSettingStruct& ClothSettingStruct, class UObject* __WorldContext, FClothParameters& ClothParameters); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ConvertToNativizedClothParameters(FClothSettingStruct& ClothSettingStruct, class UObject* __WorldContext, FClothParameters& ClothParameters); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Get Joint Location Relative to Bone
-	// void Get Joint Location Relative to Bone(FName Target Joint, FName Relative Joint, FVector Offset, class UMeshComponent* SkelMeshComponent, bool Debug Draw, class UObject* __WorldContext, FVector& Joint Location Vector); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Get Joint Location Relative to Bone(FName Target Joint, FName Relative Joint, FVector Offset, class UMeshComponent* SkelMeshComponent, bool Debug Draw, class UObject* __WorldContext, FVector& Joint Location Vector); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cape Spine05 Pelvis Rotation Function
-	// void Cape Spine05 Pelvis Rotation Function(class USkinnedMeshComponent* SkeletalMeshComponent, class UObject* __WorldContext, FRotator& Rotate Z Output); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Cape Spine05 Pelvis Rotation Function(class USkinnedMeshComponent* SkeletalMeshComponent, class UObject* __WorldContext, FRotator& Rotate Z Output); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Separated Cloth Control Function
-	// void Separated Cloth Control Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString ClothingAssetName, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct WindGustsParams, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FString& CurrentStateOut, FClothCoreSettingStruct& Cloth Core Settings Out, FClothSettingStruct& Cloth Settings Out, FWindGustSettingStruct& WindGustSettings Out, FWindGustLocalSettingStruct& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Separated Cloth Control Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString ClothingAssetName, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct WindGustsParams, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FString& CurrentStateOut, FClothCoreSettingStruct& Cloth Core Settings Out, FClothSettingStruct& Cloth Settings Out, FWindGustSettingStruct& WindGustSettings Out, FWindGustLocalSettingStruct& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Separated Cloth Control Write To Instance
-	// void Separated Cloth Control Write To Instance(class UCustomCharacterPartAnimInstance* Character Part Anim Instance, FString Clothing Asset Name, FClothCoreSettingStruct Cloth Core Settings, FClothSettingStruct Cloth Settings, FVector Gust Strength - Wind Velocity, FName Joint Name, class UObject* __WorldContext); // [0x130d900] Static|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Separated Cloth Control Write To Instance(class UCustomCharacterPartAnimInstance* Character Part Anim Instance, FString Clothing Asset Name, FClothCoreSettingStruct Cloth Core Settings, FClothSettingStruct Cloth Settings, FVector Gust Strength - Wind Velocity, FName Joint Name, class UObject* __WorldContext); // [0x3d1d968] Static|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Separated Cloth Control Calculate Parameters
-	// void Separated Cloth Control Calculate Parameters(class UCustomCharacterPartAnimInstance* InCharacterPartAnimInstance, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct InWindGustParams, FWindGustLocalSettingStruct InWindGustLocalSettings, class UObject* __WorldContext, FString& OutCurrentState, FClothCoreSettingStruct& OutClothCoreSettings, FClothSettingStruct& OutClothSettings, FWindGustSettingStruct& OutWindGustSettings, FWindGustLocalSettingStruct& OutWindGustLocalSettings, FVector& OutGustStrength, FVector& LinearVelVector-DELETE LATER); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Separated Cloth Control Calculate Parameters(class UCustomCharacterPartAnimInstance* InCharacterPartAnimInstance, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct InWindGustParams, FWindGustLocalSettingStruct InWindGustLocalSettings, class UObject* __WorldContext, FString& OutCurrentState, FClothCoreSettingStruct& OutClothCoreSettings, FClothSettingStruct& OutClothSettings, FWindGustSettingStruct& OutWindGustSettings, FWindGustLocalSettingStruct& OutWindGustLocalSettings, FVector& OutGustStrength, FVector& LinearVelVector-DELETE LATER); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Separated Cloth Control Wind Gust Function
-	// void Separated Cloth Control Wind Gust Function(double DeltaTime, double GameTimeInSeconds, FName JointName, FWindGustSettingStruct WindGustSettings, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FVector& GustStrengthWindVelocity Out, FWindGustLocalSettingStruct& WindGustLocalSettingsOut); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Separated Cloth Control Wind Gust Function(double DeltaTime, double GameTimeInSeconds, FName JointName, FWindGustSettingStruct WindGustSettings, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FVector& GustStrengthWindVelocity Out, FWindGustLocalSettingStruct& WindGustLocalSettingsOut); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Set WPO Regional Function
-	// void Set WPO Regional Function(class UMaterialInstanceDynamic* Material, class UMaterialInstanceDynamic* Overlay Material, class USkeletalMeshComponent* Skeletal Mesh, FName Velocity Transform, double Velocity Interp Speed, FName Collision Transform, TEnumAsByte<EAxis> Collision Transform Axis, bool Invert Collision Transform Axis, double Delta Time X, FVector& Previous Velocity Transform Location, FVector& Previous Velocity Transform Velocity, int32_t Region, class UObject* __WorldContext); // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Set WPO Regional Function(class UMaterialInstanceDynamic* Material, class UMaterialInstanceDynamic* Overlay Material, class USkeletalMeshComponent* Skeletal Mesh, FName Velocity Transform, double Velocity Interp Speed, FName Collision Transform, TEnumAsByte<EAxis> Collision Transform Axis, bool Invert Collision Transform Axis, double Delta Time X, FVector& Previous Velocity Transform Location, FVector& Previous Velocity Transform Velocity, int32_t Region, class UObject* __WorldContext); // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Get WPO Regional Param Names Function
-	// void Get WPO Regional Param Names Function(int32_t& Region, class UObject* __WorldContext, FName& Velocity, FName& Bone Position, FName& Bone Vector); // [0x130d900] Private|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Get WPO Regional Param Names Function(int32_t& Region, class UObject* __WorldContext, FName& Velocity, FName& Bone Position, FName& Bone Vector); // [0x3d1d968] Private|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Set WPO Globals Function
-	// void Set WPO Globals Function(class UMaterialInstanceDynamic* Material, class UMaterialInstanceDynamic* Overlay Material, class USkeletalMeshComponent* Skeletal Mesh, FName Local Noise Reference Transform, double Local Noise Offset Multiplier, FVector& Local Noise Transform  Location, FVector& Local Noise Offset, FName Local Turbulence Vector Transform, TEnumAsByte<EAxis> Local Turbulence Vector Transform Axis, class UObject* __WorldContext); // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Set WPO Globals Function(class UMaterialInstanceDynamic* Material, class UMaterialInstanceDynamic* Overlay Material, class USkeletalMeshComponent* Skeletal Mesh, FName Local Noise Reference Transform, double Local Noise Offset Multiplier, FVector& Local Noise Transform  Location, FVector& Local Noise Offset, FName Local Turbulence Vector Transform, TEnumAsByte<EAxis> Local Turbulence Vector Transform Axis, class UObject* __WorldContext); // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Get  Motion Vector For Transform Function
-	// void Get  Motion Vector For Transform Function(class USceneComponent* Skeletal Mesh, FName Transform Name, FVector& Previous Transform Location, class UObject* __WorldContext, FVector& Transform Motion Vector, FVector& Transform Location, FTransform& Transform); // [0x130d900] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Get  Motion Vector For Transform Function(class USceneComponent* Skeletal Mesh, FName Transform Name, FVector& Previous Transform Location, class UObject* __WorldContext, FVector& Transform Motion Vector, FVector& Transform Location, FTransform& Transform); // [0x3d1d968] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Debug Cloth Teleport Threshold Function
-	// void Debug Cloth Teleport Threshold Function(double MinDistance, double MinRotation, class USceneComponent* SkelMeshComponent, bool PrintToScreen, FName BoneName, FVector& InVector, FRotator PawnDeltaRotation, double PrintToScreenDuration, class UObject* __WorldContext, double& Distance, double& Rotation); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Debug Cloth Teleport Threshold Function(double MinDistance, double MinRotation, class USceneComponent* SkelMeshComponent, bool PrintToScreen, FName BoneName, FVector& InVector, FRotator PawnDeltaRotation, double PrintToScreenDuration, class UObject* __WorldContext, double& Distance, double& Rotation); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cloth Controller Helper Scale For Player Movement
-	// void Cloth Controller Helper Scale For Player Movement(FVector LinearVelScale, double PlayerFwdVector, double PlayerFwdVectorJump, double ClothUpX, double ClothUpZ, class UObject* __WorldContext, FVector& LinearVelVectorOut); // [0x130d900] Static|Private|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Cloth Controller Helper Scale For Player Movement(FVector LinearVelScale, double PlayerFwdVector, double PlayerFwdVectorJump, double ClothUpX, double ClothUpZ, class UObject* __WorldContext, FVector& LinearVelVectorOut); // [0x3d1d968] Static|Private|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Scale Joint Rotation Function
-	// void Scale Joint Rotation Function(FRotator Scale, FName TargetBone, FName ReferenceBone, class USkinnedMeshComponent* SkelMeshComponent, class UObject* __WorldContext, FRotator& FinalRotation, FRotator& OriginalRotation); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Scale Joint Rotation Function(FRotator Scale, FName TargetBone, FName ReferenceBone, class USkinnedMeshComponent* SkelMeshComponent, class UObject* __WorldContext, FRotator& FinalRotation, FRotator& OriginalRotation); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Adjust Emote Vehicle Wheel Rotation
-	// void Adjust Emote Vehicle Wheel Rotation(class AActor* Owning Actor, double CurrentWheelRotation, double DeltaTime, double CurrentActorRotation, class UObject* __WorldContext, double& NewActorRotation, double& NewWheelRotation); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Adjust Emote Vehicle Wheel Rotation(class AActor* Owning Actor, double CurrentWheelRotation, double DeltaTime, double CurrentActorRotation, class UObject* __WorldContext, double& NewActorRotation, double& NewWheelRotation); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Gravity Override Setter Function
-	// void Gravity Override Setter Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, class UMeshComponent* SkelMeshComponent, FGravityOverrideSettingStruct GravityOverride Settings, double GameTimeInSeconds, class UObject* __WorldContext, FGravityOverrideSettingStruct& GravityOverride Settings Out, FVector& GravityOverride Out); // [0x130d900] Static|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Gravity Override Setter Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, class UMeshComponent* SkelMeshComponent, FGravityOverrideSettingStruct GravityOverride Settings, double GameTimeInSeconds, class UObject* __WorldContext, FGravityOverrideSettingStruct& GravityOverride Settings Out, FVector& GravityOverride Out); // [0x3d1d968] Static|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Gravity Override State Function
-	// void Gravity Override State Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double GameTimeInSeconds, FGravityOverrideParamsStruct& GravityOverrideParams, FRBANParamsStruct& RBAN Params, bool DebugDraw, FName DebugJointName, class UObject* __WorldContext, FVector& GravityOverride, FString& CurrentStateOut, FGravityOverrideSettingStruct& GravityOverrideSettingsOut, FRBANSettingStruct& RBAN SettingsOut); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Gravity Override State Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double GameTimeInSeconds, FGravityOverrideParamsStruct& GravityOverrideParams, FRBANParamsStruct& RBAN Params, bool DebugDraw, FName DebugJointName, class UObject* __WorldContext, FVector& GravityOverride, FString& CurrentStateOut, FGravityOverrideSettingStruct& GravityOverrideSettingsOut, FRBANSettingStruct& RBAN SettingsOut); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.FN_PSDPoseReaderFNC
-	// void FN_PSDPoseReaderFNC(FString startJnt, FString endJnt, FString poseJnt, double Angle, bool Debug, class USkeletalMeshComponent* SkeletalMeshComponent, class UObject* __WorldContext, double& pose_output); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void FN_PSDPoseReaderFNC(FString startJnt, FString endJnt, FString poseJnt, double Angle, bool Debug, class USkeletalMeshComponent* SkeletalMeshComponent, class UObject* __WorldContext, double& pose_output); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Wind Gust Control Function
-	// void Wind Gust Control Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double DeltaTime, double GameTimeInSeconds, FName JointName, FWindGustSettingStruct WindGustSettings, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FVector& GustStrengthWindVelocity Out, FWindGustLocalSettingStruct& WindGustLocalSettingsOut); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Wind Gust Control Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double DeltaTime, double GameTimeInSeconds, FName JointName, FWindGustSettingStruct WindGustSettings, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FVector& GustStrengthWindVelocity Out, FWindGustLocalSettingStruct& WindGustLocalSettingsOut); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.WindGustGeneratorFunction
-	// void WindGustGeneratorFunction(double DeltaTime, FWindGustSettingStruct GustSettings, FWindGustLocalSettingStruct ClothGustLocalSettings, class UObject* __WorldContext, double& GustStrength - WindVelocity, FWindGustLocalSettingStruct& ClothGustLocalSettingsOut); // [0x130d900] Static|Private|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void WindGustGeneratorFunction(double DeltaTime, FWindGustSettingStruct GustSettings, FWindGustLocalSettingStruct ClothGustLocalSettings, class UObject* __WorldContext, double& GustStrength - WindVelocity, FWindGustLocalSettingStruct& ClothGustLocalSettingsOut); // [0x3d1d968] Static|Private|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Play Transformation Montage
-	// void Play Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UObject* __WorldContext);               // [0x130d900] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void Play Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UObject* __WorldContext);               // [0x3d1d968] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Clear Transformation Montage
-	// void Clear Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UObject* __WorldContext);              // [0x130d900] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void Clear Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UObject* __WorldContext);              // [0x3d1d968] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Set Transformation Montage
-	// void Set Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UAnimMontage* Montage, double StartTime, class UObject* __WorldContext); // [0x130d900] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void Set Transformation Montage(class AFortPlayerPawn* FortPlayerPawn, class UAnimMontage* Montage, double StartTime, class UObject* __WorldContext); // [0x3d1d968] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cloth Controller Setter Function
-	// void Cloth Controller Setter Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FClothSettingStruct Cloth Settings, class UObject* __WorldContext, FClothSettingStruct& Cloth Settings Out); // [0x130d900] Static|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Cloth Controller Setter Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FClothSettingStruct Cloth Settings, class UObject* __WorldContext, FClothSettingStruct& Cloth Settings Out); // [0x3d1d968] Static|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Cloth Controller Function
-	// void Cloth Controller Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString ClothingAssetName, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct WindGustsParams, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FString& CurrentStateOut, FClothSettingStruct& Cloth Settings Out, FClothCoreSettingStruct& Cloth Core Settings Out, FWindGustSettingStruct& WindGustSettings Out, FWindGustLocalSettingStruct& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Cloth Controller Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, FString ClothingAssetName, FClothParamsStruct Cloth Paramaters, FClothCoreSettingStruct Cloth Core Settings, FVector ClothUpAxis, double OnGround_Moving_SpeedLimit, double OnGround_Moving_AngularVel_Max, double OnGround_Moving_FictitiousVel_Max, double LinVelScale_FwdBwd_Clamp, double LinVelScale_UpDwn_Clamp, double DeltaTime, double GameTimeInSeconds, FWindGustParamsStruct WindGustsParams, FWindGustLocalSettingStruct WindGustLocalSettings, class UObject* __WorldContext, FString& CurrentStateOut, FClothSettingStruct& Cloth Settings Out, FClothCoreSettingStruct& Cloth Core Settings Out, FWindGustSettingStruct& WindGustSettings Out, FWindGustLocalSettingStruct& WindGustLocalSettings Out, FVector& GustStrength - WindVelocityOut, FVector& LinearVelVector-DELETE LATER); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.RandomRotatorFunction
-	// void RandomRotatorFunction(double GameTimeInSeconds, double PerlinScale, FRotator Frequency, FRotator Amplitude, FRotator Offset, double TimeOffset, class UObject* __WorldContext, FRotator& RandomRotator); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void RandomRotatorFunction(double GameTimeInSeconds, double PerlinScale, FRotator Frequency, FRotator Amplitude, FRotator Offset, double TimeOffset, class UObject* __WorldContext, FRotator& RandomRotator); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Player Movement Function
-	// void Player Movement Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double X Dot Product, double Y Dot Product, double Z Dot Product, bool DrawDebug, double Debug Scalar, class UObject* __WorldContext, double& X Movement, double& Y Movement, double& Z Movement); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Player Movement Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double X Dot Product, double Y Dot Product, double Z Dot Product, bool DrawDebug, double Debug Scalar, class UObject* __WorldContext, double& X Movement, double& Y Movement, double& Z Movement); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Random Vector Function
-	// void Random Vector Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, class UMeshComponent* SkelMeshComponent, FName JointName, double GameTimeInSeconds, double TimeOffset, double PerlinScale, FVector Frequency, FVector Amplitude, FVector Offset, class UObject* __WorldContext, FVector& VectorOut); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Random Vector Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, class UMeshComponent* SkelMeshComponent, FName JointName, double GameTimeInSeconds, double TimeOffset, double PerlinScale, FVector Frequency, FVector Amplitude, FVector Offset, class UObject* __WorldContext, FVector& VectorOut); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.DrawVectorFromJointFunction
-	// void DrawVectorFromJointFunction(class USceneComponent* SkelMeshComponent, FName JointName, FVector LineEnd, FVector JointOffset, FLinearColor LineColor, double Thickness, class UObject* __WorldContext); // [0x130d900] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void DrawVectorFromJointFunction(class USceneComponent* SkelMeshComponent, FName JointName, FVector LineEnd, FVector JointOffset, FLinearColor LineColor, double Thickness, class UObject* __WorldContext); // [0x3d1d968] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.DrawJointDebugFunction
-	// void DrawJointDebugFunction(class USceneComponent* SkelMeshComponent, FVector JointOffset, TArray<FName>& JointName, double Scale, double duration, double Thickness, bool DebugDraw, class UObject* __WorldContext); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void DrawJointDebugFunction(class USceneComponent* SkelMeshComponent, FVector JointOffset, TArray<FName>& JointName, double Scale, double duration, double Thickness, bool DebugDraw, class UObject* __WorldContext); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.ComplexSimSpaceFunction
-	// void ComplexSimSpaceFunction(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double InterpSpeedMax, double PawnSpeedMax, double RInterpErrorTolerance, double DeltaTime, bool DebugDraw, FRotator sim_space_rotation_in, bool inComponentSpaceIn, bool inComponentSpaceLastFrameIn, bool lockedOnSimSpaceIn, double InterpSpeedIn, class UObject* __WorldContext, FRotator& sim_space_rotation, bool& inComponentSpaceOut, bool& inComponentSpaceLastFrameOut, bool& lockedOnSimSpaceOut, double& InterpSpeedOut); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ComplexSimSpaceFunction(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double InterpSpeedMax, double PawnSpeedMax, double RInterpErrorTolerance, double DeltaTime, bool DebugDraw, FRotator sim_space_rotation_in, bool inComponentSpaceIn, bool inComponentSpaceLastFrameIn, bool lockedOnSimSpaceIn, double InterpSpeedIn, class UObject* __WorldContext, FRotator& sim_space_rotation, bool& inComponentSpaceOut, bool& inComponentSpaceLastFrameOut, bool& lockedOnSimSpaceOut, double& InterpSpeedOut); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Animation/Libraries/FortAnimationBPFunctionLibrary.FortAnimationBPFunctionLibrary_C.Gravity Override Function
-	// void Gravity Override Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double GameTimeInSeconds, FVector WindFreq, FVector WindAmp, FVector WindOffset, FVector GoingUpGravityOverride, FVector ComingDownGravityOverride, FVector DivingDownGravityOverride, FVector ParachuteOpenedGravityOverride, FVector GroundWindFreq, FVector GroundWindAmp, FVector GroundWindOffset, FVector OnGroundGravityOverride, FVector SwimmingGravityOverride, FName JointName, class UObject* __WorldContext, FVector& GravityOverride); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Gravity Override Function(class UCustomCharacterPartAnimInstance* CharacterPartAnimInstance, double GameTimeInSeconds, FVector WindFreq, FVector WindAmp, FVector WindOffset, FVector GoingUpGravityOverride, FVector ComingDownGravityOverride, FVector DivingDownGravityOverride, FVector ParachuteOpenedGravityOverride, FVector GroundWindFreq, FVector GroundWindAmp, FVector GroundWindOffset, FVector OnGroundGravityOverride, FVector SwimmingGravityOverride, FName JointName, class UObject* __WorldContext, FVector& GravityOverride); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C
@@ -387,9 +387,9 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_StopMontageGroup.AnimNotifyState_StopMontageGroup_C
@@ -404,7 +404,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_StopMontageGroup.AnimNotifyState_StopMontageGroup_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C
@@ -422,7 +422,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C
@@ -434,9 +434,9 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_EliminationBotM2.AnimNotify_EliminationBotM2_C
@@ -448,7 +448,7 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyEvent/AnimNotify_EliminationBotM2.AnimNotify_EliminationBotM2_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_TeleportFinished.AnimNotifyState_TeleportFinished_C
@@ -460,9 +460,16 @@ public:
 
 	/// Functions
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_TeleportFinished.AnimNotifyState_TeleportFinished_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Animation/AnimNotifies/AnimNotifyState/AnimNotifyState_TeleportFinished.AnimNotifyState_TeleportFinished_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+};
+
+/// Class /Game/Animation/Game/MainPlayer/Combat/Gadgets/Medium/Male/Ashton/Turbo/Melee/Ashton_Turbo_Swing3_BP.Ashton_Turbo_Swing3_BP_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class UAshton_Turbo_Swing3_BP_C : public ULegacyCameraShake
+{ 
+public:
 };
 
 /// Class /RidingContent/Animation/Notifies/AnimNotifyState_SyncPettingCreature.AnimNotifyState_SyncPettingCreature_C
@@ -474,15 +481,15 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Animation/Notifies/AnimNotifyState_SyncPettingCreature.AnimNotifyState_SyncPettingCreature_C.GetRiderPettingMontage
-	// void GetRiderPettingMontage(class AActor* RiderActor, class UAnimMontage*& RiderPettingMontage);                      // [0x130d900] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRiderPettingMontage(class AActor* RiderActor, class UAnimMontage*& RiderPettingMontage);                      // [0x3d1d968] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /RidingContent/Animation/Notifies/AnimNotifyState_SyncPettingCreature.AnimNotifyState_SyncPettingCreature_C.Received_NotifyEnd
-	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 	// Function /RidingContent/Animation/Notifies/AnimNotifyState_SyncPettingCreature.AnimNotifyState_SyncPettingCreature_C.Received_NotifyBegin
-	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C
-/// Size: 0x4EF8 (0x000AF0 - 0x0059E8)
+/// Size: 0x4F08 (0x000AF0 - 0x0059F8)
 class UBoarRidingPlayerLayerAnimBP_C : public UFortVehicleLayerAnimInstance_Riding
 { 
 public:
@@ -499,279 +506,279 @@ public:
 	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone1;                                  // 0x0EF8   (0x0128)  
 	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone2;                                  // 0x1020   (0x0128)  
 	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive;                                // 0x1148   (0x00C8)  
-	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x1210   (0x00F8)  
-	FAnimNode_LegIK                                    AnimGraphNode_LegIK3;                                       // 0x1308   (0x00F8)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer;                             // 0x1400   (0x0070)  
-	FAnimNode_Root                                     AnimGraphNode_Root4;                                        // 0x1470   (0x0020)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose5;                             // 0x1490   (0x00B0)  
-	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose;                               // 0x1540   (0x0078)  
-	FAnimNode_ConvertLocalToComponentSpace             AnimGraphNode_LocalToComponentSpace6;                       // 0x15B8   (0x0020)  
-	FAnimNode_ConvertComponentToLocalSpace             AnimGraphNode_ComponentToLocalSpace7;                       // 0x15D8   (0x0020)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool;                              // 0x15F8   (0x0048)  
-	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone8;                                  // 0x1640   (0x0128)  
-	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone9;                                  // 0x1768   (0x0128)  
-	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone10;                                 // 0x1890   (0x0128)  
-	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone11;                                 // 0x19B8   (0x0128)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult;                             // 0x1AE0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult12;                           // 0x1B08   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult13;                           // 0x1B30   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult14;                           // 0x1B58   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult15;                           // 0x1B80   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult16;                           // 0x1BA8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult17;                           // 0x1BD0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult18;                           // 0x1BF8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult19;                           // 0x1C20   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult20;                           // 0x1C48   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult21;                           // 0x1C70   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult22;                           // 0x1C98   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult23;                           // 0x1CC0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult24;                           // 0x1CE8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult25;                           // 0x1D10   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult26;                           // 0x1D38   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult27;                           // 0x1D60   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult28;                           // 0x1D88   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer;                               // 0x1DB0   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer29;                             // 0x1DF8   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool30;                            // 0x1E40   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult;                                  // 0x1E88   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer31;                             // 0x1EA8   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer32;                             // 0x1EF0   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool33;                            // 0x1F38   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult34;                                // 0x1F80   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer35;                             // 0x1FA0   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool36;                            // 0x1FE8   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer37;                             // 0x2030   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer38;                             // 0x2078   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool39;                            // 0x20C0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult40;                                // 0x2108   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer41;                             // 0x2128   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult42;                                // 0x2170   (0x0020)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer43;                           // 0x2190   (0x0070)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer44;                             // 0x2200   (0x0048)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive45;                              // 0x2248   (0x00C8)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool46;                            // 0x2310   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer47;                             // 0x2358   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult48;                                // 0x23A0   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer49;                             // 0x23C0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult50;                                // 0x2408   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult51;                           // 0x2428   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult52;                           // 0x2450   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult53;                           // 0x2478   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult54;                           // 0x24A0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult55;                           // 0x24C8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult56;                           // 0x24F0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult57;                           // 0x2518   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult58;                           // 0x2540   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer59;                             // 0x2568   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult60;                                // 0x25B0   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer61;                             // 0x25D0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult62;                                // 0x2618   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer63;                             // 0x2638   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult64;                                // 0x2680   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer65;                             // 0x26A0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult66;                                // 0x26E8   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult67;                           // 0x2708   (0x0028)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine;                                 // 0x2730   (0x00C8)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult68;                                // 0x27F8   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer69;                             // 0x2818   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult70;                                // 0x2860   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer71;                             // 0x2880   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult72;                                // 0x28C8   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer73;                             // 0x28E8   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult74;                                // 0x2930   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult75;                           // 0x2950   (0x0028)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine76;                               // 0x2978   (0x00C8)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult77;                                // 0x2A40   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult78;                           // 0x2A60   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult79;                           // 0x2A88   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer80;                             // 0x2AB0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult81;                                // 0x2AF8   (0x0020)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult82;                                // 0x2B18   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine83;                               // 0x2B38   (0x00C8)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive84;                              // 0x2C00   (0x00C8)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer85;                           // 0x2CC8   (0x0070)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer86;                             // 0x2D38   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer87;                             // 0x2D80   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool88;                            // 0x2DC8   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool89;                            // 0x2E10   (0x0048)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer90;                           // 0x2E58   (0x0070)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive91;                              // 0x2EC8   (0x00C8)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult92;                                // 0x2F90   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer93;                             // 0x2FB0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult94;                                // 0x2FF8   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine95;                               // 0x3018   (0x00C8)  
-	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend;                             // 0x30E0   (0x00F0)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose;                                // 0x31D0   (0x0028)  
-	FAnimNode_Inertialization                          AnimGraphNode_Inertialization;                              // 0x31F8   (0x0118)  
-	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace;                     // 0x3310   (0x0118)  
-	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend96;                           // 0x3428   (0x00F0)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult97;                           // 0x3518   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult98;                           // 0x3540   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult99;                           // 0x3568   (0x0028)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose100;                             // 0x3590   (0x0028)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult101;                               // 0x35B8   (0x0020)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer102;                          // 0x35D8   (0x0070)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult103;                               // 0x3648   (0x0020)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose104;                             // 0x3668   (0x0028)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult105;                               // 0x3690   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine106;                              // 0x36B0   (0x00C8)  
-	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose107;                            // 0x3778   (0x0078)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose108;                             // 0x37F0   (0x0028)  
-	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose109;                            // 0x3818   (0x0078)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose110;                             // 0x3890   (0x0028)  
-	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose111;                             // 0x38B8   (0x0028)  
-	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace112;                  // 0x38E0   (0x0118)  
-	FAnimNode_ApplyMeshSpaceAdditive                   AnimGraphNode_ApplyMeshSpaceAdditive;                       // 0x39F8   (0x00D0)  
-	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace113;                  // 0x3AC8   (0x0118)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult114;                          // 0x3BE0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult115;                          // 0x3C08   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult116;                          // 0x3C30   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult117;                          // 0x3C58   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult118;                          // 0x3C80   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult119;                          // 0x3CA8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult120;                          // 0x3CD0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult121;                          // 0x3CF8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult122;                          // 0x3D20   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult123;                          // 0x3D48   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult124;                          // 0x3D70   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult125;                          // 0x3D98   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult126;                          // 0x3DC0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult127;                          // 0x3DE8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult128;                          // 0x3E10   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult129;                          // 0x3E38   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult130;                          // 0x3E60   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult131;                          // 0x3E88   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer132;                            // 0x3EB0   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer133;                            // 0x3EF8   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool134;                           // 0x3F40   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult135;                               // 0x3F88   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer136;                            // 0x3FA8   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer137;                            // 0x3FF0   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool138;                           // 0x4038   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult139;                               // 0x4080   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer140;                            // 0x40A0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult141;                               // 0x40E8   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer142;                            // 0x4108   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer143;                            // 0x4150   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool144;                           // 0x4198   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult145;                               // 0x41E0   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult146;                          // 0x4200   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult147;                          // 0x4228   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult148;                          // 0x4250   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult149;                          // 0x4278   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult150;                          // 0x42A0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult151;                          // 0x42C8   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult152;                          // 0x42F0   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult153;                          // 0x4318   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer154;                            // 0x4340   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult155;                               // 0x4388   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer156;                            // 0x43A8   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult157;                               // 0x43F0   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer158;                            // 0x4410   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult159;                               // 0x4458   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer160;                            // 0x4478   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult161;                               // 0x44C0   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult162;                          // 0x44E0   (0x0028)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine163;                              // 0x4508   (0x00C8)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult164;                               // 0x45D0   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer165;                            // 0x45F0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult166;                               // 0x4638   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer167;                            // 0x4658   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult168;                               // 0x46A0   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer169;                            // 0x46C0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult170;                               // 0x4708   (0x0020)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult171;                          // 0x4728   (0x0028)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine172;                              // 0x4750   (0x00C8)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult173;                               // 0x4818   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer174;                            // 0x4838   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult175;                               // 0x4880   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer176;                            // 0x48A0   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool177;                           // 0x48E8   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer178;                            // 0x4930   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer179;                            // 0x4978   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool180;                           // 0x49C0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult181;                               // 0x4A08   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer182;                            // 0x4A28   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult183;                               // 0x4A70   (0x0020)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer184;                            // 0x4A90   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool185;                           // 0x4AD8   (0x0048)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer186;                            // 0x4B20   (0x0048)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer187;                          // 0x4B68   (0x0070)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool188;                           // 0x4BD8   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult189;                               // 0x4C20   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine190;                              // 0x4C40   (0x00C8)  
-	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone191;                                // 0x4D08   (0x0128)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult192;                          // 0x4E30   (0x0028)  
-	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult193;                          // 0x4E58   (0x0028)  
-	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer194;                            // 0x4E80   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult195;                               // 0x4EC8   (0x0020)  
-	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose;                                 // 0x4EE8   (0x0010)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult196;                               // 0x4EF8   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine197;                              // 0x4F18   (0x00C8)  
-	FAnimNode_ApplyMeshSpaceAdditive                   AnimGraphNode_ApplyMeshSpaceAdditive198;                    // 0x4FE0   (0x00D0)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive199;                             // 0x50B0   (0x00C8)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer200;                          // 0x5178   (0x0070)  
-	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive201;                             // 0x51E8   (0x00C8)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer202;                          // 0x52B0   (0x0070)  
-	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose203;                              // 0x5320   (0x0010)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool204;                           // 0x5330   (0x0048)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool205;                           // 0x5378   (0x0048)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer206;                          // 0x53C0   (0x0070)  
-	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer207;                          // 0x5430   (0x0070)  
-	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool208;                           // 0x54A0   (0x0048)  
-	FAnimNode_StateResult                              AnimGraphNode_StateResult209;                               // 0x54E8   (0x0020)  
-	FAnimNode_StateMachine                             AnimGraphNode_StateMachine210;                              // 0x5508   (0x00C8)  
-	FAnimNode_Root                                     AnimGraphNode_Root211;                                      // 0x55D0   (0x0020)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose212;                           // 0x55F0   (0x00B0)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose213;                           // 0x56A0   (0x00B0)  
-	FAnimNode_Root                                     AnimGraphNode_Root214;                                      // 0x5750   (0x0020)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose215;                           // 0x5770   (0x00B0)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose216;                           // 0x5820   (0x00B0)  
-	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose217;                           // 0x58D0   (0x00B0)  
-	FAnimNode_Root                                     AnimGraphNode_Root218;                                      // 0x5980   (0x0020)  
-	class AFortPlayerPawn*                             FortPlayer;                                                 // 0x59A0   (0x0008)  
-	class AFortPawn*                                   WildlifePawn;                                               // 0x59A8   (0x0008)  
-	bool                                               State_Rule_Moving_Idle;                                     // 0x59B0   (0x0001)  
-	bool                                               Is_Jumping;                                                 // 0x59B1   (0x0001)  
-	bool                                               Is_Falling;                                                 // 0x59B2   (0x0001)  
-	bool                                               Is_Surface_Swimming;                                        // 0x59B3   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x59B4   (0x0004)  MISSED
-	double                                             BodyRoll;                                                   // 0x59B8   (0x0008)  
-	double                                             BoarSpeed2D;                                                // 0x59C0   (0x0008)  
-	bool                                               Is_Moving_Backwards;                                        // 0x59C8   (0x0001)  
-	bool                                               Is_Boosting;                                                // 0x59C9   (0x0001)  
-	bool                                               Can_Transition_Fall_To_Moving;                              // 0x59CA   (0x0001)  
-	bool                                               Can_Transition_Fall_To_Idle;                                // 0x59CB   (0x0001)  
-	bool                                               Can_Transition_Idle_To_Moving;                              // 0x59CC   (0x0001)  
-	bool                                               Is_Turning_in_Place;                                        // 0x59CD   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x59CE   (0x0002)  MISSED
-	double                                             Turn_in_Place_Angle_Delta;                                  // 0x59D0   (0x0008)  
-	bool                                               Should_Play_Stop_Backwards;                                 // 0x59D8   (0x0001)  
-	bool                                               Play_Land_Additive;                                         // 0x59D9   (0x0001)  
-	bool                                               Was_Turning_Right;                                          // 0x59DA   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x5];                                       // 0x59DB   (0x0005)  MISSED
-	double                                             Backwards_Play_Rate;                                        // 0x59E0   (0x0008)  
+	FAnimNode_LegIK                                    AnimGraphNode_LegIK;                                        // 0x1210   (0x0100)  
+	FAnimNode_LegIK                                    AnimGraphNode_LegIK3;                                       // 0x1310   (0x0100)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer;                             // 0x1410   (0x0070)  
+	FAnimNode_Root                                     AnimGraphNode_Root4;                                        // 0x1480   (0x0020)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose5;                             // 0x14A0   (0x00B0)  
+	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose;                               // 0x1550   (0x0078)  
+	FAnimNode_ConvertLocalToComponentSpace             AnimGraphNode_LocalToComponentSpace6;                       // 0x15C8   (0x0020)  
+	FAnimNode_ConvertComponentToLocalSpace             AnimGraphNode_ComponentToLocalSpace7;                       // 0x15E8   (0x0020)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool;                              // 0x1608   (0x0048)  
+	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone8;                                  // 0x1650   (0x0128)  
+	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone9;                                  // 0x1778   (0x0128)  
+	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone10;                                 // 0x18A0   (0x0128)  
+	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone11;                                 // 0x19C8   (0x0128)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult;                             // 0x1AF0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult12;                           // 0x1B18   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult13;                           // 0x1B40   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult14;                           // 0x1B68   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult15;                           // 0x1B90   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult16;                           // 0x1BB8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult17;                           // 0x1BE0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult18;                           // 0x1C08   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult19;                           // 0x1C30   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult20;                           // 0x1C58   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult21;                           // 0x1C80   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult22;                           // 0x1CA8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult23;                           // 0x1CD0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult24;                           // 0x1CF8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult25;                           // 0x1D20   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult26;                           // 0x1D48   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult27;                           // 0x1D70   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult28;                           // 0x1D98   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer;                               // 0x1DC0   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer29;                             // 0x1E08   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool30;                            // 0x1E50   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult;                                  // 0x1E98   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer31;                             // 0x1EB8   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer32;                             // 0x1F00   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool33;                            // 0x1F48   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult34;                                // 0x1F90   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer35;                             // 0x1FB0   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool36;                            // 0x1FF8   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer37;                             // 0x2040   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer38;                             // 0x2088   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool39;                            // 0x20D0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult40;                                // 0x2118   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer41;                             // 0x2138   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult42;                                // 0x2180   (0x0020)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer43;                           // 0x21A0   (0x0070)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer44;                             // 0x2210   (0x0048)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive45;                              // 0x2258   (0x00C8)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool46;                            // 0x2320   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer47;                             // 0x2368   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult48;                                // 0x23B0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer49;                             // 0x23D0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult50;                                // 0x2418   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult51;                           // 0x2438   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult52;                           // 0x2460   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult53;                           // 0x2488   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult54;                           // 0x24B0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult55;                           // 0x24D8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult56;                           // 0x2500   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult57;                           // 0x2528   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult58;                           // 0x2550   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer59;                             // 0x2578   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult60;                                // 0x25C0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer61;                             // 0x25E0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult62;                                // 0x2628   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer63;                             // 0x2648   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult64;                                // 0x2690   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer65;                             // 0x26B0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult66;                                // 0x26F8   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult67;                           // 0x2718   (0x0028)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine;                                 // 0x2740   (0x00C8)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult68;                                // 0x2808   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer69;                             // 0x2828   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult70;                                // 0x2870   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer71;                             // 0x2890   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult72;                                // 0x28D8   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer73;                             // 0x28F8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult74;                                // 0x2940   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult75;                           // 0x2960   (0x0028)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine76;                               // 0x2988   (0x00C8)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult77;                                // 0x2A50   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult78;                           // 0x2A70   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult79;                           // 0x2A98   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer80;                             // 0x2AC0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult81;                                // 0x2B08   (0x0020)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult82;                                // 0x2B28   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine83;                               // 0x2B48   (0x00C8)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive84;                              // 0x2C10   (0x00C8)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer85;                           // 0x2CD8   (0x0070)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer86;                             // 0x2D48   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer87;                             // 0x2D90   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool88;                            // 0x2DD8   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool89;                            // 0x2E20   (0x0048)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer90;                           // 0x2E68   (0x0070)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive91;                              // 0x2ED8   (0x00C8)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult92;                                // 0x2FA0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer93;                             // 0x2FC0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult94;                                // 0x3008   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine95;                               // 0x3028   (0x00C8)  
+	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend;                             // 0x30F0   (0x00F0)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose;                                // 0x31E0   (0x0028)  
+	FAnimNode_Inertialization                          AnimGraphNode_Inertialization;                              // 0x3208   (0x0118)  
+	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace;                     // 0x3320   (0x0118)  
+	FAnimNode_LayeredBoneBlend                         AnimGraphNode_LayeredBoneBlend96;                           // 0x3438   (0x00F0)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult97;                           // 0x3528   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult98;                           // 0x3550   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult99;                           // 0x3578   (0x0028)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose100;                             // 0x35A0   (0x0028)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult101;                               // 0x35C8   (0x0020)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer102;                          // 0x35E8   (0x0070)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult103;                               // 0x3658   (0x0020)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose104;                             // 0x3678   (0x0028)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult105;                               // 0x36A0   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine106;                              // 0x36C0   (0x00C8)  
+	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose107;                            // 0x3788   (0x0078)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose108;                             // 0x3800   (0x0028)  
+	FAnimNode_SaveCachedPose                           AnimGraphNode_SaveCachedPose109;                            // 0x3828   (0x0078)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose110;                             // 0x38A0   (0x0028)  
+	FAnimNode_UseCachedPose                            AnimGraphNode_UseCachedPose111;                             // 0x38C8   (0x0028)  
+	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace112;                  // 0x38F0   (0x0118)  
+	FAnimNode_ApplyMeshSpaceAdditive                   AnimGraphNode_ApplyMeshSpaceAdditive;                       // 0x3A08   (0x00D0)  
+	FAnimNode_RotationOffsetBlendSpace                 AnimGraphNode_RotationOffsetBlendSpace113;                  // 0x3AD8   (0x0118)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult114;                          // 0x3BF0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult115;                          // 0x3C18   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult116;                          // 0x3C40   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult117;                          // 0x3C68   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult118;                          // 0x3C90   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult119;                          // 0x3CB8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult120;                          // 0x3CE0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult121;                          // 0x3D08   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult122;                          // 0x3D30   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult123;                          // 0x3D58   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult124;                          // 0x3D80   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult125;                          // 0x3DA8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult126;                          // 0x3DD0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult127;                          // 0x3DF8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult128;                          // 0x3E20   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult129;                          // 0x3E48   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult130;                          // 0x3E70   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult131;                          // 0x3E98   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer132;                            // 0x3EC0   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer133;                            // 0x3F08   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool134;                           // 0x3F50   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult135;                               // 0x3F98   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer136;                            // 0x3FB8   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer137;                            // 0x4000   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool138;                           // 0x4048   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult139;                               // 0x4090   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer140;                            // 0x40B0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult141;                               // 0x40F8   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer142;                            // 0x4118   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer143;                            // 0x4160   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool144;                           // 0x41A8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult145;                               // 0x41F0   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult146;                          // 0x4210   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult147;                          // 0x4238   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult148;                          // 0x4260   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult149;                          // 0x4288   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult150;                          // 0x42B0   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult151;                          // 0x42D8   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult152;                          // 0x4300   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult153;                          // 0x4328   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer154;                            // 0x4350   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult155;                               // 0x4398   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer156;                            // 0x43B8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult157;                               // 0x4400   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer158;                            // 0x4420   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult159;                               // 0x4468   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer160;                            // 0x4488   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult161;                               // 0x44D0   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult162;                          // 0x44F0   (0x0028)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine163;                              // 0x4518   (0x00C8)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult164;                               // 0x45E0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer165;                            // 0x4600   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult166;                               // 0x4648   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer167;                            // 0x4668   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult168;                               // 0x46B0   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer169;                            // 0x46D0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult170;                               // 0x4718   (0x0020)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult171;                          // 0x4738   (0x0028)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine172;                              // 0x4760   (0x00C8)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult173;                               // 0x4828   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer174;                            // 0x4848   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult175;                               // 0x4890   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer176;                            // 0x48B0   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool177;                           // 0x48F8   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer178;                            // 0x4940   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer179;                            // 0x4988   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool180;                           // 0x49D0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult181;                               // 0x4A18   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer182;                            // 0x4A38   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult183;                               // 0x4A80   (0x0020)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer184;                            // 0x4AA0   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool185;                           // 0x4AE8   (0x0048)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer186;                            // 0x4B30   (0x0048)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer187;                          // 0x4B78   (0x0070)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool188;                           // 0x4BE8   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult189;                               // 0x4C30   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine190;                              // 0x4C50   (0x00C8)  
+	FAnimNode_ModifyBone                               AnimGraphNode_ModifyBone191;                                // 0x4D18   (0x0128)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult192;                          // 0x4E40   (0x0028)  
+	FAnimNode_TransitionResult                         AnimGraphNode_TransitionResult193;                          // 0x4E68   (0x0028)  
+	FAnimNode_SequencePlayer                           AnimGraphNode_SequencePlayer194;                            // 0x4E90   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult195;                               // 0x4ED8   (0x0020)  
+	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose;                                 // 0x4EF8   (0x0010)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult196;                               // 0x4F08   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine197;                              // 0x4F28   (0x00C8)  
+	FAnimNode_ApplyMeshSpaceAdditive                   AnimGraphNode_ApplyMeshSpaceAdditive198;                    // 0x4FF0   (0x00D0)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive199;                             // 0x50C0   (0x00C8)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer200;                          // 0x5188   (0x0070)  
+	FAnimNode_ApplyAdditive                            AnimGraphNode_ApplyAdditive201;                             // 0x51F8   (0x00C8)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer202;                          // 0x52C0   (0x0070)  
+	FAnimNode_RefPose                                  AnimGraphNode_IdentityPose203;                              // 0x5330   (0x0010)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool204;                           // 0x5340   (0x0048)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool205;                           // 0x5388   (0x0048)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer206;                          // 0x53D0   (0x0070)  
+	FAnimNode_BlendSpacePlayer                         AnimGraphNode_BlendSpacePlayer207;                          // 0x5440   (0x0070)  
+	FAnimNode_BlendListByBool                          AnimGraphNode_BlendListByBool208;                           // 0x54B0   (0x0048)  
+	FAnimNode_StateResult                              AnimGraphNode_StateResult209;                               // 0x54F8   (0x0020)  
+	FAnimNode_StateMachine                             AnimGraphNode_StateMachine210;                              // 0x5518   (0x00C8)  
+	FAnimNode_Root                                     AnimGraphNode_Root211;                                      // 0x55E0   (0x0020)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose212;                           // 0x5600   (0x00B0)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose213;                           // 0x56B0   (0x00B0)  
+	FAnimNode_Root                                     AnimGraphNode_Root214;                                      // 0x5760   (0x0020)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose215;                           // 0x5780   (0x00B0)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose216;                           // 0x5830   (0x00B0)  
+	FAnimNode_LinkedInputPose                          AnimGraphNode_LinkedInputPose217;                           // 0x58E0   (0x00B0)  
+	FAnimNode_Root                                     AnimGraphNode_Root218;                                      // 0x5990   (0x0020)  
+	class AFortPlayerPawn*                             FortPlayer;                                                 // 0x59B0   (0x0008)  
+	class AFortPawn*                                   WildlifePawn;                                               // 0x59B8   (0x0008)  
+	bool                                               State_Rule_Moving_Idle;                                     // 0x59C0   (0x0001)  
+	bool                                               Is_Jumping;                                                 // 0x59C1   (0x0001)  
+	bool                                               Is_Falling;                                                 // 0x59C2   (0x0001)  
+	bool                                               Is_Surface_Swimming;                                        // 0x59C3   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x59C4   (0x0004)  MISSED
+	double                                             BodyRoll;                                                   // 0x59C8   (0x0008)  
+	double                                             BoarSpeed2D;                                                // 0x59D0   (0x0008)  
+	bool                                               Is_Moving_Backwards;                                        // 0x59D8   (0x0001)  
+	bool                                               Is_Boosting;                                                // 0x59D9   (0x0001)  
+	bool                                               Can_Transition_Fall_To_Moving;                              // 0x59DA   (0x0001)  
+	bool                                               Can_Transition_Fall_To_Idle;                                // 0x59DB   (0x0001)  
+	bool                                               Can_Transition_Idle_To_Moving;                              // 0x59DC   (0x0001)  
+	bool                                               Is_Turning_in_Place;                                        // 0x59DD   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x59DE   (0x0002)  MISSED
+	double                                             Turn_in_Place_Angle_Delta;                                  // 0x59E0   (0x0008)  
+	bool                                               Should_Play_Stop_Backwards;                                 // 0x59E8   (0x0001)  
+	bool                                               Play_Land_Additive;                                         // 0x59E9   (0x0001)  
+	bool                                               Was_Turning_Right;                                          // 0x59EA   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x5];                                       // 0x59EB   (0x0005)  MISSED
+	double                                             Backwards_Play_Rate;                                        // 0x59F0   (0x0008)  
 
 
 	/// Functions
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.VehicleFinalPoseOverride
-	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.VehicleFullBodyOverride
-	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.VehicleLowerBodyOverride
-	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.VehicleSplitBodyOverride
-	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.GetMainAnimBPData_Boar
-	// void GetMainAnimBPData_Boar(class UObject* AnimInstance);                                                             // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void GetMainAnimBPData_Boar(class UObject* AnimInstance);                                                             // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BoarRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_3AC2A6BB409F97D93A87FE8016464FEE
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_BoarRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_3AC2A6BB409F97D93A87FE8016464FEE(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_BoarRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_3AC2A6BB409F97D93A87FE8016464FEE(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.BlueprintCollectRidableAnimBPData
-	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.ExecuteUbergraph_BoarRidingPlayerLayerAnimBP
-	// void ExecuteUbergraph_BoarRidingPlayerLayerAnimBP(int32_t EntryPoint);                                                // [0x130d900] Final                
+	// void ExecuteUbergraph_BoarRidingPlayerLayerAnimBP(int32_t EntryPoint);                                                // [0x3d1d968] Final                
 };
 
 /// Class /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C
@@ -1046,31 +1053,31 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.VehicleFinalPoseOverride
-	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.VehicleFullBodyOverride
-	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.VehicleLowerBodyOverride
-	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.VehicleSplitBodyOverride
-	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.GetMainAnimBPData_Wolf
-	// void GetMainAnimBPData_Wolf(class UObject* AnimInstance);                                                             // [0x130d900] Public|BlueprintCallable|BlueprintEvent 
+	// void GetMainAnimBPData_Wolf(class UObject* AnimInstance);                                                             // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_0A1EFC344EF1A6E586A54FAEC4F5F766
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_0A1EFC344EF1A6E586A54FAEC4F5F766(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_0A1EFC344EF1A6E586A54FAEC4F5F766(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_4EDCD4F04E8D5963547EB2BE1F10FA2D
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_4EDCD4F04E8D5963547EB2BE1F10FA2D(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_SequencePlayer_4EDCD4F04E8D5963547EB2BE1F10FA2D(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D7C43EB141CFE2929E3D23914954FA93
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D7C43EB141CFE2929E3D23914954FA93(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_WolfRidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D7C43EB141CFE2929E3D23914954FA93(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.BlueprintCollectRidableAnimBPData
-	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.UpdateBoostPlayRate
-	// void UpdateBoostPlayRate();                                                                                           // [0x130d900] Event|Protected|BlueprintEvent 
+	// void UpdateBoostPlayRate();                                                                                           // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.PlaceHandIKTargets
-	// void PlaceHandIKTargets();                                                                                            // [0x130d900] Event|Protected|BlueprintEvent 
+	// void PlaceHandIKTargets();                                                                                            // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.ExecuteUbergraph_WolfRidingPlayerLayerAnimBP
-	// void ExecuteUbergraph_WolfRidingPlayerLayerAnimBP(int32_t EntryPoint);                                                // [0x130d900] Final                
+	// void ExecuteUbergraph_WolfRidingPlayerLayerAnimBP(int32_t EntryPoint);                                                // [0x3d1d968] Final                
 };
 
 /// Class /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C
@@ -1156,28 +1163,28 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.VehicleFinalPoseOverride
-	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFinalPoseOverride(FPoseLink InFinalPose, FPoseLink& VehicleFinalPoseOverride);                            // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.VehicleFullBodyOverride
-	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleFullBodyOverride(FPoseLink InPoseFullBody, FPoseLink& VehicleFullBodyOverride);                           // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.VehicleLowerBodyOverride
-	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleLowerBodyOverride(FPoseLink InPoseLowerBodyDefault, FPoseLink InPoseUpperBody, FPoseLink& VehicleLowerBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.VehicleSplitBodyOverride
-	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x130d900] HasOutParms|BlueprintCallable 
+	// void VehicleSplitBodyOverride(FPoseLink InPoseSplitBody, FPoseLink InPoseUpperAndLowerBody, FPoseLink InPoseUpperAndLowerBodyRemoveRoot, FPoseLink& VehicleSplitBodyOverride); // [0x3d1d968] HasOutParms|BlueprintCallable 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x130d900] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                 // [0x3d1d968] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D1B22730415169A7290CBFAD6C915976
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D1B22730415169A7290CBFAD6C915976(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_BlendListByBool_D1B22730415169A7290CBFAD6C915976(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_RotateRootBone_D73766CE4BF0C956278D7FA8259A40CA
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_RotateRootBone_D73766CE4BF0C956278D7FA8259A40CA(); // [0x130d900] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_RidingPlayerLayerAnimBP_AnimGraphNode_RotateRootBone_D73766CE4BF0C956278D7FA8259A40CA(); // [0x3d1d968] BlueprintEvent       
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.BlueprintUpdateAnimation
-	// void BlueprintUpdateAnimation(float DeltaTimeX);                                                                      // [0x130d900] Event|Public|BlueprintEvent 
+	// void BlueprintUpdateAnimation(float DeltaTimeX);                                                                      // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.ExecuteUbergraph_RidingPlayerLayerAnimBP
-	// void ExecuteUbergraph_RidingPlayerLayerAnimBP(int32_t EntryPoint);                                                    // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_RidingPlayerLayerAnimBP(int32_t EntryPoint);                                                    // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Struct /Game/Animation/Game/MainPlayer/Facial/FaceGameplay/Gameplay_FaceSystem_StateMachine_AnimBP.Gameplay_FaceSystem_StateMachine_AnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x15EF (0x000001 - 0x0015F0)
-struct FAnimBlueprintGeneratedConstantDatadup_115 : FAnimBlueprintConstantData
+struct FAnimBlueprintGeneratedConstantDatadup_123 : FAnimBlueprintConstantData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              __NameProperty;                                             // 0x0004   (0x0004)  
@@ -1231,7 +1238,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_115 : FAnimBlueprintConstantData
 	float                                              __FloatProperty42;                                          // 0x00E8   (0x0004)  
 	bool                                               __BoolProperty43;                                           // 0x00EC   (0x0001)  
 	EAnimSyncMethod                                    __EnumProperty;                                             // 0x00ED   (0x0001)  
-	SDK_UNDEFINED(1,11625) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x00EE   (0x0001)  
+	SDK_UNDEFINED(1,11688) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x00EE   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x1];                                       // 0x00EF   (0x0001)  MISSED
 	FName                                              __NameProperty44;                                           // 0x00F0   (0x0004)  
 	FName                                              __NameProperty45;                                           // 0x00F4   (0x0004)  
@@ -1352,13 +1359,48 @@ struct FAnimBlueprintGeneratedConstantDatadup_115 : FAnimBlueprintConstantData
 
 /// Struct /Game/Animation/Game/MainPlayer/Facial/FaceGameplay/Gameplay_FaceSystem_StateMachine_AnimBP.Gameplay_FaceSystem_StateMachine_AnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x0013 (0x000001 - 0x000014)
-struct FAnimBlueprintGeneratedMutableDatadup_116 : FAnimBlueprintMutableData
+struct FAnimBlueprintGeneratedMutableDatadup_124 : FAnimBlueprintMutableData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              __FloatProperty;                                            // 0x0004   (0x0004)  
 	float                                              __FloatProperty0;                                           // 0x0008   (0x0004)  
 	float                                              __FloatProperty1;                                           // 0x000C   (0x0004)  
 	float                                              __FloatProperty2;                                           // 0x0010   (0x0004)  
+};
+
+/// Struct /Game/Animation/Libraries/RBANSettingStruct.RBANSettingStruct
+/// Size: 0x0090 (0x000000 - 0x000090)
+struct FRBANSettingStruct
+{ 
+	FVector                                            ComponentLinearAccScale_28_9CBE863E417FC965C07809A2FE55ADFD; // 0x0000   (0x0018)  
+	FVector                                            ComponentLinearVelScale_31_6A3DFE4A481AD4D7CB18D79F95CC88E8; // 0x0018   (0x0018)  
+	FSimSpaceSettings                                  SimSpaceSettings_34_FE68F666411FF9F29BA84CB4BE726A52;       // 0x0030   (0x0060)  
+};
+
+/// Struct /Game/Animation/Libraries/RBANParamsStruct.RBANParamsStruct
+/// Size: 0x0B40 (0x000000 - 0x000B40)
+struct FRBANParamsStruct
+{ 
+	FRBANSettingStruct                                 Skydive_GoingUp_56_C026BDA74BFBABA6672DFE8FFDAAFC1B;        // 0x0000   (0x0090)  
+	FRBANSettingStruct                                 Skydive_FloatingDown_57_2CBF3D3F421785F8994502931454A81F;   // 0x0090   (0x0090)  
+	FRBANSettingStruct                                 Skydive_DivingDown_58_EC7BEC4D406A8A98E60D7B9374C5E457;     // 0x0120   (0x0090)  
+	FRBANSettingStruct                                 Skydive_Parachuting_60_A88C4A0A407F497561D31287CB20250F;    // 0x01B0   (0x0090)  
+	FRBANSettingStruct                                 OnGround_Standing_59_267DB1464D0D3A29D99E94ADFCB4AFEC;      // 0x0240   (0x0090)  
+	FRBANSettingStruct                                 OnGround_Moving_65_807A66B64D7B3B2FCF080B833B8A6254;        // 0x02D0   (0x0090)  
+	FRBANSettingStruct                                 OnGround_Crouch_Moving_61_CE0B8BFB4E3417C0F790F7AE38DD7735; // 0x0360   (0x0090)  
+	FRBANSettingStruct                                 EmoteOrMelee_62_CFCF66B5492987CBD638EC98EB34D572;           // 0x03F0   (0x0090)  
+	FRBANSettingStruct                                 Swimming_64_33CE87CE4D4F712B1384E29115845962;               // 0x0480   (0x0090)  
+	FRBANSettingStruct                                 Front_End_63_C7A4562A48E9BC9B4CD34D963CFC6490;              // 0x0510   (0x0090)  
+	FRBANSettingStruct                                 DBNO_68_2D70D4004D0E9B117F6CE9A09C362B74;                   // 0x05A0   (0x0090)  
+	FRBANSettingStruct                                 DBNO_Carried_67_99829B99495FCFE3488A9A86B549ECE5;           // 0x0630   (0x0090)  
+	FRBANSettingStruct                                 OnGround_Falling_66_CDAA0F4D476157E4137548BDCE8776F2;       // 0x06C0   (0x0090)  
+	FRBANSettingStruct                                 Ziplining_75_BCCDB7E1431A4C174F1040ABC81FD8A8;              // 0x0750   (0x0090)  
+	FRBANSettingStruct                                 Skydive_Surfing_74_408E65FF484AA54111E1ED8A69D8240D;        // 0x07E0   (0x0090)  
+	FRBANSettingStruct                                 Riding_Standing_69_952A2A43408C37C44E4CBFAE3F3001B0;        // 0x0870   (0x0090)  
+	FRBANSettingStruct                                 Riding_Moving_72_EE7A01794460B9753E5076A5A3B3080A;          // 0x0900   (0x0090)  
+	FRBANSettingStruct                                 Riding_Moving_Targeting_73_2F57FD9E477C515D70B3DA9D75453357; // 0x0990   (0x0090)  
+	FRBANSettingStruct                                 Tactical_Sprint_70_5B2273A1499D34BDEC52E6A8E3F274D4;        // 0x0A20   (0x0090)  
+	FRBANSettingStruct                                 Rail_Grinding_71_DEEB00A04DB992DF5EEB40BD6518EA4E;          // 0x0AB0   (0x0090)  
 };
 
 /// Struct /Game/Animation/Libraries/WindGustSettingStruct.WindGustSettingStruct
@@ -1447,41 +1489,6 @@ struct FClothParamsStruct
 	FClothSettingStruct                                Rail_Grinding_55_DEEB00A04DB992DF5EEB40BD6518EA4E;          // 0x0720   (0x0060)  
 };
 
-/// Struct /Game/Animation/Libraries/RBANSettingStruct.RBANSettingStruct
-/// Size: 0x0090 (0x000000 - 0x000090)
-struct FRBANSettingStruct
-{ 
-	FVector                                            ComponentLinearAccScale_28_9CBE863E417FC965C07809A2FE55ADFD; // 0x0000   (0x0018)  
-	FVector                                            ComponentLinearVelScale_31_6A3DFE4A481AD4D7CB18D79F95CC88E8; // 0x0018   (0x0018)  
-	FSimSpaceSettings                                  SimSpaceSettings_34_FE68F666411FF9F29BA84CB4BE726A52;       // 0x0030   (0x0060)  
-};
-
-/// Struct /Game/Animation/Libraries/RBANParamsStruct.RBANParamsStruct
-/// Size: 0x0B40 (0x000000 - 0x000B40)
-struct FRBANParamsStruct
-{ 
-	FRBANSettingStruct                                 Skydive_GoingUp_56_C026BDA74BFBABA6672DFE8FFDAAFC1B;        // 0x0000   (0x0090)  
-	FRBANSettingStruct                                 Skydive_FloatingDown_57_2CBF3D3F421785F8994502931454A81F;   // 0x0090   (0x0090)  
-	FRBANSettingStruct                                 Skydive_DivingDown_58_EC7BEC4D406A8A98E60D7B9374C5E457;     // 0x0120   (0x0090)  
-	FRBANSettingStruct                                 Skydive_Parachuting_60_A88C4A0A407F497561D31287CB20250F;    // 0x01B0   (0x0090)  
-	FRBANSettingStruct                                 OnGround_Standing_59_267DB1464D0D3A29D99E94ADFCB4AFEC;      // 0x0240   (0x0090)  
-	FRBANSettingStruct                                 OnGround_Moving_65_807A66B64D7B3B2FCF080B833B8A6254;        // 0x02D0   (0x0090)  
-	FRBANSettingStruct                                 OnGround_Crouch_Moving_61_CE0B8BFB4E3417C0F790F7AE38DD7735; // 0x0360   (0x0090)  
-	FRBANSettingStruct                                 EmoteOrMelee_62_CFCF66B5492987CBD638EC98EB34D572;           // 0x03F0   (0x0090)  
-	FRBANSettingStruct                                 Swimming_64_33CE87CE4D4F712B1384E29115845962;               // 0x0480   (0x0090)  
-	FRBANSettingStruct                                 Front_End_63_C7A4562A48E9BC9B4CD34D963CFC6490;              // 0x0510   (0x0090)  
-	FRBANSettingStruct                                 DBNO_68_2D70D4004D0E9B117F6CE9A09C362B74;                   // 0x05A0   (0x0090)  
-	FRBANSettingStruct                                 DBNO_Carried_67_99829B99495FCFE3488A9A86B549ECE5;           // 0x0630   (0x0090)  
-	FRBANSettingStruct                                 OnGround_Falling_66_CDAA0F4D476157E4137548BDCE8776F2;       // 0x06C0   (0x0090)  
-	FRBANSettingStruct                                 Ziplining_75_BCCDB7E1431A4C174F1040ABC81FD8A8;              // 0x0750   (0x0090)  
-	FRBANSettingStruct                                 Skydive_Surfing_74_408E65FF484AA54111E1ED8A69D8240D;        // 0x07E0   (0x0090)  
-	FRBANSettingStruct                                 Riding_Standing_69_952A2A43408C37C44E4CBFAE3F3001B0;        // 0x0870   (0x0090)  
-	FRBANSettingStruct                                 Riding_Moving_72_EE7A01794460B9753E5076A5A3B3080A;          // 0x0900   (0x0090)  
-	FRBANSettingStruct                                 Riding_Moving_Targeting_73_2F57FD9E477C515D70B3DA9D75453357; // 0x0990   (0x0090)  
-	FRBANSettingStruct                                 Tactical_Sprint_70_5B2273A1499D34BDEC52E6A8E3F274D4;        // 0x0A20   (0x0090)  
-	FRBANSettingStruct                                 Rail_Grinding_71_DEEB00A04DB992DF5EEB40BD6518EA4E;          // 0x0AB0   (0x0090)  
-};
-
 /// Struct /Game/Animation/Libraries/WindGustLocalSettingStruct.WindGustLocalSettingStruct
 /// Size: 0x0014 (0x000000 - 0x000014)
 struct FWindGustLocalSettingStruct
@@ -1551,7 +1558,7 @@ struct FGravityOverrideParamsStruct
 
 /// Struct /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x2EEF (0x000001 - 0x002EF0)
-struct FAnimBlueprintGeneratedConstantDatadup_117 : FAnimBlueprintConstantData
+struct FAnimBlueprintGeneratedConstantDatadup_125 : FAnimBlueprintConstantData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              __NameProperty;                                             // 0x0004   (0x0004)  
@@ -1601,13 +1608,13 @@ struct FAnimBlueprintGeneratedConstantDatadup_117 : FAnimBlueprintConstantData
 	FName                                              __NameProperty34;                                           // 0x0108   (0x0004)  
 	int32_t                                            __IntProperty35;                                            // 0x010C   (0x0004)  
 	FName                                              __NameProperty36;                                           // 0x0110   (0x0004)  
-	SDK_UNDEFINED(1,11626) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                   // 0x0114   (0x0001)  
+	SDK_UNDEFINED(1,11689) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                   // 0x0114   (0x0001)  
 	bool                                               __BoolProperty;                                             // 0x0115   (0x0001)  
 	unsigned char                                      UnknownData05_5[0x2];                                       // 0x0116   (0x0002)  MISSED
 	float                                              __FloatProperty;                                            // 0x0118   (0x0004)  
 	float                                              __FloatProperty37;                                          // 0x011C   (0x0004)  
 	EAnimSyncMethod                                    __EnumProperty38;                                           // 0x0120   (0x0001)  
-	SDK_UNDEFINED(1,11627) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x0121   (0x0001)  
+	SDK_UNDEFINED(1,11690) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x0121   (0x0001)  
 	unsigned char                                      UnknownData06_5[0x6];                                       // 0x0122   (0x0006)  MISSED
 	class UBlendProfile*                               __BlendProfile40;                                           // 0x0128   (0x0008)  
 	class UCurveFloat*                                 __CurveFloat;                                               // 0x0130   (0x0008)  
@@ -1870,7 +1877,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_117 : FAnimBlueprintConstantData
 
 /// Struct /RidingContent/Animation/HardSaddle/Boar/BoarRidingPlayerLayerAnimBP.BoarRidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x008C (0x000001 - 0x00008D)
-struct FAnimBlueprintGeneratedMutableDatadup_118 : FAnimBlueprintMutableData
+struct FAnimBlueprintGeneratedMutableDatadup_126 : FAnimBlueprintMutableData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              __FloatProperty;                                            // 0x0004   (0x0004)  
@@ -1924,7 +1931,7 @@ struct FAnimBlueprintGeneratedMutableDatadup_118 : FAnimBlueprintMutableData
 
 /// Struct /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x2E67 (0x000001 - 0x002E68)
-struct FAnimBlueprintGeneratedConstantDatadup_119 : FAnimBlueprintConstantData
+struct FAnimBlueprintGeneratedConstantDatadup_127 : FAnimBlueprintConstantData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              __NameProperty;                                             // 0x0004   (0x0004)  
@@ -1980,7 +1987,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_119 : FAnimBlueprintConstantData
 	FInputScaleBiasClampConstants                      __StructProperty;                                           // 0x010C   (0x002C)  
 	FName                                              __NameProperty39;                                           // 0x0138   (0x0004)  
 	int32_t                                            __IntProperty40;                                            // 0x013C   (0x0004)  
-	SDK_UNDEFINED(1,11628) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                   // 0x0140   (0x0001)  
+	SDK_UNDEFINED(1,11691) /* TEnumAsByte<ERefPoseType> */ __um(__ByteProperty);                                   // 0x0140   (0x0001)  
 	unsigned char                                      UnknownData06_5[0x3];                                       // 0x0141   (0x0003)  MISSED
 	FName                                              __NameProperty41;                                           // 0x0144   (0x0004)  
 	int32_t                                            __IntProperty42;                                            // 0x0148   (0x0004)  
@@ -1990,7 +1997,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_119 : FAnimBlueprintConstantData
 	float                                              __FloatProperty43;                                          // 0x0154   (0x0004)  
 	bool                                               __BoolProperty44;                                           // 0x0158   (0x0001)  
 	EAnimSyncMethod                                    __EnumProperty45;                                           // 0x0159   (0x0001)  
-	SDK_UNDEFINED(1,11629) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x015A   (0x0001)  
+	SDK_UNDEFINED(1,11692) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x015A   (0x0001)  
 	unsigned char                                      UnknownData08_5[0x1];                                       // 0x015B   (0x0001)  MISSED
 	FName                                              __NameProperty47;                                           // 0x015C   (0x0004)  
 	FName                                              __NameProperty48;                                           // 0x0160   (0x0004)  
@@ -2242,7 +2249,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_119 : FAnimBlueprintConstantData
 
 /// Struct /RidingContent/Animation/HardSaddle/Wolf/WolfRidingPlayerLayerAnimBP.WolfRidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x00A7 (0x000001 - 0x0000A8)
-struct FAnimBlueprintGeneratedMutableDatadup_120 : FAnimBlueprintMutableData
+struct FAnimBlueprintGeneratedMutableDatadup_128 : FAnimBlueprintMutableData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              __FloatProperty;                                            // 0x0004   (0x0004)  
@@ -2304,7 +2311,7 @@ struct FAnimBlueprintGeneratedMutableDatadup_120 : FAnimBlueprintMutableData
 
 /// Struct /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedConstantData
 /// Size: 0x0AC7 (0x000001 - 0x000AC8)
-struct FAnimBlueprintGeneratedConstantDatadup_121 : FAnimBlueprintConstantData
+struct FAnimBlueprintGeneratedConstantDatadup_129 : FAnimBlueprintConstantData
 { 
 	unsigned char                                      UnknownData00_3[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              __NameProperty;                                             // 0x0004   (0x0004)  
@@ -2322,7 +2329,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_121 : FAnimBlueprintConstantData
 	float                                              __FloatProperty2;                                           // 0x0068   (0x0004)  
 	bool                                               __BoolProperty3;                                            // 0x006C   (0x0001)  
 	EAnimSyncMethod                                    __EnumProperty4;                                            // 0x006D   (0x0001)  
-	SDK_UNDEFINED(1,11630) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x006E   (0x0001)  
+	SDK_UNDEFINED(1,11693) /* TEnumAsByte<EAnimGroupRole> */ __um(__ByteProperty);                                 // 0x006E   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x1];                                       // 0x006F   (0x0001)  MISSED
 	FName                                              __NameProperty5;                                            // 0x0070   (0x0004)  
 	FName                                              __NameProperty6;                                            // 0x0074   (0x0004)  
@@ -2388,7 +2395,7 @@ struct FAnimBlueprintGeneratedConstantDatadup_121 : FAnimBlueprintConstantData
 
 /// Struct /RidingContent/Animation/Proto/RidingPlayerLayerAnimBP.RidingPlayerLayerAnimBP_C.AnimBlueprintGeneratedMutableData
 /// Size: 0x001B (0x000001 - 0x00001C)
-struct FAnimBlueprintGeneratedMutableDatadup_122 : FAnimBlueprintMutableData
+struct FAnimBlueprintGeneratedMutableDatadup_130 : FAnimBlueprintMutableData
 { 
 	bool                                               __BoolProperty;                                             // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0002   (0x0002)  MISSED

@@ -10,8 +10,23 @@
 /// dependency: DynamicBacchusHUD
 /// dependency: DynamicUI
 /// dependency: Engine
+/// dependency: FortniteGame
 /// dependency: FortniteUI
 /// dependency: GameplayTags
+
+/// Class /Script/JunoGameMobileUI.FortMobileButtonBehaviorComponent_OffhandVisuals
+/// Size: 0x0020 (0x000048 - 0x000068)
+class UFortMobileButtonBehaviorComponent_OffhandVisuals : public UFortMobileButtonBehaviorComponent_Visibility
+{ 
+public:
+	unsigned char                                      UnknownData00_3[0x18];                                      // 0x0048   (0x0018)  MISSED
+	class UFortItem*                                   CachedOffhandItem;                                          // 0x0060   (0x0008)  
+
+
+	/// Functions
+	// Function /Script/JunoGameMobileUI.FortMobileButtonBehaviorComponent_OffhandVisuals.HandleInventoryItemChanged
+	// void HandleInventoryItemChanged(FJunoItemSlot& ItemSlot, EJunoItemChangeType ChangeType);                             // [0xc0fa8b4] Final|Native|Private|HasOutParms 
+};
 
 /// Class /Script/JunoGameMobileUI.JunoMobileActionButtonBehavior_Interact
 /// Size: 0x0000 (0x000138 - 0x000138)
@@ -27,17 +42,17 @@ class AJunoGameDynamicMobileUIDirector : public ADynamicBacchusHUDDirector
 public:
 	unsigned char                                      UnknownData00_3[0x20];                                      // 0x0478   (0x0020)  MISSED
 	FGameplayTagContainer                              HUDTagsToSkip;                                              // 0x0498   (0x0020)  
-	SDK_UNDEFINED(24,14259) /* FText */                __um(ForcedPresetName);                                     // 0x04B8   (0x0018)  
+	SDK_UNDEFINED(24,14377) /* FText */                __um(ForcedPresetName);                                     // 0x04B8   (0x0018)  
 	FGameplayTag                                       ForcedProfile;                                              // 0x04D0   (0x0004)  
 	FGameplayTag                                       ForcedProfileContainer;                                     // 0x04D4   (0x0004)  
-	SDK_UNDEFINED(80,14260) /* TMap<FGameplayTag, UDynamicUIScene*> */ __um(HUDContextVisibilityTagToScene);       // 0x04D8   (0x0050)  
+	SDK_UNDEFINED(80,14378) /* TMap<FGameplayTag, UDynamicUIScene*> */ __um(HUDContextVisibilityTagToScene);       // 0x04D8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0528   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.UpdateHUDLayoutContexts
-	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xc14dae8] Final|Native|Public|BlueprintCallable 
+	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xc0faa94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.BP_OnBuildingModeChanged
-	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 

@@ -15,23 +15,24 @@
 /// dependency: StructUtils
 
 /// Class /Script/AssembledMeshSystem.AssembledMeshSchema
-/// Size: 0x0190 (0x000030 - 0x0001C0)
+/// Size: 0x01B0 (0x000030 - 0x0001E0)
 class UAssembledMeshSchema : public UPrimaryDataAsset
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 448;
+	static inline constexpr uint64_t __MDKClassSize = 480;
 
 public:
 	SMember(FGameplayTag)                              MeshSchemaTag                                               OFFSET(getStruct<T>, {0x30, 4, 0, 0})
 	CMember(TWeakObjectPtr<UCustomizableObjectInstance*>) CustomizableObjectInstance                               OFFSET(get<T>, {0x38, 32, 0, 0})
 	CMember(TWeakObjectPtr<UCustomizableObject*>)      CustomizableObject                                          OFFSET(get<T>, {0x58, 32, 0, 0})
 	DMember(int32_t)                                   ComponentIndex                                              OFFSET(get<int32_t>, {0x78, 4, 0, 0})
-	CMember(TMap<FString, FString>)                    SelectedIntParams                                           OFFSET(get<T>, {0x80, 80, 0, 0})
-	CMember(TMap<FString, float>)                      SelectedFloatParams                                         OFFSET(get<T>, {0xD0, 80, 0, 0})
-	SMember(FAssembledMeshAttachmentRules)             AttachmentRules                                             OFFSET(getStruct<T>, {0x120, 80, 0, 0})
-	CMember(TWeakObjectPtr<UClass*>)                   AnimClass                                                   OFFSET(get<T>, {0x170, 32, 0, 0})
-	SMember(FGameplayTagContainer)                     SoundLibraryTags                                            OFFSET(getStruct<T>, {0x190, 32, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  AdditionalData                                              OFFSET(get<T>, {0x1B0, 16, 0, 0})
+	CMember(TWeakObjectPtr<USkeletalMesh*>)            SkeletalMesh                                                OFFSET(get<T>, {0x80, 32, 0, 0})
+	CMember(TMap<FString, FString>)                    SelectedIntParams                                           OFFSET(get<T>, {0xA0, 80, 0, 0})
+	CMember(TMap<FString, float>)                      SelectedFloatParams                                         OFFSET(get<T>, {0xF0, 80, 0, 0})
+	SMember(FAssembledMeshAttachmentRules)             AttachmentRules                                             OFFSET(getStruct<T>, {0x140, 80, 0, 0})
+	CMember(TWeakObjectPtr<UClass*>)                   AnimClass                                                   OFFSET(get<T>, {0x190, 32, 0, 0})
+	SMember(FGameplayTagContainer)                     SoundLibraryTags                                            OFFSET(getStruct<T>, {0x1B0, 32, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  AdditionalData                                              OFFSET(get<T>, {0x1D0, 16, 0, 0})
 };
 
 /// Class /Script/AssembledMeshSystem.HeadAccDataAssetLink
@@ -79,17 +80,17 @@ public:
 
 	/// Functions
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.SetMeshPart
-	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x6f57964] Final|Native|Private|BlueprintCallable 
+	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x6f75560] Final|Native|Private|BlueprintCallable 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.OnRep_MeshParts
-	// void OnRep_MeshParts();                                                                                                  // [0x6f5794c] Native|Protected     
+	// void OnRep_MeshParts();                                                                                                  // [0x2c0b188] Native|Protected     
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetMeshPart
-	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x641f194] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x6486500] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetAttachToComponent
-	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x6f57924] Native|Event|Protected|BlueprintEvent 
+	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x33804ac] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GatherAndAssignAssembledMeshParts
-	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x2eb4140] Native|Public        
+	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x2e6c604] Native|Public        
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.CustomizationCompleted
-	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x6f57860] Native|Protected     
+	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x6f754dc] Native|Protected     
 };
 
 /// Struct /Script/AssembledMeshSystem.AssembledComponentReferences

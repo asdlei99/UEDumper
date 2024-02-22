@@ -6,11 +6,13 @@
 ********************************************************/
 
 /// dependency: BasicType
+/// dependency: ArtTools
 /// dependency: CoreUObject
 /// dependency: Engine
 /// dependency: FortniteAI
 /// dependency: FortniteGame
 /// dependency: NavigationSystem
+/// dependency: Niagara
 
 /// Class /Game/Building/ActorBlueprints/Wall/DoorSoundIndicatorComponent.DoorSoundIndicatorComponent_C
 /// Size: 0x0000 (0x000158 - 0x000158)
@@ -24,9 +26,9 @@ public:
 
 	/// Functions
 	// Function /Game/Building/ActorBlueprints/Wall/DoorSoundIndicatorComponent.DoorSoundIndicatorComponent_C.GetAffiliationsToShowFor
-	// TArray<TEnumAsByte<EFortTeamAffiliation>> GetAffiliationsToShowFor();                                                    // [0x130d900] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TArray<TEnumAsByte<EFortTeamAffiliation>> GetAffiliationsToShowFor();                                                    // [0x3d1d968] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Game/Building/ActorBlueprints/Wall/DoorSoundIndicatorComponent.DoorSoundIndicatorComponent_C.ShouldShowSoundIndicator
-	// bool ShouldShowSoundIndicator(class AFortPlayerController* PlayerController);                                            // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldShowSoundIndicator(class AFortPlayerController* PlayerController);                                            // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Game/Building/NavigationAreas/DoorMetaObstacle.DoorMetaObstacle_C
@@ -59,9 +61,9 @@ class UFortMetaNavAreaDef_C : public UFortMetaNavArea
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_StairF.NavLink_StairF_C
+/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_FloorS.NavLink_FloorS_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UNavLink_StairF_C : public UFortNavLinkDefinition
+class UNavLink_FloorS_C : public UFortNavLinkDefinition
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
@@ -69,9 +71,9 @@ class UNavLink_StairF_C : public UFortNavLinkDefinition
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_FloorS.NavLink_FloorS_C
+/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_StairF.NavLink_StairF_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UNavLink_FloorS_C : public UFortNavLinkDefinition
+class UNavLink_StairF_C : public UFortNavLinkDefinition
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
@@ -139,6 +141,16 @@ class UNavLink_BalconyO_C : public UFortNavLinkDefinition
 public:
 };
 
+/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_Floor.NavLink_Floor_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UNavLink_Floor_C : public UFortNavLinkDefinition
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 128;
+
+public:
+};
+
 /// Class /Game/Building/ActorBlueprints/Navigation/NavLink_RoofC.NavLink_RoofC_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UNavLink_RoofC_C : public UFortNavLinkDefinition
@@ -149,14 +161,339 @@ class UNavLink_RoofC_C : public UFortNavLinkDefinition
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Navigation/NavLink_Floor.NavLink_Floor_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UNavLink_Floor_C : public UFortNavLinkDefinition
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyI.PBWA_BG_BalconyI_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_BalconyI_C : public ABuildingFloor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorS.PBWA_BG_DoorS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_DoorS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWall.PBWA_BG_HalfWall_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_HalfWall_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallDoorS.PBWA_BG_HalfWallDoorS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_HalfWallDoorS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallHalf.PBWA_BG_HalfWallHalf_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_HalfWallHalf_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_QuarterWallS.PBWA_BG_QuarterWallS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_QuarterWallS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofD.PBWA_BG_RoofD_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_RoofD_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofO.PBWA_BG_RoofO_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_RoofO_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofWall.PBWA_BG_RoofWall_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_RoofWall_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Solid.PBWA_BG_Solid_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_Solid_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairR.PBWA_BG_StairR_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_BG_StairR_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairT.PBWA_BG_StairT_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_BG_StairT_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairW.PBWA_BG_StairW_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_BG_StairW_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Windows.PBWA_BG_Windows_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_Windows_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Floor.PBWA_BG_Floor_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_Floor_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyD.PBWA_BG_BalconyD_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_BalconyD_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_WindowSide.PBWA_BG_WindowSide_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_WindowSide_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_ArchwayLargeSupport.PBWA_BG_ArchwayLargeSupport_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_ArchwayLargeSupport_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyS.PBWA_BG_BalconyS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_BalconyS_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorSide.PBWA_BG_DoorSide_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_DoorSide_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofC.PBWA_BG_RoofC_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_RoofC_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofS.PBWA_BG_RoofS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_RoofS_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallDoor.PBWA_BG_HalfWallDoor_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_HalfWallDoor_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_QuarterWallHalf.PBWA_BG_QuarterWallHalf_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_QuarterWallHalf_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairF.PBWA_BG_StairF_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_BG_StairF_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyO.PBWA_BG_BalconyO_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_BalconyO_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofI.PBWA_BG_RoofI_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_BG_RoofI_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Brace.PBWA_BG_Brace_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_Brace_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Archway.PBWA_BG_Archway_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_Archway_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_ArchwayLarge.PBWA_BG_ArchwayLarge_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_ArchwayLarge_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorC.PBWA_BG_DoorC_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_DoorC_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_WindowC.PBWA_BG_WindowC_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_BG_WindowC_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_StairSpiral.PBWA_W1_StairSpiral_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_W1_StairSpiral_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+
+
+	/// Functions
+	// Function /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_StairSpiral.PBWA_W1_StairSpiral_C.UserConstructionScript
+	// void UserConstructionScript();                                                                                           // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofC.PBWA_W1_RoofC_C
@@ -199,12 +536,53 @@ class APBWA_M1_ArchwayLargeSupport_C : public ABuildingWall
 public:
 };
 
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyD.PBWA_M1_BalconyD_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_M1_BalconyD_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
 /// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyO.PBWA_M1_BalconyO_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
 class APBWA_M1_BalconyO_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C
+/// Size: 0x0018 (0x000D48 - 0x000D60)
+class APBW_BP_Parent_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3424;
+
+public:
+	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0xD48, 8, 0, 0})
+	CMember(TArray<class UStaticMesh*>)                StaticMeshAlternateArray                                    OFFSET(get<T>, {0xD50, 16, 0, 0})
+
+
+	/// Functions
+	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.OnRep_Random Chance
+	// void OnRep_Random Chance();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.ReceiveBeginPlay
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent
+	// void ExecuteUbergraph_PBW_BP_Parent(int32_t EntryPoint);                                                                 // [0x3d1d968] Final                
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_DoorSide.PBWA_M1_DoorSide_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_DoorSide_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
 
 public:
 };
@@ -229,12 +607,62 @@ class APBWA_M1_Floor_C : public ABuildingFloor
 public:
 };
 
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWall.PBWA_M1_HalfWall_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_HalfWall_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWallDoorS.PBWA_M1_HalfWallDoorS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_HalfWallDoorS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofI.PBWA_M1_RoofI_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_M1_RoofI_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofS.PBWA_M1_RoofS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_M1_RoofS_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
 /// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_Solid.PBWA_M1_Solid_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
 class APBWA_M1_Solid_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairR.PBWA_M1_StairR_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_M1_StairR_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
 
 public:
 };
@@ -259,139 +687,9 @@ class APBWA_M1_ArchwayLarge_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyD.PBWA_M1_BalconyD_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_BalconyD_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_DoorSide.PBWA_M1_DoorSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_DoorSide_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWall.PBWA_M1_HalfWall_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_HalfWall_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWallDoorS.PBWA_M1_HalfWallDoorS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_HalfWallDoorS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWallHalf.PBWA_M1_HalfWallHalf_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_HalfWallHalf_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofI.PBWA_M1_RoofI_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_RoofI_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofO.PBWA_M1_RoofO_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_RoofO_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofS.PBWA_M1_RoofS_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_RoofS_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofWall.PBWA_M1_RoofWall_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_RoofWall_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairR.PBWA_M1_StairR_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_M1_StairR_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairT.PBWA_M1_StairT_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_M1_StairT_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairW.PBWA_M1_StairW_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_M1_StairW_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyI.PBWA_M1_BalconyI_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
 class APBWA_M1_BalconyI_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyS.PBWA_M1_BalconyS_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_BalconyS_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -419,9 +717,9 @@ class APBWA_M1_DoorC_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_QuarterWallHalf.PBWA_M1_QuarterWallHalf_C
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_HalfWallHalf.PBWA_M1_HalfWallHalf_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_QuarterWallHalf_C : public ABuildingWall
+class APBWA_M1_HalfWallHalf_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -429,12 +727,12 @@ class APBWA_M1_QuarterWallHalf_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_QuarterWallS.PBWA_M1_QuarterWallS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_QuarterWallS_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofO.PBWA_M1_RoofO_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_M1_RoofO_C : public ABuildingRoof
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -449,19 +747,19 @@ class APBWA_M1_RoofC_C : public ABuildingRoof
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofD.PBWA_M1_RoofD_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_M1_RoofD_C : public ABuildingRoof
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofWall.PBWA_M1_RoofWall_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_RoofWall_C : public ABuildingWall
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
 
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairF.PBWA_M1_StairF_C
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairT.PBWA_M1_StairT_C
 /// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_M1_StairF_C : public ABuildingStairs
+class APBWA_M1_StairT_C : public ABuildingStairs
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2976;
@@ -469,12 +767,12 @@ class APBWA_M1_StairF_C : public ABuildingStairs
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_WindowC.PBWA_M1_WindowC_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_WindowC_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairW.PBWA_M1_StairW_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_M1_StairW_C : public ABuildingStairs
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
 
 public:
 };
@@ -489,12 +787,12 @@ class APBWA_M1_Windows_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_WindowSide.PBWA_M1_WindowSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_M1_WindowSide_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_BalconyS.PBWA_M1_BalconyS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_M1_BalconyS_C : public ABuildingFloor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -519,12 +817,62 @@ class APBWA_M1_Pillar_C : public ABuildingPillar
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyD.PBWA_S1_BalconyD_C
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_QuarterWallHalf.PBWA_M1_QuarterWallHalf_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_QuarterWallHalf_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_QuarterWallS.PBWA_M1_QuarterWallS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_QuarterWallS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_RoofD.PBWA_M1_RoofD_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_BalconyD_C : public ABuildingFloor
+class APBWA_M1_RoofD_C : public ABuildingRoof
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_WindowSide.PBWA_M1_WindowSide_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_WindowSide_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_WindowC.PBWA_M1_WindowC_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_M1_WindowC_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Metal/L1/PBWA_M1_StairF.PBWA_M1_StairF_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_M1_StairF_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
 
 public:
 };
@@ -539,12 +887,12 @@ class APBWA_S1_RoofD_C : public ABuildingRoof
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_ArchwayLargeSupport.PBWA_S1_ArchwayLargeSupport_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_S1_ArchwayLargeSupport_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyD.PBWA_S1_BalconyD_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_S1_BalconyD_C : public ABuildingFloor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -565,26 +913,6 @@ class APBWA_S1_DoorS_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_DoorSide.PBWA_S1_DoorSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_S1_DoorSide_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Floor.PBWA_S1_Floor_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_Floor_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -659,12 +987,12 @@ class APBWA_S1_ArchwayLarge_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyI.PBWA_S1_BalconyI_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_BalconyI_C : public ABuildingFloor
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_ArchwayLargeSupport.PBWA_S1_ArchwayLargeSupport_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_S1_ArchwayLargeSupport_C : public ABuildingWall
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
 
 public:
 };
@@ -689,12 +1017,22 @@ class APBWA_S1_DoorC_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Archway.PBWA_S1_Archway_C
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_DoorSide.PBWA_S1_DoorSide_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_S1_Archway_C : public ABuildingWall
+class APBWA_S1_DoorSide_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Floor.PBWA_S1_Floor_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_S1_Floor_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -729,26 +1067,6 @@ class APBWA_S1_QuarterWallHalf_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyO.PBWA_S1_BalconyO_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_BalconyO_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofC.PBWA_S1_RoofC_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_RoofC_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_QuarterWallS.PBWA_S1_QuarterWallS_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
 class APBWA_S1_QuarterWallS_C : public ABuildingWall
@@ -759,19 +1077,9 @@ class APBWA_S1_QuarterWallS_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofI.PBWA_S1_RoofI_C
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofC.PBWA_S1_RoofC_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_RoofI_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofS.PBWA_S1_RoofS_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_S1_RoofS_C : public ABuildingRoof
+class APBWA_S1_RoofC_C : public ABuildingRoof
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -797,19 +1105,19 @@ public:
 
 	/// Functions
 	// Function /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Solid.PBWA_S1_Solid_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                           // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                           // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Solid.PBWA_S1_Solid_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Solid.PBWA_S1_Solid_C.ExecuteUbergraph_PBWA_S1_Solid
-	// void ExecuteUbergraph_PBWA_S1_Solid(int32_t EntryPoint);                                                                 // [0x130d900] Final|HasDefaults    
+	// void ExecuteUbergraph_PBWA_S1_Solid(int32_t EntryPoint);                                                                 // [0x3d1d968] Final|HasDefaults    
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_StairF.PBWA_S1_StairF_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_S1_StairF_C : public ABuildingStairs
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofI.PBWA_S1_RoofI_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_S1_RoofI_C : public ABuildingRoof
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -834,26 +1142,6 @@ class APBWA_S1_WindowsC_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_WindowsSide.PBWA_S1_WindowsSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_S1_WindowsSide_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_Windows.PBWA_W1_Windows_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_Windows_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_WindowSide.PBWA_W1_WindowSide_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
 class APBWA_W1_WindowSide_C : public ABuildingWall
@@ -864,9 +1152,9 @@ class APBWA_W1_WindowSide_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_WindowC.PBWA_W1_WindowC_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_Windows.PBWA_W1_Windows_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_WindowC_C : public ABuildingWall
+class APBWA_W1_Windows_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -894,26 +1182,6 @@ class APBWA_W1_Solid_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofO.PBWA_W1_RoofO_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_RoofO_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofI.PBWA_W1_RoofI_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_RoofI_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofD.PBWA_W1_RoofD_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
 class APBWA_W1_RoofD_C : public ABuildingRoof
@@ -934,29 +1202,9 @@ class APBWA_W1_QuarterWallS_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_Pillar.PBWA_W1_Pillar_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_Pillar_C : public ABuildingPillar
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallS.PBWA_W1_HalfWallS_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
 class APBWA_W1_HalfWallS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallHalf.PBWA_W1_HalfWallHalf_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_HalfWallHalf_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -974,16 +1222,6 @@ class APBWA_W1_DoorSide_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallDoor.PBWA_W1_HalfWallDoor_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_HalfWallDoor_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyO.PBWA_W1_BalconyO_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
 class APBWA_W1_BalconyO_C : public ABuildingFloor
@@ -994,9 +1232,9 @@ class APBWA_W1_BalconyO_C : public ABuildingFloor
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyI.PBWA_W1_BalconyI_C
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyI.PBWA_S1_BalconyI_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_BalconyI_C : public ABuildingFloor
+class APBWA_S1_BalconyI_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -1004,19 +1242,9 @@ class APBWA_W1_BalconyI_C : public ABuildingFloor
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyD.PBWA_W1_BalconyD_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_BalconyD_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_ArchwayLarge.PBWA_W1_ArchwayLarge_C
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_Archway.PBWA_S1_Archway_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_ArchwayLarge_C : public ABuildingWall
+class APBWA_S1_Archway_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -1024,12 +1252,62 @@ class APBWA_W1_ArchwayLarge_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_StairW.PBWA_S1_StairW_C
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_RoofS.PBWA_S1_RoofS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_S1_RoofS_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_BalconyO.PBWA_S1_BalconyO_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_S1_BalconyO_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_HalfWallS.PBWA_S1_HalfWallS_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_S1_HalfWallS_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_StairF.PBWA_S1_StairF_C
 /// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_S1_StairW_C : public ABuildingStairs
+class APBWA_S1_StairF_C : public ABuildingStairs
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_WindowsSide.PBWA_S1_WindowsSide_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_S1_WindowsSide_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_WindowC.PBWA_W1_WindowC_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_W1_WindowC_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
 
 public:
 };
@@ -1054,6 +1332,26 @@ class APBWA_W1_StairR_C : public ABuildingStairs
 public:
 };
 
+/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_StairW.PBWA_S1_StairW_C
+/// Size: 0x0000 (0x000BA0 - 0x000BA0)
+class APBWA_S1_StairW_C : public ABuildingStairs
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2976;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofS.PBWA_W1_RoofS_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_W1_RoofS_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
 /// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_StairF.PBWA_W1_StairF_C
 /// Size: 0x0000 (0x000BA0 - 0x000BA0)
 class APBWA_W1_StairF_C : public ABuildingStairs
@@ -1064,29 +1362,19 @@ class APBWA_W1_StairF_C : public ABuildingStairs
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Stone/L1/PBWA_S1_HalfWallS.PBWA_S1_HalfWallS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_S1_HalfWallS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofWall.PBWA_W1_RoofWall_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_RoofWall_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofS.PBWA_W1_RoofS_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofI.PBWA_W1_RoofI_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_RoofS_C : public ABuildingRoof
+class APBWA_W1_RoofI_C : public ABuildingRoof
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofO.PBWA_W1_RoofO_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_W1_RoofO_C : public ABuildingRoof
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -1104,12 +1392,12 @@ class APBWA_W1_QuarterWallHalf_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallDoorS.PBWA_W1_HalfWallDoorS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_W1_HalfWallDoorS_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_Pillar.PBWA_W1_Pillar_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_W1_Pillar_C : public ABuildingPillar
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
 
 public:
 };
@@ -1120,6 +1408,26 @@ class APBWA_W1_Floor_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallDoor.PBWA_W1_HalfWallDoor_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_W1_HalfWallDoor_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallHalf.PBWA_W1_HalfWallHalf_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_W1_HalfWallHalf_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
 
 public:
 };
@@ -1144,9 +1452,29 @@ class APBWA_W1_Brace_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyS.PBWA_W1_BalconyS_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyI.PBWA_W1_BalconyI_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_W1_BalconyS_C : public ABuildingFloor
+class APBWA_W1_BalconyI_C : public ABuildingFloor
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2968;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_ArchwayLarge.PBWA_W1_ArchwayLarge_C
+/// Size: 0x0000 (0x000D48 - 0x000D48)
+class APBWA_W1_ArchwayLarge_C : public ABuildingWall
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3400;
+
+public:
+};
+
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyD.PBWA_W1_BalconyD_C
+/// Size: 0x0000 (0x000B98 - 0x000B98)
+class APBWA_W1_BalconyD_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -1164,9 +1492,9 @@ class APBWA_W1_Archway_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Archway.PBWA_BG_Archway_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_RoofWall.PBWA_W1_RoofWall_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_Archway_C : public ABuildingWall
+class APBWA_W1_RoofWall_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -1174,9 +1502,9 @@ class APBWA_BG_Archway_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_ArchwayLarge.PBWA_BG_ArchwayLarge_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_HalfWallDoorS.PBWA_W1_HalfWallDoorS_C
 /// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_ArchwayLarge_C : public ABuildingWall
+class APBWA_W1_HalfWallDoorS_C : public ABuildingWall
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 3400;
@@ -1184,19 +1512,9 @@ class APBWA_BG_ArchwayLarge_C : public ABuildingWall
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_ArchwayLargeSupport.PBWA_BG_ArchwayLargeSupport_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_ArchwayLargeSupport_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyD.PBWA_BG_BalconyD_C
+/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_BalconyS.PBWA_W1_BalconyS_C
 /// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_BalconyD_C : public ABuildingFloor
+class APBWA_W1_BalconyS_C : public ABuildingFloor
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 2968;
@@ -1204,320 +1522,152 @@ class APBWA_BG_BalconyD_C : public ABuildingFloor
 public:
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyI.PBWA_BG_BalconyI_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_BalconyI_C : public ABuildingFloor
+/// Class /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C
+/// Size: 0x0090 (0x000BC8 - 0x000C58)
+class AParent_Tree_Apollo_C : public ABuildingProp
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
+	static inline constexpr uint64_t __MDKClassSize = 3160;
 
 public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyO.PBWA_BG_BalconyO_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_BalconyO_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_BalconyS.PBWA_BG_BalconyS_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_BalconyS_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Brace.PBWA_BG_Brace_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_Brace_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorC.PBWA_BG_DoorC_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_DoorC_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorS.PBWA_BG_DoorS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_DoorS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_DoorSide.PBWA_BG_DoorSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_DoorSide_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Floor.PBWA_BG_Floor_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_Floor_C : public ABuildingFloor
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWall.PBWA_BG_HalfWall_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_HalfWall_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallDoor.PBWA_BG_HalfWallDoor_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_HalfWallDoor_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallDoorS.PBWA_BG_HalfWallDoorS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_HalfWallDoorS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_HalfWallHalf.PBWA_BG_HalfWallHalf_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_HalfWallHalf_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_QuarterWallHalf.PBWA_BG_QuarterWallHalf_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_QuarterWallHalf_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_QuarterWallS.PBWA_BG_QuarterWallS_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_QuarterWallS_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofC.PBWA_BG_RoofC_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_RoofC_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofD.PBWA_BG_RoofD_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_RoofD_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofI.PBWA_BG_RoofI_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_RoofI_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofO.PBWA_BG_RoofO_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_RoofO_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofS.PBWA_BG_RoofS_C
-/// Size: 0x0000 (0x000B98 - 0x000B98)
-class APBWA_BG_RoofS_C : public ABuildingRoof
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2968;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_RoofWall.PBWA_BG_RoofWall_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_RoofWall_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Solid.PBWA_BG_Solid_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_Solid_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairF.PBWA_BG_StairF_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_BG_StairF_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairR.PBWA_BG_StairR_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_BG_StairR_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairT.PBWA_BG_StairT_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_BG_StairT_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_StairW.PBWA_BG_StairW_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_BG_StairW_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_WindowC.PBWA_BG_WindowC_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_WindowC_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_Windows.PBWA_BG_Windows_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_Windows_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
-
-public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C
-/// Size: 0x0018 (0x000D48 - 0x000D60)
-class APBW_BP_Parent_C : public ABuildingWall
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3424;
-
-public:
-	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0xD48, 8, 0, 0})
-	CMember(TArray<class UStaticMesh*>)                StaticMeshAlternateArray                                    OFFSET(get<T>, {0xD50, 16, 0, 0})
+	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0xBC8, 8, 0, 0})
+	DMember(bool)                                      Has_Bugs                                                    OFFSET(get<bool>, {0xBD0, 1, 0, 0})
+	DMember(double)                                    Use_Lightning_Bug                                           OFFSET(get<double>, {0xBD8, 8, 0, 0})
+	SMember(FVector)                                   BugOffset                                                   OFFSET(getStruct<T>, {0xBE0, 24, 0, 0})
+	DMember(bool)                                      Has_Falling_Leaves                                          OFFSET(get<bool>, {0xBF8, 1, 0, 0})
+	SMember(FVector)                                   LeavesOffset                                                OFFSET(getStruct<T>, {0xC00, 24, 0, 0})
+	DMember(int32_t)                                   Priority                                                    OFFSET(get<int32_t>, {0xC18, 4, 0, 0})
+	CMember(TEnumAsByte<Tree_Color_options>)           Tree_Color_Option                                           OFFSET(get<T>, {0xC1C, 1, 0, 0})
+	SMember(FLinearColor)                              Color                                                       OFFSET(getStruct<T>, {0xC20, 16, 0, 0})
+	DMember(double)                                    HueVariation                                                OFFSET(get<double>, {0xC30, 8, 0, 0})
+	DMember(double)                                    ValueVariation                                              OFFSET(get<double>, {0xC38, 8, 0, 0})
+	DMember(int32_t)                                   PrioritySetbyVolume                                         OFFSET(get<int32_t>, {0xC40, 4, 0, 0})
+	CMember(class UTreeSeasonColor_Data_C*)            TreeSeasonColor_Data                                        OFFSET(get<T>, {0xC48, 8, 0, 0})
+	CMember(class UFortGameStateComponent_SurfaceOverride*) SurfaceOverrideComponent                               OFFSET(get<T>, {0xC50, 8, 0, 0})
 
 
 	/// Functions
-	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.OnRep_Random Chance
-	// void OnRep_Random Chance();                                                                                              // [0x130d900] BlueprintCallable|BlueprintEvent 
-	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x130d900] Event|Protected|BlueprintEvent 
-	// Function /Game/Building/ActorBlueprints/Player/Master/PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent
-	// void ExecuteUbergraph_PBW_BP_Parent(int32_t EntryPoint);                                                                 // [0x130d900] Final                
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.SetTreeSeasonalColor
+	// void SetTreeSeasonalColor();                                                                                             // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.SetSeasonPresetColors
+	// void SetSeasonPresetColors();                                                                                            // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.UpdateColor
+	// void UpdateColor();                                                                                                      // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.IsSubmergedByWater
+	// bool IsSubmergedByWater();                                                                                               // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.UserConstructionScript
+	// void UserConstructionScript();                                                                                           // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.RemoveUnderwaterTrees
+	// void RemoveUnderwaterTrees();                                                                                            // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.ReceiveBeginPlay
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.OnWaterLevelSetOffline
+	// void OnWaterLevelSetOffline();                                                                                           // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.ReceiveEndPlay
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Prop/Parent_Tree_Apollo.Parent_Tree_Apollo_C.ExecuteUbergraph_Parent_Tree_Apollo
+	// void ExecuteUbergraph_Parent_Tree_Apollo(int32_t EntryPoint);                                                            // [0x3d1d968] Final                
 };
 
-/// Class /Game/Building/ActorBlueprints/Player/BuildingGuides/PBWA_BG_WindowSide.PBWA_BG_WindowSide_C
-/// Size: 0x0000 (0x000D48 - 0x000D48)
-class APBWA_BG_WindowSide_C : public ABuildingWall
+/// Class /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C
+/// Size: 0x00DC (0x000E38 - 0x000F14)
+class ACreative_Tiered_Chest_C : public ABuildingCustomizableSpawnContainer
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3400;
+	static inline constexpr uint64_t __MDKClassSize = 3860;
 
 public:
-};
-
-/// Class /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_StairSpiral.PBWA_W1_StairSpiral_C
-/// Size: 0x0000 (0x000BA0 - 0x000BA0)
-class APBWA_W1_StairSpiral_C : public ABuildingStairs
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2976;
-
-public:
+	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0xE38, 8, 0, 0})
+	CMember(class UStaticMeshComponent*)               S_Chest_SmokeSheet                                          OFFSET(get<T>, {0xE40, 8, 0, 0})
+	CMember(class UNiagaraComponent*)                  NS_Athena_Loot_Chest_Aura                                   OFFSET(get<T>, {0xE48, 8, 0, 0})
+	CMember(class UCreativeIslandResourceComponent*)   CreativeIslandResource                                      OFFSET(get<T>, {0xE50, 8, 0, 0})
+	CMember(class UPointLightComponent*)               TrasureLight                                                OFFSET(get<T>, {0xE58, 8, 0, 0})
+	CMember(class UAudioComponent*)                    Chest_Ambient_Sound                                         OFFSET(get<T>, {0xE60, 8, 0, 0})
+	DMember(float)                                     MobileSelectedTL_LerpInteactoIcon_3B3245644A941BB300D1A3B017FAF4AC OFFSET(get<float>, {0xE68, 4, 0, 0})
+	DMember(float)                                     MobileSelectedTL_LerpObject_3B3245644A941BB300D1A3B017FAF4AC OFFSET(get<float>, {0xE6C, 4, 0, 0})
+	CMember(TEnumAsByte<ETimelineDirection>)           MobileSelectedTL__Direction_3B3245644A941BB300D1A3B017FAF4AC OFFSET(get<T>, {0xE70, 1, 0, 0})
+	CMember(class UTimelineComponent*)                 MobileSelectedTL                                            OFFSET(get<T>, {0xE78, 8, 0, 0})
+	DMember(float)                                     MobileOnInteractTL_LERP_0EDB17994610CCA511D017A7FCB5FD6E    OFFSET(get<float>, {0xE80, 4, 0, 0})
+	CMember(TEnumAsByte<ETimelineDirection>)           MobileOnInteractTL__Direction_0EDB17994610CCA511D017A7FCB5FD6E OFFSET(get<T>, {0xE84, 1, 0, 0})
+	CMember(class UTimelineComponent*)                 MobileOnInteractTL                                          OFFSET(get<T>, {0xE88, 8, 0, 0})
+	CMember(class UParticleSystemComponent*)           Loot_Effect                                                 OFFSET(get<T>, {0xE90, 8, 0, 0})
+	CMember(class USoundBase*)                         SpecialChestOpenSound                                       OFFSET(get<T>, {0xE98, 8, 0, 0})
+	CMember(TArray<class UMaterialInstanceDynamic*>)   MIDs                                                        OFFSET(get<T>, {0xEA0, 16, 0, 0})
+	DMember(double)                                    MobileWiggleAmount                                          OFFSET(get<double>, {0xEB0, 8, 0, 0})
+	SMember(FTimerHandle)                              ChimeTimer                                                  OFFSET(getStruct<T>, {0xEB8, 8, 0, 0})
+	DMember(double)                                    ChestChimeVisualUpdate                                      OFFSET(get<double>, {0xEC0, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 MobileInteractionMaterial                                   OFFSET(get<T>, {0xEC8, 8, 0, 0})
+	CMember(class UStaticMeshComponent*)               MobileInteractIcon                                          OFFSET(get<T>, {0xED0, 8, 0, 0})
+	SMember(FVector)                                   MobileInteractIconLocation                                  OFFSET(getStruct<T>, {0xED8, 24, 0, 0})
+	SMember(FVector)                                   MobileInteractIconScale                                     OFFSET(getStruct<T>, {0xEF0, 24, 0, 0})
+	SMember(FName)                                     ResourceLightTag                                            OFFSET(getStruct<T>, {0xF08, 4, 0, 0})
+	SMember(FName)                                     ResourceVFXTag                                              OFFSET(getStruct<T>, {0xF0C, 4, 0, 0})
+	SMember(FName)                                     ResourceAudioTag                                            OFFSET(getStruct<T>, {0xF10, 4, 0, 0})
 
 
 	/// Functions
-	// Function /Game/Building/ActorBlueprints/Player/Wood/L1/PBWA_W1_StairSpiral.PBWA_W1_StairSpiral_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                           // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.On Free Resources
+	// void On Free Resources(class UCreativeIslandResourceManagerComponent* Resource Manager);                                 // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.On Request Resources
+	// void On Request Resources(class UCreativeIslandResourceManagerComponent* Resource Manager);                              // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.OnSetCustomDepthStencilValue
+	// void OnSetCustomDepthStencilValue(TArray<UPrimitiveComponent*>& PrimComponents, bool bUseCustomDepth, int32_t StencilValue, bool& bOutConsume); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.SetVisibleMobileInteractIcon
+	// void SetVisibleMobileInteractIcon(bool Visible);                                                                         // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.GetMaxAudibleDistance
+	// void GetMaxAudibleDistance(double& Max Distance);                                                                        // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.CleanupWiggleMIDs
+	// void CleanupWiggleMIDs();                                                                                                // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.CreateMobileMIDs
+	// void CreateMobileMIDs();                                                                                                 // [0x3d1d968] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.ShouldDie
+	// bool ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser);                            // [0x3d1d968] BlueprintAuthorityOnly|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.BlueprintCanInteract
+	// bool BlueprintCanInteract(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted, TEnumAsByte<TInteractionType> InteractionType); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.SetLightVisibility
+	// void SetLightVisibility(bool Visible);                                                                                   // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.UserConstructionScript
+	// void UserConstructionScript();                                                                                           // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.MobileOnInteractTL__FinishedFunc
+	// void MobileOnInteractTL__FinishedFunc();                                                                                 // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.MobileOnInteractTL__UpdateFunc
+	// void MobileOnInteractTL__UpdateFunc();                                                                                   // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.MobileSelectedTL__FinishedFunc
+	// void MobileSelectedTL__FinishedFunc();                                                                                   // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.MobileSelectedTL__UpdateFunc
+	// void MobileSelectedTL__UpdateFunc();                                                                                     // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.OnLoot
+	// void OnLoot();                                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.ReceiveBeginPlay
+	// void ReceiveBeginPlay();                                                                                                 // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.ReceiveDestroyed
+	// void ReceiveDestroyed();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.OnSetSearched
+	// void OnSetSearched();                                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.Mobile_Outline_On
+	// void Mobile_Outline_On();                                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.Mobile_Outline_Off
+	// void Mobile_Outline_Off();                                                                                               // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.Mobile_OnInteract
+	// void Mobile_OnInteract();                                                                                                // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.Mobile_OnDisconnect
+	// void Mobile_OnDisconnect();                                                                                              // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.Chime Visual
+	// void Chime Visual();                                                                                                     // [0x3d1d968] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.EnableBacchusHighlight
+	// void EnableBacchusHighlight();                                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.DisableBacchusHighlight
+	// void DisableBacchusHighlight();                                                                                          // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.OnBeginSearch
+	// void OnBeginSearch();                                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.BndEvt__CreativeIslandResource_K2Node_ComponentBoundEvent_0_RequestResourcesSignature__DelegateSignature
+	// void BndEvt__CreativeIslandResource_K2Node_ComponentBoundEvent_0_RequestResourcesSignature__DelegateSignature(class UCreativeIslandResourceManagerComponent* ResourceManager); // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.BndEvt__CreativeIslandResource_K2Node_ComponentBoundEvent_1_FreeResourcesSignature__DelegateSignature
+	// void BndEvt__CreativeIslandResource_K2Node_ComponentBoundEvent_1_FreeResourcesSignature__DelegateSignature(class UCreativeIslandResourceManagerComponent* ResourceManager); // [0x3d1d968] BlueprintEvent       
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.PreDestroy
+	// void PreDestroy();                                                                                                       // [0x3d1d968] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Building/ActorBlueprints/Containers/Creative_Tiered_Chest.Creative_Tiered_Chest_C.ExecuteUbergraph_Creative_Tiered_Chest
+	// void ExecuteUbergraph_Creative_Tiered_Chest(int32_t EntryPoint);                                                         // [0x3d1d968] Final|HasDefaults    
 };
 
 /// Struct /Game/Building/K2_FX_Macros/DayPhaseFloats.DayPhaseFloats

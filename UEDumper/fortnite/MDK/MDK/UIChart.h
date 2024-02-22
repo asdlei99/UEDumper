@@ -292,33 +292,33 @@ public:
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerValue
-	// void BP_SetPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, int32_t Value);                                // [0xaa672b0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, int32_t Value);                                // [0xad66a28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerStringValue
-	// void BP_SetPlayerStringValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, FString Value);                          // [0xaa66ab4] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerStringValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, FString Value);                          // [0xad66164] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerFloatValue
-	// void BP_SetPlayerFloatValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, float Value);                             // [0xaa668f4] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerFloatValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, float Value);                             // [0xad65efc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerBoolValue
-	// void BP_SetPlayerBoolValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, bool Value);                               // [0xaa66734] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerBoolValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, bool Value);                               // [0xad65c88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonStringValue
-	// void BP_SetCommonStringValue(FGameplayTag Key, FString Value);                                                           // [0xaa65fb0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonStringValue(FGameplayTag Key, FString Value);                                                           // [0xad65418] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonIntValue
-	// void BP_SetCommonIntValue(FGameplayTag Key, int32_t Value);                                                              // [0xaa65e34] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonIntValue(FGameplayTag Key, int32_t Value);                                                              // [0xad651f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonFloatValue
-	// void BP_SetCommonFloatValue(FGameplayTag Key, float Value);                                                              // [0xaa65cf0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonFloatValue(FGameplayTag Key, float Value);                                                              // [0xad64fc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonBoolValue
-	// void BP_SetCommonBoolValue(FGameplayTag Key, bool Value);                                                                // [0xaa65ba8] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonBoolValue(FGameplayTag Key, bool Value);                                                                // [0xad64d90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_FindEntry
-	// class UUIStateChartContextEntry* BP_FindEntry(FGameplayTag Key);                                                         // [0xaa655c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContextEntry* BP_FindEntry(FGameplayTag Key);                                                         // [0xad646c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearPlayerValue
-	// void BP_ClearPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag& Key);                                            // [0xaa64d2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ClearPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag& Key);                                            // [0xad63da4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearEntry
-	// void BP_ClearEntry(FGameplayTag Key);                                                                                    // [0xaa64c64] Final|Native|Public|BlueprintCallable 
+	// void BP_ClearEntry(FGameplayTag Key);                                                                                    // [0xad63c5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearCommonValue
-	// void BP_ClearCommonValue(FGameplayTag Key);                                                                              // [0xaa64b9c] Final|Native|Public|BlueprintCallable 
+	// void BP_ClearCommonValue(FGameplayTag Key);                                                                              // [0xad63b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ApplyPlayerChanges
-	// void BP_ApplyPlayerChanges(class ULocalPlayer* LocalPlayer, FUIStateChartContextChangeSet& ContextChanges);              // [0xaa64a3c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ApplyPlayerChanges(class ULocalPlayer* LocalPlayer, FUIStateChartContextChangeSet& ContextChanges);              // [0xad63a00] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ApplyCommonChanges
-	// void BP_ApplyCommonChanges(FUIStateChartContextChangeSet& ContextChanges);                                               // [0xaa6496c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ApplyCommonChanges(FUIStateChartContextChangeSet& ContextChanges);                                               // [0xad63930] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/UIChart.UIStateChartContextEntry
@@ -335,23 +335,23 @@ public:
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartContextEntry.IsEmptyForPlayer
-	// bool IsEmptyForPlayer(class ULocalPlayer* InLocalPlayer);                                                                // [0xaa678ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEmptyForPlayer(class ULocalPlayer* InLocalPlayer);                                                                // [0xad66f98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsString
-	// FString GetPlayerValueAsString(class ULocalPlayer* InLocalPlayer);                                                       // [0xaa677d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetPlayerValueAsString(class ULocalPlayer* InLocalPlayer);                                                       // [0xad66f00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsInt
-	// int32_t GetPlayerValueAsInt(class ULocalPlayer* InLocalPlayer);                                                          // [0xaa67704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPlayerValueAsInt(class ULocalPlayer* InLocalPlayer);                                                          // [0xad66e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsFloat
-	// float GetPlayerValueAsFloat(class ULocalPlayer* InLocalPlayer);                                                          // [0xaa67634] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayerValueAsFloat(class ULocalPlayer* InLocalPlayer);                                                          // [0xad66de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsBool
-	// bool GetPlayerValueAsBool(class ULocalPlayer* InLocalPlayer);                                                            // [0xaa67564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetPlayerValueAsBool(class ULocalPlayer* InLocalPlayer);                                                            // [0xad66d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsString
-	// FString GetCommonValueAsString();                                                                                        // [0xaa67548] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCommonValueAsString();                                                                                        // [0xad66d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsInt
-	// int32_t GetCommonValueAsInt();                                                                                           // [0xaa67524] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCommonValueAsInt();                                                                                           // [0xad66d10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsFloat
-	// float GetCommonValueAsFloat();                                                                                           // [0xaa674fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCommonValueAsFloat();                                                                                           // [0xad66ce8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsBool
-	// bool GetCommonValueAsBool();                                                                                             // [0xaa674a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCommonValueAsBool();                                                                                             // [0xad66c94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/UIChart.UIStateChartManager
@@ -370,19 +370,19 @@ public:
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartManager.GetContext
-	// class UUIStateChartContext* GetContext();                                                                                // [0x7b817a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContext* GetContext();                                                                                // [0x7b97a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartManager.GetChartContext
-	// class UUIStateChartContext* GetChartContext();                                                                           // [0x7b817a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContext* GetChartContext();                                                                           // [0x7b97a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartManager.BP_RemoveStateChart
-	// bool BP_RemoveStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xaa658d0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_RemoveStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xad64af8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_ReactivateStateChart
-	// void BP_ReactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FGameplayTag StateTag, EUIStateTransitionUrgency Urgency); // [0xaa6568c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void BP_ReactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FGameplayTag StateTag, EUIStateTransitionUrgency Urgency); // [0xad64808] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_DispatchTransitionEvent
-	// bool BP_DispatchTransitionEvent(FGameplayTag TransitionTag, class ULocalPlayer* StateChartOwner, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency, bool bBacktrack); // [0xaa65144] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_DispatchTransitionEvent(FGameplayTag TransitionTag, class ULocalPlayer* StateChartOwner, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency, bool bBacktrack); // [0xad64144] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_DeactivateStateChart
-	// bool BP_DeactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xaa64e70] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_DeactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xad63eb0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_AddStateChart
-	// int32_t BP_AddStateChart(class UUIStateChart* StateChartAsset, class ULocalPlayer* OwningLocalPlayer, FGameplayTagContainer& AnimationHints, FGameplayTag InitialStateTag, EUIStateTransitionUrgency Urgency); // [0xaa646a8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// int32_t BP_AddStateChart(class UUIStateChart* StateChartAsset, class ULocalPlayer* OwningLocalPlayer, FGameplayTagContainer& AnimationHints, FGameplayTag InitialStateTag, EUIStateTransitionUrgency Urgency); // [0xad63600] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/UIChart.UIStateChartManagerEntry

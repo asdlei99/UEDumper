@@ -159,83 +159,84 @@ struct FDelMarBouncyChassisState
 };
 
 /// Class /Script/DelMarCosmetics.DelMarPreviewVehicle
-/// Size: 0x0640 (0x001E60 - 0x0024A0)
+/// Size: 0x0630 (0x001E90 - 0x0024C0)
 class ADelMarPreviewVehicle : public AFortAthenaVehicle
 { 
 public:
-	unsigned char                                      UnknownData00_3[0x8];                                       // 0x1E60   (0x0008)  MISSED
-	FCosmeticLoadout                                   PreviewLoadout;                                             // 0x1E68   (0x0010)  
-	class UDelMarVehicleCosmeticComponent*             CosmeticComponent;                                          // 0x1E78   (0x0008)  
-	FDelMarPreviewConfigs                              PreviewConfigs;                                             // 0x1E80   (0x00F8)  
-	unsigned char                                      UnknownData01_5[0x88];                                      // 0x1F78   (0x0088)  MISSED
-	TArray<float>                                      SpringTravelOffset;                                         // 0x2000   (0x0010)  
-	FDelMarBouncyChassisState                          BouncyChassisConfig;                                        // 0x2010   (0x000C)  
-	unsigned char                                      UnknownData02_5[0x54];                                      // 0x201C   (0x0054)  MISSED
-	SDK_UNDEFINED(16,13029) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitWall);                           // 0x2070   (0x0010)  
-	SDK_UNDEFINED(16,13030) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitVehicle);                        // 0x2080   (0x0010)  
-	SDK_UNDEFINED(16,13031) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitByVehicle);                      // 0x2090   (0x0010)  
-	unsigned char                                      UnknownData03_5[0x388];                                     // 0x20A0   (0x0388)  MISSED
-	SDK_UNDEFINED(16,13032) /* FMulticastInlineDelegate */ __um(OnHazardHit);                                      // 0x2428   (0x0010)  
-	SDK_UNDEFINED(16,13033) /* FMulticastInlineDelegate */ __um(OnVehicleTeleportEntered);                         // 0x2438   (0x0010)  
-	SDK_UNDEFINED(16,13034) /* FMulticastInlineDelegate */ __um(OnVehicleTeleportExit);                            // 0x2448   (0x0010)  
-	SDK_UNDEFINED(16,13035) /* FMulticastInlineDelegate */ __um(OnVehicleAppliedTeleportRotation);                 // 0x2458   (0x0010)  
-	unsigned char                                      UnknownData04_6[0x38];                                      // 0x2468   (0x0038)  MISSED
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x1E88   (0x0008)  MISSED
+	FCosmeticLoadout                                   PreviewLoadout;                                             // 0x1E90   (0x0010)  
+	class UDelMarVehicleCosmeticComponent*             CosmeticComponent;                                          // 0x1EA0   (0x0008)  
+	FDelMarPreviewConfigs                              PreviewConfigs;                                             // 0x1EA8   (0x00F8)  
+	unsigned char                                      UnknownData01_5[0x88];                                      // 0x1FA0   (0x0088)  MISSED
+	TArray<float>                                      SpringTravelOffset;                                         // 0x2028   (0x0010)  
+	FDelMarBouncyChassisState                          BouncyChassisConfig;                                        // 0x2038   (0x000C)  
+	unsigned char                                      UnknownData02_5[0x54];                                      // 0x2044   (0x0054)  MISSED
+	SDK_UNDEFINED(16,13122) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitWall);                           // 0x2098   (0x0010)  
+	SDK_UNDEFINED(16,13123) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitVehicle);                        // 0x20A8   (0x0010)  
+	SDK_UNDEFINED(16,13124) /* FMulticastInlineDelegate */ __um(OnDelMarVehicleHitByVehicle);                      // 0x20B8   (0x0010)  
+	unsigned char                                      UnknownData03_5[0x388];                                     // 0x20C8   (0x0388)  MISSED
+	SDK_UNDEFINED(16,13125) /* FMulticastInlineDelegate */ __um(OnHazardHit);                                      // 0x2450   (0x0010)  
+	SDK_UNDEFINED(16,13126) /* FMulticastInlineDelegate */ __um(OnVehicleTeleportEntered);                         // 0x2460   (0x0010)  
+	SDK_UNDEFINED(16,13127) /* FMulticastInlineDelegate */ __um(OnVehicleTeleportExit);                            // 0x2470   (0x0010)  
+	SDK_UNDEFINED(16,13128) /* FMulticastInlineDelegate */ __um(OnVehicleAppliedTeleportRotation);                 // 0x2480   (0x0010)  
+	unsigned char                                      UnknownData04_6[0x30];                                      // 0x2490   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarPreviewVehicle.IsWheelOnGround
-	// bool IsWheelOnGround(EDelMarVehicleWheelIndex WheelIndex);                                                            // [0xbad4d6c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWheelOnGround(EDelMarVehicleWheelIndex WheelIndex);                                                            // [0xbe8c4ac] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarPreviewVehicle.GetBouncyChassisConfig
-	// FDelMarBouncyChassisState GetBouncyChassisConfig();                                                                   // [0xbad34f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDelMarBouncyChassisState GetBouncyChassisConfig();                                                                   // [0xbe8b168] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarPreviewVehicle.BroadcastVehicleDemolished
-	// void BroadcastVehicleDemolished(FGameplayTag DemolishCausedByTag);                                                    // [0xbad2d9c] Native|Public|BlueprintCallable 
+	// void BroadcastVehicleDemolished(FGameplayTag DemolishCausedByTag);                                                    // [0xbe8ab68] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarGaragePreviewVehicle
-/// Size: 0x0200 (0x0024A0 - 0x0026A0)
+/// Size: 0x0200 (0x0024C0 - 0x0026C0)
 class ADelMarGaragePreviewVehicle : public ADelMarPreviewVehicle
 { 
 public:
-	SDK_UNDEFINED(16,13036) /* FMulticastInlineDelegate */ __um(OnActiveCameraUpdatedDelegate);                    // 0x24A0   (0x0010)  
-	SDK_UNDEFINED(16,13037) /* FMulticastInlineDelegate */ __um(OnRotationTransitionStateChanged);                 // 0x24B0   (0x0010)  
-	class USceneComponent*                             PreviewPivotComponent;                                      // 0x24C0   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x24C8   (0x0008)  MISSED
-	class UCameraComponent*                            ActiveCameraComponent;                                      // 0x24D0   (0x0008)  
-	class UCameraComponent*                            DefaultZoomInCameraComponent;                               // 0x24D8   (0x0008)  
-	class UCameraComponent*                            DefaultZoomOutCameraComponent;                              // 0x24E0   (0x0008)  
-	unsigned char                                      UnknownData01_5[0xA0];                                      // 0x24E8   (0x00A0)  MISSED
-	SDK_UNDEFINED(80,13038) /* TMap<FGameplayTag, FRotator> */ __um(SlotPreviewRotations);                         // 0x2588   (0x0050)  
-	SDK_UNDEFINED(80,13039) /* TMap<FGameplayTag, FDelMarPreviewConfigs> */ __um(SlotPreviewConfigs);              // 0x25D8   (0x0050)  
-	float                                              ZoomLevel;                                                  // 0x2628   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x262C   (0x0004)  MISSED
-	FRotator                                           UserRotationOffset;                                         // 0x2630   (0x0018)  
-	FGameplayTag                                       PreviewSlot;                                                // 0x2648   (0x0004)  
-	FGameplayTag                                       PreviewVehicleTag;                                          // 0x264C   (0x0004)  
-	float                                              RotationTransitionTime;                                     // 0x2650   (0x0004)  
-	unsigned char                                      UnknownData03_6[0x4C];                                      // 0x2654   (0x004C)  MISSED
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x24C0   (0x0008)  MISSED
+	SDK_UNDEFINED(16,13129) /* FMulticastInlineDelegate */ __um(OnActiveCameraUpdatedDelegate);                    // 0x24C8   (0x0010)  
+	SDK_UNDEFINED(16,13130) /* FMulticastInlineDelegate */ __um(OnRotationTransitionStateChanged);                 // 0x24D8   (0x0010)  
+	class USceneComponent*                             PreviewPivotComponent;                                      // 0x24E8   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x24F0   (0x0008)  MISSED
+	class UCameraComponent*                            ActiveCameraComponent;                                      // 0x24F8   (0x0008)  
+	class UCameraComponent*                            DefaultZoomInCameraComponent;                               // 0x2500   (0x0008)  
+	class UCameraComponent*                            DefaultZoomOutCameraComponent;                              // 0x2508   (0x0008)  
+	unsigned char                                      UnknownData02_5[0xA0];                                      // 0x2510   (0x00A0)  MISSED
+	SDK_UNDEFINED(80,13131) /* TMap<FGameplayTag, FRotator> */ __um(SlotPreviewRotations);                         // 0x25B0   (0x0050)  
+	SDK_UNDEFINED(80,13132) /* TMap<FGameplayTag, FDelMarPreviewConfigs> */ __um(SlotPreviewConfigs);              // 0x2600   (0x0050)  
+	float                                              ZoomLevel;                                                  // 0x2650   (0x0004)  
+	unsigned char                                      UnknownData03_5[0x4];                                       // 0x2654   (0x0004)  MISSED
+	FRotator                                           UserRotationOffset;                                         // 0x2658   (0x0018)  
+	FGameplayTag                                       PreviewSlot;                                                // 0x2670   (0x0004)  
+	FGameplayTag                                       PreviewVehicleTag;                                          // 0x2674   (0x0004)  
+	float                                              RotationTransitionTime;                                     // 0x2678   (0x0004)  
+	unsigned char                                      UnknownData04_6[0x44];                                      // 0x267C   (0x0044)  MISSED
 
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.UpdateActiveCamera
-	// void UpdateActiveCamera();                                                                                            // [0xbad6e38] Native|Protected     
+	// void UpdateActiveCamera();                                                                                            // [0xbe8dbe8] Native|Protected     
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.SetZoomLevel
-	// void SetZoomLevel(float InZoomLevel);                                                                                 // [0xbad6d50] Final|Native|Public|BlueprintCallable 
+	// void SetZoomLevel(float InZoomLevel);                                                                                 // [0xbe8db44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.SetUserRotationOffset
-	// void SetUserRotationOffset(FRotator& InRotationOffset);                                                               // [0xbad6c80] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetUserRotationOffset(FRotator& InRotationOffset);                                                               // [0xbe8da74] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.SetPreviewSlot
-	// void SetPreviewSlot(FGameplayTag& InSlot);                                                                            // [0xbad64f8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPreviewSlot(FGameplayTag& InSlot);                                                                            // [0xbe8d5c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.ResetPreviewToCurrentLoadout
-	// void ResetPreviewToCurrentLoadout();                                                                                  // [0x3047908] Final|Native|Public|BlueprintCallable 
+	// void ResetPreviewToCurrentLoadout();                                                                                  // [0x3097b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.PreviewLoadout
-	// void PreviewLoadout(FDelMarLoadout& Loadout);                                                                         // [0xbad56d8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PreviewLoadout(FDelMarLoadout& Loadout);                                                                         // [0xbe8cd3c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.PreviewItem
-	// void PreviewItem(class UDelMarCosmeticItemDefinition* Item);                                                          // [0xbad560c] Final|Native|Public|BlueprintCallable 
+	// void PreviewItem(class UDelMarCosmeticItemDefinition* Item);                                                          // [0xbe8ccb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.K2_OnActiveCameraUpdated
-	// void K2_OnActiveCameraUpdated();                                                                                      // [0x130d900] Event|Protected|BlueprintEvent 
+	// void K2_OnActiveCameraUpdated();                                                                                      // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.IsRotationTransitioning
-	// bool IsRotationTransitioning();                                                                                       // [0xbad4d54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRotationTransitioning();                                                                                       // [0xbe8c494] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarGaragePreviewVehicle.GetRotationOffset
-	// FRotator GetRotationOffset();                                                                                         // [0xbad405c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetRotationOffset();                                                                                         // [0xbe8b914] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarParamOverrideCosmeticActor
@@ -243,7 +244,7 @@ public:
 class ADelMarParamOverrideCosmeticActor : public ADelMarCosmeticActor
 { 
 public:
-	SDK_UNDEFINED(80,13040) /* TMap<UClass*, FDelMarParameterOverrides> */ __um(CosmeticActorsParamterOverrides);  // 0x02C8   (0x0050)  
+	SDK_UNDEFINED(80,13133) /* TMap<UClass*, FDelMarParameterOverrides> */ __um(CosmeticActorsParamterOverrides);  // 0x02C8   (0x0050)  
 };
 
 /// Class /Script/DelMarCosmetics.DelMarPreviewCameraComponent
@@ -359,51 +360,51 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.ShouldTriggerFX
-	// bool ShouldTriggerFX();                                                                                               // [0xbad6e14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldTriggerFX();                                                                                               // [0xbe8dbc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.SetRightBoostersEnabled
-	// void SetRightBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad6920] Final|Native|Public|BlueprintCallable 
+	// void SetRightBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8d87c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.SetLeftBoostersEnabled
-	// void SetLeftBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad6198] Final|Native|Public|BlueprintCallable 
+	// void SetLeftBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8d3c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.SetAllBoostersEnabled
-	// void SetAllBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad5ae4] Final|Native|Public|BlueprintCallable 
+	// void SetAllBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8cfe4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnWorldBonusSpeedStackGained
-	// void OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                               // [0xbad54b4] Final|Native|Protected 
+	// void OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                               // [0xbe8ca70] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnVehicleLanded
-	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                       // [0xbad5374] Final|Native|Protected 
+	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                       // [0xbe8c9a8] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnVehicleDemolished
-	// void OnVehicleDemolished(FGameplayTag CausedByTag);                                                                   // [0xbad52b4] Final|Native|Protected 
+	// void OnVehicleDemolished(FGameplayTag CausedByTag);                                                                   // [0xbe8c86c] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnUnderthrustDeactivated
-	// void OnUnderthrustDeactivated();                                                                                      // [0xbad52a0] Final|Native|Protected 
+	// void OnUnderthrustDeactivated();                                                                                      // [0xbe8c858] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnUnderthrustActivated
-	// void OnUnderthrustActivated();                                                                                        // [0xbad528c] Final|Native|Protected 
+	// void OnUnderthrustActivated();                                                                                        // [0xbe8c844] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnKickflipDeactivated
-	// void OnKickflipDeactivated();                                                                                         // [0xbad5278] Final|Native|Protected 
+	// void OnKickflipDeactivated();                                                                                         // [0xbe8c830] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnKickflipActivated
-	// void OnKickflipActivated(bool bLeftSide);                                                                             // [0xbad51b4] Final|Native|Protected 
+	// void OnKickflipActivated(bool bLeftSide);                                                                             // [0xbe8c7b0] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnJumpActivated
-	// void OnJumpActivated();                                                                                               // [0xbad51a0] Final|Native|Protected 
+	// void OnJumpActivated();                                                                                               // [0xbe8c79c] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnDriftKickDeactivated
-	// void OnDriftKickDeactivated();                                                                                        // [0xbad4f88] Final|Native|Protected 
+	// void OnDriftKickDeactivated();                                                                                        // [0xbe8c644] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnDriftKickActivated
-	// void OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                 // [0xbad5060] Final|Native|Protected 
+	// void OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                 // [0xbe8c6d8] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnDriftDurationChanged
-	// void OnDriftDurationChanged(float duration);                                                                          // [0xbad4f9c] Final|Native|Protected 
+	// void OnDriftDurationChanged(float duration);                                                                          // [0xbe8c658] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnDriftDeactivated
-	// void OnDriftDeactivated();                                                                                            // [0xbad4f88] Final|Native|Protected 
+	// void OnDriftDeactivated();                                                                                            // [0xbe8c644] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnDraftStateChanged
-	// void OnDraftStateChanged(EDelmarDraftingState CurrentState);                                                          // [0xbad4ec8] Final|Native|Protected 
+	// void OnDraftStateChanged(EDelmarDraftingState CurrentState);                                                          // [0xbe8c5c4] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnBonusSpeedDeactivated
-	// void OnBonusSpeedDeactivated();                                                                                       // [0xbad4eb4] Final|Native|Protected 
+	// void OnBonusSpeedDeactivated();                                                                                       // [0xbe8c5b0] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.OnBonusSpeedActivated
-	// void OnBonusSpeedActivated();                                                                                         // [0xbad4ea0] Final|Native|Protected 
+	// void OnBonusSpeedActivated();                                                                                         // [0xbe8c59c] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.GetWheelContactBoneName
-	// FName GetWheelContactBoneName(EDelMarVehicleWheelIndex WheelIndex);                                                   // [0xbad40cc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FName GetWheelContactBoneName(EDelMarVehicleWheelIndex WheelIndex);                                                   // [0xbe8b984] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.GetRightBoosters
-	// TArray<UNiagaraComponent*> GetRightBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad3d98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetRightBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8b73c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.GetLeftBoosters
-	// TArray<UNiagaraComponent*> GetLeftBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad3824] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetLeftBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8b3a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarUnifiedVehicleCosmeticActor.GetAllBoosters
-	// TArray<UNiagaraComponent*> GetAllBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad30d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetAllBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8ae34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/DelMarCosmetics.DelMarSpringSettings
@@ -519,11 +520,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarDriverCosmeticPlayerComponent.On_RepCosmeticData
-	// void On_RepCosmeticData();                                                                                            // [0xbad55f0] Final|Native|Protected 
+	// void On_RepCosmeticData();                                                                                            // [0xbe8cc98] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarDriverCosmeticPlayerComponent.HandlePlayerControllerLoadoutChanged
-	// void HandlePlayerControllerLoadoutChanged(FCosmeticLoadout& Loadout);                                                 // [0xbad4adc] Final|Native|Protected|HasOutParms 
+	// void HandlePlayerControllerLoadoutChanged(FCosmeticLoadout& Loadout);                                                 // [0xbe8c294] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCosmetics.DelMarDriverCosmeticPlayerComponent.HandleBotControllerLoadoutChanged
-	// void HandleBotControllerLoadoutChanged(class ADelMarAIController* AIController, FFortAthenaLoadout& Loadout);         // [0xbad4998] Final|Native|Protected|HasOutParms 
+	// void HandleBotControllerLoadoutChanged(class ADelMarAIController* AIController, FFortAthenaLoadout& Loadout);         // [0xbe8c18c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarBodyCosmeticActor
@@ -546,31 +547,31 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetWheelSetups
-	// TArray<FDelMarVehicleWheelSetup> GetWheelSetups(EDelMarVehicleWheelIndex WheelIndex);                                 // [0xbad425c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleWheelSetup> GetWheelSetups(EDelMarVehicleWheelIndex WheelIndex);                                 // [0xbe8ba94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetWheelCosmeticActorOffset
-	// FVector GetWheelCosmeticActorOffset();                                                                                // [0x2b1775c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWheelCosmeticActorOffset();                                                                                // [0x2d99fe8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetSkeletalMesh
-	// class USkeletalMesh* GetSkeletalMesh();                                                                               // [0x9242580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMesh* GetSkeletalMesh();                                                                               // [0x9245d08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetRightBoostersInfo
-	// TArray<FDelMarVehicleBooster> GetRightBoostersInfo();                                                                 // [0xbad4020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleBooster> GetRightBoostersInfo();                                                                 // [0xbe8b8d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetPhysicsAsset
-	// class UPhysicsAsset* GetPhysicsAsset();                                                                               // [0x720b2bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPhysicsAsset* GetPhysicsAsset();                                                                               // [0x7221fac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetLeftBoostersInfo
-	// TArray<FDelMarVehicleBooster> GetLeftBoostersInfo();                                                                  // [0xbad3aac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleBooster> GetLeftBoostersInfo();                                                                  // [0xbe8b540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetFrontRightWheelsBoneNames
-	// TArray<FDelMarVehicleWheelSetup> GetFrontRightWheelsBoneNames();                                                      // [0xbad355c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleWheelSetup> GetFrontRightWheelsBoneNames();                                                      // [0xbe8b1cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetFrontLeftWheelsBoneNames
-	// TArray<FDelMarVehicleWheelSetup> GetFrontLeftWheelsBoneNames();                                                       // [0xbad3520] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleWheelSetup> GetFrontLeftWheelsBoneNames();                                                       // [0xbe8b190] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetBoosterBySocketName
-	// class UNiagaraComponent* GetBoosterBySocketName(FName& SocketName);                                                   // [0xbad3404] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UNiagaraComponent* GetBoosterBySocketName(FName& SocketName);                                                   // [0xbe8b074] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetBodySetup
-	// class UDelMarVehicleBodySetup* GetBodySetup();                                                                        // [0x65dfad8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarVehicleBodySetup* GetBodySetup();                                                                        // [0x664cdcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetBackRightWheelsBoneNames
-	// TArray<FDelMarVehicleWheelSetup> GetBackRightWheelsBoneNames();                                                       // [0xbad33c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleWheelSetup> GetBackRightWheelsBoneNames();                                                       // [0xbe8b038] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetBackLeftWheelsBoneNames
-	// TArray<FDelMarVehicleWheelSetup> GetBackLeftWheelsBoneNames();                                                        // [0xbad338c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarVehicleWheelSetup> GetBackLeftWheelsBoneNames();                                                        // [0xbe8affc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBodyCosmeticActor.GetAnimInstanceClass
-	// class UClass* GetAnimInstanceClass();                                                                                 // [0xbad3350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetAnimInstanceClass();                                                                                 // [0xbe8afc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarBoosterCosmeticActor
@@ -586,17 +587,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.SetRightBoostersEnabled
-	// void SetRightBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad65c0] Final|Native|Public|BlueprintCallable 
+	// void SetRightBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8d688] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.SetLeftBoostersEnabled
-	// void SetLeftBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad5e38] Final|Native|Public|BlueprintCallable 
+	// void SetLeftBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8d1d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.SetAllBoostersEnabled
-	// void SetAllBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbad5790] Final|Native|Public|BlueprintCallable 
+	// void SetAllBoostersEnabled(bool bSetFrontBoosters, bool bSetBackBoosters, bool bSetSideBoosters, bool bSetDownBoosters, bool bEnabled, bool bReset); // [0xbe8cdf4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.GetRightBoosters
-	// TArray<UNiagaraComponent*> GetRightBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad3b0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetRightBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8b5a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.GetLeftBoosters
-	// TArray<UNiagaraComponent*> GetLeftBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad3598] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetLeftBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8b208] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarBoosterCosmeticActor.GetAllBoosters
-	// TArray<UNiagaraComponent*> GetAllBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbad2e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UNiagaraComponent*> GetAllBoosters(bool bFrontBoosters, bool bBackBoosters, bool bSideBoosters, bool bDownBoosters); // [0xbe8aca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarEngineAudioCosmeticActor
@@ -615,7 +616,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarEngineAudioCosmeticActor.GetComponentGroup
-	// class UAudioComponentGroup* GetComponentGroup();                                                                      // [0x2f4f448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAudioComponentGroup* GetComponentGroup();                                                                      // [0x2e65e14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarWheelContactFxCosmeticActor
@@ -638,13 +639,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarWheelContactFxCosmeticActor.HandleVehicleLanded
-	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                   // [0xbad4b9c] Final|Native|Protected 
+	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                   // [0xbe8c354] Final|Native|Protected 
 	// Function /Script/DelMarCosmetics.DelMarWheelContactFxCosmeticActor.GetWheelContactBoneName
-	// FName GetWheelContactBoneName(EDelMarVehicleWheelIndex WheelIndex);                                                   // [0xbad4194] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FName GetWheelContactBoneName(EDelMarVehicleWheelIndex WheelIndex);                                                   // [0xbe8ba0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelContactFxCosmeticActor.GetAudioBehavior
-	// class UAudioGameplayBehavior* GetAudioBehavior();                                                                     // [0x387d434] Final|BlueprintCosmetic|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UAudioGameplayBehavior* GetAudioBehavior();                                                                     // [0x38d68e0] Final|BlueprintCosmetic|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelContactFxCosmeticActor.BP_UpdateWheelContactFx
-	// void BP_UpdateWheelContactFx(FDelMarVehicleCosmeticWheelInfo WheelInfo, bool bActive, float AbsForwardSpeed, float AbsSideSpeed); // [0x130d900] Event|Protected|BlueprintEvent 
+	// void BP_UpdateWheelContactFx(FDelMarVehicleCosmeticWheelInfo WheelInfo, bool bActive, float AbsForwardSpeed, float AbsSideSpeed); // [0x3d1d968] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarCosmeticActorSpawnLogic_Wheel
@@ -671,19 +672,19 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsWheelOnGround
-	// bool IsWheelOnGround();                                                                                               // [0xbad4e44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWheelOnGround();                                                                                               // [0xbe8c540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsRightWheel
-	// bool IsRightWheel();                                                                                                  // [0xbad4d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRightWheel();                                                                                                  // [0xbe8c474] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsMirrored
-	// bool IsMirrored();                                                                                                    // [0xbad4d18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsMirrored();                                                                                                    // [0xbe8c458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsLeftWheel
-	// bool IsLeftWheel();                                                                                                   // [0xbad4d18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLeftWheel();                                                                                                   // [0xbe8c458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsFrontWheel
-	// bool IsFrontWheel();                                                                                                  // [0xbad4cfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFrontWheel();                                                                                                  // [0xbe8c43c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.IsBackWheel
-	// bool IsBackWheel();                                                                                                   // [0xbad4cdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBackWheel();                                                                                                   // [0xbe8c41c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCosmetics.DelMarWheelsCosmeticActor.GetMirrorType
-	// EDelMarWheelMirrorType GetMirrorType();                                                                               // [0xbad3ae8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarWheelMirrorType GetMirrorType();                                                                               // [0xbe8b57c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCosmetics.DelMarWheelSKCosmeticActor

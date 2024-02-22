@@ -22,9 +22,9 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResultsDispatcher.TryGetResults
-	// bool TryGetResults(FName& Name, FHarmonixAudioAnalyzerResults& Results);                                                 // [0xad713fc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetResults(FName& Name, FHarmonixAudioAnalyzerResults& Results);                                                 // [0xb05f23c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResultsDispatcher.HasProvider
-	// bool HasProvider(FName& Name);                                                                                           // [0xad71288] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool HasProvider(FName& Name);                                                                                           // [0xb05f0c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResultsProvider
@@ -39,9 +39,9 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResultsProvider.SetArbitraryTextureData
-	// void SetArbitraryTextureData(TArray<float>& ArbitraryTextureData);                                                       // [0xad71320] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetArbitraryTextureData(TArray<float>& ArbitraryTextureData);                                                       // [0xb05f160] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResultsProvider.CreateHarmonixAudioAnalyzerResultsProvider
-	// class UHarmonixAudioAnalyzerResultsProvider* CreateHarmonixAudioAnalyzerResultsProvider(FName Name);                     // [0xad71184] Final|Native|Static|Public|BlueprintCallable 
+	// class UHarmonixAudioAnalyzerResultsProvider* CreateHarmonixAudioAnalyzerResultsProvider(FName Name);                     // [0xb05f004] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerSourceEffectPreset
@@ -81,9 +81,9 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixAudioReactivity.HarmonixTextureBase.GetCurrentTextureWidth
-	// int32_t GetCurrentTextureWidth();                                                                                        // [0x95e97c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentTextureWidth();                                                                                        // [0x9600160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HarmonixAudioReactivity.HarmonixTextureBase.GetCurrentTextureHeight
-	// int32_t GetCurrentTextureHeight();                                                                                       // [0xad71270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentTextureHeight();                                                                                       // [0xb05f0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/HarmonixAudioReactivity.HarmonixHysteresisTextureBase
@@ -125,15 +125,15 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixAudioReactivity.HarmonixPeakTamer.Update
-	// void Update(float InputValue, float DeltaTimeSeconds);                                                                   // [0xad7152c] Final|Native|Public|BlueprintCallable 
+	// void Update(float InputValue, float DeltaTimeSeconds);                                                                   // [0xb05f36c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HarmonixAudioReactivity.HarmonixPeakTamer.GetValue
-	// float GetValue();                                                                                                        // [0x33e3010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetValue();                                                                                                        // [0x340306c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HarmonixAudioReactivity.HarmonixPeakTamer.GetPeak
-	// float GetPeak();                                                                                                         // [0x3364064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPeak();                                                                                                         // [0x330bfdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HarmonixAudioReactivity.HarmonixPeakTamer.CreateHarmonixPeakTamer
-	// class UHarmonixPeakTamer* CreateHarmonixPeakTamer();                                                                     // [0xad71244] Final|Native|Static|Public|BlueprintCallable 
+	// class UHarmonixPeakTamer* CreateHarmonixPeakTamer();                                                                     // [0xb05f084] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HarmonixAudioReactivity.HarmonixPeakTamer.Configure
-	// void Configure(FHarmonixPeakTamerSettings& Settings);                                                                    // [0xad710d8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void Configure(FHarmonixPeakTamerSettings& Settings);                                                                    // [0xb05ef58] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/HarmonixAudioReactivity.HarmonixAudioAnalyzerResults

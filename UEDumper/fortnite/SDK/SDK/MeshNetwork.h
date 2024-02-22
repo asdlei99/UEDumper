@@ -43,24 +43,24 @@ public:
 	bool                                               bConnectedToRoot;                                           // 0x0360   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0361   (0x0007)  MISSED
 	FDateTime                                          MeshPingTime;                                               // 0x0368   (0x0008)  
-	SDK_UNDEFINED(16,2585) /* TArray<FString> */       __um(ParentIds);                                            // 0x0370   (0x0010)  
-	SDK_UNDEFINED(16,2586) /* FString */               __um(ClientId);                                             // 0x0380   (0x0010)  
+	SDK_UNDEFINED(16,2594) /* TArray<FString> */       __um(ParentIds);                                            // 0x0370   (0x0010)  
+	SDK_UNDEFINED(16,2595) /* FString */               __um(ClientId);                                             // 0x0380   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0390   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerUpdateMultipleLevelsVisibility
-	// void ServerUpdateMultipleLevelsVisibility(TArray<FUpdateLevelVisibilityLevelInfo> LevelVisibilities);                 // [0x7bdc600] Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerUpdateMultipleLevelsVisibility(TArray<FUpdateLevelVisibilityLevelInfo> LevelVisibilities);                 // [0x7bf2ca4] Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerUpdateLevelVisibility
-	// void ServerUpdateLevelVisibility(FUpdateLevelVisibilityLevelInfo LevelVisibility);                                    // [0x7bdc510] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerUpdateLevelVisibility(FUpdateLevelVisibilityLevelInfo LevelVisibility);                                    // [0x7bf2b30] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerSetClientId
-	// void ServerSetClientId(FString NewClientId);                                                                          // [0x7bdc414] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetClientId(FString NewClientId);                                                                          // [0x7bf2a78] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_ParentIds
-	// void OnRep_ParentIds();                                                                                               // [0x7bdc400] Final|Native|Protected 
+	// void OnRep_ParentIds();                                                                                               // [0x7bf2a64] Final|Native|Protected 
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_MeshPingTime
-	// void OnRep_MeshPingTime();                                                                                            // [0x23d61d4] Native|Protected     
+	// void OnRep_MeshPingTime();                                                                                            // [0x385f960] Native|Protected     
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_ConnectedToRoot
-	// void OnRep_ConnectedToRoot();                                                                                         // [0x7bdc3ec] Final|Native|Protected 
+	// void OnRep_ConnectedToRoot();                                                                                         // [0x7bf2a50] Final|Native|Protected 
 };
 
 /// Class /Script/MeshNetwork.MeshBeaconHost
@@ -88,12 +88,12 @@ public:
 };
 
 /// Class /Script/MeshNetwork.MeshNetDriver
-/// Size: 0x0018 (0x000880 - 0x000898)
+/// Size: 0x0018 (0x000888 - 0x0008A0)
 class UMeshNetDriver : public UIpNetDriver
 { 
 public:
-	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0880   (0x0008)  MISSED
-	TArray<class AActor*>                              ClientDormantDynamicActors;                                 // 0x0888   (0x0010)  
+	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0888   (0x0008)  MISSED
+	TArray<class AActor*>                              ClientDormantDynamicActors;                                 // 0x0890   (0x0010)  
 };
 
 /// Class /Script/MeshNetwork.MeshNetworkComponent
@@ -103,16 +103,16 @@ class UMeshNetworkComponent : public UActorComponent
 public:
 	EMeshNetworkRelevancy                              MeshRelevancy;                                              // 0x00A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00A1   (0x0007)  MISSED
-	SDK_UNDEFINED(80,2587) /* TMap<FString, FAggregatedFunction> */ __um(AggregatedFunctions);                     // 0x00A8   (0x0050)  
-	SDK_UNDEFINED(80,2588) /* TMap<FName, FAggregatedFunctionConfig> */ __um(AggregatedFunctionConfigs);           // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,2596) /* TMap<FString, FAggregatedFunction> */ __um(AggregatedFunctions);                     // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,2597) /* TMap<FName, FAggregatedFunctionConfig> */ __um(AggregatedFunctionConfigs);           // 0x00F8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0148   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshNetworkComponent.IsConnectedToMeshRoot
-	// bool IsConnectedToMeshRoot();                                                                                         // [0x7bdc3c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsConnectedToMeshRoot();                                                                                         // [0x7bf2a2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkComponent.GetMeshNetworkNodeType
-	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                        // [0x7bdb744] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                        // [0x7bf1d44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MeshNetwork.MeshNetworkSubsystem
@@ -120,11 +120,11 @@ public:
 class UMeshNetworkSubsystem : public UGameInstanceSubsystem
 { 
 public:
-	SDK_UNDEFINED(16,2589) /* FMulticastInlineDelegate */ __um(OnMeshNodeTypeChanged);                             // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2590) /* FMulticastInlineDelegate */ __um(OnConnectedToRootChanged);                          // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,2591) /* FMulticastInlineDelegate */ __um(OnGameServerNodeTypeChanged);                       // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,2592) /* FMulticastInlineDelegate */ __um(OnMeshMetaDataUpdated);                             // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,2593) /* FMulticastInlineDelegate */ __um(OnMeshPlayerRequested);                             // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,2598) /* FMulticastInlineDelegate */ __um(OnMeshNodeTypeChanged);                             // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2599) /* FMulticastInlineDelegate */ __um(OnConnectedToRootChanged);                          // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,2600) /* FMulticastInlineDelegate */ __um(OnGameServerNodeTypeChanged);                       // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,2601) /* FMulticastInlineDelegate */ __um(OnMeshMetaDataUpdated);                             // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,2602) /* FMulticastInlineDelegate */ __um(OnMeshPlayerRequested);                             // 0x0070   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x30];                                      // 0x0080   (0x0030)  MISSED
 	EMeshNetworkNodeType                               NodeType;                                                   // 0x00B0   (0x0001)  
 	EMeshNetworkNodeType                               GameServerNodeType;                                         // 0x00B1   (0x0001)  
@@ -135,23 +135,23 @@ public:
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.SetMetaDataWithKey
-	// void SetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                    // [0x7bdc744] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                    // [0x7bf2da8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.SetMetaData
-	// void SetMetaData(FMeshMetaDataStruct& MetaData);                                                                      // [0x7bdb768] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMetaData(FMeshMetaDataStruct& MetaData);                                                                      // [0x7bf1d80] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMetaDataWithKey
-	// bool GetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                    // [0x7bdb7cc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                    // [0x7bf1de4] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMetadata
-	// void GetMetadata(FMeshMetaDataStruct& MetaData);                                                                      // [0x7bdb768] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetMetadata(FMeshMetaDataStruct& MetaData);                                                                      // [0x7bf1d80] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMeshNetworkNodeType
-	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                        // [0x7a3db4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                        // [0x7bf1d68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetGameServerNodeType
-	// EMeshNetworkNodeType GetGameServerNodeType();                                                                         // [0x7bdb72c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetGameServerNodeType();                                                                         // [0x7bf1d2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetConnectedToRoot
-	// bool GetConnectedToRoot();                                                                                            // [0x7bdb714] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetConnectedToRoot();                                                                                            // [0x7bf1d14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.EnableMeshReplication
-	// void EnableMeshReplication(class AActor* Actor, class UClass* MeshComponentClass);                                    // [0x7bdb5bc] Final|Native|Public|BlueprintCallable 
+	// void EnableMeshReplication(class AActor* Actor, class UClass* MeshComponentClass);                                    // [0x7bf1c48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.DisableMeshReplication
-	// void DisableMeshReplication(class AActor* Actor);                                                                     // [0x7bdb50c] Final|Native|Public|BlueprintCallable 
+	// void DisableMeshReplication(class AActor* Actor);                                                                     // [0x7bf1bd8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MeshNetwork.MeshReplicationGraphConnection
@@ -183,7 +183,7 @@ struct FAggregatedFunctionConfig
 	double                                             AggregationTimeout;                                         // 0x0000   (0x0008)  
 	bool                                               bAggregationEnabled;                                        // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
-	SDK_UNDEFINED(80,2594) /* TSet<FName> */           __um(NoAggregationParameters);                              // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,2603) /* TSet<FName> */           __um(NoAggregationParameters);                              // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/MeshNetwork.MeshMetaDataStruct

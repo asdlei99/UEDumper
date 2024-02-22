@@ -35,12 +35,12 @@ struct FEnergyRegenOverrideData
 };
 
 /// Class /Script/EnergyRuntime.FortComponent_Energy
-/// Size: 0x0248 (0x0000A0 - 0x0002E8)
+/// Size: 0x0250 (0x0000A0 - 0x0002F0)
 class UFortComponent_Energy : public UPawnComponent
 { 
 public:
-	SDK_UNDEFINED(16,11836) /* FMulticastInlineDelegate */ __um(OnEnergyCompletelyDrained);                        // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11837) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeComplete);                         // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11898) /* FMulticastInlineDelegate */ __um(OnEnergyCompletelyDrained);                        // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11899) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeComplete);                         // 0x00B0   (0x0010)  
 	FScalableFloat                                     MaxEnergy;                                                  // 0x00C0   (0x0028)  
 	FGameplayTagQuery                                  RechargeDisabledQuery;                                      // 0x00E8   (0x0048)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x0130   (0x0010)  MISSED
@@ -54,52 +54,54 @@ public:
 	FScalableFloat                                     RechargeAmountPerSecond;                                    // 0x01E8   (0x0028)  
 	FScalableFloat                                     RechargeDelayInSeconds;                                     // 0x0210   (0x0028)  
 	FScalableFloat                                     RechargePercentageLimit;                                    // 0x0238   (0x0028)  
-	TArray<FEnergyChannelingData>                      ActiveEnergyChannels;                                       // 0x0260   (0x0010)  
-	TArray<FEnergyChannelingData>                      NewActiveEnergyChannels;                                    // 0x0270   (0x0010)  
-	TArray<FEnergyRegenOverrideData>                   EnergyRegenOverrides;                                       // 0x0280   (0x0010)  
-	SDK_UNDEFINED(16,11838) /* FMulticastInlineDelegate */ __um(OnCurrentEnergyChanged);                           // 0x0290   (0x0010)  
-	SDK_UNDEFINED(16,11839) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeBegun);                            // 0x02A0   (0x0010)  
-	SDK_UNDEFINED(16,11840) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeInterrupted);                      // 0x02B0   (0x0010)  
-	SDK_UNDEFINED(16,11841) /* FMulticastInlineDelegate */ __um(OnEnergyReachedMax);                               // 0x02C0   (0x0010)  
-	SDK_UNDEFINED(16,11842) /* FMulticastInlineDelegate */ __um(OnEnergyReachedMinForUsing);                       // 0x02D0   (0x0010)  
-	bool                                               bRechargingEnabled : 1;                                     // 0x02E0:0 (0x0001)  
-	bool                                               bIsRecharging : 1;                                          // 0x02E0:1 (0x0001)  
-	bool                                               bIsUsingEnergy : 1;                                         // 0x02E0:2 (0x0001)  
-	unsigned char                                      UnknownData02_6[0x7];                                       // 0x02E1   (0x0007)  MISSED
+	bool                                               bRemoveEnergyUsersWhenEmpty;                                // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0261   (0x0007)  MISSED
+	TArray<FEnergyChannelingData>                      ActiveEnergyChannels;                                       // 0x0268   (0x0010)  
+	TArray<FEnergyChannelingData>                      NewActiveEnergyChannels;                                    // 0x0278   (0x0010)  
+	TArray<FEnergyRegenOverrideData>                   EnergyRegenOverrides;                                       // 0x0288   (0x0010)  
+	SDK_UNDEFINED(16,11900) /* FMulticastInlineDelegate */ __um(OnCurrentEnergyChanged);                           // 0x0298   (0x0010)  
+	SDK_UNDEFINED(16,11901) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeBegun);                            // 0x02A8   (0x0010)  
+	SDK_UNDEFINED(16,11902) /* FMulticastInlineDelegate */ __um(OnEnergyRechargeInterrupted);                      // 0x02B8   (0x0010)  
+	SDK_UNDEFINED(16,11903) /* FMulticastInlineDelegate */ __um(OnEnergyReachedMax);                               // 0x02C8   (0x0010)  
+	SDK_UNDEFINED(16,11904) /* FMulticastInlineDelegate */ __um(OnEnergyReachedMinForUsing);                       // 0x02D8   (0x0010)  
+	bool                                               bRechargingEnabled : 1;                                     // 0x02E8:0 (0x0001)  
+	bool                                               bIsRecharging : 1;                                          // 0x02E8:1 (0x0001)  
+	bool                                               bIsUsingEnergy : 1;                                         // 0x02E8:2 (0x0001)  
+	unsigned char                                      UnknownData03_6[0x7];                                       // 0x02E9   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/EnergyRuntime.FortComponent_Energy.UseEnergy
-	// bool UseEnergy(float& OutAmountOfEnergyUsed, float AmountOfEnergyToUse, bool bUseEnergyEvenOnFailure, class UObject* OptionalEnergyUser, bool bBroadcastEnergyPercentChanged); // [0xaa9f7f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool UseEnergy(float& OutAmountOfEnergyUsed, float AmountOfEnergyToUse, bool bUseEnergyEvenOnFailure, class UObject* OptionalEnergyUser, bool bBroadcastEnergyPercentChanged); // [0xad9b094] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StopUsingEnergy
-	// bool StopUsingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser);                           // [0xaa9f6a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StopUsingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser);                           // [0xad9af44] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StopAddingEnergy
-	// bool StopAddingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergySource);                        // [0xaa9f4cc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StopAddingEnergy(FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergySource);                        // [0xad9ad70] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StartUsingEnergy
-	// bool StartUsingEnergy(float EnergyToUseToStart, float EnergyToUsePerSecond, FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser); // [0xaa9f278] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartUsingEnergy(float EnergyToUseToStart, float EnergyToUsePerSecond, FGameplayTag& EnergyUseIdentifier, class UObject* OptionalEnergyUser); // [0xad9ab98] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.StartAddingEnergy
-	// bool StartAddingEnergy(float EnergyToAddPerSecond, FGameplayTag& EnergySourceIdentifier, class UObject* OptionalEnergySource); // [0xaa9f0a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartAddingEnergy(float EnergyToAddPerSecond, FGameplayTag& EnergySourceIdentifier, class UObject* OptionalEnergySource); // [0xad9aa04] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.SetAllEnergyUsageFree
-	// bool SetAllEnergyUsageFree(bool bShouldEnergyUsageBeFree);                                                            // [0xaa9efc4] Final|Native|Public|BlueprintCallable 
+	// bool SetAllEnergyUsageFree(bool bShouldEnergyUsageBeFree);                                                            // [0xad9a964] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.RemoveRegenDataOverride
-	// bool RemoveRegenDataOverride(FGameplayTag& RegenOverrideIdentifier);                                                  // [0xaa9eee0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveRegenDataOverride(FGameplayTag& RegenOverrideIdentifier);                                                  // [0xad9a880] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xaa9ec9c] Final|Native|Private 
+	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xad9a6b0] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2f3277c] Final|Native|Private 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2f6bec4] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                              // [0x1b03864] Final|Native|Private 
+	// void OnMutatorUpdated();                                                                                              // [0x2532f70] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HasSufficientEnergy
-	// bool HasSufficientEnergy(float EnergyAmountToTest);                                                                   // [0xaa9ebcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSufficientEnergy(float EnergyAmountToTest);                                                                   // [0xad9a620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HandleAbilitySystemComponentInvalidated
-	// void HandleAbilitySystemComponentInvalidated();                                                                       // [0x37c44e0] Final|Native|Private 
+	// void HandleAbilitySystemComponentInvalidated();                                                                       // [0x367f828] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.HandleAbilitySystemComponentInitialized
-	// void HandleAbilitySystemComponentInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* PlayerPawn); // [0x2b4fa60] Final|Native|Private 
+	// void HandleAbilitySystemComponentInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* PlayerPawn); // [0x2a8bd30] Final|Native|Private 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.GetCurrentEnergyPercentage
-	// float GetCurrentEnergyPercentage();                                                                                   // [0x1e08770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentEnergyPercentage();                                                                                   // [0x1e42614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.ApplyRegenDataOverride
-	// void ApplyRegenDataOverride(FGameplayTag& RegenOverrideIdentifier, float NewRechargeAmountPerSecond, float NewRechargeDelayInSeconds, float NewRechargePercentageLimit); // [0xaa9e97c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ApplyRegenDataOverride(FGameplayTag& RegenOverrideIdentifier, float NewRechargeAmountPerSecond, float NewRechargeDelayInSeconds, float NewRechargePercentageLimit); // [0xad9a3d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EnergyRuntime.FortComponent_Energy.AddEnergy
-	// bool AddEnergy(float& OutAmountOfEnergyAdded, float AmountOfEnergyToAdd, class UObject* OptionalEnergySource, bool bBroadcastEnergyPercentChanged); // [0xaa9e764] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool AddEnergy(float& OutAmountOfEnergyAdded, float AmountOfEnergyToAdd, class UObject* OptionalEnergySource, bool bBroadcastEnergyPercentChanged); // [0xad9a1b8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 

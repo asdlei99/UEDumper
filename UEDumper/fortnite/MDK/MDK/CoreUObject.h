@@ -25,7 +25,7 @@ public:
 
 	/// Functions
 	// Function /Script/CoreUObject.Object.ExecuteUbergraph
-	// void ExecuteUbergraph(int32_t EntryPoint);                                                                               // [0x130d900] Event|Public|BlueprintEvent 
+	// void ExecuteUbergraph(int32_t EntryPoint);                                                                               // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/CoreUObject.Interface
@@ -2600,7 +2600,7 @@ enum EMouseCursor : uint8_t
 };
 
 /// Enum /Script/CoreUObject.EUnit
-/// Size: 0x57
+/// Size: 0x59
 enum EUnit : uint8_t
 {
 	EUnit__Micrometers                                                               = 0,
@@ -2621,45 +2621,47 @@ enum EUnit : uint8_t
 	EUnit__MilesPerHour                                                              = 15,
 	EUnit__DegreesPerSecond                                                          = 16,
 	EUnit__RadiansPerSecond                                                          = 17,
-	EUnit__Celsius                                                                   = 18,
-	EUnit__Farenheit                                                                 = 19,
-	EUnit__Kelvin                                                                    = 20,
-	EUnit__Micrograms                                                                = 21,
-	EUnit__Milligrams                                                                = 22,
-	EUnit__Grams                                                                     = 23,
-	EUnit__Kilograms                                                                 = 24,
-	EUnit__MetricTons                                                                = 25,
-	EUnit__Ounces                                                                    = 26,
-	EUnit__Pounds                                                                    = 27,
-	EUnit__Stones                                                                    = 28,
-	EUnit__Newtons                                                                   = 33,
-	EUnit__PoundsForce                                                               = 34,
-	EUnit__KilogramsForce                                                            = 35,
-	EUnit__KilogramCentimetersPerSecondSquared                                       = 36,
-	EUnit__NewtonMeters                                                              = 37,
-	EUnit__KilogramCentimetersSquaredPerSecondSquared                                = 38,
-	EUnit__Hertz                                                                     = 39,
-	EUnit__Kilohertz                                                                 = 40,
-	EUnit__Megahertz                                                                 = 41,
-	EUnit__Gigahertz                                                                 = 42,
-	EUnit__RevolutionsPerMinute                                                      = 43,
-	EUnit__Bytes                                                                     = 44,
-	EUnit__Kilobytes                                                                 = 45,
-	EUnit__Megabytes                                                                 = 46,
-	EUnit__Gigabytes                                                                 = 47,
-	EUnit__Terabytes                                                                 = 48,
-	EUnit__Lumens                                                                    = 49,
-	EUnit__Milliseconds                                                              = 56,
-	EUnit__Seconds                                                                   = 57,
-	EUnit__Minutes                                                                   = 58,
-	EUnit__Hours                                                                     = 59,
-	EUnit__Days                                                                      = 60,
-	EUnit__Months                                                                    = 61,
-	EUnit__Years                                                                     = 62,
-	EUnit__Multiplier                                                                = 65,
-	EUnit__Percentage                                                                = 64,
-	EUnit__Unspecified                                                               = 70,
-	EUnit__EUnit_MAX                                                                 = 71
+	EUnit__CentimetersPerSecondSquared                                               = 18,
+	EUnit__MetersPerSecondSquared                                                    = 19,
+	EUnit__Celsius                                                                   = 20,
+	EUnit__Farenheit                                                                 = 21,
+	EUnit__Kelvin                                                                    = 22,
+	EUnit__Micrograms                                                                = 23,
+	EUnit__Milligrams                                                                = 24,
+	EUnit__Grams                                                                     = 25,
+	EUnit__Kilograms                                                                 = 26,
+	EUnit__MetricTons                                                                = 27,
+	EUnit__Ounces                                                                    = 28,
+	EUnit__Pounds                                                                    = 29,
+	EUnit__Stones                                                                    = 30,
+	EUnit__Newtons                                                                   = 35,
+	EUnit__PoundsForce                                                               = 36,
+	EUnit__KilogramsForce                                                            = 37,
+	EUnit__KilogramCentimetersPerSecondSquared                                       = 38,
+	EUnit__NewtonMeters                                                              = 39,
+	EUnit__KilogramCentimetersSquaredPerSecondSquared                                = 40,
+	EUnit__Hertz                                                                     = 41,
+	EUnit__Kilohertz                                                                 = 42,
+	EUnit__Megahertz                                                                 = 43,
+	EUnit__Gigahertz                                                                 = 44,
+	EUnit__RevolutionsPerMinute                                                      = 45,
+	EUnit__Bytes                                                                     = 46,
+	EUnit__Kilobytes                                                                 = 47,
+	EUnit__Megabytes                                                                 = 48,
+	EUnit__Gigabytes                                                                 = 49,
+	EUnit__Terabytes                                                                 = 50,
+	EUnit__Lumens                                                                    = 51,
+	EUnit__Milliseconds                                                              = 58,
+	EUnit__Seconds                                                                   = 59,
+	EUnit__Minutes                                                                   = 60,
+	EUnit__Hours                                                                     = 61,
+	EUnit__Days                                                                      = 62,
+	EUnit__Months                                                                    = 63,
+	EUnit__Years                                                                     = 64,
+	EUnit__Multiplier                                                                = 67,
+	EUnit__Percentage                                                                = 66,
+	EUnit__Unspecified                                                               = 72,
+	EUnit__EUnit_MAX                                                                 = 73
 };
 
 /// Enum /Script/CoreUObject.EPropertyAccessChangeNotifyMode

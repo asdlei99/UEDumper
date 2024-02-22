@@ -22,12 +22,12 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeEditCameraModeRuntime.FortCreativeEditCameraController.ServerSetImmersiveEdit
-	// void ServerSetImmersiveEdit(bool bWantsToImmersiveEdit, bool bIsCreativeEditModeEnabled);                                // [0xb72eab4] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerSetImmersiveEdit(bool bWantsToImmersiveEdit, bool bIsCreativeEditModeEnabled);                                // [0xb845a18] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/CreativeEditCameraModeRuntime.FortCreativeEditCameraController.OnWantsToImmersiveEditChanged
-	// void OnWantsToImmersiveEditChanged(class UFortCreativeOption* CreativeOption, char IndexValue);                          // [0xb72e974] Final|Native|Private 
+	// void OnWantsToImmersiveEditChanged(class UFortCreativeOption* CreativeOption, char IndexValue);                          // [0xb845954] Final|Native|Private 
 	// Function /Script/CreativeEditCameraModeRuntime.FortCreativeEditCameraController.OnCreativeEditModeChanged
-	// void OnCreativeEditModeChanged(bool bIsCreativeEditModeEnabled);                                                         // [0xb72e8b0] Final|Native|Private 
+	// void OnCreativeEditModeChanged(bool bIsCreativeEditModeEnabled);                                                         // [0xb8458d4] Final|Native|Private 
 	// Function /Script/CreativeEditCameraModeRuntime.FortCreativeEditCameraController.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb72e770] Final|Native|Private 
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb845810] Final|Native|Private 
 };
 

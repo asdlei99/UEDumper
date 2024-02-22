@@ -31,9 +31,9 @@ public:
 	class UAnimSequenceBase*                           EvergreenSlidingPose;                                       // 0x0730   (0x0008)  
 	class UAnimSequenceBase*                           EvergreenGrindRailPose;                                     // 0x0738   (0x0008)  
 	class UAnimSequenceBase*                           TacSprintHandPose;                                          // 0x0740   (0x0008)  
-	SDK_UNDEFINED(32,14629) /* TWeakObjectPtr<UAnimMontage*> */ __um(DashMontage);                                 // 0x0748   (0x0020)  
-	SDK_UNDEFINED(32,14630) /* TWeakObjectPtr<UAnimMontage*> */ __um(DeltaEquipMontage);                           // 0x0768   (0x0020)  
-	SDK_UNDEFINED(16,14631) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(SwingMontages);                       // 0x0788   (0x0010)  
+	SDK_UNDEFINED(32,14761) /* TWeakObjectPtr<UAnimMontage*> */ __um(DashMontage);                                 // 0x0748   (0x0020)  
+	SDK_UNDEFINED(32,14762) /* TWeakObjectPtr<UAnimMontage*> */ __um(DeltaEquipMontage);                           // 0x0768   (0x0020)  
+	SDK_UNDEFINED(16,14763) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(SwingMontages);                       // 0x0788   (0x0010)  
 	FAlphaBlendArgs                                    DeltaEquipBlendOut;                                         // 0x0798   (0x0010)  
 	bool                                               bUseOceanRiverTacSprint;                                    // 0x07A8   (0x0001)  
 	bool                                               bUseDeltaTacSprint;                                         // 0x07A9   (0x0001)  
@@ -60,5 +60,40 @@ public:
 	bool                                               bIsParachuting : 1;                                         // 0x07D5:3 (0x0001)  
 	bool                                               bIsDolphinDoubleJump : 1;                                   // 0x07D5:4 (0x0001)  
 	unsigned char                                      UnknownData02_6[0x5A];                                      // 0x07D6   (0x005A)  MISSED
+};
+
+/// Class /Script/LinedNotebookGameplayRuntime.LinedNotebookLakeWeaponAnimInstance
+/// Size: 0x0090 (0x000470 - 0x000500)
+class ULinedNotebookLakeWeaponAnimInstance : public UFortWeaponAnimInstance
+{ 
+public:
+	SDK_UNDEFINED(16,14764) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(Swing01Montages);                     // 0x0468   (0x0010)  
+	SDK_UNDEFINED(16,14765) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(Swing02Montages);                     // 0x0478   (0x0010)  
+	SDK_UNDEFINED(16,14766) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(Swing03Montages);                     // 0x0488   (0x0010)  
+	SDK_UNDEFINED(16,14767) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(Swing04Montages);                     // 0x0498   (0x0010)  
+	SDK_UNDEFINED(16,14768) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(Swing05Montages);                     // 0x04A8   (0x0010)  
+	SDK_UNDEFINED(16,14769) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(UpperBodySwing01Montages);            // 0x04B8   (0x0010)  
+	SDK_UNDEFINED(16,14770) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(UpperBodySwing02Montages);            // 0x04C8   (0x0010)  
+	SDK_UNDEFINED(16,14771) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(InAirAttackMontages);                 // 0x04D8   (0x0010)  
+	bool                                               bIsEquipping;                                               // 0x04E8   (0x0001)  
+	bool                                               bSwing01;                                                   // 0x04E9   (0x0001)  
+	bool                                               bSwing02;                                                   // 0x04EA   (0x0001)  
+	bool                                               bSwing03;                                                   // 0x04EB   (0x0001)  
+	bool                                               bSwing04;                                                   // 0x04EC   (0x0001)  
+	bool                                               bSwing05;                                                   // 0x04ED   (0x0001)  
+	bool                                               bIsUpperBodySwing01;                                        // 0x04EE   (0x0001)  
+	bool                                               bIsUpperBodySwing02;                                        // 0x04EF   (0x0001)  
+	bool                                               bIsAirLand;                                                 // 0x04F0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x04F1   (0x000F)  MISSED
+};
+
+/// Class /Script/LinedNotebookGameplayRuntime.LinedNotebookRiverWeaponAnimInstance
+/// Size: 0x0010 (0x000470 - 0x000480)
+class ULinedNotebookRiverWeaponAnimInstance : public UFortWeaponAnimInstance
+{ 
+public:
+	SDK_UNDEFINED(16,14772) /* TArray<TWeakObjectPtr<UAnimMontage*>> */ __um(InAirMontages);                       // 0x0468   (0x0010)  
+	bool                                               bIsAirLand;                                                 // 0x0478   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0479   (0x0007)  MISSED
 };
 

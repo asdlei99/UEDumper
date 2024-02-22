@@ -24,9 +24,9 @@ public:
 
 	/// Functions
 	// Function /Script/EventModeUI.FocusButton.HandleEventModeFocusingChanged
-	// void HandleEventModeFocusingChanged(bool bIsEventModeFocusing);                                                       // [0xb41b310] Final|Native|Private 
+	// void HandleEventModeFocusingChanged(bool bIsEventModeFocusing);                                                       // [0xb52c2fc] Final|Native|Private 
 	// Function /Script/EventModeUI.FocusButton.HandleCanUseEventModeFocusChanged
-	// void HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus);                                                   // [0xb41b254] Final|Native|Private 
+	// void HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus);                                                   // [0xb52c280] Final|Native|Private 
 };
 
 /// Class /Script/EventModeUI.FortEventModeEmotesWidget
@@ -34,10 +34,10 @@ public:
 class UFortEventModeEmotesWidget : public UFortHUDElementWidget
 { 
 public:
-	SDK_UNDEFINED(32,13395) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote1);                    // 0x0328   (0x0020)  
-	SDK_UNDEFINED(32,13396) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote2);                    // 0x0348   (0x0020)  
-	SDK_UNDEFINED(32,13397) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote3);                    // 0x0368   (0x0020)  
-	SDK_UNDEFINED(16,13398) /* TArray<TWeakObjectPtr<UFortMontageItemDefinitionBase*>> */ __um(RandomEmotes);      // 0x0388   (0x0010)  
+	SDK_UNDEFINED(32,13489) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote1);                    // 0x0328   (0x0020)  
+	SDK_UNDEFINED(32,13490) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote2);                    // 0x0348   (0x0020)  
+	SDK_UNDEFINED(32,13491) /* TWeakObjectPtr<UFortMontageItemDefinitionBase*> */ __um(Emote3);                    // 0x0368   (0x0020)  
+	SDK_UNDEFINED(16,13492) /* TArray<TWeakObjectPtr<UFortMontageItemDefinitionBase*>> */ __um(RandomEmotes);      // 0x0388   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0398   (0x0008)  MISSED
 	class URichTextBlock*                              Text_Emote1;                                                // 0x03A0   (0x0008)  
 	class URichTextBlock*                              Text_Emote2;                                                // 0x03A8   (0x0008)  
@@ -47,9 +47,9 @@ public:
 
 	/// Functions
 	// Function /Script/EventModeUI.FortEventModeEmotesWidget.OnFocusStateChanged
-	// void OnFocusStateChanged(bool bIsFocusing);                                                                           // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnFocusStateChanged(bool bIsFocusing);                                                                           // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/EventModeUI.FortEventModeEmotesWidget.OnFocusAvailableChanged
-	// void OnFocusAvailableChanged(bool bIsFocusAvailable);                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnFocusAvailableChanged(bool bIsFocusAvailable);                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/EventModeUI.FortMobileActionButtonBehavior_Focus
@@ -62,8 +62,8 @@ public:
 
 	/// Functions
 	// Function /Script/EventModeUI.FortMobileActionButtonBehavior_Focus.HandleEventModeFocusingChanged
-	// void HandleEventModeFocusingChanged(bool bIsEventModeFocusing);                                                       // [0xa1a3aa4] Final|Native|Private 
+	// void HandleEventModeFocusingChanged(bool bIsEventModeFocusing);                                                       // [0xa1a1a1c] Final|Native|Private 
 	// Function /Script/EventModeUI.FortMobileActionButtonBehavior_Focus.HandleCanUseEventModeFocusChanged
-	// void HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus);                                                   // [0xa1a3b68] Final|Native|Private 
+	// void HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus);                                                   // [0xa1a1a9c] Final|Native|Private 
 };
 

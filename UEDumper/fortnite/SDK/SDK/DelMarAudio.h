@@ -25,15 +25,15 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioCheatManager.DelMarStopMusic
-	// void DelMarStopMusic();                                                                                               // [0x3047908] Final|Exec|Native|Protected 
+	// void DelMarStopMusic();                                                                                               // [0x3097b14] Final|Exec|Native|Protected 
 	// Function /Script/DelMarAudio.DelMarAudioCheatManager.DelMarStartMusic
-	// void DelMarStartMusic();                                                                                              // [0x3047908] Final|Exec|Native|Protected 
+	// void DelMarStartMusic();                                                                                              // [0x3097b14] Final|Exec|Native|Protected 
 	// Function /Script/DelMarAudio.DelMarAudioCheatManager.DelMarSkipMusic
-	// void DelMarSkipMusic();                                                                                               // [0x3047908] Final|Exec|Native|Protected 
+	// void DelMarSkipMusic();                                                                                               // [0x3097b14] Final|Exec|Native|Protected 
 	// Function /Script/DelMarAudio.DelMarAudioCheatManager.DelMarSetMusicTrigger
-	// void DelMarSetMusicTrigger(FName TriggerName);                                                                        // [0x86db54c] Final|Exec|Native|Protected 
+	// void DelMarSetMusicTrigger(FName TriggerName);                                                                        // [0x86debf4] Final|Exec|Native|Protected 
 	// Function /Script/DelMarAudio.DelMarAudioCheatManager.DelMarPrintMusicTrackName
-	// void DelMarPrintMusicTrackName();                                                                                     // [0x3047908] Final|Exec|Native|Protected 
+	// void DelMarPrintMusicTrackName();                                                                                     // [0x3097b14] Final|Exec|Native|Protected 
 };
 
 /// Class /Script/DelMarAudio.DelMarAudioProximityComponentBase
@@ -41,8 +41,8 @@ public:
 class UDelMarAudioProximityComponentBase : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,13021) /* FMulticastInlineDelegate */ __um(OnProximityStart);                                 // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,13022) /* FMulticastInlineDelegate */ __um(OnProximityStop);                                  // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,13114) /* FMulticastInlineDelegate */ __um(OnProximityStart);                                 // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,13115) /* FMulticastInlineDelegate */ __um(OnProximityStop);                                  // 0x00B0   (0x0010)  
 	bool                                               bProximityActive;                                           // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xF];                                       // 0x00C1   (0x000F)  MISSED
 	class UDelMarAudioProximitySubsystem*              Subsystem;                                                  // 0x00D0   (0x0008)  
@@ -50,13 +50,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioProximityComponentBase.CreateSoundAttached
-	// class UAudioComponent* CreateSoundAttached(class USoundBase* sound, class USceneComponent* AttachComponent, FName AttachPointName, float VolumeMultiplier, float PitchMultiplier, bool bStopWhenAttachedToDestroyed, bool bAutoDestroy); // [0xbac4070] Final|Native|Protected|BlueprintCallable 
+	// class UAudioComponent* CreateSoundAttached(class USoundBase* sound, class USceneComponent* AttachComponent, FName AttachPointName, float VolumeMultiplier, float PitchMultiplier, bool bStopWhenAttachedToDestroyed, bool bAutoDestroy); // [0xbe7b53c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarAudioProximityComponentBase.BP_Update
-	// void BP_Update(class APlayerCameraManager* Camera, class ADelMarVehicle* Vehicle);                                    // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_Update(class APlayerCameraManager* Camera, class ADelMarVehicle* Vehicle);                                    // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarAudioProximityComponentBase.BP_StopProximity
-	// void BP_StopProximity();                                                                                              // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_StopProximity();                                                                                              // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarAudioProximityComponentBase.BP_StartProximity
-	// void BP_StartProximity();                                                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_StartProximity();                                                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DelMarAudio.DelMarAudioProximityComponent
@@ -73,7 +73,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioProximityComponent.GetObjectScale
-	// float GetObjectScale();                                                                                               // [0x83cb754] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetObjectScale();                                                                                               // [0x83d1ae8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarAudio.DelMarAudioPassbyComponent
@@ -83,8 +83,8 @@ class UDelMarAudioPassbyComponent : public UDelMarAudioProximityComponent
 public:
 	class USoundBase*                                  PassBySound;                                                // 0x00F8   (0x0008)  
 	class UAudioComponent*                             PassbyComponent;                                            // 0x0100   (0x0008)  
-	SDK_UNDEFINED(16,13023) /* FMulticastInlineDelegate */ __um(OnPassbyStart);                                    // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,13024) /* FMulticastInlineDelegate */ __um(OnPassbyStop);                                     // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,13116) /* FMulticastInlineDelegate */ __um(OnPassbyStart);                                    // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,13117) /* FMulticastInlineDelegate */ __um(OnPassbyStop);                                     // 0x0118   (0x0010)  
 	float                                              MinRelativeSpeed;                                           // 0x0128   (0x0004)  
 	float                                              MinSpeedStopThresholdOffset;                                // 0x012C   (0x0004)  
 	float                                              PassbyStartRadiusMax;                                       // 0x0130   (0x0004)  
@@ -96,13 +96,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioPassbyComponent.IsPlayingPassby
-	// bool IsPlayingPassby();                                                                                               // [0x7fe0c58] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayingPassby();                                                                                               // [0x7fef870] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarAudio.DelMarAudioPassbyComponent.HandlePassbyFinished
-	// void HandlePassbyFinished();                                                                                          // [0xbac44b4] Final|Native|Public  
+	// void HandlePassbyFinished();                                                                                          // [0xbe7b7d8] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioPassbyComponent.BP_StopPassby
-	// void BP_StopPassby();                                                                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_StopPassby();                                                                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarAudioPassbyComponent.BP_StartPassby
-	// void BP_StartPassby(class AActor* Instigator, float PassbySpeed);                                                     // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_StartPassby(class AActor* Instigator, float PassbySpeed);                                                     // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DelMarAudio.DelMarAudioProximitySubsystem
@@ -143,21 +143,21 @@ class UDelMarAudioStateMixerSubsystem : public UTickableWorldSubsystem
 { 
 public:
 	TArray<FDelMarStateMixCollection>                  AvailableMixes;                                             // 0x0040   (0x0010)  
-	SDK_UNDEFINED(80,13025) /* TMap<FGameplayTag, FDelMarStateMix> */ __um(ActiveMixes);                           // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,13026) /* TMap<FGameplayTag, FDelMarStateMix> */ __um(TemporaryMixes);                        // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,13118) /* TMap<FGameplayTag, FDelMarStateMix> */ __um(ActiveMixes);                           // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13119) /* TMap<FGameplayTag, FDelMarStateMix> */ __um(TemporaryMixes);                        // 0x00A0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioStateMixerSubsystem.SetMixState
-	// bool SetMixState(FGameplayTag& MixState, bool bFallBackToNearestParent, bool bDeactivateChildren);                    // [0xbac49b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetMixState(FGameplayTag& MixState, bool bFallBackToNearestParent, bool bDeactivateChildren);                    // [0xbe7bc14] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarAudioStateMixerSubsystem.RemoveMixes
-	// void RemoveMixes(FName GroupName);                                                                                    // [0xbac4838] Final|Native|Public|BlueprintCallable 
+	// void RemoveMixes(FName GroupName);                                                                                    // [0xbe7bb14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarAudioStateMixerSubsystem.GetActiveMixes
-	// TMap<FGameplayTag, FDelMarStateMix> GetActiveMixes();                                                                 // [0xbac4424] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TMap<FGameplayTag, FDelMarStateMix> GetActiveMixes();                                                                 // [0xbe7b748] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarAudio.DelMarAudioStateMixerSubsystem.ClearMixState
-	// void ClearMixState(FGameplayTag& MixState, bool bDeactivateChildren);                                                 // [0xbac3f1c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ClearMixState(FGameplayTag& MixState, bool bDeactivateChildren);                                                 // [0xbe7b3e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarAudioStateMixerSubsystem.AddMixes
-	// void AddMixes(FName GroupName, TArray<FDelMarStateMix>& Mixes);                                                       // [0xbac3df8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddMixes(FName GroupName, TArray<FDelMarStateMix>& Mixes);                                                       // [0xbe7b30c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent
@@ -181,17 +181,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleTurboStopped
-	// void HandleVehicleTurboStopped();                                                                                     // [0xbac4824] Final|Native|Public  
+	// void HandleVehicleTurboStopped();                                                                                     // [0xbe7bb00] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleTurboStarted
-	// void HandleVehicleTurboStarted();                                                                                     // [0xbac4810] Final|Native|Public  
+	// void HandleVehicleTurboStarted();                                                                                     // [0xbe7baec] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleHitHazard
-	// void HandleVehicleHitHazard();                                                                                        // [0xbac47fc] Final|Native|Public  
+	// void HandleVehicleHitHazard();                                                                                        // [0xbe7bad8] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                               // [0xbac473c] Final|Native|Public  
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                               // [0xbe7b99c] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleBigAirStopped
-	// void HandleVehicleBigAirStopped();                                                                                    // [0xbac4728] Final|Native|Public  
+	// void HandleVehicleBigAirStopped();                                                                                    // [0xbe7b988] Final|Native|Public  
 	// Function /Script/DelMarAudio.DelMarAudioStatePlayspaceComponent.HandleVehicleBigAirStarted
-	// void HandleVehicleBigAirStarted();                                                                                    // [0xbac4714] Final|Native|Public  
+	// void HandleVehicleBigAirStarted();                                                                                    // [0xbe7b974] Final|Native|Public  
 };
 
 /// Class /Script/DelMarAudio.DelMarCrowdAudioManager
@@ -206,17 +206,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnVehicleDemolished
-	// void BP_OnVehicleDemolished();                                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnVehicleDemolished();                                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnRacerStateChanged
-	// void BP_OnRacerStateChanged(FGameplayTag NewStateTag);                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnRacerStateChanged(FGameplayTag NewStateTag);                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnRaceModeChanged
-	// void BP_OnRaceModeChanged(FGameplayTag NewRaceModeTag);                                                               // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnRaceModeChanged(FGameplayTag NewRaceModeTag);                                                               // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnPlayerFinishedRace
-	// void BP_OnPlayerFinishedRace();                                                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnPlayerFinishedRace();                                                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnGameplayStateChanged
-	// void BP_OnGameplayStateChanged(FGameplayTag NewStateTag);                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnGameplayStateChanged(FGameplayTag NewStateTag);                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarCrowdAudioManager.BP_OnApproachingFinishLine
-	// void BP_OnApproachingFinishLine();                                                                                    // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnApproachingFinishLine();                                                                                    // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DelMarAudio.DelMarRaceMusicManager
@@ -234,7 +234,7 @@ public:
 	float                                              StartLineFadeOutDurtation;                                  // 0x00C4   (0x0004)  
 	class UAudioComponent*                             MainMusicComponent;                                         // 0x00C8   (0x0008)  
 	class UAudioComponent*                             StartLineComponent;                                         // 0x00D0   (0x0008)  
-	SDK_UNDEFINED(32,13027) /* TWeakObjectPtr<UDelMarRaceMusicPlaylist*> */ __um(DefaultPlaylist);                 // 0x00D8   (0x0020)  
+	SDK_UNDEFINED(32,13120) /* TWeakObjectPtr<UDelMarRaceMusicPlaylist*> */ __um(DefaultPlaylist);                 // 0x00D8   (0x0020)  
 	class UDelMarRaceMusicPlaylist*                    Playlist;                                                   // 0x00F8   (0x0008)  
 	TArray<FDelMarMusicTrack>                          Songs;                                                      // 0x0100   (0x0010)  
 	FDelMarMusicTrack                                  PlayingSong;                                                // 0x0110   (0x0020)  
@@ -244,29 +244,29 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.StopMusic
-	// void StopMusic();                                                                                                     // [0xbac4d58] Final|Native|Public|BlueprintCallable 
+	// void StopMusic();                                                                                                     // [0xbe7bf30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.StartStartLineMusic
-	// void StartStartLineMusic(float CountdownLength);                                                                      // [0xbac4c94] Final|Native|Public|BlueprintCallable 
+	// void StartStartLineMusic(float CountdownLength);                                                                      // [0xbe7beb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.StartRaceMusic
-	// void StartRaceMusic();                                                                                                // [0xbac4c80] Final|Native|Public|BlueprintCallable 
+	// void StartRaceMusic();                                                                                                // [0xbe7be9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.SkipTrack
-	// void SkipTrack();                                                                                                     // [0xbac4c54] Final|Native|Public|BlueprintCallable 
+	// void SkipTrack();                                                                                                     // [0xbe7be70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.SetPlaylist
-	// void SetPlaylist(class UDelMarRaceMusicPlaylist* InPlaylist);                                                         // [0xbac4b94] Final|Native|Public|BlueprintCallable 
+	// void SetPlaylist(class UDelMarRaceMusicPlaylist* InPlaylist);                                                         // [0xbe7bdf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.SetAudioTrigger
-	// void SetAudioTrigger(FName InTrigger);                                                                                // [0xbac48f8] Final|Native|Protected|BlueprintCallable 
+	// void SetAudioTrigger(FName InTrigger);                                                                                // [0xbe7bb94] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.HandleSpectatorViewTargetChange
-	// void HandleSpectatorViewTargetChange(class AFortPlayerController* PlayerController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xbac4558] Final|Native|Protected 
+	// void HandleSpectatorViewTargetChange(class AFortPlayerController* PlayerController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xbe7b87c] Final|Native|Protected 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.BP_OnRacerStateChanged
-	// void BP_OnRacerStateChanged(FGameplayTag NewStateTag);                                                                // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnRacerStateChanged(FGameplayTag NewStateTag);                                                                // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.BP_OnRaceModeChanged
-	// void BP_OnRaceModeChanged(FGameplayTag NewModeTag);                                                                   // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnRaceModeChanged(FGameplayTag NewModeTag);                                                                   // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.BP_OnPlayerFinishedRace
-	// void BP_OnPlayerFinishedRace();                                                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnPlayerFinishedRace();                                                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.BP_OnGameplayStateChanged
-	// void BP_OnGameplayStateChanged(FGameplayTag NewStateTag);                                                             // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnGameplayStateChanged(FGameplayTag NewStateTag);                                                             // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarAudio.DelMarRaceMusicManager.BP_OnCountdownTimeSet
-	// void BP_OnCountdownTimeSet(float TimeUntilRunStart);                                                                  // [0x130d900] Event|Public|BlueprintEvent 
+	// void BP_OnCountdownTimeSet(float TimeUntilRunStart);                                                                  // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DelMarAudio.DelMarRaceMusicSettingsActor
@@ -285,7 +285,7 @@ class UDelMarAudioVirtualizationSubsystem : public UTickableWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x10];                                      // 0x0040   (0x0010)  MISSED
-	SDK_UNDEFINED(80,13028) /* TMap<FGameplayTag, FDelmarAudioVirtualizationSettings> */ __um(PlayerNumMap);       // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13121) /* TMap<FGameplayTag, FDelmarAudioVirtualizationSettings> */ __um(PlayerNumMap);       // 0x0050   (0x0050)  
 	int32_t                                            MaxNumPlayers;                                              // 0x00A0   (0x0004)  
 	int32_t                                            MaxDistantPlayers;                                          // 0x00A4   (0x0004)  
 	int32_t                                            DistantPlayerThreshold;                                     // 0x00A8   (0x0004)  
@@ -295,7 +295,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarAudio.DelMarAudioVirtualizationSubsystem.HandleRaceModeChanged
-	// void HandleRaceModeChanged(FDelMarEvent_RaceModeSet& Event);                                                          // [0xbac44cc] Final|Native|Public|HasOutParms 
+	// void HandleRaceModeChanged(FDelMarEvent_RaceModeSet& Event);                                                          // [0xbe7b7f0] Final|Native|Public|HasOutParms 
 };
 
 /// Struct /Script/DelMarAudio.DelMarEvent_AudioStateComponent

@@ -1100,7 +1100,7 @@ public:
 	class UStaticMesh*                                 TargetStaticMesh;                                           // 0x00A8   (0x0008)  
 	class USkeletalMesh*                               TargetSkeletalMesh;                                         // 0x00B0   (0x0008)  
 	class AActor*                                      TargetDynamicMesh;                                          // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(16,14735) /* FString */              __um(TargetUVLayer);                                        // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14873) /* FString */              __um(TargetUVLayer);                                        // 0x00C0   (0x0010)  
 	bool                                               bHasTargetUVLayer;                                          // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00D1   (0x0007)  MISSED
 	class UStaticMesh*                                 SourceStaticMesh;                                           // 0x00D8   (0x0008)  
@@ -1109,22 +1109,22 @@ public:
 	bool                                               bHideSourceMesh;                                            // 0x00F0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00F1   (0x0007)  MISSED
 	class UTexture2D*                                  SourceNormalMap;                                            // 0x00F8   (0x0008)  
-	SDK_UNDEFINED(16,14736) /* FString */              __um(SourceNormalMapUVLayer);                               // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,14874) /* FString */              __um(SourceNormalMapUVLayer);                               // 0x0100   (0x0010)  
 	EBakeNormalSpace                                   SourceNormalSpace;                                          // 0x0110   (0x0004)  
 	bool                                               bHasSourceNormalMap;                                        // 0x0114   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0115   (0x0003)  MISSED
 	float                                              ProjectionDistance;                                         // 0x0118   (0x0004)  
 	bool                                               bProjectionInWorldSpace;                                    // 0x011C   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x011D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,14737) /* TArray<FString> */      __um(TargetUVLayerNamesList);                               // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,14738) /* TArray<FString> */      __um(SourceUVLayerNamesList);                               // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,14875) /* TArray<FString> */      __um(TargetUVLayerNamesList);                               // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,14876) /* TArray<FString> */      __um(SourceUVLayerNamesList);                               // 0x0130   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeInputMeshProperties.GetTargetUVLayerNamesFunc
-	// TArray<FString> GetTargetUVLayerNamesFunc();                                                                          // [0xbe5c95c] Final|Native|Public|Const 
+	// TArray<FString> GetTargetUVLayerNamesFunc();                                                                          // [0xab9e304] Final|Native|Public|Const 
 	// Function /Script/MeshModelingToolsExp.BakeInputMeshProperties.GetSourceUVLayerNamesFunc
-	// TArray<FString> GetSourceUVLayerNamesFunc();                                                                          // [0xbe5c940] Final|Native|Public|Const 
+	// TArray<FString> GetSourceUVLayerNamesFunc();                                                                          // [0xab9e2e8] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeNormalMapToolProperties
@@ -1164,13 +1164,13 @@ class UBakeTexture2DProperties : public UInteractiveToolPropertySet
 { 
 public:
 	class UTexture2D*                                  SourceTexture;                                              // 0x00A8   (0x0008)  
-	SDK_UNDEFINED(16,14739) /* FString */              __um(UVLayer);                                              // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,14740) /* TArray<FString> */      __um(UVLayerNamesList);                                     // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14877) /* FString */              __um(UVLayer);                                              // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14878) /* TArray<FString> */      __um(UVLayerNamesList);                                     // 0x00C0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeTexture2DProperties.GetUVLayerNamesFunc
-	// TArray<FString> GetUVLayerNamesFunc();                                                                                // [0xb196f80] Final|Native|Public|Const 
+	// TArray<FString> GetUVLayerNamesFunc();                                                                                // [0xaa7a708] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeMultiTexture2DProperties
@@ -1179,14 +1179,14 @@ class UBakeMultiTexture2DProperties : public UInteractiveToolPropertySet
 { 
 public:
 	TArray<class UTexture2D*>                          MaterialIDSourceTextures;                                   // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,14741) /* FString */              __um(UVLayer);                                              // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14742) /* TArray<FString> */      __um(UVLayerNamesList);                                     // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14879) /* FString */              __um(UVLayer);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14880) /* TArray<FString> */      __um(UVLayerNamesList);                                     // 0x00C8   (0x0010)  
 	TArray<class UTexture2D*>                          AllSourceTextures;                                          // 0x00D8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeMultiTexture2DProperties.GetUVLayerNamesFunc
-	// TArray<FString> GetUVLayerNamesFunc();                                                                                // [0xb2aaebc] Final|Native|Public|Const 
+	// TArray<FString> GetUVLayerNamesFunc();                                                                                // [0xab9d860] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeVisualizationProperties
@@ -1731,7 +1731,7 @@ public:
 	class UDragAlignmentMechanic*                      DragAlignmentMechanic;                                      // 0x01D0   (0x0008)  
 	class UConstructionPlaneMechanic*                  PlaneMechanic;                                              // 0x01D8   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x1E8];                                     // 0x01E0   (0x01E8)  MISSED
-	SDK_UNDEFINED(80,14743) /* TSet<UPrimitiveComponent*> */ __um(AllComponents);                                  // 0x03C8   (0x0050)  
+	SDK_UNDEFINED(80,14881) /* TSet<UPrimitiveComponent*> */ __um(AllComponents);                                  // 0x03C8   (0x0050)  
 	unsigned char                                      UnknownData04_5[0xA0];                                      // 0x0418   (0x00A0)  MISSED
 	class UPreviewGeometry*                            PreviewGeometry;                                            // 0x04B8   (0x0008)  
 };
@@ -1752,9 +1752,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshConstraintProperties.IsPreventTinyTrianglesEnabled
-	// bool IsPreventTinyTrianglesEnabled();                                                                                 // [0x60aadb8] Native|Protected|Const 
+	// bool IsPreventTinyTrianglesEnabled();                                                                                 // [0x610da68] Native|Protected|Const 
 	// Function /Script/MeshModelingToolsExp.MeshConstraintProperties.IsPreventNormalFlipsEnabled
-	// bool IsPreventNormalFlipsEnabled();                                                                                   // [0x3463ba4] Native|Protected|Const 
+	// bool IsPreventNormalFlipsEnabled();                                                                                   // [0x3519bc8] Native|Protected|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.RemeshProperties
@@ -1797,7 +1797,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.RevolveSplineToolActionPropertySet.ResetAxis
-	// void ResetAxis();                                                                                                     // [0xbe742ec] Final|Native|Public  
+	// void ResetAxis();                                                                                                     // [0xabb5c68] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.RevolveSplineTool
@@ -1897,19 +1897,19 @@ class UBakeMeshAttributeMapsToolProperties : public UInteractiveToolPropertySet
 public:
 	int32_t                                            MapTypes;                                                   // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14744) /* FString */              __um(MapPreview);                                           // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14882) /* FString */              __um(MapPreview);                                           // 0x00B0   (0x0010)  
 	EBakeTextureResolution                             Resolution;                                                 // 0x00C0   (0x0004)  
 	EBakeTextureBitDepth                               BitDepth;                                                   // 0x00C4   (0x0004)  
 	EBakeTextureSamplesPerPixel                        SamplesPerPixel;                                            // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
 	class UTexture2D*                                  SampleFilterMask;                                           // 0x00D0   (0x0008)  
-	SDK_UNDEFINED(16,14745) /* TArray<FString> */      __um(MapPreviewNamesList);                                  // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14883) /* TArray<FString> */      __um(MapPreviewNamesList);                                  // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x50];                                      // 0x00E8   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeMeshAttributeMapsToolProperties.GetMapPreviewNamesFunc
-	// TArray<FString> GetMapPreviewNamesFunc();                                                                             // [0xbe742b4] Final|Native|Public  
+	// TArray<FString> GetMapPreviewNamesFunc();                                                                             // [0xabb5c30] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeMeshAttributeTool
@@ -1938,7 +1938,7 @@ public:
 	class UMaterialInstanceDynamic*                    PreviewMaterial;                                            // 0x01C0   (0x0008)  
 	class UMaterialInstanceDynamic*                    BentNormalPreviewMaterial;                                  // 0x01C8   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x01D0   (0x0050)  MISSED
-	SDK_UNDEFINED(80,14746) /* TMap<EBakeMapType, UTexture2D*> */ __um(CachedMaps);                                // 0x0220   (0x0050)  
+	SDK_UNDEFINED(80,14884) /* TMap<EBakeMapType, UTexture2D*> */ __um(CachedMaps);                                // 0x0220   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x98];                                      // 0x0270   (0x0098)  MISSED
 	class UTexture2D*                                  EmptyNormalMap;                                             // 0x0308   (0x0008)  
 	class UTexture2D*                                  EmptyColorMapBlack;                                         // 0x0310   (0x0008)  
@@ -1961,7 +1961,7 @@ public:
 class UBakeMeshAttributeMapsResultToolProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(80,14747) /* TMap<EBakeMapType, UTexture2D*> */ __um(Result);                                    // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,14885) /* TMap<EBakeMapType, UTexture2D*> */ __um(Result);                                    // 0x00A8   (0x0050)  
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeMeshAttributeVertexToolBuilder
@@ -2016,19 +2016,19 @@ class UBakeMultiMeshAttributeMapsToolProperties : public UInteractiveToolPropert
 public:
 	int32_t                                            MapTypes;                                                   // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14748) /* FString */              __um(MapPreview);                                           // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14886) /* FString */              __um(MapPreview);                                           // 0x00B0   (0x0010)  
 	EBakeTextureResolution                             Resolution;                                                 // 0x00C0   (0x0004)  
 	EBakeTextureBitDepth                               BitDepth;                                                   // 0x00C4   (0x0004)  
 	EBakeTextureSamplesPerPixel                        SamplesPerPixel;                                            // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
 	class UTexture2D*                                  SampleFilterMask;                                           // 0x00D0   (0x0008)  
-	SDK_UNDEFINED(16,14749) /* TArray<FString> */      __um(MapPreviewNamesList);                                  // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14887) /* TArray<FString> */      __um(MapPreviewNamesList);                                  // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x50];                                      // 0x00E8   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeMultiMeshAttributeMapsToolProperties.GetMapPreviewNamesFunc
-	// TArray<FString> GetMapPreviewNamesFunc();                                                                             // [0xbe742b4] Final|Native|Public  
+	// TArray<FString> GetMapPreviewNamesFunc();                                                                             // [0xabb5c30] Final|Native|Public  
 };
 
 /// Struct /Script/MeshModelingToolsExp.BakeMultiMeshDetailProperties
@@ -2049,16 +2049,16 @@ public:
 	class UStaticMesh*                                 TargetStaticMesh;                                           // 0x00A8   (0x0008)  
 	class USkeletalMesh*                               TargetSkeletalMesh;                                         // 0x00B0   (0x0008)  
 	class AActor*                                      TargetDynamicMesh;                                          // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(16,14750) /* FString */              __um(TargetUVLayer);                                        // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14888) /* FString */              __um(TargetUVLayer);                                        // 0x00C0   (0x0010)  
 	TArray<FBakeMultiMeshDetailProperties>             SourceMeshes;                                               // 0x00D0   (0x0010)  
 	float                                              ProjectionDistance;                                         // 0x00E0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00E4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14751) /* TArray<FString> */      __um(TargetUVLayerNamesList);                               // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,14889) /* TArray<FString> */      __um(TargetUVLayerNamesList);                               // 0x00E8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.BakeMultiMeshInputToolProperties.GetTargetUVLayerNamesFunc
-	// TArray<FString> GetTargetUVLayerNamesFunc();                                                                          // [0xbe742d0] Final|Native|Public|Const 
+	// TArray<FString> GetTargetUVLayerNamesFunc();                                                                          // [0xabb5c4c] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.BakeMultiMeshAttributeMapsTool
@@ -2169,15 +2169,15 @@ class UOutputPolygroupLayerProperties : public UInteractiveToolPropertySet
 public:
 	FName                                              GroupLayer;                                                 // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14752) /* TArray<FString> */      __um(OptionsList);                                          // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14890) /* TArray<FString> */      __um(OptionsList);                                          // 0x00B0   (0x0010)  
 	bool                                               bShowNewLayerName;                                          // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00C1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14753) /* FString */              __um(NewLayerName);                                         // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14891) /* FString */              __um(NewLayerName);                                         // 0x00C8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.OutputPolygroupLayerProperties.GetGroupOptionsList
-	// TArray<FString> GetGroupOptionsList();                                                                                // [0xb196f44] Final|Native|Public  
+	// TArray<FString> GetGroupOptionsList();                                                                                // [0xaa7a6cc] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.ConvertToPolygonsOperatorFactory
@@ -2235,14 +2235,14 @@ public:
 	bool                                               bHitGridGroundPlaneIfCloser;                                // 0x0119   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x2];                                       // 0x011A   (0x0002)  MISSED
 	ECubeGridToolFaceSelectionMode                     FaceSelectionMode;                                          // 0x011C   (0x0004)  
-	SDK_UNDEFINED(16,14754) /* FString */              __um(ToggleCornerMode);                                     // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,14755) /* FString */              __um(PushPull);                                             // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,14756) /* FString */              __um(ResizeGrid);                                           // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,14892) /* FString */              __um(ToggleCornerMode);                                     // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,14893) /* FString */              __um(PushPull);                                             // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,14894) /* FString */              __um(ResizeGrid);                                           // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData05_5[0x10];                                      // 0x0150   (0x0010)  MISSED
-	SDK_UNDEFINED(16,14757) /* FString */              __um(FlipSelection);                                        // 0x0160   (0x0010)  
-	SDK_UNDEFINED(16,14758) /* FString */              __um(GridGizmo);                                            // 0x0170   (0x0010)  
-	SDK_UNDEFINED(16,14759) /* FString */              __um(QuickShiftGizmo);                                      // 0x0180   (0x0010)  
-	SDK_UNDEFINED(16,14760) /* FString */              __um(AlignGizmo);                                           // 0x0190   (0x0010)  
+	SDK_UNDEFINED(16,14895) /* FString */              __um(FlipSelection);                                        // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,14896) /* FString */              __um(GridGizmo);                                            // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,14897) /* FString */              __um(QuickShiftGizmo);                                      // 0x0180   (0x0010)  
+	SDK_UNDEFINED(16,14898) /* FString */              __um(AlignGizmo);                                           // 0x0190   (0x0010)  
 	bool                                               bInCornerMode;                                              // 0x01A0   (0x0001)  
 	bool                                               bAllowedToEditGrid;                                         // 0x01A1   (0x0001)  
 	unsigned char                                      UnknownData06_6[0x6];                                       // 0x01A2   (0x0006)  MISSED
@@ -2259,19 +2259,19 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.SlideForward
-	// void SlideForward();                                                                                                  // [0xbea90ac] Final|Native|Public  
+	// void SlideForward();                                                                                                  // [0xabea9d0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.SlideBack
-	// void SlideBack();                                                                                                     // [0xbea9094] Final|Native|Public  
+	// void SlideBack();                                                                                                     // [0xabea9b8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.ResetGridFromActor
-	// void ResetGridFromActor();                                                                                            // [0xbea9064] Final|Native|Public  
+	// void ResetGridFromActor();                                                                                            // [0xabea988] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.Push
-	// void Push();                                                                                                          // [0xbea904c] Final|Native|Public  
+	// void Push();                                                                                                          // [0xabea970] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.Pull
-	// void Pull();                                                                                                          // [0xbea9034] Final|Native|Public  
+	// void Pull();                                                                                                          // [0xabea958] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.Flip
-	// void Flip();                                                                                                          // [0xbea8fb0] Final|Native|Public  
+	// void Flip();                                                                                                          // [0xabea8d4] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridToolActions.CornerMode
-	// void CornerMode();                                                                                                    // [0xbea8f50] Final|Native|Public  
+	// void CornerMode();                                                                                                    // [0xabea874] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.CubeGridDuringActivityActions
@@ -2284,9 +2284,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.CubeGridDuringActivityActions.Done
-	// void Done();                                                                                                          // [0xbea8f98] Final|Native|Public  
+	// void Done();                                                                                                          // [0xabea8bc] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.CubeGridDuringActivityActions.Cancel
-	// void Cancel();                                                                                                        // [0xbea8f20] Final|Native|Public  
+	// void Cancel();                                                                                                        // [0xabea844] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.CubeGridTool
@@ -2365,7 +2365,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00B5   (0x0003)  MISSED
 	int32_t                                            Subdivisions;                                               // 0x00B8   (0x0004)  
 	FName                                              WeightMap;                                                  // 0x00BC   (0x0004)  
-	SDK_UNDEFINED(16,14761) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14899) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00C0   (0x0010)  
 	bool                                               bInvertWeightMap;                                           // 0x00D0   (0x0001)  
 	bool                                               bShowWireframe;                                             // 0x00D1   (0x0001)  
 	bool                                               bDisableSizeWarning;                                        // 0x00D2   (0x0001)  
@@ -2374,7 +2374,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.DisplaceMeshCommonProperties.GetWeightMapsFunc
-	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xbea8fe0] Final|Native|Public  
+	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xabea904] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.SelectiveTessellationProperties
@@ -2385,12 +2385,12 @@ public:
 	EDisplaceMeshToolTriangleSelectionType             SelectionType;                                              // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A9   (0x0003)  MISSED
 	FName                                              ActiveMaterial;                                             // 0x00AC   (0x0004)  
-	SDK_UNDEFINED(16,14762) /* TArray<FString> */      __um(MaterialIDList);                                       // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14900) /* TArray<FString> */      __um(MaterialIDList);                                       // 0x00B0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.SelectiveTessellationProperties.GetMaterialIDsFunc
-	// TArray<FString> GetMaterialIDsFunc();                                                                                 // [0xb196f44] Final|Native|Public  
+	// TArray<FString> GetMaterialIDsFunc();                                                                                 // [0xaa7a6cc] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.DisplaceMeshTextureMapProperties
@@ -2597,7 +2597,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.DynamicSculptToolActions.DiscardAttributes
-	// void DiscardAttributes();                                                                                             // [0xbea8f68] Final|Native|Public  
+	// void DiscardAttributes();                                                                                             // [0xabea88c] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.BrushRemeshProperties
@@ -2729,21 +2729,21 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.WorldOrigin
-	// void WorldOrigin();                                                                                                   // [0xbea90dc] Final|Native|Public  
+	// void WorldOrigin();                                                                                                   // [0xabeaa00] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Top
-	// void Top();                                                                                                           // [0xbea90c4] Final|Native|Public  
+	// void Top();                                                                                                           // [0xabea9e8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Right
-	// void Right();                                                                                                         // [0xbea907c] Final|Native|Public  
+	// void Right();                                                                                                         // [0xabea9a0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Left
-	// void Left();                                                                                                          // [0xbea901c] Final|Native|Public  
+	// void Left();                                                                                                          // [0xabea940] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Front
-	// void Front();                                                                                                         // [0xbea8fc8] Final|Native|Public  
+	// void Front();                                                                                                         // [0xabea8ec] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Center
-	// void Center();                                                                                                        // [0xbea8f38] Final|Native|Public  
+	// void Center();                                                                                                        // [0xabea85c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Bottom
-	// void Bottom();                                                                                                        // [0xbea8f08] Final|Native|Public  
+	// void Bottom();                                                                                                        // [0xabea82c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.EditPivotToolActionPropertySet.Back
-	// void Back();                                                                                                          // [0xbea8ef0] Final|Native|Public  
+	// void Back();                                                                                                          // [0xabea814] Final|Native|Public  
 };
 
 /// Struct /Script/MeshModelingToolsExp.EditPivotTarget
@@ -2836,9 +2836,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.HoleFillToolActions.SelectAll
-	// void SelectAll();                                                                                                     // [0xbef4a58] Final|Native|Public  
+	// void SelectAll();                                                                                                     // [0xac36388] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.HoleFillToolActions.Clear
-	// void Clear();                                                                                                         // [0xbef47d8] Final|Native|Public  
+	// void Clear();                                                                                                         // [0xac36108] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.HoleFillStatisticsProperties
@@ -2846,11 +2846,11 @@ public:
 class UHoleFillStatisticsProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14763) /* FString */              __um(InitialHoles);                                         // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,14764) /* FString */              __um(SelectedHoles);                                        // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14765) /* FString */              __um(SuccessfulFills);                                      // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,14766) /* FString */              __um(FailedFills);                                          // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,14767) /* FString */              __um(RemainingHoles);                                       // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,14901) /* FString */              __um(InitialHoles);                                         // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14902) /* FString */              __um(SelectedHoles);                                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14903) /* FString */              __um(SuccessfulFills);                                      // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14904) /* FString */              __um(FailedFills);                                          // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14905) /* FString */              __um(RemainingHoles);                                       // 0x00E8   (0x0010)  
 };
 
 /// Class /Script/MeshModelingToolsExp.HoleFillOperatorFactory
@@ -2904,9 +2904,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.LatticeDeformerToolProperties.Constrain
-	// void Constrain();                                                                                                     // [0xbef484c] Final|Native|Public  
+	// void Constrain();                                                                                                     // [0xac3617c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.LatticeDeformerToolProperties.ClearConstraints
-	// void ClearConstraints();                                                                                              // [0xbef4820] Final|Native|Public  
+	// void ClearConstraints();                                                                                              // [0xac36150] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.LatticeDeformerOperatorFactory
@@ -2953,13 +2953,13 @@ public:
 class UMeshAttributePaintToolProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14768) /* FString */              __um(Attribute);                                            // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14906) /* FString */              __um(Attribute);                                            // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x00B8   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshAttributePaintToolProperties.GetAttributeNames
-	// TArray<FString> GetAttributeNames();                                                                                  // [0xb2aaed8] Final|Native|Public  
+	// TArray<FString> GetAttributeNames();                                                                                  // [0xab9d87c] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshAttributePaintEditActions
@@ -3043,21 +3043,21 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.UnfreezeAll
-	// void UnfreezeAll();                                                                                                   // [0xbef4a28] Final|Native|Public  
+	// void UnfreezeAll();                                                                                                   // [0xac36358] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.ShrinkCurrent
-	// void ShrinkCurrent();                                                                                                 // [0xbef47a8] Final|Native|Public  
+	// void ShrinkCurrent();                                                                                                 // [0xac360d8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.GrowCurrent
-	// void GrowCurrent();                                                                                                   // [0xbef4920] Final|Native|Public  
+	// void GrowCurrent();                                                                                                   // [0xac36250] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.FreezeOthers
-	// void FreezeOthers();                                                                                                  // [0xbef4908] Final|Native|Public  
+	// void FreezeOthers();                                                                                                  // [0xac36238] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.FreezeCurrent
-	// void FreezeCurrent();                                                                                                 // [0xbef48d8] Final|Native|Public  
+	// void FreezeCurrent();                                                                                                 // [0xac36208] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.FloodFillCurrent
-	// void FloodFillCurrent();                                                                                              // [0xbef4968] Final|Native|Public  
+	// void FloodFillCurrent();                                                                                              // [0xac36298] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.ClearCurrent
-	// void ClearCurrent();                                                                                                  // [0xbef4834] Final|Native|Public  
+	// void ClearCurrent();                                                                                                  // [0xac36164] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshGroupPaintToolFreezeActions.ClearAll
-	// void ClearAll();                                                                                                      // [0xbef4808] Final|Native|Public  
+	// void ClearAll();                                                                                                      // [0xac36138] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshSculptToolBase
@@ -3070,9 +3070,9 @@ public:
 	class USculptBrushProperties*                      BrushProperties;                                            // 0x0108   (0x0008)  
 	class UWorkPlaneProperties*                        GizmoProperties;                                            // 0x0110   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x118];                                     // 0x0118   (0x0118)  MISSED
-	SDK_UNDEFINED(80,14769) /* TMap<int32_t, UMeshSculptBrushOpProps*> */ __um(BrushOpPropSets);                   // 0x0230   (0x0050)  
+	SDK_UNDEFINED(80,14907) /* TMap<int32_t, UMeshSculptBrushOpProps*> */ __um(BrushOpPropSets);                   // 0x0230   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x0280   (0x0050)  MISSED
-	SDK_UNDEFINED(80,14770) /* TMap<int32_t, UMeshSculptBrushOpProps*> */ __um(SecondaryBrushOpPropSets);          // 0x02D0   (0x0050)  
+	SDK_UNDEFINED(80,14908) /* TMap<int32_t, UMeshSculptBrushOpProps*> */ __um(SecondaryBrushOpPropSets);          // 0x02D0   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x6F0];                                     // 0x0320   (0x06F0)  MISSED
 	class UMeshEditingViewProperties*                  ViewProperties;                                             // 0x0A10   (0x0008)  
 	class UMaterialInstanceDynamic*                    ActiveOverrideMaterial;                                     // 0x0A18   (0x0008)  
@@ -3144,8 +3144,8 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A9   (0x0003)  MISSED
 	float                                              CheckerDensity;                                             // 0x00AC   (0x0004)  
 	class UMaterialInterface*                          OverrideMaterial;                                           // 0x00B0   (0x0008)  
-	SDK_UNDEFINED(16,14771) /* FString */              __um(UVChannel);                                            // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14772) /* TArray<FString> */      __um(UVChannelNamesList);                                   // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14909) /* FString */              __um(UVChannel);                                            // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14910) /* TArray<FString> */      __um(UVChannelNamesList);                                   // 0x00C8   (0x0010)  
 	bool                                               bFlatShading;                                               // 0x00D8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00D9   (0x0003)  MISSED
 	FLinearColor                                       Color;                                                      // 0x00DC   (0x0010)  
@@ -3160,7 +3160,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshInspectorMaterialProperties.GetUVChannelNamesFunc
-	// TArray<FString> GetUVChannelNamesFunc();                                                                              // [0xb2aaebc] Final|Native|Public|Const 
+	// TArray<FString> GetUVChannelNamesFunc();                                                                              // [0xab9d860] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshInspectorTool
@@ -3202,25 +3202,25 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.Shrink
-	// void Shrink();                                                                                                        // [0xbef4afc] Final|Native|Public  
+	// void Shrink();                                                                                                        // [0xac3642c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.SelectAll
-	// void SelectAll();                                                                                                     // [0xbef4a70] Final|Native|Public  
+	// void SelectAll();                                                                                                     // [0xac363a0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.OptimizeBorder
-	// void OptimizeBorder();                                                                                                // [0xbef4a10] Final|Native|Public  
+	// void OptimizeBorder();                                                                                                // [0xac36340] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.LargestTriCountPart
-	// void LargestTriCountPart();                                                                                           // [0xbef49e0] Final|Native|Public  
+	// void LargestTriCountPart();                                                                                           // [0xac36310] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.LargestAreaPart
-	// void LargestAreaPart();                                                                                               // [0xbef49c8] Final|Native|Public  
+	// void LargestAreaPart();                                                                                               // [0xac362f8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.Invert
-	// void Invert();                                                                                                        // [0xbef49b0] Final|Native|Public  
+	// void Invert();                                                                                                        // [0xac362e0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.Grow
-	// void Grow();                                                                                                          // [0xbef4998] Final|Native|Public  
+	// void Grow();                                                                                                          // [0xac362c8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.FloodFill
-	// void FloodFill();                                                                                                     // [0xbef4950] Final|Native|Public  
+	// void FloodFill();                                                                                                     // [0xac36280] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.ExpandToMaterials
-	// void ExpandToMaterials();                                                                                             // [0xbef48f0] Final|Native|Public  
+	// void ExpandToMaterials();                                                                                             // [0xac36220] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionEditActions.Clear
-	// void Clear();                                                                                                         // [0xbef47f0] Final|Native|Public  
+	// void Clear();                                                                                                         // [0xac36120] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions
@@ -3232,19 +3232,19 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.SmoothBorder
-	// void SmoothBorder();                                                                                                  // [0xbef4b14] Final|Native|Public  
+	// void SmoothBorder();                                                                                                  // [0xac36444] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.Separate
-	// void Separate();                                                                                                      // [0xbef4a88] Final|Native|Public  
+	// void Separate();                                                                                                      // [0xac363b8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.FlipNormals
-	// void FlipNormals();                                                                                                   // [0xbef4938] Final|Native|Public  
+	// void FlipNormals();                                                                                                   // [0xac36268] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.Duplicate
-	// void Duplicate();                                                                                                     // [0xbef48c0] Final|Native|Public  
+	// void Duplicate();                                                                                                     // [0xac361f0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.Disconnect
-	// void Disconnect();                                                                                                    // [0xbef4890] Final|Native|Public  
+	// void Disconnect();                                                                                                    // [0xac361c0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.Delete
-	// void Delete();                                                                                                        // [0xbef4878] Final|Native|Public  
+	// void Delete();                                                                                                        // [0xac361a8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshSelectionMeshEditActions.CreatePolygroup
-	// void CreatePolygroup();                                                                                               // [0xbef4860] Final|Native|Public  
+	// void CreatePolygroup();                                                                                               // [0xac36190] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshSelectionToolProperties
@@ -3319,7 +3319,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshSpaceDeformerToolActionPropertySet.ShiftToCenter
-	// void ShiftToCenter();                                                                                                 // [0xbef4aa0] Final|Native|Public  
+	// void ShiftToCenter();                                                                                                 // [0xac363d0] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.SpaceDeformerOperatorFactory
@@ -3414,13 +3414,13 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolQuickActions.PaintAll
-	// void PaintAll();                                                                                                      // [0xbef4a28] Final|Native|Public  
+	// void PaintAll();                                                                                                      // [0xac36358] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolQuickActions.FillWhite
-	// void FillWhite();                                                                                                     // [0xbef4920] Final|Native|Public  
+	// void FillWhite();                                                                                                     // [0xac36250] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolQuickActions.FillBlack
-	// void FillBlack();                                                                                                     // [0xbef4908] Final|Native|Public  
+	// void FillBlack();                                                                                                     // [0xac36238] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolQuickActions.EraseAll
-	// void EraseAll();                                                                                                      // [0xbef48d8] Final|Native|Public  
+	// void EraseAll();                                                                                                      // [0xac36208] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshVertexPaintToolUtilityActions
@@ -3433,22 +3433,22 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00B5   (0x0003)  MISSED
 	float                                              SourceValue;                                                // 0x00B8   (0x0004)  
 	FName                                              WeightMap;                                                  // 0x00BC   (0x0004)  
-	SDK_UNDEFINED(16,14773) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14911) /* TArray<FString> */      __um(WeightMapsList);                                       // 0x00C0   (0x0010)  
 	FModelingToolsColorChannelFilter                   TargetChannels;                                             // 0x00D0   (0x0004)  
 	EMeshVertexPaintColorChannel                       TargetChannel;                                              // 0x00D4   (0x0001)  
 	bool                                               bCopyToHiRes;                                               // 0x00D5   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x00D6   (0x0002)  MISSED
-	SDK_UNDEFINED(16,14774) /* FString */              __um(CopyToLODName);                                        // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,14775) /* TArray<FString> */      __um(LODNamesList);                                         // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,14912) /* FString */              __um(CopyToLODName);                                        // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14913) /* TArray<FString> */      __um(LODNamesList);                                         // 0x00E8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolUtilityActions.GetWeightMapsFunc
-	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xbea8fe0] Final|Native|Public  
+	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xabea904] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolUtilityActions.GetLODNamesFunc
-	// TArray<FString> GetLODNamesFunc();                                                                                    // [0xbe742d0] Final|Native|Public|Const 
+	// TArray<FString> GetLODNamesFunc();                                                                                    // [0xabb5c4c] Final|Native|Public|Const 
 	// Function /Script/MeshModelingToolsExp.MeshVertexPaintToolUtilityActions.ApplySelectedOperation
-	// void ApplySelectedOperation();                                                                                        // [0xbef47a8] Final|Native|Public  
+	// void ApplySelectedOperation();                                                                                        // [0xac360d8] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshVertexPaintTool
@@ -3487,7 +3487,7 @@ public:
 	EMeshSculptFalloffType                             PrimaryFalloffType;                                         // 0x00A9   (0x0001)  
 	EMeshVertexSculptBrushFilterType                   BrushFilter;                                                // 0x00AA   (0x0001)  
 	bool                                               bFreezeTarget;                                              // 0x00AB   (0x0001)  
-	SDK_UNDEFINED(8,14776) /* TWeakObjectPtr<UMeshVertexSculptTool*> */ __um(Tool);                                // 0x00AC   (0x0008)  
+	SDK_UNDEFINED(8,14914) /* TWeakObjectPtr<UMeshVertexSculptTool*> */ __um(Tool);                                // 0x00AC   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00B4   (0x0004)  MISSED
 };
 
@@ -3501,7 +3501,7 @@ public:
 	bool                                               bRandomize;                                                 // 0x00B4   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00B5   (0x0003)  MISSED
 	float                                              RandomRange;                                                // 0x00B8   (0x0004)  
-	SDK_UNDEFINED(8,14777) /* TWeakObjectPtr<UMeshVertexSculptTool*> */ __um(Tool);                                // 0x00BC   (0x0008)  
+	SDK_UNDEFINED(8,14915) /* TWeakObjectPtr<UMeshVertexSculptTool*> */ __um(Tool);                                // 0x00BC   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00C4   (0x0004)  MISSED
 };
 
@@ -3576,19 +3576,19 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Up
-	// void Up();                                                                                                            // [0xbef4b2c] Final|Native|Public  
+	// void Up();                                                                                                            // [0xac3645c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.ShiftToCenter
-	// void ShiftToCenter();                                                                                                 // [0xbef4ae4] Final|Native|Public  
+	// void ShiftToCenter();                                                                                                 // [0xac36414] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Right
-	// void Right();                                                                                                         // [0xbef4a40] Final|Native|Public  
+	// void Right();                                                                                                         // [0xac36370] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Left
-	// void Left();                                                                                                          // [0xbef49f8] Final|Native|Public  
+	// void Left();                                                                                                          // [0xac36328] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Forward
-	// void Forward();                                                                                                       // [0xbef4980] Final|Native|Public  
+	// void Forward();                                                                                                       // [0xac362b0] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Down
-	// void Down();                                                                                                          // [0xbef48a8] Final|Native|Public  
+	// void Down();                                                                                                          // [0xac361d8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.MirrorToolActionPropertySet.Backward
-	// void Backward();                                                                                                      // [0xbef47c0] Final|Native|Public  
+	// void Backward();                                                                                                      // [0xac360f0] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.MirrorTool
@@ -3725,7 +3725,7 @@ struct FPhysicsLevelSetData
 class UPhysicsObjectToolPropertySet : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14778) /* FString */              __um(ObjectName);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14916) /* FString */              __um(ObjectName);                                           // 0x00A8   (0x0010)  
 	ECollisionGeometryMode                             CollisionType;                                              // 0x00B8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00BC   (0x0004)  MISSED
 	TArray<FPhysicsSphereData>                         Spheres;                                                    // 0x00C0   (0x0010)  
@@ -3878,17 +3878,17 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.Duplicate
-	// void Duplicate();                                                                                                     // [0xbf29588] Final|Native|Public  
+	// void Duplicate();                                                                                                     // [0xac6b140] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.DeleteAll
-	// void DeleteAll();                                                                                                     // [0xbf29574] Final|Native|Public  
+	// void DeleteAll();                                                                                                     // [0xac6b12c] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.Delete
-	// void Delete();                                                                                                        // [0xbf29560] Final|Native|Public  
+	// void Delete();                                                                                                        // [0xac6b118] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.AddSphere
-	// void AddSphere();                                                                                                     // [0xbf29534] Final|Native|Public  
+	// void AddSphere();                                                                                                     // [0xac6b0ec] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.AddCapsule
-	// void AddCapsule();                                                                                                    // [0xbf29520] Final|Native|Public  
+	// void AddCapsule();                                                                                                    // [0xac6b0d8] Final|Native|Public  
 	// Function /Script/MeshModelingToolsExp.SimpleCollisionEditorToolActionProperties.AddBox
-	// void AddBox();                                                                                                        // [0xbf2950c] Final|Native|Public  
+	// void AddBox();                                                                                                        // [0xac6b0c4] Final|Native|Public  
 };
 
 /// Class /Script/MeshModelingToolsExp.SimpleCollisionEditorTool
@@ -3947,9 +3947,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.PlaneCutTool.FlipPlane
-	// void FlipPlane();                                                                                                     // [0xbf2959c] Final|Native|Protected 
+	// void FlipPlane();                                                                                                     // [0xac6b154] Final|Native|Protected 
 	// Function /Script/MeshModelingToolsExp.PlaneCutTool.Cut
-	// void Cut();                                                                                                           // [0xbf29548] Final|Native|Protected 
+	// void Cut();                                                                                                           // [0xac6b100] Final|Native|Protected 
 };
 
 /// Class /Script/MeshModelingToolsExp.ProjectToTargetToolBuilder
@@ -4026,8 +4026,8 @@ public:
 class UMeshAnalysisProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14779) /* FString */              __um(SurfaceArea);                                          // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,14780) /* FString */              __um(Volume);                                               // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14917) /* FString */              __um(SurfaceArea);                                          // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14918) /* FString */              __um(Volume);                                               // 0x00B8   (0x0010)  
 };
 
 /// Class /Script/MeshModelingToolsExp.MeshStatisticsProperties
@@ -4035,9 +4035,9 @@ public:
 class UMeshStatisticsProperties : public UInteractiveToolPropertySet
 { 
 public:
-	SDK_UNDEFINED(16,14781) /* FString */              __um(Mesh);                                                 // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,14782) /* FString */              __um(UV);                                                   // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,14783) /* FString */              __um(Attributes);                                           // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,14919) /* FString */              __um(Mesh);                                                 // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14920) /* FString */              __um(UV);                                                   // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,14921) /* FString */              __um(Attributes);                                           // 0x00C8   (0x0010)  
 };
 
 /// Class /Script/MeshModelingToolsExp.RemeshMeshToolBuilder
@@ -4375,13 +4375,13 @@ public:
 	bool                                               bTransferMaterials;                                         // 0x00A8   (0x0001)  
 	bool                                               bTransferCollision;                                         // 0x00A9   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x00AA   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14784) /* FString */              __um(SourceLOD);                                            // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,14785) /* FString */              __um(TargetLod);                                            // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,14922) /* FString */              __um(SourceLOD);                                            // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,14923) /* FString */              __um(TargetLod);                                            // 0x00C0   (0x0010)  
 	bool                                               bIsStaticMeshSource;                                        // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00D1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14786) /* TArray<FString> */      __um(SourceLODNamesList);                                   // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14924) /* TArray<FString> */      __um(SourceLODNamesList);                                   // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x10];                                      // 0x00E8   (0x0010)  MISSED
-	SDK_UNDEFINED(16,14787) /* TArray<FString> */      __um(TargetLODNamesList);                                   // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,14925) /* TArray<FString> */      __um(TargetLODNamesList);                                   // 0x00F8   (0x0010)  
 	unsigned char                                      UnknownData03_5[0x10];                                      // 0x0108   (0x0010)  MISSED
 	bool                                               bIsStaticMeshTarget;                                        // 0x0118   (0x0001)  
 	unsigned char                                      UnknownData04_6[0x7];                                       // 0x0119   (0x0007)  MISSED
@@ -4389,9 +4389,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshModelingToolsExp.TransferMeshToolProperties.GetTargetLODNamesFunc
-	// TArray<FString> GetTargetLODNamesFunc();                                                                              // [0xbf295b4] Final|Native|Public|Const 
+	// TArray<FString> GetTargetLODNamesFunc();                                                                              // [0xac6b16c] Final|Native|Public|Const 
 	// Function /Script/MeshModelingToolsExp.TransferMeshToolProperties.GetSourceLODNamesFunc
-	// TArray<FString> GetSourceLODNamesFunc();                                                                              // [0xbe742b4] Final|Native|Public|Const 
+	// TArray<FString> GetSourceLODNamesFunc();                                                                              // [0xabb5c30] Final|Native|Public|Const 
 };
 
 /// Class /Script/MeshModelingToolsExp.TransferMeshTool
@@ -4475,8 +4475,8 @@ public:
 	class UTriangulateSplinesToolProperties*           TriangulateProperties;                                      // 0x00B0   (0x0008)  
 	class UCreateMeshObjectTypeProperties*             OutputTypeProperties;                                       // 0x00B8   (0x0008)  
 	class UMeshOpPreviewWithBackgroundCompute*         Preview;                                                    // 0x00C0   (0x0008)  
-	SDK_UNDEFINED(8,14788) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00C8   (0x0008)  
-	SDK_UNDEFINED(16,14789) /* TArray<TWeakObjectPtr<AActor*>> */ __um(ActorsWithSplines);                         // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(8,14926) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x00C8   (0x0008)  
+	SDK_UNDEFINED(16,14927) /* TArray<TWeakObjectPtr<AActor*>> */ __um(ActorsWithSplines);                         // 0x00D0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x00E0   (0x0020)  MISSED
 };
 
@@ -4514,7 +4514,7 @@ public:
 	class UVolumeToMeshToolProperties*                 Settings;                                                   // 0x00A0   (0x0008)  
 	class UCreateMeshObjectTypeProperties*             OutputTypeProperties;                                       // 0x00A8   (0x0008)  
 	class UPreviewMesh*                                PreviewMesh;                                                // 0x00B0   (0x0008)  
-	SDK_UNDEFINED(24,14790) /* TLazyObjectPtr<AVolume*> */ __um(TargetVolume);                                     // 0x00B8   (0x0018)  
+	SDK_UNDEFINED(24,14928) /* TLazyObjectPtr<AVolume*> */ __um(TargetVolume);                                     // 0x00B8   (0x0018)  
 	class ULineSetComponent*                           VolumeEdgesSet;                                             // 0x00D0   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x230];                                     // 0x00D8   (0x0230)  MISSED
 };

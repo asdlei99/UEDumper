@@ -29,12 +29,12 @@ public:
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryConfig
-/// Size: 0x0018 (0x000128 - 0x000140)
+/// Size: 0x0018 (0x000130 - 0x000148)
 class UDelMarLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 public:
-	class UCosmeticLoadoutSchema*                      VehicleLoadoutSchema;                                       // 0x0128   (0x0008)  
-	TArray<FPrimaryAssetType>                          AllowedAssetTypes;                                          // 0x0130   (0x0010)  
+	class UCosmeticLoadoutSchema*                      VehicleLoadoutSchema;                                       // 0x0130   (0x0008)  
+	TArray<FPrimaryAssetType>                          AllowedAssetTypes;                                          // 0x0138   (0x0010)  
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryVM

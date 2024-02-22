@@ -47,10 +47,10 @@ class UChaosGameplayEventDispatcher : public UChaosEventListenerComponent
 { 
 public:
 	unsigned char                                      UnknownData00_3[0xC0];                                      // 0x00A8   (0x00C0)  MISSED
-	SDK_UNDEFINED(80,2398) /* TMap<UPrimitiveComponent*, FChaosHandlerSet> */ __um(CollisionEventRegistrations);   // 0x0168   (0x0050)  
-	SDK_UNDEFINED(80,2399) /* TMap<UPrimitiveComponent*, FBreakEventCallbackWrapper> */ __um(BreakEventRegistrations); // 0x01B8   (0x0050)  
-	SDK_UNDEFINED(80,2400) /* TMap<UPrimitiveComponent*, FRemovalEventCallbackWrapper> */ __um(RemovalEventRegistrations); // 0x0208   (0x0050)  
-	SDK_UNDEFINED(80,2401) /* TMap<UPrimitiveComponent*, FCrumblingEventCallbackWrapper> */ __um(CrumblingEventRegistrations); // 0x0258   (0x0050)  
+	SDK_UNDEFINED(80,2402) /* TMap<UPrimitiveComponent*, FChaosHandlerSet> */ __um(CollisionEventRegistrations);   // 0x0168   (0x0050)  
+	SDK_UNDEFINED(80,2403) /* TMap<UPrimitiveComponent*, FBreakEventCallbackWrapper> */ __um(BreakEventRegistrations); // 0x01B8   (0x0050)  
+	SDK_UNDEFINED(80,2404) /* TMap<UPrimitiveComponent*, FRemovalEventCallbackWrapper> */ __um(RemovalEventRegistrations); // 0x0208   (0x0050)  
+	SDK_UNDEFINED(80,2405) /* TMap<UPrimitiveComponent*, FCrumblingEventCallbackWrapper> */ __um(CrumblingEventRegistrations); // 0x0258   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x02A8   (0x0010)  MISSED
 };
 
@@ -70,7 +70,7 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosSolverEngine.ChaosSolverEngineBlueprintLibrary.ConvertPhysicsCollisionToHitResult
-	// FHitResult ConvertPhysicsCollisionToHitResult(FChaosPhysicsCollisionInfo& PhysicsCollision);                          // [0x5df47c0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FHitResult ConvertPhysicsCollisionToHitResult(FChaosPhysicsCollisionInfo& PhysicsCollision);                          // [0x5e5a1f8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/ChaosSolverEngine.ChaosSolver
@@ -124,9 +124,9 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosSolverEngine.ChaosSolverActor.SetSolverActive
-	// void SetSolverActive(bool bActive);                                                                                   // [0x5df48f0] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSolverActive(bool bActive);                                                                                   // [0x5e5a328] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
-	// void SetAsCurrentWorldSolver();                                                                                       // [0x5df48dc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAsCurrentWorldSolver();                                                                                       // [0x5e5a314] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ChaosSolverEngine.ChaosSolverSettings
@@ -180,6 +180,6 @@ struct FCrumblingEventCallbackWrapper
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FChaosHandlerSet
 { 
-	SDK_UNDEFINED(80,2402) /* TSet<UObject*> */        __um(ChaosHandlers);                                        // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,2406) /* TSet<UObject*> */        __um(ChaosHandlers);                                        // 0x0008   (0x0050)  
 };
 

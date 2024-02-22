@@ -13,67 +13,67 @@
 /// dependency: ModularGameplay
 
 /// Class /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint
-/// Size: 0x02A8 (0x000118 - 0x0003C0)
+/// Size: 0x02A8 (0x000120 - 0x0003C8)
 class UFortMovementMode_ELTacSprint : public UFortMovementMode_BaseExtLogic
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 960;
+	static inline constexpr uint64_t __MDKClassSize = 968;
 
 public:
-	SMember(FGameplayTagContainer)                     TacticalSprintFail                                          OFFSET(getStruct<T>, {0x120, 32, 0, 0})
-	SMember(FGameplayTagContainer)                     TacticalSprintFailLowEnergy                                 OFFSET(getStruct<T>, {0x140, 32, 0, 0})
-	DMember(float)                                     MinEnergyToActivate                                         OFFSET(get<float>, {0x160, 4, 0, 0})
-	SMember(FScalableFloat)                            MinEnergyToActivateRow                                      OFFSET(getStruct<T>, {0x168, 40, 0, 0})
-	SMember(FGameplayTag)                              GCEnergyDrain                                               OFFSET(getStruct<T>, {0x190, 4, 0, 0})
-	SMember(FGameplayTag)                              GCSpeedLines                                                OFFSET(getStruct<T>, {0x194, 4, 0, 0})
-	SMember(FGameplayTag)                              GCCameraShake                                               OFFSET(getStruct<T>, {0x198, 4, 0, 0})
-	SMember(FGameplayTag)                              GCSprintEnd                                                 OFFSET(getStruct<T>, {0x19C, 4, 0, 0})
-	SMember(FScalableFloat)                            MaxSpeedMultiplier                                          OFFSET(getStruct<T>, {0x1A0, 40, 0, 0})
-	SMember(FScalableFloat)                            AccelerationMultiplier                                      OFFSET(getStruct<T>, {0x1C8, 40, 0, 0})
-	SMember(FScalableFloat)                            RampUpSpeed                                                 OFFSET(getStruct<T>, {0x1F0, 40, 0, 0})
-	SMember(FScalableFloat)                            RampDownSpeed                                               OFFSET(getStruct<T>, {0x218, 40, 0, 0})
-	SMember(FScalableFloat)                            JumpHeightMultiplier                                        OFFSET(getStruct<T>, {0x240, 40, 0, 0})
-	SMember(FGameplayTag)                              TutorialGameplayTag                                         OFFSET(getStruct<T>, {0x26C, 4, 0, 0})
-	SMember(FGameplayTagContainer)                     TutorialAdditionalSourceTag                                 OFFSET(getStruct<T>, {0x270, 32, 0, 0})
-	SMember(FGameplayTagContainer)                     TutorialTargetTag                                           OFFSET(getStruct<T>, {0x290, 32, 0, 0})
-	SMember(FGameplayTag)                              TagPreventWeaponHolster                                     OFFSET(getStruct<T>, {0x2B0, 4, 0, 0})
-	CMember(class USoundBase*)                         OnEnergyFullyDrainedSound                                   OFFSET(get<T>, {0x2B8, 8, 0, 0})
-	SMember(FGameplayTag)                              TacticalBehaviorTag                                         OFFSET(getStruct<T>, {0x2C0, 4, 0, 0})
-	DMember(float)                                     MinSpeedForHolster                                          OFFSET(get<float>, {0x2C4, 4, 0, 0})
-	DMember(float)                                     HolsterTimeAttemptDelay                                     OFFSET(get<float>, {0x2C8, 4, 0, 0})
-	DMember(bool)                                      bIsCancelledBySliding                                       OFFSET(get<bool>, {0x2D8, 1, 1, 1})
-	DMember(bool)                                      bShouldHolsterWeapon                                        OFFSET(get<bool>, {0x2D8, 1, 1, 2})
-	SMember(FScalableFloat)                            HF_EnergyCostOnStart                                        OFFSET(getStruct<T>, {0x2E0, 40, 0, 0})
-	SMember(FScalableFloat)                            HF_EnergyCostPerSecond                                      OFFSET(getStruct<T>, {0x308, 40, 0, 0})
-	SMember(FScalableFloat)                            HF_EnergyCostOnJump                                         OFFSET(getStruct<T>, {0x330, 40, 0, 0})
-	SMember(FGameplayTag)                              IgnoreJumpCostTag                                           OFFSET(getStruct<T>, {0x358, 4, 0, 0})
-	SMember(FGameplayTag)                              TacticalSprintTag                                           OFFSET(getStruct<T>, {0x35C, 4, 0, 0})
-	SMember(FGameplayTag)                              EnergyUseIdentifier                                         OFFSET(getStruct<T>, {0x360, 4, 0, 0})
-	CMember(class USoundMix*)                          SprintStartedSoundMix                                       OFFSET(get<T>, {0x368, 8, 0, 0})
-	CMember(class USoundBase*)                         SprintStartedSound2D                                        OFFSET(get<T>, {0x370, 8, 0, 0})
-	SMember(FScalableFloat)                            HF_TacSprintEnabled                                         OFFSET(getStruct<T>, {0x380, 40, 0, 0})
-	CMember(class UClass*)                             CameraMode                                                  OFFSET(get<T>, {0x3B0, 8, 0, 0})
-	SMember(FGameplayTag)                              CameraModeTag                                               OFFSET(getStruct<T>, {0x3B8, 4, 0, 0})
-	DMember(char)                                      MaxTryHolsterAttempt                                        OFFSET(get<char>, {0x3BC, 1, 0, 0})
+	SMember(FGameplayTagContainer)                     TacticalSprintFail                                          OFFSET(getStruct<T>, {0x128, 32, 0, 0})
+	SMember(FGameplayTagContainer)                     TacticalSprintFailLowEnergy                                 OFFSET(getStruct<T>, {0x148, 32, 0, 0})
+	DMember(float)                                     MinEnergyToActivate                                         OFFSET(get<float>, {0x168, 4, 0, 0})
+	SMember(FScalableFloat)                            MinEnergyToActivateRow                                      OFFSET(getStruct<T>, {0x170, 40, 0, 0})
+	SMember(FGameplayTag)                              GCEnergyDrain                                               OFFSET(getStruct<T>, {0x198, 4, 0, 0})
+	SMember(FGameplayTag)                              GCSpeedLines                                                OFFSET(getStruct<T>, {0x19C, 4, 0, 0})
+	SMember(FGameplayTag)                              GCCameraShake                                               OFFSET(getStruct<T>, {0x1A0, 4, 0, 0})
+	SMember(FGameplayTag)                              GCSprintEnd                                                 OFFSET(getStruct<T>, {0x1A4, 4, 0, 0})
+	SMember(FScalableFloat)                            MaxSpeedMultiplier                                          OFFSET(getStruct<T>, {0x1A8, 40, 0, 0})
+	SMember(FScalableFloat)                            AccelerationMultiplier                                      OFFSET(getStruct<T>, {0x1D0, 40, 0, 0})
+	SMember(FScalableFloat)                            RampUpSpeed                                                 OFFSET(getStruct<T>, {0x1F8, 40, 0, 0})
+	SMember(FScalableFloat)                            RampDownSpeed                                               OFFSET(getStruct<T>, {0x220, 40, 0, 0})
+	SMember(FScalableFloat)                            JumpHeightMultiplier                                        OFFSET(getStruct<T>, {0x248, 40, 0, 0})
+	SMember(FGameplayTag)                              TutorialGameplayTag                                         OFFSET(getStruct<T>, {0x274, 4, 0, 0})
+	SMember(FGameplayTagContainer)                     TutorialAdditionalSourceTag                                 OFFSET(getStruct<T>, {0x278, 32, 0, 0})
+	SMember(FGameplayTagContainer)                     TutorialTargetTag                                           OFFSET(getStruct<T>, {0x298, 32, 0, 0})
+	SMember(FGameplayTag)                              TagPreventWeaponHolster                                     OFFSET(getStruct<T>, {0x2B8, 4, 0, 0})
+	CMember(class USoundBase*)                         OnEnergyFullyDrainedSound                                   OFFSET(get<T>, {0x2C0, 8, 0, 0})
+	SMember(FGameplayTag)                              TacticalBehaviorTag                                         OFFSET(getStruct<T>, {0x2C8, 4, 0, 0})
+	DMember(float)                                     MinSpeedForHolster                                          OFFSET(get<float>, {0x2CC, 4, 0, 0})
+	DMember(float)                                     HolsterTimeAttemptDelay                                     OFFSET(get<float>, {0x2D0, 4, 0, 0})
+	DMember(bool)                                      bIsCancelledBySliding                                       OFFSET(get<bool>, {0x2E0, 1, 1, 1})
+	DMember(bool)                                      bShouldHolsterWeapon                                        OFFSET(get<bool>, {0x2E0, 1, 1, 2})
+	SMember(FScalableFloat)                            HF_EnergyCostOnStart                                        OFFSET(getStruct<T>, {0x2E8, 40, 0, 0})
+	SMember(FScalableFloat)                            HF_EnergyCostPerSecond                                      OFFSET(getStruct<T>, {0x310, 40, 0, 0})
+	SMember(FScalableFloat)                            HF_EnergyCostOnJump                                         OFFSET(getStruct<T>, {0x338, 40, 0, 0})
+	SMember(FGameplayTag)                              IgnoreJumpCostTag                                           OFFSET(getStruct<T>, {0x360, 4, 0, 0})
+	SMember(FGameplayTag)                              TacticalSprintTag                                           OFFSET(getStruct<T>, {0x364, 4, 0, 0})
+	SMember(FGameplayTag)                              EnergyUseIdentifier                                         OFFSET(getStruct<T>, {0x368, 4, 0, 0})
+	CMember(class USoundMix*)                          SprintStartedSoundMix                                       OFFSET(get<T>, {0x370, 8, 0, 0})
+	CMember(class USoundBase*)                         SprintStartedSound2D                                        OFFSET(get<T>, {0x378, 8, 0, 0})
+	SMember(FScalableFloat)                            HF_TacSprintEnabled                                         OFFSET(getStruct<T>, {0x388, 40, 0, 0})
+	CMember(class UClass*)                             CameraMode                                                  OFFSET(get<T>, {0x3B8, 8, 0, 0})
+	SMember(FGameplayTag)                              CameraModeTag                                               OFFSET(getStruct<T>, {0x3C0, 4, 0, 0})
+	DMember(char)                                      MaxTryHolsterAttempt                                        OFFSET(get<char>, {0x3C4, 1, 0, 0})
 
 
 	/// Functions
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnReloadCanceling
-	// void HandleOnReloadCanceling();                                                                                          // [0xaaa8ac0] Final|Native|Public  
+	// void HandleOnReloadCanceling();                                                                                          // [0xada42dc] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnPlayerWeaponChanged
-	// void HandleOnPlayerWeaponChanged(class AFortPawn* InPawn, class AFortWeapon* InNewWeapon, class AFortWeapon* InPlayerWeapon); // [0xaaa8918] Final|Native|Public  
+	// void HandleOnPlayerWeaponChanged(class AFortPawn* InPawn, class AFortWeapon* InNewWeapon, class AFortWeapon* InPlayerWeapon); // [0xada41f4] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnPawnJump
-	// void HandleOnPawnJump();                                                                                                 // [0xaaa8900] Final|Native|Public  
+	// void HandleOnPawnJump();                                                                                                 // [0xada41dc] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnteredEditMode
-	// void HandleOnEnteredEditMode();                                                                                          // [0xaaa88e8] Final|Native|Public  
+	// void HandleOnEnteredEditMode();                                                                                          // [0xada41c4] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnterAircraft
-	// void HandleOnEnterAircraft();                                                                                            // [0xaaa88d0] Final|Native|Public  
+	// void HandleOnEnterAircraft();                                                                                            // [0xada41ac] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnergyDrained
-	// void HandleOnEnergyDrained(class UFortComponent_Energy* EnergyComp);                                                     // [0xaaa8814] Final|Native|Public  
+	// void HandleOnEnergyDrained(class UFortComponent_Energy* EnergyComp);                                                     // [0xada4130] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleMovementModeChanged
-	// void HandleMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xaaa8674] Final|Native|Public  
+	// void HandleMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xada404c] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleFailedToSprint
-	// void HandleFailedToSprint();                                                                                             // [0xaaa8660] Final|Native|Public  
+	// void HandleFailedToSprint();                                                                                             // [0xada4038] Final|Native|Public  
 };
 
 /// Class /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint
@@ -106,27 +106,27 @@ public:
 
 	/// Functions
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.SetIsSprinting
-	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xaaa9984] Final|Native|Public|BlueprintCallable 
+	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xada4e94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.RemoveCustomSprintMMEClass
-	// void RemoveCustomSprintMMEClass(class UClass*& SprintMMEClassToRemove);                                                  // [0xaaa98e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveCustomSprintMMEClass(class UClass*& SprintMMEClassToRemove);                                                  // [0xada4df4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate();                                                                                   // [0xaaa98d0] Final|Native|Private 
+	// void RegisterMutatorUpdatedDelegate();                                                                                   // [0xada4de0] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnWeaponEquipped
-	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PreviousWeapon);                                  // [0xaaa9790] Final|Native|Private 
+	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PreviousWeapon);                                  // [0xada4d1c] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xaaa95d4] Final|Native|Private 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xada4c24] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnPawnChanged
-	// void OnPawnChanged(class AFortPawn* InPawn);                                                                             // [0xaaa94f4] Final|Native|Private 
+	// void OnPawnChanged(class AFortPawn* InPawn);                                                                             // [0xada4b88] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0xaaa94e0] Final|Native|Private 
+	// void OnMutatorUpdated();                                                                                                 // [0xada4b74] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xaaa9324] Final|Native|Private 
+	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xada4a78] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnAutoRunChanged
-	// void OnAutoRunChanged(bool bAutoRunIsOn);                                                                                // [0xaaa9260] Final|Native|Private 
+	// void OnAutoRunChanged(bool bAutoRunIsOn);                                                                                // [0xada49f8] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.LogAndVisualLog
-	// void LogAndVisualLog(class UObject* LoggingSource, ESprintLoggingVerbosityLevel Verbosity, FString& LogString);          // [0xaaa8ad8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void LogAndVisualLog(class UObject* LoggingSource, ESprintLoggingVerbosityLevel Verbosity, FString& LogString);          // [0xada42f4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.AddCustomSprintMMEClass
-	// void AddCustomSprintMMEClass(class UClass*& SprintMMEClassToAdd);                                                        // [0xaaa859c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddCustomSprintMMEClass(class UClass*& SprintMMEClassToAdd);                                                        // [0xada3f74] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/TacticalSprintRuntime.FortMovementMode_TacSprintRuntimeData

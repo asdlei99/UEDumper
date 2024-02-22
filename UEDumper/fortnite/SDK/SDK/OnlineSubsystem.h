@@ -56,7 +56,7 @@ struct FNamedInterfaceDef
 { 
 	FName                                              InterfaceName;                                              // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14863) /* FString */              __um(InterfaceClassName);                                   // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,15003) /* FString */              __um(InterfaceClassName);                                   // 0x0008   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystem.NamedInterfaces
@@ -79,8 +79,8 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
-	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
-	// void OnMatchEnded(FString Match);                                                                                     // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnMatchEnded(FString Match);                                                                                     // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 

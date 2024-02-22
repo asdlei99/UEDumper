@@ -29,14 +29,14 @@ struct FChunkPartData
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FFileManifestData
 { 
-	SDK_UNDEFINED(16,12253) /* FString */              __um(Filename);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12338) /* FString */              __um(Filename);                                             // 0x0000   (0x0010)  
 	FSHAHashData                                       FileHash;                                                   // 0x0010   (0x0014)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	TArray<FChunkPartData>                             FileChunkParts;                                             // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,12254) /* TArray<FString> */      __um(InstallTags);                                          // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,12339) /* TArray<FString> */      __um(InstallTags);                                          // 0x0038   (0x0010)  
 	bool                                               bIsUnixExecutable;                                          // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12255) /* FString */              __um(SymlinkTarget);                                        // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,12340) /* FString */              __um(SymlinkTarget);                                        // 0x0050   (0x0010)  
 	bool                                               bIsReadOnly;                                                // 0x0060   (0x0001)  
 	bool                                               bIsCompressed;                                              // 0x0061   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x6];                                       // 0x0062   (0x0006)  MISSED
@@ -59,8 +59,8 @@ struct FChunkInfoData
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FCustomFieldData
 { 
-	SDK_UNDEFINED(16,12256) /* FString */              __um(Key);                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,12257) /* FString */              __um(Value);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12341) /* FString */              __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12342) /* FString */              __um(Value);                                                // 0x0010   (0x0010)  
 };
 
 /// Class /Script/BuildPatchServices.BuildPatchManifest
@@ -73,14 +73,14 @@ public:
 	bool                                               bIsFileData;                                                // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002A   (0x0002)  MISSED
 	uint32_t                                           AppID;                                                      // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,12258) /* FString */              __um(AppName);                                              // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,12259) /* FString */              __um(BuildVersion);                                         // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,12260) /* FString */              __um(LaunchExe);                                            // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,12261) /* FString */              __um(LaunchCommand);                                        // 0x0060   (0x0010)  
-	SDK_UNDEFINED(80,12262) /* TSet<FString> */        __um(PrereqIds);                                            // 0x0070   (0x0050)  
-	SDK_UNDEFINED(16,12263) /* FString */              __um(PrereqName);                                           // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,12264) /* FString */              __um(PrereqPath);                                           // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,12265) /* FString */              __um(PrereqArgs);                                           // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,12343) /* FString */              __um(AppName);                                              // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,12344) /* FString */              __um(BuildVersion);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,12345) /* FString */              __um(LaunchExe);                                            // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,12346) /* FString */              __um(LaunchCommand);                                        // 0x0060   (0x0010)  
+	SDK_UNDEFINED(80,12347) /* TSet<FString> */        __um(PrereqIds);                                            // 0x0070   (0x0050)  
+	SDK_UNDEFINED(16,12348) /* FString */              __um(PrereqName);                                           // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,12349) /* FString */              __um(PrereqPath);                                           // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,12350) /* FString */              __um(PrereqArgs);                                           // 0x00E0   (0x0010)  
 	TArray<FFileManifestData>                          FileManifestList;                                           // 0x00F0   (0x0010)  
 	TArray<FChunkInfoData>                             ChunkList;                                                  // 0x0100   (0x0010)  
 	TArray<FCustomFieldData>                           CustomFields;                                               // 0x0110   (0x0010)  

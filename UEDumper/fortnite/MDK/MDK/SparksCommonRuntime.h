@@ -8,6 +8,25 @@
 /// dependency: BasicType
 /// dependency: CoreUObject
 /// dependency: Engine
+/// dependency: ModularGameplay
+
+/// Class /Script/SparksCommonRuntime.SparksCommonUtilities
+/// Size: 0x0008 (0x0000A0 - 0x0000A8)
+class USparksCommonUtilities : public UGameStateComponent
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 168;
+
+public:
+	DMember(bool)                                      bSparksToolIsVisible                                        OFFSET(get<bool>, {0xA0, 1, 0, 0})
+
+
+	/// Functions
+	// Function /Script/SparksCommonRuntime.SparksCommonUtilities.ShowSparksCaptureTool
+	// void ShowSparksCaptureTool(bool bShow);                                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
+	// Function /Script/SparksCommonRuntime.SparksCommonUtilities.GetSparksCommonUtilities
+	// class USparksCommonUtilities* GetSparksCommonUtilities(class UObject* WorldContextObject);                               // [0xb2d4160] Final|Native|Static|Public|BlueprintCallable 
+};
 
 /// Class /Script/SparksCommonRuntime.SparksCrowdSpawner
 /// Size: 0x0110 (0x000220 - 0x000330)
@@ -40,11 +59,11 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.TransitionCrowdToTargetParamValue
-	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xada3b54] Final|Native|Public|BlueprintCallable 
+	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xb2d53f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowdNow
-	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xada3660] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xb2d4b7c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowd
-	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xada30ec] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xb2d421c] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/SparksCommonRuntime.SparksCommonAllPlayersReadyEvent

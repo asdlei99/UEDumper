@@ -157,7 +157,7 @@ struct FContextSetterSetEntry
 { 
 	FGameplayTag                                       Key;                                                        // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13064) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13157) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/UIChart.ContextSetterClearEntry
@@ -190,7 +190,7 @@ class UGlobalViewModelUIStateComponent : public UUIStateComponent
 { 
 public:
 	class UGlobalViewModelUIStateComponentConfiguration* Configuration;                                            // 0x0048   (0x0008)  
-	SDK_UNDEFINED(80,13065) /* TSet<FGameplayTag> */   __um(ConditionContextKeys);                                 // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13158) /* TSet<FGameplayTag> */   __um(ConditionContextKeys);                                 // 0x0050   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00A0   (0x0008)  MISSED
 };
 
@@ -200,7 +200,7 @@ struct FUIStateChartContextCondition
 { 
 	FGameplayTag                                       Key;                                                        // 0x0000   (0x0004)  
 	EUIStateChartContextConditionType                  ConditionType;                                              // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,13066) /* FString */              __um(ComparisonConstant);                                   // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13159) /* FString */              __um(ComparisonConstant);                                   // 0x0008   (0x0010)  
 };
 
 /// Class /Script/UIChart.GlobalViewModelUIStateComponentConfiguration
@@ -252,7 +252,7 @@ class USceneUIStateComponent : public UUIStateComponent
 { 
 public:
 	class USceneUIStateComponentConfiguration*         Configuration;                                              // 0x0048   (0x0008)  
-	SDK_UNDEFINED(80,13067) /* TSet<FGameplayTag> */   __um(ConditionContextKeys);                                 // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13160) /* TSet<FGameplayTag> */   __um(ConditionContextKeys);                                 // 0x0050   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x00A0   (0x0010)  MISSED
 };
 
@@ -271,7 +271,7 @@ class USplitScreenUIStateComponentBase : public UUIStateComponent
 { 
 public:
 	class USplitScreenUIStateComponentBaseConfiguration* BaseConfiguration;                                        // 0x0048   (0x0008)  
-	SDK_UNDEFINED(80,13068) /* TMap<ULocalPlayer*, int32_t> */ __um(ChildStateCharts);                             // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13161) /* TMap<ULocalPlayer*, int32_t> */ __um(ChildStateCharts);                             // 0x0050   (0x0050)  
 	TArray<int32_t>                                    DeactivatingStateCharts;                                    // 0x00A0   (0x0010)  
 };
 
@@ -297,7 +297,7 @@ class UStackingUIStateComponentSharedData : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,13069) /* TMap<UClass*, FUIStateComponentInstanceStack> */ __um(InstanceStacks);              // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,13162) /* TMap<UClass*, FUIStateComponentInstanceStack> */ __um(InstanceStacks);              // 0x0028   (0x0050)  
 };
 
 /// Struct /Script/UIChart.UIStateConfigurationChildReference
@@ -322,7 +322,7 @@ class UUIStateConfiguration : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,13070) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13163) /* FString */              __um(Name);                                                 // 0x0028   (0x0010)  
 	FGameplayTagContainer                              StateTags;                                                  // 0x0038   (0x0020)  
 	int32_t                                            ID;                                                         // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x005C   (0x0004)  MISSED
@@ -355,7 +355,7 @@ public:
 	class UUIStateChartRegion*                         StateChartRegion;                                           // 0x0080   (0x0008)  
 	EStateComponentStatus                              Status;                                                     // 0x0088   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x008C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,13071) /* TSet<FGameplayTag> */   __um(ContinualAutomationContextKeys);                       // 0x0090   (0x0050)  
+	SDK_UNDEFINED(80,13164) /* TSet<FGameplayTag> */   __um(ContinualAutomationContextKeys);                       // 0x0090   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x00E0   (0x0008)  MISSED
 };
 
@@ -383,39 +383,39 @@ class UUIStateChartContext : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,13072) /* TMap<FGameplayTag, UUIStateChartContextEntry*> */ __um(Store);                      // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,13165) /* TMap<FGameplayTag, UUIStateChartContextEntry*> */ __um(Store);                      // 0x0028   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0078   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerValue
-	// void BP_SetPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, int32_t Value);                             // [0xaa672b0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, int32_t Value);                             // [0xad66a28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerStringValue
-	// void BP_SetPlayerStringValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, FString Value);                       // [0xaa66ab4] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerStringValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, FString Value);                       // [0xad66164] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerFloatValue
-	// void BP_SetPlayerFloatValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, float Value);                          // [0xaa668f4] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerFloatValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, float Value);                          // [0xad65efc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetPlayerBoolValue
-	// void BP_SetPlayerBoolValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, bool Value);                            // [0xaa66734] Final|Native|Public|BlueprintCallable 
+	// void BP_SetPlayerBoolValue(class ULocalPlayer* LocalPlayer, FGameplayTag Key, bool Value);                            // [0xad65c88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonStringValue
-	// void BP_SetCommonStringValue(FGameplayTag Key, FString Value);                                                        // [0xaa65fb0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonStringValue(FGameplayTag Key, FString Value);                                                        // [0xad65418] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonIntValue
-	// void BP_SetCommonIntValue(FGameplayTag Key, int32_t Value);                                                           // [0xaa65e34] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonIntValue(FGameplayTag Key, int32_t Value);                                                           // [0xad651f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonFloatValue
-	// void BP_SetCommonFloatValue(FGameplayTag Key, float Value);                                                           // [0xaa65cf0] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonFloatValue(FGameplayTag Key, float Value);                                                           // [0xad64fc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_SetCommonBoolValue
-	// void BP_SetCommonBoolValue(FGameplayTag Key, bool Value);                                                             // [0xaa65ba8] Final|Native|Public|BlueprintCallable 
+	// void BP_SetCommonBoolValue(FGameplayTag Key, bool Value);                                                             // [0xad64d90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_FindEntry
-	// class UUIStateChartContextEntry* BP_FindEntry(FGameplayTag Key);                                                      // [0xaa655c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContextEntry* BP_FindEntry(FGameplayTag Key);                                                      // [0xad646c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearPlayerValue
-	// void BP_ClearPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag& Key);                                         // [0xaa64d2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ClearPlayerValue(class ULocalPlayer* LocalPlayer, FGameplayTag& Key);                                         // [0xad63da4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearEntry
-	// void BP_ClearEntry(FGameplayTag Key);                                                                                 // [0xaa64c64] Final|Native|Public|BlueprintCallable 
+	// void BP_ClearEntry(FGameplayTag Key);                                                                                 // [0xad63c5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ClearCommonValue
-	// void BP_ClearCommonValue(FGameplayTag Key);                                                                           // [0xaa64b9c] Final|Native|Public|BlueprintCallable 
+	// void BP_ClearCommonValue(FGameplayTag Key);                                                                           // [0xad63b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ApplyPlayerChanges
-	// void BP_ApplyPlayerChanges(class ULocalPlayer* LocalPlayer, FUIStateChartContextChangeSet& ContextChanges);           // [0xaa64a3c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ApplyPlayerChanges(class ULocalPlayer* LocalPlayer, FUIStateChartContextChangeSet& ContextChanges);           // [0xad63a00] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartContext.BP_ApplyCommonChanges
-	// void BP_ApplyCommonChanges(FUIStateChartContextChangeSet& ContextChanges);                                            // [0xaa6496c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BP_ApplyCommonChanges(FUIStateChartContextChangeSet& ContextChanges);                                            // [0xad63930] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/UIChart.UIStateChartContextEntry
@@ -424,30 +424,30 @@ class UUIStateChartContextEntry : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(16,13073) /* FString */              __um(CommonValue);                                          // 0x0028   (0x0010)  
-	SDK_UNDEFINED(80,13074) /* TMap<ULocalPlayer*, FUIStateChartContextEntryOverride> */ __um(PlayerOverrides);    // 0x0038   (0x0050)  
+	SDK_UNDEFINED(16,13166) /* FString */              __um(CommonValue);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(80,13167) /* TMap<ULocalPlayer*, FUIStateChartContextEntryOverride> */ __um(PlayerOverrides);    // 0x0038   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0088   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartContextEntry.IsEmptyForPlayer
-	// bool IsEmptyForPlayer(class ULocalPlayer* InLocalPlayer);                                                             // [0xaa678ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEmptyForPlayer(class ULocalPlayer* InLocalPlayer);                                                             // [0xad66f98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsString
-	// FString GetPlayerValueAsString(class ULocalPlayer* InLocalPlayer);                                                    // [0xaa677d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetPlayerValueAsString(class ULocalPlayer* InLocalPlayer);                                                    // [0xad66f00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsInt
-	// int32_t GetPlayerValueAsInt(class ULocalPlayer* InLocalPlayer);                                                       // [0xaa67704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPlayerValueAsInt(class ULocalPlayer* InLocalPlayer);                                                       // [0xad66e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsFloat
-	// float GetPlayerValueAsFloat(class ULocalPlayer* InLocalPlayer);                                                       // [0xaa67634] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayerValueAsFloat(class ULocalPlayer* InLocalPlayer);                                                       // [0xad66de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetPlayerValueAsBool
-	// bool GetPlayerValueAsBool(class ULocalPlayer* InLocalPlayer);                                                         // [0xaa67564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetPlayerValueAsBool(class ULocalPlayer* InLocalPlayer);                                                         // [0xad66d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsString
-	// FString GetCommonValueAsString();                                                                                     // [0xaa67548] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCommonValueAsString();                                                                                     // [0xad66d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsInt
-	// int32_t GetCommonValueAsInt();                                                                                        // [0xaa67524] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCommonValueAsInt();                                                                                        // [0xad66d10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsFloat
-	// float GetCommonValueAsFloat();                                                                                        // [0xaa674fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCommonValueAsFloat();                                                                                        // [0xad66ce8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartContextEntry.GetCommonValueAsBool
-	// bool GetCommonValueAsBool();                                                                                          // [0xaa674a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCommonValueAsBool();                                                                                          // [0xad66c94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/UIChart.UIStateChartManager
@@ -456,7 +456,7 @@ class UUIStateChartManager : public UGameInstanceSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x0030   (0x0008)  MISSED
-	SDK_UNDEFINED(80,13075) /* TMap<ULocalPlayer*, UUIStateChartManagerPlayer*> */ __um(PlayerEntries);            // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,13168) /* TMap<ULocalPlayer*, UUIStateChartManagerPlayer*> */ __um(PlayerEntries);            // 0x0038   (0x0050)  
 	TArray<class UUIStateChartManagerPlayer*>          RemovedPlayerEntries;                                       // 0x0088   (0x0010)  
 	class UUIStateChartContext*                        Context;                                                    // 0x0098   (0x0008)  
 	class UUIStateChartResourceCollection*             GlobalResources;                                            // 0x00A0   (0x0008)  
@@ -465,19 +465,19 @@ public:
 
 	/// Functions
 	// Function /Script/UIChart.UIStateChartManager.GetContext
-	// class UUIStateChartContext* GetContext();                                                                             // [0x7b817a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContext* GetContext();                                                                             // [0x7b97a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartManager.GetChartContext
-	// class UUIStateChartContext* GetChartContext();                                                                        // [0x7b817a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUIStateChartContext* GetChartContext();                                                                        // [0x7b97a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UIChart.UIStateChartManager.BP_RemoveStateChart
-	// bool BP_RemoveStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xaa658d0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_RemoveStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xad64af8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_ReactivateStateChart
-	// void BP_ReactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FGameplayTag StateTag, EUIStateTransitionUrgency Urgency); // [0xaa6568c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void BP_ReactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FGameplayTag StateTag, EUIStateTransitionUrgency Urgency); // [0xad64808] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_DispatchTransitionEvent
-	// bool BP_DispatchTransitionEvent(FGameplayTag TransitionTag, class ULocalPlayer* StateChartOwner, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency, bool bBacktrack); // [0xaa65144] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_DispatchTransitionEvent(FGameplayTag TransitionTag, class ULocalPlayer* StateChartOwner, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency, bool bBacktrack); // [0xad64144] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_DeactivateStateChart
-	// bool BP_DeactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xaa64e70] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool BP_DeactivateStateChart(int32_t Key, FGameplayTagContainer& AnimationHints, FUIStateChartContextChangeSet& ContextChanges, EUIStateTransitionUrgency Urgency); // [0xad63eb0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/UIChart.UIStateChartManager.BP_AddStateChart
-	// int32_t BP_AddStateChart(class UUIStateChart* StateChartAsset, class ULocalPlayer* OwningLocalPlayer, FGameplayTagContainer& AnimationHints, FGameplayTag InitialStateTag, EUIStateTransitionUrgency Urgency); // [0xaa646a8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// int32_t BP_AddStateChart(class UUIStateChart* StateChartAsset, class ULocalPlayer* OwningLocalPlayer, FGameplayTagContainer& AnimationHints, FGameplayTag InitialStateTag, EUIStateTransitionUrgency Urgency); // [0xad63600] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/UIChart.UIStateChartManagerEntry
@@ -504,8 +504,8 @@ class UUIStateChartManagerPlayer : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,13076) /* TMap<int32_t, UUIStateChartManagerEntry*> */ __um(ActiveChartEntries);              // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,13077) /* TMap<int32_t, UUIStateChartManagerEntry*> */ __um(InactiveChartEntries);            // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,13169) /* TMap<int32_t, UUIStateChartManagerEntry*> */ __um(ActiveChartEntries);              // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,13170) /* TMap<int32_t, UUIStateChartManagerEntry*> */ __um(InactiveChartEntries);            // 0x0078   (0x0050)  
 	TArray<FUIStateChartManagerChartDeactivationRequest> DeactivationRequests;                                     // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x00D8   (0x0010)  MISSED
 	class UUIStateChartManager*                        Manager;                                                    // 0x00E8   (0x0008)  
@@ -516,7 +516,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FUIStateChartContextChangeSet
 { 
-	SDK_UNDEFINED(80,13078) /* TMap<FGameplayTag, FString> */ __um(Changes);                                       // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,13171) /* TMap<FGameplayTag, FString> */ __um(Changes);                                       // 0x0000   (0x0050)  
 };
 
 /// Class /Script/UIChart.UIStateBacktrackStep
@@ -543,13 +543,13 @@ public:
 	class UUIState*                                    RootState;                                                  // 0x0030   (0x0008)  
 	class UUIState*                                    ParentState;                                                // 0x0038   (0x0008)  
 	TArray<class UUIStateChartRegion*>                 ParallelRegions;                                            // 0x0040   (0x0010)  
-	SDK_UNDEFINED(80,13079) /* TMap<FGameplayTag, UUIState*> */ __um(TaggedStates);                                // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,13172) /* TMap<FGameplayTag, UUIState*> */ __um(TaggedStates);                                // 0x0050   (0x0050)  
 	class UUIState*                                    ActiveLeafState;                                            // 0x00A0   (0x0008)  
 	class UUIStateChartTransitionOperation*            ActiveTransitionOperation;                                  // 0x00A8   (0x0008)  
 	class UUIStateChartTransitionOperation*            QueuedTransitionOperation;                                  // 0x00B0   (0x0008)  
 	TArray<class UUIStateBacktrackStep*>               AvailableBacktrackPaths;                                    // 0x00B8   (0x0010)  
 	class UUIStateBacktrackStep*                       ActiveTransitionBacktrackStep;                              // 0x00C8   (0x0008)  
-	SDK_UNDEFINED(16,13080) /* FString */              __um(ChartName);                                            // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,13173) /* FString */              __um(ChartName);                                            // 0x00D0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00E0   (0x0008)  MISSED
 };
 
@@ -559,7 +559,7 @@ class UUIStateChartResourceCollection : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,13081) /* TMap<UClass*, UObject*> */ __um(ResourcesByClass);                                  // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,13174) /* TMap<UClass*, UObject*> */ __um(ResourcesByClass);                                  // 0x0028   (0x0050)  
 };
 
 /// Class /Script/UIChart.UIStateChartTransition
@@ -626,8 +626,8 @@ class UUIStateChartTransitionOperationGroup : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
-	SDK_UNDEFINED(80,13082) /* TSet<UUIStateChartTransitionOperation*> */ __um(Operations);                        // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,13083) /* TSet<UUIStateChartTransitionOperation*> */ __um(OperationsReadyForContextUpdate);   // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,13175) /* TSet<UUIStateChartTransitionOperation*> */ __um(Operations);                        // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,13176) /* TSet<UUIStateChartTransitionOperation*> */ __um(OperationsReadyForContextUpdate);   // 0x0078   (0x0050)  
 	class UUIStateChartContext*                        Context;                                                    // 0x00C8   (0x0008)  
 	class ULocalPlayer*                                LocalPlayer;                                                // 0x00D0   (0x0008)  
 	FUIStateChartContextChangeSet                      ContextChanges;                                             // 0x00D8   (0x0050)  
@@ -648,7 +648,7 @@ struct FUIStateComponentInstanceStack
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FUIStateChartContextEntryOverride
 { 
-	SDK_UNDEFINED(16,13084) /* FString */              __um(OverrideValue);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13177) /* FString */              __um(OverrideValue);                                        // 0x0000   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0010   (0x0018)  MISSED
 };
 

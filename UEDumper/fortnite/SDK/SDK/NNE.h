@@ -121,7 +121,7 @@ struct FNNEAttributeValue
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FNNEFormatAttributeDesc
 { 
-	SDK_UNDEFINED(16,14614) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14746) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FNNEAttributeValue                                 Value;                                                      // 0x0010   (0x0018)  
 };
 
@@ -129,7 +129,7 @@ struct FNNEFormatAttributeDesc
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FNNEFormatOperatorDesc
 { 
-	SDK_UNDEFINED(16,14615) /* FString */              __um(TypeName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14747) /* FString */              __um(TypeName);                                             // 0x0000   (0x0010)  
 	TArray<uint32_t>                                   InTensors;                                                  // 0x0010   (0x0010)  
 	TArray<uint32_t>                                   OutTensors;                                                 // 0x0020   (0x0010)  
 	TArray<FNNEFormatAttributeDesc>                    Attributes;                                                 // 0x0030   (0x0010)  
@@ -139,7 +139,7 @@ struct FNNEFormatOperatorDesc
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FNNEFormatTensorDesc
 { 
-	SDK_UNDEFINED(16,14616) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14748) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	TArray<int32_t>                                    Shape;                                                      // 0x0010   (0x0010)  
 	ENNEFormatTensorType                               Type;                                                       // 0x0020   (0x0001)  
 	ENNETensorDataType                                 DataType;                                                   // 0x0021   (0x0001)  

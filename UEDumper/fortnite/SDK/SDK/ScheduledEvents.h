@@ -14,7 +14,7 @@
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FEventRecord
 { 
-	SDK_UNDEFINED(16,15269) /* FString */              __um(EventType);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15415) /* FString */              __um(EventType);                                            // 0x0000   (0x0010)  
 	FDateTime                                          ActiveUntil;                                                // 0x0010   (0x0008)  
 	FDateTime                                          ActiveSince;                                                // 0x0018   (0x0008)  
 };
@@ -42,6 +42,6 @@ struct FCalendarDownload
 { 
 	FDateTime                                          CurrentTime;                                                // 0x0000   (0x0008)  
 	double                                             CacheIntervalMins;                                          // 0x0008   (0x0008)  
-	SDK_UNDEFINED(80,15270) /* TMap<FString, FEventsTimeline> */ __um(Channels);                                   // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,15416) /* TMap<FString, FEventsTimeline> */ __um(Channels);                                   // 0x0010   (0x0050)  
 };
 

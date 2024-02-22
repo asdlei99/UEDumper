@@ -62,40 +62,49 @@ public:
 
 	/// Functions
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.UpdateNearbyBuildingActors
-	// void UpdateNearbyBuildingActors();                                                                                       // [0xb4c7590] Final|Native|Private 
+	// void UpdateNearbyBuildingActors();                                                                                       // [0xb5d937c] Final|Native|Private 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.UnregisterEarthquake
-	// void UnregisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                  // [0xb4c74d0] Final|Native|Public|BlueprintCallable 
+	// void UnregisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                  // [0xb5d92fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.SpawnBuildingDamageFX
-	// void SpawnBuildingDamageFX();                                                                                            // [0xb4c74bc] Final|Native|Private 
+	// void SpawnBuildingDamageFX();                                                                                            // [0xb5d926c] Final|Native|Private 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.RegisterEarthquake
-	// void RegisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                    // [0xb4c7338] Final|Native|Public|BlueprintCallable 
+	// void RegisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                    // [0xb5d916c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.PlayForceFeedback
-	// void PlayForceFeedback();                                                                                                // [0xb4c7324] Final|Native|Private 
+	// void PlayForceFeedback();                                                                                                // [0xb5d9158] Final|Native|Private 
 };
 
 /// Class /Script/MilkshakeRuntime.MilkshakeEarthquakeActor
-/// Size: 0x0018 (0x000290 - 0x0002A8)
+/// Size: 0x00B0 (0x000290 - 0x000340)
 class AMilkshakeEarthquakeActor : public AActor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 680;
+	static inline constexpr uint64_t __MDKClassSize = 832;
 
 public:
 	DMember(int32_t)                                   AsyncOverlappedActorsPreallocateCount                       OFFSET(get<int32_t>, {0x290, 4, 0, 0})
 	CMember(TArray<class AActor*>)                     AsyncOverlappedActors                                       OFFSET(get<T>, {0x298, 16, 0, 0})
+	CMember(TArray<FMilkshakeEarthquakePhysicsActorInfo>) OverlappedPhysicsActorInfos                              OFFSET(get<T>, {0x2A8, 16, 0, 0})
+	SMember(FScalableFloat)                            MaxNumOfPhysicActorSimulation                               OFFSET(getStruct<T>, {0x2B8, 40, 0, 0})
+	DMember(float)                                     MinTimeBeforeNextForceDirectionUpdate                       OFFSET(get<float>, {0x2E0, 4, 0, 0})
+	DMember(float)                                     MaxTimeBeforeNextForceDirectionUpdate                       OFFSET(get<float>, {0x2E4, 4, 0, 0})
+	DMember(float)                                     MinPhysicsImpulseMagnitude                                  OFFSET(get<float>, {0x2E8, 4, 0, 0})
+	DMember(float)                                     MaxPhysicsImpulseMagnitude                                  OFFSET(get<float>, {0x2EC, 4, 0, 0})
+	CMember(TMap<EFortPhysicsSimSize, float>)          SimSizeToImpulseScalarMap                                   OFFSET(get<T>, {0x2F0, 80, 0, 0})
 
 
 	/// Functions
+	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.TickEarthquakePhysicsActorForces
+	// void TickEarthquakePhysicsActorForces(float DeltaSeconds);                                                               // [0xb5d9280] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.RemoveNullsFromAsyncOverlappedActors
-	// void RemoveNullsFromAsyncOverlappedActors();                                                                             // [0x3047908] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void RemoveNullsFromAsyncOverlappedActors();                                                                             // [0x3097b14] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.RemoveAsyncOverlappedActorsOutsideRadius
-	// void RemoveAsyncOverlappedActorsOutsideRadius();                                                                         // [0x3047908] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void RemoveAsyncOverlappedActorsOutsideRadius();                                                                         // [0x3097b14] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.OnActorRemovedFromAsyncOverlappedActors
-	// void OnActorRemovedFromAsyncOverlappedActors(class AActor* RemovedActor);                                                // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnActorRemovedFromAsyncOverlappedActors(class AActor* RemovedActor);                                                // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.GetRadius
-	// float GetRadius();                                                                                                       // [0x130d900] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// float GetRadius();                                                                                                       // [0x3d1d968] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.GetNormalizedMagnitudeAtLocation
-	// float GetNormalizedMagnitudeAtLocation(FVector Location);                                                                // [0x130d900] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// float GetNormalizedMagnitudeAtLocation(FVector Location);                                                                // [0x3d1d968] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/MilkshakeRuntime.MilkshakeFieldSystemActor
@@ -118,6 +127,21 @@ public:
 
 	/// Functions
 	// Function /Script/MilkshakeRuntime.MilkshakeFieldSystemActor.SetStrength
-	// void SetStrength(float InStrength);                                                                                      // [0xb4c73f8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetStrength(float InStrength);                                                                                      // [0xb5d91ec] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+};
+
+/// Struct /Script/MilkshakeRuntime.MilkshakeEarthquakePhysicsActorInfo
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FMilkshakeEarthquakePhysicsActorInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(TWeakObjectPtr<AActor*>)                   PhysicsActor                                                OFFSET(get<T>, {0x0, 8, 0, 0})
+	DMember(float)                                     ForceDirectionUpdateGameTime                                OFFSET(get<float>, {0x8, 4, 0, 0})
+	DMember(bool)                                      bIsForceForward                                             OFFSET(get<bool>, {0xC, 1, 0, 0})
+	CMember(EFortPhysicsSimSize)                       PhysicsSimSize                                              OFFSET(get<T>, {0xD, 1, 0, 0})
 };
 

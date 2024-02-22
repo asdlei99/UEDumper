@@ -19,7 +19,7 @@
 class UVKEditGameplayAssetsToCook : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,15471) /* TArray<TWeakObjectPtr<UObject*>> */ __um(Assets);                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,15614) /* TArray<TWeakObjectPtr<UObject*>> */ __um(Assets);                                   // 0x0030   (0x0010)  
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_PlaysetRootSpawner
@@ -38,37 +38,37 @@ public:
 };
 
 /// Class /Script/VKEditGameplay.VKEditPlayspace
-/// Size: 0x0128 (0x0006C0 - 0x0007E8)
+/// Size: 0x0128 (0x0006E8 - 0x000810)
 class AVKEditPlayspace : public AFortPlayspace
 { 
 public:
-	unsigned char                                      UnknownData00_3[0x50];                                      // 0x06C0   (0x0050)  MISSED
-	SDK_UNDEFINED(32,15472) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyMinigameSettingsMachineClassToSpawn);     // 0x0710   (0x0020)  
-	SDK_UNDEFINED(32,15473) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyWorldManagerClassToSpawn);                // 0x0730   (0x0020)  
-	class UFortLevelStreamComponent*                   LevelStreamComponent;                                       // 0x0750   (0x0008)  
-	class UFortProjectEditComponent*                   ProjectEditComponent;                                       // 0x0758   (0x0008)  
-	class UPlayspaceComponent_PlayStopPauseManager*    PlayStopPauseManager;                                       // 0x0760   (0x0008)  
-	class UPlayspaceComponent_EditConnectionManager*   EditConnectionManager;                                      // 0x0768   (0x0008)  
-	class UPlayspaceComponent_LiveEdit*                LiveEditComponent;                                          // 0x0770   (0x0008)  
-	class UPlayspaceComponent_VKEditCreativeToolsPermission* CreativeToolsPermission;                              // 0x0778   (0x0008)  
-	class UPlayspaceComponent_CreativeLoadingStateProxy* CreativeLoadingStateProxy;                                // 0x0780   (0x0008)  
-	class UPlayspaceComponent_SpatialGameplay*         SpatialGameplayComponent;                                   // 0x0788   (0x0008)  
-	class UFortVolumeObjectTrackingComponent*          ObjectTrackingComponent;                                    // 0x0790   (0x0008)  
-	class UPlayspaceComponent_DeviceTracking*          DeviceTrackerComponent;                                     // 0x0798   (0x0008)  
-	class UPlayspaceComponent_CreativeInventory*       CreativeInventoryComponent;                                 // 0x07A0   (0x0008)  
-	class UPlayspaceComponent_ActorMemoryTracker*      ActorMemoryTrackerComponent;                                // 0x07A8   (0x0008)  
-	class UPlayspaceComponent_GlobalMemoryTracker*     GlobalMemoryTrackerComponent;                               // 0x07B0   (0x0008)  
-	class UFortCreativeDynamicXpComponent*             FortCreativeDynamicXp;                                      // 0x07B8   (0x0008)  
-	class UPlayspaceComponent_CreativeModifyEmotes*    CreativeModifyEmotesComponent;                              // 0x07C0   (0x0008)  
-	class UFortPlayspaceComponent_WorldTimeOfDayOverride* WorldTimeOfDayOverrideComponent;                         // 0x07C8   (0x0008)  
-	class UFortPlayspaceComponent_NaniteSettingsOverride* NaniteSettingsOverrideComponent;                         // 0x07D0   (0x0008)  
-	class UPlayspaceComponent_PlaysetRootSpawner*      PlaysetRootSpawnerComponent;                                // 0x07D8   (0x0008)  
-	class UPlayspaceComponent_PlayerPawnOverrides*     PlayerPawnOverridesComponent;                               // 0x07E0   (0x0008)  
+	unsigned char                                      UnknownData00_3[0x50];                                      // 0x06E8   (0x0050)  MISSED
+	SDK_UNDEFINED(32,15615) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyMinigameSettingsMachineClassToSpawn);     // 0x0738   (0x0020)  
+	SDK_UNDEFINED(32,15616) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyWorldManagerClassToSpawn);                // 0x0758   (0x0020)  
+	class UFortLevelStreamComponent*                   LevelStreamComponent;                                       // 0x0778   (0x0008)  
+	class UFortProjectEditComponent*                   ProjectEditComponent;                                       // 0x0780   (0x0008)  
+	class UPlayspaceComponent_PlayStopPauseManager*    PlayStopPauseManager;                                       // 0x0788   (0x0008)  
+	class UPlayspaceComponent_EditConnectionManager*   EditConnectionManager;                                      // 0x0790   (0x0008)  
+	class UPlayspaceComponent_LiveEdit*                LiveEditComponent;                                          // 0x0798   (0x0008)  
+	class UPlayspaceComponent_VKEditCreativeToolsPermission* CreativeToolsPermission;                              // 0x07A0   (0x0008)  
+	class UPlayspaceComponent_CreativeLoadingStateProxy* CreativeLoadingStateProxy;                                // 0x07A8   (0x0008)  
+	class UPlayspaceComponent_SpatialGameplay*         SpatialGameplayComponent;                                   // 0x07B0   (0x0008)  
+	class UFortVolumeObjectTrackingComponent*          ObjectTrackingComponent;                                    // 0x07B8   (0x0008)  
+	class UPlayspaceComponent_DeviceTracking*          DeviceTrackerComponent;                                     // 0x07C0   (0x0008)  
+	class UPlayspaceComponent_CreativeInventory*       CreativeInventoryComponent;                                 // 0x07C8   (0x0008)  
+	class UPlayspaceComponent_ActorMemoryTracker*      ActorMemoryTrackerComponent;                                // 0x07D0   (0x0008)  
+	class UPlayspaceComponent_GlobalMemoryTracker*     GlobalMemoryTrackerComponent;                               // 0x07D8   (0x0008)  
+	class UFortCreativeDynamicXpComponent*             FortCreativeDynamicXp;                                      // 0x07E0   (0x0008)  
+	class UPlayspaceComponent_CreativeModifyEmotes*    CreativeModifyEmotesComponent;                              // 0x07E8   (0x0008)  
+	class UFortPlayspaceComponent_WorldTimeOfDayOverride* WorldTimeOfDayOverrideComponent;                         // 0x07F0   (0x0008)  
+	class UFortPlayspaceComponent_NaniteSettingsOverride* NaniteSettingsOverrideComponent;                         // 0x07F8   (0x0008)  
+	class UPlayspaceComponent_PlaysetRootSpawner*      PlaysetRootSpawnerComponent;                                // 0x0800   (0x0008)  
+	class UPlayspaceComponent_PlayerPawnOverrides*     PlayerPawnOverridesComponent;                               // 0x0808   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/VKEditGameplay.VKEditPlayspace.OnClientActivatedContent
-	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                         // [0xb9447e4] Final|Native|Private|HasOutParms|Const 
+	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                         // [0xbcfc5c0] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager
@@ -85,8 +85,8 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_VkEditStatus
-	// void OnRep_VkEditStatus();                                                                                            // [0xb9448f8] Final|Native|Protected|Const 
+	// void OnRep_VkEditStatus();                                                                                            // [0xbcfc6d4] Final|Native|Protected|Const 
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_EditConnections
-	// void OnRep_EditConnections();                                                                                         // [0xb9448b4] Final|Native|Protected|Const 
+	// void OnRep_EditConnections();                                                                                         // [0xbcfc690] Final|Native|Protected|Const 
 };
 

@@ -7,12 +7,13 @@
 
 #pragma once
 /// dependency: CoreUObject
-/// dependency: SlateRHIRenderer
+/// dependency: Engine
 
-/// Class /FortUILibrary/SlatePostBuffer/SlatePostBufferBlur.SlatePostBufferBlur_C
-/// Size: 0x0000 (0x000040 - 0x000040)
-class USlatePostBufferBlur_C : public USlatePostBufferBlur
+/// Class /Script/GameFeatureSet.GameFeatureSetSubsystem
+/// Size: 0x00B0 (0x000030 - 0x0000E0)
+class UGameFeatureSetSubsystem : public UEngineSubsystem
 { 
 public:
+	unsigned char                                      UnknownData00_1[0xB0];                                      // 0x0030   (0x00B0)  MISSED
 };
 

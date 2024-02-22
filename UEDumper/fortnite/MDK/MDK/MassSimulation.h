@@ -26,13 +26,13 @@ public:
 };
 
 /// Class /Script/MassSimulation.MassSimulationSubsystem
-/// Size: 0x0478 (0x000038 - 0x0004B0)
+/// Size: 0x0480 (0x000038 - 0x0004B8)
 class UMassSimulationSubsystem : public UMassSubsystemBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1200;
+	static inline constexpr uint64_t __MDKClassSize = 1208;
 
 public:
-	SMember(FMassRuntimePipeline)                      RuntimePipeline                                             OFFSET(getStruct<T>, {0x498, 16, 0, 0})
+	SMember(FMassRuntimePipeline)                      RuntimePipeline                                             OFFSET(getStruct<T>, {0x498, 24, 0, 0})
 };
 

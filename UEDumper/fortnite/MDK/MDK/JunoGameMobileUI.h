@@ -9,8 +9,25 @@
 /// dependency: DynamicBacchusHUD
 /// dependency: DynamicUI
 /// dependency: Engine
+/// dependency: FortniteGame
 /// dependency: FortniteUI
 /// dependency: GameplayTags
+
+/// Class /Script/JunoGameMobileUI.FortMobileButtonBehaviorComponent_OffhandVisuals
+/// Size: 0x0020 (0x000048 - 0x000068)
+class UFortMobileButtonBehaviorComponent_OffhandVisuals : public UFortMobileButtonBehaviorComponent_Visibility
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 104;
+
+public:
+	CMember(class UFortItem*)                          CachedOffhandItem                                           OFFSET(get<T>, {0x60, 8, 0, 0})
+
+
+	/// Functions
+	// Function /Script/JunoGameMobileUI.FortMobileButtonBehaviorComponent_OffhandVisuals.HandleInventoryItemChanged
+	// void HandleInventoryItemChanged(FJunoItemSlot& ItemSlot, EJunoItemChangeType ChangeType);                                // [0xc0fa8b4] Final|Native|Private|HasOutParms 
+};
 
 /// Class /Script/JunoGameMobileUI.JunoMobileActionButtonBehavior_Interact
 /// Size: 0x0000 (0x000138 - 0x000138)
@@ -39,8 +56,8 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.UpdateHUDLayoutContexts
-	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);               // [0xc14dae8] Final|Native|Public|BlueprintCallable 
+	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);               // [0xc0faa94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.BP_OnBuildingModeChanged
-	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                    // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                    // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 };
 

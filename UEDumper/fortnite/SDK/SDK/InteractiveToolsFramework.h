@@ -287,9 +287,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
-	// void UpdateWorldLocalState(bool bWorldIn);                                                                            // [0xb0ef44c] Final|Native|Public  
+	// void UpdateWorldLocalState(bool bWorldIn);                                                                            // [0xa995730] Final|Native|Public  
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
-	// void UpdateHoverState(bool bHoveringIn);                                                                              // [0xb0ef170] Final|Native|Public  
+	// void UpdateHoverState(bool bHoveringIn);                                                                              // [0xa99549c] Final|Native|Public  
 };
 
 /// Class /Script/InteractiveToolsFramework.InteractiveCommandArguments
@@ -440,8 +440,8 @@ class UGizmoAxisTranslationParameterSource : public UGizmoBaseFloatParameterSour
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x88];                                      // 0x0048   (0x0088)  MISSED
-	SDK_UNDEFINED(16,14048) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,14049) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,14145) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,14146) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00E0   (0x0010)  
 	float                                              Parameter;                                                  // 0x00F0   (0x0004)  
 	FGizmoFloatParameterChange                         LastChange;                                                 // 0x00F4   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00FC   (0x0004)  MISSED
@@ -456,8 +456,8 @@ class UGizmoPlaneTranslationParameterSource : public UGizmoBaseVec2ParameterSour
 { 
 public:
 	unsigned char                                      UnknownData00_3[0xC8];                                      // 0x0048   (0x00C8)  MISSED
-	SDK_UNDEFINED(16,14050) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0110   (0x0010)  
-	SDK_UNDEFINED(16,14051) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,14147) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,14148) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0120   (0x0010)  
 	FVector2D                                          Parameter;                                                  // 0x0130   (0x0010)  
 	FGizmoVec2ParameterChange                          LastChange;                                                 // 0x0140   (0x0020)  
 	FVector                                            CurTranslationOrigin;                                       // 0x0160   (0x0018)  
@@ -473,8 +473,8 @@ class UGizmoAxisRotationParameterSource : public UGizmoBaseFloatParameterSource
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x88];                                      // 0x0048   (0x0088)  MISSED
-	SDK_UNDEFINED(16,14052) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,14053) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,14149) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,14150) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00E0   (0x0010)  
 	float                                              Angle;                                                      // 0x00F0   (0x0004)  
 	FGizmoFloatParameterChange                         LastChange;                                                 // 0x00F4   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00FC   (0x0004)  MISSED
@@ -488,8 +488,8 @@ public:
 class UGizmoUniformScaleParameterSource : public UGizmoBaseVec2ParameterSource
 { 
 public:
-	SDK_UNDEFINED(16,14054) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14055) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14151) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14152) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0058   (0x0010)  
 	float                                              ScaleMultiplier;                                            // 0x0068   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x006C   (0x0004)  MISSED
 	FVector2D                                          Parameter;                                                  // 0x0070   (0x0010)  
@@ -506,8 +506,8 @@ public:
 class UGizmoAxisScaleParameterSource : public UGizmoBaseFloatParameterSource
 { 
 public:
-	SDK_UNDEFINED(16,14056) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14057) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14153) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14154) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x0058   (0x0010)  
 	float                                              ScaleMultiplier;                                            // 0x0068   (0x0004)  
 	bool                                               bClampToZero;                                               // 0x006C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x006D   (0x0003)  MISSED
@@ -525,8 +525,8 @@ class UGizmoPlaneScaleParameterSource : public UGizmoBaseVec2ParameterSource
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x48];                                      // 0x0048   (0x0048)  MISSED
-	SDK_UNDEFINED(16,14058) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0090   (0x0010)  
-	SDK_UNDEFINED(16,14059) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,14155) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,14156) /* TScriptInterface<Class> */ __um(TransformSource);                                   // 0x00A0   (0x0010)  
 	float                                              ScaleMultiplier;                                            // 0x00B0   (0x0004)  
 	bool                                               bUseEqualScaling;                                           // 0x00B4   (0x0001)  
 	bool                                               bClampToZero;                                               // 0x00B5   (0x0001)  
@@ -710,10 +710,10 @@ class UAxisAngleGizmo : public UInteractiveGizmo
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x10];                                      // 0x0038   (0x0010)  MISSED
-	SDK_UNDEFINED(16,14060) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14061) /* TScriptInterface<Class> */ __um(AngleSource);                                       // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,14062) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,14063) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,14157) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14158) /* TScriptInterface<Class> */ __um(AngleSource);                                       // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14159) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,14160) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0078   (0x0010)  
 	class UClickDragInputBehavior*                     MouseBehavior;                                              // 0x0088   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x80];                                      // 0x0090   (0x0080)  MISSED
 	bool                                               bInInteraction;                                             // 0x0110   (0x0001)  
@@ -742,11 +742,11 @@ class UAxisPositionGizmo : public UInteractiveGizmo
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x10];                                      // 0x0038   (0x0010)  MISSED
-	SDK_UNDEFINED(16,14064) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14065) /* TScriptInterface<Class> */ __um(ParameterSource);                                   // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14161) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14162) /* TScriptInterface<Class> */ __um(ParameterSource);                                   // 0x0058   (0x0010)  
 	class UGizmoViewContext*                           GizmoViewContext;                                           // 0x0068   (0x0008)  
-	SDK_UNDEFINED(16,14066) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0070   (0x0010)  
-	SDK_UNDEFINED(16,14067) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,14163) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,14164) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0080   (0x0010)  
 	class UClickDragInputBehavior*                     MouseBehavior;                                              // 0x0090   (0x0008)  
 	bool                                               bEnableSignedAxis;                                          // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x88];                                      // 0x0099   (0x0088)  MISSED
@@ -961,7 +961,7 @@ public:
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FGizmoElementMaterialAttribute
 { 
-	SDK_UNDEFINED(8,14068) /* TWeakObjectPtr<UMaterialInterface*> */ __um(Value);                                  // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14165) /* TWeakObjectPtr<UMaterialInterface*> */ __um(Value);                                  // 0x0000   (0x0008)  
 	bool                                               bOverridesChildState;                                       // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0009   (0x0003)  MISSED
 };
@@ -1243,9 +1243,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.SetTransform
-	// void SetTransform(FTransform& NewTransform);                                                                          // [0xb0eedd0] Native|Public|HasOutParms|HasDefaults 
+	// void SetTransform(FTransform& NewTransform);                                                                          // [0xa99508c] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.GetTransform
-	// FTransform GetTransform();                                                                                            // [0xb0eec04] Native|Public|HasDefaults|Const 
+	// FTransform GetTransform();                                                                                            // [0xa994f00] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoAxisSource
@@ -1257,13 +1257,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
-	// bool HasTangentVectors();                                                                                             // [0x2379f94] Native|Public|Const  
+	// bool HasTangentVectors();                                                                                             // [0x23bb874] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
-	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                   // [0xb0eeaa0] Native|Public|HasOutParms|HasDefaults|Const 
+	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                   // [0xa994d9c] Native|Public|HasOutParms|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetOrigin
-	// FVector GetOrigin();                                                                                                  // [0xb0eea38] Native|Public|HasDefaults|Const 
+	// FVector GetOrigin();                                                                                                  // [0xa994d34] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetDirection
-	// FVector GetDirection();                                                                                               // [0xb0eea00] Native|Public|HasDefaults|Const 
+	// FVector GetDirection();                                                                                               // [0xa994cfc] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickTarget
@@ -1275,9 +1275,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting);                                                                       // [0xb0ef388] Native|Public        
+	// void UpdateInteractingState(bool bInteracting);                                                                       // [0xa9956ac] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering);                                                                                // [0x8127728] Native|Public        
+	// void UpdateHoverState(bool bHovering);                                                                                // [0x8137940] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickMultiTarget
@@ -1289,11 +1289,11 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                            // [0xb0ef238] Native|Public        
+	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                            // [0xa995524] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                     // [0xb0ef020] Native|Public        
+	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                     // [0xa995314] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
-	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                  // [0xb0eeed0] Native|Public        
+	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                  // [0xa99518c] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoRenderTarget
@@ -1312,7 +1312,7 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
-	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                 // [0xb0ef020] Native|Public        
+	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                 // [0xa995314] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoStateTarget
@@ -1324,9 +1324,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.EndUpdate
-	// void EndUpdate();                                                                                                     // [0x3064200] Native|Public        
+	// void EndUpdate();                                                                                                     // [0x313fdf0] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
-	// void BeginUpdate();                                                                                                   // [0x2c35200] Native|Public        
+	// void BeginUpdate();                                                                                                   // [0x2c0e95c] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoFloatParameterSource
@@ -1338,13 +1338,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-	// void SetParameter(float NewValue);                                                                                    // [0xb0eec84] Native|Public        
+	// void SetParameter(float NewValue);                                                                                    // [0xa994f80] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-	// float GetParameter();                                                                                                 // [0x80ebbd4] Native|Public|Const  
+	// float GetParameter();                                                                                                 // [0x80fc8e4] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
-	// void EndModify();                                                                                                     // [0x8f3c2e0] Native|Public        
+	// void EndModify();                                                                                                     // [0x8f32c30] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
-	// void BeginModify();                                                                                                   // [0x3064200] Native|Public        
+	// void BeginModify();                                                                                                   // [0x313fdf0] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoVec2ParameterSource
@@ -1356,13 +1356,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
-	// void SetParameter(FVector2D& NewValue);                                                                               // [0xb0eed48] Native|Public|HasOutParms|HasDefaults 
+	// void SetParameter(FVector2D& NewValue);                                                                               // [0xa995004] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
-	// FVector2D GetParameter();                                                                                             // [0xb0eea70] Native|Public|HasDefaults|Const 
+	// FVector2D GetParameter();                                                                                             // [0xa994d6c] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
-	// void EndModify();                                                                                                     // [0x8f3c2e0] Native|Public        
+	// void EndModify();                                                                                                     // [0x8f32c30] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
-	// void BeginModify();                                                                                                   // [0x3064200] Native|Public        
+	// void BeginModify();                                                                                                   // [0x313fdf0] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoLineHandleComponent
@@ -1462,7 +1462,7 @@ public:
 class UGizmoAxisIntervalParameterSource : public UGizmoBaseFloatParameterSource
 { 
 public:
-	SDK_UNDEFINED(16,14069) /* TScriptInterface<Class> */ __um(FloatParameterSource);                              // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14166) /* TScriptInterface<Class> */ __um(FloatParameterSource);                              // 0x0048   (0x0010)  
 	float                                              MinParameter;                                               // 0x0058   (0x0004)  
 	float                                              MaxParameter;                                               // 0x005C   (0x0004)  
 };
@@ -1490,10 +1490,10 @@ class UPlanePositionGizmo : public UInteractiveGizmo
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x10];                                      // 0x0038   (0x0010)  MISSED
-	SDK_UNDEFINED(16,14070) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14071) /* TScriptInterface<Class> */ __um(ParameterSource);                                   // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,14072) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,14073) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,14167) /* TScriptInterface<Class> */ __um(AxisSource);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14168) /* TScriptInterface<Class> */ __um(ParameterSource);                                   // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14169) /* TScriptInterface<Class> */ __um(HitTarget);                                         // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,14170) /* TScriptInterface<Class> */ __um(StateTarget);                                       // 0x0078   (0x0010)  
 	class UClickDragInputBehavior*                     MouseBehavior;                                              // 0x0088   (0x0008)  
 	bool                                               bEnableSignedAxis;                                          // 0x0090   (0x0001)  
 	bool                                               bFlipX;                                                     // 0x0091   (0x0001)  
@@ -1545,7 +1545,7 @@ public:
 	unsigned char                                      UnknownData00_3[0x48];                                      // 0x0038   (0x0048)  MISSED
 	float                                              HitErrorThreshold;                                          // 0x0080   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0084   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14074) /* FText */                __um(TransactionDescription);                               // 0x0088   (0x0018)  
+	SDK_UNDEFINED(24,14171) /* FText */                __um(TransactionDescription);                               // 0x0088   (0x0018)  
 	float                                              Radius;                                                     // 0x00A0   (0x0004)  
 	bool                                               bIsHovering;                                                // 0x00A4   (0x0001)  
 	bool                                               bIsDragging;                                                // 0x00A5   (0x0001)  
@@ -1588,7 +1588,7 @@ class UGizmoObjectModifyStateTarget : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x50];                                      // 0x0000   (0x0050)  MISSED
-	SDK_UNDEFINED(16,14075) /* TScriptInterface<Class> */ __um(TransactionManager);                                // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,14172) /* TScriptInterface<Class> */ __um(TransactionManager);                                // 0x0050   (0x0010)  
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoTransformChangeStateTarget
@@ -1597,7 +1597,7 @@ class UGizmoTransformChangeStateTarget : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x50];                                      // 0x0000   (0x0050)  MISSED
-	SDK_UNDEFINED(16,14076) /* TScriptInterface<Class> */ __um(TransactionManager);                                // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,14173) /* TScriptInterface<Class> */ __um(TransactionManager);                                // 0x0050   (0x0010)  
 	unsigned char                                      UnknownData01_6[0xE0];                                      // 0x0060   (0x00E0)  MISSED
 };
 
@@ -1645,7 +1645,7 @@ public:
 class UGizmoScaledTransformSource : public UGizmoBaseTransformSource
 { 
 public:
-	SDK_UNDEFINED(16,14077) /* TScriptInterface<Class> */ __um(ChildTransformSource);                              // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14174) /* TScriptInterface<Class> */ __um(ChildTransformSource);                              // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x88];                                      // 0x0058   (0x0088)  MISSED
 };
 
@@ -1663,8 +1663,8 @@ public:
 class UGizmoScaledAndUnscaledTransformSources : public UGizmoBaseTransformSource
 { 
 public:
-	SDK_UNDEFINED(16,14078) /* TScriptInterface<Class> */ __um(ScaledTransformSource);                             // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14079) /* TScriptInterface<Class> */ __um(UnscaledTransformSource);                           // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14175) /* TScriptInterface<Class> */ __um(ScaledTransformSource);                             // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14176) /* TScriptInterface<Class> */ __um(UnscaledTransformSource);                           // 0x0058   (0x0010)  
 };
 
 /// Class /Script/InteractiveToolsFramework.InteractiveToolPropertySet
@@ -1673,7 +1673,7 @@ class UInteractiveToolPropertySet : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x38];                                      // 0x0000   (0x0038)  MISSED
-	SDK_UNDEFINED(80,14080) /* TMap<FString, UInteractiveToolPropertySet*> */ __um(CachedPropertiesMap);           // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14177) /* TMap<FString, UInteractiveToolPropertySet*> */ __um(CachedPropertiesMap);           // 0x0038   (0x0050)  
 	bool                                               bIsPropertySetEnabled;                                      // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x1F];                                      // 0x0089   (0x001F)  MISSED
 };
@@ -1728,7 +1728,7 @@ class UMeshSurfacePointTool : public USingleSelectionTool
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x50];                                      // 0x00B0   (0x0050)  MISSED
-	SDK_UNDEFINED(8,14081) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x0100   (0x0008)  
+	SDK_UNDEFINED(8,14178) /* TWeakObjectPtr<UWorld*> */ __um(TargetWorld);                                        // 0x0100   (0x0008)  
 };
 
 /// Struct /Script/InteractiveToolsFramework.BrushStampData
@@ -1749,7 +1749,7 @@ public:
 	float                                              WorldToLocalScale;                                          // 0x0114   (0x0004)  
 	FBrushStampData                                    LastBrushStamp;                                             // 0x0118   (0x0128)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0240   (0x0010)  MISSED
-	SDK_UNDEFINED(32,14082) /* TWeakObjectPtr<UClass*> */ __um(PropertyClass);                                     // 0x0250   (0x0020)  
+	SDK_UNDEFINED(32,14179) /* TWeakObjectPtr<UClass*> */ __um(PropertyClass);                                     // 0x0250   (0x0020)  
 	class UBrushStampIndicator*                        BrushStampIndicator;                                        // 0x0270   (0x0008)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0278   (0x0010)  MISSED
 };
@@ -1884,7 +1884,7 @@ public:
 	unsigned char                                      UnknownData00_3[0x30];                                      // 0x0000   (0x0030)  MISSED
 	TArray<FActiveGizmo>                               ActiveGizmos;                                               // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0040   (0x0018)  MISSED
-	SDK_UNDEFINED(80,14083) /* TMap<FString, UInteractiveGizmoBuilder*> */ __um(GizmoBuilders);                    // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,14180) /* TMap<FString, UInteractiveGizmoBuilder*> */ __um(GizmoBuilders);                    // 0x0058   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x18];                                      // 0x00A8   (0x0018)  MISSED
 };
 
@@ -1897,7 +1897,7 @@ public:
 	class UInteractiveTool*                            ActiveLeftTool;                                             // 0x0058   (0x0008)  
 	class UInteractiveTool*                            ActiveRightTool;                                            // 0x0060   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x80];                                      // 0x0068   (0x0080)  MISSED
-	SDK_UNDEFINED(80,14084) /* TMap<FString, UInteractiveToolBuilder*> */ __um(ToolBuilders);                      // 0x00E8   (0x0050)  
+	SDK_UNDEFINED(80,14181) /* TMap<FString, UInteractiveToolBuilder*> */ __um(ToolBuilders);                      // 0x00E8   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x60];                                      // 0x0138   (0x0060)  MISSED
 };
 
@@ -1913,7 +1913,7 @@ public:
 	class UInteractiveGizmoManager*                    GizmoManager;                                               // 0x0070   (0x0008)  
 	class UContextObjectStore*                         ContextObjectStore;                                         // 0x0078   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x280];                                     // 0x0080   (0x0280)  MISSED
-	SDK_UNDEFINED(32,14085) /* TWeakObjectPtr<UClass*> */ __um(ToolManagerClass);                                  // 0x0300   (0x0020)  
+	SDK_UNDEFINED(32,14182) /* TWeakObjectPtr<UClass*> */ __um(ToolManagerClass);                                  // 0x0300   (0x0020)  
 };
 
 /// Class /Script/InteractiveToolsFramework.MultiSelectionTool
@@ -2001,7 +2001,7 @@ struct FInputRayHit
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            HitIdentifier;                                              // 0x002C   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0030   (0x0008)  MISSED
-	SDK_UNDEFINED(8,14086) /* TWeakObjectPtr<UObject*> */ __um(HitObject);                                         // 0x0038   (0x0008)  
+	SDK_UNDEFINED(8,14183) /* TWeakObjectPtr<UObject*> */ __um(HitObject);                                         // 0x0038   (0x0008)  
 };
 
 /// Struct /Script/InteractiveToolsFramework.DeviceButtonState

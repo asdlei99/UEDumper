@@ -33,13 +33,13 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteGameplayAbilities.FortGameplayAbility_PlayAnim.OnInterrupted
-	// void OnInterrupted();                                                                                                 // [0xa80eb00] Final|Native|Private 
+	// void OnInterrupted();                                                                                                 // [0xa8052dc] Final|Native|Private 
 	// Function /Script/VerseFortniteGameplayAbilities.FortGameplayAbility_PlayAnim.OnCompleted
-	// void OnCompleted();                                                                                                   // [0xa80eb00] Final|Native|Private 
+	// void OnCompleted();                                                                                                   // [0xa8052dc] Final|Native|Private 
 	// Function /Script/VerseFortniteGameplayAbilities.FortGameplayAbility_PlayAnim.OnCancelled
-	// void OnCancelled();                                                                                                   // [0xa80eb00] Final|Native|Private 
+	// void OnCancelled();                                                                                                   // [0xa8052dc] Final|Native|Private 
 	// Function /Script/VerseFortniteGameplayAbilities.FortGameplayAbility_PlayAnim.OnBlendOut
-	// void OnBlendOut();                                                                                                    // [0x3047908] Final|Native|Private 
+	// void OnBlendOut();                                                                                                    // [0x3097b14] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortniteGameplayAbilities.FortGameplayAbility_PlayAnimAndApplyEffect
@@ -62,7 +62,7 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteGameplayAbilities.VerseGameplayAttribute.GetGameplayAttributeForClass
-	// FGameplayAttribute GetGameplayAttributeForClass(class UClass*& AttributeClass);                                       // [0xab4bac8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayAttribute GetGameplayAttributeForClass(class UClass*& AttributeClass);                                       // [0xae46d88] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/VerseFortniteGameplayAbilities.VerseFortniteAbilityComponentBase

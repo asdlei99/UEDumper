@@ -19,7 +19,7 @@ public:
 	class UAthenaFullScreenMapBase*                    MapWidget;                                                  // 0x0660   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0668   (0x0008)  MISSED
 	class UClass*                                      CollectionIconType;                                         // 0x0670   (0x0008)  
-	SDK_UNDEFINED(80,12276) /* TMap<FGameplayTag, UAthenaMapCollectionIcon*> */ __um(MapCollectionIcons);          // 0x0678   (0x0050)  
+	SDK_UNDEFINED(80,12363) /* TMap<FGameplayTag, UAthenaMapCollectionIcon*> */ __um(MapCollectionIcons);          // 0x0678   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x06C8   (0x0020)  MISSED
 };
 
@@ -32,8 +32,8 @@ public:
 
 	/// Functions
 	// Function /Script/CollectionMapShared.AthenaMapCollectionIcon.SetSecondaryIcon
-	// void SetSecondaryIcon(TWeakObjectPtr<UObject*>& SecondaryIcon);                                                       // [0x130d900] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetSecondaryIcon(TWeakObjectPtr<UObject*>& SecondaryIcon);                                                       // [0x3d1d968] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CollectionMapShared.AthenaMapCollectionIcon.SetIsKnown
-	// void SetIsKnown(bool bIsKnown);                                                                                       // [0x130d900] RequiredAPI|Event|Public|BlueprintEvent 
+	// void SetIsKnown(bool bIsKnown);                                                                                       // [0x3d1d968] RequiredAPI|Event|Public|BlueprintEvent 
 };
 

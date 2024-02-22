@@ -43,6 +43,6 @@ public:
 
 	/// Functions
 	// Function /Irwin/FX/AnimNotify_Irwin_Footfalls.AnimNotify_Irwin_Footfalls_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x130d900] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x3d1d968] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 

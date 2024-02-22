@@ -47,7 +47,7 @@ public:
 	class UClass*                                      TabButtonClass;                                             // 0x0350   (0x0008)  
 	FMargin                                            TabButtonPadding;                                           // 0x0358   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0368   (0x0008)  MISSED
-	SDK_UNDEFINED(16,12455) /* TArray<FText> */        __um(DesignerPreviewTabNames);                              // 0x0370   (0x0010)  
+	SDK_UNDEFINED(16,12542) /* TArray<FText> */        __um(DesignerPreviewTabNames);                              // 0x0370   (0x0010)  
 	float                                              ButtonScrollAmount;                                         // 0x0380   (0x0004)  
 	unsigned char                                      UnknownData03_6[0x1C];                                      // 0x0384   (0x001C)  MISSED
 };
@@ -69,7 +69,7 @@ class UCreativeClassSelectorButton : public UCommonButtonBase
 public:
 	class UCommonTextBlock*                            ButtonTextBlock;                                            // 0x1490   (0x0008)  
 	class UCommonActionWidget*                         ActionWidget;                                               // 0x1498   (0x0008)  
-	SDK_UNDEFINED(24,12456) /* FText */                __um(ButtonText);                                           // 0x14A0   (0x0018)  
+	SDK_UNDEFINED(24,12543) /* FText */                __um(ButtonText);                                           // 0x14A0   (0x0018)  
 	FDataTableRowHandle                                buttonInputAction;                                          // 0x14B8   (0x0010)  
 	bool                                               bAutoCapitalize;                                            // 0x14C8   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x14C9   (0x0007)  MISSED
@@ -77,7 +77,7 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelectorButton.SetButtonText
-	// void SetButtonText(FText& InText);                                                                                    // [0xb74b5bc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetButtonText(FText& InText);                                                                                    // [0xb862200] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CRD_ClassSelectorUI.ClassSelectorTeamTile
@@ -93,13 +93,13 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ClassSelectorUI.ClassSelectorTeamTile.OnTeamSet
-	// void OnTeamSet(FMinigameTeam& NewTeamData);                                                                           // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnTeamSet(FMinigameTeam& NewTeamData);                                                                           // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.ClassSelectorTeamTile.OnTeamIconSet
-	// void OnTeamIconSet(FCreativeIconOption& NewTeamIcon);                                                                 // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnTeamIconSet(FCreativeIconOption& NewTeamIcon);                                                                 // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.ClassSelectorTeamTile.OnTeamColorIndexSet
-	// void OnTeamColorIndexSet(int32_t TeamColorIndex);                                                                     // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnTeamColorIndexSet(int32_t TeamColorIndex);                                                                     // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.ClassSelectorTeamTile.OnPlayerCountSet
-	// void OnPlayerCountSet(int32_t NewPlayerCount);                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnPlayerCountSet(int32_t NewPlayerCount);                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/CRD_ClassSelectorUI.ClassSelectorTeamTiles
@@ -136,9 +136,9 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassEntry.OnClassEntryDataSet
-	// void OnClassEntryDataSet(bool bIsCurrentClass, bool bIsPendingClass);                                                 // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnClassEntryDataSet(bool bIsCurrentClass, bool bIsPendingClass);                                                 // [0x3d1d968] Event|Public|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassEntry.OnBrowsingLoadout
-	// void OnBrowsingLoadout(bool bBrowsingLoadout);                                                                        // [0x130d900] Event|Public|BlueprintEvent 
+	// void OnBrowsingLoadout(bool bBrowsingLoadout);                                                                        // [0x3d1d968] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/CRD_ClassSelectorUI.CreativeClassSelector
@@ -188,17 +188,17 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.OnTimerCountdown
-	// void OnTimerCountdown(int32_t RemainingTime);                                                                         // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnTimerCountdown(int32_t RemainingTime);                                                                         // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.OnLoadoutCommitted
-	// void OnLoadoutCommitted(FText& NewClassName, FText& NewTeamName, bool bNewLoadout);                                   // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoadoutCommitted(FText& NewClassName, FText& NewTeamName, bool bNewLoadout);                                   // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.OnClassSelectorUIPopulated
-	// void OnClassSelectorUIPopulated(bool bHasValidData);                                                                  // [0x130d900] Event|Protected|BlueprintEvent 
+	// void OnClassSelectorUIPopulated(bool bHasValidData);                                                                  // [0x3d1d968] Event|Protected|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.OnClassSelectionChanged
-	// void OnClassSelectionChanged(FText& NewClassName, FText& NewClassDescription);                                        // [0x130d900] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnClassSelectionChanged(FText& NewClassName, FText& NewClassDescription);                                        // [0x3d1d968] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.HandleMinigameStateChanged
-	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                     // [0xb74b480] Final|Native|Protected 
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState);                     // [0xb862140] Final|Native|Protected 
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelector.GetFirstLoadoutItem
-	// class UWidget* GetFirstLoadoutItem();                                                                                 // [0xb74b444] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetFirstLoadoutItem();                                                                                 // [0xb862104] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CRD_ClassSelectorUI.CreativeClassSelectorMapTab
@@ -213,7 +213,7 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ClassSelectorUI.CreativeClassSelectorMapTab.SetTabName
-	// void SetTabName(FText& TabName);                                                                                      // [0xb74b658] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTabName(FText& TabName);                                                                                      // [0xb86229c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CRD_ClassSelectorUI.Mutator_ClassSelectorUI

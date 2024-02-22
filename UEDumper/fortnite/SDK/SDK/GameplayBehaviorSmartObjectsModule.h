@@ -27,9 +27,9 @@ public:
 class UAITask_UseGameplayBehaviorSmartObject : public UAITask
 { 
 public:
-	SDK_UNDEFINED(16,13881) /* FMulticastInlineDelegate */ __um(OnSucceeded);                                      // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,13882) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,13883) /* FMulticastInlineDelegate */ __um(OnMoveToFailed);                                   // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,13979) /* FMulticastInlineDelegate */ __um(OnSucceeded);                                      // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,13980) /* FMulticastInlineDelegate */ __um(OnFailed);                                         // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,13981) /* FMulticastInlineDelegate */ __um(OnMoveToFailed);                                   // 0x0088   (0x0010)  
 	class UAITask_MoveTo*                              MoveToTask;                                                 // 0x0098   (0x0008)  
 	class UGameplayBehavior*                           GameplayBehavior;                                           // 0x00A0   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x00A8   (0x0030)  MISSED
@@ -37,11 +37,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f94484] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7fa1928] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseGameplayBehaviorSmartObject
-	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f94044] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7fa1670] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.MoveToAndUseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f93de4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7fa1300] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayBehaviorSmartObjectsModule.BTTask_FindAndUseGameplayBehaviorSmartObject
@@ -66,6 +66,6 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.GameplayBehaviorSmartObjectsBlueprintFunctionLibrary.UseGameplayBehaviorSmartObject
-	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                 // [0x7f942d4] Final|Native|Static|Public|BlueprintCallable 
+	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                 // [0x7fa17fc] Final|Native|Static|Public|BlueprintCallable 
 };
 

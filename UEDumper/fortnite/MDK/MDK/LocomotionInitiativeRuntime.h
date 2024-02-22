@@ -11,7 +11,6 @@
 /// dependency: FortniteGame
 /// dependency: GameFeatures
 /// dependency: GameplayAbilities
-/// dependency: GameplayTags
 /// dependency: MotionTrajectory
 /// dependency: PoseSearch
 /// dependency: ProxyTable
@@ -36,26 +35,7 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortLocomotionLayerMaskDataAsset.ApplyTo
-	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                                // [0xb4ac7c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
-};
-
-/// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance
-/// Size: 0x0010 (0x001620 - 0x001630)
-class UFortPlayerMotionMatchingAnimInstance : public UFortPlayerAnimInstanceProxy
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5680;
-
-public:
-	SMember(FGameplayTag)                              SwingingTag                                                 OFFSET(getStruct<T>, {0x1620, 4, 0, 0})
-	DMember(bool)                                      HideWeapon                                                  OFFSET(get<bool>, {0x1624, 1, 0, 0})
-	DMember(bool)                                      bIsSwinging                                                 OFFSET(get<bool>, {0x1625, 1, 0, 0})
-	DMember(bool)                                      bUseBlendStackLayeringGraph                                 OFFSET(get<bool>, {0x1626, 1, 0, 0})
-
-
-	/// Functions
-	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance.GetProceduralLayeringAnimInstance
-	// class UAnimInstance* GetProceduralLayeringAnimInstance();                                                                // [0xb4ac854] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                                // [0xb5bd3ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance
@@ -133,11 +113,11 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatchingState
-	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                 // [0x138bf28] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                 // [0x14b817c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatching
-	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                      // [0x138c0a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                      // [0x14b82fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.GetMotionMatchingBlendProfile
-	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                    // [0x260cfc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                    // [0x262f884] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.LocomotionInitiativeComponent

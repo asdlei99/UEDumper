@@ -6,6 +6,7 @@
 ********************************************************/
 
 #pragma once
+/// dependency: BasicType
 /// dependency: CoreUObject
 /// dependency: Engine
 
@@ -20,6 +21,18 @@ enum class EIntTypes : uint8_t
 	EIntTypes__EIntTypes_MAX                                                         = 4
 };
 
+/// Enum /Game/ArtTools/Procedural/Trees/Tree_Color_options.Tree_Color_options
+/// Size: 0x06
+enum class Tree_Color_options : uint8_t
+{
+	Tree_Color_options__NewEnumerator0                                               = 0,
+	Tree_Color_options__NewEnumerator1                                               = 1,
+	Tree_Color_options__NewEnumerator2                                               = 2,
+	Tree_Color_options__NewEnumerator3                                               = 3,
+	Tree_Color_options__NewEnumerator4                                               = 4,
+	Tree_Color_options__Tree_Color_MAX                                               = 5
+};
+
 /// Class /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C
 /// Size: 0x0000 (0x000028 - 0x000028)
 class URenderToTextureFunctionLibrary_C : public UBlueprintFunctionLibrary
@@ -29,9 +42,28 @@ public:
 
 	/// Functions
 	// Function /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Set Canvas Material Scale and Position
-	// void Set Canvas Material Scale and Position(FVector2D Size, FVector2D Position, double Scale, class UObject* __WorldContext, FVector2D& Screen Position, FVector2D& Screen Size); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Set Canvas Material Scale and Position(FVector2D Size, FVector2D Position, double Scale, class UObject* __WorldContext, FVector2D& Screen Position, FVector2D& Screen Size); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Array to HLSL Int Array
-	// void Array to HLSL Int Array(TEnumAsByte<EIntTypes> Type, FString& Variable Name, TArray<int32_t>& Int, TArray<FVector2D>& int2, TArray<FVector>& int3, TArray<FLinearColor>& int4, class UObject* __WorldContext, FString& String); // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Array to HLSL Int Array(TEnumAsByte<EIntTypes> Type, FString& Variable Name, TArray<int32_t>& Int, TArray<FVector2D>& int2, TArray<FVector>& int3, TArray<FLinearColor>& int4, class UObject* __WorldContext, FString& String); // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+};
+
+/// Struct /Game/ArtTools/Procedural/Trees/Tree_SeasonColorStruct.Tree_SeasonColorStruct
+/// Size: 0x001C (0x000000 - 0x00001C)
+struct FTree_SeasonColorStruct
+{ 
+	SDK_UNDEFINED(1,9401) /* TEnumAsByte<Tree_Color_options> */ __um(TreeColorOption_12_3A3FA905471B736AE59F549F3AC737AD); // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
+	FLinearColor                                       Color_5_E33006414CF6D999D4D482A4D2FF03F6;                   // 0x0004   (0x0010)  
+	float                                              ValueVariation_9_4FAED9E04DA8955B0BC4EDB1E0A3C1F7;          // 0x0014   (0x0004)  
+	float                                              HueVariation_10_00BFFB9140C4AD7D16C9AA9AEB01A935;           // 0x0018   (0x0004)  
+};
+
+/// Class /Game/ArtTools/Procedural/Trees/TreeSeasonColor_Data.TreeSeasonColor_Data_C
+/// Size: 0x0010 (0x000030 - 0x000040)
+class UTreeSeasonColor_Data_C : public UPrimaryDataAsset
+{ 
+public:
+	TArray<FTree_SeasonColorStruct>                    TreeSeasonData;                                             // 0x0030   (0x0010)  
 };
 
 /// Class /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C
@@ -43,17 +75,17 @@ public:
 
 	/// Functions
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.BindScalabilitySettings
-	// void BindScalabilitySettings(FDelegateProperty& Delegate, class UObject* __WorldContext);                             // [0x130d900] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void BindScalabilitySettings(FDelegateProperty& Delegate, class UObject* __WorldContext);                             // [0x3d1d968] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.IsLumenEnabled
-	// void IsLumenEnabled(class UObject* __WorldContext, bool& IsEnabled);                                                  // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void IsLumenEnabled(class UObject* __WorldContext, bool& IsEnabled);                                                  // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.GetDynamicMaterialInstance
-	// void GetDynamicMaterialInstance(class UMeshComponent* MeshComponent, int32_t MaterialIndex, class UObject* __WorldContext, class UMaterialInstanceDynamic*& Material Instance Dynamic); // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void GetDynamicMaterialInstance(class UMeshComponent* MeshComponent, int32_t MaterialIndex, class UObject* __WorldContext, class UMaterialInstanceDynamic*& Material Instance Dynamic); // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.AreBoundsOverlapping?
-	// void AreBoundsOverlapping?(FBox BoundsA, FBox BoundsB, class UObject* __WorldContext, bool& BoundsOverlap?);          // [0x130d900] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void AreBoundsOverlapping?(FBox BoundsA, FBox BoundsB, class UObject* __WorldContext, bool& BoundsOverlap?);          // [0x3d1d968] Static|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.AddActorTag
-	// void AddActorTag(class AActor* Actor, FName& tag, class UObject* __WorldContext);                                     // [0x130d900] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void AddActorTag(class AActor* Actor, FName& tag, class UObject* __WorldContext);                                     // [0x3d1d968] Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/ArtTools/Tech_Art/Libraries/Macros/B_TechArt_GlobalLibrary.B_TechArt_GlobalLibrary_C.HoudiniInstanceHISMBuilder
-	// void HoudiniInstanceHISMBuilder(class UInstancedStaticMeshComponent* InstancedStaticMeshComponent, class UDataTable* InstanceDataTable, double InstancesCountToImport, bool RandomScale, double RandomScaleMin, double RandomScaleMax, bool RandomRotationZ, double RandomRotationZMin, double RandomRotationZMax, bool UseWorldSpacePositions, class UObject* __WorldContext); // [0x130d900] Static|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void HoudiniInstanceHISMBuilder(class UInstancedStaticMeshComponent* InstancedStaticMeshComponent, class UDataTable* InstanceDataTable, double InstancesCountToImport, bool RandomScale, double RandomScaleMin, double RandomScaleMax, bool RandomRotationZ, double RandomRotationZMin, double RandomRotationZMax, bool UseWorldSpacePositions, class UObject* __WorldContext); // [0x3d1d968] Static|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 
 /// Struct /Game/ArtTools/HoudiniInstanceImporter/HoudiniInstanceDataLayout.HoudiniInstanceDataLayout

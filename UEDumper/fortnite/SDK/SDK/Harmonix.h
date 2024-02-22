@@ -29,13 +29,13 @@ public:
 
 	/// Functions
 	// Function /Script/Harmonix.HarmonixBlueprintUtil.SetMeasuredVideoToAudioRenderOffsetMs
-	// void SetMeasuredVideoToAudioRenderOffsetMs(float Milliseconds);                                                       // [0xac1dd38] Final|Native|Static|Public|BlueprintCallable 
+	// void SetMeasuredVideoToAudioRenderOffsetMs(float Milliseconds);                                                       // [0xaf1b440] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Harmonix.HarmonixBlueprintUtil.SetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs
-	// void SetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs(float Milliseconds);                                   // [0xac1dc78] Final|Native|Static|Public|BlueprintCallable 
+	// void SetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs(float Milliseconds);                                   // [0xaf1b3c0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Harmonix.HarmonixBlueprintUtil.GetMeasuredVideoToAudioRenderOffsetMs
-	// float GetMeasuredVideoToAudioRenderOffsetMs();                                                                        // [0xac1dc50] Final|Native|Static|Public|BlueprintCallable 
+	// float GetMeasuredVideoToAudioRenderOffsetMs();                                                                        // [0xaf1b398] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Harmonix.HarmonixBlueprintUtil.GetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs
-	// float GetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs();                                                    // [0xac1dc28] Final|Native|Static|Public|BlueprintCallable 
+	// float GetMeasuredUserExperienceAndReactionToAudioRenderOffsetMs();                                                    // [0xaf1b370] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/Harmonix.HarmonixDeveloperSettings

@@ -39,7 +39,7 @@ struct FFortRigUnit_SphereTraceByChannel : FRigUnit
 { 
 	FVector                                            Start;                                                      // 0x0008   (0x0018)  
 	FVector                                            End;                                                        // 0x0020   (0x0018)  
-	SDK_UNDEFINED(1,13787) /* TEnumAsByte<ETraceTypeQuery> */ __um(TraceChannel);                                  // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,13887) /* TEnumAsByte<ETraceTypeQuery> */ __um(TraceChannel);                                  // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	float                                              Radius;                                                     // 0x003C   (0x0004)  
 	bool                                               bTraceComplex;                                              // 0x0040   (0x0001)  

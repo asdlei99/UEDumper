@@ -47,7 +47,7 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteInternal.FortControllerStateHandlerComponent.NotifyOfStateChange
-	// void NotifyOfStateChange(FString& State, bool Active);                                                                // [0xa9525e0] Final|Native|Public|HasOutParms 
+	// void NotifyOfStateChange(FString& State, bool Active);                                                                // [0xa94b6ac] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/VerseFortniteInternal.FortAthenaMutator_BuildingSettings
@@ -64,17 +64,17 @@ class UFortBuildingSettingsComponentBase : public UEntityEnableableComponent
 { 
 public:
 	class AFortAthenaMutator_BuildingSettings*         Mutator;                                                    // 0x0078   (0x0008)  
-	SDK_UNDEFINED(1,9246) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(Building);                           // 0x0080   (0x0001)  
-	SDK_UNDEFINED(1,9247) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(BuildingOnWater);                    // 0x0081   (0x0001)  
-	SDK_UNDEFINED(1,9248) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(Editing);                            // 0x0082   (0x0001)  
-	SDK_UNDEFINED(1,9249) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(EditingHostile);                     // 0x0083   (0x0001)  
-	SDK_UNDEFINED(1,9250) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(TrapPlacement);                      // 0x0084   (0x0001)  
+	SDK_UNDEFINED(1,9288) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(Building);                           // 0x0080   (0x0001)  
+	SDK_UNDEFINED(1,9289) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(BuildingOnWater);                    // 0x0081   (0x0001)  
+	SDK_UNDEFINED(1,9290) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(Editing);                            // 0x0082   (0x0001)  
+	SDK_UNDEFINED(1,9291) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(EditingHostile);                     // 0x0083   (0x0001)  
+	SDK_UNDEFINED(1,9292) /* TEnumAsByte<EPlayerSettingStateInternal> */ __um(TrapPlacement);                      // 0x0084   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0085   (0x0003)  MISSED
 
 
 	/// Functions
 	// Function /Script/VerseFortniteInternal.FortBuildingSettingsComponentBase.OnRep_Settings
-	// void OnRep_Settings();                                                                                                // [0xa952da0] Final|Native|Private 
+	// void OnRep_Settings();                                                                                                // [0xa94be6c] Final|Native|Private 
 };
 
 /// Class /Script/VerseFortniteInternal.FortPlayspaceComponentHelper
@@ -87,9 +87,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteInternal.FortPlayspaceComponentHelper.HandlePlayerPawnPossessed
-	// void HandlePlayerPawnPossessed(class APawn* Pawn);                                                                    // [0xa952520] Final|Native|Public  
+	// void HandlePlayerPawnPossessed(class APawn* Pawn);                                                                    // [0xa94b62c] Final|Native|Public  
 	// Function /Script/VerseFortniteInternal.FortPlayspaceComponentHelper.HandlePlayerDied
-	// void HandlePlayerDied(class AFortPlayerPawnAthena* FortPlayerPawnAthena);                                             // [0xa952460] Final|Native|Public  
+	// void HandlePlayerDied(class AFortPlayerPawnAthena* FortPlayerPawnAthena);                                             // [0xa94b5ac] Final|Native|Public  
 };
 
 /// Class /Script/VerseFortniteInternal.VerseFortniteEntitySubsystem

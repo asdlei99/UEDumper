@@ -23,6 +23,6 @@ public:
 
 	/// Functions
 	// Function /Script/SrirachaRanchValet.StreamingRadioPlayerComponent_Valet.VehicleExploded
-	// void VehicleExploded(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                        // [0xb5d8120] Final|Native|Protected 
+	// void VehicleExploded(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                        // [0xb6e8094] Final|Native|Protected 
 };
 

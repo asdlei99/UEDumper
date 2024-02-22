@@ -109,12 +109,12 @@ public:
 class UFortSoundCueTemplateDefaultSettings : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,13868) /* TMap<UClass*, UFortSoundCueTemplateDefaults*> */ __um(TemplateDefaults);            // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,13966) /* TMap<UClass*, UFortSoundCueTemplateDefaults*> */ __um(TemplateDefaults);            // 0x0030   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/FortSoundCueTemplates.FortSoundCueTemplateDefaultSettings.GetSettingsForTemplateType
-	// class UFortSoundCueTemplateDefaults* GetSettingsForTemplateType(class UClass* TemplateType);                          // [0xc55a820] Final|Native|Public  
+	// class UFortSoundCueTemplateDefaults* GetSettingsForTemplateType(class UClass* TemplateType);                          // [0xc4ff7b4] Final|Native|Public  
 };
 
 /// Class /Script/FortSoundCueTemplates.FortSoundCueTemplateSettings
@@ -122,12 +122,12 @@ public:
 class UFortSoundCueTemplateSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(32,13869) /* TWeakObjectPtr<UFortSoundCueTemplateDefaultSettings*> */ __um(DefaultTemplateSettings); // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,13967) /* TWeakObjectPtr<UFortSoundCueTemplateDefaultSettings*> */ __um(DefaultTemplateSettings); // 0x0030   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/FortSoundCueTemplates.FortSoundCueTemplateSettings.GetDefaultSettingsForTemplateType
-	// class UFortSoundCueTemplateDefaults* GetDefaultSettingsForTemplateType(class UClass* TemplateType);                   // [0xc55a71c] Final|Native|Public|Const 
+	// class UFortSoundCueTemplateDefaults* GetDefaultSettingsForTemplateType(class UClass* TemplateType);                   // [0xc4ff6f4] Final|Native|Public|Const 
 };
 
 /// Class /Script/FortSoundCueTemplates.FortSoundCueTemplateSimple
@@ -143,8 +143,8 @@ struct FFortContinuousModulatorConfig
 { 
 	FVector2D                                          VolumeRange;                                                // 0x0000   (0x0010)  
 	FVector2D                                          PitchRange;                                                 // 0x0010   (0x0010)  
-	SDK_UNDEFINED(1,13870) /* TEnumAsByte<ModulationParamMode> */ __um(VolumeMode);                                // 0x0020   (0x0001)  
-	SDK_UNDEFINED(1,13871) /* TEnumAsByte<ModulationParamMode> */ __um(PitchMode);                                 // 0x0021   (0x0001)  
+	SDK_UNDEFINED(1,13968) /* TEnumAsByte<ModulationParamMode> */ __um(VolumeMode);                                // 0x0020   (0x0001)  
+	SDK_UNDEFINED(1,13969) /* TEnumAsByte<ModulationParamMode> */ __um(PitchMode);                                 // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0022   (0x0006)  MISSED
 };
 

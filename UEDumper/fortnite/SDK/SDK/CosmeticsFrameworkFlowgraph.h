@@ -19,7 +19,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FCosmeticFlowData
 { 
-	SDK_UNDEFINED(80,12450) /* TMap<FName, FInstancedStruct> */ __um(NamedData);                                   // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12537) /* TMap<FName, FInstancedStruct> */ __um(NamedData);                                   // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/CosmeticsFrameworkFlowgraph.OperationSequenceHandle

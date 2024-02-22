@@ -140,8 +140,8 @@ class UNeuralMorphModel : public UMLDeformerMorphModel
 public:
 	TArray<FNeuralMorphBoneGroup>                      BoneGroups;                                                 // 0x0190   (0x0010)  
 	TArray<FNeuralMorphCurveGroup>                     CurveGroups;                                                // 0x01A0   (0x0010)  
-	SDK_UNDEFINED(80,14840) /* TMap<FName, FNeuralMorphMaskInfo> */ __um(BoneMaskInfos);                           // 0x01B0   (0x0050)  
-	SDK_UNDEFINED(80,14841) /* TMap<FName, FNeuralMorphMaskInfo> */ __um(BoneGroupMaskInfos);                      // 0x0200   (0x0050)  
+	SDK_UNDEFINED(80,14980) /* TMap<FName, FNeuralMorphMaskInfo> */ __um(BoneMaskInfos);                           // 0x01B0   (0x0050)  
+	SDK_UNDEFINED(80,14981) /* TMap<FName, FNeuralMorphMaskInfo> */ __um(BoneGroupMaskInfos);                      // 0x0200   (0x0050)  
 	ENeuralMorphMode                                   Mode;                                                       // 0x0250   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0251   (0x0003)  MISSED
 	int32_t                                            LocalNumMorphTargetsPerBone;                                // 0x0254   (0x0004)  

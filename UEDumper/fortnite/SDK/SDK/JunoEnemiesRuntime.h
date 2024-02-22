@@ -19,7 +19,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoEnemiesRuntime.JunoEnemiesBlueprintLibrary.GetCurvedPath
-	// TArray<FVector> GetCurvedPath(TArray<FVector>& ControlPoints, int32_t NumSegments);                                   // [0xbf4adb8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FVector> GetCurvedPath(TArray<FVector>& ControlPoints, int32_t NumSegments);                                   // [0xbf004c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoEnemiesRuntime.JunoCheatManager_Enemies
@@ -31,6 +31,6 @@ public:
 
 	/// Functions
 	// Function /Script/JunoEnemiesRuntime.JunoCheatManager_Enemies.JunoSpawnCreature
-	// void JunoSpawnCreature(FString CreatureName, int32_t Count);                                                          // [0x8470dbc] Final|Exec|Native|Public|Const 
+	// void JunoSpawnCreature(FString CreatureName, int32_t Count);                                                          // [0x8473210] Final|Exec|Native|Public|Const 
 };
 

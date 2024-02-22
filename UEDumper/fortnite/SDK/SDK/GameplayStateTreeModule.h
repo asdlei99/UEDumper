@@ -17,7 +17,7 @@ class UStateTreeComponent : public UBrainComponent
 { 
 public:
 	unsigned char                                      UnknownData00_3[0x8];                                       // 0x00F8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,13284) /* FMulticastInlineDelegate */ __um(OnStateTreeRunStatusChanged);                      // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,13381) /* FMulticastInlineDelegate */ __um(OnStateTreeRunStatusChanged);                      // 0x0100   (0x0010)  
 	FStateTreeReference                                StateTreeRef;                                               // 0x0110   (0x0018)  
 	bool                                               bStartLogicAutomatically;                                   // 0x0128   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0129   (0x0007)  MISSED
@@ -27,11 +27,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.SetStartLogicAutomatically
-	// void SetStartLogicAutomatically(bool bInStartLogicAutomatically);                                                     // [0xb3fbf00] Final|Native|Public|BlueprintCallable 
+	// void SetStartLogicAutomatically(bool bInStartLogicAutomatically);                                                     // [0xb50dd90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.SendStateTreeEvent
-	// void SendStateTreeEvent(FStateTreeEvent& Event);                                                                      // [0xb3fbe14] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SendStateTreeEvent(FStateTreeEvent& Event);                                                                      // [0xb50dca4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayStateTreeModule.StateTreeComponent.GetStateTreeRunStatus
-	// EStateTreeRunStatus GetStateTreeRunStatus();                                                                          // [0xb3fbddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EStateTreeRunStatus GetStateTreeRunStatus();                                                                          // [0xb50dc6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayStateTreeModule.StateTreeComponentSchema

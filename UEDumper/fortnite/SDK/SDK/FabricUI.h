@@ -18,8 +18,8 @@
 class UFabricInteractableViewModel : public UMVVMViewModelBase
 { 
 public:
-	SDK_UNDEFINED(24,13468) /* FText */                __um(Label);                                                // 0x0068   (0x0018)  
-	SDK_UNDEFINED(24,13469) /* FText */                __um(Value);                                                // 0x0080   (0x0018)  
+	SDK_UNDEFINED(24,13562) /* FText */                __um(Label);                                                // 0x0068   (0x0018)  
+	SDK_UNDEFINED(24,13563) /* FText */                __um(Value);                                                // 0x0080   (0x0018)  
 	bool                                               bEnabled;                                                   // 0x0098   (0x0001)  
 	bool                                               bVisible;                                                   // 0x0099   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x009A   (0x0006)  MISSED
@@ -51,8 +51,8 @@ class UFabricGridStyle : public UObject
 public:
 	unsigned char                                      UnknownData00_3[0x28];                                      // 0x0000   (0x0028)  MISSED
 	FMargin                                            Padding;                                                    // 0x0028   (0x0010)  
-	SDK_UNDEFINED(1,13470) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                      // 0x0038   (0x0001)  
-	SDK_UNDEFINED(1,13471) /* TEnumAsByte<EVerticalAlignment> */ __um(VerticalAlignment);                          // 0x0039   (0x0001)  
+	SDK_UNDEFINED(1,13564) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                      // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,13565) /* TEnumAsByte<EVerticalAlignment> */ __um(VerticalAlignment);                          // 0x0039   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x003A   (0x0002)  MISSED
 	int32_t                                            RowSpan;                                                    // 0x003C   (0x0004)  
 	int32_t                                            ColumnSpan;                                                 // 0x0040   (0x0004)  
@@ -92,9 +92,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricUI.FabricScreenWidget.SetScreenGridDimensions
-	// void SetScreenGridDimensions(FVector2D& InNewDimensions);                                                             // [0xb776c78] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetScreenGridDimensions(FVector2D& InNewDimensions);                                                             // [0xb88c890] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/FabricUI.FabricScreenWidget.AttachFabricWidget
-	// class UFabricWidget* AttachFabricWidget(class UClass*& FabricWidgetClass, FVector2D& GridPosition);                   // [0xb776abc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UFabricWidget* AttachFabricWidget(class UClass*& FabricWidgetClass, FVector2D& GridPosition);                   // [0xb88c714] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/FabricUI.FabricWidget
@@ -108,7 +108,7 @@ public:
 
 	/// Functions
 	// Function /Script/FabricUI.FabricWidget.GetFabricViewModel
-	// class UFabricInteractableViewModel* GetFabricViewModel();                                                             // [0x8f8342c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UFabricInteractableViewModel* GetFabricViewModel();                                                             // [0x8f79498] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricUI.FabricWidgetComponent
@@ -122,9 +122,9 @@ public:
 
 	/// Functions
 	// Function /Script/FabricUI.FabricWidgetComponent.SetShouldSuscribeToSignificanceSubsystem
-	// void SetShouldSuscribeToSignificanceSubsystem(bool ShouldSuscribe);                                                   // [0xb776d0c] Final|Native|Public|BlueprintCallable 
+	// void SetShouldSuscribeToSignificanceSubsystem(bool ShouldSuscribe);                                                   // [0xb88c924] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricUI.FabricWidgetComponent.GetTickMode
-	// ETickMode GetTickMode();                                                                                              // [0xb776ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ETickMode GetTickMode();                                                                                              // [0xb88c7f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FabricUI.FabricWidgetTickControlSubsystem
@@ -137,8 +137,8 @@ public:
 
 	/// Functions
 	// Function /Script/FabricUI.FabricWidgetTickControlSubsystem.UnregisterFabricWidgetComponent
-	// void UnregisterFabricWidgetComponent(class UFabricWidgetComponent* WidgetComponent);                                  // [0xb776dcc] Final|Native|Public|BlueprintCallable 
+	// void UnregisterFabricWidgetComponent(class UFabricWidgetComponent* WidgetComponent);                                  // [0xb88c9a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FabricUI.FabricWidgetTickControlSubsystem.RegisterFabricWidgetComponent
-	// void RegisterFabricWidgetComponent(class UFabricWidgetComponent* WidgetComponent);                                    // [0xb776bb8] Final|Native|Public|BlueprintCallable 
+	// void RegisterFabricWidgetComponent(class UFabricWidgetComponent* WidgetComponent);                                    // [0xb88c810] Final|Native|Public|BlueprintCallable 
 };
 

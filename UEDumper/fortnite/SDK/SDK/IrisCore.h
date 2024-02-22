@@ -224,7 +224,7 @@ public:
 };
 
 /// Class /Script/IrisCore.NetObjectGridFilterConfig
-/// Size: 0x0048 (0x000030 - 0x000078)
+/// Size: 0x0050 (0x000030 - 0x000080)
 class UNetObjectGridFilterConfig : public UNetObjectFilterConfig
 { 
 public:
@@ -236,6 +236,8 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0044   (0x0004)  MISSED
 	FVector                                            MinPos;                                                     // 0x0048   (0x0018)  
 	FVector                                            MaxPos;                                                     // 0x0060   (0x0018)  
+	bool                                               bUseExactCullDistance;                                      // 0x0078   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0079   (0x0007)  MISSED
 };
 
 /// Class /Script/IrisCore.NetObjectGridFilter
@@ -415,12 +417,14 @@ public:
 };
 
 /// Class /Script/IrisCore.PartialNetObjectAttachmentHandlerConfig
-/// Size: 0x0008 (0x000030 - 0x000038)
+/// Size: 0x0010 (0x000030 - 0x000040)
 class UPartialNetObjectAttachmentHandlerConfig : public USequentialPartialNetBlobHandlerConfig
 { 
 public:
 	uint32_t                                           BitCountSplitThreshold;                                     // 0x0030   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0034   (0x0004)  MISSED
+	uint32_t                                           ClientUnreliableBitCountSplitThreshold;                     // 0x0034   (0x0004)  
+	uint32_t                                           ServerUnreliableBitCountSplitThreshold;                     // 0x0038   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x003C   (0x0004)  MISSED
 };
 
 /// Class /Script/IrisCore.SequentialPartialNetBlobHandler
